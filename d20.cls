@@ -10,6 +10,7 @@
 \RequirePackage{lettrine}
 \RequirePackage{tabularx}
 \RequirePackage{hyperref}
+\RequirePackage{booktabs}
 \RequirePackage[table]{xcolor}
 
 \definecolor{TableColor}{HTML}{fb9c80}
@@ -43,8 +44,10 @@
 	{
 		\color{QuoteColor}
 		\setlength\parindent{5pt}
-		\scriptsize
-		``#1''\begin{flushright}{--- #2}\end{flushright}
+		\scriptsize \itshape
+		``#1''\vspace{-1em}
+		\normalfont\color{ChapterColor}
+		\begin{flushright}{--- #2}\end{flushright}
 	}
 }
 \newcommand{\Chapter}[3]{
@@ -82,23 +85,26 @@
 
 % Table commands
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}[1]{>{\centering\arraybackslash}b{#1}}
 \newcommand{\Table}[4][0.47\textwidth]{
 	\begin{table}[h]
-	\rowcolors{2}{white}{TableColor}\scriptsize
+	\rowcolors{2}{}{TableColor}\scriptsize
 	\ifx&#2&\else\caption{#2}\vskip 5pt\fi
 	\begin{tabularx}{#1}{@{}#3@{}}#4\end{tabularx}
 	\end{table}
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
-	\rowcolors{0}{TableColor}{white}\scriptsize
+	\rowcolors{0}{TableColor}{}
+	\scriptsize
 	\ifx&#1&\else\caption{#1}\vskip 5pt\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
 }
 \newcommand{\BigTablePair}[3]{
 	\begin{table*}[ht!]
-	\rowcolors{0}{white}{TableColor}\scriptsize
+	\rowcolors{0}{}{TableColor}
+	\scriptsize
 	\ifx&#1&\else\caption{#1}\vskip 5pt\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
@@ -107,6 +113,21 @@
 	\begin{tabular}{@{}#1@{}}
 		#2
 	\end{tabular}
+}
+\newcommand{\WarriorTable}[3][l l C C C l]{
+	\BigTablePair{#2}{#1}{
+		\bfseries Level & \bfseries Base Attack Bonus & \bfseries Fort Save & \bfseries Ref Save & \bfseries Will Save & \bfseries Special\\
+		#3
+	}
+}
+\newcommand{\SpellcasterTable}[2]{
+	\BigTablePair{#1}{l l C C C l Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm}}{
+		\rowcolor{white}
+		\multirow[b]{2}{0.8cm}{\bfseries Level} & \multirow[b]{2}{2cm}{\bfseries Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\bfseries Fort Save} & \multirow[b]{2}{0.6cm}{\bfseries Ref Save} & \multirow[b]{2}{0.6cm}{\bfseries Will Save} & \multirow[b]{2}{*}{\bfseries Special} & \multicolumn{10}{c}{\bfseries Spells per day}\\
+		\cmidrule[0.5pt]{7-16}
+		&&&&&& \bfseries 0 & \bfseries 1 & \bfseries 2 & \bfseries 3 & \bfseries 4 & \bfseries 5 & \bfseries 6 & \bfseries 7 & \bfseries 8 & \bfseries 9 \\
+		#2
+	}
 }
 \renewcommand{\arraystretch}{1.2}
 \setcounter{secnumdepth}{0}
