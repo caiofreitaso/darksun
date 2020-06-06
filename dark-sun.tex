@@ -1,0 +1,1232 @@
+\documentclass[10pt,a4paper,twocolumn]{d20}
+\usepackage{Nouveaud}
+\usepackage{ucs}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{colortbl}
+\title{Dark Sun\\
+  \large A d20 System RPG}
+\linespread{1.1}
+\renewcommand{\LettrineFontHook}{\color{QuoteColor}\Huge\Nouveaudfamily}
+\begin{document}
+
+\tableofcontents
+
+\Chapter
+{Introduction}
+{For thousands of years, the Tablelands have remained untouched: its politics frozen in a delicate stalemate, its life in a balance even more delicate. It is true that the Dragon Kings amused themselves with their petty wars, rattling sabers to punctuate the passing of ages. It is true that, occasionally, another city would be swallowed by the wastes.
+
+But there were no surprises. The Dragon Kings steered everything from their omnipotent perches, content in their superiority, but ever thirsting for challenge. All that has changed. The Tablelands have been thrown into turmoil, the likes of which have not been seen since times forgotten. The Dragon Kings have been thrown into confusion, grasping for the tedium they so recently lamented.
+
+And yet I fear the worst is yet to come. Change is in the air, and change has never come gently to Athas.}
+{Oronis, sorcerer-king of Kurn}
+{}
+
+\Capitalize{D}{ark} Sun 3 is a new edition of the Dark Sun campaign setting, written using the Dungeons \& Dragons 3.5 rules. You will need the Player’s Handbook (PH), Dungeon Master’s Guide (DMG), Monster Manual (MM), and the Expanded Psionics Handbook (XPH) to make use of the material in this book. In addition, you might find useful to download the Athasian Emporium (AE), Terrors of Athas (ToA), Terrors of the Dead Lands (TotDL), and Faces of the Forgotten North (FFN), since this book contains a small amount of material presented in those rulebooks.
+
+This document is intended for an audience already familiar with the Dark Sun campaign setting, and does not attempt to detail the world of Athas in full. For more information on Athas, visit www.athas.org --- the official Dark Sun website. In addition to the latest version of this document, you may find other Dark Sun material available as free downloads.
+
+All Dark Sun products published by TSR may be purchased from RPGNow! as PDF downloads.
+
+\section{This is Athas}
+
+Athas’ savage, primal landscape is the result of long centuries of ecological and magical abuses. The world is dying. It breathes its last gasps as water turns to silt, grasslands become sandy wastes, and jungles decay into stony barrens. Still, life finds ways to endure even in these hellish conditions. In fact, it thrives.
+
+Children growing up beneath the crimson sun don’t aspire to become heroes. True heroes who champion causes or seek to make the world a better place are as rare as steel on Athas. Living to see the next dawn is more important than defending a set of beliefs, so survival ultimately motivates all living creatures---not virtue or righteousness.
+
+But heroes are desperately needed in this harsh, savage world... Heroes like the ones who stepped forward to destroy the sorcerer‐king Kalak and set Tyr free. Heroes like those who risked everything to kill the Dragon and keep Rajaat the Warbringer from devastating the land.
+
+Today, Athas rushes toward its future. If the course of destruction is to be diverted, of Athas is to be restored, then more heroes must grab the reins of destiny and give new hope and promise to the world.
+
+\section{Ten Things You Need to Know}
+
+Every Dungeon Master and player needs to know and remember these facts about the world of Athas.
+
+\begin{enumerate}
+\item \textbf{Dark Sun is Different from Traditional D\&D.} Many monsters, prestige classes, spells or magic items from the core rulebooks simply are not available in Athas. Many races were extinguished from Athas during the Cleansing Wars. This is because Athas has a very different background than most D\&D settings. Check with your DM to see which options you have to choose from before building your character.
+\item \textbf{Tone and Attitude.} Athas puts the survival of the fittest concept to its fullest. Those who cannot adapt to endure the tyrannical sorcerer‐kings, the unrelenting sun, or the many dangers of the wastes will certainly perish. Illiteracy and slavery are commonplace, while magic is feared and hated. The term ``hero'' has a very different meaning on Athas.
+\item \textbf{A Burnt World.} Thousands of years of reckless spellcasting and epic wars have turned Athas into a barren world, on the verge of an ecological collapse. From the first moments of dawn until the last twinkling of dusk, the crimson sun shimmers in the olive–tinged sky like a fiery puddle of blood, creating temperatures up to 150$^\circ$ F (65$^\circ$ C) by late afternoon. Waters is scarce, so most Athasians need to come up with alternative solutions for dealing with the heat or perish.
+\item \textbf{A World Without Metal.} Metals are very rare on Athas. Its scarcity has forced Athasians to rely on barter and different materials, such as ceramic, to use as currency. It also hampers industrial and economic development as well; mills and workshops rarely have quality tools to produce everyday products. Even though most Athasians have developed ways of creating weapons and armor made of nonmetallic components, but the advantage of having metal equipment in battle is huge.
+\item \textbf{The Will and The Way.} From the lowliest slave to the most powerful sorcerer‐king, psionics pervade all levels of Athasian society. Virtually every individual has some mental ability, and every city‐state has some sort of psionic academy available. Athasians use the term Will to refer to someone’s innate ability for psionics and the Way for the study of psionics.
+\item \textbf{A World Without Gods.} Athas is a world without true deities. Powerful sorcerer‐kings often masquerade as gods but, though their powers are great and their worshipers many, they are not true gods. Arcane magic require life force, either from plants or animals, to be used. All divine power comes from the Elemental planes and the spirits of the land that inhabit geographic features.
+\item \textbf{Planar Insulation.} Barriers exist between Athas and other planes. In the case of other planes of existence, the Gray impedes planar travel, except to the Elemental Planes. Consequently, travel via spelljamming is impossible, and planar travel is much more difficult. The same holds true for those trying to contact or reach Athas. The barrier formed by the Gray impedes travel in both directions.
+\item \textbf{The Struggle For Survival.} The basic necessities of life are scarce on Athas. This means that every society must devote itself to attaining food and safeguarding its water supply, while protecting themselves from raiding tribes, Tyr–storms, and other city‐states. This essentially means that most Athasian must devout a large deal of their lives just to survive.
+\item \textbf{The Seven City‐states.} The Tyr Region is the center of the world of Athas, at least as far as the people of the seven city‐states are concerned. It’s here, along the shores of the Silt Sea and in the shadows of the Ringing Mountains that civilization clings to a few scattered areas of fertile land and fresh water. The majority of the population lives in the city‐states of Tyr, Urik, Raam, Draj, Nibenay, Gulg, and Balic. The remainder lives in remote villages built around oases and wells, or wanders about in nomadic tribes searching for what they need to survive.
+\item \textbf{New Races.} In addition to the common player character races found in the Player’s Handbook, players can choose to play aarakocra, half‐giants, muls, pterrans, and thri-kreen in Dark Sun. Aarakocra are avian freedom‐loving creatures, but extremely zealous and xenophobic. Half‐giants are creatures with great strength, but dull wits. Muls are a hybrid race that combines the natural dwarven resilience and stubbornness with the adaptability from humans. Pterrans are reptilian nature‐worshiping creatures that are always in the pursuit of their ``life paths''. Thri‐kreen are insectoid creatures that roam the Athasian wastes in search for prey.
+\end{enumerate}
+
+\section{The Five Ages of Play}
+
+Dark Sun 3 supports adventures and campaigns set in many different ages, five of which are detailed in this book. You can set your campaign right after the events of the Prism Pentad. Known as the Age of Heroes, this is a period that fundamentally changed the world, when individuals begun fighting back all the tyranny and oppression, ending up with several sorcerer‐kings dead and the first free city of the Tablelands appeared.
+
+Or, you can go backward in time to the classic period where most sorcerer‐kings were still alive and play during the Brown Age or the Age of Sorcerer‐kings, when the world was becoming more and more a wasteland by defiling magic, and the Dragon of Tyr was almighty.
+
+Or, you can go even more backward in time and play during the Cleansing Wars, when Rajaat unleashed his human armies and his Champions in order to wipe out all other intelligent races from the face of Athas.
+
+Or, you can go to Green Age, when the New Races began populating the lands left unscathed by the receding waves, and the first great cities were found, and psionics started to show its true power.
+
+Or, you can go to the very first age, known as the Blue Age, when the world was still young and the only intelligent races where the rhulisti, the ancient halflings, and the kreen, lived in a world filled with oceans and a blue sun, and magic was nonexistent.
+
+In addition, the rules set in this book can be used to support campaigns set in other ages. For example, you could forward to several hundred years into the future, in a world that could be either devastated by the Kreen invasion, or that has just begun to heal from most of the damage it suffered since Rajaat discovered arcane magic. Although these ages are not covered in this book, the rules herein can be used as a basis for play in them.
+
+\section{Where to Begin}
+
+Players should begin by creating their Dark Sun character after reading the first six chapters of this book. Players may also want to read the timeline in order to understand the history of Athas. Remember to discuss with your DM before creating your character to find out what options and other books are allowed in his campaign.
+
+The DM should start with Chapter 7: Life on Athas and read material relevant to the locations, Chapter 9: Athasian Campaigns for guidelines and tips when running your campaign, and Chapter 11: Others Eras of Play to understand more about the era of play on which your campaign will focus.
+
+\Chapter
+{Abilities}
+{Life is a mysterious and resilient thing. Even in the starkest wastes of Athas, the careful observer finds it clinging to the horns of sand dunes, peeking out from beneath wind-raked boulders, and creeping along the cracked plains of sun-baked clay.
+To survive, almost every form of life has become a monster. On the increasingly infertile world of Athas, these adaptations have taken an almost diabolical turn. The land is so barren that every form of life, to one extent or another, is both predator and prey.}
+{The Wanderer’s Journal}
+
+\Capitalize{E}{ach} character in Dark Sun has six abilities: Strength (abbreviated Str), Dexterity (Dex), Constitution (Con), Intelligence (Int), Wisdom (Wis), and Charisma (Cha). Each of your abilities above average gives you a bonus on certain die rolls, and abilities below average give you a penalty on other die rolls.
+
+\section{Ability Scores}
+
+Previous editions used a rolling method that produced, on average, higher stats. This was supposed to convey that Athas was a much harsher world than normal D\&D campaign worlds, and that its denizens had adapted to compensate. However, the meaning of an attribute has changed in 3rd edition, and attributes start having a positive effect much sooner than they did in 2nd edition. Whereas many stats didn’t start having a positive effect until they were at least 14, now as low as 12 have a positive effect. Using higher overall attributes for characters in Dark Sun actually makes it easier for characters to survive and overcome obstacles that should be challenging, which would mean that the effective difficulty of a campaign would actually be lower using this stat generation method.
+
+\subsection{Creating Ability Scores}
+There are two methods for creating ability scores for your character: randomly or via point buy.  The average ability score for the typical commoner is 10 or 11, but your character is not typical. The most common ability scores for player characters (PCs) are 12 and 13.
+
+\subsubsection{Random Generation}
+To create an ability score for your character, roll 4d6. Disregard the lowest die roll and sum the rest. The result is a number between 3 (horrible) and 18 (tremendous)
+.
+Make this roll six times, recording each result on a piece of paper. Once you have six scores, assign each score to one of the six abilities.
+
+\subsubsection{Point Buy}
+All abilities scores start at 8. Take a number of points according to the type of your campaign to spread out among all abilities. For ability scores of 14 or lower, you buy additional points on a 1-for-1 basis. For ability scores higher than 14, it costs a little more.
+
+\Table{}{C C C C}{\bfseries Ability Score & \bfseries Point Cost & \bfseries Ability Score & \bfseries Point Cost \\
+  9 & 1 & 14 & 6 \\
+  10 & 2 & 15 & 8 \\
+  11 & 3 & 16 & 10 \\
+  12 & 4 & 17 & 13 \\
+  13 & 5 & 18 & 16}
+
+\Table{}{X r}{\textbf{Type of Campaign} & \textbf{Points Allowed} \\
+  Low-powered campaign & 15 points \\
+  Challenging campaign & 22 points \\
+  Normal campaign & 25 points \\
+  Tougher campaign & 28 points \\
+  High-powered campaign & 32 points}
+
+\subsection{Ability Modifiers}
+
+Each ability, after changes made because of race, has a modifier ranging from -5 to +5. Table: Ability Modifiers and Bonus Spells shows the modifier for each score. It also shows bonus spells, which you’ll need to know about if your character is a spellcaster.
+
+The modifier is the number you apply to the die roll when your character tries to do something related to that ability. You also use the modifier with some numbers that aren’t die rolls. A positive modifier is called a bonus, and a negative modifier is called a penalty.
+
+\BigTable{Ability Modifiers and Bonus Spells}{X c C C C C C C C C C C}{
+  \hline
+  \rowcolor{white}
+  & & \multicolumn{10}{c}{\bfseries Bonus Spells (by spell level)} \\
+  \hline
+  \rowcolor{white}
+  \bfseries Score & \bfseries Modifier & \bfseries 0 & \bfseries 1st & \bfseries 2nd & \bfseries 3rd & \bfseries 4th & \bfseries 5th & \bfseries 6th & \bfseries 7th & \bfseries 8th & \bfseries 9th \\
+  1 & $-5$ & \multicolumn{10}{c}{
+    \multirow{5}{*}{\cellcolor{TableColor}{\bfseries Can’t cast spells tied to this ability}}
+  } \\
+  2-3 & $-4$ \\
+  4-5 & $-3$ \\ 
+  6-7 & $-2$ \\ 
+  8-9 & $-1$ \\
+  10-11 & 0 & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+  12-13 & +1 & --- & 1 & --- & --- & --- & --- & --- & --- & --- & --- \\
+  14-15 & +2 & --- & 1 & 1 & --- & --- & --- & --- & --- & --- & --- \\
+  16-17 & +3 & --- & 1 & 1 & 1 & --- & --- & --- & --- & --- & --- \\
+  18-19 & +4 & --- & 1 & 1 & 1 & 1 & --- & --- & --- & --- & --- \\
+  20-21 & +5 & --- & 2 & 1 & 1 & 1 & 1 & --- & --- & --- & --- \\
+  22-23 & +6 & --- & 2 & 2 & 1 & 1 & 1 & 1 & --- & --- & --- \\
+  24-25 & +7 & --- & 2 & 2 & 2 & 1 & 1 & 1 & 1 & --- & --- \\
+  26-27 & +8 & --- & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & --- \\
+  28-29 & +9 & --- & 3 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 \\
+  30-31 & +10 & --- & 3 & 3 & 2 & 2 & 2 & 2 & 1 & 1 & 1 \\
+  32-33 & +11 & --- & 3 & 3 & 3 & 2 & 2 & 2 & 2 & 1 & 1 \\
+  34-35 & +12 & --- & 3 & 3 & 3 & 3 & 2 & 2 & 2 & 2 & 1 \\
+  36-37 & +13 & --- & 4 & 3 & 3 & 3 & 3 & 2 & 2 & 2 & 2 \\
+  38-39 & +14 & --- & 4 & 4 & 3 & 3 & 3 & 3 & 2 & 2 & 2 \\
+  40-41 & +15 & --- & 4 & 4 & 4 & 3 & 3 & 3 & 3 & 2 & 2
+}
+
+\BigTable{Ability Scores and Bonus Power Points}{l C C C C C C C C C C C C C C C C C C C C}{
+  \hline
+  \rowcolor{white}
+  & \multicolumn{20}{c}{\bfseries Bonus Power Points (by class level)} \\
+  \hline
+  \rowcolor{white}
+\bfseries Score & 1st & 2nd & 3rd & 4th & 5th & 6th & 7th & 8th & 9th & 10th & 11th & 12th & 13th & 14th & 15th & 16th & 17th & 18th & 19th & 20th \\
+10-11 & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+12-13 & --- & 1 & 1 & 2 & 2 & 3 & 3 & 4 & 4 & 5 & 5 & 6 & 6 & 7 & 7 & 8 & 8 & 9 & 9 & 10 \\
+14-15 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+16-17 & 1 & 3 & 4 & 6 & 7 & 9 & 10 & 12 & 13 & 15 & 16 & 18 & 19 & 21 & 22 & 24 & 25 & 27 & 28 & 30 \\
+18-19 & 2 & 4 & 6 & 8 & 10 & 12 & 14 & 16 & 18 & 20 & 22 & 24 & 26 & 28 & 30 & 32 & 34 & 36 & 38 & 40 \\
+20-21 & 2 & 5 & 7 & 10 & 12 & 15 & 17 & 20 & 22 & 25 & 27 & 30 & 32 & 35 & 37 & 40 & 42 & 45 & 47 & 50 \\
+22-23 & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 & 33 & 36 & 39 & 42 & 45 & 48 & 51 & 54 & 57 & 60 \\
+24-25 & 3 & 7 & 10 & 14 & 17 & 21 & 24 & 28 & 31 & 35 & 38 & 42 & 45 & 49 & 52 & 56 & 59 & 63 & 66 & 70 \\
+26-27 & 4 & 8 & 12 & 16 & 20 & 24 & 28 & 32 & 36 & 40 & 44 & 48 & 52 & 56 & 60 & 64 & 68 & 72 & 76 & 80 \\
+28-29 & 4 & 9 & 13 & 18 & 22 & 27 & 31 & 36 & 40 & 45 & 49 & 54 & 58 & 63 & 67 & 72 & 76 & 81 & 85 & 90 \\
+30-31 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 & 55 & 60 & 65 & 70 & 75 & 80 & 85 & 90 & 95 & 100 \\
+32-33 & 5 & 11 & 16 & 22 & 27 & 33 & 38 & 44 & 49 & 55 & 60 & 66 & 71 & 77 & 82 & 88 & 93 & 99 & 104 & 110 \\
+34-35 & 6 & 12 & 18 & 24 & 30 & 36 & 42 & 48 & 54 & 60 & 66 & 72 & 78 & 84 & 90 & 96 & 102 & 108 & 114 & 120 \\
+36-37 & 6 & 13 & 19 & 26 & 32 & 39 & 45 & 52 & 58 & 65 & 71 & 78 & 84 & 91 & 97 & 104 & 110 & 117 & 123 & 130 \\
+38-39 & 7 & 14 & 21 & 28 & 35 & 42 & 49 & 56 & 63 & 70 & 77 & 84 & 91 & 98 & 105 & 112 & 119 & 126 & 133 & 140 \\
+40-41 & 7 & 15 & 22 & 30 & 37 & 45 & 52 & 60 & 67 & 75 & 82 & 90 & 97 & 105 & 112 & 120 & 127 & 135 & 142 & 150}
+
+\subsection{Abilities, Spellcasters and Manifesters}
+The ability that governs bonus spells depends on what type of spellcaster your character is: Intelligence for wizards; Wisdom for clerics, druids, and rangers; or Charisma for templars. In addition to having a high ability score, a spellcaster must be of high enough class level to be able to cast spells of a given spell level.
+
+Psionic classes also depend on abilities for additional power: Intelligence for psions, Wisdom for psychic warriors, and Charisma for wilders. The modifier for this ability is referred to as your key ability modifier. If your character’s key ability score is 9 or lower, you can’t manifest powers from that psionic class.
+
+Just as a high Intelligence score grants bonus spells to a wizard and a high Wisdom score grants bonus spells to a cleric, a character who manifests powers (psions, psychic warriors, and wilders) gains bonus power points according to his key ability score. Refer to Table: Ability Scores and Bonus Power Points.
+
+\subsubsection{How To Determine Bonus Power Points}
+Your key ability score grants you additional power points equal to your key ability modifier $\times$ your manifester level $\times$ \unichar{"00BD}. Table: Ability Scores and Bonus Power Points shows these calculations for class levels 1st through 20th and key ability scores from 10 to 41.
+
+\section{The Abilities}
+Each ability partially describes your character and affects some of his or her actions.
+
+\subsection{Strength (Str)}
+Strength measures your character’s muscle and physical power. This ability is especially important for fighters, barbarians, paladins, rangers, and monks because it helps them prevail in combat. Strength also limits the amount of equipment your character can carry.
+
+You apply your character’s Strength modifier to:
+\begin{itemize}
+\item Melee attack rolls.
+\item Damage rolls when using a melee weapon or a thrown weapon (including a sling). (Exceptions: Off-hand attacks receive only one-half the character’s Strength bonus, while two-handed attacks receive one and a half times the Strength bonus. A Strength penalty, but not a bonus, applies to attacks made with a bow that is not a composite bow.)
+\item Climb, Jump, and Swim checks. These are the skills that have Strength as their key ability.
+\item Strength checks (for breaking down doors and the like).
+\end{itemize}
+
+\subsection{Dexterity (Dex)}
+Dexterity measures hand-eye coordination, agility, reflexes, and balance. This ability is the most important one for rogues, but it’s also high on the list for characters who typically wear light or medium armor (rangers and barbarians) or no armor at all (monks, wizards, and sorcerers), and for anyone who wants to be a skilled archer.
+
+You apply your character’s Dexterity modifier to:
+\begin{itemize}
+\item Ranged attack rolls, including those for attacks made with bows, crossbows, throwing axes, and other ranged weapons.
+\item Armor Class (AC), provided that the character can react to the attack.
+\item Reflex saving throws, for avoiding fireballs and other attacks that you can escape by moving quickly.
+\item Balance, Escape Artist, Hide, Move Silently, Open Lock, Ride, Sleight of Hand, Tumble, and Use Rope checks. These are the skills that have Dexterity as their key ability.
+\end{itemize}
+\subsection{Constitution (Con)}
+Constitution represents your character’s health and stamina. A Constitution bonus increases a character’s hit points, so the ability is important for all classes.
+
+You apply your character’s Constitution modifier to:
+\begin{itemize}
+\item Each roll of a Hit Die (though a penalty can never drop a result below 1---that is, a character always gains at least 1 hit point each time he or she advances in level).
+\item Fortitude saving throws, for resisting poison and similar threats.
+\item Concentration checks. Concentration is a skill, important to spellcasters, that has Constitution as its key ability.
+\end{itemize}
+
+If a character’s Constitution score changes enough to alter his or her Constitution modifier, the character’s hit points also increase or decrease accordingly.
+
+\subsection{Intelligence (Int)}
+Intelligence determines how well your character learns and reasons. This ability is important for wizards because it affects how many spells they can cast, how hard their spells are to resist, and how powerful their spells can be. It’s also important for any character who wants to have a wide assortment of skills.
+
+You apply your character’s Intelligence modifier to:
+
+\begin{itemize}
+\item The number of languages your character knows at the start of the game.
+\item The number of skill points gained each level. (But your character always gets at least 1 skill point per level.)
+\item Appraise, Craft, Decipher Script, Disable Device, Forgery, Knowledge, Search, and Spellcraft checks. These are the skills that have Intelligence as their key ability.
+\end{itemize}
+
+A wizard gains bonus spells based on her Intelligence score. The minimum Intelligence score needed to cast a wizard spell is 10 + the spell’s level.
+
+An animal has an Intelligence score of 1 or 2. A creature of human-like intelligence has a score of at least 3.
+
+\subsection{Wisdom (Wis)}
+Wisdom describes a character’s willpower, common sense, perception, and intuition. While Intelligence represents one’s ability to analyze information, Wisdom represents being in tune with and aware of one’s surroundings. Wisdom is the most important ability for clerics and druids, and it is also important for paladins and rangers. If you want your character to have acute senses, put a high score in Wisdom. Every creature has a Wisdom score.
+
+You apply your character’s Wisdom modifier to:
+
+\begin{itemize}
+\item Will saving throws (for negating the effect of charm person and other spells).
+\item Heal, Listen, Profession, Sense Motive, Spot, and Survival checks. These are the skills that have Wisdom as their key ability.
+\item Clerics, druids, paladins, and rangers get bonus spells based on their Wisdom scores. The minimum Wisdom score needed to cast a cleric, druid, paladin, or ranger spell is 10 + the spell’s level.
+\end{itemize}
+
+\subsection{Charisma (Cha)}
+Charisma measures a character’s force of personality, persuasiveness, personal magnetism, ability to lead, and physical attractiveness. This ability represents actual strength of personality, not merely how one is perceived by others in a social setting. Charisma is most important for paladins, sorcerers, and bards. It is also important for clerics, since it affects their ability to turn undead. Every creature has a Charisma score.
+
+You apply your character’s Charisma modifier to:
+
+\begin{itemize}
+\item Bluff, Diplomacy, Disguise, Gather Information, Handle Animal, Intimidate, Perform, and Use Magic Device checks. These are the skills that have Charisma as their key ability.
+\item Checks that represent attempts to influence others.
+\item Turning checks for clerics and paladins attempting to turn zombies, vampires, and other undead.
+\end{itemize}
+
+Sorcerers and bards get bonus spells based on their Charisma scores. The minimum Charisma score needed to cast a sorcerer or bard spell is 10 + the spell’s level.
+
+\subsection{Changing Ability Scores}
+When an ability score changes, all attributes associated with that score change accordingly. A character does not retroactively get additional skill points for previous levels if she increases her intelligence.
+
+
+\Chapter{Character Races}
+{I live in a world of fire and sand. The crimson sun scorches the life from anything that crawls or flies, and storms of sand scour the foliage from the barren ground. Lightning strikes from the cloudless sky, and peals of thunder roll unexplained across the vast tablelands. Even the wind, dry and searing as a kiln, can kill a man with thirst.}
+{The Wanderer’s Journal}
+
+\Capitalize{A}{thas} is a world of many races, from the gith who wander the deserts, to the tareks, too stubborn to know when they have died. Giants terrorize the Silt Sea, while belgoi steal grown men in the night. The magic of the Pristine Tower produces the New Races; most never see a second generation. Despite the variety of intelligent life, only a few races have the numbers to significantly impact the politics of the Tablelands.
+
+Though the races of the Dark Sun campaign setting resemble those of other campaign worlds, it is frequently in name only. The insular elves roam the Tablelands, trusted by no one but their own tribe‐mates. Halflings are feral creatures, possessed of a taste for human flesh. Hairless dwarves work endlessly, their entire perception of the world filtered through the lens of a single, all–consuming task. Unsleeping thri‐kreen roam the wastes, always hunting their next meal.
+
+\section{Racial Characteristics}
+
+\subsection{Ability Adjustments}
+
+Find your character’s race on Table: Athasian Racial Ability Adjustments and apply the adjustments to your character’s ability scores. If these changes put your score above 18 or below 3, that’s okay, except in the case of Intelligence, which does not go below 3 for characters.
+
+\subsection{Level Adjustment}
+
+To determine the effective character level (ECL) of a character, add its race’s level adjustment (LA) to its character class levels.
+
+Use ECL instead of character level to determine how many experience points a character needs to reach its next level. Also use ECL to determine starting wealth for a character.
+
+\subsection{Favored Class}
+
+Each race’s favored class is also given on Table: Athasian Racial Ability Adjustments. A character’s favored class doesn’t count against him or her when determining experience point penalties for multiclassing.
+
+\BigTablePair{Athasian Racial Ability Adjustments}{l l C p{6cm} p{2cm} l}{
+\bfseries Race & \bfseries Type (Subtype) & \bfseries LA & \bfseries Ability Adjustments & \bfseries Favored Class & \bfseries Languages \\
+Human & Humanoid (human) & --- & --- & Any & Common \\
+Aarakocra & Monstrous Humanoid & +1 & $-2$ Strength, +4 Dexterity, $-2$ Charisma & Cleric & Auran, Common \\
+Dwarf & Humanoid (dwarf) & --- & +2 Constitution, $-2$ Charisma & Fighter & Common, Dwarven \\
+Elf & Humanoid (elf) & --- & +2 Dexterity, $-2$ Constitution & Rogue & Common, Elven \\
+Half-elf & Humanoid (elf) & --- & +2 Dexterity, $-2$ Charisma & Any & Common, Elven \\
+Half-giant & Giant & +2 & +8 Strength, $-2$ Dexterity, +4 Constitution, \newline $-4$ Intelligence, $-4$ Wisdom, $-4$ Charisma & Barbarian & Common \\
+Halfling & Humanoid (halfling) & --- & $-2$ Strength, +2 Dexterity & Ranger & Halfling \\
+Mul & Humanoid (dwarf) & +1 & +4 Strength, +2 Constitution, $-2$ Charisma & Gladiator & Common \\
+Pterran & Humanoid (pterran) & --- & $-2$ Dexterity, +2 Wisdom, +2 Charisma & Druid, ranger,\newline or telepath & Saurian \\
+Thri-kreen & Monstrous Humanoid & +2 & +2 Strength, +4 Dexterity, $-2$ Intelligence, \newline +2 Wisdom, $-4$ Charisma & Psychic warrior & Kreen}
+
+\subsection{Race And Languages}
+
+Only races that live in the reach of the city-states know how to speak Common. A aarakocra, dwarf, elf, half-elf, halfling, pterran, or thri-kreen also speaks a racial language, as appropriate. A character who has an Intelligence bonus at 1st level speaks other languages as well, one extra language per point of Intelligence bonus as a starting character.
+
+\textbf{Literacy}: The ability to read has been outlawed for thousands of years by the sorcerer‐kings. All characters in a Dark Sun campaign start without the ability to read or write.
+
+\textbf{Class-Related Languages}: Clerics, druids, templars, and wizards can choose certain languages as bonus languages even if they’re not on the lists found in the race descriptions. These class-related languages are as follows:
+
+\textit{Cleric}: Aquan, Auran, Ignan, Terran.
+
+\textit{Druid}: Sylvan.
+
+\textit{Templar}: Templar’s City-State language.
+
+\textit{Wizard}: Draconic.
+
+\section{Humans}
+\Quote{Humans are fools, and hopelessly naive as well. They outnumber us; they are everywhere, and yet they have no more sense of their strength than a rat. Let us hope that the Datto remain that way.}{Dukkoti Nightrunner, elven warrior}
+
+While not the strongest race, nor the quickest, humans have dominated the Tablelands for the last three thousand years.
+
+\textbf{Personality:} More than other races, human personality is shaped by their social standing and background.
+
+\textbf{Physical Description:} Human males average 6 feet tall and 200 lbs, while smaller females average 5 1/2 feet and 140 pounds. Color of eyes, skin, and hair, and other physical features vary wildly; enlarged noses, webbed feet or extra digits are not uncommon.
+
+\textbf{Relations:} Human treatment of other races is usually based on what their culture has taught them. In large settlements, such as in city‐states, close proximity with many races leads to a suspicious unfriendly tolerance.
+
+\textbf{Alignment:} Humans have no racial tendency toward any specific alignment.
+
+\textbf{Human Lands:} Humans can be found anywhere, from the great city‐states to the barren wastes.
+
+\textbf{Magic:} Most humans fear and hate arcane magic, forming mobs to kill vulnerable wizards.
+
+\textbf{Psionics:} Humans see the Way as a natural part of daily life, and readily become psions.
+
+\textbf{Religion:} Most humans pay homage to the elements. Draji and Gulgs often worship their monarchs.
+
+\textbf{Language:} Most humans speak the common tongue. Nobles and artisans within a given city‐state usually speak the city language, but slaves typically only speak Common.
+
+\textbf{Names:} Nobles, artisans and traders use titles or surnames; others some simply use one name.
+
+\textbf{Male Names:} Agis of Asticles, King Tithian, Lord Vordon, Pavek, Trenbull Al’Raam’ke
+
+\textbf{Female Names:} Akassia, General Zanthiros, Lady Essen of Rees, Neeva, Sadira
+
+\textbf{Adventurers:} Some human adventurers seek treasure; others adventure for religious purposes as clerics or druids; others seek companionship or simply survival.
+
+\subsection{Human Racial Traits}
+\begin{itemize}
+  \item Medium: As Medium creatures, humans have no special bonuses or penalties due to their size. 
+  \item Human base land speed is 30 feet.
+  \item 1 extra feat at 1st level.
+  \item 4 extra skill points at 1st level and 1 extra skill point at each additional level.
+  \item Automatic Language: Common. Bonus Languages: Any (other than secret languages, such as Druidic). See the Speak Language skill.
+  \item Favored Class: Any. When determining whether a multiclass human takes an experience point penalty, his or her highest-level class does not count.
+\end{itemize}
+
+\section{Aarakocra}
+\Quote{You are all slaves. You all suffer from the tyranny of the ground. Only in the company of clouds will you find the true meaning of freedom.}{Kekko Cloud‐Brother, aarakocra cleric}
+
+Aarakocra are the most commonly encountered bird–people of the Tablelands. Some are from Winter Nest in the White Mountains near Kurn, while others are from smaller tribes scattered in the Ringing Mountains and elsewhere. These freedom‐loving creatures rarely leave their homes high in the mountains, but sometimes, either as young wanderers or cautious adventurers, they venture into the inhabited regions of the Tablelands.
+
+\textbf{Personality:} These bird‐people can spend hours riding the wind currents of the mountains, soaring in the olive‐tinged Athasian sky. While traveling, aarakocra prefer to fly high above to get a good view all around their location and detect any threats well in advance. When they stop to rest, they tend to perch on high peaks or tall buildings. Enclosed spaces threaten the aarakocra, who have a racial fear of being anywhere they cannot stretch their wings. This claustrophobia affects their behavior. Unless it is absolutely necessary, no aarakocra will enter a cave or enclosed building, or even a narrow canyon.
+
+\textbf{Physical Description:} Aarakocra stand 6 1/2 to 8 feet tall, with a wingspan of about 20 feet. They have black eyes, gray beaks, and from a distance they resemble lanky disheveled vultures. Aarakocran plumage ranges from silver white to brown, even pale blue. Male aarakocra weigh around 100 pounds, while females average 85 pounds. An aarakocra’s beak comprises much of its head, and it can be used in combat. At the center of their wings, aarakocra have three‐fingered hands with an opposable thumb, and the talons of their feet are just as dexterous. While flying, aarakocra can use their feet as hands, but while walking, they use their wing‐hands to carry weapons or equipment. Aarakocra have a bony plate in their chest (the breastbone), which provides protection from blows. However, most of their bones are hollow and brittle and break more easily than most humanoids. The aarakocra’s unusual build means they have difficulty finding armor, unless it has been specifically made for aarakocra. Aarakocra usually live between 30 and 40 years.
+
+\textbf{Relations:} Aarakocra zealously defend their homeland. They are distrustful of strangers that venture onto their lands. Many of the southern tribes exact tolls on all caravans passing through their lands, sometimes kidnapping scouts or lone riders until tribute is paid. Tribute can take the form of livestock or shiny objects, which aarakocra covet. Some evil tribes may attack caravans without provocation. Aarakocra have great confidence and pride in their ability to fly, but have little empathy for land–bound races.
+
+\textbf{Alignment:} Aarakocra tend towards neutrality with regard to law or chaos. With respect to good and evil, Aarakocran tribes usually follow the alignment of their leader. A tribe whose leader is neutral good will contain lawful good, neutral good, chaotic good and neutral members, with most members being neutral good. Aarakocra, even good ones, rarely help out strangers.
+
+\textbf{Aarakocran Lands:} Most Aarakocran communities are small nomadic tribes. Some prey on caravans, while others or build isolated aeries high in the mountains. The least xenophobic aarakocra generally come from Winter Nest, in the White Mountains, a tribe allied with the city‐state of Kurn. Of all the human communities, only Kurn builds perches especially made for aarakocra to rest and do business. In contrast, king Daskinor of Eldaarich has ordered the capture and extermination of all aarakocra. Other human communities tolerate Aarakocran characters but do not welcome them. Merchants will do business with aarakocra as long as they remain on foot. Most land‐bound creatures are suspicious of strange creatures that fly over their herds or lands unannounced, and templars, even in Kurn, have standing orders to attack creatures that fly over the city walls without permission.
+
+\textbf{Magic:} Most Aarakocran tribes shun wizardly magic, but a few evil tribes have defilers, and one prominent good‐aligned tribe, Winter’s Nest, has several preservers.
+
+\textbf{Psionics:} Aarakocra are as familiar with psionics as other races of the tablelands. They particularly excel in the psychoportation discipline. In spite of their low strength and constitutions, they excel as psychic warriors, often using ranged touch powers from above to terrifying effect.
+
+\textbf{Religion:} Aarakocran shamans are usually air clerics, sometimes sun clerics, and occasionally druids. Most rituals of Aarakocran society involve the summoning of an air elemental, or Hraak’thunn in Auran (although an aarakocra would call their language Silvaarak, and not Auran). Summoned air elementals are often used in an important ritual, the Hunt. The Aarakocran coming of age ceremony involves hunting the great beasts found in the Silt Sea.
+
+\textbf{Language:} Athasian aarakocra speak Auran. Aarakocra have no written language of their own, though some of the more sophisticated tribes have borrowed alphabets from their land‐bound neighbors. Regardless of the language spoken, aarakocra do not possess lips, and therefore cannot even approximate the ‘m’, ‘b’ or ‘p’ sounds. They have difficulty also with their ‘f’s and ‘v’s, and tend to pronounce these as ‘th’ sounds.
+
+\textbf{Male Names:} Akthag, Awnunaak, Cawthra, Driikaak, Gazziija, Kraah, Krekkekelar, Nakaaka, Thraka.
+
+\textbf{Female Names:} Arraako, Kariko, Kekko, Lisako, Troho.
+
+\textbf{Tribal Names:} Cloud Gliders, Sky Divers, Peak Masters, Far Eyes, Brothers of the Sun.
+
+\textbf{Adventurers:} Adventuring aarakocra are usually young adults with a taste for the unknown. They are usually curious, strong‐minded individuals that wish to experience the lives of the land‐bound peoples. Good tribes see these young ones as undisciplined individuals, but can tolerate this behavior. Evil tribes may view this sort of adventurous behavior as treacherous, and may even hunt down the rogue member.
+
+\subsection{Aarakocra Society}
+The aarakocra have a tribal society. The civilized tribes of Winter Nest form the largest known community of aarakocra in the Tyr region. Though their communities are lead by a chieftain, the aarakocra have a great love of personal freedom. So while the chieftain makes all major decisions for the community, unless she consults with the tribal elders and builds a strong consensus within the tribe first, her decisions may be ignored.
+
+Air and sun shamans play an important role in aarakocra societies. Aarakocra worship the sun because it provides them with the thermals they need to soar. The air shamans of Winter Nest lead their community in daily worship of the air spirits.
+
+Aarakocra of Winter Nest have a deep and abiding respect for the gifts of nature and little patience for those who abuse those gifts. They look after the natural resources of the White Mountains and have been known to punish those who despoil or abuse them.
+
+In more primitive societies, female aarakocra rarely travel far from the safety of the nest, and focus solely on raising the young. In Winter Nest, both sexes participate in all aspects of society, with females more often elected by the elders to be chieftains.
+
+Aarakocra believe that their ability to fly makes them superior to all other races and thus they have great confidence and pride in themselves. Though they often express sympathy for people unable to fly, this more often comes across as condescending.
+
+Aarakocra are carnivores, but do not eat intelligent prey.
+\subsection{Roleplaying Suggestions}
+Loneliness doesn’t bother you like it bothers people of other races. You loathe the heat and stink of the cities, and long for cold, clean mountain air. The spectacle and movement of so many sentient beings fascinates you, but watching them from above satisfies your curiosity. The very thought of being caught in a crowd of creatures, pinned so tight that you can’t move your own wings, fills you with terror.
+
+You are friendly enough with people of other races, provided they respect your physical distance, and are willing to be the ones that approach you. You form relationships with individuals, but don’t involve yourself in the politics of other racial communities – in such matters you prefer to watch from above and to keep your opinions to yourself unless asked.
+
+You prefer to enter buildings through a window rather than through a door. Your instincts are to keep several scattered, hidden, nests throughout the areas that you travel regularly: one never knows when one might need a high place to rest. Remember your love of heights and claustrophobia, and rely on Aarakocran skills and tactics (dive‐bombing). Take advantage of your flying ability to scout out the area and keep a ``bird’s eye view'' of every situation.
+
+\subsection{Aarakocra Racial Traits}
+\begin{itemize}
+    \item –2 Strength, +4 Dexterity, –2 Constitution: Aarakocra have keen reflexes, but their lightweight bones are fragile.
+    \item Monstrous Humanoid: Aarakocra are not subject to spells or effects that affect humanoids only, such as charm person or dominate person.
+    \item Medium: As Medium creatures, aarakocra have no special bonuses or penalties due to size.
+    \item Low‐light vision: Aarakocra can see twice as far as a human in moonlight and similar conditions of poor illumination, retaining the ability to distinguish color and detail.
+    \item Aarakocra base land speed is 20 feet, and can fly with a movement rate of 90 feet (average maneuverability).
+    \item +6 racial bonus to Spot checks in daylight. Aarakocra have excellent vision.
+    \item Natural Armor: Aarakocra have +1 natural armor bonus due to their bone chest plate that provides some protection from blows.
+    \item Natural Weaponry: An aarakocra can rake with its claws for 1d3 points of damage, and use its secondary bite attack for 1d2 points of damage.
+    \item Claustrophobic: Aarakocra receive a –2 morale penalty on all rolls when in an enclosed space. Being underground or in enclosed buildings is extremely distressing for them.
+    \item Aerial Dive: Aarakocra can make dive attacks. A dive attack works just like a charge, but the diving creature must move a minimum of 30 feet. If attacking with a lance, the aarakocra deals double damage on a successful attack. Optionally, the aarakocra can make a full attack with its natural weapons (two claws and one bite) at the end of the charge, dealing normal damage.
+    \item Automatic Languages: Auran and Common. Bonus Languages: Elven, Gith, and Saurian. Aarakocra often learn the languages of their allies and enemies.
+    \item Favored Class: Cleric. A multiclass aarakocra’s cleric class does not count when determining whether he takes an experience point for multiclassing.
+    \item Level Adjustment: +1. Aarakocra are slightly more powerful and gain levels more slowly than most of the humanoid races of the Tablelands.
+\end{itemize}
+
+\section{Dwarves}
+
+\Quote{The worst thing you can say to a dwarf is ‘It can’t be done.’ If he’s already decided to do it, he may never speak to you again. If he hasn’t decided to take up the task, he may commit imself to it simply out of spite. ‘Impossible’ is not a concept most dwarves understand. Anything can be done, with enough determination.}{Sha’len, Nibenese trader}
+
+Dwarves form a good part of the people encountered in the Tablelands. These strong and devoted beings live to fulfill their focus, a task they choose to devote their lives to. Stubborn and strong‐minded, dwarves make good companions, even though their usual focused nature can tend to be bothersome.
+
+\textbf{Personality:} Dwarves prefer to occupy themselves with meaningful tasks, and often approach these tasks with an intensity rarely seen in other races. As such, dwarves make excellent laborers, and take great pride in their accomplishments. However, their stubbornness can lead to difficulties. Dwarves will sometimes fail to listen to reason, attempting to accomplish what are impossible tasks. Dwarves live for their focus. Dwarves that die while being unable to complete their focus return from the dead as banshees to haunt their unfinished work. A dwarf also rarely divulges his focus to anyone.
+
+\textbf{Physical Description:} The dwarves of the Tablelands stand 4 1/2 to 5 feet tall, with big muscular limbs and a strong build. They weigh on average 200 lbs. Dwarves are hairless, and find the very idea of hair repulsive. They have deeply tanned skin, and rarely decorate it with tattoos. Dwarves can live up to 250 years.
+
+\textbf{Relations:} A dwarfʹs relation with others is often a function of his focus. People that help the dwarf accomplish his focus or share his goals are treated with respect and considered good companions. There is little room for compromise, though, with those that disagree with the dwarf’s focus. If they hinder the dwarf, they are considered obstacles that must be removed. Community is important to the dwarves. Dwarves have a very strong racial affinity. They rarely share their history with non–dwarves; it can take years for a stranger to gain enough trust to be admitted into a Dwarven family circle.
+
+\textbf{Alignment:} Dwarves tend towards a lawful alignment, with most members either good or neutral. Their devotion to following the established hierarchy in their village means they tend to follow the rules, sometimes to the point of ridicule.
+
+\textbf{Dwarven Lands:} There are three main Dwarven settlements in the Tablelands: Kled, located near the city‐state of Tyr, and the twin villages of North and South Ledopolus located in the southwestern edge of the Tablelands. Some Dwarven communities have developed in the city‐states and in some small villages, while other dwarves have taken up residence with the slave tribes of the wastes.
+
+\textbf{Magic:} Like most peoples, dwarves have an aversion to wizardly magic, and they are the least amenable to changing their minds about anything. Dwarves rarely take to the wizardly arts; the few that do are usually shunned from respectable Dwarven society. Some dwarves will travel with a wizard who proves himself a worthy companion, but few dwarves will truly ever trust a wizard.
+
+\textbf{Psionics:} Like almost everything that they do, dwarves take to psionics with a vengeance. They make formidable egoists and nomads.
+
+\textbf{Religion:} Dwarven communities are ruled by their elders; dwarves are particularly devoted to their community leader, the Urhnomous. Dwarves typically worship elemental earth. Fire is sometimes worshiped for its destructive power and water for its healing nature. Air’s intangibility and chaotic nature attracts few Dwarven worshipers. Dwarven druids are unusual, and tend to devote themselves to a particular area of guarded land.
+
+\textbf{Language:} Dwarves have a long and proud oral history. They have an old written language, but this is mostly used for writing histories. Dwarves will not teach their ancient language to outsiders, they prefer to keep that knowledge to themselves. The Dwarven language is deep and throaty, composed of many guttural sounds and harsh exclamations. Most non‐dwarves get raw throats if they try to speak Dwarven for more than a few hours.
+
+\textbf{Names:} A dwarf’s name is usually granted to him by his clan leader after he completes his first focus.
+
+\textbf{Male Names:} Baranus, Biirgaz, Bontar, Brul, Caelum, Caro, Daled, Drog, Fyra, Ghedran, Gralth, Gram, Jurgan, Lyanius, Murd, Nati, Portek.
+
+\textbf{Female Names:} Ardin, Erda, Ghava, Greshin, Gudak, Lazra, N’kadir, Palashi, Vashara.
+
+\textbf{Adventurers:} Dwarves adventure for different reasons. Sometimes they may adventure in order to learn about the Tablelands, although these curious adventurers tend to be young and brash. Many adventuring dwarves travel the Tablelands to complete their focus because sometimes a task may take them away from their communities. Some search for ancient Dwarven villages and the treasures they contain.
+
+\subsection{Dwarf Society}
+No dwarf is more content than while working toward the resolution of some cause. This task, called a focus, is approached with single‐minded direction for the dwarf’s entire life, if need be, though most focuses require considerable less time.
+
+Free dwarves form communities based on clans, and are much focused on family. Ties of blood are honored and respected above all others, except the focus. Family honor is important to every dwarf, because an act that brings praise or shame in one generation is passed down to the family members of the next generation. There is no concept in the minds of dwarves of not following these family ties.
+
+Dwarven communities are found in many types of terrain, from mountains and deserts to near human cities. Most communities are small, rarely exceeding 300 members and are usually formed of extended families linked by a common ancestor. Community leaders are called Urhnomous (over‐leader). Each clan is lead by an uhrnius (leader).
+
+Most free dwarves earn their money through trade. Those that stand out in this category are Dwarven metal smiths and mercenaries. Most Athasians acknowledge Dwarven forged metal to be among the best. Some dwarves even act as metal scavengers, seeking steel scraps where ever they can be found to sell to the smiths. Dwarven mercenaries are highly prized because once their loyalty is purchased it is never changed.
+
+\subsection{Roleplaying Suggestions}
+Remember the intensity of your focus. Breaking or ignoring a focus has social, philosophical and spiritual repercussions. For someone to stand in the way of your focus is an assault on you. There is no greater satisfaction than fulfilling a difficult focus. Keep a serious, sober attitude nearly always. The only time you show your festive side is when you have recently fulfilled a focus, during the hours or days until you set a new focus.
+
+Only during these brief days of fulfillment, and only to other dwarves and your most trusted non–Dwarven friends, do you show your full joy and sense of humor. But these days are also a time of vulnerability, for until you set a new focus you lose all of your special focus–related bonuses.
+
+\subsection{Dwarven Focus}
+
+A dwarf’s focus is the central point of his existence. Nothing is more rewarding to a dwarf than to complete his focus. A focus must take at least a week to complete; anything less than that is too simple a task to be considered a focus. Dwarves receive a morale bonus working to complete a focus. The task must be directly related to the completion of the focus, however.
+
+For example, Grelak, protector of his Dwarven community, makes the retrieval of a sacred book stolen during a raid his focus. After a week of gathering clues, he sets out to retrieve the artifact from its current possessor, who hides in a trading post two weeks away. On the way to the outpost, he encounters a wild lirr; while battling this foe, he receives his morale bonus, because he is trying to reach the book. Later, Grelak stops in Nibenay for some rest, and gets in a brawl. He doesn’t receive any bonuses, because he isn’t actively pursuing his focus.
+
+\subsection{Dwarf Racial Traits}
+\begin{itemize}
+    \item +2 Constitution, –2 Charisma: Dwarves are strong and sturdy, but their single‐mindedness hinders them when dealing with others.
+    \item Humanoid (dwarf): Dwarves are humanoid creatures with the dwarf subtype.
+    \item Medium: As Medium creatures, dwarves have no special bonuses or penalties due to size.
+    \item Darkvision: Dwarves can see in the dark up to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and dwarves can function just fine with no light at all.
+    \item Dwarven base land speed is 20 feet. However, dwarves can move at this speed even when wearing medium or heavy armor or when carrying a medium or heavy load (unlike other creatures whose speed is reduced in such situations).
+    \item Stability: A dwarf gains a +4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground).
+    \item +2 racial bonus on saving throws against poison.
+    \item Weapon Familiarity: To dwarves, the urgrosh is treated as a martial rather than exotic weapon.
+    \item +2 racial bonus on saving throws against spells and spell–like effects.
+    \item +1 morale bonus on all checks directly related to their focus. This includes a skill bonus, an attack bonus, a damage bonus, or a saving throw bonus, or even a bonus to manifestation or spell save DCs.
+    \item Automatic Languages: Common and Dwarven. Bonus Languages: Elven, Giant, Gith, Kreen, Saurian.
+    \item Favored Class: Fighter. A multiclass dwarf’s fighter class does not count when determining whether he takes an experience point for multiclassing.
+\end{itemize}
+
+\section{Elves}
+\Quote{Honor? The word does not exist in the Elven language.}{Tharak, human guard}
+
+Athasʹ deserts, plains, steppes and badlands are home to the elves, a long–limbed race of trading, raiding, thieving sprinters. Running is the key to acceptance and respect among elves. Elves that are injured and cannot run are often left behind to die.
+
+\textbf{Personality:} Other races see elves as dishonest and lazy; generally a fair assessment. Elves idle around their time for days until compelled by need to exert themselves, but they can run for days without complaint. No self–respecting elf will consent to ride an animal. To do so is dishonorable; Elven custom dictates that individuals keep up or be left behind. Elves prefer to lead short, happy lives rather than long, boring ones. Seeing the future as a dark, deadly place, they prefer to live in ``the now,'' enjoying each fleeting moment. They thrive in open spaces, and tend to wither in captivity.
+
+\textbf{Physical Description:} Elves stand between 6 and 7 feet tall, with lean builds; angular, deeply etched features; and no facial hair. They dress in garb designed to protect from the desert and elements.
+
+\textbf{Relations:} Elves tend to keep to their own tribe and their proven friends unless they have some sort of an angle – something to sell, or some deception to pass off. Strangers are potential enemies waiting to take advantage of them, so elves look for every opportunity to win the advantage. If an elf believes that a companion might make a worthy friend, the elf devises a series of ``tests'' of trust that allow the companion to prove that their friendship is ``stronger than the bonds of death,'' as elves say. Once a stranger has gained an elf’s trust, he is forever that elf’s friend. If this trust is ever betrayed, it is gone forever.
+
+\textbf{Alignment:} Elves tend towards chaos because of their love of freedom, variety and self–expression. With respect to good and evil, elves tend towards neutrality, although their behavior leans towards chaos because of their love of freedom. With respect to good and evil, elves tend towards neutrality, although their behavior leans towards good – even self–sacrifice –– where the good of their tribe is at stake. Although they’ll steal everything in sight, elves are not murderous. They rarely attack anyone except those who threaten them or stand in their way.
+
+\textbf{Elven Lands:} Always at home when running in the wastes, elves often act as if all plains and badlands were Elven lands. However, since most elves are loath to settle or build, they can rarely enforce their claims. Elven tribes make a living either through herding, raiding or trading; most tribes have at one time or another plied their hand at all three of these occupations. A tribeʹs current occupation usually determines which lands they currently claim as their own. Elven herders claim grazing lands. Elven raiders claim lands crossed by trade routes. Elven traders claim no lands, but wander in search of bargains and loose purses.
+
+\textbf{Magic:} Of all Tableland races, elves have the greatest affinity towards and acceptance of arcane practices.
+
+\textbf{Psionics:} Persistence is not an Elven strong suit, so Elven Will is often weaker than that of other races. A few elves study the Way to win one more advantage in battle and trade.
+
+\textbf{Religion:} Elves revere Coraanu Star Racer as the ideal ``First Elf – the warrior thief'' the embodiment of all that elves wish to be, basing their calendar on his life and honoring his myth with exquisite song, dance and celebration. Many elves worship the elements; particularly air, which they associate with freedom, swiftness and song. Elves also honor and swear by the moons, perhaps because low‐light vision turns moonlight into an Elven advantage.
+
+\textbf{Language:} Elves of Athas share a common language and can communicate easily with each other, although each tribe has its own distinct dialect. The Elven language is filled with short, clipped words, runs with a rapid staccato pace and is difficult for novices to pick up. Disdaining the slow tedious languages of other races most elves condescend to learn the Common speech for trade. Elves that learn other tongues often hide their ability.
+
+\textbf{Names:} Whether slave or free, elves prefer to keep Elven names. Tribe members take the tribe name as surname. Elves treat the naming of young runners as a sacred responsibility, naming the children of the tribe after the first interesting thing that they do while learning to run. Elves believe with the appropriate name, a child can grow to greatness, but with the wrong name, the elf may vanish in the wastes. Sometimes a child’s name is changed because of an extraordinary deed performed during an elfʹs rite of passage.
+
+\textbf{Male Names:} Botuu (Water Runner), Coraanu (First Elf, the Warrior Thief), Dukkoti (Wind Fighter), Haaku (Two Daggers), Lobuu (First Runner), Mutami (Laughs at Sun), Nuuko (Sky Hunter), Traako (Metal Stealer).
+
+\textbf{Female Names:} Alaa (Bird Chaser), Ekee (Wild Dancer), Guuta (Singing Sword), Hukaa (Fire Leaper), Ittee (Dancing Bow), Nuuta (Quiet Hunter), Utaa (Laughing Moon)
+
+\textbf{Tribe (Clan) Names:} Clearwater Tribe (Fireshaper, Graffyon, Graystar, Lightning, Onyx, Sandrunner, Seafoam, Silverleaf, Songweaver, Steeljaw, Wavedivers, Windriders clans); Night Runner Tribe (Dark Moons, Full Moons, Half Moons, Lone Moons, New Moons, Quarter Moons clans); Shadow Tribe; Silt Stalker Tribe (Fire Bow, Fire Dagger, Fire Sword clans); Silver Hand Tribe; Sky Singer Tribe (Dawnchaser, Dayjumper, Twilightcatcher clans); Swiftwing Tribe; Water Hunter Tribe (Raindancer, Poolrunner, Lakesinger clans); Wind Dancer Tribe (Airhunter, Breezechaser clans)
+
+\textbf{Adventurers:} Elves often take up adventuring out of wanderlust, but those that persist in adventuring generally do so out of desire for profit, glory, revenge, or out of loyalty to traveling companions who have won their friendship. Elves love to boast of their accomplishments or have their deeds woven into song. Elves often hoard keepsakes from a memorable raids; some quilt pieces of stolen clothing into their cloaks. Little pleases elves as much as to flaunt a stolen item in front of its original owner. Elven custom dictates that the victim should acknowledge the accomplishment by congratulating the thief on his possession of such an attractive item. Those who fail to show such gallantry are considered poor sports. Adventurers who keep their tribal membership should give their chief periodic choice of the treasure that they have won. Holding out on a chief suggests lack of loyalty to the tribe.
+
+\subsection{Elf Society}
+Elves have an intense tribal unity that does not extend beyond their own tribe. Elves from other tribes are considered potential enemies as much as any other creature. Within a tribe all elves are considered equal with one exception, the chief. The chief rules for life and makes the major decisions concerning the tribe. The method of choosing the chief varies from tribe to tribe, with some electing the individual who demonstrates qualities of leadership the most while, the leadership in other tribes is inherited by the descendants of the previous chief. Elves do not spend vast amounts of time huddled in conference or following their chief’s orders. Their love of freedom keeps elves from becoming embroiled in the complicated court intrigues that other races face. They prefer to engage in intrigues directed against outsiders.
+
+Only with considerable effort and intent can a stranger become accepted by an elf tribe or even an individual elf. The stranger must show bravery and a willingness to sacrifice for the elf to earn acceptance. Being an elf does not increase a stranger’s chances of being accepted by a tribe.
+
+When in the company of outsiders, elves create tests of trust and friendship constantly for their companions. This continues until either the companions fail a test, in which case they will never earn the elf’s trust, or they succeed in passing enough tests to convince the elf to accept them.
+
+Years of conditioning have instilled within all elves the ability to move quickly over sandy and rocky terrain and run for long distances. Because of this natural maneuverability, elves spurn the riding of beasts for transportation. To do so is dishonorable. The Elven custom is to keep up on one’s own or be left behind.
+
+Elven culture is rich and diverse, with elf song and dance being the most captivating in the Tablelands. They have turned celebrating into an art form. Elven songs and celebrations revolve around heroes of the tribe both ancient and current members. When a hunt goes well, a tribe showers the hunt master with praise. To celebrate a marriage, elves dance to the tales of long remembered lovers.
+
+Elves have the reputation as being lazy and deceitful, which in most cases is true. They desire to lead short, happy lives as opposed to long, sad ones. This leads the elves to focus on the present rather than plan for or expect consequences in the future.
+
+However, elves do work. Thought most elves provide for themselves and their tribe through herding, all elves have a propensity for raiding. Others become merchants and some thieves. In many cases, others find it difficult to see the distinction. Though they detest hard labor, elves will spend hours negotiating with potential customers.
+
+\subsection{Roleplaying Suggestions}
+Rely on Elven combat skills (distance, bows, and fighting by the light of the moons and stars). Use Elven noncombat skills and philosophy (running, escape from entangling situations or relationships). When someone professes to be your friend, dismiss them at first and then later, offer them a test of trust. Don’t tell them that it is a test, of course. Ask them to give you one of their prize possessions, for example, or leave your own valuables out and see if they take advantage of you. Pretend to sleep, and find out what they say about you when they think you are not listening. Some elves go as far as to allow themselves to be captured to see if the presumed friend will rescue them!
+
+\subsection{Elf Racial Traits}
+\begin{itemize}
+    \item +2 Dexterity, –2 Constitution: Elves are agile, but less resilient than humans.
+    \item Humanoid (elf): Elves are humanoid creatures with the elf subtype.
+    \item Medium: As Medium creatures, elves have no special bonuses of penalties due to size.
+    \item Elven base land speed is 40 feet.
+    \item Low‐light vision: Elves can see twice as far as a human in moonlight and similar conditions of poor illumination, retaining the ability to distinguish color and detail.
+    \item Proficient with all bows.
+    \item Weapon Familiarity: Elven longblade. All elves treat the elven longblade (page 115) as a martial weapon.
+    \item +2 racial bonus to Listen, Perform, Search and Spot checks. Elves have keen senses.
+    \item Elves have a natural resistance to extreme temperatures and aren’t adversely affected by the heat of the day or the chill of the night. They treat extreme heat or cold as if it were only very hot or cold, (see DMG for rules on temperature effects) but suffer normally from abysmal heat, or from magical supernatural heat and cold.
+    \item Elf Run: After a minute of warm–up and a Concentration check (DC 10), elves can induce an elf run state. This state allows elves to hustle for long distances as easily as a human can move normally, and run for long distances as easily as a human can hustle. Each day that an elf continues the elf run, he must make additional Concentration checks to maintain his elf run state: A trivial check (DC 10) on the second day, an easy check (DC 15) on the third day, an average check (DC 20) on the fourth day, a difficult check (DC 30) on the fifth day, and a heroic check (DC 40) on the sixth day. Once the elf fails his Concentration check, he loses the elf run benefits and suffers normal penalties for extended hustling and running (PH 164). After a full day’s rest, the elf may attempt again to induce an elf run state. With a group of elves, runners add their leader’s Charisma bonus both to their movement rate and to any Fortitude checks related to movement.
+    \item Automatic Languages: Common and Elven. Bonus
+    \item Languages: Dwarven, Entomic, Kreen, Gith, Saurian, and Terran.
+    \item Favored Class: Rogue. A multiclass elf’s rogue class does not count when determining whether he takes an experience point for multiclassing.
+\end{itemize}
+
+\section{Half-Elves}
+\Quote{People are no good. You can only trust animals and the bottle.}{Delmao, half‐Elven thief}
+Unlike the parents of muls, elves and humans are often attracted to each other. Half‐elves are typically the unwanted product of a casual interracial encounter.
+
+\textbf{Personality:} Half‐elves are notorious loners. Many Athasians believe that half‐elves combine the worst traits of both races, but the most difficult aspect of half‐elves --- their lack of self–confidence comes not from their mixed origins but rather from a life of rejection from both parent races. Half‐elves try in vain to gain the respect of humans or elves.
+
+\textbf{Physical Description:} Averaging over six feet tall, half‐elves combine Elven dexterity with human resilience. Bulkier than elves, most half‐elves find it easier to pass themselves off as full humans than as full elves, but all have some features that hint at their Elven heritage.
+
+\textbf{Relations:} Humans distrust the half‐elf’s Elven nature, while elves have no use for their mixed–blood children; Elven traditions demand that such children be left behind. Human society gives half‐elves have a better chance of survival, but even less kindness. Half‐elves sometimes find friendship among muls or even Thri‐kreen. Half‐elves will cooperate with companions when necessary, but find it difficult to rely on anyone. Many half‐elves also turn to the animal world for company, training creatures to be servants and friends. Ironically, the survival skills and animal affinity that half‐elves developed to cope with isolation make them valuable beast handlers in human society.
+
+\textbf{Alignment:} Lawful and neutral half‐elves labor for acceptance from a parent race, while chaotic ones have given up on acceptance, electing instead to reject the society that has rejected them.
+
+\textbf{Half‐Elven Lands:} Despite their unique nature, half‐elves don’t form communities. The few half‐elves that settle down tend to live among humans who, unlike elves, at least find a use for them.
+
+\textbf{Magic:} Half‐elves often take up arcane studies, because it is a solitary calling.
+
+\textbf{Psionics:} Mastery of the Way often provides the independence and self–knowledge that half‐elves seek, and membership in a psionic academy can provide the half‐elf with acceptance.
+
+\textbf{Religion:} Because of their alienation from society and their affinity with animals, half‐elves make excellent druids. Some half‐elves turn their resentment of society into a profession and become sullen, bullying templars. As clerics, they are drawn to water’s healing influence.
+
+\textbf{Language:} Half‐elves all speak the Common tongue. A few half‐elves pick up the Elven language.
+
+\textbf{Names:} Half‐elves nearly always have human names. Unable to run as elves, they never receive Elven given names, or acceptance in an Elven tribe that they could use as surname.
+
+\textbf{Adventurers:} In a party, half‐elves often seem detached and aloof.
+
+\subsection{Half-Elf Society}
+Unlike other races, half‐elves do not consider themselves a separate race, and, with very few exceptions, do not try to form half‐Elven communities. A half‐elf’s life is typically harder than either a human’s or an elf’s. It is difficult for half‐elves to find acceptance within either Elven or human society. Elves have not tolerance for those of mixed heritage, while humans do not trust their Elfish side. On the whole, humans are far more tolerant of half‐elves than elves, who often refuse to allow such children into their tribes, and are likely to cast the half‐elf’s mother from the tribe as well.
+
+Most half‐elves consider themselves outsiders to all society and tend to wander throughout their entire lives, going through life as an outsider and loner. Half‐elves are forced to develop a high level of self‐reliance. Most half‐elves take great pride in their self‐reliance, but this pride often makes half‐elves seem aloof to others. For many half‐elves the detachment is a defensive mechanism to deal with a desire for acceptance from either human or Elven society that will likely never come. Some half‐elves turn to the animal world for company, training creatures to be servants and friends.
+
+\subsection{Roleplaying Suggestions}
+Desperate for the approval of either elves or humans, you are even more desperate to appear independent and self–reliant, to cover your desire for approval. As a result, you tend towards a feisty, insecure, sullen self–reliance, refusing favors. You take every opportunity to show off your skills in front of elves and humans, but if an elf or a human were to actually praise you, you would probably react awkwardly or suspiciously. From your childhood, your closest friendships have been with animals. Other half‐elves do not interest you. As time goes by and you learn from experience, you will find that you can also get along with other races neither human nor Elven: dwarves, pterran, muls, even thri‐kreen. You don’t feel the terrible need for their approval, and yet they give it more readily.
+
+\subsection{Half-Elf Racial Traits}
+\begin{itemize}
+    \item +2 Dexterity, –2 Charisma: Half‐elves are limber like their Elven parents, but their upbringing leaves them with a poor sense of self, and affects their relations with others.
+    \item Humanoid (elf): Half‐elves are humanoid creatures with the elf subtype.
+    \item Medium: As Medium creatures, half‐elves have no bonuses or penalties due to size.
+    \item Half‐elf base land speed is 30 feet.
+    \item Low-Light Vision: A half-elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions..
+    \item Half‐elves gain a +2 racial bonus to Disguise checks when impersonating elves or humans.
+    \item +1 racial bonus on Listen, Search and Spot checks. Half‐elves have keen senses, but not as keen as those of an elf.
+    \item +2 racial bonus on all Survival and Handle Animal checks. Half‐elves spend a lot of time in the wilds of the tablelands.
+    \item Elven Blood: For all effects related to race, a half‐elf is considered an elf. Half‐elves, for example, are just as vulnerable to effects that affect elves as their elf ancestors are, and they can use magic items that are only usable by elves.
+    \item Automatic Languages: Common and Elven. Bonus Languages: Any.
+    \item Favored Class: Any. When determining whether a multiclass half‐elf takes an experience point penalty, his highest–level class does not count when determining whether he takes an experience point for multiclassing.
+\end{itemize}
+
+\section{Half-Giants}
+\Quote{Mind of a child, strength of three grown men. I’ve seen a half-giant tear the walls out of a building because he wanted a better look at the tattoos on a mul inside.}{Daro, human trader}
+
+Legend has it that in ages past, a sorcerer‐queen used wizardry to beget a union of giant and human in order to create a race of powerful slaves. Whatever the truth of this legend, the half‐giant race has increased in number and is now fairly common especially in human controlled lands near the shore of the Sea of Silt. Half‐giants gain great strength, but dull wits, from their giant heritage, and are nearly as agile as their human forbearers.
+
+\textbf{Personality:} Because of their artificial origins, there is no half‐giant culture, tradition or homeland. Half‐giants readily imitate the customs and cultures of their neighbors. Half‐giants often display curiosity, a willingness to learn, and a general tendency towards kindness.
+
+\textbf{Physical Description:} Physically, the half‐giant is enormous, standing about 11 1/2 feet tall and weighing around 1,200 pounds. Half‐giants have thick hair, which is often kept braided (especially among females) or in a single tail that hangs behind the head and down the back. They dress in garb suitable to their occupation or environment. Half‐giants mature at about 24 years of age and can live about 170 years.
+
+\textbf{Relations:} The most powerful warriors on Athas, half‐giants seem content to dwell in humanity’s shadow. Half‐giants tend to be friendly and eager to please, adopting the lifestyles, skills, and values of those they admire. A half‐giant character who encounters a new situation looks around him to see what other people are doing. For example, a half‐giant character that happens upon a Dwarven stone quarry may watch the dwarves, and then start quarrying stone himself. If he can make a living at it, he will continue to quarry stone just like his neighbor dwarves do; otherwise he will move on to something else.
+
+\textbf{Alignment:} Half‐giants can switch attitudes very quickly, taking on new values to fit new situations. A half‐giant whose peaceful farming life is disrupted by marauders may soon adopt the morals of the renegades who sacked his village. A half‐giant’s nature is to switch his alignment aspect to imitate or otherwise react to a significant change around him.
+
+\textbf{Half‐Giant Lands:} Half‐giants are most often found in the city‐states, serving as gladiators, laborers, soldiers, and guards. A few half‐giants collect into wilderness communities, often adopting the culture and customs of neighboring beings. The rare half‐giant community often attaches itself to a charismatic or successful leader (not necessarily a half‐giant) who demonstrates the tendencies they admire.
+
+\textbf{Magic:} If a half‐giant’s companions accept wizardry, then the half‐giant will also accept it. If a half‐giant’s companions hate wizardry, then the half‐giant will be as eager as anyone to join in stoning a wizard. Among sophisticated companions who accept preserving magic but despise defiling magic, all but the brightest half‐giants are likely to become confused, looking to their companions to see how they should react.
+
+\textbf{Psionics:} While a single–classed half‐giant psion is very rare, some half‐giants take the path of the psychic warrior, becoming killing machines that can take apart a mekillot barehanded.
+
+\textbf{Religion:} Half‐giants do not display any affinity for the worship of one element over another.
+
+\textbf{Language:} All half‐giants speak the Common speech of slaves. Whatever tongue she speaks, the half‐giant’s voice is pitched so low as to occasionally be difficult to understand.
+
+\textbf{Names:} Enslaved half‐giants often have human names, and because of this they vary greatly. Free half‐giants are likely to borrow the naming conventions of the race or people they are imitating at the time their child is born.
+
+\textbf{Adventurers:} Half‐giants are usually led to adventure by interesting companions of other races.
+
+\subsection{Half-Giant Society}
+A relatively young race, half‐giants possess very little cultural identify of their own. Instead they adopt the customs and beliefs of those other cultures in which they live. Because of this, half‐giants routinely change their alignment to match those around them who most influence them.
+Half‐giants can be found from one end of the Tablelands to the other, and often congregate in or near other population centers, absorbing the culture. Rarely do half‐giants form communities of their own.
+
+Unlike some other bastard races, half‐giants can reproduce. A single off‐spring is produced from half‐giant unions after almost a year of pregnancy.
+
+Though omnivorous, half‐giants are tremendous consumers of water and food. They require twice the amount of food and water than humans. Clothing and equipment need twice the material to construct to fit a half‐giant, leading to higher prices for half‐giants.
+
+Half‐giants tend to damage objects and buildings around them through accidents of size alone. Some considerate half‐giants camp outside city walls to avoid causing too much damage, but the draw of a city’s culture and the below average intellect of most half‐giants limits the number of half‐giants who do so.
+
+\subsection{Roleplaying Suggestions}
+Always remember how much bigger and heavier you are than everyone else. Take advantage of your height in combat, but remember the disadvantages. Between your size and your lesser wits (even if you are a relatively intelligent half‐giant people will assume you to be dull), you find yourself an object of comic relief. You are used to being teased and will endure more witty remarks than most people, but when you have been pushed too far your personality can suddenly shift, and you can unleash astonishing violence on your tormentors and any who stand in your way. Less frequently, these shifts can happen to you without provocation {you just wake up with a different ethos and altered disposition.
+
+Remember you are influenced by powerful personalities, and can shift your personality and ethics. You tend to imitate the tactics, clothes and demeanor of your ``little master.''
+\subsection{Half-Giant Racial Traits}
+\begin{itemize}
+    \item +8 Strength, +4 Constitution, –2 Dexterity, –4 Intelligence, –4 Wisdom, –4 Charisma: Half‐giants are renowned for their great strength and dull wits.
+    \item Large: As Large creatures, half‐giants take a –1 size penalty to Armor Class and a –1 penalty on all attack rolls. They also have a reach of 10 feet.
+    \item Giant: Half‐giants are creatures with the giant type.
+    \item Half‐giant base land speed is 40 feet.
+    \item Darkvision: Half‐giants can see in the dark out to 60 feet. Darkvision is black and white only, but it is otherwise like normal sight, and half‐giants can function just fine with no light at all.
+    \item Natural Armor: Half‐giants have a +2 natural armor bonus to AC.
+    \item Axis Alignment: One aspect of the half‐giant’s alignment must be fixed, and chosen during character creation. The other half must be chosen when they awake each morning. They are only bound to that alignment until they sleep again. For example, a half‐giant may have a fixed lawful alignment. Every morning, he must choose to be lawful good, lawful neutral or lawful evil. This alignment change is not mandatory.
+    \item Favored Class: Barbarian. A multiclass half‐giant’s barbarian class does not count when determining whether he takes an experience point for multiclassing.
+    \item Automatic Languages: Common. Bonus Languages: Dwarven, Gith, Giant. Half‐giants will often pick up a race’s tongue if imitating them long enough.
+    \item Level Adjustment: +2. Half‐giants are more powerful than the other races of the Tablelands and gain levels accordingly.
+\end{itemize}
+
+\section{Halflings}
+\Quote{Be wary of the forest ridge. The halflings who live there would as soon eat you alive as look at you. Chances are you won’t even notice them until you’ve become the main course.}{Mo’rune, half‐Elven ranger}
+
+Halflings are masters of the jungles of the Ringing Mountains. They are small, quick and agile creatures steeped in an ancient and rich culture that goes back far into Athas’ past. Although they are not common in the Tablelands, some halflings leave their homes in the forests to adventure under the Dark Sun. As carnivores, halflings prefer to eat flesh raw.
+
+\textbf{Personality:} Halflings have difficulty understanding others’ customs or points of view, but curiosity helps some halflings overcome their xenophobia. Little concerned with material wealth, halflings are more concerned with how their actions will affect other halflings.
+
+\textbf{Physical Description:} Halflings are small creatures, standing only about 3 1/2 feet tall and weighing 50 to 60 pounds. Rarely affected by age, halfling faces are often mistaken for the faces of human children. They dress in loincloths, sometimes with a shirt or vest, and paint their skins with bright reds and greens. Forest halflings rarely tend to their hair, and some let it grow to great lengths, though it can be unkempt and dirty. They live to be about 120 years old.
+
+\textbf{Relations:} Halfling’s culture dominates their relations with others. They relate very well to each other, since they all have the same cultural traits and are able to understand each other. Halflings of different tribes still share a tradition of song, art and poetry, which serves as a basis of communication. Creatures that do not know these cultural expressions are often at a loss to understand the halfling’s expressions, analogies and allusions to well–known halfling stories. Halflings can easily become frustrated with such ``uncultured'' creatures. They abhor slavery and most halflings will starve themselves rather than accept slavery.
+
+\textbf{Alignment:} Halflings tend towards law and evil. Uncomfortable with change, halflings tend to rely on intangible constants, such as racial identity, family, clan ties and personal honor. On the other hand, halflings have little respect for the laws of the big people.
+
+\textbf{Halfling Lands:} Halflings villages are rare in the tablelands. Most halflings live in tribes or clans in the Forest Ridge, or in the Rohorind forest west of Kurn. Many dwell in treetop villages. Non–halflings typically only see these villages from within a halfling cooking pot.
+
+\textbf{Magic:} Many halfling tribes reject arcane magic. Tribes that accept wizards tend to have preserver chieftains. Only renegade halfling tribes are ever known to harbor defilers.
+
+\textbf{Psionics:} Many halflings become seers or nomads. In the forest ridge, many tribal halflings become multiclassed seer/rangers, and become some of the deadliest trackers on Athas.
+
+\textbf{Religion:} Halflings’ bond with nature extends into most aspects of their culture. A shaman or witch doctor, who also acts as a spiritual leader, often rules their clans. This leader is obeyed without question. Halfling fighters willingly sacrifice themselves to obey their leader.
+
+\textbf{Language:} Halflings rarely teach others their language, but some individuals of the Tablelands have learned the wild speech. Halflings found in the Tablelands often learn to speak Common.
+
+\textbf{Names:} Halflings tend to have only one given name.
+
+\textbf{Male Names:} Basha, Cerk, Derlan, Drassu, Entrok, Kakzim, Lokee, Nok, Pauk, Plool, Sala, Tanuka, Ukos, Zol.
+
+\textbf{Female Names:} Alansa, Anezka, Dokala, Grelzen, Horga, Jikx, Joura, Nasaha, Vensa.
+
+\textbf{Adventurers:} Exploring the Tablelands gives curious halflings the opportunity to learn other customs. Although they may at first have difficulty in understanding the numerous practices of the races of the Tablelands, their natural curiosity enables them to learn and interact with others. Other halflings may be criminals, renegades or other tribal outcasts, venturing into the Tablelands to escape persecution by other halflings.
+
+\subsection{Halfling Society}
+Most halflings have a common outlook on life that results in considerable racial unity across tribal and regional ties. Rarely will one halfling draw the blood of another even during extreme disagreements. Only renegade halflings do not share this racial unity, and are cast out of their tribes because of it.
+
+Halfling society is difficult for other races to understand, as such concepts as conquest and plundering have no place. The most important value in halfling society is the abilities of the inner self as it harmonizes with the environment and the rest of the halfling race.
+
+Halflings are extremely conscious of their environment. They are sickened by the ruined landscape of the Tyr region and desperately try to avoid having similar devastation occur to their homelands in the Forest Ridge. Most halflings believe that care must be taken to understand and respect nature and what it means to all life on Athas.
+
+Halfling culture is expressed richly through art and song. Story telling in which oral history is passed on to the next generation is an important part of each halfling community. Halflings rely on this shared culture to express abstract thoughts and complicated concepts. This causes problems and frustration when dealing with non‐halflings. Typically halflings assume that whomever they are talking to have the same cultural background to draw upon, and find it difficult to compensate for a listener who is not intimately familiar with the halfling history and ``lacks culture.''
+
+Generally open‐minded, wandering halflings are curious about outside societies and will attempt to learn all they can about other cultures. Never, will they adopt aspects of those cultures as their own, believing halfling culture to be innately superior to all others. Nor do they seek to change others’ culture or views.
+
+While halflings are omnivorous, they vastly prefer meat. Their meat heavy diet means that halflings view all living creatures, both humanoid and animal, as more food than equals. At the same time, most halflings believe that other races have the same perception of them. As a result, halflings are rarely likely to trust another member of any other race.
+
+\subsection{Roleplaying Suggestions}
+Remember to consistently take your height into account. Roleplay the halfling culture described above: eating opponents, treating fellow halflings with trust and kindness, suspicion of big people, and general lack of interest in money.
+
+\subsection{Halfling Racial Traits}
+\begin{itemize}
+    \item –2 Strength, +2 Dexterity: Halflings are quick and stealthy, but weaker than humans.
+    \item Halflings receive a –2 penalty to all Diplomacy skill checks when dealing with other races.
+    \item Small: Halflings gain a +1 size bonus to Armor Class and a +1 size bonus on all attack rolls.
+    \item Halfling base land speed is 20 feet.
+    \item +2 racial bonus on Climb, Jump and Move Silently checks: Halflings are agile.
+    \item +2 racial bonus on saving throws against spells and spell‐like effects.
+    \item +1 racial attack bonus with a thrown weapon: javelins and slings are common weapons in feral halfling society, and many halflings are taught to throw at an early age.
+    \item +4 racial bonus on Listen checks: Halflings have keen ears. Their senses of smell and taste are equally keen; they receive a +4 to all Wisdom checks that assess smell or taste.
+    \item Automatic Languages: Halfling. Bonus Languages: Common, Dwarven, Elven, Gith, Kreen, Rhul‐thaun, Sylvan, and Yuan–ti.
+    \item Favored Class: Ranger. A multiclass halfling’s ranger class does not count when determining whether he takes an experience point for multiclassing.
+\end{itemize}
+
+\vskip10em
+
+\section{Muls}
+\Quote{See, the trick is to break their will. Not too much, mind you. Nobody wants to watch a docile gladiator, and muls are too expensive to waste as labor slaves. But, you don’t want them trying to escape every other day. Would you like to tell the arena crowd that their favorite champion will not be appearing in today’s match because he died trying to escape your pens?}{Gaal, Urikite arena trainer}
+
+Born from the unlikely parentage of dwarves and humans, muls combine the height and adaptable nature of humans with the musculature and resilience of dwarves. Muls enjoy traits that are uniquely their own, such as their robust metabolism and almost inexhaustible capacity for work. The hybrid has disadvantages in a few areas as well: sterility, and the social repercussions of being created for a life of slavery. Humans and dwarves are not typically attracted to each other. The only reason that muls are so common in the Tablelands is because of their value as laborers and gladiators: slave–sellers force–breed humans and dwarves for profit. While mul–breeding practices are exorbitantly lucrative, they are often lethal to both the mother and the baby. Conception is difficult and impractical, often taking months to achieve. Even once conceived, the mul takes a full twelve months to carry to term; fatalities during this period are high. As likely as not, anxious overseers cut muls from the dying bodies of their mothers.
+
+\textbf{Personality:} All gladiators who perform well in the arenas receive some degree of pampered treatment, but muls receive more pampering than others. Some mul gladiators even come to see slavery as an acceptable part of their lives. However, those that acquire a taste of freedom will fight for it. Stoic and dull to pain, muls are not easily intimidated by the lash. Masters are loath to slay or maim a mul who tries repeatedly to escape, although those who help the mul’s escape will be tormented in order to punish the mul without damaging valuable property. Once a mul escapes or earns his freedom, slavery remains a dominant part of his life. Most muls are heavily marked with tattoos that mark his ownership, history, capabilities and disciplinary measures. Even untattooed muls are marked as a potential windfall for slavers: it is clearly cheaper to ``retrieve'' a mul who slavers can claim had run away, than to start from scratch in the breeding pits.
+
+\textbf{Physical Description:} Second only to the half‐giant, the mul is the strongest of the common humanoid races of the tablelands. Muls grow as high as seven feet, weighing upwards of 250 pounds, but carry almost no fat at all on their broad muscular frames. Universal mul characteristics include angular, almost protrusive eye ridges, and ears that point sharply backwards against the temples. Most muls have dark copper–colored skin and hairless bodies.
+
+\textbf{Relations:} Most mul laborers master the conventions of slave life, figuring out through painful experience who can be trusted and who cannot. (Muls learn from their mistakes in the slave pits to a greater extent than other races not because they are cleverer, but because unlike slaves of other races they tend to survive their mistakes, while other slave races are less expensive and therefore disposable. Only the most foolish and disobedient mul would be killed. Most masters will sell a problem mul slave rather than kill him.) Their mastery of the rules of slave life and their boundless capacity for hard work allows them to gain favor with their masters and reputation among their fellow slaves.
+
+\textbf{Alignment:} Muls tend towards neutrality with respect to good and evil, but run the gamut with respect to law or chaos. Many lawful muls adapt well to the indignities of slavery, playing the game for the comforts that they can win as valued slaves. A few ambitious lawful muls use the respect won from their fellow–slaves to organize rebellions and strike out for freedom. Chaotic muls, on the other hand, push their luck and their value as slaves to the breaking point, defying authority, holding little fear for the lash.
+
+\textbf{Mul Lands:} As a collective group, muls have no lands to call their own. Occasionally, escaped muls band together as outlaws and fugitives, because of their common ex–slave backgrounds, and because their mul metabolism makes it easier for them to survive as fugitives while other races cannot keep up. Almost without exception, muls are born in the slave pits of the merchants and nobles of the city‐states. Most are set to work as laborers, some as gladiators, and fewer yet as soldier–slaves. Very few earn their freedom, a greater number escape to freedom among the tribes of ex–slave that inhabit the wastes.
+
+\textbf{Magic:} Muls dislike what they fear, and they fear wizards. They also resent that a wizard’s power comes from without, with no seeming effort on the wizard’s part, while the mul’s power is born of pain and labor. Mul wizards are unheard of.
+
+\textbf{Psionics:} Since most slave owners take steps to ensure that their property does not get schooled in the Way, it is rare for a mul to receive any formal training. Those that get this training tend to excel in psychometabolic powers.
+
+\textbf{Religion:} Even if muls were to create a religion of their own, as sterile hybrids, they would have no posterity to pass it on to. Some cities accept muls as templars. Mul clerics tend to be drawn towards the strength of elemental earth.
+
+\textbf{Language:} Muls speak the Common tongue of slaves, but those favored muls that stay in one city long enough before being sold to the next, sometimes pick up the city language. Because of their tireless metabolism, muls have the capacity to integrate with peoples that other races could not dream of living with, such as elves and Thri‐kreen.
+
+\textbf{Names:} Muls sold as laborers will have common slave names. Muls sold as gladiators will often be given more striking and exotic names. Draji names (such as Atlalak) are often popular for gladiators, because of the Draji reputation for violence. Masters who change their mul slaves’ professions usually change their names as well, since it is considered bad form to have a gladiator with a farmer’s name, and a dangerous incitement of slave rebellions to give a common laborer the name of a gladiator.
+
+\textbf{Adventurers:} Player character muls are assumed to have already won their freedom. Most freed mul gladiators take advantage of their combat skills, working as soldiers or guards. Some turn to crime, adding rogue skills to their repertoire. A few muls follow other paths, such as psionics, templar orders or elemental priesthoods.
+
+\subsection{Mul Society}
+Muls have no racial history or a separate culture. They are sterile and cannot reproduce, preventing them from forming family groups and clans. The vast majority of muls are born in slavery, through breeding programs. Often the parents resent their roles in the breeding program and shun the child, leaving the mul to a lonely, hard existence. The taskmaster’s whip takes the place of a family. For these reasons, many muls never seek friends or companionship, and often have rough personalities with tendencies towards violence.
+
+The mul slave trade is very profitable, and thus the breeding programs continue. A slave trader can make as much on the sale of a mul as he could with a dozen humans. As slaves, a mul has his profession selected for him and is given extensive training as he grows.
+
+Mul gladiators are often very successful, and win a lot of money for their owners. Highly successful gladiators are looked after by their owners, receiving a large retinue of other slaves to tend to their whims and needs. This has lead to the expression, ``pampered like a mul,'' being used often by the common folk.
+
+Muls not trained as gladiators are often assigned to hard labor and other duties that can take advantage of the mul’s hardy constitution and endurance.
+
+\subsection{Roleplaying Suggestions}
+Born to the slave pens, you never knew love or affection; the taskmaster’s whip took the place of loving parents. As far as you have seen, all of life’s problems that can be solved are solved by sheer brute force. You know to bow to force when you see it, especially the veiled force of wealth, power and privilege. The noble and templar may not look strong, but they can kill a man with a word. You tend towards gruffness. In the slave pits, you knew some muls that never sought friends or companionship, but lived in bitter, isolated servitude. You knew other muls who found friendship in an arena partner or co–worker. You are capable of affection, trust and friendship, but camaraderie is easier for you to understand and express – warriors slap each other on the shoulder after a victory, or give their lives for each other in battle. You don’t think of that sort of event as ``friendship'' – it just happens.
+
+\subsection{Mul Racial Traits}
+\begin{itemize}
+    \item +4 Strength, +2 Constitution, –2 Charisma: Combining the human height with the Dwarven musculature, muls end up stronger than either parent race, but their status as born–to–be slaves makes them insecure in their dealings with others.
+    \item Humanoid (dwarf): Muls are humanoid creatures with the dwarf subtype.
+    \item Medium: As Medium creatures, muls have no bonuses or penalties due to size.
+    \item Mul base land speed is 30 feet.
+    \item Darkvision: Muls can see in the dark up to 30 feet. Darkvision is black and white only, but is otherwise like normal sight, and muls can function just fine with no light at all.
+    \item Tireless: Muls get a +4 racial bonus to checks for performing a physical action that extends over a period of time (running, swimming, holding breath, and so on). This bonus stacks with the Endurance feat. This bonus may also be applied to savings throws against spells and magical effects that cause weakness, fatigue, exhaustion or enfeeblement.
+    \item Extended Activity: Muls may engage in up to 12 hours of hard labor or forced marching without suffering from fatigue.
+    \item Dwarven Blood: For all effects related to race, a mul is considered a dwarf. Muls, for example, are just as vulnerable to effects that affect dwarves as their dwarf ancestors are, and they can use magic items that are only usable by dwarves.
+    \item Nonlethal Damage Resistance 1/–. Muls are difficult to subdue, and do not notice minor bruises, scrapes, and other discomforts that pain creatures of other races.
+    \item Favored Class: Gladiator. A multiclass mul’s gladiator class does not count when determining whether he takes an experience point for multiclassing.
+    \item Automatic Language: Common. Bonus Languages: Dwarven, Elven, Gith, and Giant.
+    \item Level Adjustment: +1. As a hybrid half‐race, muls are considerably more powerful than either of their parent races, thus they gain levels more slowly.
+\end{itemize}
+
+\section{Pterrans}
+\Quote{The people of the Tablelands know nothing of life. They choose no Path for themselves, and consume everything until they are dead.}{Keltruch, pterran ranger}
+
+Pterrans are rarely seen in the Tablelands. They live their lives in the Hinterlands, rarely leaving the safety of their villages. However, the recent earthquake and subsequent storms have brought disruption into the pterran’s lives. More pterrans now venture outside their homes, and come to the Tyr region to seek trade and information.
+
+\textbf{Personality:} Among strangers, pterrans seem like subdued, cautious beings, but once others earn a pterran’s trust, they will find an individual that is open, friendly, inquisitive, and optimistic. In other respects, a pterran’s personality is largely shaped by her chosen life path: Pterrans who choose the path of the warrior are less disturbed by the brutality of the Tablelands; they are constantly examining their surroundings and considering how the terrain where they are standing could be defended; they take greatest satisfaction from executing a combat strategy that results in victory without friendly casualties. Pterrans who choose the path of the druid are most interested in plants, animals, and the state of the land; they take greatest satisfaction when they eliminate a threat to nature. Pterrans that choose the path of the mind are most interested in befriending and understanding other individuals and societies; these telepaths take greatest satisfaction from intellectual accomplishments such as solving mysteries, exposing deception, resolving quarrels between individuals, and establishing trade routes between communities.
+
+\textbf{Physical Description:} Pterrans are 5 to 6 1/2 feet tall reptiles with light brown scaly skin, sharp teeth, and a short tail. Pterrans wear little clothing, preferring belts and loincloths, or sashes. They walk upright, like humanoids, and have opposing thumbs and three–fingered, talon–clawed hands. Pterrans have two shoulder stumps, remnants of wings they possessed long ago, and a finlike growth juts out at the back of their heads. Pterrans weigh between 180 to 220 pounds. There is no visible distinction between male and female pterrans.
+
+\textbf{Relations:} Pterrans are new to the Tablelands, and unaccustomed to cultures and practices of the region. They have learned to not judge too quickly. Their faith in the Earth Mother means they undertake their adventure with open minds, but they will remain subdued and guarded around people they do not trust. A pterran’s respect for the Earth Mother governs all his behavior. Creatures that openly destroy the land or show disrespect for the creatures of the wastes are regarded suspiciously. Pterrans understand the natural cycle of life and death, but have difficulty with some aspects of the city life, such as cramped living spaces, piled refuse, and the smells of unwashed humanoids.
+
+\textbf{Alignment:} Pterrans tend towards lawful, well–structured lives, and most of them are good. Evil pterran adventurers are usually outcasts who have committed some horrible offense.
+
+\textbf{Pterran Lands:} Most adventuring pterrans come from one of two villages in the Hinterlands, southwest of the Tyr regions: Pterran Vale and Lost Scale.
+
+\textbf{Magic:} The wizard’s use of the environment as a source of power conflicts with a pterran’s religious beliefs. Pterrans will cautiously tolerate members of other races who practice preserving magic, if the difference is explained to them.
+
+\textbf{Psionics:} Virtually all pterrans have a telepathic talent, and pterran psions are nearly universally telepaths. Telepathy is considered one of the honored pterran ``life paths.''
+
+\textbf{Religion:} Pterrans worship the Earth Mother, a representation of the whole world of Athas. Their devotion to the Earth Mother is deeply rooted in all aspects of their culture, and it defines a pterran’s behavior. All rituals and religious events are related to their worship of the Earth Mother. Religious events include festivals honoring hunts or protection from storms, with a priest presiding over the celebration. Most pterran priests are druids.
+
+\textbf{Language:} Pterran speak Saurian with an accent that is difficult for other races to understand. The long appendage at the back of their head enables them to create sounds that no other race in the Tablelands can reproduce. The sounds are low, and resonate through the pterran’s crest. Humanoid vocal chords cannot reproduce such sounds. Pterrans learn the Common tongue easily, but speak it with a slight, odd accent.
+
+\textbf{Names:} Pterrans earn their first name just after they hatch, based on the weather and season of their hatching. After the pterran has decided upon a Life Path and has completed their apprenticeship, she receives title that becomes the first part of her name. This marks her transition into pterran society. There are a number of traditional names associated with each Life Path, but names do not always come from these ranks.
+
+\textbf{Male Names:} Airson, Darksun, Earthsong, Suntail, Goldeye, Onesight, Terrorclaw.
+
+\textbf{Female Names:} Cloudrider, Greenscale, Lifehearth, Rainkeeper, Spiritally, Watertender.
+
+\textbf{Path Name:} Aandu, Caril, Dsar, Everin, Illik, Myril, Odten, Qwes, Pex, Ptellac, Ristu, Ssrui, Tilla, Xandu.
+
+\textbf{Tribe or Village Names:} Pterran Vale, Lost Scale
+
+\textbf{Adventurers:} Pterrans adventure because they believe the recent earthquake and disturbing events are signs from the Earth Mother that they should get more involved in the planet’s affairs. They believe that these recent upheavals of nature are signs that the Earth Mother needs help, and this is a call the pterrans will gladly accept. As such, the most brave and adventurous of the pterrans have begun to establish contact with Tyr and some merchant houses, hoping to expand their contacts and information.
+
+\subsection{Pterran Society}
+Pterran society is based largely on ceremony and celebrations. An area is set aside in the center of each village for ceremonies. Pterrans revere the world of Athas as the Earth Mother, and believe themselves to be her favored children. Throughout the day, they engage in a number of ceremonies that give thanks to the Earth Mother. These are led by druids who play a very important role in pterran society.
+
+A pterran village is a collection of many smaller family dwellings. Pterrans always bear young in pairs.
+
+At age 15 every pterran chooses a ``life path.'' The three main life paths are the path of the warrior, the path of the druid and the path of the psionicist, though lesser life paths exist as well.
+
+More pterrans follow the path of the warrior than any of the other paths, and become protectors of their villages as well as the tribe’s weapon makers.
+
+Pterrans that choose the path of the druid provide an important role in the daily ceremonies to the Earth Mother.
+
+Fewer pterrans choose the path of the psionicist than the other two major paths, as psionics are viewed as outside of nature. Psionicists are viewed with suspicion by the rest of the tribe; however, they do provide valuable skills to the tribe and are often the tribe’s negotiators when they meet outsiders.
+
+Pterrans are omnivores. Much of their diet comes from hunting animals and raising crops. Kirre, id fiend, and flailer are all considered pterran delicacies.
+
+\subsection{Roleplaying Suggestions}
+Remember your character class is your ``life path.'' You think of yourself, and present yourself first and foremost as a druid, a warrior or a psion. Remember your daily celebrations and giving of thanks to the Earth Mother. You can usually find a reason to be grateful. Disrespect for the land angers you, since the whole land has withered under the disrespect of foolish humans and others. You celebrate with song and with dance. You have a good sense of humor but it does not extend to blasphemies such as defiling. In initial role–playing situations, you are unfamiliar with the customs and practices of the societies of the Tyr Region. However, you are not primitive by any definition of the word. You look upon differences with curiosity and a willingness to learn, as long as the custom doesn’t harm the Earth Mother or her works.
+
+\subsection{Pterran Racial Traits}
+\begin{itemize}
+    \item –2 Dexterity, +2 Wisdom, +2 Charisma: Pterrans’ strong confidence and keen instincts for others’ motives make them keen diplomats, and when they take the path of the psion, powerful telepaths.
+    \item Humanoid (psionic, reptilian): Pterrans are humanoid creatures with the psionic and reptilian subtypes.
+    \item Medium: As Medium creatures, pterrans have no special bonuses or penalties due to size.
+    \item Pterran base land speed is 30 feet.
+    \item Poor Hearing: Pterrans have only slits for ears, and their hearing sense is diminished. Pterrans suffer a –2 penalty to Listen checks.
+    \item Natural Weaponry: Pterrans can use their natural weapons instead of fighting with crafted weapons if they so choose. A pterran can rake with their primary claw attack for 1d3 of damage for each claw, and they bite for 1d4 points of damage as a secondary attack. For more on natural attacks, see MM section on natural weapons.
+    \item Psi‐Like Ability: At will---missive. All pterrans are gifted from the day they hatch with the ability to communicate telepathically, but only with their fellow reptiles. Manifester level is equal to 1/2 Hit Dice (minimum 1st).
+    \item Weapon Familiarity: The following weapon is treated as martial rather than as an exotic weapon: thanak. This weapon is more common among pterrans than among other races.
+    \item Automatic Languages: Saurian. Bonus Languages: Common, Dwarven, Elven, Halfling, Giant, Gith, Kreen, and Yuan–ti. Pterran know the languages of the few intelligent creatures that live in the Hinterlands.
+    \item Life Path: A pterran’s life path determines his favored class. Those following the Path of the Druid have druid as a favored class; the Path of the Mind gives psion as a favored class, while the Path of the Warrior gives ranger as a favored class. A Pterran chooses a life path upon coming of age, and the path cannot be changed once chosen at character creation time.
+\end{itemize}
+
+\section{Thri-kreen}
+\Quote{This one does not speak with the quivering soft shells that lay about all night. This one might eat you, but never speak.}{Tu’tochuk}
+
+Thri‐kreen are the strangest of the intelligent races of the Tablelands. These insectoid beings possess a mindset very different from any humanoid being encountered. They roam the wastes in packs, hunting for food day and night, since they require no sleep. Thri‐kreen are quick and agile and make fearsome fighters, feared throughout the wastes.
+
+\textbf{Personality:} Since Thri‐kreen (also known simply as the kreen) do not require sleep, they have difficulty understanding this need in the humanoid races. They have difficulty understanding this state of ``laziness'' in others. Other behaviors of humanoids seem unnecessarily complex. A keen’s life is simple: hunt prey. Kreen live for the hunt, and own only what they can carry.
+
+\textbf{Physical Description:} Mature Thri‐kreen stand about 7 feet tall, with a rough body length of 11 feet. Their four arms end in claws; their two legs are extremely powerful, capable of incredible leaps. However, kreen are unable to jump backwards. Their body is covered with a sandy–yellow chitin, a tough exoskeleton that grants the Thri‐kreen protection from blows. Their head is topped with two antennae, and their two eyes are compound and multifaceted. The kreen mouth consists of small pincers. Male and female Thri‐kreen are physically indistinguishable. Thri‐kreen usually do not wear clothing, but wear some sort of harness to carry weapons and food. Many wear leg or armbands, or bracelets. Some attach rings on different places on their chitin, though this requires careful work by a skilled artisan.
+
+\textbf{Relations:} The pack mentality dominates a keen’s relation with others. Kreen hunt in packs, small groups that assemble together. Kreen will hunt prey in the same region for a while, but move on before their prey has been depleted. A kreen that joins a group of humanoids will often try to establish dominance in the group. This can be disconcerting to those unaware of the keen’s behavior, since establishing dominance usually means making threatening gestures. Once the matter is settled, they will abide by the outcome. Thri‐kreen view humanoids as sources of food, though they don’t usually hunt them, only in dire need. Many kreen have a particularly fond taste for elves; as such, meetings between these two races are often tense. However, once part of a clutch, Thri‐kreen will never turn on their humanoid friends, even in the worst of situations.
+
+\textbf{Alignment:} Most Thri‐kreen are lawful, since the pack mentality is ingrained in their beings. Kreen that deviate from this mentality are rare.
+
+\textbf{Kreen Lands:} No Thri‐kreen settlements exist in the Tyr region; kreen encountered there are either small packs of kreen, or else adventuring with humanoids. To the north of the Tyr region, beyond the Jagged Cliffs, past the Misty Border, lies the Kreen Empire. This great nation of kreen rules the Crimson Savanna, forming great city‐states that rival the humanoid city‐states of the Tyr region.
+
+\textbf{Magic:} Thri‐kreen have no natural disposition towards magic, and a wizard’s use of the environment as a source of power conflicts with a keen’s beliefs. As well, the keen’s lack of sleep and its instinctual need to hunt do not lend themselves well to magical study. Kreen wizards are extremely rare: no one has ever seen one in the Tablelands.
+
+\textbf{Psionics:} Kreen view psionics as a natural part of their existence. Some packs rely on telepathy to communicate with each member and coordinate their hunting abilities. Many kreen also use psionic powers to augment their already formidable combat prowess. Psychometabolic powers are often used to boost speed, metabolism or strength to gain an advantage in combat. Most kreen (even non–adventurers) take the psychic warrior class, which kreen consider a natural part of growing up. Kreen do not need instruction to advance in the psychic warrior class --- it comes to them as part of their ancestral memory.
+
+\textbf{Religion:} Thri‐kreen have no devotion to any god, but they hold nature and the elements in high regard. Ancestral memories guide them through their lives. Thri‐kreen revere the Great One, a legendary kreen leader from the past.
+
+\textbf{Language:} The Kreen language is very different from those of the other intelligent races. They have no lips or tongues, and so cannot make the same sounds humanoids make. Kreen language is made up of clicks, pops, or grinding noises.
+
+\textbf{Names:} Kachka, Ka’Cha, Ka’Ka’Kyl, Klik‐Chaka’da, Sa’Relka, T’Chai
+
+\textbf{Adventurers:} Kreen adventure for different reasons. Most enjoy challenges presented by new prey. Some seek out the challenge of leading new clutches, new companions and observing the different ``hunting'' techniques of the dra (sentient meat‐creatures such as humans).
+
+\subsection{Thri-kreen Society}
+Thri‐kreen hatch from eggs. All those who hatch at the same time form what is called a clutch. Thri‐kreen gather in packs that roam the wastes. Each pack consists of several clutches that roam over an area that the pack considers theirs to hunt on. There are no permanent thri‐kreen communities.
+Clutches and packs are organized along strict order of dominance. The toughest member is leader; the second most powerful is second in command and so forth. A thri‐kreen can challenge a superior for dominance initiating a contest. The contestants fight until one surrenders or dies. Afterwards, the matter is considered settled and there are no lingering resentments between victor and loser. The pack‐mates take the view that the challenger was only acting to strength the pack.
+Thri‐kreen are obsessed with hunting. They are carnivores, but seldom hunt intelligent life for food. They do have a taste for elf, which gives them a bad reputation amongst Elven tribes. When not hunting, they craft weapons, teach their young, and craft sculptures.
+The pack mentality is so ingrained in the culture that thri‐kreen apply it to every situation. Thri‐kreen feel compelled to be part of a clutch and will accept members of other races as clutch‐mates.
+\subsection{Roleplaying Suggestions}
+You tend to rely on your natural attacks and special kreen weapons. Everything you kill is a potential dinner. You have a strong need for a party leader – obedience to this leader in the party is important to you. If you seem to be the most powerful and capable, then you will assume leadership; if someone challenges your authority then you will wish to test whether they are in fact stronger than you. It is not a question of vanity; you won’t want to fight to the death, but merely to ascertain who is worthy to lead the party. You do not have the focus of a dwarf to complete a project, but you would give your life to protect your companions. If you did not trust and honor them as your own family, then you would not travel with them and work together with them. You do not understand the concept of sleep. It disturbs you that your dra companions lie unconscious for a third of their lifetimes. You own only what you can carry, caring little for money or other items that other races consider as treasure. Your philosophy of ownership sometimes leads you into conflict with presumptuous dra who think they can own buildings, land, and even whole herds of cattle!
+\subsection{Thri-kreen Racial Traits}
+\begin{itemize}
+    \item +2 Strength, +4 Dexterity, $-2$ Intelligence, +2 Wisdom, $-4$ Charisma: Thri‐kreen are fast, but their alien mindset makes it difficult for them to relate to humanoids; furthermore, their ``clutch–mind'' instincts leave them with a poor sense of themselves as individuals.
+    \item Monstrous Humanoid: Thri‐kreen are not subject to spells or effects that affect humanoids only, such as charm person or dominate person.
+    \item Medium: Thri‐kreen receive no advantages or penalties due to size.
+    \item Thri‐kreen base land speed is 40 feet.
+    \item Darkvision out to 60 feet.
+    \item Sleep Immunity. Thri‐kreen do not sleep, and are immune to sleep spells and similar effects. Thri‐kreen spellcasters and manifesters still require 8 hours of rest before preparing spells.
+    \item Natural Armor: Thri‐kreen have a +2 natural armor bonus to AC due to their naturally tough and resistant chitin.
+    \item Multiple Limbs: Thri‐kreen have four arms, and thus can take the Multiweapon Fighting feat (MM 304) instead of the Two‐Weapon Fighting feat. Thri‐kreen can also take the Multiattack feat. (These are not bonus feats).
+    \item Natural Weapons: Thri‐kreen may make bite and claw attacks as a full round action. Their primary claw attack does 1d4 points of damage for each of their four claws. Their secondary bite attack, deals 1d4 points of damage, and has a chance to poison. A thri‐kreen can attack with a weapon (or multiple weapons) at its normal attack bonus, and make either a bite or claw attack as a secondary attack.
+    \item Leap (Ex): Thri‐kreen are natural jumpers, gaining a +30 racial bonus to all Jump checks.
+    \item Deflect Arrows: Thri‐kreen gain the benefit of the Deflect Arrows feat.
+    \item Poison (Ex): A thri‐kreen delivers its poison (Fortitude save DC 11 + Con modifier) with a successful bite attack. The initial damage is 1d6 Dex, and the secondary damage is paralysis. A Thri‐kreen produces enough poison for one bite per day.
+    \item Weapon Familiarity: To thri‐kreen, the chatkcha and gythka are treated as martial rather than exotic weapons. These weapons are more common among thri‐kreen than among other races.
+    \item Thri kreen have a +4 racial bonus on Hide checks in sandy or arid areas.
+    \item Automatic Languages: Kreen. Bonus Languages: Common, Dwarven, Elven, Entomic, Saurian, and Terran.
+    \item Favored Class: Psychic warrior.
+    \item Level Adjustment: +2.
+\end{itemize}
+
+\vskip 10em
+
+\section{Other Races}
+
+Athas is a place where members of different races are usually found in the same city‐state, usually because they are going to be used in gladiatorial games as an exotic attraction, or to become slaves due to their physical might. Even though they are not usually concentrated on a specific area, these races are significant players in the Tablelands. It is only fitting then, that belgoi, gith, jozhals, ssurrans, tareks, taris, yuan‐tis, and a variety of other creatures commonly viewed as monsters might appear as player characters in a Dark Sun campaign.
+
+All the rules you need to play a character belonging to one of these races can be found in Terrors of Athas, Expanded Psionics Handbook, and the Dungeon Master’s Guide. Cultural information about several monstrous races appears in Chapter 7: Life on Athas.
+
+\section{Vital Statistics}
+
+The details of your character’s age, gender, height, weight, and appearance are up to you. However, if you prefer some rough guidelines in determining those details, refer to the tables in this section.
+
+\subsection{Character Age}
+You can choose or randomly generate your character’s age. If you choose it, it must be at least the minimum for the character’s race and class (see Table: Random Starting Ages). Your character’s minimum starting age is the adulthood age of their race plus the number of dice indicated in the entry corresponding to the character’s race and class on Table: Random Starting Ages.
+
+Alternatively, you may roll dice to determine how old your character is, as specified in Table: Random Starting Ages.
+
+With age, a character’s physical ability scores decrease and his or her mental ability scores increase. The effects of each aging step are cumulative. However, none of a character’s ability scores can be reduced below 1 in this way.
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item \textbf{Middle Age:} $-1$ to Str, Dex, and Con; \hskip10pt $+1$ to Int, Wis, and Cha.
+\item \textbf{Old:} $-2$ to Str, Dex, and Con; $+1$ to Int, Wis, and Cha.
+\item \textbf{Venerable:} $-3$ to Str, Dex, and Con; \hskip20pt $+1$ to Int, Wis, and Cha.
+\end{itemize}
+
+Aarakocra, pterrans, and thri-kreens do not suffer aging penalties or gain aging bonuses until they reach venerable age, at which point all cumulative effects apply.
+
+When a character reaches venerable age, secretly roll his or her maximum age, which is the number from the Venerable column on Table: Aging Effects plus the result of the dice roll indicated on the Maximum Age column on that table, and records the result, which the player does not know. A character who reaches his or her maximum age dies of old age at some time during the following year.
+
+The maximum ages are for player characters. Most people in the world at large die from pestilence, accidents, infections, or violence before getting to venerable age.
+
+\Table{Random Starting Ages}{X c c c c}{
+Race & Adulthood & \Cell{Barbarian \\ Rogue} & \Cell{Bard \\ Fighter \\ Gladiator \\ Ps Warrior \\ Ranger} & \Cell{Cleric \\ Druid \\ Psion \\ Templar \\ Wizard} \\
+Human & 15 years & +1d4 & +1d6 & +2d6\\
+Aarakocra & 8 years & +1d4 & +1d6 & +2d4\\
+Dwarf & 30 years & +2d6 & +4d6 & +6d6\\
+Elf & 20 years & +1d4 & +1d6 & +2d6\\
+Half-elf & 15 years & +1d6 & +2d6 & +3d6\\
+Half-giant & 25 years & +1d6 & +2d6 & +4d6\\
+Halfling & 20 years & +3d6 & +3d6 & +4d6\\
+Mul & 14 years & +1d4 & +1d6 & +2d6\\
+Pterran & 10 years & +1d6 & +1d6 & +1d6\\
+Thri-kreen & 4 years & +1d4 & +1d4 & +1d4}
+
+\Table{Aging Effects}{X c c c c}{
+Race & \Cell{Middle\\Age} & Old & Venerable & Max. Age\\
+Human & 35 years & 53 years & 70 years & +2d20 years\\
+Aarakocra & & & 36 years & +1d10 years\\
+Dwarf & 100 years & 150 years & 200 years & +4d20 years\\
+Elf & 50 years & 75 years & 100 years & +3d20 years\\
+Half-elf & 45 years & 60 years & 90 years & +2d20 years  \\
+Half-giant & 60 years & 90 years & 120 years & +1d100 years \\
+Halfling & 50 years & 75 years & 100 years & +5d10 years \\
+Mul & 30 years & 45 years & 60 years & +2d10 years \\
+Pterran & & & 40 years & +1d10 years \\
+Thri-kreen & & & 25 years & +1d10 years}
+
+\subsection{Height and Weight}
+Choose your character’s height and weight from the ranges mentioned on the racial description, or roll randomly on Table: Random Height and Weight.
+
+The dice roll given in the Height Modifier column determines the character’s extra height beyond the base height. That same number multiplied by the dice roll or quantity given in the Weight Modifier column determines the character’s extra weight beyond the base weight.
+
+Thri-kreen characters are 48 inches longer than they are tall.
+
+\Table{Random Height and Weight}{X c c c c}{
+Race & \Cell{Base\\Height} & \Cell{Height\\Modifier\\($\times 2.5$ cm)} & \Cell{Base\\Weight} & \Cell{Weight\\Modifier\\ ($\times 0.5$ kg)}\\
+Human, male & 1.47m & $+2d10$ & 60 kg & $\times 2d4$\\
+Human, female & 1.35m & $+2d10$ & 42.5 kg & $\times 2d4$\\
+Aarakocra, male & 1.93m & $+2d8$ & 35 kg & $\times 1d4$\\
+Aarakocra, female & 1.87m & $+2d8$ & 30 kg & $\times 1d4$\\
+Dwarf, male & 1.30m & $+2d4$ & 65 kg & $\times 2d6$\\
+Dwarf, female & 1.25m & $+2d4$ & 50 kg & $\times 2d6$\\
+Elf, male & 2m & $+2d6$ & 65 kg & $\times 2d4$\\
+Elf, female & 1.95m & $+2d6$ & 55 kg & $\times 2d4$\\
+Half-elf, male & 1.52m & $+2d10$ & 65 kg & $\times 2d4$\\
+Half-elf, female & 1.47m & $+2d10$ & 45 kg & $\times 2d4$\\
+Half-giant, male & 3m & $+2d12$ & 700 kg & $\times 3d4$\\
+Half-giant, female & 3m & $+2d12$ & 500 kg & $\times 3d4$\\
+Halfling, male & 0.81m & $+2d4$ & 15 kg & $\times 1$\\
+Halfling, female & 0.76m & $+2d4$ & 12.5 kg & $\times 1$\\
+Mul, male & 1.47m & $+2d10$ & 65 kg & $\times 2d6$\\
+Mul, female & 1.37m & $+2d10$ & 50 kg & $\times 2d6$\\
+Pterran, male & 1.47m & $+2d10$ & 65 kg & $\times 2d6$\\
+Pterran, female & 1.40m & $+2d10$ & 55 kg & $\times 2d6$\\
+Thri-kreen & 2.08m & $+1d6$ & 225 kg & $\times 1d4$}
+
+
+\section{Region of Origin}
+
+In Athas, where you character comes from can help dictate his speech, clothing, world view, and values. In the context of the game, these cultural differences are expressed in the choices of class, skills, feats, and prestige classes that characters from different regions make.
+
+This section describes the most common choices of game‐related options for several known regions of Athas. These choices are not meant to be restrictive, since exceptions always exist to such general rules. They simply offer guidelines for making a character seem like a true representative of his native culture.
+
+\subsection{Balic}
+The city‐state of Balic sits at the eastern tip of the Balican Peninsula, the piece of land which splits the Estuary of the Forked Tongue into its northern and southern branches. Balic is currently ruled by a triumvirate made up of its largest merchant houses.
+
+\textbf{Classes:} Bard, gladiator, templar.
+
+\textbf{Skills:} Perform (any).
+
+\textbf{Feats:} Performance Artist.
+
+\textbf{Prestige Classes:} Dune trader, master shipfloater, shadow dancer, shadow templar, shadow wizard.
+
+\subsection{Barrier Wastes}
+The Barrier Wastes is the desolate area that cuts across a massive portion of the Jagged Cliffs region, and it is home to the Bandit States, a collection of violent humanoid raiding tribes.
+
+\textbf{Classes:} Barbarian, fighter.
+
+\textbf{Skills:} Intimidate, Survival.
+
+\textbf{Feats:} Intimidating Presence, Wastelander.
+
+\textbf{Prestige Classes:} Master scout, kik, savage.
+
+\subsection{Draj}
+Draj is a warrior city‐state mostly human but intermingled with the other common races, situated on a vast mud flat east of Raam.
+
+\textbf{Classes:} Fighter, gladiator, templar.
+
+\textbf{Skills:} Intimidate, Knowledge (nature).
+
+\textbf{Feats:} Astrologer, Mekillothead.
+
+\textbf{Prestige Classes:} Arrow knight, cerulean, dune trader, eagle knight, jaguar knight, moon priest.
+
+\subsection{Eldaarich}
+Eldaarich occupies a small island in the Sea of Silt, just off the mainland. This human city‐state is ruled by the mad Daskinor and his ruthless red guards.
+
+\textbf{Classes:} Gladiator, templar.
+
+\textbf{Skills:} Intimidate, Sense Motive.
+
+\textbf{Feats:} Grovel, Paranoid, Reign of Terror.
+
+\textbf{Prestige Classes:} Brown cloak, executioner, red guard.
+
+
+\subsection{Forest Ridge}
+The Forest Ridge stretches all along the western side of the Ringing Mountains, hugging the spine of the range from north to south. This is where most halflings come from.
+
+\textbf{Classes:} Druid, ranger.
+
+\textbf{Skills:} Knowledge (nature), Survival.
+
+\textbf{Feats:} Cannibalism Ritual, Jungle Fighter, Nature’s Child.
+
+\textbf{Prestige Classes:} Elite sniper, grove master, halfling protector, tribal psionicist.
+
+
+\subsection{Gulg}
+The predominantly human city‐state of Gulg sits inside the southern portion of the Crescent Forest, almost directly east of Tyr.
+
+\textbf{Classes:} Gladiator, templar, ranger.
+
+\textbf{Skills:} Knowledge (nature), Survival.
+
+\textbf{Feats:} Jungle Fighter, Nature’s Child.
+
+\textbf{Prestige Classes:} Ambofari, dune trader, hunter noble, elite judaga, master scout, Oba’s servant.
+
+
+\subsection{Jagged Cliffs}
+One of the mist isolated places in Athas, the Jagged Cliffs are home to the rhul‐thaun, descendants of the rhulisti, and the distant relatives of the modern halflings, and keepers of the life‐shaping arts.
+
+\textbf{Classes:} Fighter, ranger.
+
+\textbf{Skills:} Climb, Craft (life‐shaped), Knowledge (life‐shaping).
+
+\textbf{Feats:} Cliff Combat, Vertical Orientation.
+
+\textbf{Prestige Classes:} Cliffclimber, life‐shaper, windrider.
+
+
+\subsection{Kurn}
+Kurn lies in a fertile valley hidden among the White Mountains themselves. The mostly human residents of Kurn are among the most sophisticated and cultured people of Athas.
+
+\textbf{Classes:} Cleric (air), templar, wizard.
+
+\textbf{Skills:} Bluff, Knowledge (arcana).
+
+\textbf{Feats:} Companion.
+
+\textbf{Prestige Classes:} Dune trader, double templar, Kurnan maker, Kurnan spymaster, loremaster.
+
+\subsection{Nibenay}
+The city‐state of Nibenay is located east of Tyr at the northern tip of the Crescent Forest and it is famous for its artisans and musicians.
+
+\textbf{Classes:} Bard, gladiator, templar.
+
+\textbf{Skills:} Craft (any), Knowledge (nature), Perform (any).
+
+\textbf{Feats:} Artisan, Astrologer, Performance Artist.
+
+\textbf{Prestige Classes:} Dune trader, mystic dancer, soulknife, wife of Nibenay.
+
+\subsection{Raam}
+The city‐state of Raam is located east of Urik and is one of the largest and most chaotic cities in the Tablelands. It also has one of the most mixed populations.
+
+\textbf{Classes:} Gladiator, templar, psion.
+
+\textbf{Skills:} Craft (any), Intimidate.
+
+\textbf{Feats:} Artisan, Mansadbar, Tarandan Method.
+
+\textbf{Prestige Classes:} Dune trader, kuotagha, servant of Badna, psiologist.
+
+\subsection{Saragar}
+Home to the Last Sea of Athas, Saragar is the legendary region where the Green Age still exists. Their residents are mostly human and elves and psionics is everyday life.
+
+\textbf{Classes:} Druid, psion, psychic warrior, wilder.
+
+\textbf{Skills:} Autohipnosys, Knowledge (psionics).
+
+\textbf{Feats:} Psionic Schooling.
+
+\textbf{Prestige Classes:} Metamind, psion uncarnate.
+
+
+\subsection{Sea of Silt}
+An endless plain of pearly powder, The Silt Sea is home to powerful, aggressive, and primitive giants. Most humanoids use it as a way of transportation using specially crafted vehicles.
+
+\textbf{Classes:} Barbarian, cleric (silt), ranger.
+
+\textbf{Skills:} Knowledge (nature), Survival.
+
+\textbf{Feats:} Giant Killer.
+
+\textbf{Prestige Classes:} Elementalist, master shipfloater.
+
+
+\subsection{Trembling Plains}
+The Trembling Plains are named for the enormous herds of mekillot that stampede across the plains during early Fruitbirth season, shaking the ground. It is home to humans, dwarves and half‐elves known as Eloy.
+
+\textbf{Classes:} Fighter, ranger.
+
+\textbf{Skills:} Survival.
+
+\textbf{Feats:} Elfish Eloy, Longshanks, Wind Racer.
+
+\textbf{Prestige Classes:} Wind walker.
+
+
+\subsection{Tyr}
+Located in a fertile valley in the foothills of the Ringing Mountains, Tyr was the first city‐state to successfully revolt against its sorcerer‐king and to unban preserving magic.
+
+\textbf{Classes:} Gladiator, wizard, templar.
+
+\textbf{Skills:} Craft (any), Diplomacy.
+
+\textbf{Feats:} Companion, Freedom, Metalsmith.
+
+\textbf{Prestige Classes:} Black cassock, draqoman, dune trader, templar knight.
+
+\subsection{Urik}
+Located northeast of Tyr, between the Dragon’s Bowl and the Smoking Crown Mountains, the city‐state of Urik is to fighters what Draj is to barbarians and cerulean wizards.
+
+\textbf{Classes:} Fighter, gladiator, psychic warrior, templar.
+
+\textbf{Skills:} Concentration, Craft (any), Knowledge (warcraft).
+
+\textbf{Feats:} Artisan, Disciplined.
+
+\textbf{Prestige Classes:} Dune trader, templar knight, war mind, yellow robe.
+
+\Chapter{Character Classes}{From the lowliest slave to the highest templar, our fates are decided for us. The slave at the hands of the master, and the templar at the will of the king. Pray to Ral and Guthay that your children are born when the stars align to favor them. Few are those privileged to choose their own path of life, and cursed are those for they are bound by choice and have but themselves to blame for their misfortune. The bard addicted to his alchemical mixtures, the templar imprisoned for his crimes, and the gladiator sacrificed for the thrill of the fight. It is the choices that define who you are and how you die, regardless of who makes them.}{The Oracle, Blue Shrine Scrolls}
+
+\section{The Classes}
+
+You may notice that there are some classes not described here. Some of these are core classes that have been deemed inappropriate to the feel of the Dark Sun campaign setting. Others are classes from previous editions of Dark Sun that don’t fit in the 3e.
+
+\textbf{Monk:} There are several monasteries on Athas, though little evidence in previous material supports the martial artist variety of monk. Monks are too few in number to warrant a core class.
+
+\textbf{Paladin:} The idea of doing good for its own sake runs contrary to the tone and theme of the setting. There are no gods to reward selfless acts, and no grand traditions of chivalry and nobility to promote. In essence, Athas is a world where evil behavior is the norm.
+
+\textbf{Sorcerer:} Mechanically, a sorcerer’s spontaneous casting and a psion’s manifesting are similar, thus including the sorcerer removes some of the uniqueness of the psion. Some also feel that an arcane spellcaster without a spellbook violates the flavor of the setting.
+
+\textbf{Soulknife:} There is no precedent of a concept such as the soulknife in any previous material. However, in a metal‐poor, high psionic world, the ability to manifest a weapon using the mind has its place. There would probably not be enough soulknives to warrant a core class, which would need to be shoehorned into the existing campaign world.
+
+\textbf{Trader:} The trader class, present in previous editions of the setting is not included here because it’s benefits and traits are nearly all encompassed in the standard set of 3rd edition skills. Reproducing the class is easily done using a standard skill‐focused class, like the rogue or bard, or using the expert NPC class.
+
+Some DMs choose to run Dark Sun as a low‐magic, low treasure campaign. In such games, the monk and soulknife could become unbalanced because of their lack of dependence on treasure.
+
+DMs are free to include any of the above core classes in their games, but these classes will not appear in any official releases.
+
+\section{Barbarian}
+\Quote{Gith’s blood! I will hunt that wizard down and skin him alive.}{Borac, mul barbarian}
+
+Brutality is a way of life in Athas, as much in some of the cities as in the dwindling tribes of Athas’ harsh wastes. Cannibal headhunting halflings (who occasionally visit Urik from the Forest Ridge) sometimes express shock at the savagery and bloodshed of the folk that call themselves ``civilized'' and live between walls of stone. They would be more horrified if they were to see the skull piles of Draj, experience the Red Moon Hunt in Gulg, or watch a seemingly docile house slave in Eldaarich rage as she finally ``goes feral'', taking every frustration of her short cruel life out on whoever happens to be closest to hand. Nibenese sages claim that the potential for savagery is in every sentient race, and the history of Athas seems to support their claim.
+
+Some on Athas have turned their brutality into an art of war. They are known as ``brutes'', ``barbarians'' or ``feral warriors'' and they wear the name with pride. Impious but superstitious, cunning and merciless, fearless and persistent, they have carved a name for their martial traditions out of fear and blood.
+
+\subsection{Making a Barbarian}
+
+The barbarian is a fearsome warrior, compensating for lack of training and discipline with bouts of powerful rage. While in this berserk fury, barbarians become stronger and tougher, better able to defeat their foes and withstand attacks. These rages leave barbarians winded; at first they only have the energy for a few such spectacular displays per day, but those few rages are usually sufficient.
+
+\textbf{Races:} Humans are often barbarians, many having been raised in the wastes or escaped from slavery. Half‐elves sometimes become barbarians, having been abandoned by their elven parents to the desert to survive on their own; if more of them survived they would be quite numerous. Dwarves are very rarely barbarians, but their mul half‐children take to brutishness like a bird takes to flight, living by their wits and strengths in the wastes. Muls have a particular inclination this way of life, and very often ``go feral'' in the wilderness after escaping slavery in the city. Elves rarely take to the barbarian class; those that do are usually from raiding tribes such as the Silt Stalkers. Half‐giants readily take the barbarian class. Despite their feral reputations, halflings rarely become barbarians; their small statures and weak strength adapts them better for the ranger class. Likewise, despite their wild nature, thri‐kreen are rarely barbarians, since their innate memories allow them to gain more specialized classes such as ranger and psychic warrior without training. Pterrans of the Forest Ridge occasionally become barbarians, but like halflings they more often favor the ranger class.
+
+\textbf{Alignment:} Barbarians are never lawful — their characteristic rage is anything but disciplined and controlled. Many barbarians in the cities are often rejects from the regular army, unable to bear regular discipline or training. Some may be honorable, but at heart they are wild. At best, chaotic barbarians are free and expressive. At worst, they are thoughtlessly destructive.
+
+\subsection{Game Rule Information}
+\textbf{Alignment:} Any nonlawful.
+
+\textbf{Hit Die:} d12.
+
+\subsection{Class Skills}
+\textbf{Class Skills:} Climb (Str), Craft (Int), Escape Artist (Des), Handle Animal (Cha), Intimidate (Cha), Jump (Str), Listen (Wis),    Profession (Wis), Ride (Dex), and Survival (Wis).
+
+\textbf{Skill Points per Level:} 4 + Int modifier (x4 at 1st level).
+
+\subsection{Class Features}
+
+\textbf{Weapon and Armor Proficiency:} A barbarian is proficient with all simple and martial weapons, light armor, medium armor, and shields (except tower shields).
+
+\textbf{Fast Movement (Ex):} A barbarian’s land speed is faster than the norm for his race by +10 feet. This benefit applies only when he is wearing no armor, light armor, or medium armor and not carrying a heavy load. Apply this bonus before modifying the barbarian’s speed because of any load carried or armor worn.
+
+\textbf{Rage (Ex):} A barbarian can fly into a rage a certain number of times per day. In a rage, a barbarian temporarily gains a +4 bonus to Strength, a +4 bonus to Constitution, and a +2 morale bonus on Will saves, but he takes a $-2$ penalty to Armor Class. The increase in Constitution increases the barbarian’s hit points by 2 points per level, but these hit points go away at the end of the rage when his Constitution  score drops back to normal. (These extra hit points are not lost first the way temporary hit points are.) While raging, a barbarian cannot use any Charisma-, Dexterity-, or Intelligence-based skills (except for Balance, Escape Artist, Intimidate, and Ride), the Concentration skill, or any abilities that require patience or concentration, nor can he cast spells or activate magic items that require a command word, a spell trigger (such as a wand), or spell completion (such as a scroll) to function. He can use any feat he has except Combat Expertise, item creation feats, and metamagic feats. A fit of rage lasts for a number of rounds equal to 3 + the character’s (newly improved) Constitution modifier. A barbarian may prematurely end his rage. At the end of the rage, the barbarian loses the rage modifiers and restrictions and becomes fatigued ($-2$ penalty to Strength, $-2$ penalty to Dexterity, can’t charge or run) for the duration of the current encounter (unless he is a 17th-level barbarian, at which point this limitation no longer applies).
+
+A barbarian can fly into a rage only once per encounter. At 1st level he can use his rage ability once per day. At 4th level and every four levels thereafter, he can use it one additional time per day (to a maximum of six times per day at 20th level). Entering a rage takes no time itself, but a barbarian can do it only during his action, not in response to someone else’s action. 
+
+\textbf{Uncanny Dodge (Ex):} At 2nd level, a barbarian retains his Dexterity bonus to AC (if any) even if he is caught flat-footed or struck by an invisible attacker. However, he still loses his Dexterity bonus to AC if immobilized. If a barbarian already has uncanny dodge from a different class, he automatically gains improved uncanny dodge instead.
+
+
+\end{document}
