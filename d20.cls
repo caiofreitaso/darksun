@@ -9,6 +9,7 @@
 \RequirePackage{cuted}
 \RequirePackage{lettrine}
 \RequirePackage{tabularx}
+\RequirePackage{hyperref}
 \RequirePackage[table]{xcolor}
 
 \definecolor{TableColor}{HTML}{fb9c80}
@@ -50,7 +51,7 @@
 	\chapter{#1}
 	\begin{strip}
 	\Quote{#2}{#3}
-	\end{strip}\par\nobreak
+	\end{strip}
 }
 
 % Captilize
@@ -96,7 +97,7 @@
 	\end{table*}
 }
 \newcommand{\BigTablePair}[3]{
-	\begin{table*}[h!]
+	\begin{table*}[ht!]
 	\rowcolors{0}{white}{TableColor}\scriptsize
 	\ifx&#1&\else\caption{#1}\vskip 5pt\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
