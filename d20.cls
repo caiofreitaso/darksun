@@ -70,7 +70,7 @@
 			\setlength\parindent{5pt}
 			``#1''\vspace{-0.6em}
 		}
-		\ifx&#2&\else\begin{flushright}{\color{ChapterColor}--- #2}\end{flushright}\fi
+		\ifx&#2&\vskip1em\else\begin{flushright}{\color{ChapterColor}--- #2}\end{flushright}\fi
 	}
 }
 \newcommand{\Chapter}[3]{
