@@ -171,6 +171,12 @@
 		#3
 	}
 }
+\newcommand{\PsychicTable}[3][l l C C C l >{\raggedleft\arraybackslash}b{2cm} >{\raggedleft\arraybackslash}b{2cm} >{\raggedleft\arraybackslash}b{2cm}]{
+	\BigTablePair{#2}{#1}{
+		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
+		#3
+	}
+}
 \newcommand{\SuperRule}{
 	{\noindent\hfil\color{ChapterColor}\rule{.9\linewidth}{1.2pt}\hfil}
 }
