@@ -8,14 +8,21 @@
 \LoadClass[10pt,a4paper,final,twocolumn]{book}
 \RequirePackage{cuted}
 \RequirePackage{lettrine}
-\RequirePackage{tabularx}
-\RequirePackage{hyperref}
-\RequirePackage{booktabs}
+\RequirePackage{tabularx,booktabs}
+\RequirePackage{imfellEnglish}
 \RequirePackage[table]{xcolor}
 
 \definecolor{TableColor}{HTML}{fb9c80}
 \definecolor{QuoteColor}{HTML}{b45e45}
 \definecolor{ChapterColor}{HTML}{702311}
+
+% Font settings
+\renewcommand*\rmdefault{lmr}
+\newcommand\textold[1]{{\imfellEnglish #1}}
+\newcommand\tableheader{\imfellEnglish\scshape}
+% \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
+% \renewcommand\bfseries{\scshape\imfellEnglish}
+% \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % Table of Contents
 \renewcommand\tableofcontents{
@@ -29,25 +36,41 @@
 
 % Chapter Name
 \def\@makechapterhead#1{%
-  {\parindent \z@ \raggedright \normalfont
-    \ifnum \c@secnumdepth >\m@ne
-      \if@mainmatter
-        \Large\bfseries \@chapapp\space \thechapter \kern 0.5em
-      \fi
-    \fi
-    \interlinepenalty\@M
-    \Huge \bfseries \color{ChapterColor} \raggedleft \uppercase #1\par\nobreak\p@
-  }}
+	{
+		\parindent \z@ \imfellEnglish%
+		\ifnum \c@secnumdepth >\m@ne%
+			\if@mainmatter%
+				\Large\ \@chapapp\space\thechapter\kern0.3em%
+			\fi%
+		\fi%
+		\interlinepenalty\@M%
+		\Huge\bfseries\color{ChapterColor}\raggedleft\MakeUppercase{#1}
+		\par\nobreak%
+	}
+}
+
+% Caption
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{\imfellEnglish#1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    \imfellEnglish #1: #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
 
 % Add quotes
 \newcommand{\Quote}[2]{
 	{
-		\color{QuoteColor}
-		\setlength\parindent{5pt}
-		\scriptsize \itshape
-		``#1''\vspace{-1em}
-		\normalfont\color{ChapterColor}
-		\begin{flushright}{--- #2}\end{flushright}
+		\imfellEnglish\footnotesize
+		{
+			\itshape\color{QuoteColor}
+			\setlength\parindent{5pt}
+			``#1''\vspace{-0.6em}
+		}
+		\ifx&#2&\else\begin{flushright}{\color{ChapterColor}--- #2}\end{flushright}\fi
 	}
 }
 \newcommand{\Chapter}[3]{
@@ -64,32 +87,45 @@
 \renewcommand \section {
 	\@startsection{section}
 	{1}
-	{0pt}{.5em}{.5em}{\color{ChapterColor}\normalfont\LARGE\bfseries\raggedleft\uppercase}
+	{0pt}{.5em}{.5em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
 }
 \renewcommand \subsection {
 	\@startsection{subsection}
 	{2}
-	{0pt}{.5em}{.5em}{\color{QuoteColor}\normalfont\large\bfseries\uppercase}
+	{0pt}{.5em}{.2em}{\color{QuoteColor}\Large\scshape\imfellEnglish}
 }
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.5em}{.5em}{\color{TableColor}\normalfont\normalsize\bfseries}
+	{0pt}{.5em}{.2em}{\color{TableColor}\normalsize\imfellEnglish}
 }
 
 \setlength{\columnsep}{20pt}
 \setlength{\voffset}{-1.54cm}
-\setlength{\tabcolsep}{0.05cm}
+\setlength{\tabcolsep}{0.1cm}
 \setlength{\textheight}{24cm}
-% \setlength{\textwidth}{17cm}
+\setlength{\belowcaptionskip}{.2em}
+
+% NPC functions
+\newcommand{\spelllist}[2]{#1 -- \itshape #2\normalfont}
 
 % Table commands
+%% Column types
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{Z}[1]{>{\centering\arraybackslash}b{#1}}
+%% Tables
+
+\newcommand{\TinyTable}[4][0.47\textwidth]{
+	\begin{table}[h!]
+	\rowcolors{2}{}{TableColor}\tiny
+	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
+	\begin{tabularx}{#1}{@{}#3@{}}#4\end{tabularx}
+	\end{table}
+}
 \newcommand{\Table}[4][0.47\textwidth]{
-	\begin{table}[h]
+	\begin{table}[h!]
 	\rowcolors{2}{}{TableColor}\scriptsize
-	\ifx&#2&\else\caption{#2}\vskip 5pt\fi
+	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
 	\begin{tabularx}{#1}{@{}#3@{}}#4\end{tabularx}
 	\end{table}
 }
@@ -97,7 +133,7 @@
 	\begin{table*}[h!]
 	\rowcolors{0}{TableColor}{}
 	\scriptsize
-	\ifx&#1&\else\caption{#1}\vskip 5pt\fi
+	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
 }
@@ -105,7 +141,7 @@
 	\begin{table*}[ht!]
 	\rowcolors{0}{}{TableColor}
 	\scriptsize
-	\ifx&#1&\else\caption{#1}\vskip 5pt\fi
+	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
 }
@@ -116,19 +152,41 @@
 }
 \newcommand{\WarriorTable}[3][l l C C C l]{
 	\BigTablePair{#2}{#1}{
-		\bfseries Level & \bfseries Base Attack Bonus & \bfseries Fort Save & \bfseries Ref Save & \bfseries Will Save & \bfseries Special\\
+		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
 	}
 }
-\newcommand{\SpellcasterTable}[2]{
-	\BigTablePair{#1}{l l C C C l Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm} Z{0.5cm}}{
-		\rowcolor{white}
-		\multirow[b]{2}{0.8cm}{\bfseries Level} & \multirow[b]{2}{2cm}{\bfseries Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\bfseries Fort Save} & \multirow[b]{2}{0.6cm}{\bfseries Ref Save} & \multirow[b]{2}{0.6cm}{\bfseries Will Save} & \multirow[b]{2}{*}{\bfseries Special} & \multicolumn{10}{c}{\bfseries Spells per day}\\
-		\cmidrule[0.5pt]{7-16}
-		&&&&&& \bfseries 0 & \bfseries 1 & \bfseries 2 & \bfseries 3 & \bfseries 4 & \bfseries 5 & \bfseries 6 & \bfseries 7 & \bfseries 8 & \bfseries 9 \\
-		#2
+\newcommand{\MiniWarriorTable}[3][l l C C C l]{
+	\Table{#2}{#1}{
+		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
+		#3
 	}
 }
+\newcommand{\SpellcasterTable}[3]{
+	\BigTablePair{#1}{l l C C C l Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2}}{
+		\rowcolor{white}
+		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{10}{c}{\tableheader Spells per day}\\
+		\cmidrule[0.5pt]{7-16}
+		&&&&&& \tableheader 0 & \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 & \tableheader 5 & \tableheader 6 & \tableheader 7 & \tableheader 8 & \tableheader 9 \\
+		#3
+	}
+}
+\newcommand{\SuperRule}{
+	{\noindent\hfil\color{ChapterColor}\rule{.9\linewidth}{1.2pt}\hfil}
+}
+\newcommand{\SuperBlock}[1]{
+	\begin{strip}
+	\SuperRule
+	\end{strip}
+	{
+		\scriptsize
+		#1
+	}
+	\begin{strip}
+	\SuperRule
+	\end{strip}
+}
 \renewcommand{\arraystretch}{1.2}
+\linespread{1.1}
 \setcounter{secnumdepth}{0}
 \endinput
