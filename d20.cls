@@ -5,12 +5,13 @@
 \ProvidesClass{d20book}
               [2020/06/05 v0.1
  d20 System LaTeX document class]
-\LoadClass[10pt,a4paper,final,twocolumn]{book}
+\LoadClass[10pt,utf8x,a4paper,final,twocolumn]{book}
 \RequirePackage{cuted}
 \RequirePackage{lettrine}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
 \RequirePackage[table]{xcolor}
+\RequirePackage[outline]{contour}
 
 \definecolor{TableColor}{HTML}{fb9c80}
 \definecolor{QuoteColor}{HTML}{b45e45}
@@ -20,9 +21,9 @@
 \renewcommand*\rmdefault{lmr}
 \newcommand\textold[1]{{\imfellEnglish #1}}
 \newcommand\tableheader{\imfellEnglish\scshape}
-% \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
-% \renewcommand\bfseries{\scshape\imfellEnglish}
-% \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
+\renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
+\renewcommand\bfseries{\scshape\imfellEnglish}
+\renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % Table of Contents
 \renewcommand\tableofcontents{
@@ -44,11 +45,14 @@
 			\fi%
 		\fi%
 		\interlinepenalty\@M%
-		\Huge\bfseries\color{ChapterColor}\raggedleft\MakeUppercase{#1}
+		\Huge\bfseries\color{ChapterColor}\raggedleft{
+			% \contourlength{0.01pt}\contournumber{1}\contour{black}{
+				\MakeUppercase{#1}
+			% }
+		}
 		\par\nobreak%
 	}
 }
-
 % Caption
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
@@ -64,9 +68,9 @@
 % Add quotes
 \newcommand{\Quote}[2]{
 	{
-		\imfellEnglish\footnotesize
+		\imfellEnglish\small
 		{
-			\itshape\color{QuoteColor}
+			\slshape\color{QuoteColor}
 			\setlength\parindent{5pt}
 			``#1''\vspace{-0.6em}
 		}
@@ -81,7 +85,7 @@
 }
 
 % Captilize
-\newcommand{\Capitalize}[2]{\lettrine[lines=4,loversize=0.1]{#1}{#2}}
+\newcommand{\Capitalize}[2]{\lettrine[lines=4,loversize=0.05]{#1}{#2}}
 
 % Different sections
 \renewcommand \section {
@@ -156,7 +160,7 @@
 		#3
 	}
 }
-\newcommand{\MiniWarriorTable}[3][l l C C C l]{
+\newcommand{\MiniWarriorTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
@@ -171,7 +175,7 @@
 		#3
 	}
 }
-\newcommand{\PsychicTable}[3][l l C C C l >{\raggedleft\arraybackslash}b{2cm} >{\raggedleft\arraybackslash}b{2cm} >{\raggedleft\arraybackslash}b{2cm}]{
+\newcommand{\PsychicTable}[3][l l Z{.8cm} Z{.8cm} Z{.8cm} X >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm}]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
 		#3
@@ -192,7 +196,10 @@
 	\SuperRule
 	\end{strip}
 }
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \linespread{1.1}
 \setcounter{secnumdepth}{0}
+\renewcommand{\chaptermark}[1]{ \markboth{\imfellEnglish\scshape\MakeUppercase{#1}}{} }
+\renewcommand{\sectionmark}[1]{ \markright{\imfellEnglish\scshape\MakeUppercase{#1}}{} }
+
 \endinput
