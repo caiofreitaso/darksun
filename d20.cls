@@ -102,7 +102,7 @@
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.5em}{.2em}{\color{QuoteColor}\normalsize\imfellEnglish}
+	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
 }
 
 \setlength{\columnsep}{20pt}
