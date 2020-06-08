@@ -70,7 +70,7 @@
 	{
 		\imfellEnglish\small
 		{
-			\slshape\color{black!10}
+			\slshape\color{black!50}
 			\setlength\parindent{5pt}
 			``#2''
 			% \hrulefill
