@@ -112,7 +112,7 @@
 \setlength{\belowcaptionskip}{.2em}
 
 % NPC functions
-\newcommand{\spelllist}[2]{#1 -- \itshape #2\normalfont}
+\newcommand{\spelllist}[2]{#1---\itshape #2\normalfont}
 
 % Table commands
 %% Column types
@@ -168,7 +168,7 @@
 	}
 }
 \newcommand{\SpellcasterTable}[3]{
-	\BigTablePair{#1}{l l C C C l Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2}}{
+	\BigTablePair{#1}{l l Z{.6cm} Z{.6cm} Z{.6cm} X Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2}}{
 		\rowcolor{white}
 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{10}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-16}
