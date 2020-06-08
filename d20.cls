@@ -121,18 +121,19 @@
 %% Tables
 
 \newcommand{\TinyTable}[4][0.47\textwidth]{
-	\begin{table}[h!]
-	\rowcolors{2}{}{TableColor}\tiny
+	\ifx&#2&\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
-	\begin{tabularx}{#1}{@{}#3@{}}#4\end{tabularx}
-	\end{table}
+	\begin{tabularx}{#1}{@{}#3@{}}\rowcolors{2}{}{TableColor}\tiny
+	#4\end{tabularx}
+	\ifx&#2&\else\end{table}\fi
 }
 \newcommand{\Table}[4][0.47\textwidth]{
-	\begin{table}[h!]
-	\rowcolors{2}{}{TableColor}\scriptsize
+	\ifx&#2&{\vskip.3em\noindent\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
-	\begin{tabularx}{#1}{@{}#3@{}}#4\end{tabularx}
-	\end{table}
+	\rowcolors{2}{}{TableColor}\scriptsize
+	\begin{tabularx}{#1}{@{}#3@{}}
+	#4\end{tabularx}
+	\ifx&#2&\vskip.3em}\else\end{table}\fi
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
@@ -194,20 +195,14 @@
 \newcommand{\SuperRule}{
 	{\noindent\hfil\color{ChapterColor}\rule{.9\linewidth}{1.2pt}\hfil}
 }
-\newcommand{\SuperBlock}[1]{
-	\begin{strip}
-	\SuperRule
-	\end{strip}
-	{
-		\scriptsize
-		#1
+\newcommand{\SuperBlock}[2][2em]{
+	\begin{strip}\vskip#1\SuperRule\end{strip}
+	{\scriptsize #2
 	}
-	\begin{strip}
-	\SuperRule
-	\end{strip}
+	\begin{strip}\SuperRule\vskip#1\end{strip}
 }
 \renewcommand{\arraystretch}{1.1}
-\linespread{1.1}
+\linespread{1.05}
 \setcounter{secnumdepth}{0}
 \renewcommand{\chaptermark}[1]{ \markboth{\scshape\MakeUppercase{#1}}{} }
 \renewcommand{\sectionmark}[1]{ \markright{\scshape#1}{} }
