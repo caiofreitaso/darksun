@@ -105,7 +105,7 @@
 	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
 }
 
-\setlength{\columnsep}{20pt}
+\setlength{\columnsep}{.7cm}
 \setlength{\voffset}{-1.54cm}
 \setlength{\tabcolsep}{0.1cm}
 \setlength{\textheight}{24cm}
@@ -197,7 +197,8 @@
 }
 \newcommand{\SuperBlock}[2][2em]{
 	\begin{strip}\vskip#1\SuperRule\end{strip}
-	{\scriptsize #2
+	{
+		\scriptsize #2
 	}
 	\begin{strip}\SuperRule\vskip#1\end{strip}
 }
