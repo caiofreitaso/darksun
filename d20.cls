@@ -13,9 +13,9 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage[outline]{contour}
 
-\definecolor{TableColor}{HTML}{fb9c80}
-\definecolor{QuoteColor}{HTML}{b45e45}
-\definecolor{ChapterColor}{HTML}{702311}
+\definecolor{TableColor}{HTML}{fdccbc}
+\definecolor{QuoteColor}{HTML}{d76647}
+\definecolor{ChapterColor}{HTML}{8f1703}
 
 % Font settings
 \renewcommand*\rmdefault{lmr}
@@ -46,9 +46,9 @@
 		\fi%
 		\interlinepenalty\@M%
 		\Huge\bfseries\color{ChapterColor}\raggedleft{
-			% \contourlength{0.01pt}\contournumber{1}\contour{black}{
+			\contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
 				\MakeUppercase{#1}
-			% }
+			}
 		}
 		\par\nobreak%
 	}
@@ -66,15 +66,16 @@
   \vskip\belowcaptionskip}
 
 % Add quotes
-\newcommand{\Quote}[2]{
+\newcommand{\Quote}[3][-.7em]{
 	{
 		\imfellEnglish\small
 		{
 			\slshape\color{QuoteColor}
 			\setlength\parindent{5pt}
-			``#1''\vspace{-0.6em}
+			``#2''
+			% \hrulefill
 		}
-		\ifx&#2&\vskip1em\else\begin{flushright}{\color{ChapterColor}--- #2}\end{flushright}\fi
+		\ifx&#3&\else\begin{flushright}{\vspace{#1}\color{ChapterColor}--- #3}\end{flushright}\fi
 	}
 }
 \newcommand{\Chapter}[3]{
@@ -85,7 +86,7 @@
 }
 
 % Captilize
-\newcommand{\Capitalize}[2]{\lettrine[lines=4,loversize=0.05]{#1}{#2}}
+\newcommand{\Capitalize}[2]{\lettrine[lines=4]{#1}{#2}}
 
 % Different sections
 \renewcommand \section {
@@ -101,7 +102,7 @@
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.5em}{.2em}{\color{TableColor}\normalsize\imfellEnglish}
+	{0pt}{.5em}{.2em}{\color{QuoteColor}\normalsize\imfellEnglish}
 }
 
 \setlength{\columnsep}{20pt}
@@ -175,6 +176,15 @@
 		#3
 	}
 }
+\newcommand{\HalfSpellcasterTable}[3]{
+	\BigTablePair{#1}{l l C C C l Z{#2} Z{#2} Z{#2} Z{#2}}{
+		\rowcolor{white}
+		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
+		\cmidrule[0.5pt]{7-10}
+		&&&&&& \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 \\
+		#3
+	}
+}
 \newcommand{\PsychicTable}[3][l l Z{.8cm} Z{.8cm} Z{.8cm} X >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm}]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
@@ -199,7 +209,8 @@
 \renewcommand{\arraystretch}{1.1}
 \linespread{1.1}
 \setcounter{secnumdepth}{0}
-\renewcommand{\chaptermark}[1]{ \markboth{\imfellEnglish\scshape\MakeUppercase{#1}}{} }
-\renewcommand{\sectionmark}[1]{ \markright{\imfellEnglish\scshape\MakeUppercase{#1}}{} }
-
+\renewcommand{\chaptermark}[1]{ \markboth{\scshape\MakeUppercase{#1}}{} }
+\renewcommand{\sectionmark}[1]{ \markright{\scshape#1}{} }
+\def\@evenhead{\imfellEnglish\thepage\hfil\leftmark}%
+\def\@oddhead{\imfellEnglish{\rightmark}\hfil\thepage}%
 \endinput

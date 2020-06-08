@@ -2,6 +2,7 @@
 \usepackage{Nouveaud}
 \usepackage{ucs}
 \usepackage{multirow}
+\usepackage{fdsymbol}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usepackage[pdftex,unicode,colorlinks]{hyperref}
@@ -9,7 +10,7 @@
   bookmarksnumbered=false,
   bookmarksopen=true,
   bookmarksopenlevel=1,
-  allcolors=ChapterColor,
+  allcolors=black,
   pdfstartview=FitBH,
   pdfpagemode=UseOutlines,
   pdfpagelayout=TwoPageRight,
@@ -20,8 +21,9 @@
 }
 
 \title{Dark Sun d20}
-\renewcommand{\LettrineFontHook}{\color{QuoteColor}\Huge\Nouveaudfamily}
+\renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand{\SuperRule}[1][]{\vskip-1em\noindent\hfil\begin{tikzpicture}\draw[ChapterColor, right to-right to, ultra thick, #1] (0,0) to (0.9\linewidth,0);\end{tikzpicture}\hfil\vskip-0.5em}
+\renewcommand\labelitemi{$\smallblackdiamond$}
 \begin{document}
 
 \tableofcontents
