@@ -185,7 +185,7 @@
 		#3
 	}
 }
-\newcommand{\PsychicTable}[3][l l Z{.8cm} Z{.8cm} Z{.8cm} X >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm}]{
+\newcommand{\PsychicTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm} >{\raggedleft\arraybackslash}b{1.8cm}]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
 		#3
