@@ -4,6 +4,7 @@
 - Removed all mentions to sorcerer.
 - Merged Psionics & normal Skill Synergies tables.
 - Merged Psionics & normal Concentration tables.
+- Put Diplomacy sidebar as normal text. Removed its mentions from skill description.
 
 ##Dark Sun 3
 - Changed the subject from Templar's abilities descriptions to third person.
