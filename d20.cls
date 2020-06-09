@@ -44,6 +44,9 @@
 	}
 }
 
+\newcommand{\cbold}[1]{
+	\contourlength{0.01em}\contournumber{1}\contour{}{#1}
+}
 % Chapter Name
 \def\@makechapterhead#1{%
 	{
@@ -78,6 +81,7 @@
 \newcommand{\Quote}[3][-.7em]{
 	{
 		\imfellEnglish\small
+		\linespread{.9}
 		{
 			\slshape\color{black!50}
 			\setlength\parindent{5pt}
@@ -117,7 +121,7 @@
 \renewcommand \subsection {
 	\@startsection{subsection}
 	{2}
-	{0pt}{.5em}{.2em}{\color{QuoteColor}\Large\scshape\imfellEnglish}
+	{0pt}{.5em}{.2em}{\color{ChapterColor}\Large\scshape\imfellEnglish}
 }
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
@@ -144,7 +148,7 @@
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 %% Tables
 
-\newcommand{\TinyTable}[4][0.47\textwidth]{
+\newcommand{\TinyTable}[4][\columnwidth]{
 	\ifx&#2&\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
 	\begin{tabularx}{#1}{@{}#3@{}}\rowcolors{2}{}{TableColor}\tiny
@@ -155,7 +159,15 @@
 	\begin{table}[#1]
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
 	\rowcolors{2}{}{TableColor}\scriptsize
-	\begin{tabularx}{0.47\textwidth}{@{}#3@{}}
+	\begin{tabularx}{\columnwidth}{@{}#3@{}}
+	#4\end{tabularx}
+	\end{table}
+}
+\newcommand{\TableOdd}[4][h!]{
+	\begin{table}[#1]
+	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
+	\rowcolors{2}{TableColor}{}\scriptsize
+	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\end{table}
 }
