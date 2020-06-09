@@ -35,6 +35,12 @@
 }
 \setcounter{tocdepth}{1}
 
+
+\def\@schapter#1{
+	\@makeschapterhead{#1}%
+	\@afterheading
+}
+
 % Chapter Name
 \def\@makechapterhead#1{%
 	{
