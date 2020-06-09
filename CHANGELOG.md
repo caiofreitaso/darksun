@@ -1,11 +1,11 @@
-#CHANGELOG
+# CHANGELOG
 
-##SRD
+## SRD
 - Removed all mentions to sorcerer.
 - Merged Psionics & normal Skill Synergies tables.
 - Merged Psionics & normal Concentration tables.
 
-##Dark Sun 3
+## Dark Sun 3
 - Changed the subject from Templar's abilities descriptions to third person.
 - Removed _Sample Encounters_ from class descriptions.
 - Removed most of the _Behind the Veil_.
