@@ -5,7 +5,7 @@
 \ProvidesClass{d20book}
               [2020/06/05 v0.1
  d20 System LaTeX document class]
-\LoadClass[10pt,utf8x,a4paper,final,twocolumn]{book}
+\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany]{book}
 \RequirePackage{cuted}
 \RequirePackage{lettrine}
 \RequirePackage{tabularx,booktabs}
@@ -27,18 +27,21 @@
 
 % Table of Contents
 \renewcommand\tableofcontents{
-	\chapter*{
-		\contentsname
+	{
+		\imfellEnglish
+		\chapter*{\contentsname}
 		\@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
+		\@starttoc{toc}
 	}
-	\@starttoc{toc}
 }
 \setcounter{tocdepth}{1}
-
-
-\def\@schapter#1{
-	\@makeschapterhead{#1}%
-	\@afterheading
+\renewcommand\listoftables{%
+	{
+		\imfellEnglish
+		\chapter*{\listtablename}%
+		\@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%
+		\@starttoc{lot}%
+	}
 }
 
 % Chapter Name
