@@ -93,6 +93,7 @@
 	\Quote{#2}{#3}
 	\end{strip}
 }
+\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)}}
 
 % Captilize
 \newcommand{\Capitalize}[2]{\lettrine[lines=4]{#1}{#2}}
@@ -102,6 +103,11 @@
     \setlength{\itemsep}{.2em}%
     \setlength{\parskip}{.2em}}%
   {\end{itemize}}
+\newenvironment{enumerate*}%
+  {\begin{enumerate}%
+    \setlength{\itemsep}{.2em}%
+    \setlength{\parskip}{.2em}}%
+  {\end{enumerate}}
 % Different sections
 \renewcommand \section {
 	\@startsection{section}
@@ -131,7 +137,11 @@
 % Table commands
 %% Column types
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{Z}[1]{>{\centering\arraybackslash}b{#1}}
+\newcolumntype{r}[1]{>{\raggedleft\arraybackslash}b{#1}}
+\newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 %% Tables
 
 \newcommand{\TinyTable}[4][0.47\textwidth]{
