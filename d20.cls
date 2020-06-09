@@ -87,7 +87,12 @@
 
 % Captilize
 \newcommand{\Capitalize}[2]{\lettrine[lines=4]{#1}{#2}}
-
+% Items
+\newenvironment{itemize*}%
+  {\begin{itemize}%
+    \setlength{\itemsep}{.2em}%
+    \setlength{\parskip}{.2em}}%
+  {\end{itemize}}
 % Different sections
 \renewcommand \section {
 	\@startsection{section}
@@ -127,13 +132,13 @@
 	#4\end{tabularx}
 	\ifx&#2&\else\end{table}\fi
 }
-\newcommand{\Table}[4][0.47\textwidth]{
-	\ifx&#2&{\vskip.3em\noindent\else\begin{table}[h!]\fi
+\newcommand{\Table}[4][h!]{
+	\begin{table}[#1]
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
 	\rowcolors{2}{}{TableColor}\scriptsize
-	\begin{tabularx}{#1}{@{}#3@{}}
+	\begin{tabularx}{0.47\textwidth}{@{}#3@{}}
 	#4\end{tabularx}
-	\ifx&#2&\vskip.3em}\else\end{table}\fi
+	\end{table}
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
@@ -192,16 +197,7 @@
 		#3
 	}
 }
-\newcommand{\SuperRule}{
-	{\noindent\hfil\color{ChapterColor}\rule{.9\linewidth}{1.2pt}\hfil}
-}
-\newcommand{\SuperBlock}[2][2em]{
-	\begin{strip}\vskip#1\SuperRule\end{strip}
-	{
-		\scriptsize #2
-	}
-	\begin{strip}\SuperRule\vskip#1\end{strip}
-}
+
 \renewcommand{\arraystretch}{1.1}
 \linespread{1.05}
 \setcounter{secnumdepth}{0}
@@ -209,4 +205,8 @@
 \renewcommand{\sectionmark}[1]{ \markright{\scshape#1}{} }
 \def\@evenhead{\imfellEnglish\thepage\hfil\leftmark}%
 \def\@oddhead{\imfellEnglish{\rightmark}\hfil\thepage}%
+\setlength{\intextsep}{.5em}
+\setlength{\textfloatsep}{.5em}
+% \setlength{\textfloatsep}{1em}
+\setlength{\stripsep}{.5em}
 \endinput
