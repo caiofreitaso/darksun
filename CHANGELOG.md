@@ -8,6 +8,10 @@
 - Change Disguise table entry to be clearer about step of difference in ages.
 - Put Disguise footnotes into normal text.
 - Put Listen footnotes into normal text.
+- Remove all mentions to paladin.
+- Put Knowledge (psionics) text mixed within the main Knowledge description.
+- Order the Knowledge synergies.
+- Add name for Diplomacy tables.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -17,3 +21,5 @@
 - Move Bluff penalty for concealing spellcasting from table to text.
 - Change wording on Craft (alchemy) sinergies to match SRD's.
 - Change wording on Knowledge (warcraft) to match SRD's.
+- Add mentions to templar in Abilities.
+- Change wording for wizard's bonus feats to include raze feats, instead of specifying each.

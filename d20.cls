@@ -8,6 +8,7 @@
 \LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany]{book}
 \RequirePackage{cuted}
 \RequirePackage{lettrine}
+\RequirePackage{xparse}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
 \RequirePackage[table]{xcolor}
@@ -24,6 +25,13 @@
 \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
 \renewcommand\bfseries{\scshape\imfellEnglish}
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
+
+% References
+\newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
+\newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
+\newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
+\newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
+
 
 % Table of Contents
 \renewcommand\tableofcontents{
@@ -97,7 +105,6 @@
 	\Quote{#2}{#3}
 	\end{strip}
 }
-\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)}}
 
 % Captilize
 \newcommand{\Capitalize}[2]{\lettrine[lines=4]{#1}{#2}}
@@ -128,6 +135,7 @@
 	{3}
 	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
 }
+\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1}}
 
 \setlength{\columnsep}{.7cm}
 \setlength{\voffset}{-1.54cm}
@@ -136,7 +144,6 @@
 \setlength{\belowcaptionskip}{.2em}
 
 % NPC functions
-\newcommand{\spelllist}[2]{#1---\itshape #2\normalfont}
 
 % Table commands
 %% Column types
@@ -146,8 +153,8 @@
 \newcolumntype{Z}[1]{>{\centering\arraybackslash}b{#1}}
 \newcolumntype{r}[1]{>{\raggedleft\arraybackslash}b{#1}}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
-%% Tables
 
+%% Tables
 \newcommand{\TinyTable}[4][\columnwidth]{
 	\ifx&#2&\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
@@ -240,4 +247,6 @@
 \setlength{\textfloatsep}{.5em}
 % \setlength{\textfloatsep}{1em}
 \setlength{\stripsep}{.5em}
+\setlength{\aboverulesep}{0em}
+\setlength{\belowrulesep}{0em}
 \endinput
