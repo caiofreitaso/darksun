@@ -23,3 +23,5 @@
 - Change wording on Knowledge (warcraft) to match SRD's.
 - Add mentions to templar in Abilities.
 - Change wording for wizard's bonus feats to include raze feats, instead of specifying each.
+- Change wording on Half-Giant racial traits to follow SRD's.
+- Add racial bonus from athasian races to skill descriptions.

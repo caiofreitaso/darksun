@@ -30,6 +30,7 @@
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
 \newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
+\newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
 
 
