@@ -15,8 +15,8 @@
 - Add psionic classes in proficiency descriptions.
 - Remove all mentions to bard spells.
 - Remove all mentions to monk.
-- **Add Fighter feat type** -- Instead of `[General]`, fighter bonus feats are typed as `[Fighter]` and are separated from general feats.
-- **Add Skill feat type** --  Instead of `[General]`, feats that give +2 bonus on two skills are typed as `[Skill]` and are separated from general feats.
+- **Add Fighter feat type** - Instead of `[General]`, fighter bonus feats are typed as `[Fighter]` and are separated from general feats.
+- **Add Skill feat type** -  Instead of `[General]`, feats that give +2 bonus on two skills are typed as `[Skill]` and are separated from general feats.
 - Feats are separated by type.
 
 ## Dark Sun 3
@@ -37,3 +37,4 @@
 - Add mentions to templar and gladiator in Feats.
 - Change Commanding Presence to state it's a new use for Diplomacy.
 - Add mention to Hamanu's War Domain in Martial Weapon Proficiency.
+- Path Sinister cares about evocation and/or necromancy spells.
