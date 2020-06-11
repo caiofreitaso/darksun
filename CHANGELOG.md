@@ -11,7 +11,7 @@
 - Remove all mentions to paladin.
 - Put Knowledge (psionics) text mixed within the main Knowledge description.
 - Order the Knowledge synergies.
-- Add name for Diplomacy tables.
+- Add name for each of the Diplomacy tables.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -25,3 +25,6 @@
 - Change wording for wizard's bonus feats to include raze feats, instead of specifying each.
 - Change wording on Half-Giant racial traits to follow SRD's.
 - Add racial bonus from athasian races to skill descriptions.
+- Change wording on Speak Language to refer to the name of the table.
+- Remove duplicate "stony barrens" from "Infertile" row.
+- Remove Swim from Ranger's class skills.
