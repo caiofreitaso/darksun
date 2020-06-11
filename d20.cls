@@ -137,6 +137,24 @@
 	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
 }
 \newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1}}
+\newcommand{\Feat}[7][General]{
+\subsection{#2 \normalsize[#1]} \label{feat:#2}
+#3
+
+\ifx&#4&\else\textbf{Prerequisites:} #4
+
+\fi
+\ifx&#5&\else\textbf{Benefit:} #5
+
+\fi
+\ifx&#6&\else\textbf{Normal:} #6
+
+\fi
+\ifx&#7&\else\textbf{Special:} #7
+
+\fi
+}
+\newcommand{\GFeat}[4][General]{\Feat[#1]{#2}{}{#3}{#4}{}{}}
 
 \setlength{\columnsep}{.7cm}
 \setlength{\voffset}{-1.54cm}
@@ -250,4 +268,5 @@
 \setlength{\stripsep}{.5em}
 \setlength{\aboverulesep}{0em}
 \setlength{\belowrulesep}{0em}
+\hyphenpenalty=10000
 \endinput

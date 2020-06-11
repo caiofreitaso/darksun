@@ -12,6 +12,12 @@
 - Put Knowledge (psionics) text mixed within the main Knowledge description.
 - Order the Knowledge synergies.
 - Add name for each of the Diplomacy tables.
+- Add psionic classes in proficiency descriptions.
+- Remove all mentions to bard spells.
+- Remove all mentions to monk.
+- **Add Fighter feat type** -- Instead of `[General]`, fighter bonus feats are typed as `[Fighter]` and are separated from general feats.
+- **Add Skill feat type** --  Instead of `[General]`, feats that give +2 bonus on two skills are typed as `[Skill]` and are separated from general feats.
+- Feats are separated by type.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -28,3 +34,6 @@
 - Change wording on Speak Language to refer to the name of the table.
 - Remove duplicate "stony barrens" from "Infertile" row.
 - Remove Swim from Ranger's class skills.
+- Add mentions to templar and gladiator in Feats.
+- Change Commanding Presence to state it's a new use for Diplomacy.
+- Add mention to Hamanu's War Domain in Martial Weapon Proficiency.
