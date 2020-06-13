@@ -18,6 +18,8 @@
 - **Add Fighter feat type** - Instead of `[General]`, fighter bonus feats are typed as `[Fighter]` and are separated from general feats.
 - **Add Skill feat type** -  Instead of `[General]`, feats that give +2 bonus on two skills are typed as `[Skill]` and are separated from general feats.
 - Feats are separated by type.
+- Monster feats are worded the same as player's feats ("creature" changed to "you").
+- Improved Natural Attack text moved to `Special`.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.

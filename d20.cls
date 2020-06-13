@@ -254,10 +254,10 @@
 	}
 }
 
-\newcommand{\FeatTable}[2]{
-	\BigTablePair{}{l p{4.8cm} X}{
-		\tableheader #1 Feat & \textold{Prerequisites} & \textold{Benefit}\\
-		#2
+\newcommand{\FeatTable}[3][l]{
+	\BigTablePair{}{#1 p{4.8cm} X}{
+		\tableheader #2 Feat & \textold{Prerequisites} & \textold{Benefit}\\
+		#3
 	}
 }
 

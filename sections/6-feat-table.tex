@@ -40,7 +40,7 @@
 	\feat{Improved Natural Attack} & Natural attack, base attack bonus +4 & Increase dice damage of chosen natural attack\\
 	\feat{Improved Sigil} & Sigil ability, \skill{Diplomacy} 9 ranks & Use two 1st-level spells as spell-like ability\\
 	\feat{Improved Turning} & Ability to turn or rebuke creatures & +1 level on turning checks\\
-	\feat{Improviser} & Wis 13, base attack bonus +3 & Reduce to $-1$ penalty of improvised weapons\\
+	\feat{Improviser} & Wis 13, base attack bonus +3 & Reduce penalty of improvised weapons\\
 	\feat{Innate Hunter} & \feat{Track}, \skill{Survival} 5 ranks & +4 bonus on \skill{Survival} for hunting, +1 bonus on attack rolls versus animals\\
 	\feat{Iron Will} & --- & +2 bonus on Will saves\\
 	~ \feat{Force of Will} & \feat{Iron Will} & Can make a Will save instead of a Fort or Ref save against psionics powers\\
@@ -52,8 +52,8 @@
 	\feat{Mastyrial Blood} & Con 13 & +4 bonus on saves against poison\\
 	\feat{Mental Resistance} & Base Will save bonus +2 & 3/--- against psionic attacks\\
 	\feat{Mind Over Body} & Con 13 & Heal ability damage more quickly\\
-	\feat{Multiattack} & Three or more natural attacks & Reduce secondary attack's penalty to $-2$\\
-	\feat{Multiweapon Fighting} & Dex 13, three or more hands & Reduce penalty for fighting with multiple weapons to $-4$\\
+	\feat{Multiattack} & Three or more natural attacks & Reduce secondary attack's penalty\\
+	\feat{Multiweapon Fighting} & Dex 13, three or more hands & Reduce penalty for fighting with multiple weapons\\
 	\feat{Natural Spell} & Wis 13, wild shape ability & Cast spells while in wild shape\\
 	\feat{Open Minded} & --- & +5 skill points\\
 	\feat{Path Dexter} & Preserver & +1 caster level for chosen abjuration/divination spells\\
@@ -90,7 +90,7 @@
 	\feat{Wingover} & Fly speed & Change flight direction using 10 ft of movement\\
 }
 
-\FeatTable{Skill}{
+\FeatTable[p{3cm}]{Skill}{
 	\feat{Acrobatic} & --- & +2 bonus on \skill{Jump} and \skill{Tumble} checks \\
 	\feat{Agile} & --- & +2 bonus on \skill{Balance} and \skill{Escape Artist} checks \\
 	\feat{Alertness} & --- & +2 bonus on \skill{Listen} and \skill{Spot} checks \\
@@ -178,23 +178,50 @@
 	~ \feat{Weapon Specialization} & Proficiency with weapon, \feat{Weapon Focus} with weapon, fighter level 4th & +2 bonus damage with chosen weapon
 }
 
+\FeatTable[p{3cm}]{Metapsionic}{
+	\feat{Burrowing Power} & --- & Manifest power through barriers\\
+	\feat{Chain Power} & --- & Power that deals energy damage chains to secondary targets\\
+	\feat{Delay Power} & --- & Power activates after a trigger\\
+	\feat{Empower Power} & --- & Increase all variables of a power by 50\%\\
+	\feat{Enlarge Power} & --- & Increase range of a power by 100\%\\
+	\feat{Extend Power} & --- & Double duration of a power\\
+	\feat{Maximize Power} & --- & Maximize all variables of a power\\
+	\feat{Opportunity Power} & --- & Manifest power as attack of opportunity\\
+	\feat{Quicken Power} & --- & Manifest power as swift action\\
+	\feat{Split Psionic Ray} & Any other metapsionic feat & Split psionic ray into two\\
+	\feat{Twin Power} & --- & Manifest a power twice at the same time\\
+	\feat{Unconditional Power} & --- & Manifest power in dazed, confused, nauseated, or stunned\\
+	\feat{Widen Power} & --- & Increase area of a power by 100\%
+}
+
+\FeatTable[p{3cm}]{Metamagic}{
+	\feat{Empower Spell} & --- & Increase all variables of a spell by 50\%\\
+	\feat{Enlarge Spell} & --- & Increase range of a spell by 100\%\\
+	\feat{Extend Spell} & --- & Double duration of a spell\\
+	\feat{Heighten Spell} & --- & Increase spell effective level\\
+	\feat{Maximize Spell} & --- & Maximize all variables of a spell\\
+	\feat{Quicken Spell} & --- & Cast spell as swift action\\
+	\feat{Silent Spell} & --- & Cast spell without verbal component\\
+	\feat{Still Spell} & --- & Cast spell without somatic component\\
+	\feat{Widen Spell} & --- & Increase area of a spell by 100\%
+}
 
 \FeatTable{Item Creation}{
-\feat{Brew Potion} & Caster level 3rd & Create magic potions\\
-\feat{Craft Cognizance Crystal} & Manifester level 3rd & Create power point storage\\
-\feat{Craft Construct} & \feat{Craft Magic Arms and Armor}, \feat{Craft Wondrous Item} & Create golems and other magical constructs\\
-\feat{Craft Dorje} & Manifester level 5th & Create psionic wand\\
-\feat{Craft Magic Arms and Armor} & Caster level 5th & Create magic weapons, armor and shields\\
-\feat{Craft Psicrown} & Manifester level 12th & Create psionic staff\\
-\feat{Craft Psionic Arms and Armor} & Manifester level 5th & Create psionic weapons, armor and shields\\
-\feat{Craft Psionic Construct} & \feat{Craft Psionic Arms and Armor}, \feat{Craft Universal Item} & Create golems and constructs using psionism\\
-\feat{Craft Rod} & Caster level 9th & Create magic rods\\
-\feat{Craft Staff} & Caster level 12th & Create magic staffs\\
-\feat{Craft Universal Item} & Manifester level 3rd & Create universal items\\
-\feat{Craft Wand} & Caster level 5th & Create magic wand\\
-\feat{Craft Wondrous Item} & Caster level 3rd & Create wondrous items\\
-\feat{Forge Ring} & Caster level 12th & Create magic rings\\
-\feat{Imprint Stone} & Manifester level 1st & \\
-\feat{Scribe Scroll} & Caster level 1st & Scribe magic scrolls\\
-\feat{Scribe Tattoo} & Manifester level 3rd & Scribe psionic tattoos
+	\feat{Brew Potion} & Caster level 3rd & Create magic potions\\
+	\feat{Craft Cognizance Crystal} & Manifester level 3rd & Create power point storage\\
+	\feat{Craft Construct} & \feat{Craft Magic Arms and Armor}, \feat{Craft Wondrous Item} & Create golems and other magical constructs\\
+	\feat{Craft Dorje} & Manifester level 5th & Create psionic wand\\
+	\feat{Craft Magic Arms and Armor} & Caster level 5th & Create magic weapons, armor and shields\\
+	\feat{Craft Psicrown} & Manifester level 12th & Create psionic staff\\
+	\feat{Craft Psionic Arms and Armor} & Manifester level 5th & Create psionic weapons, armor and shields\\
+	\feat{Craft Psionic Construct} & \feat{Craft Psionic Arms and Armor}, \feat{Craft Universal Item} & Create golems and constructs using psionism\\
+	\feat{Craft Rod} & Caster level 9th & Create magic rods\\
+	\feat{Craft Staff} & Caster level 12th & Create magic staffs\\
+	\feat{Craft Universal Item} & Manifester level 3rd & Create universal items\\
+	\feat{Craft Wand} & Caster level 5th & Create magic wand\\
+	\feat{Craft Wondrous Item} & Caster level 3rd & Create wondrous items\\
+	\feat{Forge Ring} & Caster level 12th & Create magic rings\\
+	\feat{Imprint Stone} & Manifester level 1st & \\
+	\feat{Scribe Scroll} & Caster level 1st & Scribe magic scrolls\\
+	\feat{Scribe Tattoo} & Manifester level 3rd & Scribe psionic tattoos
 }
