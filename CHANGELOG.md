@@ -20,6 +20,7 @@
 - Feats are separated by type.
 - Monster feats are worded the same as player's feats ("creature" changed to "you").
 - Improved Natural Attack text moved to `Special`.
+- Add text for describing Divine Feats.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -40,3 +41,6 @@
 - Change Commanding Presence to state it's a new use for Diplomacy.
 - Add mention to Hamanu's War Domain in Martial Weapon Proficiency.
 - Path Sinister cares about evocation and/or necromancy spells.
+- Remove confusing text on Survival.
+- Remove references to Monster Manual.
+- Remove  `Improved Hidden Talent` and `Greater Hidden Talent` as Hidden Talent is not within SRD.

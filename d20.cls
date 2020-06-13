@@ -5,10 +5,36 @@
 \ProvidesClass{d20book}
               [2020/06/05 v0.1
  d20 System LaTeX document class]
-\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany]{book}
-\RequirePackage{cuted}
+
+\DeclareOption{onecolumn}{\@twocolumnfalse}
+\DeclareOption{twocolumn}{\@twocolumntrue}
+\DeclareOption{oneside}{\@twosidefalse}
+\DeclareOption{twoside}{\@twosidetrue}
+\ExecuteOptions{twocolumn,twoside}
+\ProcessOptions
+\if@twocolumn
+	\if@twoside
+	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,twoside]{book}
+	\else
+	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,oneside]{book}
+	\fi
+\else
+	\if@twoside
+	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,twoside]{book}
+	\else
+	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,oneside]{book}
+	\fi
+\fi
+
+\if@twoside
+\RequirePackage[outer=3cm,inner=2cm,top=2.5cm,bottom=3cm,asymmetric,twoside]{geometry}
+\else
+\RequirePackage[left=2cm,right=2cm,top=2.5cm,bottom=3cm]{geometry}
+\fi
+
+
+\RequirePackage{cuted,dblfloatfix}
 \RequirePackage{lettrine}
-\RequirePackage{xparse}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
 \RequirePackage[table]{xcolor}
@@ -22,6 +48,7 @@
 \renewcommand*\rmdefault{lmr}
 \newcommand\textold[1]{{\imfellEnglish\itshape #1}}
 \newcommand\tableheader{\imfellEnglish\scshape}
+\renewcommand\bfseries{\imfellEnglish\scshape}
 \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
@@ -86,17 +113,17 @@
   \vskip\belowcaptionskip}
 
 % Add quotes
-\newcommand{\Quote}[3][-.7em]{
+\newcommand{\Quote}[3][0em]{
 	{
-		\imfellEnglish\small
+		\imfellEnglish\small\slshape
 		\linespread{.9}
 		{
-			\slshape\color{black!50}
+			\color{black!50}
 			\setlength\parindent{5pt}
 			``#2''
-			% \hrulefill
+
 		}
-		\ifx&#3&\else\begin{flushright}{\vspace{#1}\color{ChapterColor}--- #3}\end{flushright}\fi
+		\ifx&#3&\else{\hfill\color{ChapterColor}--- #3}\fi
 	}
 }
 \newcommand{\Chapter}[3]{
@@ -111,16 +138,16 @@
 % Items
 \newenvironment{itemize*}%
   {\begin{itemize}%
-    \setlength{\itemsep}{.2em}%
-    \setlength{\parskip}{.2em}}%
+    \setlength{\itemsep}{0.15em}%
+    \setlength{\parskip}{0em}}%
   {\end{itemize}}
 \newenvironment{enumerate*}%
   {\begin{enumerate}%
-    \setlength{\itemsep}{.2em}%
-    \setlength{\parskip}{.2em}}%
+    \setlength{\itemsep}{0.15em}%
+    \setlength{\parskip}{0em}}%
   {\end{enumerate}}
 % Different sections
-\renewcommand \section {
+\renewcommand\section{
 	\@startsection{section}
 	{1}
 	{0pt}{.5em}{.5em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
@@ -154,12 +181,6 @@
 \fi
 }
 \newcommand{\GFeat}[4][General]{\Feat[#1]{#2}{}{#3}{#4}{}{}}
-
-\setlength{\columnsep}{.7cm}
-\setlength{\voffset}{-1.54cm}
-\setlength{\tabcolsep}{0.1cm}
-\setlength{\textheight}{24cm}
-\setlength{\belowcaptionskip}{.2em}
 
 % NPC functions
 
@@ -205,7 +226,7 @@
 	\end{table*}
 }
 \newcommand{\BigTablePair}[3]{
-	\begin{table*}[ht!]
+	\begin{table*}[hb!]
 	\rowcolors{0}{}{TableColor}
 	\scriptsize
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
@@ -255,24 +276,34 @@
 }
 
 \newcommand{\FeatTable}[3][l]{
-	\BigTablePair{}{#1 p{4.8cm} X}{
+	\begin{table*}[ht!]
+	\rowcolors{0}{}{TableColor}
+	\scriptsize
+	\begin{tabularx}{\textwidth}{#1 p{4.8cm} X}
 		\tableheader #2 Feat & \textold{Prerequisites} & \textold{Benefit}\\
 		#3
-	}
+	\end{tabularx}
+	\end{table*}
 }
 
 \renewcommand{\arraystretch}{1.1}
-\linespread{1.05}
+\linespread{1.025}
 \setcounter{secnumdepth}{0}
 \renewcommand{\chaptermark}[1]{ \markboth{\scshape\MakeUppercase{#1}}{} }
 \renewcommand{\sectionmark}[1]{ \markright{\scshape#1}{} }
 \def\@evenhead{\imfellEnglish\thepage\hfil\leftmark}%
 \def\@oddhead{\imfellEnglish{\rightmark}\hfil\thepage}%
-\setlength{\intextsep}{.5em}
-\setlength{\textfloatsep}{.5em}
-% \setlength{\textfloatsep}{1em}
+\setlength{\dbltextfloatsep}{1mm}
+\setlength{\intextsep}{2mm}
+\setlength{\textfloatsep}{2mm}
+\setlength{\abovecaptionskip}{2mm}
+\setlength{\belowcaptionskip}{0mm}
+\setlength{\baselineskip}{1mm}
+\setlength{\parskip}{.2em}
 \setlength{\stripsep}{.5em}
 \setlength{\aboverulesep}{0em}
 \setlength{\belowrulesep}{0em}
+\setlength{\columnsep}{.5cm}
+\setlength{\tabcolsep}{0.1cm}
 \hyphenpenalty=10000
 \endinput

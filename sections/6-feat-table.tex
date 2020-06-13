@@ -62,10 +62,10 @@
 	\feat{Psionic Hole} & Con 15 & Foes lose psionic focus and power points\\
 	\feat{Psionic Mimicry} & \skill{Bluff} 8 ranks, \skill{Knowledge} (psionics) 4 ranks, \skill{Psicraft} 4 ranks & Use \skill{Bluff} to disguise spell as psionics\\
 	\feat{Psionic Schooling} & --- & One psionic class becomes an additional favored class\\
+	\feat{Quicken Spell-Like Ability} & Spell-like ability at caster level 10th or higher & Use chosen spell-like ability as swift action\\
 }
 
 \FeatTable{General}{
-	\feat{Quicken Spell-Like Ability} & Spell-like ability at caster level 10th or higher & Use chosen spell-like ability as swift action\\
 	\feat{Raised by Beasts} & --- & Wild empathy for a kind of animal\\
 	\feat{Rapid Metabolism} & Con 13 & Heal hit points more quickly\\
 	\feat{Reckless Offense} & Base attack bonus +1 & Take $-4$ penalty to AC to gain +2 on melee attack rolls\\
@@ -112,7 +112,20 @@
 	\feat{Trader} & --- & +2 bonus on \skill{Appraise} and \skill{Bluff} checks
 }
 
-\FeatTable{Fighter}{
+\FeatTable[p{3cm}]{Racial}{
+	\feat{Active Glands} & Thri‐kreen & Use poison two additional times per day\\
+	\feat{Advanced Antennae} & Thri‐kreen & Gain scent ability\\
+	\feat{Blend} & Thri‐kreen & +3 on \skill{Hide} checks in sandy or arid terrain\\
+	\feat{Blessed by the Ancestors} & Thri‐kreen & +1 bonus on all saves\\
+	\feat{Cannibalism Ritual} & Wis 13, halfling & Gain ability bonus for 1 day after devouring slain foe\\
+	\feat{Dwarven Vision} & Mul & Gain darkvision 60 ft\\
+	\feat{Elfeater} & Thri‐kreen & +1 on attack rolls and +2 on some skill checks against elves\\
+	\feat{Improved Gyth'sa} & Thri‐kreen, Con 13 & Recover double hit points after a night's rest\\
+	\feat{Tikchak} & Thri‐kreen, character level 5th & Add Wis to \skill{Survival} checks, gain proficiency with chatkcha\\
+	\feat{Tokchak} & Thri‐kreen & Adjacent allies gain +1 bonus on Ref saves
+}
+
+\FeatTable[p{3cm}]{Fighter}{
 	\feat{Blind-Fight} & --- & Reduce penalties fighting invisible foes\\
 	\feat{Combat Expertise} & Int 13 & Take penalty in attack rolls to increase AC\\
 	~ \feat{Improved Disarm} & Int 13, \feat{Combat Expertise} & +4 on disarm rolls, no attack of opportunity\\
@@ -120,20 +133,20 @@
 	~ \feat{Improved Trip} & Int 13, \feat{Combat Expertise} & +4 on trip rolls, no attack of opportunity\\
 	\feat{Combat Reflexes} & --- & Make additional attacks of opportunity\\
 	\feat{Commanding Presence} & \skill{Diplomacy} 7 ranks, \skill{Knowledge} (warcraft) 5 ranks & New use for \skill{Diplomacy}\\
-	\feat{Concentrated Fire} & Base attack bonus +1 & +1 bonus on attack rolls when firing with a squad\\
+	\feat{Concentrated Fire} & Base attack bonus +1 & +1 bonus on attack rolls when firing with a squad \\
 	\feat{Dodge} & Dex 13 & +1 dodge bonus to AC against one opponent\\
 	~ \feat{Mobility} & Dex 13, \feat{Dodge} & +4 dodge bonus against some attacks of opportunity\\
 	~ ~ \feat{Shot On The Run} & Dex 13, \feat{Dodge}, \feat{Mobility}, \feat{Point Blank Shot}, base attack bonus +4 & Move before and after a ranged attack\\
 	~ ~ \feat{Spring Attack} & Dex 13, \feat{Dodge}, \feat{Mobility}, base attack bonus +4 & Move before and after a melee attack\\
+}
+
+\FeatTable[>{\raggedright}p{3.5cm}]{Fighter}{
 	~ ~ ~ \feat{Whirlwind Attack} & Dex 13, Int 13, \feat{Combat Expertise}, \feat{Dodge}, \feat{Mobility}, \feat{Spring Attack}, base attack bonus +4 & Attack all opponents within reach with one full-round attack\\
 	\feat{Exotic Weapon Proficiency} & Base attack bonus +1 & No penalty when attacking with chosen weapon\\
 	\feat{Implacable Defender} & Str 13, Base attack bonus +3 & +2 bonus on bull rush, overrun and trip rolls\\
 	\feat{Improved Critical} & Proficient with weapon, base attack bonus +8 & Double threat range of chosen weapon\\
 	\feat{Improved Initiative} & --- & +4 bonus on initiative\\
-	\feat{Improved Shield Bash} & \feat{Shield Proficiency} & Retain shield AC when attacking with it
-}
-
-\FeatTable{Fighter}{
+	\feat{Improved Shield Bash} & \feat{Shield Proficiency} & Retain shield AC when attacking with it\\
 	\feat{Improved Unarmed Strike} & --- & Considered armed when unarmed\\
 	~ \feat{Deflect Arrows} & Dex 13, \feat{Improved Unarmed Strike} & Deflect one ranged attack per round\\
 	~ ~ \feat{Snatch Arrows} & Dex 15, \feat{Deflect Arrows}, \feat{Improved Unarmed Strike} & Catch ranged weapon instead of deflecting\\
@@ -175,98 +188,5 @@
 	\feat{Weapon Focus} & Proficiency with weapon, base attack bonus +1 & +1 bonus on attack rolls with chosen weapon\\
 	~ \feat{Greater Weapon Focus} & Proficiency with weapon, \feat{Weapon Focus} with weapon, fighter level 8th & +1 bonus on attack rolls with chosen weapon\\
 	~ ~ \feat{Greater Weapon Specialization} & Proficiency with weapon, \feat{Greater Weapon Focus} with weapon, \feat{Weapon Focus} with weapon, \feat{Weapon Specialization} with weapon, fighter level 12th& +2 bonus damage with chosen weapon\\
-	~ \feat{Weapon Specialization} & Proficiency with weapon, \feat{Weapon Focus} with weapon, fighter level 4th & +2 bonus damage with chosen weapon
-}
-
-\FeatTable{Psionic}{
-	\feat{Aligned Attack} & Base attack bonus +6 & \\
-	\feat{Body Fuel} & --- & \\
-	\feat{Boost Construct} & --- & \\
-	\feat{Combat Manifestation} & --- & \\
-	\feat{Deep Impact} & Str 13, \feat{Psionic Weapon}, base attack bonus +5 & 
-}
-\FeatTable{Psionic}{
-	\feat{Expanded Knowledge} & Manifester level 3rd & \\
-	\feat{Fell Shot} & Dex 13, \feat{Point Blank Shot}, \feat{Psionic Shot}, base attack bonus +5 & \\
-	\feat{Focused Sunder} & Str 13, \feat{Power Attack}, \feat{Improved Sunder} & \\
-	\feat{Ghost Attack} & Base attack bonus +3 & \\
-	\feat{Greater Power Penetration} & \feat{Power Penetration} & \\
-	\feat{Greater Power Specialization} & \feat{Power Specialization}, \feat{Weapon Focus} (ray), manifeste & \\level 12th.}
-	\feat{Greater Psionic Endowment} & \feat{Psionic Endowment} & \\
-	\feat{Greater Psionic Fist} & Str 13, \feat{Psionic Fist}, base attack bonus +5 & \\
-	\feat{Greater Psionic Shot} & \feat{Point Blank Shot}, \feat{Psionic Shot}, base attack bonus +5 & \\
-	\feat{Greater Psionic Weapon} & Str 13, \feat{Psionic Weapon}, base attack bonus +5 & \\
-	\feat{Improved Psicrystal} & \feat{Psicrystal Affinity} & \\
-	\feat{Inquisitor} & Wis 13 & \\
-	\feat{Mental Leap} & Str 13, \skill{Jump} 5 ranks & \\
-	\feat{Metamorphic Transfer} & Wis 13, manifester level 5th & \\
-	\feat{Narrow Mind} & Wis 13 & \\
-	\feat{Overchannel} & --- & \\
-	\feat{Power Penetration} & --- & \\
-	\feat{Power Specialization} & \feat{Weapon Focus} (ray), manifester level 4th & \\
-	\feat{Psicrystal Affinity} & Manifester level 1st & \\
-	\feat{Psicrystal Containment} & \feat{Psicrystal Affinity}, manifester level 3rd & \\
-	\feat{Psionic Body} & --- & \\
-	\feat{Psionic Charge} & Dex 13, \feat{Speed of Thought} & \\
-	\feat{Psionic Dodge} & Dex 13, \feat{Dodge} & \\
-	\feat{Psionic Endowment} & --- & \\
-	\feat{Psionic Fist} & Str 13 & \\
-	\feat{Psionic Meditation} & Wis 13, \skill{Concentration} 7 ranks & \\
-	\feat{Psionic Shot} & \feat{Point Blank Shot} & \\
-	\feat{Psionic Talent} & Having a power point reserve & \\
-	\feat{Psionic Weapon} & Str 13 & \\
-	\feat{Return Shot} & \feat{Point Blank Shot}, \feat{Psionic Shot}, \feat{Fell Shot}, base attack bonus +3 & \\
-	\feat{Speed Of Thought} & Wis 13 & \\
-	\feat{Talented} & \feat{Overchannel} & \\
-	\feat{Unavoidable Strike} & Str 13, \feat{Psionic Fist}, base attack bonus +5 & \\
-	\feat{Up The Walls} & Wis 13 & \\
-	\feat{Wounding Attack} & Base attack bonus +8 & 
-}
-
-\FeatTable[p{3cm}]{Metapsionic}{
-	\feat{Burrowing Power} & --- & Manifest power through barriers\\
-	\feat{Chain Power} & --- & Power that deals energy damage chains to secondary targets\\
-	\feat{Delay Power} & --- & Power activates after a trigger\\
-	\feat{Empower Power} & --- & Increase all variables of a power by 50\%\\
-	\feat{Enlarge Power} & --- & Increase range of a power by 100\%\\
-	\feat{Extend Power} & --- & Double duration of a power\\
-	\feat{Maximize Power} & --- & Maximize all variables of a power\\
-	\feat{Opportunity Power} & --- & Manifest power as attack of opportunity\\
-	\feat{Quicken Power} & --- & Manifest power as swift action\\
-	\feat{Split Psionic Ray} & Any other metapsionic feat & Split psionic ray into two\\
-	\feat{Twin Power} & --- & Manifest a power twice at the same time\\
-	\feat{Unconditional Power} & --- & Manifest power in dazed, confused, nauseated, or stunned\\
-	\feat{Widen Power} & --- & Increase area of a power by 100\%
-}
-
-\FeatTable[p{3cm}]{Metamagic}{
-	\feat{Empower Spell} & --- & Increase all variables of a spell by 50\%\\
-	\feat{Enlarge Spell} & --- & Increase range of a spell by 100\%\\
-	\feat{Extend Spell} & --- & Double duration of a spell\\
-	\feat{Heighten Spell} & --- & Increase spell effective level\\
-	\feat{Maximize Spell} & --- & Maximize all variables of a spell\\
-	\feat{Quicken Spell} & --- & Cast spell as swift action\\
-	\feat{Silent Spell} & --- & Cast spell without verbal component\\
-	\feat{Still Spell} & --- & Cast spell without somatic component\\
-	\feat{Widen Spell} & --- & Increase area of a spell by 100\%
-}
-
-\FeatTable{Item Creation}{
-	\feat{Brew Potion} & Caster level 3rd & Create magic potions\\
-	\feat{Craft Cognizance Crystal} & Manifester level 3rd & Create power point storage\\
-	\feat{Craft Construct} & \feat{Craft Magic Arms and Armor}, \feat{Craft Wondrous Item} & Create golems and other magical constructs\\
-	\feat{Craft Dorje} & Manifester level 5th & Create psionic wand\\
-	\feat{Craft Magic Arms and Armor} & Caster level 5th & Create magic weapons, armor and shields\\
-	\feat{Craft Psicrown} & Manifester level 12th & Create psionic staff\\
-	\feat{Craft Psionic Arms and Armor} & Manifester level 5th & Create psionic weapons, armor and shields\\
-	\feat{Craft Psionic Construct} & \feat{Craft Psionic Arms and Armor}, \feat{Craft Universal Item} & Create golems and constructs using psionism\\
-	\feat{Craft Rod} & Caster level 9th & Create magic rods\\
-	\feat{Craft Staff} & Caster level 12th & Create magic staffs\\
-	\feat{Craft Universal Item} & Manifester level 3rd & Create universal items\\
-	\feat{Craft Wand} & Caster level 5th & Create magic wand\\
-	\feat{Craft Wondrous Item} & Caster level 3rd & Create wondrous items\\
-	\feat{Forge Ring} & Caster level 12th & Create magic rings\\
-	\feat{Imprint Stone} & Manifester level 1st & \\
-	\feat{Scribe Scroll} & Caster level 1st & Scribe magic scrolls\\
-	\feat{Scribe Tattoo} & Manifester level 3rd & Scribe psionic tattoos
+	~ \feat{Weapon Specialization} & Proficiency with weapon, \feat{Weapon Focus} with weapon, fighter level 4th & +2 bonus damage with chosen weapon\\
 }

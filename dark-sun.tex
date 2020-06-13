@@ -1,10 +1,9 @@
-\documentclass[10pt,a4paper,twocolumn]{d20}
+\documentclass[twocolumn]{d20}
 \usepackage{Nouveaud}
 \usepackage{ucs}
 \usepackage{multirow}
 \usepackage{fdsymbol}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
+\usepackage{pdfpages}
 \usepackage[pdftex,unicode,colorlinks]{hyperref}
 \hypersetup{
   bookmarksnumbered=false,
@@ -25,9 +24,9 @@
 \renewcommand\labelitemi{$\smallblackdiamond$}
 \newcommand\onehalf{\unichar{"00BD} }
 \begin{document}
+\includepdf[pages=-]{credits-and-legal.pdf}
 
 \tableofcontents
-\listoftables
 
 \Chapter{Introduction}
 {For thousands of years, the Tablelands have remained untouched: its politics frozen in a delicate stalemate, its life in a balance even more delicate. It is true that the Dragon Kings amused themselves with their petty wars, rattling sabers to punctuate the passing of ages. It is true that, occasionally, another city would be swallowed by the wastes.
@@ -57,7 +56,10 @@ To survive, almost every form of life has become a monster. On the increasingly 
 \input{chapters/5-skills.tex}
 
 \Chapter{Feats}
-{You can learn much from observing another being. The way the gith hunches before it leaps at you, or how the aarakocra circles before it dives. The way the halfling inhales and pauses briefly before shooting his poisoned needles, or how the Urikite trader licks his lips before making his final offer. But appearances can deceive. No two creatures are alike. Remember that when the gith hunches before casting a defiler spell, or the Urikite trader moistens his lips and spits a needle at you.}{reoss}
+{>>>>>> You can learn much from observing another being. The way the gith hunches before it leaps at you, or how the aarakocra circles before it dives. The way the halfling inhales and pauses briefly before shooting his poisoned needles, or how the Urikite trader licks his lips before making his final offer. But appearances can deceive. No two creatures are alike. Remember that when the gith hunches before casting a defiler spell, or the Urikite trader moistens his lips and spits a needle at you.}{reoss}
 \input{chapters/6-feats.tex}
 
+
+\listoftables
+\includepdf[pages=-]{ogl.pdf}
 \end{document}
