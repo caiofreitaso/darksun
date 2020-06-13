@@ -20,10 +20,9 @@
 
 % Font settings
 \renewcommand*\rmdefault{lmr}
-\newcommand\textold[1]{{\imfellEnglish #1}}
+\newcommand\textold[1]{{\imfellEnglish\itshape #1}}
 \newcommand\tableheader{\imfellEnglish\scshape}
 \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
-\renewcommand\bfseries{\scshape\imfellEnglish}
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % References
@@ -53,8 +52,8 @@
 	}
 }
 
-\newcommand{\cbold}[1]{
-	\contourlength{0.01em}\contournumber{1}\contour{}{#1}
+\newcommand{\cbold}[2][black]{
+	\contourlength{0.001pt}\contournumber{1}\contour{#1}{#2}
 }
 % Chapter Name
 \def\@makechapterhead#1{%
@@ -252,6 +251,13 @@
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
 		#3
+	}
+}
+
+\newcommand{\FeatTable}[2]{
+	\BigTablePair{}{l p{4.8cm} X}{
+		\tableheader #1 Feat & \textold{Prerequisites} & \textold{Benefit}\\
+		#2
 	}
 }
 
