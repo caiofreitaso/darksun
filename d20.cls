@@ -64,6 +64,7 @@
 \renewcommand\tableofcontents{
 	{
 		\imfellEnglish
+		\parskip=0em
 		\chapter*{\contentsname}
 		\@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
 		\@starttoc{toc}
@@ -73,6 +74,7 @@
 \renewcommand\listoftables{%
 	{
 		\imfellEnglish
+		\parskip=0em
 		\chapter*{\listtablename}%
 		\@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%
 		\@starttoc{lot}%
@@ -114,6 +116,7 @@
 
 % Add quotes
 \newcommand{\Quote}[3][0em]{
+	\noindent\parbox[c]{\linewidth}
 	{
 		\imfellEnglish\small\slshape
 		\linespread{.9}
@@ -124,6 +127,7 @@
 
 		}
 		\ifx&#3&\else{\hfill\color{ChapterColor}--- #3}\fi
+		\vskip.5em
 	}
 }
 \newcommand{\Chapter}[3]{
@@ -164,24 +168,47 @@
 }
 \newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1}}
 \newcommand{\Feat}[7][General]{
-\subsection{#2 \normalsize[#1]} \label{feat:#2}
-#3
+	\subsection{#2 \normalsize[#1]} \label{feat:#2}
+	#3
 
-\ifx&#4&\else\textbf{Prerequisites:} #4
+	\ifx&#4&\else\textbf{Prerequisites:} #4
 
-\fi
-\ifx&#5&\else\textbf{Benefit:} #5
+	\fi
+	\ifx&#5&\else\textbf{Benefit:} #5
 
-\fi
-\ifx&#6&\else\textbf{Normal:} #6
+	\fi
+	\ifx&#6&\else\textbf{Normal:} #6
 
-\fi
-\ifx&#7&\else\textbf{Special:} #7
+	\fi
+	\ifx&#7&\else\textbf{Special:} #7
 
-\fi
+	\fi
 }
 \newcommand{\GFeat}[4][General]{\Feat[#1]{#2}{}{#3}{#4}{}{}}
+\newcommand{\PrestigeClass}[7]{
+	\section{#1}
+	\Quote{#2}{#3}
 
+	#4
+
+	\textbf{Hit Die:} #5.
+
+	\subsection{Becoming #6 #1}
+	#7
+	\PrestigeClassRules[#1]
+}
+\newcommand{\PrestigeClassRules}[6][a]{
+	\subsection{Entry Requirements}
+	#2
+	\subsection{Class Skills}
+	#3
+
+	\textbf{Skill Points per Level:} #4 + Int modifier.
+	
+	#5{The #1}{#6}
+	
+	\subsection{Class Features}
+}
 % NPC functions
 
 % Table commands
@@ -244,7 +271,15 @@
 		#3
 	}
 }
-\newcommand{\MiniWarriorTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X]{
+
+\newcommand{\PrestigeSpellTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X l]{
+	\BigTablePair{#2}{#1}{
+		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Spellcasting\\
+		#3
+	}
+}
+
+\newcommand{\MiniWarriorTable}[3][l b{.8cm} Z{.6cm} Z{.6cm} Z{.6cm} X]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
@@ -305,5 +340,10 @@
 \setlength{\belowrulesep}{0em}
 \setlength{\columnsep}{.5cm}
 \setlength{\tabcolsep}{0.1cm}
+
 \hyphenpenalty=10000
+\clubpenalty=10000
+\widowpenalty=1
+\displaywidowpenalty=10000
+\postdisplaypenalty=10000
 \endinput
