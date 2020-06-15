@@ -53,6 +53,7 @@
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % References
+\newcommand{\class}[1]{\hyperref[class:#1]{#1}}
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
 \newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
@@ -166,6 +167,10 @@
 	{3}
 	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
 }
+\newcommand{\Class}[3]{
+	\section{#1}\label{class:#1}
+	\Quote{#2}{#3}
+}
 \newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1}}
 \newcommand{\Feat}[7][General]{
 	\subsection{#2 \normalsize[#1]} \label{feat:#2}
@@ -186,8 +191,7 @@
 }
 \newcommand{\GFeat}[4][General]{\Feat[#1]{#2}{}{#3}{#4}{}{}}
 \newcommand{\PrestigeClass}[7]{
-	\section{#1}
-	\Quote{#2}{#3}
+	\Class{#1}{#2}{#3}
 
 	#4
 
@@ -278,13 +282,17 @@
 		#3
 	}
 }
-
-\newcommand{\MiniWarriorTable}[3][l b{.8cm} Z{.6cm} Z{.6cm} Z{.6cm} X]{
+\newcommand{\MiniWarriorTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
 	}
 }
+
+\newcommand{\PrestigeWarriorTable}[2]{
+	\MiniWarriorTable[l b{.8cm} Z{.6cm} Z{.6cm} Z{.6cm} X]{#1}{#2}
+}
+
 \newcommand{\SpellcasterTable}[3]{
 	\BigTablePair{#1}{l l Z{.6cm} Z{.6cm} Z{.6cm} X Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2} Z{#2}}{
 		\rowcolor{white}
@@ -294,8 +302,8 @@
 		#3
 	}
 }
-\newcommand{\HalfSpellcasterTable}[3]{
-	\BigTablePair{#1}{l l C C C l Z{#2} Z{#2} Z{#2} Z{#2}}{
+\newcommand{\HalfSpellcasterTable}[3][1cm]{
+	\BigTablePair{#2}{l l C C C l Z{#1} Z{#1} Z{#1} Z{#1}}{
 		\rowcolor{white}
 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-10}

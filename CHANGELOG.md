@@ -21,6 +21,9 @@
 - Monster feats are worded the same as player's feats ("creature" changed to "you").
 - Improved Natural Attack text moved to `Special`.
 - Add text for describing Divine Feats.
+- Remove prestige classes: Arcane Archer, Blackguard, Dragon Disciple, and Dwaven Defender.
+- Add text from Bard spellcasting to Assassin's spells, in order to remove the bard reference.
+- Remove footnote at Assassin's table, and add new paragraph to explain the need for Intelligence bonus when the class gives 0 slots per day.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -44,3 +47,8 @@
 - Remove confusing text on Survival.
 - Remove references to Monster Manual.
 - Remove  `Improved Hidden Talent` and `Greater Hidden Talent` as Hidden Talent is not within SRD.
+- **Change Regional feat type** - You may only select regional feats at 1st level, and you can only select one regional feat.
+- Remove the type Fighter from `Jungle Fighter`.
+- Remove prestige class: Soulknife.
+- Add spells to Assassin's spell list: 1-_slave scent_; 2-_death mark_; 3-_boneclaw's cut, death whip_; 4-_claws of the tembo, mage seeker, rangeblade, scapegoat_.
+- **Change Arch Defiler** - Condensed the prestige class from 10-level down to a 5-level prestige class.
