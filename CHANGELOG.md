@@ -52,3 +52,7 @@
 - Remove prestige class: Soulknife.
 - Add spells to Assassin's spell list: 1-_slave scent_; 2-_death mark_; 3-_boneclaw's cut, death whip_; 4-_claws of the tembo, mage seeker, rangeblade, scapegoat_.
 - **Change Arch Defiler** - Condensed the prestige class from 10-level down to a 5-level prestige class.
+- Remove Black Cassock - the class does not improve the gameplay experience, as it only gives magical items.
+- Remove Draqoman - the class overlaps too much with Dune Trader.
+- Change wording on Browncloak to match SRD's.
+- **Change Favored Terrain** - add bonus on Knowledge (geography), Listen, and Search checks. Bonus also applied on Knowledge (geography) & Knowledge (nature) checks made about the favored terrain, not only when within it.

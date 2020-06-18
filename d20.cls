@@ -213,6 +213,34 @@
 	
 	\subsection{Class Features}
 }
+\newcommand{\City}[5]{
+	\section{#1}
+	\textbf{Population:} #2
+
+	\textbf{Exports:} #3
+
+	\textbf{Languages:} #4
+
+	#5
+
+	\CityDescription
+}
+\newcommand{\CityDescription}[6]{
+	\subsection{Life and Society}
+	#1
+	\subsection{Government and Politics}
+	#2
+	\subsection{Power Groups}
+	#3
+	\subsection{Major Settlements}
+	#4
+	\subsection{Important Sites}
+	#5
+	\subsection{Adventure Ideas}
+	\begin{itemize*}
+	#6
+	\end{itemize*}
+}
 % NPC functions
 
 % Table commands
@@ -233,12 +261,11 @@
 	\ifx&#2&\else\end{table}\fi
 }
 \newcommand{\Table}[4][h!]{
-	\begin{table}[#1]
-	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
+	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
 	\rowcolors{2}{}{TableColor}\scriptsize
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
-	\end{table}
+	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\TableOdd}[4][h!]{
 	\begin{table}[#1]
@@ -276,9 +303,9 @@
 	}
 }
 
-\newcommand{\PrestigeSpellTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X l]{
+\newcommand{\PrestigeSpellTable}[3][l b{1.6cm} Z{.6cm} Z{.6cm} Z{.6cm} X l]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Spellcasting\\
+		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Spellcasting\\
 		#3
 	}
 }
@@ -352,6 +379,6 @@
 \hyphenpenalty=10000
 \clubpenalty=10000
 \widowpenalty=1
-\displaywidowpenalty=10000
-\postdisplaypenalty=10000
+\displaywidowpenalty=1
+\postdisplaypenalty=1
 \endinput
