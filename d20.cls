@@ -67,6 +67,7 @@
 		\imfellEnglish
 		\parskip=0em
 		\chapter*{\contentsname}
+		\small
 		\@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
 		\@starttoc{toc}
 	}
@@ -199,9 +200,9 @@
 
 	\subsection{Becoming #6 #1}
 	#7
-	\PrestigeClassRules[#1]
+	\PrestigeClassRules{#1}
 }
-\newcommand{\PrestigeClassRules}[6][a]{
+\newcommand{\PrestigeClassRules}[7]{
 	\subsection{Entry Requirements}
 	#2
 	\subsection{Class Skills}
@@ -212,6 +213,22 @@
 	#5{The #1}{#6}
 	
 	\subsection{Class Features}
+	#7
+	\PrestigeClassLore{#1}
+}
+\newcommand{\PrestigeClassLore}[6]{
+	\subsection{#1 Lore}
+	\ifx&#2&
+	Characters with ranks in \skill{Knowledge} (#3) can research \lowercase{#1}s to learn more about them. When a character makes a skill check, read or paraphrase the following, including the information from lower DCs.
+	\else
+	Characters with ranks in \skill{Knowledge} (#3) can research #2 to learn more about them. When a character makes a skill check, read or paraphrase the following, including the information from lower DCs.
+	\fi
+
+	\textbf{DC 15:} #4
+
+	\textbf{DC 20:} #5
+
+	\textbf{DC 30:} #6
 }
 \newcommand{\City}[5]{
 	\section{#1}
@@ -225,21 +242,51 @@
 
 	\CityDescription
 }
-\newcommand{\CityDescription}[6]{
-	\subsection{Life and Society}
-	#1
-	\subsection{Government and Politics}
-	#2
-	\subsection{Power Groups}
-	#3
-	\subsection{Major Settlements}
-	#4
-	\subsection{Important Sites}
+\newcommand{\SubCity}[5]{
+	\subsection{#1}
+	\textbf{Population:} #2
+
+	\textbf{Exports:} #3
+
+	\textbf{Languages:} #4
+
 	#5
-	\subsection{Adventure Ideas}
-	\begin{itemize*}
+
+	\CityDescription[\subsubsection]
+}
+\newcommand{\CityDescription}[7][\subsection]{
+	#1{Life and Society}
+	#2
+	#1{Government and Politics}
+	#3
+	#1{Power Groups}
+	#4
+	\ifx&#5&\else
+	#1{Major Settlements}
+	#5
+	\fi
+
+	\ifx&#6&\else
+	#1{Important Sites}
 	#6
+	\fi
+	#1{Adventure Ideas}
+	\begin{itemize*}
+	#7
 	\end{itemize*}
+}
+\newcommand{\AlternateClassFeature}[6]{
+	\subsubsection{#1}
+	#2
+
+	\ifx&#3&\else\textbf{Special Requirements:} #3
+
+	\fi
+	\textbf{Level:} #4
+
+	\textbf{Replaces:} #5
+
+	\textbf{Benefit:} #6
 }
 % NPC functions
 

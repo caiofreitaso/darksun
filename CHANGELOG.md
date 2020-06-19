@@ -24,6 +24,7 @@
 - Remove prestige classes: Arcane Archer, Blackguard, Dragon Disciple, and Dwaven Defender.
 - Add text from Bard spellcasting to Assassin's spells, in order to remove the bard reference.
 - Remove footnote at Assassin's table, and add new paragraph to explain the need for Intelligence bonus when the class gives 0 slots per day.
+- Remove Horizon Walker's planar terrain mastery _aligned_.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -56,3 +57,13 @@
 - Remove Draqoman - the class overlaps too much with Dune Trader.
 - Change wording on Browncloak to match SRD's.
 - **Change Favored Terrain** - add bonus on Knowledge (geography), Listen, and Search checks. Bonus also applied on Knowledge (geography) & Knowledge (nature) checks made about the favored terrain, not only when within it.
+- Remove Arcanist - transformed into an alternate class feature.
+- Remove Desert Runner - transformed into an alternate class feature.
+- Remove Halfling Protector - transformed into an alternate class feature.
+- Remove Tribal Psionist - transformed into an alternate class feature.
+- **Add Alternate Class Features**
+	- _Arcanist_: elf wizard trades _bonus feat_ at 10th level for _exegete_, considered trained in all Knowledge skills and can take 10 in Knowledge checks that the character has at least 10 ranks.
+	- _Desert Runner_: elf ranger trades _animal companion_ for increased speed, bonus on AC, and Concentration checks while in elf run state. Bonus and speed increases every 3 levels after that.
+	- _Draqoman_: bard trades _quick thinking_ for _contact_ 1/week. Weekly uses increases each 5 levels after that.
+	- _Halfling Protector_: halfling wizard trades _bonus feat_ at 10th level for _phantasmal guardian_ (PCA1 22).
+	- _Tribal Psionist_: wilder trades _wild surge_ bonus at 7th level for _psionic ritual_.
