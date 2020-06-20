@@ -203,14 +203,14 @@
 	\PrestigeClassRules{#1}
 }
 \newcommand{\PrestigeClassRules}[7]{
+	#5{The #1}{#6}
+
 	\subsection{Entry Requirements}
 	#2
 	\subsection{Class Skills}
 	#3
 
 	\textbf{Skill Points per Level:} #4 + Int modifier.
-	
-	#5{The #1}{#6}
 	
 	\subsection{Class Features}
 	#7
@@ -297,6 +297,7 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{Z}[1]{>{\centering\arraybackslash}b{#1}}
 \newcolumntype{r}[1]{>{\raggedleft\arraybackslash}b{#1}}
+\newcolumntype{y}[1]{>{\raggedright\arraybackslash}b{#1}}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 %% Tables
@@ -356,6 +357,21 @@
 		#3
 	}
 }
+
+\newcommand{\PrestigeOnlySpellTable}[3][l b{1.6cm} Z{.6cm} Z{.6cm} Z{.6cm} X]{
+	\BigTablePair{#2}{#1}{
+		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Spellcasting\\
+		#3
+	}
+}
+
+\newcommand{\PrestigePowerTable}[3][l b{1.6cm} Z{.6cm} Z{.6cm} Z{.6cm} X l]{
+	\BigTablePair{#2}{#1}{
+		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Manifesting\\
+		#3
+	}
+}
+
 \newcommand{\MiniWarriorTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
@@ -428,4 +444,5 @@
 \widowpenalty=1
 \displaywidowpenalty=1
 \postdisplaypenalty=1
+% \tracingmacros
 \endinput

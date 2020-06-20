@@ -21,10 +21,11 @@
 - Monster feats are worded the same as player's feats ("creature" changed to "you").
 - Improved Natural Attack text moved to `Special`.
 - Add text for describing Divine Feats.
-- Remove prestige classes: Arcane Archer, Blackguard, Dragon Disciple, and Dwaven Defender.
+- Remove prestige classes: Arcane Archer, Blackguard, Dragon Disciple, Dwaven Defender, and Eldritch Knight.
 - Add text from Bard spellcasting to Assassin's spells, in order to remove the bard reference.
 - Remove footnote at Assassin's table, and add new paragraph to explain the need for Intelligence bonus when the class gives 0 slots per day.
 - Remove Horizon Walker's planar terrain mastery _aligned_.
+- Add Use Psionic Device to Loremaster's class skills.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -61,9 +62,13 @@
 - Remove Desert Runner - transformed into an alternate class feature.
 - Remove Halfling Protector - transformed into an alternate class feature.
 - Remove Tribal Psionist - transformed into an alternate class feature.
+- Remove Eagle Knight - transformed into an alternate class feature.
 - **Add Alternate Class Features**
 	- _Arcanist_: elf wizard trades _bonus feat_ at 10th level for _exegete_, considered trained in all Knowledge skills and can take 10 in Knowledge checks that the character has at least 10 ranks.
 	- _Desert Runner_: elf ranger trades _animal companion_ for increased speed, bonus on AC, and Concentration checks while in elf run state. Bonus and speed increases every 3 levels after that.
 	- _Draqoman_: bard trades _quick thinking_ for _contact_ 1/week. Weekly uses increases each 5 levels after that.
 	- _Halfling Protector_: halfling wizard trades _bonus feat_ at 10th level for _phantasmal guardian_ (PCA1 22).
 	- _Tribal Psionist_: wilder trades _wild surge_ bonus at 7th level for _psionic ritual_.
+	- _Eagle Warrior_: draji fighter trades _bonus feat_ bonus at 10th level for _reckless_.
+- Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
+- Change wording on _Jaguar Roar_ to match existing abilities.

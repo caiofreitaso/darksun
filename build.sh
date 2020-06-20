@@ -7,4 +7,4 @@ function create_pdf(){
 
 create_pdf credits-and-legal
 create_pdf ogl
-create_pdf dark-sun
+rubber -d dark-sun
