@@ -26,6 +26,7 @@
 - Remove footnote at Assassin's table, and add new paragraph to explain the need for Intelligence bonus when the class gives 0 slots per day.
 - Remove Horizon Walker's planar terrain mastery _aligned_.
 - Add Use Psionic Device to Loremaster's class skills.
+- **Imperial to METRIC SYSTEM** - _at last._
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -71,4 +72,7 @@
 	- _Tribal Psionist_: wilder trades _wild surge_ bonus at 7th level for _psionic ritual_.
 	- _Eagle Warrior_: draji fighter trades _bonus feat_ bonus at 10th level for _reckless_.
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
+- Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
+- Change Moon Priest: switch requirements for Secular Authority class feature for the feat.
+- Change Moon Priest: switch requirements for Knowledge (astronomy) ranks for Profession (astrologer).

@@ -299,6 +299,7 @@
 \newcolumntype{r}[1]{>{\raggedleft\arraybackslash}b{#1}}
 \newcolumntype{y}[1]{>{\raggedright\arraybackslash}b{#1}}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{z}[1]{>{\centering\arraybackslash}p{#1}}
 
 %% Tables
 \newcommand{\TinyTable}[4][\columnwidth]{
@@ -308,9 +309,10 @@
 	#4\end{tabularx}
 	\ifx&#2&\else\end{table}\fi
 }
-\newcommand{\Table}[4][h!]{
-	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
-	\rowcolors{2}{}{TableColor}\scriptsize
+\newcommand{\Table}[4][\scriptsize]{
+	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
+	#1
+	\rowcolors{2}{}{TableColor}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
@@ -418,6 +420,35 @@
 	\end{tabularx}
 	\end{table*}
 }
+
+\newcommand{\WeaponTable}[3]{
+	\begin{table*}[ht!]
+	\rowcolors{0}{TableColor}{}
+	\scriptsize
+	\begin{tabularx}{\textwidth}{X z{9mm}z{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}z{8mm}z{8mm}z{8mm} p{2.2cm}}
+		\rowcolor{white}
+		& \multicolumn{2}{c}{\tableheader Cost} & \multicolumn{3}{c}{\tableheader Damage} && \multirow[b]{2}{1.1cm}{\centering \tableheader Range Increment}& \multicolumn{3}{c}{\tableheader Weight}&\\
+		\cmidrule[0.5pt]{2-6}
+		\cmidrule[0.5pt]{9-11}
+		\tableheader #1
+		& \tableheader S/M
+		& \tableheader L
+		& \tableheader S
+		& \tableheader M
+		& \tableheader L
+		& \tableheader Critical
+		&
+		& \tableheader S
+		& \tableheader M
+		& \tableheader L
+		& \tableheader Type\\
+		#2
+	\end{tabularx}
+	\end{table*}
+}
+\newcommand{\WeaponType}[1]{\multicolumn{12}{l}{\textit{#1}}}
+\newcommand{\Projectile}[6]{~ #1&#2&#3&&&&&&#4&#5&#6&}
+\newcommand{\InferiorWeapon}[6]{~ #1&#2&#3&$\diamond$&$\diamond$&$\diamond$&&&#4&#5&#6&}
 
 \renewcommand{\arraystretch}{1.1}
 \linespread{1.025}
