@@ -76,3 +76,8 @@
 - Change wording on _Jaguar Roar_ to match existing abilities.
 - Change Moon Priest: switch requirements for Secular Authority class feature for the feat.
 - Change Moon Priest: switch requirements for Knowledge (astronomy) ranks for Profession (astrologer).
+- **Change Metal Weapons** - metal weapons deal +1 damage.
+- Remove maces from the list of weapons that can be constructed from non-metal materials without penalty.
+- Remove Artist's armor - too many dice rolls for arcane spell failure checks.
+- Remove Medium Tyrian armor - too close to a breastplate.
+- Add Long Shield damage to weapon table.
