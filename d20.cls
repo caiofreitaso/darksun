@@ -200,20 +200,22 @@
 
 	\subsection{Becoming #6 #1}
 	#7
-	\PrestigeClassRules{#1}
+	\PrestigeClassRules{#1}{#6}
 }
-\newcommand{\PrestigeClassRules}[7]{
-	#5{The #1}{#6}
+\newcommand{\PrestigeClassRules}[8]{
+	#6{The #1}{#7}
 
 	\subsection{Entry Requirements}
-	#2
-	\subsection{Class Skills}
-	#3
+	\noindent To qualify to become #2 \lowercase{#1}, a character must fufill all the following criteria.
 
-	\textbf{Skill Points per Level:} #4 + Int modifier.
+	#3
+	\subsection{Class Skills}
+	#4
+
+	\textbf{Skill Points per Level:} #5 + Int modifier.
 	
 	\subsection{Class Features}
-	#7
+	#8
 	\PrestigeClassLore{#1}
 }
 \newcommand{\PrestigeClassLore}[6]{
@@ -389,7 +391,7 @@
 }
 
 \newcommand{\PrestigeWarriorTable}[2]{
-	\MiniWarriorTable[l b{.8cm} Z{.6cm} Z{.6cm} Z{.6cm} X]{#1}{#2}
+	\MiniWarriorTable[l b{.7cm} Z{.6cm} Z{.6cm} Z{.6cm} L]{#1}{#2}
 }
 
 \newcommand{\SpellcasterTable}[3]{
@@ -433,7 +435,7 @@
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\rowcolors{0}{TableColor}{}
 	\scriptsize
-	\begin{tabularx}{\textwidth}{X z{9mm}z{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}z{9mm}z{9mm}z{9mm} p{2.1cm}}
+	\begin{tabularx}{\textwidth}{X r{9mm}r{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}r{9mm}r{9mm}r{9mm} p{2.1cm}}
 		\rowcolor{white}
 		& \multicolumn{2}{c}{\tableheader Cost} & \multicolumn{3}{c}{\tableheader Damage} && \multirow[b]{2}{1.1cm}{\centering \tableheader Range Increment}& \multicolumn{3}{c}{\tableheader Weight}&\\
 		\cmidrule[0.5pt]{2-6}
@@ -458,6 +460,13 @@
 \newcommand{\WeaponType}[1]{\multicolumn{12}{l}{\textit{#1}}}
 \newcommand{\Projectile}[6]{~ #1&#2&#3&&&&&&#4&#5&#6&}
 \newcommand{\InferiorWeapon}[6]{~ #1&#2&#3&$\diamond$&$\diamond$&$\diamond$&&&#4&#5&#6&}
+
+\newcommand{\ItemTable}[2]{
+	\Table{#1}{lRR}{
+		\tableheader Item & \tableheader Cost & \tableheader Weight\\
+		#2
+	}
+}
 
 \renewcommand{\arraystretch}{1.1}
 \linespread{1.025}

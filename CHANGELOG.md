@@ -81,3 +81,27 @@
 - Remove Artist's armor - too many dice rolls for arcane spell failure checks.
 - Remove Medium Tyrian armor - too close to a breastplate.
 - Add Long Shield damage to weapon table.
+- Remove Cold Weather Outfit - there is none in Athas.
+- Remove Monk's Outfit - the class does not exist anymore.
+- **Rework Elite Sniper**
+	- The prestige class has much of the Deepwood Sniper prestige class and still has a 3.0 vibe. In order for the class to feel fresh and not colide with the heart of the system and existing feats, the class has been reworked into a ranged rogue.
+	- Increased skills per level to 4 + Int modifier.
+	- Add Balance, Heal, and Use Rope as class skills.
+	- Change snipe to improved sniping: class level as bonus to Hide checks for sniping.
+	- Change progression of ranged sneak attack: +1d6 every odd level.
+	- Remove ignore concealment: Improved Precise Shot already does mostly of what it provides.
+	- Add aim at 2nd level: full-round action Spot check (DC = target's AC) to ignore armor bonus and natural armor bonus for the next attack.
+	- Add hide in plain sight (as ranger) at 4th level.
+	- Add Improved Critical for any ranged weapon with Weapon Focus at 5th level.
+	- Take 10 in Spot checks at 6th level.
+	- Increase ranged sneak attack range to 18m (60 ft.) at 8th level.
+	- Use aim as move-action at 10th level.
+- **Rework Arrow Knight**
+	- The prestige class had a 3.0 vibe and has been reworked into a ranged fighter.
+	- Add Spot as class skill.
+	- Add close combat shot: ranged attacks do not provoke attacks of opportunity.
+	- Add Draji training: levels stack with fighter to fulfill prerequisites.
+	- Remove marksman.
+	- Remove deadly aim.
+	- Remove spot weakness.
+	- Add bonus feat at 2nd and 4th levels: choose fighter bonus feat.
