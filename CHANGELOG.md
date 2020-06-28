@@ -105,3 +105,4 @@
 	- Remove deadly aim.
 	- Remove spot weakness.
 	- Add bonus feat at 2nd and 4th levels: choose fighter bonus feat.
+- Change Master Shipfloater: Profession (shipfloater) to Profession (sailor).
