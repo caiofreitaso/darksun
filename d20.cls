@@ -383,7 +383,7 @@
 	}
 }
 
-\newcommand{\MiniWarriorTable}[3][l l Z{.6cm} Z{.6cm} Z{.6cm} X]{
+\newcommand{\MiniWarriorTable}[3][l l Z{.5cm} Z{.5cm} Z{.5cm} X]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
