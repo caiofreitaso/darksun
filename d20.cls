@@ -134,6 +134,7 @@
 }
 \newcommand{\Chapter}[3]{
 	\chapter{#1}
+	\label{chapter:#1}
 	\begin{strip}
 	\Quote{#2}{#3}
 	\end{strip}
@@ -156,17 +157,17 @@
 \renewcommand\section{
 	\@startsection{section}
 	{1}
-	{0pt}{.5em}{.5em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
+	{0pt}{1em}{0.01em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
 }
 \renewcommand \subsection {
 	\@startsection{subsection}
 	{2}
-	{0pt}{.5em}{.2em}{\color{ChapterColor}\Large\scshape\imfellEnglish}
+	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}
 }
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.5em}{.2em}{\color{QuoteColor}\large\imfellEnglish}
+	{0pt}{.7em}{0.01em}{\color{QuoteColor}\large\imfellEnglish}
 }
 \newcommand{\Class}[3]{
 	\section{#1}\label{class:#1}

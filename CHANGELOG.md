@@ -27,6 +27,9 @@
 - Remove Horizon Walker's planar terrain mastery _aligned_.
 - Add Use Psionic Device to Loremaster's class skills.
 - **Imperial to METRIC SYSTEM** - _at last._
+- Drow poison renamed to "Elven poison".
+- Large scorpion venom renamed to "Large spider venom".
+- Add typical alignments.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -106,3 +109,9 @@
 	- Remove spot weakness.
 	- Add bonus feat at 2nd and 4th levels: choose fighter bonus feat.
 - Change Master Shipfloater: Profession (shipfloater) to Profession (sailor).
+- Change Gladiator: Combat stance starts as move action.
+- Change Gladiator: Martial display starts as move action.
+- Change Arrow Knight: Lethal shot is _Power Attack_ for bows the character has Weapon Focus.
+- Change Craft (poisonmaking): Craft DC is not tabled, it is related to the save DC and type of poison. Contact poisons have Craft DC = 10 + poison's save DC, inhaled poisons have Craft DC = 15 + poison's save DC, and ingested/injury poisons have Craft DC = 5 + poison's save DC.
+- Remove Drakesblood poison.
+- Add _masterwork poisons_: +1 save DC, +300 cp.
