@@ -86,6 +86,7 @@
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % References
+\newcommand{\race}[1]{\hyperref[race:#1]{#1}}
 \newcommand{\class}[1]{\hyperref[class:#1]{#1}}
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
@@ -492,13 +493,21 @@
 	\end{table*}
 }
 \newcommand{\NamedWeaponTable}[2]{\WeaponTable[#1]{#1}{#2}}
-\newcommand{\WeaponType}[1]{\multicolumn{12}{l}{\textit{--- #1 ---}}}
+\newcommand{\TableSubheader}[1]{\textit{--- #1 ---}}
+\newcommand{\WeaponType}[1]{\multicolumn{12}{l}{\TableSubheader{#1}}}
 \newcommand{\Projectile}[6]{~ #1&#2&#3&&&&&&#4&#5&#6&}
 \newcommand{\InferiorWeapon}[6]{~ #1&#2&#3&$\diamond$&$\diamond$&$\diamond$&&&#4&#5&#6&}
 
 \newcommand{\ItemTable}[2]{
 	\Table{#1}{lRR}{
 		\tableheader Item & \tableheader Cost & \tableheader Weight\\
+		#2
+	}
+}
+
+\newcommand{\XPTable}[2]{
+	\Table{Experience Awards for #1}{X l}{
+		\tableheader Action & \tableheader XP Award\\
 		#2
 	}
 }
