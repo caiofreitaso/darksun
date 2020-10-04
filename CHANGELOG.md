@@ -30,7 +30,9 @@
 - Drow poison renamed to "Elven poison".
 - Large scorpion venom renamed to "Large spider venom".
 - Add typical alignments.
-- **Add Character Progression** - XP awards for each class and race, and table for level-dependent benefits.
+- **Add Character Progression** - XP awards for each race, and table for level-dependent benefits.
+- Add expected character wealth per level.
+- Add different paces of campaign - different XP awards/encounter for each type of campaign.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.

@@ -81,12 +81,12 @@
 \renewcommand*\rmdefault{lmr}
 \newcommand\textold[1]{{\imfellEnglish\itshape #1}}
 \newcommand\tableheader{\imfellEnglish\scshape}
+\let\bold\bfseries
 \renewcommand\bfseries{\imfellEnglish\scshape}
 \renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % References
-\newcommand{\race}[1]{\hyperref[race:#1]{#1}}
 \newcommand{\class}[1]{\hyperref[class:#1]{#1}}
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
@@ -506,8 +506,8 @@
 }
 
 \newcommand{\XPTable}[2]{
-	\Table{Experience Awards for #1}{X l}{
-		\tableheader Action & \tableheader XP Award\\
+	\Table{Experience Awards for #1}{X p{2.8cm}}{
+		\tableheader Action & \tableheader XP Award (per ECL)\\
 		#2
 	}
 }
