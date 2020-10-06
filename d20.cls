@@ -506,8 +506,8 @@
 }
 
 \newcommand{\XPTable}[2]{
-	\Table{Experience Awards for #1}{X p{2.8cm}}{
-		\tableheader Action & \tableheader XP Award (per ECL)\\
+	\Table{Experience Awards for #1}{X p{3cm}}{
+		\tableheader Action & \tableheader XP Award (per ECL) \\
 		#2
 	}
 }
