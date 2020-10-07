@@ -312,21 +312,37 @@ Paralyze creature & 100 XP \\
 % }
 
 \subsubsection{Awards for Skill Check}
-Skill checks represent nonviolent challenges in the game. Whenever a character makes a successful skill check, calculate the adjusted Difficulty Class (DC) of the check. It is equal to the skill check's DC minus any racial bonus the character has in that check. Use \tabref{Experience Awards from Skill Checks} to find the XP award. An adjusted DC lower than 10 does not warrant experience points. The award is not based on the check's result.
+Skill checks represent nonviolent challenges in the game. To determine the XP award for a successful skill check, follow these steps:
+
+\begin{enumerate*}
+	\item Calculate the adjusted Difficulty Class (DC) of the check. It is equal to the skill check's DC minus any racial bonus the character has in that check.
+	\item Use \tabref{Experience Awards from Skill Checks} to cross-reference the campaign's pace with the adjusted DC to find the XP award.
+\end{enumerate*}
+ 
+Only successful checks award XP. An adjusted DC lower than 10 does not warrant experience points. The award is not based on the check's result.
 
 Opposed checks do not have Difficulty Class. For the purposes of experience awards, they are considered to have a DC equal to a roll of 12. For example, a barbarian with a Hide modifier of +4 would be awarded 50 XP if they pass a Hide check DC 16---regardless of the result of the barbarian's Hide check or any opposed Spot check.
 
-\Table{Experience Awards from Skill Checks}{*4C}{
-\tableheader Adjusted DC & \tableheader XP Award
-& \tableheader Adjusted DC & \tableheader XP Award\\
-10--11 & 10 XP & 25--29 & 200 XP\\
-12--14 & 25 XP & 30--39 & 350 XP\\
-15--19 & 50 XP & 40--49 & 500 XP\\
-20--24 & 100 XP & 50+ & 750 XP\\
+\Table{Experience Awards from Skill Checks}{*6C}{
+\rowcolor{white}
+\multirow[c]{2}{1cm}{\tableheader Adjusted DC} & \multicolumn{5}{c}{\tableheader Experience Points Award}\\
+\cmidrule[0.5pt]{2-6}
+& \tableheader Rushed & \tableheader Fast & \tableheader Normal & \tableheader Slow & \tableheader Dragged \\
+
+10--11 & 25 & 15 & 10 & 8 & 5 \\
+12--14 & 60 & 30 & 25 & 20 & 15 \\
+15--19 & 120 & 60 & 50 & 40 & 30 \\
+20--24 & 250 & 120 & 100 & 80 & 60 \\
+25--29 & 600 & 300 & 250 & 200 & 150 \\
+30--39 & 1,200 & 600 & 500 & 400 & 300 \\
+40--49 & 2,400 & 1,200 & 1,000 & 800 & 600 \\
+50+ & 6,000 & 3,000 & 2,500 & 2,000 & 1,500 \\
 }
 
 \subsubsection{Awards for Combat}
-Each pace of campaign has a different award---faster campaigns have bigger rewards. To determine the XP award for a combat, follow these steps.
+Combat is one of the iconic aspects of the game. When the players defeat the enemy in battle, they earn experience points. Only characters who take part in the battle should gain XP. Characters who died before the combat, or did not participate for any other reason, should not be awarded.
+
+To determine the XP award for a combat, follow these steps.
 \begin{enumerate*}
 	\item Determine each character's effective character level (ECL).
 	\item For each monster or trap defeated, determine its Challenge Rating (CR).
