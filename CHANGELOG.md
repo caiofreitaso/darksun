@@ -77,6 +77,12 @@
 	- _Halfling Protector_: halfling wizard trades _bonus feat_ at 10th level for _phantasmal guardian_ (PCA1 22).
 	- _Tribal Psionist_: wilder trades _wild surge_ bonus at 7th level for _psionic ritual_.
 	- _Eagle Warrior_: draji fighter trades _bonus feat_ bonus at 10th level for _reckless_.
+	- _Badna's Chosen_: rammite templar trades 4th level spell slot for acting in the surprise round, and losing 2 points of Wisdom.
+	- _Hamanu's Intervention_: urikite templar trades 3rd level spell slot for +4 caster level or automatic threat 1/day.
+	- _Nibenay's Diligence_: nibenese templar trades 4th level spell slot for taking 10 on Concentration checks to cast spells defensively.
+	- _Oba's Truth_: gulg templar trades 5th level spell slot for truth poison 1/day.
+	- _Ral's Convergence_: draji templar trades 4th level spell slot to reroll a d20 1/day.
+	- _Salvage_: thri-kreen ranger uses Search check to get worthy materials from destroyed caravans.
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
@@ -118,3 +124,12 @@
 - Change Craft (poisonmaking): Craft DC is not tabled, it is related to the save DC and type of poison. Contact poisons have Craft DC = 10 + poison's save DC, inhaled poisons have Craft DC = 15 + poison's save DC, and ingested/injury poisons have Craft DC = 5 + poison's save DC.
 - Remove Drakesblood poison.
 - Add _masterwork poisons_: +1 save DC, +300 cp.
+- Move defiling rules from _Magic and Psionics_ to Wizard,
+- Remove all city-specific templar prestige classes: transformed into alternate class features.
+- Remove Kik: transformed into an alternate class feature.
+- Change Templar:
+	- Alignment must be within one step in each axis of the sorcerer-monarch's.
+	- Gain Scribe Scroll feat at 6th level.
+	- Gain Brew Potion feat at 8th level.
+- Change Bluff:
+	- _Conceal Spellcasting_ is an alternate class feature, based on AD&D's Arena Mage.

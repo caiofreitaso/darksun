@@ -11,9 +11,9 @@ In most city-states, templars are the ultimate authority---judge, jury, and exec
 3 & +2 & +3 & +1 & +3 && 6 & 5+1 &&&&&&&&\\
 4 & +3 & +4 & +1 & +4 & Turn or rebuke undead & 6 & 6+1 & 3+1 &&&&&&&\\
 5 & +3 & +4 & +1 & +4 && 6 & 6+1 & 4+1 &&&&&&&\\
-6 & +4 & +5 & +2 & +5 && 6 & 6+1 & 5+1 & 3+1 &&&&&&\\
+6 & +4 & +5 & +2 & +5 & Scribe Scroll & 6 & 6+1 & 5+1 & 3+1 &&&&&&\\
 7 & +5 & +5 & +2 & +5 && 6 & 6+1 & 6+1 & 4+1 &&&&&&\\
-8 & +6/+1 & +6 & +2 & +6 && 6 & 6+1 & 6+1 & 5+1 & 3+1 &&&&&\\
+8 & +6/+1 & +6 & +2 & +6 & Brew Potion & 6 & 6+1 & 6+1 & 5+1 & 3+1 &&&&&\\
 9 & +6/+1 & +6 & +3 & +6 && 6 & 6+1 & 6+1 & 6+1 & 4+1 &&&&&\\
 10 & +7/+2 & +7 & +3 & +7 && 6 & 6+1 & 6+1 & 6+1 & 5+1 & 3+1 &&&&\\
 11 & +8/+3 & +7 & +3 & +7 && 6 & 6+1 & 6+1 & 6+1 & 6+1 & 4+1 &&&&\\
@@ -38,6 +38,8 @@ Templars can cast a number of divine spells each day, as granted by their lord. 
 
 \subsection{Game Rule Information}
 
+\textbf{Alignment:} A templar's alignment must be within one step of his sorcerer-monarch's in each axis (that is, it may be one step away on the lawful-chaotic axis or the good-evil axis, but not two steps in either of them). A cleric may not be neutral unless his sorcerer-monarch's alignment is also neutral.
+
 \textbf{Hit Die:} d8.
 
 \subsubsection{Class Skills}
@@ -60,26 +62,26 @@ A templar need not prepare spells in advance. She can cast any spell she knows a
 
 Templars use their sorcerer-king's sigil as divine focus.
 
-\textbf{Secular Aptitude (Ex):} A templar gains Secular Authority as a bonus feat. In addition, she receives a competence bonus to Secular Authority checks equal to half her class level.
+\textbf{Secular Aptitude (Ex):} A templar gains \feat{Secular Authority} as a bonus feat. In addition, she receives a competence bonus to Secular Authority checks equal to half her class level.
 
 \textbf{Assume Domain:} A templar is assigned two domains based on her sorcerer-monarch. Each domain gives her access to a domain spell at each spell level she can cast, from 1st on up, as well as a granted power. She gets the granted powers of both the assumed domains. With access to two domain spells at a given spell level, she adds only one of those spells to your spells known list.
 
-\Table{}{X X}{
-\tableheader Sorcerer-Monarch & \tableheader Domains \\
-Abalach-Re & Chaos, Charm \\
-Andropinis & Law, Nobility \\
-Borys & Destruction, Protection \\
-Daskinor & Chaos, Madness \\
-Dregoth & Death, Destruction \\
-Hamanu & Strength, War \\
-Kalak & Magic, Trickery \\
-Lalali-Puy & Animal, Plant \\
-Nibenay & Magic, Mind \\
-Oronis & Knowledge, Protection \\
-Tectuktitlay & Glory, Strength
+\Table{Sorcerer-Kings' Domains and Alignment}{l X l}{
+\tableheader Sorcerer-Monarch & \tableheader Domains & \tableheader Alignment\\
+Abalach-Re & Chaos, Charm & Chaotic Evil \\
+Andropinis & Law, Nobility & Neutral Evil \\
+Borys & Destruction, Protection & Lawful Evil \\
+Daskinor & Chaos, Madness & Lawful Evil \\
+Dregoth & Death, Destruction & Chaotic Evil \\
+Hamanu & Strength, War$\dagger$ & Neutral Evil \\
+Kalak & Magic, Trickery & Neutral Evil \\
+Lalali-Puy & Animal, Plant & Neutral Evil \\
+Nibenay & Magic, Mind & Neutral Evil \\
+Oronis & Knowledge, Protection & Neutral Good \\
+Tectuktitlay & Glory, Strength & Neutral Evil \\
+\rowcolor{white}
+\multicolumn{3}{l}{$\dagger$ Hamanu's favored weapon is the longsword.}
 }
-
-Hamanu's favored weapon is the longsword.
 
 \textbf{Sigil (Sp):} Every templar receives a sigil that is the sign of their rank and station as a templar within their city's templarate. The form of the sigil is unique to each city-state, but is always unmistakable for what it is. The sigil serves as your divine focus, and also allows you to use the spell-like powers \spell{arcane mark}, \spell{purify food and drink}, and \spell{slave scent} a combined total of times equal to 3 + your Cha modifier. These spell-like powers do not count against your total of spells per day.
 
@@ -88,6 +90,10 @@ Hamanu's favored weapon is the longsword.
 A good templar (or a neutral templar who worships a good sorcerer-king) can turn or destroy undead creatures. An evil templar (or a neutral templar who worships an evil sorcerer-king) instead rebukes or commands such creatures. A neutral templar of a neutral sorcerer-king must choose whether his turning ability functions as that of a good templar or an evil templar. Once this choice is made, it cannot be reversed.
 
 A templar may attempt to turn undead a number of times per day equal to 3 + your Charisma modifier. A templar with 5 or more ranks in \skill{Knowledge} (religion) gets a +2 bonus on turning checks against undead. A templar turns undead as a cleric of three levels lower would.
+
+\textbf{Scribe Scroll:} At 6th level, a templar gains \feat{Scribe Scroll} as a bonus feat.
+
+\textbf{Brew Potion:} At 8th level, a templar gains \feat{Brew Potion} as a bonus feat.
 
 \subsubsection{Ex-Templars}
 A templar who displeases or abandons his sorcerer-monarch, or one whose sorcerer-monarch dies, loses all templar spellcasting abilities. An ex-templar is treated as a member of an NPC class (commoner, expert, etc) for purposes of determining CR. If the templar later becomes the templar of another sorcerer-monarch, he immediately regains his full templar spellcasting abilities.

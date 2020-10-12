@@ -49,7 +49,9 @@ A general description of the ability.
 {Must be trained by the Draji army.}
 {10th.}
 {You do not gain a bonus feat.}
-{When using the attack or full attack option, you can subtract a number from his Armor Class and add this number to damage inflicted on successful attacks. This number may not exceed your base attack bonus. The Armor Class penalty and damage bonus last until the your next standard action.}
+{
+	When using the attack or full attack option, you can subtract a number from his Armor Class and add this number to damage inflicted on successful attacks. This number may not exceed your base attack bonus. The Armor Class penalty and damage bonus last until the your next standard action.
+}
 
 \subsection{Ranger}
 \AlternateClassFeature{Desert Runner}
@@ -63,6 +65,27 @@ A general description of the ability.
 	You gain +3 meters of land speed while wearing no armor or light armor, and not carrying heavy load. Your speed increases by 3 meters for every three ranger levels thereafter (+6 m at 7th, +9 m at 10th, +12 m at 13th, +15 m at 16th, and +18 m at 19th).
 
 	You gain +1 AC dodge bonus when running. This bonus increases by 1 for every three ranger levels thereafter (+2 at 7th, +3 at 10th, +4 at 13th, +5 at 16th, and +6 at 19th).
+
+	\emph{Desert runner} is a psi-like ability.
+}
+\AlternateClassFeature{Salvage}
+{The kik has fully turned away from the life as a hunter and instead embraced the life of a raider, known in the language of the thri-kreen as a kik. The kik
+are in many ways more barbaric then the average kreen who roam the Tablelands, though they are not as feral as their cousins the trin.}
+{Thri-kreen, \skill{Search} 5 ranks, \skill{Survival} 5 ranks.}
+{7th.}
+{You do not gain woodland stride.}
+{
+	You can make a \skill{Search} check to salvage destroyed caravans and vehicles. If the check succeeds, you earn ceramic pieces by the amount indicated on \tabref{Salvage Vehicle}, either by selling the salvaged parts or using them to offset the cost of other items.
+
+	A particular vehicle can be successfully salvaged only once. Any further attempts to salvage the wreckage fail automatically.
+
+	\Table{Salvage Vehicle}{Xccc}{
+	\tableheader Vehicle Size & \tableheader Time & \tableheader \skill{Search} DC & \tableheader cp Earned\\
+	Large or smaller & 15 min. & 10 & 10\\
+	Huge & 30 min. & 15 & 20\\
+	Gargantuan & 1 h & 20 & 30\\
+	Colossal & 3 h & 25 & 40\\
+	}
 }
 \AlternateClassFeature{Sand Chitin}
 {Usually selected from those thri-kreen that are slightly smaller and quicker, these kreen are trained extensively in the lore of the hunt and the way of stealth, honing their natural skills beyond those of the norm of their kind.}
@@ -73,7 +96,74 @@ A general description of the ability.
 	Your racial \skill{Hide} bonus increases by 2 (+6 total). For every four ranger levels thereafter, it increases by another 2 (+8 at 5th, +10 at 9th, +12 at 13th, and +14 at 17th).
 }
 
-% \subsection{Templar}
+\subsection{Rogue}
+\AlternateClassFeature{Death Attack}
+{The Shadows are a mysterious elf tribe of which legends and bard's tales are spun. This secretive network of elves specializes in covert and illegal operations---espionage, assassination, extortion, theft, smuggling and black market trading, to name a few. References of the shadows go back hundreds of years, and some claim they have always been around.}
+{Elf, any Evil alignment, \skill{Spot} 3 ranks.}
+{3rd.}
+{You do not gain trap sense.}
+{
+	If a rogue studies his victim for 3 rounds and then makes a sneak attack with a melee weapon that successfully deals damage, the sneak attack has the additional effect of possibly either paralyzing or killing the target (rogue's choice). While studying the victim, the rogue can undertake other actions so long as his attention stays focused on the target and the target does not detect the rogue or recognize the rogue as an enemy. If the victim of such an attack fails a Fortitude save (DC 10 + \onehalf the rogue's class level + the rogue's Int modifier) against the kill effect, she dies. If the saving throw fails against the paralysis effect, the victim is rendered helpless and unable to act for 1d6 rounds plus 1 round per level of the rogue. If the victim's saving throw succeeds, the attack is just a normal sneak attack. Once the rogue has completed the 3 rounds of study, he must make the death attack within the next 3 rounds.
+
+	If a death attack is attempted and fails (the victim makes her save) or if the rogue does not launch the attack within 3 rounds of completing the study, 3 new rounds of study are required before he can attempt another death attack.
+}
+
+\subsection{Templar}
+\AlternateClassFeature{Badna's Chosen}
+{Templars of Raam have been told that their divine powers stem from an entity called Badna. Most templars know or at least suspect that Badna is a fictional being created by Abalach-Re to suppress the people of Raam.}
+{\skill{Knowledge} (religion) 5 ranks, must be from the templarate of Raam.}
+{8th.}
+{To select this class feature, you must permanently sacrifice one of your 4th-level spell slots.}
+{
+	You always act in the surprise round, but you permanently lose 2 points of Wisdom.
+}
+\AlternateClassFeature{Hamanu's Intervention}
+{Urikite templars wear yellow robes, and as they rise in status strands of metal are woven into their sleeves and they receive Hamanu's personal attention. Under the tutelage of Hamanu, his templars excel in the art of combat and they can call upon their liege to power their magic or blows.}
+{\skill{Knowledge} (warcraft) 4 ranks, must be from the templarate of Urik.}
+{6th or any even-numbered higher level.}
+{To select this class feature, you must permanently sacrifice one of your 3rd-level spell slots.}
+{
+	Once per day, as a move action, you may choose between +4 bonus on caster level to the next spell you cast or make your next melee attack an automatic threat (roll to determine if the attack is a critical hit).
+
+	You may select this ability multiple times. Each time you must sacrifice another 3rd-level spell slot.
+
+	\emph{Hamanu's intervention} is a spell-like ability.
+}
+\AlternateClassFeature{Nibenay's Diligence}
+{The Nibenese templarate consists of women, all wedded to the Shadow King. Disciplined, educated and trained in the arts of war, the templar-wives fit perfectly into Nibenay's highly autocratic structured system of government.}
+{\skill{Knowledge} (warcraft) 5 ranks, must be from the templarate of Nibenay.}
+{8th.}
+{To select this class feature, you must permanently sacrifice one of your 4th-level spell slots.}
+{
+	You can take 10 on \skill{Concentration} checks to cast spells defensively.
+}
+\AlternateClassFeature{Oba's Truth}
+{The disciples of the Oba follow their own rites and traditions that are as ancient as those of the people of Gulg. Lalali-Puy's templars  The queen allows for templars to be dispatched to a residential dagada at the request of the dagada's leader. This request usually comes when an ambo is fearful for the security of his dagada or suspicious of an illegal activity, such as smuggling or magic use.}
+{\skill{Knowledge} (nature) 7 ranks, must be from the templarate of Gulg.}
+{10th.}
+{To select this class feature, you must permanently sacrifice one of your 5th-level spell slots.}
+{
+	Once per day, you may poison a creature with a touch attack. That creature becomes infused with poison for 24 hours. If the creature tells a lie, it suffers the effect of the poison with no saving throw. The initial damage is 2d6 Con, and the secondary damage is 1d6 Con. Casting \spell{neutralize poison} or \spell{heal} will remove the poison from the victim's body.
+
+	\emph{Oba's truth} is a spell-like ability.
+}
+\AlternateClassFeature{Ral's Convergence}
+{For more than a thousand years, the moon priests have served Tectuktitlay, the king of Draj. Dressed in blue robes, with a yellow moon in front and in the back of their robes, the Moon Priests are responsible for the administration of the Temples of Ral and Guthay, as well as being the lead organizers of the sacrifices on the Great Pyramid.}
+{\skill{Knowledge} (nature) 5 ranks, must be from the templarate of Draj.}
+{8th.}
+{To select this class feature, you must permanently sacrifice one of your 4th-level spell slots.}
+{
+	Once per day, you may reroll one d20 roll that they have just made. You must keep the result of the second roll, even if it's worse than the original roll.
+
+	\emph{Ral's convergence} is a spell-like ability.
+}
+
+% Tyr
+% Balic
+% Kurn
+% Eldaarich
+
+
 % \AlternateClassFeature{Bureau Specialization}
 % {}
 % {Must be from the templarate of Tyr.}
@@ -106,11 +196,36 @@ A general description of the ability.
 {Halfling protectors are masters of illusions that can aid their tribes and bring doom to their enemies in many strange ways.}
 {Halfling, \skill{Knowledge} (nature) 10 ranks.}
 {10th.}
-{You do not gain a bonus feat.}
+{To select this class feature, you must permanently sacrifice one of your 5th-level spell slots.}
 {
 	You can summon a non-corporeal shadow figure that wards an area with a radius of 30 m + 3 m per level. Any other creature entering the warded area, except you and those you designate, will be attacked by the phantasmal guardian, as per the \spell{phantasmal killer} spell. The guardian can only attack once, where upon it dissipates. Summoning the guardian takes 1 minute, and it remains in the area until you dispels it (move action, unlimited range), or until it attacks someone. You can only have one guardian summoned at a time.
 
 	You can use this ability 3 times per day.
 
 	This is a spell-like ability.
+}
+\AlternateClassFeature{Psionic Mimicry}
+{The arena mage is a wizard who has acquired the skills necessary to survive the rigors of arena combat, engaging his opponents with an arsenal of spells. The lesson to conceal this spellcasting ability comes quickly, as failure means death. As such, an arena mage becomes a
+master at casting spells in secret, as well as masking his magic-use. To accomplish this feat, the arena mage has developed a unique talent to help him: giving his spells the trappings of psionic powers. Through the art of deception and a constant charade of psionic aptitude he is able to maintain secret his spellcasting even in the most public of places.}
+{\skill{Bluff} 4 ranks, \skill{Concentration} 4 ranks, \skill{Disguise} 4 ranks, \skill{Knowledge} (psionics) 4 ranks.}
+{1st.}
+{You do not gain a familiar.}
+{
+	% You may attempt to conceal the fact that you are attempting to cast a spell. This is an especially important skill for wizards, who are all-too-frequently the unfortunate target of impromptu lynch mobs.
+
+	When fighting in an gladiatorial arena, you may disguise your spells as psionic powers by making a \skill{Bluff} check as a move action, to distract the crowd. Spells with psionic counterparts, such as \spell{daze}, emulate the displays of their counterparts. Spells without psionic counterparts get attributed random displays.
+
+	Onlookers may oppose the roll with a \skill{Sense Motive} or \skill{Spellcraft} check. If the spell being cast has a psionic counterpart, they may also oppose with a \skill{Psicraft} check.
+
+	Defilers with this ability are accustomed to minimizing their damage in an arena and do not suffer additional penalties.
+}
+\AlternateClassFeature{Rebuke Undead}
+{Necromants are wizards draw their power from the undead plane known as the Gray, instead of the plant life. They are seeking to unravel the mysteries of death and find answers to questions that only the ancient dead know.}
+{You must be a specialist necromancer, \skill{Knowledge} (arcana) 6 ranks, \skill{Knowledge} (religion) 6 ranks.}
+{5th.}
+{You do not gain a bonus feat.}
+{
+	% You may attempt to conceal the fact that you are attempting to cast a spell. This is an especially important skill for wizards, who are all-too-frequently the unfortunate target of impromptu lynch mobs.
+
+	You gain the supernatural ability to rebuke undead. You may use this ability a number of times per day equal to 3 + your Charisma modifier. You rebuke undead as a cleric four levels lower would.
 }
