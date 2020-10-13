@@ -39,7 +39,7 @@ OK	- Arena Mage --> ACF (Familiar)
 OK	- Free Wizard --> No changes
 OK	- Illusionist --> No changes
 OK	- Mercenary --> No changes
-	- Necromancer --> ACF (5th level bonus feat)
+OK	- Necromancer --> ACF (5th level bonus feat)
 		- Rebuke undead
 	- Restorationist --> PC (10-level) min-level 5th
 		- must be preserver
@@ -68,7 +68,7 @@ OK	- Tribal Wizard --> No changes
 OK	- Mercenary Psionicist --> No changes
 OK	- Noble Psionicist --> No changes
 OK	- Psiologist --> Use DS3 prestige class
-	- Sensei --> PC (12-level) min-level 3rd (PsyWar)
+	- Sensei --> PC (12-level) min-level 4rd (PsyWar)
 		- Many weapons
 		- Tumble
 		- Unarmed strike
@@ -78,4 +78,3 @@ OK	- Shadow --> ACF (trap sense)
 		- must be elf
 		- must be evil
 		- death attack
-	- 

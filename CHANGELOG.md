@@ -83,6 +83,9 @@
 	- _Oba's Truth_: gulg templar trades 5th level spell slot for truth poison 1/day.
 	- _Ral's Convergence_: draji templar trades 4th level spell slot to reroll a d20 1/day.
 	- _Salvage_: thri-kreen ranger uses Search check to get worthy materials from destroyed caravans.
+	- _Rebuke Undead_: necromancer specialist trades 5th level bonus feat for rebuking undead as a cleric 4 levels lower.
+	- _Psionic Mimicry_: arena wizard trades familiar to disguise spells as psionism.
+	- _Death Attack_: evil elf rogue trades trap sense for the assassin's ability (DC 10 + 1/2 rogue's level + Int mod.).
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
@@ -131,5 +134,14 @@
 	- Alignment must be within one step in each axis of the sorcerer-monarch's.
 	- Gain Scribe Scroll feat at 6th level.
 	- Gain Brew Potion feat at 8th level.
-- Change Bluff:
-	- _Conceal Spellcasting_ is an alternate class feature, based on AD&D's Arena Mage.
+- Change Bluff: _Conceal Spellcasting_ is an alternate class feature, based on AD&D's Arena Mage.
+- Change Wizard: Add choice of Path at 1st level.
+- Remove Path Dexter: transformed into wizard 1st-level ability, gain +1 spell from abjuration and divination every level.
+- Remove Path Sinister: transformed into wizard 1st-level ability. Must be nongood, gain +1 spell from evocation and necromancy every level.
+- **Rework Cerulean**
+	- Bring closer to AD&D original feeling.
+	- Require any chaotic alignment.
+	- Add Literacy and Speak Language to class skills.
+	- cast elemental spells 4/day
+	- reduced daily spells by 2
+	- roll dice (1d4) to see caster level when preparing spells
