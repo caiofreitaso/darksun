@@ -326,6 +326,19 @@
 
 	\textbf{Benefit:} #6
 }
+\newcommand{\Domain}[4]{
+	\subsection{#1 Domain}
+	\ifx&#2&\else\textbf{Patron:} #2.
+
+	\fi
+	\textbf{Granted Powers:} #3
+
+
+	\subsubsection{#1 Domain Spells}
+	\begin{enumerate*}
+		#4
+	\end{enumerate*}
+}
 % NPC functions
 
 % Table commands

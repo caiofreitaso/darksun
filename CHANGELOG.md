@@ -139,3 +139,7 @@
 - Remove Path Dexter: transformed into wizard 1st-level ability, gain +1 new spell learned from abjuration and divination every level beyond the first.
 - Remove Path Sinister: transformed into wizard 1st-level ability. Must be nongood, gain +1 new spell learned from evocation and necromancy every level beyond the first.
 - Change Reign of Terror: requires only to be from Raam, instead of membership of specific orders. Intimidate ranks unchanged.
+- **Add Wanderer**
+	- Prestige class for clerics
+	- Adds Travel domain
+	- Must never settle in a single place
