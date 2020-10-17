@@ -136,12 +136,6 @@
 	- Gain Brew Potion feat at 8th level.
 - Change Bluff: _Conceal Spellcasting_ is an alternate class feature, based on AD&D's Arena Mage.
 - Change Wizard: Add choice of Path at 1st level.
-- Remove Path Dexter: transformed into wizard 1st-level ability, gain +1 spell from abjuration and divination every level.
-- Remove Path Sinister: transformed into wizard 1st-level ability. Must be nongood, gain +1 spell from evocation and necromancy every level.
-- **Rework Cerulean**
-	- Bring closer to AD&D original feeling.
-	- Require any chaotic alignment.
-	- Add Literacy and Speak Language to class skills.
-	- cast elemental spells 4/day
-	- reduced daily spells by 2
-	- roll dice (1d4) to see caster level when preparing spells
+- Remove Path Dexter: transformed into wizard 1st-level ability, gain +1 new spell learned from abjuration and divination every level beyond the first.
+- Remove Path Sinister: transformed into wizard 1st-level ability. Must be nongood, gain +1 new spell learned from evocation and necromancy every level beyond the first.
+- Change Reign of Terror: requires only to be from Raam, instead of membership of specific orders. Intimidate ranks unchanged.

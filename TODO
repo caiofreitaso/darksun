@@ -78,3 +78,121 @@ OK	- Shadow --> ACF (trap sense)
 		- must be elf
 		- must be evil
 		- death attack
+
+	- Wanderer --> PC (3-level) min-level 3rd (Clr)
+		- must be chaotic
+		- earth: crops/agriculture; agriculture prof
+		- air: fate and weather; direction sense prof
+		- fire: mercenary; fire-building prof
+		- water: water/heal; water finding prof
+	- Shaman
+		- must be nonchaotic
+
+-----------
+
+- **Rework Cerulean**
+	- Bring closer to AD&D original feeling.
+	- Require any chaotic alignment.
+	- Add Literacy and Speak Language to class skills.
+	- cast elemental spells 4/day
+	- roll dice (1d4) to see caster level when preparing spells
+
+-----------
+
+Cleric Rework
+	- Access to Elemental Spells
+
+Earth
+	- Pact:
+		- must actively oppose defilers (unlike druids who are defensive)
+		- must teach the cycle of life
+		- must teach agriculture
+	- Granted Powers
+		- 5th: ignore earth 1/day, 1 round/level
+		- 7th: gate element 0.3 m³/(level - 6), always stone
+		- eliminate tracks (only on earth, not snow or mud)
+		- encasement (caixão pra dormir dentro da terra)
+		- meld into stone 1/day
+		- +2 vs earth spells
+		- halve defile area with Wisdom check
+Air
+	- Pact:
+		- must actively oppose slavery
+		- must oppose unfair imprisonment
+		- must protect earth and water (for future hurricanes)
+	- Granted Powers
+		- 5th: ignore air 1/day, 1 round/level
+		- 7th: gate element windstorm in a 300m cone
+		- breathable air 1/day
+		- reduce penalty for heat
+		- +1 for missile ranged attacks
+		- +1 CA against missile ranged attacks
+		- control winds 1/day
+		- +2 vs air spells
+		- feather fall 1/day
+Fire
+	- Pact:
+		- must encourage growth of cities, forests and fields
+		- must defeat the sorcerer-kings and all defilers
+	- Granted Powers
+		- 5th: ignore heat 1/day, 1 round/level
+		- 7th: gate element 0.3m³/(level - 6), 1 round without fuel
+		- create small flames the size of a match stick
+		- affect normal fires 1/day
+		- cleansing flame (heal, bath, food, restore) 1/day
+		- control flames smaller than torch
+		- +2 vs fire spells
+Water
+	- Pact:
+		- must give water and aid to any in need, except defilers
+		- must protect and preserve remaining water
+		- must teach irrigation and cleansing of water supplies
+	- Granted Powers
+		- 5th: ignore water 1/day, 1 round/level
+		- 7th: gate element 0.3m³/(level - 6), no damage, drinkable
+		- 1/3 daily water from mud/plant/rock
+		- 1 water stabilizing skin, heals 1d2 hp
+		- +2 vs water spells, -2 vs fire/sun spells
+		- +4 vs poison
+		- 1 revival skin, heals unconsciousness to 1hp
+
+Silt
+	- Pact:
+		- must advance the silt
+		- destroy trees, grasses and fauna that retain moisture
+	- Granted Powers
+		- 5th: ignore silt 1/day, 1 round/level
+		- 7th: gate element 0.3m³/(level -6)
+		- 9th: walk on silt
+		- 11th: control 0.3m³/level of silt
+
+Sun
+	- Pact:
+		- must eliminate all gases that filter the sun
+		- must remove any obstructions (flatten the planet)
+	- Granted Powers
+		- 3rd: 1/2 water usage, no ill effects of remaining in the sun
+		- 4th: +2 vs sun spells
+		- 5th: ignore daylight/sunray spells 1/day, 1 round/level
+		- 7th: gate element sunray 4d8 1 square/level
+
+Magma
+	- Pact:
+		- must grow magma's domain
+		- keep magma heated
+		- remove nearby water reserves
+	- Granted Powers
+		- 1st: +2 vs fire/magma spells
+		- 5th: ignore magma 1/day, 1 round/level
+		- 7th: gate element 0.3m³/level
+		- 8th: evaporate 45l of water/level 1/day
+
+Rain
+	- Pact:
+		- protect forests and water reserves
+		- plant new forests
+	- Granted Powers
+		- 3rd: immune to weather effects; -2 save in the sun; +2 vs water/rain
+		- 5th: ignore rain/mud
+		- 7th: gate element 0.3m² of rain
+		- 8th: call lightning 1/day

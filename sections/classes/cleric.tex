@@ -4,7 +4,7 @@
 In a world without gods, spiritualism on Athas has unlocked the secrets of the raw forces of which the very planet is comprised: earth, air, fire, and water. However, other forces exist which seek to supplant them and rise to ascendancy in their place. These forces have taken up battle against the elements of creation on the element's own ground in the form of entropic perversions of the elements themselves: magma, rain, silt and sun.
 
 \SpellcasterTable{The Cleric}{.5cm}{
-1 & +0 & +2 & +0 & +2 & Turn or rebuke undead & 3 & 1+1 &  &  &  &  &  &  &  &  \\
+1 & +0 & +2 & +0 & +2 & Pact, turn or rebuke undead & 3 & 1+1 &  &  &  &  &  &  &  &  \\
 2 & +1 & +3 & +0 & +3 &  & 4 & 2+1 &  &  &  &  &  &  &  &  \\
 3 & +2 & +3 & +1 & +3 &  & 4 & 2+1 & 1+1 &  &  &  &  &  &  &  \\
 4 & +3 & +4 & +1 & +4 &  & 5 & 3+1 & 2+1 &  &  &  &  &  &  &  \\
@@ -27,7 +27,6 @@ In a world without gods, spiritualism on Athas has unlocked the secrets of the r
 
 
 \subsection{Making a Cleric}
-
 Clerics are the masters of elemental forces; they possess unique supernatural abilities to direct and harness elemental energy, and cast elemental spells. All things are comprised of the four elements in some degree, thus clerics can use their elemental powers to heal or harm others. Due to their affinities with the elements, clerics possess a number of supernatural elemental abilities. Though dimly understood, there exists a connection between elemental forces and the nature of undeath. Clerics can turn away, control, or even destroy undead creatures. Athas is a dangerous world; this practicality dictates that clerics must be able to defend themselves capably. Clerics are trained to use simple weapons and, in some cases, martial weapons; they are also taught to wear and use armor, since wearing armor does not interfere with elemental spells as it does arcane spells.
 
 \textbf{Races:} All races include clerics in their societies, though each race possesses different perspectives regarding what a cleric's role involves. As masters of myth and the elemental mysteries, most clerics hold a place of reverence within their respective societies. However, more than a few races have varying affinities for one element over another. Dwarves almost always become earth clerics, a connection they've shared since before they were driven from their halls under the mountains. Dwarven determination and obsessive dedication matches perfectly with the enduring earth. Elves most often revere water, fire, or the winds; as nomads, they seldom feel a deep-seated affinity for the land. Thri-kreen are known to ally with all elements to the exclusion of fire. This seems to stem from a mistrust of flame, which is common in many kreen.
@@ -46,29 +45,35 @@ Clerics are the masters of elemental forces; they possess unique supernatural ab
 \subsubsection{Class Features}
 \textbf{Weapon and Armor Proficiency:} Clerics are proficient with light armor and all simple weapons.
 
-\textbf{Aura (Ex):} A cleric has a particularly powerful aura corresponding to the her alignment (see the detect evil spell for details).
+\textbf{Aura (Ex):} A cleric has a particularly powerful aura corresponding to the her alignment (see the \spell{detect evil} spell for details).
 
 \textbf{Spells:} A cleric casts divine spells, which are drawn from the cleric spell list. However, his alignment may restrict him from casting certain spells opposed to his moral or ethical beliefs; see Chaotic, Evil, Good, and Lawful Spells, below. A cleric must choose and prepare his spells in advance (see below).
 
 To prepare or cast a spell, a cleric must have a Wisdom score equal to at least 10 + the spell level. The Difficulty Class for a saving throw against a cleric's spell is 10 + the spell level + the cleric's Wisdom modifier.
 
-Like other spellcasters, a cleric can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on \tabref{The Cleric}. In addition, he receives bonus spells per day if he has a high Wisdom score. A cleric also gets one domain spell of each spell level he can cast, starting at 1st level. When a cleric prepares a spell in a domain spell slot, it must come from one of his two domains (see Elements, Domains, and Domain Spells, below).
+Like other spellcasters, a cleric can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on \tabref{The Cleric}. In addition, he receives bonus spells per day if he has a high Wisdom score. A cleric also gets one domain spell of each spell level he can cast, starting at 1st level. When a cleric prepares a spell in a domain spell slot, it must come from one of his domains (see Pact, below).
 
 Clerics meditate or pray for their spells. Each cleric must choose a time at which he must spend 1 hour each day in quiet contemplation or supplication to regain his daily allotment of spells. Time spent resting has no effect on whether a cleric can prepare spells. A cleric may prepare and cast any spell on the cleric spell list, provided that he can cast spells of that level, but he must choose which spells to prepare during his daily meditation.
 
-\BigTablePair{Athasian Elements}{l l X l} {
-\tableheader Element & \tableheader Energy Type & \tableheader Domains & \tableheader Worshipers\\
-Air & Sonic & Sun Flare, Furious Storm, Ill Wind, Rolling Thunder, Soaring Spirit & Aarakocra, elves\\
-Earth & Acid & Decaying Touch, Earthen Embrace, Forged Stone, Ruinous Swarm, Mountain's Fury & Dwarves, muls\\
-Fire & Fire & Burning Eyes, Sky Blitz, Mountain's Fury, Smoldering Spirit, Fiery Wrath & Dwarves, ssurrans\\
-Magma & Fire & Broken Sands, Dead Heart, Ill Wind, Mountain's Fury & Ssurrans\\
-Rain & Electricity & Cold Malice, Decaying Touch, Furious Storm, Refreshing Storm & Drajis\\
-Silt & Acid & Broken Sands, Decaying Touch, Dead Heart, Soul Slayer & Giants, silt runners\\
-Sun & Fire & Sun Flare, Light's Revelation, Desert Mirage, Fiery Wrath & Aarakocra\\
-Water & Acid & Desert Mirage, Drowning Despair, Sky Blitz, Living Waters & Half-elves, lizardfolk
+\BigTablePair{Athasian Elements and Paraelements}{lXlXll} {
+& \tableheader Type & \tableheader Class Skill & \tableheader Domains & \tableheader Energy Type & \tableheader Worshipers\\
+\textit{Air} & Element & \skill{Survival} & Air, Freedom & Sonic & Aarakocra, elves\\
+\textit{Earth} & Element & \skill{Knowledge} (nature) & Agriculture, Earth & Acid & Dwarves, muls\\
+\textit{Fire} & Element & \skill{Knowledge} (architecture and engineering) & Cleansing, Fire & Fire & Dwarves, ssurrans\\
+\textit{Water} & Element & \skill{Knowledge} (geography) & Healing, Water & Acid & Half-elves, lizardfolk\\
+\textit{Magma} & Paraelement & \skill{Climb} & Magma & Fire & Ssurrans\\
+\textit{Rain} & Paraelement & \skill{Survival} & Rain & Electricity & Drajis\\
+\textit{Silt} & Paraelement & \skill{Balance} & Silt & Acid & Giants, silt runners\\
+\textit{Sun} & Paraelement & \skill{Spot} & Sun & Fire & Aarakocra\\
 }
 
-\textbf{Elements, Domains, and Domain Spells:} A cleric's element influences what magic he can perform, his values, and how others see him. A cleric chooses two domains from among those belonging to his element.
+% \textbf{Elements, Domains, and Domain Spells:} A cleric's element influences what magic he can perform, his values, and how others see him. A cleric chooses two domains from among those belonging to his element.
+
+% Each domain gives the cleric access to a domain spell at each spell level he can cast, from 1st on up, as well as a granted power. The cleric gets the granted powers of both the domains selected.
+
+% With access to two domain spells at a given spell level, a cleric prepares one or the other each day in his domain spell slot. If a domain spell is not on the cleric spell list, a cleric can prepare it only in his domain spell slot.
+
+\textbf{Pact:} Clerics forge a pact of servitude with elemental beings in exchange of divine powers. Each element and paraelement requires different duties and give different set of powers. They give an additional class skill, and grant access to up to two domains (see \tabref{Athasian Elements and Paraelements}).
 
 Each domain gives the cleric access to a domain spell at each spell level he can cast, from 1st on up, as well as a granted power. The cleric gets the granted powers of both the domains selected.
 
@@ -88,7 +93,71 @@ A good cleric can turn or destroy undead creatures. An evil cleric instead rebuk
 
 A cleric's worshiped element or paraelement has no impact on your ability to turn or rebuke undead. However, all elements and paraelements consider the undead to be a violation of the natural order of things. While evil clerics are free to control undead, they are expected to eventually destroy them.
 
-A cleric may attempt to turn undead a number of times per day equal to 3 + his Charisma modifier. A cleric with 5 or more ranks in Knowledge (religion) gets a +2 bonus on turning checks against undead.
+A cleric may attempt to turn undead a number of times per day equal to 3 + his Charisma modifier. A cleric with 5 or more ranks in \skill{Knowledge} (religion) gets a +2 bonus on turning checks against undead.
+
+\subsubsection{Duties}
+To fulfill the pact, a cleric must live up to the pact made with their patron. Elementals realize the balance needed to survive and their pact reflects their wish for preservation. Every elemental cleric must oppose defilers, although some are more zealous than others.
+
+Paraelementals wish only to grow their domains to the extent of Athas itself, even if it destroys the planet in the process. Their greedy demands are usually met with mad clerics that take these tasks to the extreme.
+
+For more information on what are the specific duties of each element, see \chapref{Magic}.
+
+% \textit{Air:} The pact of Air requires air clerics to defend freedom.
+% \begin{itemize*}
+% 	\item Air clerics must actively oppose slavery and unfair imprisonment.
+% 	\item Air clerics must preserve earth and water.
+% \end{itemize*}
+
+% \textit{Earth:} The pact of Earth requires earth clerics to preserve the soil of Athas.
+% \begin{itemize*}
+% 	\item Earth clerics must actively oppose defilers. They may not travel or work with a known defiler, nor can they allow a defiler to cast a spell in their presence.
+% 	\item Earth clerics must teach the nature of the cycle of life.
+% 	\item Earth clerics must teach proper agricultural techniques.
+% \end{itemize*}
+
+% \textit{Fire:} The pact of Fire paradoxically requires fire clerics to preserve Athas, only for them to destroy it later.
+% \begin{itemize*}
+% 	\item Fire clerics must encourage the growth of cities, forests, and fields.
+% 	\item Fire clerics must actively oppose sorcerer-monarchs and defilers.
+% \end{itemize*}
+
+% \textit{Water:} The pact of Water requires water clerics to share the existing water.
+% \begin{itemize*}
+% 	\item Water clerics must give water and aid to anyone in need. The only exception being defilers.
+% 	\item Water clerics must protect and preserve any remaining water sources from any danger, including defilers.
+% 	\item Water clerics must teach how to best use water supplies.
+% \end{itemize*}
+
+% Paraelementals wish only to grow their domains to the extent of Athas itself, even if it destroys the planet in the process. Their greedy demands are usually met with mad clerics that take these tasks to the extreme.
+
+% \textit{Magma:} The pact of Magma requires magma clerics to expand magma domain.
+% \begin{itemize*}
+% 	\item Magma clerics must keep magma heated.
+% 	\item Magma clerics must destroy all moisture sources near magma, such as forests and lakes.
+% \end{itemize*}
+
+% \textit{Rain:} The pact of Rain requires rain clerics to protect forests.
+% \begin{itemize*}
+% 	\item Rain clerics must protect forests and water reserves.
+% 	\item Rain clerics must plant new forests.
+% \end{itemize*}
+
+% \textit{Silt:} The pact of Silt requires silt clerics to advance the silt.
+% \begin{itemize*}
+% 	\item Silt clerics must transform earth into silt.
+% 	\item Silt clerics must bury all moisture sources into silt, such as plants and pools of water.
+% \end{itemize*}
+
+% \textit{Sun:} The pact of the Sun requires sun clerics to keep the sun always present.
+% \begin{itemize*}
+% 	\item Sun clerics must make all gatherings under the sun.
+% 	\item Sun clerics must remove any shade that blocks the sun.
+% \end{itemize*}
+
+\subsubsection{Ex-Clerics}
+When a cleric fails to fulfill their vows or encourages others to waste their patron's resources, the elemental powers will suspend their blessing upon the cleric for up to six days, depending on the severity. They lose all spells during this period.
+
+A cleric that breaks their vows for a second time can no longer gain any new cleric levels, and lose all clerical spells and abilities until they atone (see the \spell{atonement} spell).
 
 \subsection{Playing a Cleric}
 The clerics of Athas are like the rare snows that blanket the highest peaks of the Ringing Mountains. Though the cascading flakes all seem the same, the pattern of each is as different as the faces of men are from muls. Indeed, clerics are like snowflakes, each preaching about preservation and the elements, but no two of them do it for the same reason. This makes these environmental warriors an extremely diverse and interesting class to play. Some are merely power-hungry, some seek revenge, and some are honestly struggling to save their dying planet and reverse the ancient environmental disaster.
