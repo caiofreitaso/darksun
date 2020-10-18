@@ -54,6 +54,7 @@
 	- Wind Walk (6th)
 	- Earthquake (8th)
 	- Fire Storm (8th)
+	- Storm of Vengeance (9th)
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -164,3 +165,20 @@
 	- Prestige class for clerics
 	- Adds Travel domain
 	- Must never settle in a single place
+- Removed the following spells:
+	- **Cleric spell list**
+		- _Cooling Canopy_: moved to Rain and Replenishment domains
+		- _Worm's Breath_: moved to Silt and Water domains
+		- _Control Tides_: moved to Silt and Water domains
+		- _Curse of the Black Sands_: moved to Silt domain
+		- _Sand Spray_: moved to Silt domain
+		- _Cleansing Flame_: moved to Cleasing domain
+		- _Elemental Strike_: revert to Flame Strike, and moved to Fire domain
+		- _Ragestorm_: moved to Freedom domain
+		- _Rejuvenate_: moved to Replenishment domain
+		- _Infestation_: moved to Earth domain
+		- _Elemental Storm_: revert to Fire Storm, and moved to Fire domain
+		- _Heartseeker_: moved to Agriculture and Water domains
+	- **Druid spell list**
+		- _Elemental Strike_: revert to Flame Strike
+		- _Elemental Storm_: revert to Fire Storm

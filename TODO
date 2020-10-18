@@ -163,7 +163,7 @@ OK		- must advance the silt
 	- Granted Powers
 OK		- 5th: ignore silt 1/day, 1 round/level
 		- 7th: gate element 0.3m³/(level -6)
-		- 9th: walk on silt
+OK		- 9th: walk on silt
 OK		- 11th: control 0.3m³/level of silt
 
 Sun
@@ -192,7 +192,7 @@ Rain
 OK		- protect forests and water reserves
 OK		- plant new forests
 	- Granted Powers
-		- 3rd: immune to weather effects; -2 save in the sun; +2 vs water/rain
+OK		- 3rd: immune to weather effects; -2 save in the sun; +2 vs water/rain
 		- 5th: ignore rain/mud
 		- 7th: gate element 0.3m² of rain
 OK		- 8th: call lightning 1/day
