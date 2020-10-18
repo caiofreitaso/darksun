@@ -33,6 +33,27 @@
 - **Add Character Progression** - XP awards for each race, and table for level-dependent benefits.
 - Add expected character wealth per level.
 - Add different paces of campaign - different XP awards/encounter for each type of campaign.
+- Change Cleric domains.
+- **Cleric domain spells can be prepared in normal cleric slots**.
+- Removed the following cleric spells:
+	- Bless Water (1st)
+	- Curse Water (1st)
+	- Magic Stone (1st)
+	- Continual Flame (3rd)
+	- Create Food and Water (3rd)
+	- Daylight (3rd)
+	- Meld into Stone (3rd)
+	- Stone Shape (3rd)
+	- Water Breathing (3rd)
+	- Water Walk (3rd)
+	- Wind Wall (3rd)
+	- Air Walk (4th)
+	- Control Water (4th)
+	- Flame Strike (5th)
+	- Wall of Stone (5th)
+	- Wind Walk (6th)
+	- Earthquake (8th)
+	- Fire Storm (8th)
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.

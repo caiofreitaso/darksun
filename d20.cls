@@ -331,7 +331,7 @@
 	\ifx&#2&\else\textbf{Patron:} #2.
 
 	\fi
-	\textbf{Granted Powers:} #3
+	\textbf{Granted Power:} #3
 
 
 	\subsubsection{#1 Domain Spells}
