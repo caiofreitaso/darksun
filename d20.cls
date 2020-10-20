@@ -91,6 +91,7 @@
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
 \newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
+\newcommand{\spellList}[1]{\textit{\hyperref[spell:#1]{#1}}}
 \newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
 \newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter: #1}}
@@ -338,6 +339,23 @@
 	\begin{enumerate*}
 		#4
 	\end{enumerate*}
+}
+\newcommand{\Spell}[5]{
+	\subsection{#1}
+	\label{spell:#1}
+	\label{spell:#2}
+	\noindent #3
+
+	{
+		{
+			\setlength\parindent{0pt}
+			#4
+		}
+		\\
+		{
+			\noindent #5
+		}
+	}
 }
 % NPC functions
 

@@ -55,6 +55,7 @@
 	- Earthquake (8th)
 	- Fire Storm (8th)
 	- Storm of Vengeance (9th)
+- Chang Madness Domain granted power - Penalty equal to 1/3 cleric level only on Wisdom-based skill checks.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -170,10 +171,10 @@
 		- _Cooling Canopy_: moved to Rain and Replenishment domains
 		- _Worm's Breath_: moved to Silt and Water domains
 		- _Control Tides_: moved to Silt and Water domains
-		- _Curse of the Black Sands_: moved to Silt domain
+		- _Curse of the Black Sands_: moved to Cycle and Silt domains
 		- _Sand Spray_: moved to Silt domain
 		- _Cleansing Flame_: moved to Cleasing domain
-		- _Elemental Strike_: revert to Flame Strike, and moved to Fire domain
+		- _Elemental Strike_: revert to Flame Strike, and moved to Wrath domain
 		- _Ragestorm_: moved to Freedom domain
 		- _Rejuvenate_: moved to Replenishment domain
 		- _Infestation_: moved to Earth domain
