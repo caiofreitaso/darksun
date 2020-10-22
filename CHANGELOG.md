@@ -55,7 +55,8 @@
 	- _Earthquake_ (8th)
 	- _Fire Storm_ (8th)
 	- _Storm of Vengeance_ (9th)
-- Chang Madness Domain granted power - Penalty equal to 1/3 cleric level only on Wisdom-based skill checks.
+- Change Madness Domain granted power - Penalty equal to 1/3 cleric level only on Wisdom-based skill checks.
+- Add some interations for psionics and magic.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -112,8 +113,8 @@
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
-- Change Moon Priest: switch requirements for Secular Authority class feature for the feat.
-- Change Moon Priest: switch requirements for Knowledge (astronomy) ranks for Profession (astrologer).
+<!-- - Change Moon Priest: switch requirements for Secular Authority class feature for the feat.
+- Change Moon Priest: switch requirements for Knowledge (astronomy) ranks for Profession (astrologer). -->
 - **Change Metal Weapons** - metal weapons deal +1 damage.
 - Remove maces from the list of weapons that can be constructed from non-metal materials without penalty.
 - Remove Artist's armor - too many dice rolls for arcane spell failure checks.
@@ -147,7 +148,7 @@
 - Change Gladiator: Combat stance starts as move action.
 - Change Gladiator: Martial display starts as move action.
 - Change Arrow Knight: Lethal shot is _Power Attack_ for bows the character has Weapon Focus.
-- Change Craft (poisonmaking): Craft DC is not tabled, it is related to the save DC and type of poison. Contact poisons have Craft DC = 10 + poison's save DC, inhaled poisons have Craft DC = 15 + poison's save DC, and ingested/injury poisons have Craft DC = 5 + poison's save DC.
+- Change Craft (poisonmaking): Craft DC was not tabled, and it is now related to the save DC and type of poison. Contact poisons have Craft DC = 10 + poison's save DC, inhaled poisons have Craft DC = 15 + poison's save DC, and ingested/injury poisons have Craft DC = 5 + poison's save DC.
 - Remove Drakesblood poison.
 - Add _masterwork poisons_: +1 save DC, +300 cp.
 - Move defiling rules from _Magic and Psionics_ to Wizard,
@@ -183,3 +184,6 @@
 	- **Druid spell list**
 		- _Elemental Strike_: revert to Flame Strike
 		- _Elemental Storm_: revert to Fire Storm
+- Add mention to templars in Magic.
+- Add rules to defiler redemption under Ex-Defilers, in Wizard section.
+- Add rules for defiling under Using the Environment, in Magic chapter.
