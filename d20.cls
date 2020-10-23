@@ -344,11 +344,10 @@
 	\subsection{#1}
 	\label{spell:#1}
 	\label{spell:#2}
-	\noindent #3
-
 	{
 		{
 			\setlength\parindent{0pt}
+			#3\\
 			#4
 		}
 		\\
