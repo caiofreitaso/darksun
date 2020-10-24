@@ -91,7 +91,7 @@
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
 \newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
-\newcommand{\spellList}[1]{\textit{\hyperref[spell:#1]{#1}}}
+\newcommand{\spellList}[1]{\noindent\textit{\hyperref[spell:#1]{#1}}}
 \newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
 \newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter: #1}}
@@ -368,6 +368,14 @@
 \newcolumntype{y}[1]{>{\raggedright\arraybackslash}b{#1}}
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{z}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand{\TableNote}[2]{
+\rowcolor{white}\multicolumn{#1}{p{\columnwidth-1em}}{#2}
+}
+
+\newcommand{\BigTableNote}[2]{
+\rowcolor{white}\multicolumn{#1}{p{\textwidth-1em}}{#2}
+}
 
 %% Tables
 \newcommand{\TinyTable}[4][\columnwidth]{

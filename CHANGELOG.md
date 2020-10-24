@@ -57,6 +57,7 @@
 	- _Storm of Vengeance_ (9th)
 - Change Madness Domain granted power - Penalty equal to 1/3 cleric level only on Wisdom-based skill checks.
 - Add some interations for psionics and magic.
+- Change from "Spellcasting and Services" to "Services".
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -187,3 +188,6 @@
 - Add mention to templars in Magic.
 - Add rules to defiler redemption under Ex-Defilers, in Wizard section.
 - Add rules for defiling under Using the Environment, in Magic chapter.
+- Separate mounts into categories (birds, reptiles and insects)
+- Add city guide price
+- Add draqoman prices
