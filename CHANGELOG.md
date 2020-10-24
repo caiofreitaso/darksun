@@ -188,6 +188,11 @@
 - Add mention to templars in Magic.
 - Add rules to defiler redemption under Ex-Defilers, in Wizard section.
 - Add rules for defiling under Using the Environment, in Magic chapter.
-- Separate mounts into categories (birds, reptiles and insects)
-- Add city guide price
-- Add draqoman prices
+- Separate mounts into categories (birds, reptiles and insects).
+- Add city guide price.
+- Add draqoman prices.
+- Change Arena Champion:
+	- Add _gladiatorial performance_ to class table.
+	- Remove _fame_: changed to improvement to _reputation_.
+	- _Reputation_ +3 at 10th level.
+	- Remove _legend_ bonus to leadership.
