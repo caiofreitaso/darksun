@@ -99,10 +99,10 @@ OK	- Shaman --> No changes
 
 -----------
 
-Cleric Rework
+OK Cleric Rework
 	- Access to Elemental Spells
 
-Earth
+OK Earth
 	- Pact:
 OK		- must actively oppose defilers (unlike druids who are defensive)
 OK		- must teach the cycle of life
@@ -115,7 +115,7 @@ OK		- encasement (caixão pra dormir dentro da terra)
 OK		- meld into stone 1/day
 		- +2 vs earth spells
 OK		- halve defile area with Wisdom check
-Air
+OK Air
 	- Pact:
 OK		- must actively oppose slavery
 OK		- must oppose unfair imprisonment
@@ -130,7 +130,7 @@ OK		- +1 CA against missile ranged attacks
 OK		- control winds 1/day
 		- +2 vs air spells
 OK		- feather fall 1/day
-Fire
+OK Fire
 	- Pact:
 OK		- must encourage growth of cities, forests and fields
 OK		- must defeat the sorcerer-kings and all defilers
@@ -142,7 +142,7 @@ OK		- create small flames the size of a match stick
 OK		- cleansing flame (heal, bath, food, restore) 1/day
 		- control flames smaller than torch
 		- +2 vs fire spells
-Water
+OK Water
 	- Pact:
 OK		- must give water and aid to any in need, except defilers
 OK		- must protect and preserve remaining water
@@ -156,7 +156,7 @@ OK		- 1 water stabilizing skin, heals 1d2 hp
 OK		- +4 vs poison
 OK		- 1 revival skin, heals unconsciousness to 1hp
 
-Silt
+OK Silt
 	- Pact:
 OK		- must advance the silt
 		- destroy trees, grasses and fauna that retain moisture
@@ -166,7 +166,7 @@ OK		- 5th: ignore silt 1/day, 1 round/level
 OK		- 9th: walk on silt
 OK		- 11th: control 0.3m³/level of silt
 
-Sun
+OK Sun
 	- Pact:
 		- must eliminate all gases that filter the sun
 OK		- must remove any obstructions (flatten the planet)
@@ -176,7 +176,7 @@ OK		- 3rd: 1/2 water usage, no ill effects of remaining in the sun
 OK		- 5th: ignore daylight/sunray spells 1/day, 1 round/level
 		- 7th: gate element sunray 4d8 1 square/level
 
-Magma
+OK Magma
 	- Pact:
 OK		- must grow magma's domain
 OK		- keep magma heated
@@ -187,7 +187,7 @@ OK		- remove nearby water reserves
 		- 7th: gate element 0.3m³/level
 OK		- 8th: evaporate 45l of water/level 1/day
 
-Rain
+OK Rain
 	- Pact:
 OK		- protect forests and water reserves
 OK		- plant new forests
