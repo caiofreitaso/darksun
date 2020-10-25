@@ -58,6 +58,7 @@
 - Change Madness Domain granted power - Penalty equal to 1/3 cleric level only on Wisdom-based skill checks.
 - Add some interations for psionics and magic.
 - Change from "Spellcasting and Services" to "Services".
+- Add reference to Templars in Divine Spells section.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -196,3 +197,10 @@
 	- Remove _fame_: changed to improvement to _reputation_.
 	- _Reputation_ +3 at 10th level.
 	- Remove _legend_ bonus to leadership.
+	- Change wording to match SRD's.
+- Change Dune Trader:
+	- Change wording to match SRD's.
+	- Rename _distributive bargaining_ to Bargaining.
+	- Remove _integrative bargaining_: convert into improvement on _bargaining_.
+- Elemental Champion: Change wording to match SRD's.
+- Living Crystal: Simplified cost modifiers.
