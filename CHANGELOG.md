@@ -202,5 +202,18 @@
 	- Change wording to match SRD's.
 	- Rename _distributive bargaining_ to Bargaining.
 	- Remove _integrative bargaining_: convert into improvement on _bargaining_.
+- **Rework Cerulean**
+	- Remove Empower Spell from requirements.
+	- Remove Empower.
+	- Remove Cerulean Blast.
+
+	- Must be chaotic.
+	- Minimum level is 4th level, instead of 6th: requires 2nd-level spells, and 6 ranks.
+	- Cerulean magic can't be disguised. Much like defiling, cerulean magic has inherent characteristics: crackling blue aura.
+	- Blue Lens Focus: damage scales with spell level.
+	- Add _call lightning_ 1/day for each 3 levels (max 3/day at 9th).
+	- Add _Empower Spell_ as bonus feat at 4th level.
+	- Add Rain domain as bonus domain.
+	- Move Control weather to 10th level.
 - Elemental Champion: Change wording to match SRD's.
 - Living Crystal: Simplified cost modifiers.
