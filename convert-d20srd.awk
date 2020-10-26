@@ -2,9 +2,9 @@
 /<div class="footer"/ { printable = 0 }
 printable {
 	gsub(/Sor\/Wiz/, "Wiz", $0);
-	gsub(/Long \(400 ft\. \+ 40 ft\.\/level\)/, "Long (120 m + 12 m/level)", $0);
-	gsub(/Medium \(100 ft\. \+ 10 ft\.\/level\)/, "Medium (30 m + 3 m/level)", $0);
-	gsub(/Close \(25 ft\. \+ 5 ft\.\/2 levels\)/, "Close (7.5 m + 1.5 m/2 levels)", $0);
+	gsub(/Long \(400 ft\. \+ 12 m.\/level\)/, "Long (120 m + 12 m/level)", $0);
+	gsub(/Medium \(100 ft\. \+ 3 m.\/level\)/, "Medium (30 m + 3 m/level)", $0);
+	gsub(/Close \(25 ft\. \+ 1.5 m.\/2 levels\)/, "Close (7.5 m + 1.5 m/2 levels)", $0);
 	gsub(/’/, "'", $0);
 	gsub(/%/, "\\%", $0);
 
