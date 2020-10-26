@@ -1,0 +1,30 @@
+Description
+	Clothes d10
+	Hairstyle d10
+	Affectations d10
+
+Background
+	Family
+		Ranking (human, half-elf in all)
+			- Noble (dwarf, half-giant)
+			- Templar (dwarf, half-giant, mul)
+			- Freeman (***)
+			- Merchant (dwarf, elf)
+			- Slave (***)
+			- Nomad (elf)
+			- Raider (thri-kreen, half-giants, halfling, elf)
+			- Hunter-gatherer (thri-kreen, halfling)
+			- Hermit (***)
+		Parents
+			- Living
+			- Something happened
+				- they died in war
+				- they died in accident
+				- they were murdered
+				- they don't remember you
+				- you never knew them
+				- they are hiding to protect you
+				- you were left with relatives
+				- you grew up on the wastelands and never had parents
+				- they gave you to adoption
+				- they sold you
