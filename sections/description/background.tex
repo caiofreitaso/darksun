@@ -1,9 +1,13 @@
 \section{Background}
+Characters exist in the context of their past. Where did they come from? How they were raised? Backgrounds serve to enrich the characters and show how Athas shaped their story. These are ``plot complications'' to make the character feel authentic.
 
 \subsection{Family}
 
-\Table{Family Ranking}{*{3}{lX}}{
-\tableheader d10 & \tableheader Human, Half-Elf & \tableheader d10 & \tableheader Dwarf & \tableheader d10 & \tableheader Elf \\
+\subsubsection{Family Ranking}
+Athas is a harsh world, and its society reflects it in the worst ways possible---it is harshly divided into clear castes. To check you family ranking in the Athasian society, you need to roll a d10 and check your race in \tabref{Family Ranking}.
+
+\Table{Family Ranking}{*{3}{b{6mm}b{(\columnwidth-3cm)/3}}}{
+\textit{d10} & \tableheader Human, ~~ Half-Elf & \textit{d10} & \tableheader Dwarf & \textit{d10} & \tableheader Elf \\
 1  & Noble     & 1    & Noble     & 1--2 & Merchant  \\
 2  & Templar   & 2    & Templar   & 3    & Crafter   \\
 3  & Merchant  & 3--4 & Merchant  & 4    & Mercenary \\
@@ -16,7 +20,7 @@
 10 & Slave     & & & & \\
 
 \rowcolor{white}\\
-\tableheader d10 & \tableheader Half-Giant & \tableheader d10 & \tableheader Halfling, Thri-Kreen & \tableheader d10 & \tableheader Mul \\
+\textit{d10} & \tableheader Half-Giant & \textit{d10} & \tableheader Halfling, Thri-Kreen & \textit{d10} & \tableheader Mul \\
 1     & Noble     & 1    & Crafter   & 1     & Templar   \\
 2     & Templar   & 2    & Mercenary & 2     & Crafter   \\
 3     & Crafter   & 3--5 & Hunter    & 3     & Mercenary \\
@@ -25,13 +29,153 @@
 9--10 & Slave     & 10   & Slave     & 6--10 & Slave     \\
 
 \rowcolor{white}\\
-\tableheader d10 & \tableheader Aarakocra, Pterran &&\\
+\textit{d10} & \multicolumn{3}{l}{\tableheader Aarakocra, Pterran} &&\\
 1--5 & Crafter   &&&& \\
 6    & Mercenary &&&& \\
 7--9 & Hunter    &&&& \\
 10   & Hermit    &&&& \\
 }
 
-\Table{Something Happened to Your Parents}{lX}{
+\begin{itemize*}
+	\item \textbf{Noble}: The nobles control the farms and the water of the cities. Usually, each noble family picks a senior member to sit on a parliamentary council.
+	\item \textbf{Templar}: Templars are clergymen devoted to the sorcerer-king of their city. These greedy templars dominate the king's bureaucracy.
+	\item \textbf{Merchant}: Merchants are not citizens, for the nature of their work dictates that they maintain contact with a wide variety of societies (which makes our sorcerer-kings distrustful).
+	\item \textbf{Crafter}:  The bulk of freemen are craftsmen and artisans who keep their shops within the city walls.
+	\item \textbf{Mercenary}: Fighting forces for hire, they make most of the bodies in the battles. From the little villages seeking protection against raiders, to the merchant houses that need to protect their precious caravans, to the city-states needing more men to fight against each other.
+	\item \textbf{Nomad}: Nomad herdsmen live in groups called \textit{douars}. A dozen families or so that move from pasture to pasture, pausing wherever there is water and enough forage to feed their animals. When the forage is gone, they pack up their belongings and move on.
+	\item \textbf{Hunter}: Hunting and gathering clans are small groups that make their living through hunting meat animals and foraging for edible plants.
+	\item \textbf{Raider}: Raiders feed and clothe themselves by stealing from caravans, lonely villages, hermits, and even the cultivated fields surrounding the cities. Their tribes vary in size from a dozen individuals to several hundred, depending on the territory they work and from whom they usually steal.
+	\item \textbf{Hermit}: Hermits come in all races and from all walks of life. They live alone in some forlorn place far away from any permanent human or demihuman society, either by their own choice or because they are outcasts.
+	\item \textbf{Slave}: A person can become a slave in one of three ways: by being born a slave, by being captured during a war or other armed conflict, or by being sold into slavery for committing some crime or failing to pay one's debts. A member of any race or social class can become a slave, though nobles and merchants usually have friends or family who will buy their freedom for them.
+\end{itemize*}
 
+
+
+\subsubsection{Parents}
+There is a 40\% chance that something has happened to one of both parents. If so, roll a d10 and check \tabref{Something Happened to Your Parents}.
+
+\Table{Something Happened to Your Parents}{lX}{
+\textit{d10} & \tableheader Event\\
+1  & Your parent(s) died in a war.\\
+2  & Your parent(s) died in an accident.\\
+3  & Your parent(s) were murdered.\\
+4  & Your parent(s) don't remember you.\\
+5  & You never knew your parent(s).\\
+6  & Your parent(s) are hiding to protect you.\\
+7  & You were left with relatives.\\
+8  & You grew up on the streets and never had parents.\\
+9  & Your parent(s) gave you to adoption.\\
+10 & Your parent(s) sold you.\\
 }
+
+\subsubsection{Family Status}
+There is a 40\% chance that your family status is in danger. If so, roll a d10 and check \tabref{Family Tragedy}.
+
+\Table{Family Tragedy}{lX}{
+\textit{d10} & \tableheader Event\\
+1  & Family lost everything through betrayal.\\
+2  & Family lost everything through bad management.\\
+3  & Family exiled from home.\\
+4  & Family was imprisoned and you alone escaped.\\
+5  & Family vanished and you are the only remaining member.\\
+6  & Family was killed and you are the only survivor.\\
+7  & Family is involved with the Veiled Alliance.\\
+8  & Family was scattered due to misfortune.\\
+9  & Family is cursed with hereditary feud.\\
+10 & You are the inheritor of a family debt; you must honor this debt.\\
+}
+
+\subsubsection{Childhood}
+Aarakocras and pterrans raise their children free, so there is no chance the child has an extraordinary raising. For all other races, roll a d10 and see \tabref{Childhood Environment}.
+
+\Table{Childhood Environment}{lX}{
+\textit{d10} & \tableheader Human, Half-Elf    \\
+1  & In the Nobles' Quarter in Tyr             \\
+2  & In a city-state                           \\
+3  & Spent in merchant house's outpost         \\
+4  & Spent on the streets, with no supervision \\
+5  & In decaying, once prosperous village      \\
+6  & In a douar                                \\
+7  & In a hunter-gatherer clan                 \\
+8  & In a raiders tribe                        \\
+9  & In a pirate pack in the Sea of Salt       \\
+10 & In slavery                                \\
+
+\rowcolor{white}\\
+\textit{d10} & \tableheader Dwarf                 \\
+1     & In the Nobles' Quarter in Tyr             \\
+2--3  & In a city-state                           \\
+4--5  & Spent in merchant house's outpost         \\
+6     & Spent on the streets, with no supervision \\
+7--8  & In decaying, once prosperous village      \\
+9--10 & In slavery                                \\
+
+\rowcolor{white}\\
+\textit{d10} & \tableheader Elf                  \\
+1    & In a city-state                           \\
+2--3 & Spent in merchant house's outpost         \\
+4    & Spent on the streets, with no supervision \\
+5--6 & In a douar                                \\
+7--8 & In a raiders tribe                        \\
+10   & In slavery                                \\
+
+\rowcolor{white}\\
+\textit{d10} & \tableheader Half-Giant           \\
+1    & In the Nobles' Quarter in Tyr             \\
+2--4 & In a city-state                           \\
+5    & Spent in merchant house's outpost         \\
+6--7 & Spent on the streets, with no supervision \\
+8--9 & In a raiders tribe                        \\
+10   & In slavery                                \\
+
+\rowcolor{white}\\
+\textit{d10} & \tableheader Halfling, Thri-kreen \\
+1--2 & In decaying, once prosperous village      \\
+4--6 & In a hunter-gatherer clan                 \\
+7--9 & In a raiders tribe                        \\
+10   & In slavery                                \\
+
+\rowcolor{white}\\
+\textit{d10} & \tableheader Mul                   \\
+1     & In a city-state                           \\
+2     & Spent in merchant house's outpost         \\
+3     & Spent on the streets, with no supervision \\
+4     & In decaying, once prosperous village      \\
+5     & In a raiders tribe                        \\
+6--10 & In slavery                                \\
+}
+
+\subsubsection{Siblings}
+Determine the number of siblings you have by rolling your race's dice (see below). You are an only child if you roll a result within your race's margin.
+
+\Table{}{Xcc}{
+\tableheader Race & \tableheader Die & \tableheader Only Child Margin\\
+Aarakocra, half-giant, pterran & 1d6 & 5--6\\
+Dwarf & 1d12 & 10--12 \\
+Elf, human, half-elf, halfling, mul & 1d10 & 8--10\\
+Thri-kreen & 1d20 & 18--20\\
+}
+
+Then, for each sibling:
+\begin{enumerate}
+ 	\item Roll a die. If the result is even, the sibling is male, else the sibling is female.
+ 	\item Roll a d10 for their relative age:
+
+ 	\noindent\TableOdd{}{b{6mm}b{\columnwidth-27mm}}{
+ 		\textit{d10} & \tableheader Relative age\\
+ 		1--5 & Sibling is older.\\
+ 		6--9 & Sibling is younger.\\
+ 		10 & Sibling is your twin.\\
+ 	}
+
+ 	\item Roll a d20 for ther feeling about you:
+
+ 	\noindent\TableOdd{}{b{6mm}b{\columnwidth-27mm}}{
+ 		\textit{d10} & \tableheader Feeling\\
+ 		1--2  & Sibling dislikes you.\\
+ 		3--4  & Sibling likes you.\\
+ 		5--6  & Sibling is neutral towards you.\\
+ 		7--8  & Sibling hero worship you.\\
+ 		9--10 & Sibling hates you.\\ 		
+ 	}
+\end{enumerate}

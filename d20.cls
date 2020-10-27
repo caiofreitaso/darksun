@@ -400,13 +400,13 @@
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
-\newcommand{\TableOdd}[4][h!]{
-	\begin{table}[#1]
-	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
-	\rowcolors{2}{TableColor}{}\scriptsize
+\newcommand{\TableOdd}[4][\scriptsize]{
+	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
+	#1
+	\rowcolors{2}{TableColor}{}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
-	\end{table}
+	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
