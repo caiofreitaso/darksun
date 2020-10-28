@@ -1,0 +1,32 @@
+\documentclass[twocolumn]{d20}
+\usepackage{Nouveaud}
+\usepackage{ucs}
+\usepackage{multirow}
+\usepackage{fdsymbol}
+\usepackage{pdfpages}
+\usepackage[unicode,colorlinks]{hyperref}
+\hypersetup{
+  bookmarksnumbered=false,
+  bookmarksopen=true,
+  bookmarksopenlevel=1,
+  allcolors=LinkColor,
+  % pdfborderstyle={/S/U/W 1},
+  pdfstartview=FitBH,
+  pdfpagemode=UseOutlines,
+  pdfpagelayout=TwoPageRight,
+  pdftitle={Dark Sun d20},
+  pdfauthor={Caio Freitas de Oliveira},
+  pdfkeywords={d20 System}
+}
+
+\title{Dark Sun -- Background}
+\renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
+\renewcommand\labelitemi{$\smallblackdiamond$}
+\newcommand\threequarters{\unichar{"00BE} }
+\newcommand\onehalf{\unichar{"00BD} }
+\newcommand\onequarter{\unichar{"00BC} }
+\begin{document}
+
+\input{sections/description/background.tex}
+
+\end{document}
