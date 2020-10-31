@@ -28,16 +28,23 @@
     \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
 }
+\@newtikzpagenode{line area}{%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm-1pt}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top-7mm}}%
+}
 \def\@makechapterhead#1{%
   {
     \centering
     \begin{tikzpicture}[remember picture,overlay]
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
-      \node[rotate=180,anchor=north] { \includegraphics[width=86mm]{images/chapter.png} };
+      \fill[black] (line area.north west) rectangle (line area.south east);
+      % \node[rotate=180,anchor=north] at (0,-0.4) { \includegraphics[width=10cm]{images/chapter.png} };
+      % \node[anchor=north] at (0,2) { \color{white}\bfseries\LARGE#1 };
     \end{tikzpicture}
 
-    \imfellEnglish%
+    \imfellEnglish\color{ChapterColor}%
     \begin{tabular}{p{25mm}r{\textwidth-25mm}}
+
     \ifnum \c@secnumdepth >\m@ne%
       \if@mainmatter%
         \Large\@chapapp\space\thechapter%
