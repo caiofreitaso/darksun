@@ -125,19 +125,20 @@
 % Chapter Name
 \def\@makechapterhead#1{%
 	{
-		\parindent \z@ \imfellEnglish%
+		\imfellEnglish%
+		\begin{tabular}{p{25mm}r{\textwidth-25mm}}
 		\ifnum \c@secnumdepth >\m@ne%
 			\if@mainmatter%
-				\Large\ \@chapapp\space\thechapter\kern0.3em%
+				\Large\@chapapp\space\thechapter%
 			\fi%
 		\fi%
-		\interlinepenalty\@M%
+		&
 		\Huge\bfseries\color{ChapterColor}\raggedleft{
 			\contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
 				\MakeUppercase{#1}
 			}
 		}
-		\par\nobreak%
+		\end{tabular}
 	}
 }
 % Caption

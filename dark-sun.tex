@@ -4,6 +4,8 @@
 \usepackage{multirow}
 \usepackage{fdsymbol}
 \usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
 \usepackage[unicode,colorlinks]{hyperref}
 \hypersetup{
   bookmarksnumbered=false,
@@ -20,6 +22,36 @@
 }
 
 \title{Dark Sun d20}
+
+\makeatletter
+\@newtikzpagenode{chapter area}{%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
+}
+\def\@makechapterhead#1{%
+  {
+    \centering
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
+    \end{tikzpicture}
+
+    \imfellEnglish%
+    \begin{tabular}{p{25mm}r{\textwidth-25mm}}
+    \ifnum \c@secnumdepth >\m@ne%
+      \if@mainmatter%
+        \Large\@chapapp\space\thechapter%
+      \fi%
+    \fi%
+    &
+    \Huge\bfseries\color{ChapterColor}\raggedleft{
+      \contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
+        \MakeUppercase{#1}
+      }
+    }
+    \end{tabular}
+  }%
+}
+\makeatother
 \renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand\labelitemi{$\smallblackdiamond$}
 \newcommand\threequarters{\unichar{"00BE} }
