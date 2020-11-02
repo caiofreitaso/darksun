@@ -29,7 +29,7 @@
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
 }
 \@newtikzpagenode{line area}{%
-    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm-1pt}}%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm-1.5pt}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top-7mm}}%
 }
 \def\@makechapterhead#1{%
@@ -47,12 +47,14 @@
 
     \ifnum \c@secnumdepth >\m@ne%
       \if@mainmatter%
-        \Large\@chapapp\space\thechapter%
+        \Large\contourlength{.6pt}\contournumber{10}\contour{white}{
+          \@chapapp\space\thechapter%
+        }
       \fi%
     \fi%
     &
-    \Huge\bfseries\color{ChapterColor}\raggedleft{
-      \contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
+    \Huge\bfseries\raggedleft{
+      \contourlength{0.1pt}\contournumber{20}\contour{white}{
         \MakeUppercase{#1}
       }
     }

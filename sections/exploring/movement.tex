@@ -1,0 +1,233 @@
+\section{Movement}
+There are three movement scales, as follows.
+
+\begin{itemize*}
+\item Tactical, for combat, measured in meters (or squares) per round.
+\item Local, for exploring an area, measured in meters per minute.
+\item Overland, for getting from place to place, measured in kilometers per hour or kilometers per day.
+\end{itemize*}
+
+\Table{Movement and Distance}{l RRR r{1cm} RR }{
+& \multicolumn{6}{c}{\tableheader Speed}\\
+\cmidrule[0.5pt]{2-7}
+\tableheader Type & \tableheader 4.5 m & \tableheader 6 m & \tableheader 9 m & \tableheader 10.5 m & \tableheader 12 m & \tableheader 15 m \\
+\cmidrule[0.5pt]{1-7}
+\multicolumn{7}{c}{\TableSubheader{One Round (Tactical)\footnotemark[1]}}\\
+Walk & 4.5 m & 6 m & 9 m & 10.5 m & 12 m & 15 m\\
+Hustle & 9 m & 12 m & 18 m & 21 m & 24 m & 30 m\\
+Run ($\times$3) & 13.5 m & 18 m & 27 m & 31.5 m & 36 m & 45 m\\
+Run ($\times$4) & 18 m & 24 m & 36 m & 42 m & 48 m & 60 m\\
+
+\cmidrule[0.5pt]{1-7}
+\multicolumn{7}{c}{\TableSubheader{One Minute (Local)}}\\
+Walk & 45 m & 60 m & 90 m & 105 m & 120 m & 150 m\\
+Hustle & 90 m & 120 m & 180 m & 210 m & 240 m & 300 m\\
+Run ($\times$3) & 135 m & 180 m & 270 m & 315 m & 360 m & 450 m\\
+Run ($\times$4) & 180 m & 240 m & 360 m & 420 m & 480 m & 600 m\\
+
+\cmidrule[0.5pt]{1-7}
+\multicolumn{7}{c}{\TableSubheader{One Hour (Overland)}} \\
+Walk & 2.3 km & 3 km & 4.5 km & 5.3 km & 6 km & 7.5 km\\
+Hustle & 4.5 km & 6 km & 9 km & 10.5 km & 12 km & 15 km\\
+Run & --- & --- & --- & --- & --- & --- \\
+
+\cmidrule[0.5pt]{1-7}
+\cmidrule[0pt]{1-7}
+\multicolumn{7}{c}{\TableSubheader{One Day (Overland)}} \\
+Walk & 18 km & 24 km & 36 km & 42 km & 48 km & 60 km\\
+Hustle & --- & --- & --- & --- & --- & --- \\
+Run & --- & --- & --- & --- & --- & --- \\
+
+\rowcolor{white}
+\TableNote{7}{1 Tactical movement is often measured in squares on the battle grid (1 square = 1.5 meter) rather than meters.}
+}
+
+\textbf{Modes of Movement}: While moving at the different movement scales, creatures generally walk, hustle, or run.
+
+\textit{Walk}: A walk represents unhurried but purposeful movement at 1.5 kilometers per hour for an unencumbered human.
+
+\textit{Hustle}: A hustle is a jog at about 9 kilometers per hour for an unencumbered human. A character moving his or her speed twice in a single round, or moving that speed in the same round that he or she performs a standard action or another move action is hustling when he or she moves.
+
+\textit{Run (×3)}: Moving three times speed is a running pace for a character in heavy armor. It represents about 11 kilometers per hour for a human in full plate.
+
+\textit{Run (×4)}: Moving four times speed is a running pace for a character in light, medium, or no armor. It represents about 21 kilometers per hour for an unencumbered human, or 15 kilometers per hour for a human in chainmail.
+
+\subsection{Tactical Movement}
+Use tactical movement for combat. Characters generally don't walk during combat---they hustle or run. A character who moves his or her speed and takes some action is hustling for about half the round and doing something else the other half.
+
+\Table{Hampered Movement}{XC}{
+\tableheader Condition & \tableheader Additional Movement Cost\\
+Difficult terrain & $\times$2\\
+Obstacle\footnotemark[1] & $\times$2\\
+Poor visibility & $\times$2\\
+Impassable & --- \\
+\rowcolor{white}
+\TableNote{2}{1 May require a skill check}
+}
+
+\textbf{Hampered Movement}: Difficult terrain, obstacles, or poor visibility can hamper movement. When movement is hampered, each square moved into usually counts as two squares, effectively reducing the distance that a character can cover in a move.
+
+If more than one condition applies, multiply together all additional costs that apply. This is a specific exception to the normal rule for doubling.
+
+In some situations, your movement may be so hampered that you don't have sufficient speed even to move 1.5 meter (1 square). In such a case, you may use a full-round action to move 1.5 meter (1 square) in any direction, even diagonally. Even though this looks like a 1.5-meter step, it's not, and thus it provokes attacks of opportunity normally. You can't take advantage of this rule to move through impassable terrain or to move when all movement is prohibited to you.
+
+You can't run or charge through any square that would hamper your movement.
+
+\textbf{Aerial Movement}: Once movement becomes three-dimensional and involves turning in midair and maintaining a minimum velocity to stay aloft, it gets more complicated. Most flying creatures have to slow down at least a little to make a turn, and many are limited to fairly wide turns and must maintain a minimum forward speed. Each flying creature has a maneuverability, as shown on \tabref{Maneuverability}. The entries on the table are defined below.
+
+\Table{Maneuverability}{l*{6}{C}}{
+& \multicolumn{5}{c}{\tableheader Maneuverability}\\
+\cmidrule[0.5pt]{2-6}
+& \tableheader Perfect & \tableheader Good & \tableheader Average & \tableheader Poor & \tableheader Clumsy \\
+\textit{Minimum forward speed} & None & None & Half & Half & Half \\
+\textit{Hover} & Yes & Yes & No & No & No \\
+\textit{Move backward} & Yes & Yes & No & No & No \\
+\textit{Reverse} & Free & $-5$ ft. & No & No & No \\
+\textit{Turn} & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 3 m \\
+\textit{Turn in place} & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & No & No \\
+\textit{Maximum turn} & Any & Any & 90{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+\textit{Up angle} & Any & Any & 60{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+\textit{Up speed} & Full & Half & Half & Half & Half \\
+\textit{Down angle} & Any & Any & Any & 45{\textdegree} & 45{\textdegree} \\
+\textit{Down speed} & Double & Double & Double & Double & Double \\
+\textit{Between down and up} & 0 & 0 & 1.5 m & 3 m & 6 m \\
+}
+
+
+\textit{Minimum Forward Speed}: If a flying creature fails to maintain its minimum forward speed, it must land at the end of its movement. If it is too high above the ground to land, it falls straight down, descending 150 feet in the first round of falling. If this distance brings it to the ground, it takes falling damage. If the fall doesn’t bring the creature to the ground, it must spend its next turn recovering from the stall. It must succeed on a DC 20 Reflex save to recover. Otherwise it falls another 300 feet. If it hits the ground, it takes falling damage. Otherwise, it has another chance to recover on its next turn.
+
+\textit{Hover}: The ability to stay in one place while airborne.
+
+\textit{Move Backward}: The ability to move backward without turning around.
+
+\textit{Reverse}: A creature with good maneuverability uses up 5 feet of its speed to start flying backward.
+
+\textit{Turn}: How much the creature can turn after covering the stated distance.
+
+\textit{Turn in Place}: A creature with good or average maneuverability can use some of its speed to turn in place.
+
+\textit{Maximum Turn}: How much the creature can turn in any one space.
+
+\textit{Up Angle}: The angle at which the creature can climb.
+
+\textit{Up Speed}: How fast the creature can climb.
+
+\textit{Down Angle}: The angle at which the creature can descend.
+
+\textit{Down Speed}: A flying creature can fly down at twice its normal flying speed.
+
+\textit{Between Down and Up}: An average, poor, or clumsy flier must fly level for a minimum distance after descending and before climbing. Any flier can begin descending after a climb without an intervening distance of level flight.
+
+\subsection{Local Movement}
+Characters exploring an area use local movement, measured in meters per minute.
+
+\textbf{Walk}: A character can walk without a problem on the local scale.
+
+\textbf{Hustle}: A character can hustle without a problem on the local scale. See Overland Movement, below, for movement measured in kilometers per hour.
+
+\textbf{Run}: A character with a Constitution score of 9 or higher can run for a minute without a problem. Generally, a character can run for a minute or two before having to rest for a minute.
+
+\subsection{Overland Movement}
+Characters covering long distances cross-country use overland movement. Overland movement is measured in kilometers per hour or kilometers per day. A day represents 8 hours of actual travel time. For rowed watercraft, a day represents 10 hours of rowing. For a sailing ship, it represents 24 hours.
+
+\textbf{Walk}: A character can walk 8 hours in a day of travel without a problem. Walking for longer than that can wear him or her out (see Forced March, below).
+
+\textbf{Hustle}: A character can hustle for 1 hour without a problem. Hustling for a second hour in between sleep cycles deals 1 point of nonlethal damage, and each additional hour deals twice the damage taken during the previous hour of hustling. A character who takes any nonlethal damage from hustling becomes fatigued.
+
+A fatigued character can't run or charge and takes a penalty of --2 to Strength and Dexterity. Eliminating the nonlethal damage also eliminates the fatigue.
+
+\textbf{Run}: A character can't run for an extended period of time. Attempts to run and rest in cycles effectively work out to a hustle.
+
+\textbf{Terrain}: The terrain through which a character travels affects how much distance he or she can cover in an hour or a day (see Table: Terrain and Overland Movement). A highway is a straight, major, paved road. A road is typically a dirt track. A trail is like a road, except that it allows only single-file travel and does not benefit a party traveling with vehicles. Trackless terrain is a wild area with no paths.
+
+\textbf{Forced March}: In a day of normal walking, a character walks for 8 hours. The rest of the daylight time is spent making and breaking camp, resting, and eating.
+
+A character can walk for more than 8 hours in a day by making a forced march. For each hour of marching beyond 8 hours, a Constitution check (DC 10, +2 per extra hour) is required. If the check fails, the character takes 1d6 points of nonlethal damage. A character who takes any nonlethal damage from a forced march becomes fatigued. Eliminating the nonlethal damage also eliminates the fatigue. It's possible for a character to march into unconsciousness by pushing himself too hard.
+
+\textbf{Mounted Movement}: A mount bearing a rider can move at a hustle. The damage it takes when doing so, however, is lethal damage, not nonlethal damage. The creature can also be ridden in a forced march, but its Constitution checks automatically fail, and, again, the damage it takes is lethal damage. Mounts also become fatigued when they take any damage from hustling or forced marches.
+
+See Table: Mounts and Vehicles for mounted speeds and speeds for vehicles pulled by draft animals.
+
+\textbf{Waterborne Movement}: See Table: Mounts and Vehicles for speeds for water vehicles.
+
+
+
+\Table{Mounts and Vehicles}{lr{21mm}RR}{
+ & \tableheader Carrying Load & \tableheader Per Hour & \tableheader Per Day\\
+\multicolumn{4}{l}{\TableSubheader{Mounts}}\\
+Riding crodlu & up to 100 kg & 6 km & 48 km\\
+Riding crodlu & up to 300 kg & 4.5 km & 36 km\\
+War crodlu & up to 234 kg & 6 km & 48 km\\
+War crodlu & up to 700 kg & 4.5 km & 36 km\\
+
+Erdland & up to 58 kg & 4.5 km & 36 km\\
+Erdland & up to 175 kg & 3 km & 24 km\\
+
+Erdlu & up to 22 kg & 6 km & 48 km\\
+Erdlu & up to 65 kg & 4.5 km & 36 km\\
+
+Inix & up to 174 kg & 6 km & 48 km\\
+Inix & up to 525 kg & 4.5 km & 36 km\\
+
+Mekillot & up to 1,200 kg & 4.5 km & 36 km\\
+Mekillot & up to 3,600 kg & 3 km & 24 km\\
+
+Kank & up to 66 kg & 4.5 km & 36 km\\
+Kank & up to 195 kg & 3 km & 24 km\\
+
+\multicolumn{4}{l}{\TableSubheader{Vehicles}}\\
+Transport chariot (kank) & one person & 4.5 km & 36 km \\
+
+Light chariot (crodlus) & up to two people & 6 km & 48 km \\
+Heavy chariot (crodlus) & up to four people & 6 km & 48 km \\
+
+Howdah (inix) & one person & 6 km & 48 km\\
+Howdah (inix) & two people & 4.5 km & 36 km\\
+
+War howdah (inix) & up to two people & 4.5 km & 36 km\\
+
+Howdah (mekillot) & up to six people & 4.5 km & 36 km\\
+
+War howdah (mekillot) & up to 16 people & 3 km & 24 km\\
+
+Wagon (one kank) & up to 500 kg & 4.5 km & 36 km\\
+Wagon (two kanks) & up to 1,250 kg & 4.5 km & 36 km\\
+Wagon (four kanks) & up to 2,500 kg & 4.5 km & 36 km\\
+Wagon (mekillot) & up to 5,000 kg & 4.5 km & 36 km\\
+
+Caravan (two mekillot) & up to 20,000 kg & 3 km & 24 km\\
+}
+
+
+
+
+
+
+% Quadrupeds, such as horses, can carry heavier loads than characters can. See Carrying Capacity, above, for more information.
+% Rafts, barges, keelboats, and rowboats are used on lakes and rivers.
+
+% If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. In addition to 10 hours of being rowed, the vehicle can also float an additional 14 hours, if someone can guide it, so add an additional 42 miles to the daily distance traveled. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores.
+
+% Light horse or light warhorse	6 miles	48 miles
+% Light horse (151-450 lb.)\footnotemark[1]	4 miles	32 miles
+% Light warhorse (231-690 lb.)\footnotemark[1]	4 miles	32 miles
+% Heavy horse or heavy warhorse	5 miles	40 miles
+% Heavy horse (201-600 lb.)\footnotemark[1]	3½ miles	28 miles
+% Heavy warhorse (301-900 lb.)\footnotemark[1]	3½ miles	28 miles
+% Pony or warpony	4 miles	32 miles
+% Pony (76-225 lb.)\footnotemark[1]	3 miles	24 miles
+% Warpony (101-300 lb.)\footnotemark[1]	3 miles	24 miles
+% Donkey or mule	3 miles	24 miles
+% Donkey (51-150 lb.)\footnotemark[1]	2 miles	16 miles
+% Mule (231-690 lb.)\footnotemark[1]	2 miles	16 miles
+% Dog, riding	4 miles	32 miles
+% Dog, riding (101-300 lb.)\footnotemark[1]	3 miles	24 miles
+% Vehicles	Per Hour	Per Day
+% Cart or wagon	2 miles	16 miles
+% Raft or barge (poled or towed)2	½ mile	5 miles
+% Keelboat (rowed)2	1 mile	10 miles
+% Rowboat (rowed)2	1½ miles	15 miles
+% Sailing ship (sailed)	2 miles	48 miles
+% Warship (sailed and rowed)	2½ miles	60 miles
+% Longship (sailed and rowed)	3 miles	72 miles
+% Galley (rowed and sailed)	4 miles	96 miles

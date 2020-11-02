@@ -59,6 +59,9 @@
 - Add some interations for psionics and magic.
 - Change from "Spellcasting and Services" to "Services".
 - Add reference to Templars in Divine Spells section.
+- Changed Carrying Capacity table:
+	- rounded fractions up (added 1 pound to odd values).
+	- removed minimum values, you're assumed to be in the lightest load, so only the maximum for each load is considered.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
