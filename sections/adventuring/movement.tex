@@ -75,28 +75,25 @@ You can't run or charge through any square that would hamper your movement.
 
 \textbf{Aerial Movement}: Once movement becomes three-dimensional and involves turning in midair and maintaining a minimum velocity to stay aloft, it gets more complicated. Most flying creatures have to slow down at least a little to make a turn, and many are limited to fairly wide turns and must maintain a minimum forward speed. Each flying creature has a maneuverability, as shown on \tabref{Maneuverability}. The entries on the table are defined below.
 
-\Table{Maneuverability}{l*{6}{C}}{
+\BigTablePair{Maneuverability}{l*{5}{C}}{
 & \multicolumn{5}{c}{\tableheader Maneuverability}\\
 \cmidrule[0.5pt]{2-6}
 & \tableheader Perfect & \tableheader Good & \tableheader Average & \tableheader Poor & \tableheader Clumsy \\
-\textit{Minimum forward speed} & None & None & Half & Half & Half \\
-\textit{Hover} & Yes & Yes & No & No & No \\
-\textit{Move backward} & Yes & Yes & No & No & No \\
-\textit{Reverse} & Free & $-5$ ft. & No & No & No \\
-\textit{Turn} & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 3 m \\
-\textit{Turn in place} & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & No & No \\
-\textit{Maximum turn} & Any & Any & 90{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
-\textit{Up angle} & Any & Any & 60{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
-\textit{Up speed} & Full & Half & Half & Half & Half \\
-\textit{Down angle} & Any & Any & Any & 45{\textdegree} & 45{\textdegree} \\
-\textit{Down speed} & Double & Double & Double & Double & Double \\
-\textit{Between down and up} & 0 & 0 & 1.5 m & 3 m & 6 m \\
+Move backward & Yes & Yes & No & No & No \\
+Reverse & Free & $-1.5$ m & No & No & No \\
+Turn & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 3 m \\
+Turn in place & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & No & No \\
+Maximum turn & Any & Any & 90{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+Minimum forward speed\footnotemark[1] & None & None & Half & Half & Half \\
+Hover\footnotemark[1] & Yes & Yes & No & No & No \\
+Up angle\footnotemark[1] & Any & Any & 60{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+Up speed\footnotemark[1] & Full & Half & Half & Half & Half \\
+Down angle\footnotemark[1] & Any & Any & Any & 45{\textdegree} & 45{\textdegree} \\
+Down speed\footnotemark[1] & Double & Double & Double & Double & Double \\
+Between down and up\footnotemark[1] & 0 & 0 & 1.5 m & 3 m & 6 m \\
+
+\BigTableNote{6}{1 Only valid for aerial movement.}
 }
-
-
-\textit{Minimum Forward Speed}: If a flying creature fails to maintain its minimum forward speed, it must land at the end of its movement. If it is too high above the ground to land, it falls straight down, descending 150 feet in the first round of falling. If this distance brings it to the ground, it takes falling damage. If the fall doesn’t bring the creature to the ground, it must spend its next turn recovering from the stall. It must succeed on a DC 20 Reflex save to recover. Otherwise it falls another 300 feet. If it hits the ground, it takes falling damage. Otherwise, it has another chance to recover on its next turn.
-
-\textit{Hover}: The ability to stay in one place while airborne.
 
 \textit{Move Backward}: The ability to move backward without turning around.
 
@@ -108,6 +105,10 @@ You can't run or charge through any square that would hamper your movement.
 
 \textit{Maximum Turn}: How much the creature can turn in any one space.
 
+\textit{Minimum Forward Speed}: If a flying creature fails to maintain its minimum forward speed, it must land at the end of its movement. If it is too high above the ground to land, it falls straight down, descending 45 meters in the first round of falling. If this distance brings it to the ground, it takes falling damage. If the fall doesn't bring the creature to the ground, it must spend its next turn recovering from the stall. It must succeed on a DC 20 Reflex save to recover. Otherwise it falls another 90 meters. If it hits the ground, it takes falling damage. Otherwise, it has another chance to recover on its next turn.
+
+\textit{Hover}: The ability to stay in one place while airborne.
+
 \textit{Up Angle}: The angle at which the creature can climb.
 
 \textit{Up Speed}: How fast the creature can climb.
@@ -117,6 +118,23 @@ You can't run or charge through any square that would hamper your movement.
 \textit{Down Speed}: A flying creature can fly down at twice its normal flying speed.
 
 \textit{Between Down and Up}: An average, poor, or clumsy flier must fly level for a minimum distance after descending and before climbing. Any flier can begin descending after a climb without an intervening distance of level flight.
+
+\textbf{Vehicle Movement}: Vehicles have a maneuverability similar to airborne creatures, as shown on \tabref{Maneuverability}. They have turn rates, maximum turn, and so on. The vehicles' maneuverabilities are shown on \tabref{Vehicle Maneuverability}.
+
+A rider can improve the maneuverability of chariots with a DC 20 Ride check.
+
+\Table{Vehicle Maneuverability}{lRX}{
+\tableheader Vehicle & \tableheader Speed & \tableheader Maneuverability\\
+Transport chariot (crodlu) & 12 m $\star$ & Average\\
+Light war chariot (crodlu) & 12 m $\star$ & Poor\\
+Heavy war chariot (crodlu) & 12 m $\star$ & Clumsy\\
+Wagon (kank) & 9 m $\star$ & Poor\\
+Armored caravan & 6 m & Clumsy\\
+
+
+\TableNote{3}{$\star$ Speed can change depending on the creatures pulling the vehicle}\\
+}
+
 
 \subsection{Local Movement}
 Characters exploring an area use local movement, measured in meters per minute.
@@ -146,7 +164,7 @@ A character can walk for more than 8 hours in a day by making a forced march. Fo
 
 \textbf{Mounted Movement}: A mount bearing a rider can move at a hustle. The damage it takes when doing so, however, is lethal damage, not nonlethal damage. The creature can also be ridden in a forced march, but its Constitution checks automatically fail, and, again, the damage it takes is lethal damage. Mounts also become fatigued when they take any damage from hustling or forced marches.
 
-See Table: Mounts and Vehicles for mounted speeds and speeds for vehicles pulled by draft animals.
+See \tabref{Mounts and Vehicles} for mounted speeds and speeds for vehicles pulled by draft animals.
 
 \textbf{Waterborne Movement}: See Table: Mounts and Vehicles for speeds for water vehicles.
 
@@ -176,7 +194,7 @@ Kank & up to 66 kg & 4.5 km & 36 km\\
 Kank & up to 195 kg & 3 km & 24 km\\
 
 \multicolumn{4}{l}{\TableSubheader{Vehicles}}\\
-Transport chariot (kank) & one person & 4.5 km & 36 km \\
+Chariot (kank) & one person & 4.5 km & 36 km \\
 
 Light chariot (crodlus) & up to two people & 6 km & 48 km \\
 Heavy chariot (crodlus) & up to four people & 6 km & 48 km \\
@@ -200,13 +218,21 @@ Caravan (two mekillot) & up to 20,000 kg & 3 km & 24 km\\
 
 
 
+\subsection{Evasion And Pursuit}
+In round-by-round movement, simply counting off squares, it's impossible for a slow character to get away from a determined fast character without mitigating circumstances. Likewise, it's no problem for a fast character to get away from a slower one.
 
+When the speeds of the two concerned characters are equal, there's a simple way to resolve a chase: If one creature is pursuing another, both are moving at the same speed, and the chase continues for at least a few rounds, have them make opposed Dexterity checks to see who is the faster over those rounds. If the creature being chased wins, it escapes. If the pursuer wins, it catches the fleeing creature.
+
+Sometimes a chase occurs overland and could last all day, with the two sides only occasionally getting glimpses of each other at a distance. In the case of a long chase, an opposed Constitution check made by all parties determines which can keep pace the longest. If the creature being chased rolls the highest, it gets away. If not, the chaser runs down its prey, outlasting it with stamina.
+
+\subsection{Moving Around In Squares}
+In general, when the characters aren't engaged in round-by-round combat, they should be able to move anywhere and in any manner that you can imagine real people could. A 5-foot square, for instance, can hold several characters; they just can't all fight effectively in that small space. The rules for movement are important for combat, but outside combat they can impose unnecessary hindrances on character activities.
 
 
 % Quadrupeds, such as horses, can carry heavier loads than characters can. See Carrying Capacity, above, for more information.
 % Rafts, barges, keelboats, and rowboats are used on lakes and rivers.
 
-% If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. In addition to 10 hours of being rowed, the vehicle can also float an additional 14 hours, if someone can guide it, so add an additional 42 miles to the daily distance traveled. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores.
+% If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. In addition to 10 hours of being rowed, the vehicle can also float an additional 14 hours, if someone can guide it, so add an additional 42 miles to the daily distance traveled. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores.
 
 % Light horse or light warhorse	6 miles	48 miles
 % Light horse (151-450 lb.)\footnotemark[1]	4 miles	32 miles

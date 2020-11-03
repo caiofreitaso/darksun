@@ -62,6 +62,7 @@
 - Changed Carrying Capacity table:
 	- rounded fractions up (added 1 pound to odd values).
 	- removed minimum values, you're assumed to be in the lightest load, so only the maximum for each load is considered.
+- Add Vehicle Maneuverability: vehicles have all turn-related properties of maneuverability. It's a simple system. If needed to expand, Stormwreck deals with it in a deeper way (and Athasian Emporium is built upon its mechanics).
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -220,3 +221,9 @@
 	- Move Control weather to 10th level.
 - Elemental Champion: Change wording to match SRD's.
 - Living Crystal: Simplified cost modifiers.
+- Change vehicles:
+	- Renamed "armored wagon" to "armored caravan".
+	- Armored caravan cannot be pulled by inixes, as stated in Dark Sun Box Set.
+	- Armored caravan are pulled by two mekillots, but require only one.
+	- Chariots are made for Medium people. Large chariot riders must use heavy chariots.
+	- Light war chariots require 2 mounts; heavy war chariots require 4 mounts.
