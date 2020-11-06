@@ -1,0 +1,65 @@
+\subsection{Mountain Terrain}
+The three mountain terrain categories are alpine meadows, rugged mountains, and forbidding mountains. As characters ascend into a mountainous area, they're likely to face each terrain category in turn, beginning with alpine meadows, extending through rugged mountains, and reaching forbidding mountains near the summit.
+
+Mountains have an important terrain element, the rock wall, that is marked on the border between squares rather than taking up squares itself.
+
+\Table{Mountain Terrain Features}{lCCC}{
+& \multicolumn{3}{c}{\tableheader Mountain Category}\\
+\cmidrule[0.5pt]{2-4}
+\tableheader Terrain Feature & \tableheader Alpine Meadow & \tableheader Rugged & \tableheader Forbidding \\
+Gradual slope & 50\% & 25\% & 15\% \\
+Steep slope & 40\% & 55\% & 55\% \\
+Cliff & 10\% & 15\% & 20\% \\
+Chasm &  & 5\% & 10\% \\
+Light undergrowth & 20\% & 10\% & \\
+Scree & & 20\% & 30\% \\
+Dense rubble & & 20\% & 30\% \\
+}
+
+\textbf{Gradual and Steep Slopes}: This incline isn't steep enough to affect movement, but characters gain a +1 bonus on melee attacks against foes downhill from them.
+
+\textbf{Cliff}: These terrain elements also function like their hills terrain counterparts, but they're typically 2d6 $\times$ 3 meters tall. Cliffs taller than 24 meters take up 6 meters of horizontal space.
+
+\textbf{Chasm}: Usually formed by natural geological processes, chasms function like pits in a dungeon setting. Chasms aren't hidden, so characters won't fall into them by accident (although bull rushes are another story). A typical chasm is 2d4 $\times$ 3 meters deep, at least 6 meters long, and anywhere from 1.5 meter to 6 meters wide. It takes a DC 15 \skill{Climb} check to climb out of a chasm. In forbidding mountain terrain, chasms are typically 2d8 $\times$ 3 meters deep.
+
+\textbf{Light Undergrowth}: This functions as described in Forest Terrain, above.
+
+\textbf{Scree}: A field of shifting gravel, scree doesn't affect speed, but it can be treacherous on a slope. The DC of \skill{Balance} and \skill{Tumble} checks increases by 2 if there's scree on a gradual slope and by 5 if there's scree on a steep slope. The DC of Move silently checks increases by 2 if the scree is on a slope of any kind.
+
+\textbf{Dense Rubble}: The ground is covered with rocks of all sizes. It costs 2 squares of movement to enter a square with dense rubble. The DC of \skill{Balance} and \skill{Tumble} checks on dense rubble increases by 5, and the DC of Move Silently checks increases by +2.
+
+\textbf{Rock Wall}: A vertical plane of stone, rock walls require DC 25 \skill{Climb} checks to ascend. A typical rock wall is 2d4 $\times$ 3 meters tall in rugged mountains and 2d8 $\times$ 3 meters tall in forbidding mountains. Rock walls are drawn on the edges of squares, not in the squares themselves.
+
+\textbf{Cave Entrance}: Found in cliff and steep slope squares and next to rock walls, cave entrances are typically between 5 and 6 meters wide and 1.5 meter deep. Beyond the entrance, a cave could be anything from a simple chamber to the entrance to an elaborate dungeon. Caves used as monster lairs typically have 1d3 rooms that are 1d4 $\times$ 3 meters across.
+
+\textbf{Other Mountain Terrain Features}: Most alpine meadows begin above the tree line, so trees and other forest elements are rare in the mountains. Mountain terrain can include active streams (5 to 3 meters wide and no more than 1.5 meter deep) and dry streambeds (treat as a trench 5 to 3 meters across). Particularly high-altitude areas tend to be colder than the lowland areas that surround them, so they may be covered in ice sheets (described below).
+
+\textbf{Stealth and Detection in Mountains}: As a guideline, the maximum distance in mountain terrain at which a \skill{Spot} check for detecting the nearby presence of others can succeed is 4d10 $\times$ 3 meters. Certain peaks and ridgelines afford much better vantage points, of course, and twisting valleys and canyons have much shorter spotting distances. Because there's little vegetation to obstruct line of sight, the specifics on your map are your best guide for the range at which an encounter could begin. As in hills terrain, a ridge or peak provides enough cover to hide from anyone below the high point.
+
+It's easier to hear faraway sounds in the mountains. The DC of \skill{Listen} checks increases by 1 per 6 meters between listener and source, not per 3 meters.
+
+\subsubsection{Avalanches (CR 7)}
+The combination of high peaks and heavy snowfalls means that avalanches are a deadly peril in many mountainous areas. While avalanches of snow and ice are common, it's also possible to have an avalanche of rock and soil.
+
+An avalanche can be spotted from as far away as 1d10 $\times$ 150 meters downslope by a character who makes a DC 20 \skill{Spot} check, treating the avalanche as a Colossal creature. If all characters fail their \skill{Spot} checks to determine the encounter distance, the avalanche moves closer to them, and they automatically become aware of it when it closes to half the original distance. It's possible to hear an avalanche coming even if you can't see it. Under optimum conditions (no other loud noises occurring), a character who makes a DC 15 \skill{Listen} check can hear the avalanche or landslide when it is 1d6 $\times$ 150 meters away. This check might have a DC of 20, 25, or higher in conditions where hearing is difficult (such as in the middle of a thunderstorm).
+
+A landslide or avalanche consists of two distinct areas: the bury zone (in the direct path of the falling debris) and the slide zone (the area the debris spreads out to encompass). Characters in the bury zone always take damage from the avalanche; characters in the slide zone may be able to get out of the way. Characters in the bury zone take 8d6 points of damage, or half that amount if they make a DC 15 Reflex save. They are subsequently buried (see below). Characters in the slide zone take 3d6 points of damage, or no damage if they make a DC 15 Reflex save. Those who fail their saves are buried.
+
+Buried characters take 1d6 points of nonlethal damage per minute. If a buried character falls unconscious, he or she must make a DC 15 Constitution check or take 1d6 points of lethal damage each minute thereafter until freed or dead.
+
+The typical avalanche has a width of 1d6 $\times$ 30 meters, from one edge of the slide zone to the opposite edge. The bury zone in the center of the avalanche is half as wide as the avalanche's full width.
+
+To determine the precise location of characters in the path of an avalanche, roll 1d6 $\times$ 6; the result is the number of meters from the center of the path taken by the bury zone to the center of the party's location. Avalanches of snow and ice advance at a speed of 150 meters per round, and rock avalanches travel at a speed of 75 meters per round.
+
+\subsubsection{Mountain Travel}
+High altitude can be extremely fatiguing---or sometimes deadly---to creatures that aren't used to it. Cold becomes extreme, and the lack of oxygen in the air can wear down even the most hardy of warriors.
+
+\textbf{Acclimated Characters}: Creatures accustomed to high altitude generally fare better than lowlanders. Any creature with an Environment entry that includes mountains is considered native to the area, and acclimated to the high altitude. Characters can also acclimate themselves by living at high altitude for a month. Characters who spend more than two months away from the mountains must reacclimate themselves when they return. Undead, constructs, and other creatures that do not breathe are immune to altitude effects.
+
+\textbf{Altitude Zones}: In general, mountains present three possible altitude bands: low pass, low peak/high pass, and high peak.
+
+\textit{Low Pass (lower than 1,500 meters)}: Most travel in low mountains takes place in low passes, a zone consisting largely of alpine meadows and forests. Travelers may find the going difficult (which is reflected in the movement modifiers for traveling through mountains), but the altitude itself has no game effect.
+
+\textit{Low Peak or High Pass (1,500 to 4,500 meters)}: Ascending to the highest slopes of low mountains, or most normal travel through high mountains, falls into this category. All nonacclimated creatures labor to breathe in the thin air at this altitude. Characters must succeed on a Fortitude save each hour (DC 15, +1 per previous check) or be fatigued. The fatigue ends when the character descends to an altitude with more air. Acclimated characters do not have to attempt the Fortitude save.
+
+\textit{High Peak (more than 4,500 meters)}: The highest mountains exceed 6,000 meters in height. At these elevations, creatures are subject to both high altitude fatigue (as described above) and altitude sickness, whether or not they're acclimated to high altitudes. Altitude sickness represents long-term oxygen deprivation, and it affects mental and physical ability scores. After each 6-hour period a character spends at an altitude of over 4,500 meters, he must succeed on a Fortitude save (DC 15, +1 per previous check) or take 1 point of damage to all ability scores. Creatures acclimated to high altitude receive a +4 competence bonus on their saving throws to resist high altitude effects and altitude sickness, but eventually even seasoned mountaineers must abandon these dangerous elevations.

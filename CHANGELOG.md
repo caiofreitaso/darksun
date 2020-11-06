@@ -63,6 +63,7 @@
 	- rounded fractions up (added 1 pound to odd values).
 	- removed minimum values, you're assumed to be in the lightest load, so only the maximum for each load is considered.
 - Add Vehicle Maneuverability: vehicles have all turn-related properties of maneuverability. It's a simple system. If needed to expand, Stormwreck deals with it in a deeper way (and Athasian Emporium is built upon its mechanics).
+- Change Hewn Stone example from Breaking and Entering to 1 meter: 600 hp, Break DC 60.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
