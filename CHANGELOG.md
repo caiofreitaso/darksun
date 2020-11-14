@@ -64,6 +64,7 @@
 	- removed minimum values, you're assumed to be in the lightest load, so only the maximum for each load is considered.
 - Add Vehicle Maneuverability: vehicles have all turn-related properties of maneuverability. It's a simple system. If needed to expand, Stormwreck deals with it in a deeper way (and Athasian Emporium is built upon its mechanics).
 - Change Hewn Stone example from Breaking and Entering to 1 meter: 600 hp, Break DC 60.
+- Change _grasping hand_'s, _clenched fist_'s, and _crushing hand_'s description to match templar and wizard modifiers, as well as change the "Clerics who cast this spell name it for their deities" to "Templars who cast this spell name it for their sorcerer-kings."
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
