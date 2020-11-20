@@ -39,22 +39,22 @@
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
       \fill[black] (line area.north west) rectangle (line area.south east);
       \node[rotate=180,anchor=north] at (0,0.15) { \includegraphics[width=8cm]{images/chapter.png} };
-      % \node[anchor=north] at (0,2) { \color{white}\bfseries\LARGE#1 };
+      \node[anchor=north] at (0,2.3) { \color{white}\imfellEnglish\Large\@chapapp\space\thechapter };
     \end{tikzpicture}
 
     \imfellEnglish\color{ChapterColor}%
     \begin{tabular}{p{25mm}r{\textwidth-25mm}}
 
-    \ifnum \c@secnumdepth >\m@ne%
-      \if@mainmatter%
-        \Large\contourlength{.6pt}\contournumber{10}\contour{white}{
-          \@chapapp\space\thechapter%
-        }
-      \fi%
-    \fi%
+    % \ifnum \c@secnumdepth >\m@ne%
+    %   \if@mainmatter%
+    %     \Large\contourlength{.5pt}\contournumber{1}\contour{white}{
+    %       \@chapapp\space\thechapter%
+    %     }
+    %   \fi%
+    % \fi%
     &
     \Huge\bfseries\raggedleft{
-      \contourlength{0.5pt}\contournumber{20}\contour{white}{
+      \contourlength{0.3pt}\contournumber{1}\contour{white}{
         \MakeUppercase{#1}
       }
     }
