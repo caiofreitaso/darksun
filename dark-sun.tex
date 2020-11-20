@@ -38,7 +38,7 @@
     \begin{tikzpicture}[remember picture,overlay]
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
       \fill[black] (line area.north west) rectangle (line area.south east);
-      % \node[rotate=180,anchor=north] at (0,-0.4) { \includegraphics[width=10cm]{images/chapter.png} };
+      \node[rotate=180,anchor=north] at (0,0.15) { \includegraphics[width=8cm]{images/chapter.png} };
       % \node[anchor=north] at (0,2) { \color{white}\bfseries\LARGE#1 };
     \end{tikzpicture}
 
@@ -54,7 +54,7 @@
     \fi%
     &
     \Huge\bfseries\raggedleft{
-      \contourlength{0.1pt}\contournumber{20}\contour{white}{
+      \contourlength{0.5pt}\contournumber{20}\contour{white}{
         \MakeUppercase{#1}
       }
     }
