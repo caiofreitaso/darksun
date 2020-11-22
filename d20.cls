@@ -33,7 +33,7 @@
 \fi
 
 
-\RequirePackage{cuted,dblfloatfix}
+\RequirePackage{cuted,stfloats}
 \RequirePackage{lettrine}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
@@ -74,7 +74,8 @@
 
 \definecolor{LinkColor}{HTML}{003E13} %complement
 \definecolor{TableColor}{HTML}{F6BBB1} %primary #1
-\definecolor{QuoteColor}{HTML}{C44531} %secondary #2
+% \definecolor{SubsectionColor}{HTML}{F6D4B1} %secondary #2
+\definecolor{SubsectionColor}{HTML}{C44531} %primary #2
 \definecolor{ChapterColor}{HTML}{8F1603} %primary #0
 
 % Font settings
@@ -206,7 +207,7 @@
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.7em}{0.01em}{\color{QuoteColor}\large\imfellEnglish}
+	{0pt}{.7em}{0.01em}{\color{SubsectionColor}\large\imfellEnglish}
 }
 \newcommand{\Class}[3]{
 	\section{#1}\label{class:#1}
@@ -256,7 +257,7 @@
 	
 	\subsection{Class Features}
 	#8
-	\PrestigeClassLore{#1}
+	% \PrestigeClassLore{#1}
 }
 \newcommand{\PrestigeClassLore}[6]{
 	\subsection{#1 Lore}
@@ -420,7 +421,7 @@
 	\end{table*}
 }
 \newcommand{\BigTablePair}[3]{
-	\begin{table*}[hb!]
+	\begin{table*}[b!]
 	\rowcolors{0}{}{TableColor}
 	\scriptsize
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi

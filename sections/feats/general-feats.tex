@@ -727,6 +727,37 @@ If you fail a \skill{Survival} check, you can retry after 1 hour (outdoors) or 1
 
 This feat does not allow you to find or follow the tracks made by a subject of a pass without trace spell.}
 
+\Feat{Urban Tracking}
+{You can track down the location of missing persons or wanted individuals within communities.}{}
+{
+To find the trail of an individual or to follow it for 1 hour requires a \skill{Gather Information} check. You must make another \skill{Gather Information} check every hour of the search, as well as each time the trail becomes difficult to follow, such as when it moves to a different area of town.
+
+\Table{Urban Tracking DC}{Xcl}{
+\tableheader Community Size & \tableheader DC & \tableheader Checks Required\\
+Thorp, hamlet, or village & 5 & 1d3\\
+Small or large town & 10 & 1d4+1\\
+Small or large city & 15 & 2d4\\
+Metropolis & 20 & 2d4+2\\
+}
+
+The DC of the check, and the number of checks required to track down your quarry, depends on the community size and the conditions:
+
+\Table{Urban Tracking Modifiers}{X Z{1.4cm}}{
+\tableheader Conditions & \tableheader DC Modifier\\
+Every three creatures in the group being sought & $-1$\\
+Every 24 hours party has been missing/sought & +1\\
+Tracked party ``lies low'' & +5\\
+Tracked party matches community's primary racial demographic & +2\\
+Tracked party does not match community's primary, or secondary racial demographic & -2\\
+}
+If you fail a \skill{Gather Information} check, you can retry after 1 hour of questioning. The DM should roll the number of checks required secretly, so that the player doesn't know exactly how long the task will require.
+
+}
+{A character without this feat can use \skill{Gather Information} to find out information about a particular individual, but each check takes 1d4+1 hours and doesn't allow effective trailing.}
+{A character with 5 ranks in \skill{Knowledge} (local) gains a +2 bonus on the \skill{Gather Information} check to use this feat.
+
+You can cut the time between \skill{Gather Information} checks in half (to 30 minutes per check rather than 1 hour), but you take a $-5$ penalty on the check.}
+
 \Feat{Wastelander}
 {You are an experienced survivor of the wastes.}{}
 {You get a +1 bonus to Fortitude saves and a +2 bonus to \skill{Survival} checks.}{}{}
