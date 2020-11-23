@@ -243,3 +243,14 @@
 	- Armored caravan are pulled by two mekillots, but require only one.
 	- Chariots are made for Medium people. Large chariot riders must use heavy chariots.
 	- Light war chariots require 2 mounts; heavy war chariots require 4 mounts.
+- **Rework Chasseur**
+	- 5-level prestige class that focus on fighting wizards
+	- Only retain improved counterspell from athas.org's version.
+
+	- Gain _Urban Tracking_ as bonus feat.
+	- Gain similar bonus to favored enemy, but only applies to arcane spellcasters.
+	- Can incite common people to capture a target (cry witch), at 2nd level.
+	- Add class level to DC of spells that target arcane spellcasters, at 3rd level.
+	- Gain _Blind-Fight_, at 4th level.
+	- Ignore arcane failure chance from light armor, at 5th level.
+	- Can counterspell as immediate action with no need to prepare action for it, at 5th level.
