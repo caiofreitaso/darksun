@@ -33,13 +33,13 @@ OK		- Hide in plain sight (as ranger)
 OK		- +1/level in Knowledge (nature)
 OK		- +1 in all saves when in chosen ward
 OK		- must help another defender
-	- Exterminator --> PC (5-level) min-level 5th
-		- must be defiler
-		- can revert plant growth and {ward}
-		- can create poison of only one type
-		- get the most of the terrain
+OK	- Exterminator --> PC (5-level) min-level 5th
+OK		- must be defiler
+OK		- can revert plant growth and {ward}
+OK		- can create poison of only one type
+OK		- get the most of the terrain
 		- refuse to leave area until plant life is exterminated
-		- defiler radius x 1.5
+OK		- defiler radius x 1.5
 OK	- Free Wizard --> No changes
 OK	- Illusionist --> No changes
 OK	- Mercenary --> No changes

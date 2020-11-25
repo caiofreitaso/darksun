@@ -135,8 +135,6 @@
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
-<!-- - Change Moon Priest: switch requirements for Secular Authority class feature for the feat.
-- Change Moon Priest: switch requirements for Knowledge (astronomy) ranks for Profession (astrologer). -->
 - **Change Metal Weapons** - metal weapons deal +1 damage.
 - Remove maces from the list of weapons that can be constructed from non-metal materials without penalty.
 - Remove Artist's armor - too many dice rolls for arcane spell failure checks.
@@ -226,7 +224,6 @@
 	- Remove Empower Spell from requirements.
 	- Remove Empower.
 	- Remove Cerulean Blast.
-
 	- Must be chaotic.
 	- Minimum level is 4th level, instead of 6th: requires 2nd-level spells, and 6 ranks.
 	- Cerulean magic can't be disguised. Much like defiling, cerulean magic has inherent characteristics: crackling blue aura.
@@ -247,12 +244,11 @@
 	- 5-level prestige class that focus on fighting wizards.
 	- Only retain improved counterspell from athas.org's class features.
 	- Add Listen, Knowledge (local), Spot, and Survival as class skills.
-	- Gain _Urban Tracking_ as bonus feat.
+	- Require _Urban Tracking_ and _Blind Fight_.
 	- Gain similar bonus to favored enemy (same skills but also Gather Information and Spellcraft), but only applies to arcane spellcasters.
-	- Can incite common people to capture a target (cry witch), at 2nd level.
-	- Add class level to DC of spells that target arcane spellcasters, at 3rd level.
-	- Gain _Blind-Fight_, at 4th level.
-	- Ignore arcane failure chance from light armor, at 5th level.
+	- Add class level to DC of spells that target arcane spellcasters.
+	- Can incite common people to capture a target (cry witch), at 2nd and 4th levels.
+	- Ignore arcane failure chance from light armor, at 3rd level.
 	- Can counterspell as immediate action with no need to prepare action for it, at 5th level.
 - **Rework Earth Defender**
 	- 10-level arcane scout (Complete Adventurer), focused on being an eco-terrorist.
@@ -264,5 +260,13 @@
 	- Evasion at 4th level, as ranger.
 	- Camouflage at 6th level, as ranger.
 	- Ignore arcane failure chance from light armor, at 6th level.
-	- Sacrifice spell to gain +X attack and AC for 1 round (X = spell level), at 6th level.
+	- Sacrifice spell to gain +X attack and AC for 1 round (X = spell level), at 8th level.
 	- Hide in plain sight at 10th level, as ranger.
+- Add Exterminator
+	- 5-level arcane poisonmaker.
+	- 1.5x defiling radius.
+	- Revert plant-based spells.
+	- Can take 10 on Craft (poisonmaking) for one type of poison.
+	- Gain sustenance by razing fertile grounds, at 3rd level.
+	- Infuse arcane spell 5th-level or lower on a poison, at 4th level.
+	- Revert animate plant spells.
