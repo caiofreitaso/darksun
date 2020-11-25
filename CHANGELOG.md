@@ -244,13 +244,25 @@
 	- Chariots are made for Medium people. Large chariot riders must use heavy chariots.
 	- Light war chariots require 2 mounts; heavy war chariots require 4 mounts.
 - **Rework Chasseur**
-	- 5-level prestige class that focus on fighting wizards
-	- Only retain improved counterspell from athas.org's version.
-
+	- 5-level prestige class that focus on fighting wizards.
+	- Only retain improved counterspell from athas.org's class features.
+	- Add Listen, Knowledge (local), Spot, and Survival as class skills.
 	- Gain _Urban Tracking_ as bonus feat.
-	- Gain similar bonus to favored enemy, but only applies to arcane spellcasters.
+	- Gain similar bonus to favored enemy (same skills but also Gather Information and Spellcraft), but only applies to arcane spellcasters.
 	- Can incite common people to capture a target (cry witch), at 2nd level.
 	- Add class level to DC of spells that target arcane spellcasters, at 3rd level.
 	- Gain _Blind-Fight_, at 4th level.
 	- Ignore arcane failure chance from light armor, at 5th level.
 	- Can counterspell as immediate action with no need to prepare action for it, at 5th level.
+- **Rework Earth Defender**
+	- 10-level arcane scout (Complete Adventurer), focused on being an eco-terrorist.
+	- Only retain nature's ally from athas.org's class features.
+	- Only gain arcane spellcasting in the same levels as the BAB increases.
+	- Gain skirmish as scout.
+	- Must protect one type of terrain for every die of skirmish damage (1 at 1st, 2 at 5th, 3 at 9th).
+	- DC 20 Will save or confront any defiler, no matter the danger.
+	- Evasion at 4th level, as ranger.
+	- Camouflage at 6th level, as ranger.
+	- Ignore arcane failure chance from light armor, at 6th level.
+	- Sacrifice spell to gain +X attack and AC for 1 round (X = spell level), at 6th level.
+	- Hide in plain sight at 10th level, as ranger.

@@ -21,18 +21,18 @@ OK		- must be chaotic
 		- must roll to see how many spells per day
 OK		- impossible to disguise
 		- 5%/level/day of calling Tyr-storm in 15km radius
-	- Chasseur --> PC (5-level) min-level 8th
-		- gather information, intimidation, survival
-		- Track
-		- reputation: +2 diplomacy
-		- cry witch: accuse of wizardry
-	- Earth Defender --> PC (5-level) min-level 5th
-		- must be preserver
-		- must be nonlawful
-		- Hide in plain sight (as ranger)
-		- +1/level in Knowledge (nature)
-		- +1 in all saves when in chosen ward
-		- must help another defender
+OK	- Chasseur --> PC (5-level) min-level 8th
+OK		- gather information, intimidation, survival
+OK		- Track
+OK		- reputation: +2 diplomacy
+OK		- cry witch: accuse of wizardry
+OK	- Earth Defender --> PC (5-level) min-level 5th
+OK		- must be preserver
+OK		- must be nonlawful
+OK		- Hide in plain sight (as ranger)
+OK		- +1/level in Knowledge (nature)
+OK		- +1 in all saves when in chosen ward
+OK		- must help another defender
 	- Exterminator --> PC (5-level) min-level 5th
 		- must be defiler
 		- can revert plant growth and {ward}
@@ -44,7 +44,7 @@ OK	- Free Wizard --> No changes
 OK	- Illusionist --> No changes
 OK	- Mercenary --> No changes
 OK	- Necromancer --> ACF (5th level bonus feat)
-		- Rebuke undead
+OK		- Rebuke undead
 	- Restorationist --> PC (10-level) min-level 5th
 		- must be preserver
 		- must be nonevil
@@ -92,8 +92,17 @@ OK	- Wanderer --> PC (3-level) min-level 3rd (Clr)
 OK	- Shaman --> No changes
 		- must be nonchaotic
 
+	- Convict
+		- Good Fort/Ref
+		- Require Weapon Focus (dagger/concealable weapon)
+		- Must be sentenced to fight in an arena
+		- Have some rogue abilities
+		- Continue gladiatorial performance
+	- 
+
 -----------
 
+OK
 - **Rework Cerulean**
 	- Bring closer to AD&D original feeling.
 	- Require any chaotic alignment.
@@ -102,3 +111,17 @@ OK	- Shaman --> No changes
 	- roll dice (1d4) to see caster level when preparing spells
 
 -----------
+
+REWORK GLADIATOR
+
+- Maintain gladiatorial performance
+- WHAT IS GOOD
+	- Exotic weapon every 4 levels
+	- Armor optimization
+	- Uncanny dodge
+	- Improved uncanny dodge
+
+- Add combat styles
+	- Mounted
+	- Unarmed
+	- Jazst (dancing/dervixe)
