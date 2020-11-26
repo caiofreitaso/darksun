@@ -1,6 +1,6 @@
 Backgrounds
-	- Cyberpunk 2020 (context)
-		- Each year is summarized
+OK	- Cyberpunk 2020 (context)
+OK		- Each year is summarized
 	- D&D 5 (motivation)
 		- 
 
@@ -45,13 +45,13 @@ OK	- Illusionist --> No changes
 OK	- Mercenary --> No changes
 OK	- Necromancer --> ACF (5th level bonus feat)
 OK		- Rebuke undead
-	- Restorationist --> PC (10-level) min-level 5th
-		- must be preserver
-		- must be nonevil
+OK	- Restorationist --> PC (10-level) min-level 5th
+OK		- must be preserver
+OK		- must be nonevil
 		- Path Dexter
-		- domain spell --> Plant/Animal
-		- speak with plants (4th-level) 1/day
-		- doubled casting time
+OK		- domain spell --> Plant/Animal
+OK		- speak with plants (4th-level) 1/day
+OK		- doubled casting time
 	- Shadow Wizard --> PC (10-level) min-level 5th
 		- must be neutral
 		- must roll to see how many spells per day
@@ -84,7 +84,7 @@ OK	- Shadow --> ACF (trap sense)
 		- death attack
 
 OK	- Wanderer --> PC (3-level) min-level 3rd (Clr)
-		- must be chaotic
+OK		- must be chaotic
 		- earth: crops/agriculture; agriculture prof
 		- air: fate and weather; direction sense prof
 		- fire: mercenary; fire-building prof
@@ -125,3 +125,12 @@ REWORK GLADIATOR
 	- Mounted
 	- Unarmed
 	- Jazst (dancing/dervixe)
+
+-----------
+
+REWORK DUNE TRADER
+
+-----------
+
+REWORK ARENA CHAMPION
+

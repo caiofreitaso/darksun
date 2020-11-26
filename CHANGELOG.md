@@ -262,7 +262,7 @@
 	- Ignore arcane failure chance from light armor, at 6th level.
 	- Sacrifice spell to gain +X attack and AC for 1 round (X = spell level), at 8th level.
 	- Hide in plain sight at 10th level, as ranger.
-- Add Exterminator
+- **Add Exterminator**
 	- 5-level arcane poisonmaker.
 	- 1.5x defiling radius.
 	- Revert plant-based spells.
