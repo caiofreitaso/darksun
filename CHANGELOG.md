@@ -270,3 +270,18 @@
 	- Gain sustenance by razing fertile grounds, at 3rd level.
 	- Infuse arcane spell 5th-level or lower on a poison, at 4th level.
 	- Revert animate plant spells.
+- **Add Restorationist**
+	- 5-level arcane botanist.
+	- Brew potions of greater power (up to 5th-level).
+	- Access to Plant domain.
+	- Timeless body.
+- **Add Shadow Wizard**
+	- 10-level negative energy wizard.
+	- Gain inflict wounds that become better over the levels (light, moderate, serious, and critical).
+	- Roll a d10 every combat to check his connection with the Black.
+	- Speak with shadows at 2nd level.
+	- Penalty on Bluff, Diplomacy, Disguise, and Gather Information that increases over the levels, up to -4.
+	- Gain +4 on saving throws to resist negative energy.
+	- Gain fortification, starting at 25% up to 50%.
+	- At 10th level, changes type to outsider and is immune to negative energy effects.
+- Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
