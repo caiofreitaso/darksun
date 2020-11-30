@@ -132,6 +132,11 @@
 	- _Rebuke Undead_: necromancer specialist trades 5th level bonus feat for rebuking undead as a cleric 4 levels lower.
 	- _Psionic Mimicry_: arena wizard trades familiar to disguise spells as psionism.
 	- _Death Attack_: evil elf rogue trades trap sense for the assassin's ability (DC 10 + 1/2 rogue's level + Int mod.).
+	- _Savage Hunter_: elf fighter trades 1st-level bonus feat for Track and adding Survival to his class skills.
+	- _Tik-Tik_: thri-kreen fighter trades 1st-level bonus feat for +1 natural armor and adding Survival to his class skills.
+	- _Tekchakak_: thri-kreen psion trades 1st-level bonus feat to nullify thri-kreen penalty on mind-affecting powers.
+	- _Thri-Kreen Slayer_: elf ranger trades favored enemy for a narrow favored enemy with an increased bonus of +3 to Hide, Listen, Move Silently, Spot, Survival, and weapon damage rolls.
+	- _Procurer_: elf bard trades streetsmart for +5 in Search checks to find secret doors.
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
@@ -275,8 +280,8 @@
 	- Brew potions of greater power (up to 5th-level).
 	- Access to Plant domain.
 	- Timeless body.
-- **Add Shadow Wizard**
-	- 10-level negative energy wizard.
+- **Rework Shadow Wizard**
+	- 10-level wizard that turns into a shadow-like creature.
 	- Gain inflict wounds that become better over the levels (light, moderate, serious, and critical).
 	- Roll a d10 every combat to check his connection with the Black.
 	- Speak with shadows at 2nd level.
@@ -285,3 +290,7 @@
 	- Gain fortification, starting at 25% up to 50%.
 	- At 10th level, changes type to outsider and is immune to negative energy effects.
 - Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
+- **Add Beastmaster Psionicist**
+	- 10-level telepathic ranger.
+	- Gain 
+- Change Thri-kreen: targets of thri-kreen mind-affecting powers gain +1 in their saves against those powers, if they are of a different race.
