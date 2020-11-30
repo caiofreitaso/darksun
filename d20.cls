@@ -94,6 +94,7 @@
 \newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
 \newcommand{\spellList}[1]{\noindent\textit{\hyperref[spell:#1]{#1}}}
 \newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
+\newcommand{\psionicList}[1]{\noindent\textit{\hyperref[psionic:#1]{#1}}}
 \newcommand{\magicitem}[1]{\emph{\hyperref[magicitem:#1]{#1}}}
 \newcommand{\psionicitem}[1]{\emph{\hyperref[psionicitem:#1]{#1}}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}

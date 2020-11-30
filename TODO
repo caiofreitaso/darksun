@@ -53,22 +53,22 @@ OK		- domain spell --> Plant/Animal
 OK		- speak with plants (4th-level) 1/day
 OK		- doubled casting time
 	- Shadow Wizard --> PC (10-level) min-level 5th
-		- must be neutral
-		- must roll to see how many spells per day
+OK		- must be neutral
+OK		- must roll to see how many spells per day
 		- becomes more shadow at each level
-		- 5th: chill touch 1/day
-		- 7th: speak with shadow
+OK		- 5th: chill touch 1/day
+OK		- 7th: speak with shadow
 		- 9th: immune to cold
-		- absence of shadow (total darkness): fort check or 1d4 damage
+OK		- absence of shadow (total darkness): fort check or 1d4 damage
 OK	- Tribal Wizard --> No changes
 
 	- Auditor --> ACF (psion, bonus feat)
 		- contact
-	- Beastmaster Psionicist --> PC (5-level) min-level 5th (PsyWar)
-		- handle animal, survival
-		- wild empathy
-		- animal companion
-		- bonus on telepathy
+OK	- Beastmaster Psionicist --> PC (5-level) min-level 5th (PsyWar)
+OK		- handle animal, survival
+OK		- wild empathy
+OK		- animal companion
+OK		- bonus on telepathy
 OK	- Mercenary Psionicist --> No changes
 OK	- Noble Psionicist --> No changes
 OK	- Psiologist --> Use DS3 prestige class
@@ -130,6 +130,17 @@ REWORK GLADIATOR
 
 REWORK DUNE TRADER
 
+	- Poison use
+	- Fast Talk (original)
+	- 1 new language per 2 levels
+	- Condense Skill check
+	- Make Patron house a different ability
+	- Mastery in Diplomacy (in place of open arms)
+	- Bargaining
+OK		- Make it a use of Diplomacy
+		- Dune Trader gains bonus for it
+	- Break contact into two abilities
+		- 5%
 -----------
 
 REWORK ARENA CHAMPION
