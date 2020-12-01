@@ -292,5 +292,18 @@
 - Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
 - **Add Beastmaster Psionicist**
 	- 10-level telepathic ranger.
-	- Gain 
+	- Gain animal companion (level + 3), wild empathy
+	- Gain trapfinding and wasteland trap sense (as barbarian).
+	- Gain _mindlink_, _suggestion_ and _dominate_ powers, but they only work on animals and magical beasts.
+	- Gain uncanny dodge and improved uncanny dodge.
+	- Gain evasion, and swift tracker.
+	- 10th level gain access to telepath psionic discipline.
 - Change Thri-kreen: targets of thri-kreen mind-affecting powers gain +1 in their saves against those powers, if they are of a different race.
+- **Rework Battle Dancer**
+	- 10-level bard/cleric.
+	- Stack for inspire courage, inspire greatness, and inspire heroics.
+	- New bardic music: battle dance. +1 insight to AC/attack/damage. Increases every 4 levels. Lasts rounds = 1/2 ranks in Perform (dance). Also can use bardic music as swift action during the dance.
+	- New bardic music: dance of elemental glory. Increase casting time (as restorationist) to increase caster level with a Perform (dance) check.
+	- Can take 10 on Jump, Perform (dance), or Tumble checks.
+	- Gain Two-Weapon Fighting, and lessens penalties over the levels.
+	- May expend one turn/rebuke attempt to cast divine spell with personal range when under the effect of battle dance, inspire courage, inspire greatness or inspire heroics.
