@@ -301,9 +301,42 @@
 - Change Thri-kreen: targets of thri-kreen mind-affecting powers gain +1 in their saves against those powers, if they are of a different race.
 - **Rework Battle Dancer**
 	- 10-level bard/cleric.
-	- Stack for inspire courage, inspire greatness, and inspire heroics.
-	- New bardic music: battle dance. +1 insight to AC/attack/damage. Increases every 4 levels. Lasts rounds = 1/2 ranks in Perform (dance). Also can use bardic music as swift action during the dance.
-	- New bardic music: dance of elemental glory. Increase casting time (as restorationist) to increase caster level with a Perform (dance) check.
+	- Stack for inspire courage and inspire greatness.
+	- Martial dance: battle dance. +1 insight to AC/attack/damage. Increases every 4 levels. Lasts rounds = 1/2 ranks in Perform (dance). Also can use bardic music as swift action during the dance.
+	- Martial dance: dance of elemental glory. Increase casting time (as restorationist) to increase caster level with a Perform (dance) check.
 	- Can take 10 on Jump, Perform (dance), or Tumble checks.
 	- Gain Two-Weapon Fighting, and lessens penalties over the levels.
 	- May expend one turn/rebuke attempt to cast divine spell with personal range when under the effect of battle dance, inspire courage, inspire greatness or inspire heroics.
+- Add Perform (arena fighting).
+- **Rework Gladiator**
+	- d8 HD
+	- 2 + Int skills/level
+	- Changed gladiatorial performances: maintain shake off as it was. Move action by default.
+		- Dirty Trick: +1 attack or damage, or -1 attack or damage to enemy. 1 per encounter per enemy. Cannot use against same opponent in a single turn. Free action.
+		- Taunt: 3rd level. Perform vs Will, -2 attack and AC to target until end of encounter.
+		- Shake Off: 9th level. As it was.
+		- Pounce: Gain pounce ability until end of turn. Swift action.
+		- Dragon's Fury: Full attack with extra attack with highest BAB, +4 on attack and damage. Full-round action.
+	- Exotic Proficiency: 2nd level and every 4 levels thereafter.
+	- Add Bonus Feat
+		- 1st level: Improved Unarmed Strike.
+		- 2nd level: Blind-Fight or Endurance.
+		- 3rd level: Combat Expertise or Mounted Combat.
+		- 5th level: Improved Feint.
+		- 7th level: Improved Bull Rush, Improved Disarm, Improved Grapple, Improved Overrun, Improved Sunder, or Improved Trip.
+		- 9th level: Leadership
+	- Stances: similar to Tome of Battle mechanics.
+		- Arena Guile: as it was.
+		- Shorten Haft: 7th level, 10 ranks in Balance. Also threaten adjacent squares with reach weapons. Only when not flanked.
+		- Threatening Glare: 7th level, 10 ranks in Intimidate. Flanks if another ally is adjacent and threatening the same enemy. Only when not wielding two-handed weapon.
+		- Defensive Stance: 7th level, 10 ranks in Tumble. +1/2 gladiator level as dodge to AC in total defense. +1/4 gladiator level as dodge to AC when fighting defensively. Only when in no armor or light armor.
+		- Keen Eye: 12th level, 15 ranks in Spot. +2 to attacks per previous miss by 5 or less in the same round. As swift action, expend 2 performances to ignore armor and natural armor bonuses for one attack.
+		- Scoundrel Pose: 12th level, 15 ranks in Bluff. Treated as rogue level = gladiator level -2. As swift action, expend 2 performances to gain sneak attack +5d6 until end of turn.
+		- Mindless Focus: 17th level, 20 ranks in Sense Motive. Immune to fear. As swift action, expend one performance to become immune to mind-affecting abilities.
+	- Add Exotic Aptitude: add gladiator level -2 to fighter level for feat requirements, use any feat for a single weapon (like Weapon Focus, or Improved Critical) for any exotic weapon he has proficiency.
+	- Armor Optimization: Always gain +1 armor to AC and reduce penalty by 1.
+	- Parry: moved to 6th level. Parry always with secondary weapon.
+	- Mercy: moved to 8th level.
+	- Improved Parry: moved to 11th level.
+	- Superior Feint: moved to 13th level.
+	- Greater Parry: gladiator can forfeit 2 attacks to parry twice.

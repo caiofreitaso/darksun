@@ -1,3 +1,9 @@
+\begin{figure}[b!]
+\centering
+\includegraphics[width=\columnwidth]{images/gladiator-2.png}
+\WOTC
+\end{figure}
+
 \Class{Gladiator}
 {I might be a slave, but I am famous, I dine well, and my company is that of the finest noble women. Tell me, what do you have that I do not, slave trader---except the freedom to feel miserable?}{Jarek, arena champion}
 
@@ -5,33 +11,29 @@ The arena is the battlefield of the gladiator. From hand-to-hand combat in the m
 
 They train to best wild beasts in deadly games for the amusement of the masses. They fight for glory, wealth, prestige and power. They fight to survive. Some are merely slaves, having to fight and perhaps hoping to win a chance to obtain freedom, while some fight willingly for the thrill of combat or the promise of riches and fame.
 
-\WarriorTable[l l C C C p{8cm}]{The Gladiator}{
-1 & +1 & +2 & +0 & +0 & Exotic weapon, mercy, gladiatorial performance, stance (defensive), martial display, taunt -1\\
-2 & +2 & +3 & +0 & +0 & Bonus feat, stance (arena guile) \\
-3 & +3 & +3 & +1 & +1 & Bonus feat\\
+\WarriorTable[ll *{3}{C} p{8cm}]{The Gladiator}{
+1 & +1 & +2 & +0 & +0 & \feat{Improved Unarmed Strike}, gladiatorial performance, dirty trick +1/$-1$\\
+2 & +2 & +3 & +0 & +0 & Bonus feat, exotic weapon, stance (arena guile) \\
+3 & +3 & +3 & +1 & +1 & Bonus feat, exotic aptitude, taunt \\
 4 & +4 & +4 & +1 & +1 & Uncanny dodge \\
-5 & +5 & +4 & +1 & +1 & Exotic weapon \\
-6 & +6/+1 & +5 & +2 & +2 & Shake off, stance (elvish) \\
-7 & +7/+2 & +5 & +2 & +2 & \\
-8 & +8/+3 & +6 & +2 & +2 & Improved uncanny dodge \\
-9 & +9/+4 & +6 & +3 & +3 & Exotic weapon, trick \\
-10 & +10/+5 & +7 & +3 & +3 & Armor optimization \\
-11 & +11/+6/+1 & +7 & +3 & +3 &  \\
-12 & +12/+7/+2 & +8 & +4 & +4 & Chant, combat stance (swift action), martial display (swift action) \\
-13 & +13/+8/+3 & +8 & +4 & +4 & Exotic weapon \\
-14 & +14/+9/+4 & +9 & +4 & +4 & Parry \\
-15 & +15/+10/+5 & +9 & +5 & +5 & Armor optimization, superior feint, threatening glare \\
-16 & +16/+11/+6/+1 & +10 & +5 & +5 &  \\
-17 & +17/+12/+7/+2 & +10 & +5 & +5 & Exotic weapon \\
-18 & +18/+13/+8/+3 & +11 & +6 & +6 & Dragon's fury \\
-19 & +19/+14/+9/+4 & +11 & +6 & +6 & Improved parry \\
-20 & +20/+15/+10/+5 & +12 & +6 & +6 & Armor optimization}
+5 & +5 & +4 & +1 & +1 & Armor optimization 1, \feat{Improved Feint}\\
+6 & +6/+1 & +5 & +2 & +2 & Exotic weapon, parry\\
+7 & +7/+2 & +5 & +2 & +2 & Bonus feat, dirty trick +2/$-2$, stance (shorten haft, threatening glare, defensive stance) \\
+8 & +8/+3 & +6 & +2 & +2 & Improved uncanny dodge, mercy \\
+9 & +9/+4 & +6 & +3 & +3 & \feat{Leadership}, shake off \\
+10 & +10/+5 & +7 & +3 & +3 & Armor optimization 2, exotic weapon \\
+11 & +11/+6/+1 & +7 & +3 & +3 & Improved parry \\
+12 & +12/+7/+2 & +8 & +4 & +4 & Pounce, stance (keen eye, scoundrel pose) \\
+13 & +13/+8/+3 & +8 & +4 & +4 & Dirty trick +3/$-3$, greater feint \\
+14 & +14/+9/+4 & +9 & +4 & +4 & Exotic weapon \\
+15 & +15/+10/+5 & +9 & +5 & +5 & Armor optimization 3, dragon's fury \\
+16 & +16/+11/+6/+1 & +10 & +5 & +5 & Greater parry \\
+17 & +17/+12/+7/+2 & +10 & +5 & +5 & Stance (mindless focus) \\
+18 & +18/+13/+8/+3 & +11 & +6 & +6 & Exotic weapon \\
+19 & +19/+14/+9/+4 & +11 & +6 & +6 & Dirty trick +4/$-4$ \\
+20 & +20/+15/+10/+5 & +12 & +6 & +6 & Armor optimization 4\\
+}
 
-\begin{figure}[t!]
-\centering
-\includegraphics[width=\columnwidth]{images/gladiator-2.png}
-\WOTC
-\end{figure}
 
 \subsection{Making a Gladiator}
 Gladiators are among the best one-on-one fighters in all the Tablelands. They are trained in hand-to-hand combat before moving on to the use of exotic weapons of the arena. They learn to improvise weapons, wielding broken bones or wooden shafts with deadly precision. They learn how to taunt and tease opponents, driving them to reckless acts and taking advantage of the situation to strike down or maim a foe.
@@ -46,73 +48,95 @@ After all, a long, drawn-out combat is more a crowd pleaser than a ten-second bo
 
 \subsection{Game Rule Information}
 
-\textbf{Hit Die:} d12.
+\textbf{Hit Die:} d8.
 
 \subsubsection{Class Skills}
-\skill{Balance} (Dex), \skill{Bluff} (Cha), \skill{Climb} (Str), \skill{Craft} (Int), \skill{Intimidate} (Cha), \skill{Jump} (Str), \skill{Perform} (Cha), \skill{Profession} (Wis), \skill{Sense Motive} (Wis), \skill{Spot} (Wis), \skill{Tumble} (Dex).
+\skill{Balance} (Dex), \skill{Bluff} (Cha), \skill{Climb} (Str), \skill{Craft} (Int), \skill{Intimidate} (Cha), \skill{Jump} (Str), \skill{Perform} (Cha), \skill{Profession} (Wis), \skill{Ride} (Dex), \skill{Sense Motive} (Wis), \skill{Spot} (Wis), \skill{Tumble} (Dex).
 
-\textbf{Skill Points per Level:} 4 + Int modifier ($\times4$ at 1st level).
+\textbf{Skill Points per Level:} 2 + Int modifier ($\times4$ at 1st level).
 
 \subsubsection{Class Features}
 
 \textbf{Weapon and Armor Proficiency:} You are proficient with all simple and martial weapons, light armor, medium armor and shields (except tower shields).
 
-\textbf{Gladiatorial Performance:} Once per day per gladiator level, you can use your talents to affect enemies and allies. Each ability requires both a minimum gladiator level and a minimum number of ranks in the \skill{Perform} skill to qualify.
+\textbf{Gladiatorial Performance:} Once per day per gladiator level, you can use your talents to affect enemies and allies. Each ability requires both a minimum gladiator level and a minimum number of ranks in the \skill{Perform} (arena fighting) skill to qualify.
 
-Starting a gladiatorial performance effect is a standard action unless otherwise stated. Some effects require concentration, which means you must take a standard action each round to maintain the ability.
+Starting a gladiatorial performance effect is a move action unless otherwise stated. Some effects require concentration, which means you must take a standard action each round to maintain the ability.
 
-\textit{Combat Stance:} A gladiator with 3 or more ranks in \skill{Perform} can assume a combat stance, showing off to spectators and displaying a warning to opponents. You receive a +2 competence bonus to AC against the first attack made against you within 5 rounds after assuming the stance. Combat stance can be assumed as a move action. At 12th level, a gladiator can assume it as a swift action.
-
-\textit{Martial Display:} A gladiator with 3 or more ranks in \skill{Perform} can entertain the crowd and intimidate enemies with a display of unarmed attacks or weapon prowess. You receive a +2 competence bonus to the first attack roll you make within 5 rounds after ending the martial display. Martial display can be assumed as a move action. At 12th level, a gladiator can use martial display as a swift action.
-
-\textit{Team Strike:} A gladiator with 3 or more ranks in \skill{Perform} can distract an enemy so an ally can exploit a vital spot when making a melee attack. Team strike can only be used against an enemy you threaten with a melee weapon. The ally must act on the same initiative as you or before your next turn to gain the benefit of team strike. The ally receives a +1 bonus to hit and inflicts an additional 1d4 points of damage on the next melee attack against the target. If the enemy moves out of your threat range before your ally attacks, the ally does not receive the benefits of team strike. Creatures immune to sneak attack damage and critical hits are immune to team strike. At 7th level and every six levels thereafter these bonuses increase by +1 to attack and +1d4 to damage (+2 attack and +2d4 damage at 7th, +3 attack and +3d4 at 13th, +4 attack and +4d4 at 19th).
-
-\textit{Taunt:} A gladiator of 3rd or higher level with 6 or more ranks in \skill{Perform} can demoralize enemies by verbal ridicule. Enemies must be within 9 meters of the gladiator and capable of hearing you, and you must be able to see your enemies. Each enemy affected suffers a $-1$ morale penalty to attack and damage rolls, and a $-1$ morale penalty on saving throws versus charm and fear effects. The effect lasts as long as enemies hear your taunts and for 5 rounds thereafter. At 8th level and every six gladiator levels thereafter, the penalties increase by 1 ($-2$ at 8th, $-3$ at 14th and $-4$ at 20th). Taunt is a mind-affecting ability.
-
-\textit{Shake Off:} A gladiator of 6th or higher level with 9 or more ranks in \skill{Perform} can try to end a mind-affecting effect in play on himself or an ally. You shake your head violently to clear your mind, or slap an ally to bring her back to her senses. The recipient of the shake off can reroll a single failed save or opposed skill check (with the same DC as the failed roll) to end a mind-affecting effect. If there is no save or check to avoid the mind-affecting effect, the effect ends automatically.
-
-\textit{Trick:} A gladiator of 9th or higher level with 12 or more ranks in \skill{Perform} can temporarily confuse an adversary through the use of ploy and deception. The creature to be tricked must be within 9 meters, able to see and hear you. You must also be able to see the creature. You make an opposed \skill{Bluff} check (vs. \skill{Sense Motive}) as a move action. If the creature succeeds on the opposed roll, you cannot attempt to trick that creature again for 24 hours. If its roll fails, the creature becomes dazed (unable to act, but can defend normally) for 1 round. For every three gladiator levels attained beyond 9th, you can target one additional creature with a single use of this ability (two at 12th level, three at 15th, four at 18th).
-
-\textit{Chant:} A gladiator of 12th or higher level with 15 or more ranks in \skill{Perform} can start a chant. The chant boosts the gladiator or an ally's abilities, granting a +2 competence bonus to AC, skill checks and saving throws. To be affected an ally must be within 9 meters of you. For every three levels attained beyond 12th, you can affect one additional creature within 9 meters (two creatures at 15th level, three at 18th). Combat chant is a mind-affecting ability which lasts as long as you chant and for 5 rounds thereafter.
-
-\textit{Threatening Glare:} A gladiator of 15th or higher with 18 or more ranks of \skill{Perform} can panic enemies with his mere gaze. Creatures within a 9 meters radius that can see you must make a Will Save (DC 10 + half your class level + your Charisma bonus). On failing, creatures with less HD than you are affected as if under the effects of a fear spell for 5 rounds. Those with equal to or more than your HD become shaken for 5 rounds. If the creature succeeds on the save you cannot attempt to affect that creature again for 24 hours. Threatening Glare is a mind-affecting gaze affect.
-
-\textit{Dragon's Fury:} A gladiator of 18th or higher level with 21 or more ranks in \skill{Perform} can enter a trance-like state in which his full offensive gladiatorial potential is unleashed.
-
-You are immune to fear effects, receive a +4 competence bonus to attack rolls and damage rolls, and an additional attack per round made at your highest base attack bonus. In addition, you gain two temporary hit points per class level. Dragon's fury lasts for 10 rounds.
-
-\textbf{Mercy (Ex):} At 1st level, you suffer no penalty to attack rolls when attacking with a weapon to inflict nonlethal damage.
-
-\textbf{Exotic Weapon:} At 1st, 5th, 9th, 13th, and 17th level, you receive \feat{Exotic Weapon Proficiency} as a bonus feat.
-
-\textbf{Improved Unarmed Strike:} At 2nd level you \feat{Improved Unarmed Strike} as a bonus feat.
-
-\textbf{Arena Guile (Ex):} Starting at 2nd level, you add one-half your gladiator level (round down) as a bonus to all \skill{Bluff} and \skill{Sense Motive} checks that relate directly to melee combat.
-
-\textbf{Improved Feint:} You are adept at deceiving your opponents. At 3rd level, you gain \feat{Improved Feint} as a bonus feat.
-
-\textbf{Uncanny Dodge (Ex):} At 4th level, you retain your Dexterity bonus to AC (if any) even if you are caught flat-footed or struck by an invisible attacker. However, you still lose your Dexterity bonus to AC if immobilized. If you already have uncanny dodge from a different class, you automatically gain improved uncanny dodge (see below) instead.
-
-\textbf{Armor Optimization (Ex):} At 5th level, 10th, 15th, and 20th level, choose one of the following benefits which applies whenever you are wearing any armor you are proficient with:
+\textit{Dirty Trick (Ex):} A gladiator with 3 or more ranks in \skill{Perform} (arena fighting) can use his arena guile to get an advantage over his enemies. Once per encounter per opponent, a gladiator can use a dirty trick to do one of the following:
 
 \begin{itemize*}
-\item +1 bonus to AC.
-\item $-1$ armor check penalty.
-\item +1 maximum Dexterity bonus.
-\item Armor is treated as one category lighter (e.g. medium armor is treated as light armor).
+\item Gain +1 morale bonus on his attack rolls for one round.
+\item Gain +1 morale bonus on his damage rolls for one round.
+\item Impose $-1$ morale penalty on target opponent's attack rolls for one round.
+\item Impose $-1$ morale penalty on target opponent's damage rolls for one round.
 \end{itemize*}
 
-Each time this feature is gained, you must choose a different benefit.
+A gladiator can use dirty trick more than once per encounter, but a gladiator may never repeat the same option against the same enemy or use it more than once in a single round against the same enemy. Using a dirty trick is a free action.
 
-\textbf{No Mercy (Ex):} Beginning at 6th level, you can perform a coup de grace as a standard action rather than a full-round action.
+The bonus and penalties increase by 1 at 7th level and every six levels thereafter (+2/$-2$ at 7th, +3/$-3$ at 13th, and +4/$-4$ at 19th).
 
-\textbf{Improved Uncanny Dodge (Ex):} At 8th level and higher, you can no longer be flanked. This defense denies a rogue the ability to sneak attack you by flanking you, unless the attacker has at least four more rogue levels than you have gladiator levels. If you already have uncanny dodge (see above) from a second class, the levels from all classes that grant uncanny dodge stack to determine the minimum level a rogue must be to flank you.
+\textit{Taunt (Ex):} A gladiator of 3rd level or higher with 6 or more ranks in \skill{Perform} (arena fighting) can taunt one opponent to fly into a rage. The opponent to be taunted must be within 9 meters, able to see and hear the gladiator, and must have an Intelligence of 3 or higher. The gladiator must also be able to see the creature. For every three levels a gladiator attains beyond the 1st, he can target one additional creature with a single use of this ability.
 
-\textbf{Parry (Ex):} Beginning at 14th level, once per round you can forfeit an attack to attempt to parry an incoming melee attack. The forfeited attack has to be the one with your highest base attack bonus. If wielding two weapons, the parry must be made using your primary weapon. You make an opposed attack roll with a $-5$ penalty against your attacker roll. If you succeed, the attack is parried and you suffer no damage or ill effects related to the attack, including touch attacks used to deliver spells.
+A gladiator makes a \skill{Perform} (arena fighting) check. His check result is the DC for each affected creature's Will save against the effect. If a creature's saving throw succeeds, the gladiator cannot attempt to taunt that creature again for 24 hours. If its saving throw fails, the creature flies into a blind rage. While enraged, a target takes $-2$ penalty on attack rolls and AC. The rage lasts until either the gladiator or its target become unconscious.
 
-\textbf{Superior Feint:} Beginning at 15th level, you can make a \skill{Bluff} check to feint in combat as a free action, but only once per round.
+Taunt is a mind-affecting ability.
 
-\textbf{Improved Parry:} As parry (see above), except you no longer suffer a $-5$ penalty to your opposed attack roll.
+\textit{Shake Off (Ex):} A gladiator of 9th or higher level with 12 or more ranks in \skill{Perform} (arena fighting) can try to end a mind-affecting effect in play on himself or an ally. He shakes his head violently to clear his mind, or slap an ally to bring them back to them senses. The recipient of the shake off can reroll a single failed save or opposed skill check (with the same DC as the failed roll) to end a mind-affecting effect. If there is no save or check to avoid the mind-affecting effect, the effect ends automatically.
+
+\textit{Pounce (Ex):} A gladiator of 12th or higher level with 15 or more ranks in \skill{Perform} (arena fighting) can throw himself with pure savagery. As a swift action, he gains the pounce ability until the end of turn, allowing the gladiator to make a full attack at the end of a charge.
+
+\textit{Dragon's Fury (Ex):} A gladiator of 15th or higher level with 18 or more ranks in \skill{Perform} (arena fighting) can enter a trance-like state in which his full offensive gladiatorial potential is unleashed. As a full-round action, the gladiator can make a full attack with +4 competence bonus to attack rolls and damage rolls, and an additional attack made at his highest base attack bonus.
+
+\textbf{Improved Unarmed Strike:} A gladiator gains \feat{Improved Unarmed Strike} as a bonus feat.
+
+\textbf{Stance (Ex):} Starting at 2nd level, a gladiator may adopt a combat stance. Each stance requires a minimum gladiator level and a minimum number of ranks in a skill. A gladiator assumes a stance as a swift action. A stance remains in effect indefinitely and is not expended. He enjoys the benefit his stance confers until he changes to another stance he knows as a swift action. He can remain in a stance outside of combat situations, and he can enjoy its benefit while exploring or traveling.
+
+\textit{Arena Guile (Ex):} A gladiator of 2nd level or higher may add one-half his gladiator level (rounded down) as a bonus to all \skill{Bluff} and \skill{Sense Motive} checks that relate directly to melee combat.
+
+\textit{Shorten Haft (Ex):} A gladiator of 7th level or higher with 10 or more ranks in \skill{Balance} may use reach weapons with greater prowess. He threatens adjacent squares when wielding reach weapons. A gladiator cannot use this stance if he is being flanked. 
+
+\textit{Threatening Glare (Ex):} A gladiator of 7th level or higher with 10 or more ranks in \skill{Intimidate} may cause fear into his enemies when fighting with a group. If both him and an ally are adjacent and threatening the same creature, the two of them gain the benefit for flanking that opponent. The gladiator can gain this benefit against multiple opponents at the same time, as can his allies. If both him and an ally are adjacent and threatening the same two creatures, the two of them gain the benefit of flanking against both creatures. A gladiator cannot use this stance if he is wielding a two-handed weapon.
+
+\textit{Defensive Stance (Ex):} A gladiator of 7th level or higher with 10 or more ranks in \skill{Tumble} can improve his defenses when fighting defensively or in total defense. When in total defense, he may add \onehalf his gladiator level as dodge bonus to AC. When fighting defensively, he may add \onequarter his gladiator level as dodge bonus to AC. Round down each time. A gladiator cannot use this stance if he is wearing medium armor or heavier.
+
+\textit{Keen Eye (Ex):} A gladiator of 12th level or higher with 15 or more ranks in \skill{Spot} may find weakness in the enemies defenses. Whenever he misses an attack by 5 or less, he gains a circumstance bonus on the next attack equal to +2 for each previous miss by 5 or less in the same round. While in this stance, as a swift action the gladiator may expend two of his daily gladiatorial performances to ignore armor bonus and natural bonus on a single attack. 
+
+\textit{Scoundrel Pose (Ex):} A gladiator of 12th level or higher with 15 or more ranks in \skill{Bluff} can fool lesser enemies and backstab. He is treated as if he had a rogue level equal to his gladiator level $-2$, so he can flank foes with improved uncanny dodge. While in this stance, as a swift action the gladiator may expend two of his daily gladiatorial performances to gain sneak attack +5d6 until his next turn.
+
+\textit{Mindless Focus (Ex):} A gladiator of 17th level or higher with 20 or more ranks in \skill{Sense Motive} may become fearless as the Dragon. He becomes immune to fear effects. While in this stance, as a swift action the gladiator may expend one of his daily gladiatorial performances to become immune to mind-affecting abilities for one round.
+
+\textbf{Bonus Feat:} At 2nd level, a gladiator may select either \feat{Blind-Fight} or \feat{Endurance} as bonus feat. At 3rd level, a gladiator may select either \feat{Combat Expertise} or \feat{Mounted Combat} as bonus feat. At 7th level, a gladiator may select one of \feat{Improved Bull Rush}, \feat{Improved Disarm}, \feat{Improved Grapple}, \feat{Improved Overrun}, \feat{Improved Sunder}, or \feat{Improved Trip}. A gladiator need not have any of the prerequisites normally required for these feats to select them.
+
+\textbf{Exotic Weapon:} At 2nd level, a gladiator gains \feat{Exotic Weapon Proficiency} as a bonus feat. He gains a new exotic weapon proficiency every four levels thereafter, at 6th, 10th, 14th, and 18th level.
+
+\textbf{Exotic Aptitude (Ex):} Beginning at 3rd level, a gladiator qualifies for feats that usually require a minimum number of fighter levels (such as \feat{Weapon Specialization}) as if he had a fighter level equal to his gladiator level $-2$. For example, a 6th-level gladiator could take \feat{Weapon Specialization}, since he's treated as being a 4th-level fighter for this purpose. These fighter levels stack with any actual fighter levels he has. Thus, a fighter 2/gladiator 4 would also qualify for \feat{Weapon Specialization}.
+
+The gladiator may also apply any feat that applies only to a single weapon (such as \feat{Weapon Focus}) to any exotic weapon he has proficiency. For example, a 6th-level gladiator who has \feat{Weapon Focus} (longsword) and \feat{Weapon Specialization} (longsword) can also apply these feats bonus on attack and damage rolls of any exotic weapon with which he has \feat{Exotic Weapon Proficiency}.
+
+\textbf{Uncanny Dodge (Ex):} At 4th level, a gladiator retains his Dexterity bonus to AC (if any) even if he is caught flat-footed or struck by an invisible attacker. However, he still loses his Dexterity bonus to AC if immobilized. If a gladiator already has uncanny dodge from a different class, he automatically gains improved uncanny dodge instead.
+
+\textbf{Armor Optimization (Ex):} At 5th level, a gladiator gains an understanding of how his armor can better serve him. He increases the armor bonus to AC and reduces the armor check penalty by 1 whenever he is wearing any armor he is proficient with.
+
+At every five levels thereafter, the improvement increases by 1 (2 at 10th, 3 at 15th, and 4 at 20th level).
+
+\textbf{Improved Feint:} At 5th level, a gladiator gains \feat{Improved Feint} as a bonus feat.
+
+% \textbf{No Mercy (Ex):} Beginning at 6th level, you can perform a coup de grace as a standard action rather than a full-round action.
+
+\textbf{Parry (Ex):} Beginning at 6th level, once per round a gladiator can forfeit an attack to attempt to parry an incoming melee attack. The forfeited attack has to be the one with his highest base attack bonus. If wielding two weapons, the parry must be made using his secondary weapon. The gladiator makes an opposed attack roll with a $-5$ penalty against his attacker roll. If he succeeds, the attack is parried and he suffers no damage or ill effects related to the attack, including touch attacks used to deliver spells.
+
+\textbf{Improved Uncanny Dodge (Ex):} At 8th level and higher, a gladiator can no longer be flanked. This defense denies a rogue the ability to sneak attack the gladiator by flanking him, unless the attacker has at least four more rogue levels than the target has gladiator levels. If a character already has uncanny dodge from a second class, the character automatically gains improved uncanny dodge instead, and the levels from the classes that grant uncanny dodge stack to determine the minimum level a rogue must be to flank the character.
+
+\textbf{Mercy (Ex):} At 8th level, a gladiator suffers no penalty to attack rolls when attacking with a weapon to inflict nonlethal damage.
+
+\textbf{Leadership:} At 9th level, a gladiator gains \feat{Leadership} as a bonus feat.
+
+\textbf{Improved Parry:} At 11th level, a gladiator no longer suffer a $-5$ penalty to his opposed attack roll for parry.
+
+\textbf{Greater Feint:} Beginning at 13th level, a gladiator can make a \skill{Bluff} check to feint in combat as a free action.
+
+\textbf{Greater Parry:} At 16th level, a gladiator may forfeit two attacks to parry, instead of one. Both forfeited attacks must be the ones with highest base attack bonus. If wielding two weapons, both parries must be made using his secondary weapon.
 
 \subsection{Playing a Gladiator}
 Mastering the techniques of blade and shield is important to you, but even more is the sense of daring, danger, and even joy that you feel when you battle inside the arena. You fight for the glory, the thrill of combat, and for the adoration of the crowd. Thus, you approach each encounter as if the bards will sing of it for ages. Silver and concubines are pleasant tokens, but the real measure of your success is how loud the crowd screams your name when you step into the pit.
@@ -174,7 +198,6 @@ Elf Gladiator
 
 \textbf{Gear:} Standard adventurer's kit.
 
-\vskip2cm
 \subsubsection{The Montare}
 Mul Gladiator
 

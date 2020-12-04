@@ -92,12 +92,17 @@ OK		- must be chaotic
 OK	- Shaman --> No changes
 		- must be nonchaotic
 
-OK	- Savage Hunter --> ACF (Track & Survival as class skill)
-OK	- Thri-Kreen Slayer --> ACF (special favored enemy)
+OK	- Savage Hunter --> ACF (fighter, bonus feat)
+OK		- Track
+OK		- Survival as class skill
+OK	- Thri-Kreen Slayer --> ACF (ranger, favored enemy)
+OK		- Thri-kreen as favored enemy
+OK		- +3 instead of +2
+OK		- Hide & Move Silently
 OK	- Free-Wanderer --> No changes
 OK	- Procurer --> ACF (streetsmart)
-	- Battle Dancer
-	- Element Singer
+OK	- Battle Dancer --> PC (10-level) min-level 5th bard/cleric
+OK	- Element Singer --> PC (9-level) min-level 4th (clr)
 OK	- Arcanist --> ACF (already done)
 OK	- Brown Elf --> No changes
 
