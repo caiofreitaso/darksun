@@ -106,14 +106,39 @@ OK	- Element Singer --> PC (9-level) min-level 4th (clr)
 OK	- Arcanist --> ACF (already done)
 OK	- Brown Elf --> No changes
 
-	- Convict
+	- Convict --> PC (5-level) min-level 5th (Gld)
 		- Good Fort/Ref
 		- Require Weapon Focus (dagger/concealable weapon)
 		- Must be sentenced to fight in an arena
 		- Have some rogue abilities
 		- Continue gladiatorial performance
-	- 
+	- Arena Champion + Professional Gladiator --> PC (10-lvl) min-level 7th (Gld)
+		- Weapon improvisation
+		- Weapon Specialization
+		- Require Endurance
+		- Armor Optimization
+		- May train free of charge IF
+			- Not being sought for crimes by local templar
+			- Must be a gladiator at the arena 2 levels higher than PC
+	- Jazst --> PC (10-level) min-level 6th (Gld)
+		- Perform, Tumble, Diplomacy, Survival, Craft, Disguise, Jump, Balance
+		- Trained in armor spikes
+		- Require Peform
+		- Principle of the Razor: Str damage, bleeding.
+		- The Dance of Whirling Blades: jumping pounce that doubles the number of attacks. -2 AC besides charge. Balance check to not get dazed. Fortitude check to not get exausted. Full turn resting to use again.
+	- Montare --> PC (10-level) min-level 5th (Gld)
+		- Require Handle Animal, Ride
+		- Handle Animal, Knowledge (nature), Ride, Craft
+		- Gain Weapon Focus (whip)
+		- Impale: use polearm with a charge to do damage x2.
+		- Catch and Drag: use lasso or trip weapon to trip with the size of the mount.
+		- Move-By: use slashing or bludgeoning weapon to gain +1 AC.
 
+	- Rework Ranger
+		- Gain 1 elemental domain spells
+		- Animal companion = level -3
+	- Rework Druid
+		- Remove animal companion
 -----------
 
 OK
