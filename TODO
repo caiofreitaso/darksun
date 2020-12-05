@@ -106,17 +106,17 @@ OK	- Element Singer --> PC (9-level) min-level 4th (clr)
 OK	- Arcanist --> ACF (already done)
 OK	- Brown Elf --> No changes
 
-	- Convict --> PC (5-level) min-level 5th (Gld)
-		- Good Fort/Ref
-		- Require Weapon Focus (dagger/concealable weapon)
-		- Must be sentenced to fight in an arena
-		- Have some rogue abilities
-		- Continue gladiatorial performance
-	- Arena Champion + Professional Gladiator --> PC (10-lvl) min-level 7th (Gld)
-		- Weapon improvisation
-		- Weapon Specialization
-		- Require Endurance
-		- Armor Optimization
+OK	- Convict --> PC (5-level) min-level 5th (Gld)
+OK		- Good Fort/Ref
+OK		- Require Weapon Focus (dagger/concealable weapon)
+OK		- Must be sentenced to fight in an arena
+OK		- Have some rogue abilities
+OK		- Continue gladiatorial performance
+OK	- Arena Champion + Professional Gladiator --> PC (10-lvl) min-level 7th (Gld)
+OK		- Weapon improvisation
+OK		- Weapon Specialization
+OK		- Require Endurance
+OK		- Armor Optimization
 		- May train free of charge IF
 			- Not being sought for crimes by local templar
 			- Must be a gladiator at the arena 2 levels higher than PC
@@ -126,13 +126,13 @@ OK	- Brown Elf --> No changes
 		- Require Peform
 		- Principle of the Razor: Str damage, bleeding.
 		- The Dance of Whirling Blades: jumping pounce that doubles the number of attacks. -2 AC besides charge. Balance check to not get dazed. Fortitude check to not get exausted. Full turn resting to use again.
-	- Montare --> PC (10-level) min-level 5th (Gld)
-		- Require Handle Animal, Ride
-		- Handle Animal, Knowledge (nature), Ride, Craft
-		- Gain Weapon Focus (whip)
-		- Impale: use polearm with a charge to do damage x2.
-		- Catch and Drag: use lasso or trip weapon to trip with the size of the mount.
-		- Move-By: use slashing or bludgeoning weapon to gain +1 AC.
+X	- Montare --> PC (10-level) min-level 5th (Gld)
+X		- Require Handle Animal, Ride
+X		- Handle Animal, Knowledge (nature), Ride, Craft
+X		- Gain Weapon Focus (whip)
+X		- Impale: use polearm with a charge to do damage x2.
+X		- Catch and Drag: use lasso or trip weapon to trip with the size of the mount.
+X		- Move-By: use slashing or bludgeoning weapon to gain +1 AC.
 
 	- Rework Ranger
 		- Gain 1 elemental domain spells
@@ -151,7 +151,7 @@ OK
 
 -----------
 
-REWORK GLADIATOR
+OK REWORK GLADIATOR
 
 - Maintain gladiatorial performance
 - WHAT IS GOOD
@@ -161,13 +161,13 @@ REWORK GLADIATOR
 	- Improved uncanny dodge
 
 - Add combat styles
-	- Mounted
-	- Unarmed
-	- Jazst (dancing/dervixe)
+OK	- Mounted
+OK	- Unarmed
+XX	- Jazst (dancing/dervixe)
 
 -----------
 
-REWORK DUNE TRADER
+OK REWORK DUNE TRADER
 
 	- Poison use
 	- Fast Talk (original)
@@ -182,5 +182,5 @@ OK		- Make it a use of Diplomacy
 		- 5%
 -----------
 
-REWORK ARENA CHAMPION
+DONE REWORK ARENA CHAMPION
 

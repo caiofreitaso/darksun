@@ -79,6 +79,8 @@
 	- _Stoneskin_ (4th)
 - Spells moved in Ranger spell list:
 	- _Darkvision_: 3rd -> 2nd
+- Ranger's Animal Companion is equivalent to a druid level = ranger level -3.
+- Removed Animal Companion from Druid class features.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -317,6 +319,7 @@
 		- Shake Off: 9th level. As it was.
 		- Pounce: Gain pounce ability until end of turn. Swift action.
 		- Dragon's Fury: Full attack with extra attack with highest BAB, +4 on attack and damage. Full-round action.
+		- Dragon's Speed: Extra move action. Swift action.
 	- Exotic Proficiency: 2nd level and every 4 levels thereafter.
 	- Add Bonus Feat
 		- 1st level: Improved Unarmed Strike.
@@ -340,3 +343,39 @@
 	- Improved Parry: moved to 11th level.
 	- Superior Feint: moved to 13th level.
 	- Greater Parry: gladiator can forfeit 2 attacks to parry twice.
+- **Change Arena Champion**
+	- Requires 7th level:
+		- BAB +7
+		- Perform (arena fighting) 10 ranks
+		- Endurance, Gladiatorial Enterntainer, Weapon Focus, Weapon Specialization
+	- Gain Leadership
+	- Weapon Improvisation: Unarmed damage +1d4
+	- Crowd Support: 2nd, 5th, and 8th levels. Ability unchanged.
+	- Reputation: 2nd, 5th, and 8th levels. Ability unchanged.
+	- Armor Optimization: 3rd and 8th levels. As gladiator.
+	- Greater Weapon Focus: 3rd level.
+	- Signature Move: 4th and 7th levels. Ability merged with improved signature move. Dodge bonus doubled for total defense. Otherwise, unchanged.
+	- Second Wind: 6th level. Standard action to heal champion level * Con mod. Once per encounter.
+	- Roar of the Crowd, Legend, and Finishing Move were not changed.
+- **Change Dune Trader**
+	- Renamed abilities: smooth talk (retry Bluff/Diplomacy with -5), fast talk (diplomacy as full-round with -5).
+	- Contacts are now separated into categories: Influence, Skill, or Trade.
+		- Each contact can only be called 1/week.
+		- Skill contact makes skill check of DC 18 + 1/2 dune trader's character level.
+		- 5% discount became +5 circumstance bonus to Diplomacy for Bargaining.
+	- Skill mastery at 6th level.
+	- Slippery mind at 7th level.
+	- Agent became Leadership feat.
+	- Removed discount: bonus on Diplomacy can give discount via Bargaining.
+	- At 10th level, add Int mod. to initiative and Ref save, add Cha mod. to Concentration and Fort save.
+- **Change Grove Master**
+	- Remove animal companion.
+	- Remove _greater invisibility_.
+	- Requires Defender of the Land, too.
+	- Add _speak with plants_ at 2nd level.
+	- Add bonus domain, at 4th and 9th levels.
+- **Add Convict**
+	- Rogue/gladiator prestige class.
+	- Focused on dirty trick.
+	- May feint with dirty trick.
+	- May use dirty trick more frequently than normal.
