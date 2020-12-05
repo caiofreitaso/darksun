@@ -81,6 +81,7 @@
 	- _Darkvision_: 3rd -> 2nd
 - Ranger's Animal Companion is equivalent to a druid level = ranger level -3.
 - Removed Animal Companion from Druid class features.
+- Add Multiclassing Prerequisites for base classes.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -379,3 +380,16 @@
 	- Focused on dirty trick.
 	- May feint with dirty trick.
 	- May use dirty trick more frequently than normal.
+- **Change Master Scout**
+	- Requires Knowledge (geography) 8 ranks and Knowledge (nature) 8 ranks, too.
+	- Changed swift strike to skirmish.
+	- Add flawless stride (as scout), at 1st level.
+	- Add wasteland trap sense (as barbarian), at 3rd, 6th and 9th levels.
+	- Swapped levels of swift tracker and uncanny stealth.
+	- Removed bonus feat.
+- **Change Poisonmaster**
+	- Requires Heal 4 ranks.
+	- Requires poison use.
+	- Add poison mastery: may take 20 for crafting poison.
+	- Add poison secret at 10th level.
+	- Grant immunity to deceases as well, at 10th level.
