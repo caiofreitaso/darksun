@@ -82,6 +82,7 @@
 - Ranger's Animal Companion is equivalent to a druid level = ranger level -3.
 - Removed Animal Companion from Druid class features.
 - Add Multiclassing Prerequisites for base classes.
+- Add Contacts, based on Unearthed Arcana's variant rules.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.

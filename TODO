@@ -134,10 +134,10 @@ X		- Impale: use polearm with a charge to do damage x2.
 X		- Catch and Drag: use lasso or trip weapon to trip with the size of the mount.
 X		- Move-By: use slashing or bludgeoning weapon to gain +1 AC.
 
-	- Rework Ranger
-		- Gain 1 elemental domain spells
-		- Animal companion = level -3
-	- Rework Druid
+OK	- Rework Ranger
+XX		- Gain 1 elemental domain spells
+OK		- Animal companion = level -3
+OK	- Rework Druid
 		- Remove animal companion
 -----------
 
@@ -169,17 +169,17 @@ XX	- Jazst (dancing/dervixe)
 
 OK REWORK DUNE TRADER
 
-	- Poison use
-	- Fast Talk (original)
-	- 1 new language per 2 levels
+OK	- Poison use
+OK	- Fast Talk (original)
+XX	- 1 new language per 2 levels
 	- Condense Skill check
-	- Make Patron house a different ability
-	- Mastery in Diplomacy (in place of open arms)
+XX	- Make Patron house a different ability
+OK	- Mastery in Diplomacy (in place of open arms)
 	- Bargaining
 OK		- Make it a use of Diplomacy
-		- Dune Trader gains bonus for it
+OK		- Dune Trader gains bonus for it
 	- Break contact into two abilities
-		- 5%
+XX		- 5%
 -----------
 
 DONE REWORK ARENA CHAMPION
