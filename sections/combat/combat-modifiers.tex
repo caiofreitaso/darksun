@@ -1,0 +1,76 @@
+\section{Combat Modifiers}
+Sometimes you just have to go toe-to-toe in a fight, but you can
+usually gain some advantage by seeking a better position, either
+offensively or defensively. This section covers the rules for when
+you can line up a particularly good attack or are forced to make a
+disadvantageous one.
+
+\subsection{(Un)Favorable Conditions}
+% \subsection{Favorable and Unfavorable Conditions}
+Depending on the condition of attackers or defenders, they may gain bonuses or penalties as stated in \tabref{Attack Roll Modifiers} and \tabref{Armor Class Modifiers}.
+
+\Table{Attack Roll Modifiers}{L*{2}{Z{12mm}}}{
+\tableheader Attacker is... & \tableheader Melee & \tableheader Ranged\\
+Dazzled & $-1$ & $-1$ \\
+Entangled & $-2$\footnotemark[1] & $-2$\footnotemark[1] \\
+Flanking defender & +2 & --- \\
+Invisible & +2\footnotemark[2] & +2\footnotemark[2] \\
+On higher ground & +1 & +0 \\
+Prone & $-4$ & ---\footnotemark[3] \\
+Shaken or frightened & $-2$ & $-2$ \\
+Squeezing through a space & $-4$ & $-4$ \\
+
+\TableNote{3}{1 An entangled character also takes a $-4$ penalty to Dexterity, which may affect his attack roll.}\\
+\TableNote{3}{2 The defender loses any Dexterity bonus to AC. This bonus doesn't apply if the target is blinded.}\\
+\TableNote{3}{3 Most ranged weapons can't be used while the attacker is prone, but you can use a crossbow or shuriken while prone at no penalty.}\\
+}
+
+\Table{Armor Class Modifiers}{L*{2}{Z{12mm}}}{
+\tableheader Defender is... & \tableheader Melee & \tableheader Ranged\\
+Behind cover & +4 & +4 \\
+Blinded & $-2$\footnotemark[1] & $-2$\footnotemark[1] \\
+Concealed or invisible & \multicolumn{2}{c}{See Concealment} \\
+Cowering & $-2$\footnotemark[1] & $-2$\footnotemark[1] \\
+Entangled & +0\footnotemark[2] & +0\footnotemark[2] \\
+Flat-footed (such as surprised, balancing, climbing) & +0\footnotemark[1] & +0\footnotemark[1] \\
+Grappling (but attacker is not) & +0\footnotemark[1] & +0\footnotemark[1]\footnotemark[3] \\
+Helpless (such as paralyzed, sleeping, or bound) & $-4$\footnotemark[4] & +0\footnotemark[4] \\
+Kneeling or sitting & $-2$ & +2 \\
+Pinned & $-4$\footnotemark[4] & +0\footnotemark[4] \\
+Prone & $-4$ & +4 \\
+Squeezing through a space & $-4$ & $-4$ \\
+Stunned & -2\footnotemark[1] & -2\footnotemark[1] \\
+
+\TableNote{3}{1 The defender loses any Dexterity bonus to AC.}\\
+\TableNote{3}{2 An entangled character takes a $-4$ penalty to Dexterity.}\\
+\TableNote{3}{3 Roll randomly to see which grappling combatant you strike. That defender loses any Dexterity bonus to AC.}\\
+\TableNote{3}{4 Treat the defender's Dexterity as 0 ($-5$ modifier). Rogues can sneak attack helpless or pinned defenders.}\\
+}
+
+\begin{figure*}[t!]
+\centering
+\includegraphics[width=\textwidth]{images/cover-1.png}
+\WOTC
+\end{figure*}
+\input{subsections/combat/combat-modifiers/cover.tex}
+\input{subsections/combat/combat-modifiers/concealment.tex}
+\input{subsections/combat/combat-modifiers/flanking.tex}
+\input{subsections/combat/combat-modifiers/helpless-defenders.tex}
+
+\subsection{Weapon, Armor, and Shield Proficiency}
+A character who uses a weapon with which he or she is not proficient takes a $-4$ penalty on attack rolls.
+
+A character who wears armor and/or uses a shield with which he or she is not proficient takes the armor's (and/or shield's) armor check penalty on attack rolls and on all Strength-based and Dexterity-based ability and skill checks. The penalty for nonproficiency with armor stacks with the penalty for nonproficiency with shields
+
+Weapon, armor, or shield proficiency may be granted by the character's race, class or by the following feats:
+
+\begin{itemize*}
+\item \feat{Armor Proficiency (Light)}
+\item \feat{Armor Proficiency (Medium)}
+\item \feat{Armor Proficiency (Heavy)}
+\item \feat{Exotic Weapon Proficiency}
+\item \feat{Martial Weapon Proficiency}
+\item \feat{Shield Proficiency}
+\item \feat{Simple Weapon Proficiency}
+\item \feat{Tower Shield Proficiency}
+\end{itemize*}
