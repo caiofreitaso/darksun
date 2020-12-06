@@ -141,6 +141,9 @@
 	- _Tekchakak_: thri-kreen psion trades 1st-level bonus feat to nullify thri-kreen penalty on mind-affecting powers.
 	- _Thri-Kreen Slayer_: elf ranger trades favored enemy for a narrow favored enemy with an increased bonus of +3 to Hide, Listen, Move Silently, Spot, Survival, and weapon damage rolls.
 	- _Procurer_: elf bard trades streetsmart for +5 in Search checks to find secret doors.
+	- _Flexibility Adjustment_: gladiator gives up improvement on armor bonus to improve maximum Dexterity bonus.
+	- _Lighten Load_: gladiator trades first armor optimization to treat armor as one category lighter, if he's proficient with it.
+	- _Auditor_: psion gives up 
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.

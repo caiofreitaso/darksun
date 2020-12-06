@@ -1,0 +1,36 @@
+\subsection{Attack Roll}
+An attack roll represents your attempt to strike your opponent on your turn in a round. When you make an attack roll, you roll:
+
+{
+	\centering
+	\vskip1em
+	{\Large 1d20 + \textit{attack bonus}}
+	\vskip.3em
+	\Cell{\small\textit{Melee attack bonus} = base attack bonus + Str. modifier\\\small + size modifier.}
+	\vskip.3em
+	\Cell{\small\textit{Ranged attack bonus} = base attack bonus + Dex. modifier\\\small + size modifier + range penalty.}
+	\vskip1em
+}
+
+Other modifiers may also apply to this roll. If your result equals or beats the target's Armor Class, you hit and deal damage.
+
+\textbf{Automatic Misses and Hits:} A natural 1 (the d20 comes up 1) on an attack roll is always a miss. A natural 20 (the d20 comes up 20) is always a hit. A natural 20 is also a threat---a possible critical hit.
+
+\textbf{Base Attack Bonus:} A base attack bonus is an attack roll bonus derived from character class and level or creature type and Hit Dice (or combinations thereof). Base attack bonuses increase at different rates for different character classes and creature types. A second attack is gained when a base attack bonus reaches +6, a third with a base attack bonus of +11 or higher, and a fourth with a base attack bonus of +16 or higher. Base attack bonuses gained from different sources, such as when a character is a multiclass character, stack.
+
+\textbf{Size Modifier:} This modifier captures the difference in size between creatures. If the creatures are of the same size, they strike each other normally, since the same size modifier applies to Armor Class.
+
+\Table{Size Modifier}{p{1cm}XCp{1cm}}{
+& \tableheader Size & \tableheader Size Modifier &\\
+& Colossal & $-8$ &\\
+& Gargantuan & $-4$ &\\
+& Huge & $-2$ &\\
+& Large & $-1$ &\\
+& Medium & +0 &\\
+& Small & +1 &\\
+& Tiny & +2 &\\
+& Diminutive & +4 &\\
+& Fine & +8 &\\
+}
+
+\textbf{Range Penalty:} All ranged weapons have a range increment. Any attack from a distance of less than one range increment is not penalized for range. However, each full range increment imposes a cumulative $-2$ penalty on the attack roll. A thrown weapon has a maximum range of five range increments. A projectile weapon can shoot out to ten range increments.
