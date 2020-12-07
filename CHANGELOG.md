@@ -83,6 +83,20 @@
 - Removed Animal Companion from Druid class features.
 - Add Multiclassing Prerequisites for base classes.
 - Add Contacts, based on Unearthed Arcana's variant rules.
+- **Add advantage/disadvantage**
+	- When more than one bonus of circumstance applies, use advantage instead.
+	- When more than one penalty of circumstance applies, use disadvantage instead.
+	- Aid another gives advantage on attack rolls or skill checks, or disadvantage on enemy's next attack roll.
+	- Flanking gives advantage on attack rolls.
+	- Not being proficient gives disadvantage on that weapon's attack rolls.
+	- Bull rush rolls get advantage after a charge, or if the defender has more than two legs or is exceptionally stable.
+	- Two-handed weapons give advantage on disarm and sunder rolls.
+	- Light weapons and non-melee weapons give disadvantage on disarm and sunder rolls.
+	- Feinting creatures of different shape gets you disadvantage.
+	- You have disadvantage when attacking with ranged weapons while mount double moves.
+	- You have disadvantage with -4 penalty when attacking with ranged weapons while mount runs.
+	- Overrun and trip rolls get advantage if the defender has more than two legs or is exceptionally stable.
+- You can ready a swift action.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
