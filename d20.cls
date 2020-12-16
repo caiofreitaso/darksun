@@ -498,6 +498,13 @@
 	}
 }
 
+\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{6mm}} Z{9mm} L l]{
+	\BigTablePair{#2}{#1}{
+		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader AC Bonus & \tableheader Unarmed Damage & \tableheader Special & \tableheader Manifesting\\
+		#3
+	}
+}
+
 \newcommand{\FeatTable}[3][l]{
 	\begin{table*}[ht!]
 	\rowcolors{0}{}{TableColor}

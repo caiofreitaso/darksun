@@ -121,11 +121,11 @@ OK		- Armor Optimization
 			- Not being sought for crimes by local templar
 			- Must be a gladiator at the arena 2 levels higher than PC
 	- Jazst --> PC (10-level) min-level 6th (Gld)
-		- Perform, Tumble, Diplomacy, Survival, Craft, Disguise, Jump, Balance
-		- Trained in armor spikes
-		- Require Peform
-		- Principle of the Razor: Str damage, bleeding.
-		- The Dance of Whirling Blades: jumping pounce that doubles the number of attacks. -2 AC besides charge. Balance check to not get dazed. Fortitude check to not get exausted. Full turn resting to use again.
+OK		- Perform, Tumble, Diplomacy, Survival, Craft, Disguise, Jump, Balance
+OK		- Trained in armor spikes
+OK		- Require Peform
+OK		- Principle of the Razor: Str damage, bleeding.
+OK		- The Dance of Whirling Blades: jumping pounce that doubles the number of attacks. -2 AC besides charge. Balance check to not get dazed. Fortitude check to not get exausted. Full turn resting to use again.
 X	- Montare --> PC (10-level) min-level 5th (Gld)
 X		- Require Handle Animal, Ride
 X		- Handle Animal, Knowledge (nature), Ride, Craft
@@ -138,7 +138,7 @@ OK	- Rework Ranger
 XX		- Gain 1 elemental domain spells
 OK		- Animal companion = level -3
 OK	- Rework Druid
-		- Remove animal companion
+OK		- Remove animal companion
 -----------
 
 OK
