@@ -214,7 +214,7 @@
 	\section{#1}\label{class:#1}
 	\Quote{#2}{#3}
 }
-\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1}}
+\newcommand{\Skill}[2]{\section*{#1 \normalsize(#2)} \label{skill:#1} \addcontentsline{toc}{section}{#1}}
 \newcommand{\Feat}[7][General]{
 	\subsection{#2 \normalsize[#1]} \label{feat:#2}
 	#3
