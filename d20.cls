@@ -112,7 +112,7 @@
 		\@starttoc{toc}
 	}
 }
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \renewcommand\listoftables{%
 	{
 		\imfellEnglish
@@ -195,15 +195,23 @@
     \setlength{\parskip}{0em}}%
   {\end{enumerate}}
 % Different sections
-\renewcommand\section{
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\renewcommand \section {
 	\@startsection{section}
 	{1}
 	{0pt}{1em}{0.01em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
 }
-\renewcommand \subsection {
+\newcommand\@subsection{
 	\@startsection{subsection}
 	{2}
 	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}
+}
+\renewcommand\subsection{
+	\tocless\@subsection
+}
+\newcommand\subsectionA{
+	\@subsection
 }
 \renewcommand \subsubsection {
 	\@startsection{subsubsection}
@@ -214,9 +222,9 @@
 	\section{#1}\label{class:#1}
 	\Quote{#2}{#3}
 }
-\newcommand{\Skill}[2]{\section*{#1 \normalsize(#2)} \label{skill:#1} \addcontentsline{toc}{section}{#1}}
+\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1} \addcontentsline{toc}{subsection}{#1}}
 \newcommand{\Feat}[7][General]{
-	\subsection{#2 \normalsize[#1]} \label{feat:#2}
+	\subsubsection{#2 \normalsize[#1]} \label{feat:#2}
 	#3
 
 	\ifx&#4&\else\textbf{Prerequisites:} #4
@@ -287,7 +295,7 @@
 	\CityDescription
 }
 \newcommand{\SubCity}[5]{
-	\subsection{#1}
+	\subsectionA{#1}
 	\textbf{Population:} #2
 
 	\textbf{Exports:} #3
