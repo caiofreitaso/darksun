@@ -195,34 +195,28 @@
     \setlength{\parskip}{0em}}%
   {\end{enumerate}}
 % Different sections
-\newcommand{\nocontentsline}[3]{}
-\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
-\renewcommand \section {
+\renewcommand\section{
 	\@startsection{section}
 	{1}
 	{0pt}{1em}{0.01em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
 }
-\newcommand\@subsection{
-	\@startsection{subsection}
-	{2}
-	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}
+\renewcommand\subsection{\@startsection{subsection}%
+	{2}%
+	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}*%
 }
-\renewcommand\subsection{
-	\tocless\@subsection
-}
-\newcommand\subsectionA{
-	\@subsection
-}
-\renewcommand \subsubsection {
+\newcommand\subsectionA{\@startsection{subsection}%
+	{2}%
+	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}}
+\renewcommand\subsubsection {
 	\@startsection{subsubsection}
 	{3}
-	{0pt}{.7em}{0.01em}{\color{SubsectionColor}\large\imfellEnglish}
+	{0pt}{.7em}{0.01em}{\color{SubsectionColor}\large\imfellEnglish}*
 }
 \newcommand{\Class}[3]{
 	\section{#1}\label{class:#1}
 	\Quote{#2}{#3}
 }
-\newcommand{\Skill}[2]{\subsection{#1 \normalsize(#2)} \label{skill:#1} \addcontentsline{toc}{subsection}{#1}}
+\newcommand{\Skill}[2]{\subsectionA[#1]{#1 \normalsize(#2)} \label{skill:#1}}
 \newcommand{\Feat}[7][General]{
 	\subsubsection{#2 \normalsize[#1]} \label{feat:#2}
 	#3

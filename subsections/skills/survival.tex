@@ -1,36 +1,52 @@
 \Skill{Survival}{Wis}
 \textbf{Check:} You can keep yourself and others safe and fed in the wild. The table below gives the DCs for various tasks that require Survival checks.
 
-Survival does not allow you to follow difficult tracks unless you are a ranger or have the Track feat (see the Restriction section below).
+Survival does not allow you to follow difficult tracks unless you are a ranger or have the \feat{Track} feat (see the Restriction section below).
 
 \Table{Survival DCs}{c X}{
 \tableheader Survival DC & \tableheader Task\\
-10 & Get along in the wild. Move up to one-half your overland speed while hunting and foraging (no food or water supplies needed). You can provide food and water for one other person for every 2 points by which your check result exceeds 10.\\
-15 & Gain a +2 bonus on all Fortitude saves against severe weather while moving up to one-half your overland speed, or gain a +4 bonus if you remain stationary. You may grant the same bonus to one other character for every 1 point by which your Survival check result exceeds 15.\\
 15 & Keep from getting lost or avoid natural hazards, such as quicksand.\\
 15 & Predict the weather up to 24 hours in advance. For every 5 points by which your Survival check result exceeds 15, you can predict the weather for one additional day in advance.\\
-Varies & Follow tracks (see the Track feat).
+Varies & Endure the elements (see \tabref{Endure the Elements}).\\
+Varies & Get along in the wild (see \tabref{Get Along in the Wild}).\\
+Varies & Follow tracks (see the \feat{Track} feat).\\
 }
 
-Terrain types affect the amount of food and water available through hunting and foraging. Add modifers to each task based on the terrain it's being performed.
+\textit{Endure the Elements:} Gain a +2 bonus on all Fortitude saves against severe weather while moving up to one-half your overland speed, or gain a +4 bonus if you remain stationary. Use the DCs in \tabref{Endure the Elements}. You may grant the same bonus to one other character for every number of points in Extra Person Modifier by which your Survival check result exceeds the DC.
 
-\Table{Terrain Type Modifiers}{l X c}{
-\tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC Modifier\\
-Abundant & Forests, oceans, gardens & +0\\
-Fertile & Verdant plains, savannahs, swamps, mud flats & +5\\
-Infertile & Rocky badlands, scrubland & +10\\
-Barren & Boulder fields, stony barrens, scrublands & +15\\
-Desolate & Salt flats, sea of silt & +20\\
-Void & Obsidian Plains & +25
+\Table{Endure the Elements}{l X *{2}{Z{9mm}}}{
+\tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
+Abundant & Forests, oceans, gardens & 15 & 1 \\
+Fertile & Verdant plains, swamp, mudflats & 20 & 2 \\
+Infertile & Rocky badlands, scrub plains & 25 & 3 \\
+Barren & Boulder fields, stony barrens & 30 & 5 \\
+Desolate & Salt flats, sea of silt & 35 & 7 \\
+Void & Obsidian Plains & 45 & 10 \\
 }
+
+\textit{Get Along in the Wild:} Move up to one-half your overland speed while hunting and foraging (no food or water supplies needed). Terrain types affect the amount of food and water available through hunting and foraging. Use the DCs in \tabref{Get Along in the Wild}. You can provide food and water for one other person for every number of points in Extra Person Modifier by which your check result exceeds the DC.
+
+\Table{Get Along in the Wild}{l X *{2}{Z{9mm}}}{
+\tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
+Abundant & Forests, oceans, gardens & 10 & 2 \\
+Fertile & Verdant plains, swamp, mudflats & 15 & 3 \\
+Infertile & Rocky badlands, scrub plains & 20 & 5 \\
+Barren & Boulder fields, stony barrens & 25 & 7 \\
+Desolate & Salt flats, sea of silt & 30 & 10 \\
+Void & Obsidian Plains & 40 & 15 \\
+}
+
+\textbf{Accelerated Movement:} By accepting a $-30$ penalty on your Survival checks, you can move your full overland speed instead of one-half your overland speed.
 
 \textbf{Action:} Varies. A single Survival check may represent activity over the course of hours or a full day. A Survival check made to find tracks is at least a full-round action, and it may take even longer.
 
 \textbf{Try Again:} Varies. For getting along in the wild or for gaining the Fortitude save bonus noted in the table above, you make a Survival check once every 24 hours. The result of that check applies until the next check is made. To avoid getting lost or avoid natural hazards, you make a Survival check whenever the situation calls for one. Retries to avoid getting lost in a specific situation or to avoid a specific natural hazard are not allowed. For finding tracks, you can retry a failed check after 1 hour (outdoors) or 10 minutes(indoors) of searching.
 
-\textbf{Restriction:} While anyone can use Survival to find tracks (regardless of the DC), or to follow tracks when the DC for the task is 10 or lower, only a ranger (or a character with the Track feat) can use Survival to follow tracks when the task has a higher DC.
+\textbf{Restriction:} While anyone can use Survival to find tracks (regardless of the DC), or to follow tracks when the DC for the task is 10 or lower, only a ranger (or a character with the \feat{Track} feat) can use Survival to follow tracks when the task has a higher DC.
 
-\textbf{Special:} If you have 5 or more ranks in Survival, you can automatically determine where true north lies in relation to yourself.
+\textbf{Special:} A half-elf has +2 racial bonus on Survival checks because of the time spent in the wilds of the tablelands.
+
+If you have 10 or more ranks in Survival, you can automatically determine where true north lies in relation to yourself.
 
 A ranger gains a bonus on Survival checks when using this skill to find or follow the tracks of a favored enemy.
 
