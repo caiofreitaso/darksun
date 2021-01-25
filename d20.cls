@@ -443,28 +443,28 @@
 	}
 }
 
-\newcommand{\PrestigeSpellTable}[3][l b{16mm} *{3}{Z{6mm}} L l]{
+\newcommand{\PrestigeSpellTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Spellcasting\\
 		#3
 	}
 }
 
-\newcommand{\PrestigeOnlySpellTable}[3][l b{16mm} *{3}{Z{6mm}} X]{
+\newcommand{\PrestigeOnlySpellTable}[3][l b{16mm} *{3}{Z{5mm}} X]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Spellcasting\\
 		#3
 	}
 }
 
-\newcommand{\PrestigePowerTable}[3][l b{16mm} *{3}{Z{6mm}} L l]{
+\newcommand{\PrestigePowerTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Manifesting\\
 		#3
 	}
 }
 
-\newcommand{\MiniWarriorTable}[3][l l *{3}{Z{6mm}} L]{
+\newcommand{\MiniWarriorTable}[3][l l *{3}{Z{4mm}} L]{
 	\Table{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
@@ -472,11 +472,11 @@
 }
 
 \newcommand{\PrestigeWarriorTable}[2]{
-	\MiniWarriorTable[l b{7mm} *{3}{Z{6mm}} L]{#1}{#2}
+	\MiniWarriorTable[l b{7mm} *{3}{Z{5mm}} L]{#1}{#2}
 }
 
 \newcommand{\SpellcasterTable}[3]{
-	\BigTablePair{#1}{l l *{3}{Z{6mm}} L *{10}{Z{#2}} }{
+	\BigTablePair{#1}{l l *{3}{Z{5mm}} L *{10}{Z{#2}} }{
 		\rowcolor{white}
 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{10}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-16}
@@ -485,7 +485,7 @@
 	}
 }
 \newcommand{\HalfSpellcasterTable}[3][1cm]{
-	\BigTablePair{#2}{l l *{3}{Z{6mm}} L *{4}{Z{#1}}}{
+	\BigTablePair{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
 		\rowcolor{white}
 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-10}
@@ -493,14 +493,14 @@
 		#3
 	}
 }
-\newcommand{\PsychicTable}[3][l l *{3}{Z{6mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
+\newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
 		#3
 	}
 }
 
-\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{6mm}} Z{9mm} L l]{
+\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{5mm}} Z{9mm} L l]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader AC Bonus & \tableheader Unarmed Damage & \tableheader Special & \tableheader Manifesting\\
 		#3

@@ -97,6 +97,35 @@
 	- You have disadvantage with -4 penalty when attacking with ranged weapons while mount runs.
 	- Overrun and trip rolls get advantage if the defender has more than two legs or is exceptionally stable.
 - You can ready a swift action.
+- Change skills per level for some classes:
+	- Bard: 6 + Int modifier -> **8 + Int modifier**.
+	- Druid: 4 + Int modifier -> **2 + Int modifier**.
+	- Fighter: 2 + Int modifier -> **4 + Int modifier**.
+	- Psychic Warrior: 2 + Int modifier -> **4 + Int modifier**.
+- Add new skills as class skills;
+	- Barbarian: Autohypnosis, Knowledge (nature).
+	- Fighter: Autohypnosis, Spot.
+- Add new class features to Fighter:
+	- Weapon Training: beginning at 5th level, fighter gain +1 competence bonus whenever wielding simple or martial weapons. Bonus increases by 1 every four levels thereafter.
+	- Martial Prowess: beginning at 7th level, fighter gains a new ability from a select list. Gains a new one every four levels thereafter.
+- Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
+- Change Appraise: Add option to identify magical and psionic items. DC = 15 + caster level for magic items, and 10 + manifester level for psionic items.
+- Change Heal:
+	- Improve long-term care. May heal up to double the healer's ranks per level after a full day of complete rest, or half this value after 8 hours of rest.
+	- Improve first-aid. For every 2 points the result exceeds 15, the target heals 1 hit point, up to a total of 0.
+- Change Survival: you can accept -30 penalty to move full overland speed.
+- Add new synergies:
+	- Appraise: +2 on Diplomacy checks to bargain;
+	- Balance: +2 on Tumble checks;
+	- Decipher Script: +2 on Forgery checks;
+	- Disable Device: +2 on Open Lock checks;
+	- Open Lock: +2 on Disable Device checks;
+	- Ride: +2 on Handle Animal checks involving mounts;
+	- Use Magic Device: +2 on Appraise checks involving magic items;
+	- Use Psionic Device: +2 on Appraise checks involving psionic items.
+- Change number of ranks to gain bonus other than synergies:
+	- 10 ranks in Tumble to improve dodge bonus for fighting defensively and total defense;
+	- 10 ranks in Survival to know the true north.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -310,7 +339,6 @@
 	- Gain +4 on saving throws to resist negative energy.
 	- Gain fortification, starting at 25% up to 50%.
 	- At 10th level, changes type to outsider and is immune to negative energy effects.
-- Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
 - **Add Beastmaster Psionicist**
 	- 10-level telepathic ranger.
 	- Gain animal companion (level + 3), wild empathy
@@ -331,7 +359,7 @@
 - Add Perform (arena fighting).
 - **Rework Gladiator**
 	- d8 HD
-	- 2 + Int skills/level
+	- 4 + Int skills/level
 	- Changed gladiatorial performances: maintain shake off as it was. Move action by default.
 		- Dirty Trick: +1 attack or damage, or -1 attack or damage to enemy. 1 per encounter per enemy. Cannot use against same opponent in a single turn. Free action.
 		- Taunt: 3rd level. Perform vs Will, -2 attack and AC to target until end of encounter.
@@ -411,3 +439,5 @@
 	- Add poison mastery: may take 20 for crafting poison.
 	- Add poison secret at 10th level.
 	- Grant immunity to deceases as well, at 10th level.
+	- Change skills per level to 6 + Int modifier.
+- Change Survival modifiers per fertility: instead of one table with modifiers, there are two tables. One for endure the elements, and another for get along in the wild. The number of points you need in excess to give bonus to another person increases with the difficulty of the terrain.
