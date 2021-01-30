@@ -13,17 +13,18 @@
 {Choose one of the following time periods: Blue Age, Green Age, or Cleansing Wars. You gain a +10 bonus on \skill{Knowledge} (history) checks or bardic knowledge checks to gain information about the chosen category.}{}
 {You can take this feat more than once, but the bonus doesn't stack. Each time you take this feat, you choose another time period.}
 
-\Feat{Antipsionic Magic}
-{Your spells are more potent when used against psionic characters and creatures.}
-{\skill{Spellcraft} 5 ranks.}
-{You get a get a +2 bonus on caster level checks made to overcome a psionic creature's power resistance.
+% \Feat{Antipsionic Magic}
+% {Your spells are more potent when used against psionic characters and creatures.}
+% {\skill{Spellcraft} 5 ranks.}
+% {You get a get a +2 bonus on caster level checks made to overcome a psionic creature's power resistance.
 
-This bonus stacks with the bonus conferred by Spell Penetration and Greater Spell Penetration. Moreover, whenever a psionic creature attempts to dispel a spell you cast, it makes its manifester level check against a DC of 13 + its manifester level.
+% This bonus stacks with the bonus conferred by Spell Penetration and Greater Spell Penetration. Moreover, whenever a psionic creature attempts to dispel a spell you cast, it makes its manifester level check against a DC of 13 + its manifester level.
 
-The benefits of this feat apply only to power resistance.
+% The benefits of this feat apply only to power resistance.
 
-The bonus does not apply to spell resistance. This is an exception to the psionics-magic transparency rule.}{}
-{You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
+% % The bonus does not apply to spell resistance. This is an exception to the psionics-magic transparency rule.
+% }{}
+% {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
 
 \Feat{Arena Clamor}
 {With your savage blows, you can make your companions give their best.}
@@ -50,6 +51,13 @@ The bonus does not apply to spell resistance. This is an exception to the psioni
 {See Armor Proficiency (light).}
 {Fighters, barbarians, gladiators, psychic warriors, clerics, druids, and templars automatically have Armor Proficiency (medium) as a bonus feat. They need not select it.}
 
+\Feat{Armored Stealth}
+{}
+{Dex 13, \skill{Hide} 4 ranks, \skill{Move Silently} 4 ranks, \feat{Armor Proficiency (Light)}, \feat{Stealthy}}
+{You do not apply armor check penalty to \skill{Hide} and \skill{Move Silently} checks, whenever you are wearing a light armor.}
+{You apply the armor check penalty to all skills with the notation (see \chapref{Skills}), including \skill{Hide} and \skill{Move Silently}.}
+{}
+
 \GFeat{Augment Summoning}
 {\feat{Spell Focus} (conjuration).}
 {Each creature you conjure with any summon spell gains a +4 enhancement bonus to Strength and Constitution for the duration of the spell that summoned it.}
@@ -75,19 +83,21 @@ attack for 24 hours.}{}{}
 {Chaotic alignment, Cha 15.}
 {Creatures and characters who have an insight bonus on their attack rolls, an insight bonus to their Armor Class, or an insight bonus on skill checks or ability checks do not gain those bonuses against you.
 
-The benefit of this feat applies only to insight bonuses gained from psionic powers and psi-like abilities. This is an exception to the psionics-magic transparency rule.}{}
+The benefit of this feat applies only to insight bonuses gained from psionic powers and psi-like abilities. %This is an exception to the psionics-magic transparency rule.
+}{}
 {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
 
 \Feat{Cloak Dance}
 {You are skilled at using optical tricks to make yourself seem to be where you are not.}
 {\skill{Hide} 10 ranks, \skill{Perform} (dance) 2 ranks.}
-{You can take a move action to obscure your exact position. Until your next turn, you have concealment. Alternatively, you can take a full-round action to entirely obscure your exact position. Until your next action, you have total concealment.}{}{}
+{You can take a move action to obscure your exact position. Until your next turn, you have concealment. Alternatively, you can take a full-round action to entirely obscure your exact position. Until your next turn, you have total concealment.}{}{}
 
 \Feat{Closed Mind}
 {Your mind is better able to resist psionics than normal.}{}
 {You get a +2 bonus on all saving throws to resist powers.
 
-The benefit of this feat applies only to psionic powers and psi-like abilities. This is an exception to the psionics-magic transparency rule.}{}
+The benefit of this feat applies only to psionic powers and psi-like abilities. %This is an exception to the psionics-magic transparency rule.
+}{}
 {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
 
 \GFeat{Combat Casting}{}
@@ -157,7 +167,21 @@ The creature can only select a spell-like ability duplicating a spell with a lev
 {A ranger automatically gains Endurance as a bonus feat at 3rd level. He need not select it.}
 
 \GFeat{Eschew Materials}{}
-{You can cast any spell that has a material component costing 1 gp or less without needing that component. (The casting of the spell still provokes attacks of opportunity as normal.) If the spell requires a material component that costs more than 1 gp, you must have the material component at hand to cast the spell, just as normal.}
+{You can cast any spell that has a material component costing 1 cp or less without needing that component. (The casting of the spell still provokes attacks of opportunity as normal.) If the spell requires a material component that costs more than 1 cp, you must have the material component at hand to cast the spell, just as normal.}
+
+\Feat{Extra Music}
+{}
+{Bardic music ability.}
+{Each time you take this feat, you can use your bardic music ability four more times per day than normal.}
+{}
+{You can gain Extra Music multiple times. Its effects stack. Each time you take the feat, you can use bardic music four additional times per day.}
+
+\Feat{Extra Performance}
+{You can make gladiatorial performances more often than normal.}
+{Gladiatorial performance ability.}
+{Each time you take this feat, you can use your gladiatorial performance ability four more times per day than normal.}
+{}
+{You can gain Extra Performance multiple times. Its effects stack. Each time you take the feat, you can use gladiatorial performance four additional times per day.}
 
 \Feat{Extra Turning}
 {}
@@ -196,15 +220,9 @@ If you have the ability to turn or rebuke more than one kind of creature each of
 {\feat{Iron Will}.}
 {Once per round, when targeted by a psionic effect that allows a Reflex save or a Fortitude save, you can instead make a Will saving throw to avoid the effect.
 
-The benefit of this feat applies only to psionic powers and psi-like abilities. This is an exception to the psionics-magic transparency rule.}{}
+The benefit of this feat applies only to psionic powers and psi-like abilities. %This is an exception to the psionics-magic transparency rule.
+}{}
 {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
-
-\Feat{Gladiatorial Entertainer}
-{You can make gladiatorial performances more often than normal.}
-{Gladiatorial performance class feature.}
-{Each time you take this feat, you can use your gladiatorial performance ability four more times per day than normal.}
-{}
-{You can gain Gladiatorial Entertainer multiple times. Its effects stack. Each time you take the feat, you can use gladiatorial performance four additional times per day.}
 
 \Feat{Greasing the Wheels}
 {You can circumvent various official obstacles when a person in a position of trust or authority is willing to accept ``presents.''}
@@ -246,6 +264,13 @@ Templar & $-5$
 {Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from \feat{Spell Focus}.}{}
 {You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic to which you already have applied the \feat{Spell Focus} feat.}{}
 
+\Feat{Greater Counterspell}
+{}
+{\skill{Spellcraft} 8 ranks, \feat{Improved Counterspell}.}
+{You may counterspell using an immediate action, instead of readying action.}
+{Without this feat, you may counter a spell only by choosing to ready action.}
+{}
+
 \GFeat{Greater Spell Penetration}
 {\feat{Spell Penetration}.}
 {You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance. This bonus stacks with the one from Spell Penetration.}
@@ -256,7 +281,7 @@ Templar & $-5$
 
 \Feat{Hard as Rock}
 {You are resolute while fighting and particularly tough to kill.}
-{Con 15, \feat{Diehard}, \feat{Great Fortitude}.}
+{Con 15, \feat{Diehard}, \feat{Endurance}.}
 {You are immune to death from massive damage. Furthermore, you have a 30\% chance per round of becoming stable on your own when you are dying and a 30\% chance per hour of regaining consciousness.}
 {The chance of becoming stable on your own is 10\% per round and regaining consciousness is 10\% per hour.}{}
 
@@ -265,7 +290,8 @@ Templar & $-5$
 {Cha 15.}
 {Whenever you are subject to a power from the telepathy discipline (regardless of whether the power is harmful or beneficial to you), the manifester must make a Will saving throw against a DC of 10 + \onehalf your character level + your Charisma bonus or take 2d6 points of damage.
 
-The benefit of this feat applies only to psionic powers and psi-like abilities. This is an exception to the psionics-magic transparency rule.}{}
+The benefit of this feat applies only to psionic powers and psi-like abilities. %This is an exception to the psionics-magic transparency rule.
+}{}
 {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
 
 \Feat{Hover}
@@ -282,7 +308,8 @@ Those caught in the cloud must succeed on a \skill{Concentration} check (DC 10 +
 {}
 
 \Feat{Improved Counterspell}
-{}{}
+{}
+{\skill{Concentration} 4 ranks, \skill{Knowledge} (arcana) 2 ranks, \skill{Spellcraft} 4 ranks.}
 {When counterspelling, you may use a spell of the same school that is one or more spell levels higher than the target spell.}
 {Without this feat, you may counter a spell only with the same spell or with a spell specifically designated as countering the target spell.}{}
 
@@ -356,9 +383,9 @@ You may choose your unarmed strike as natural attack.}
 \GFeat{Iron Will}{}
 {You get a +2 bonus on all Will saving throws.}
 
-\GFeat{Jaguar Roar}
-{Cha 13, Draj, \skill{Intimidate} 9 ranks.}
-{Making a jaguar roar is a swift action. All intelligent creatures who can hear you and who are within 9 meters may become shaken for 2d4 rounds. A creature in the affected area can resist the effect with a successful Will save (DC 10 + your level + Charisma modifier). Any creature that successfully resists the effect cannot be affected again by the same character's jaguar roar for 24 hours.}
+% \GFeat{Jaguar Roar}
+% {Cha 13, Draj, \skill{Intimidate} 9 ranks.}
+% {Making a jaguar roar is a swift action. All intelligent creatures who can hear you and who are within 9 meters may become shaken for 2d4 rounds. A creature in the affected area can resist the effect with a successful Will save (DC 10 + your level + Charisma modifier). Any creature that successfully resists the effect cannot be affected again by the same character's jaguar roar for 24 hours.}
 
 \Feat{Kiltektet}
 {The Kiltektet is a group consisting mostly, but not solely, of kreen dedicated to hunting for knowledge and spreading it.}{}
@@ -478,7 +505,8 @@ A Hamanu's templar, because of the the War domain, automatically gains the Marti
 {Base Will save bonus +2.}
 {Against psionic attacks that do not employ an energy type to deal damage you gain damage reduction 3/--. In addition, when you are hit with ability damage (but not ability drain or ability burn damage) from a psionic attack, you take 3 points less than you would normally take.
 
-The benefit of this feat applies only to psionic powers and psi-like abilities. This is an exception to the psionics-magic transparency rule.}{}
+The benefit of this feat applies only to psionic powers and psi-like abilities. %This is an exception to the psionics-magic transparency rule.
+}{}
 {You cannot take or use this feat if you have the ability to use powers (if you have a power point reserve or psi-like abilities).}
 
 \Feat{Mind Over Body}

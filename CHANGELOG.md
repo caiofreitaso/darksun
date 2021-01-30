@@ -105,9 +105,8 @@
 - Add new skills as class skills;
 	- Barbarian: Autohypnosis, Knowledge (nature).
 	- Fighter: Autohypnosis, Spot.
-- Add new class features to Fighter:
-	- Weapon Training: beginning at 5th level, fighter gain +1 competence bonus whenever wielding simple or martial weapons. Bonus increases by 1 every four levels thereafter.
-	- Martial Prowess: beginning at 7th level, fighter gains a new ability from a select list. Gains a new one every four levels thereafter.
+- Add new class feature to Fighter:
+	- Martial Prowess: beginning at 5th level, fighter gains a new ability from a select list. Gains a new one every two levels thereafter.
 - Change Diplomacy: Add Bargaining Table. Subtract the merchant's result from your result and check the table. Price modifiers from -90% to +90%.
 - Change Appraise: Add option to identify magical and psionic items. DC = 15 + caster level for magic items, and 10 + manifester level for psionic items.
 - Change Heal:
@@ -124,8 +123,10 @@
 	- Use Magic Device: +2 on Appraise checks involving magic items;
 	- Use Psionic Device: +2 on Appraise checks involving psionic items.
 - Change number of ranks to gain bonus other than synergies:
-	- 10 ranks in Tumble to improve dodge bonus for fighting defensively and total defense;
-	- 10 ranks in Survival to know the true north.
+	- 10 ranks in Balance to not be considered flat-footed while balancing;
+	- 10 ranks in Survival to know the true north;
+	- 10 ranks in Tumble to improve dodge bonus for fighting defensively and total defense.
+- Change total number of power points per level for psionic classes: decreased psion/wilder points (0.8x), increased psychic warrior points (1.6x).
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
