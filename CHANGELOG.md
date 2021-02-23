@@ -102,6 +102,7 @@
 	- Druid: 4 + Int modifier -> **2 + Int modifier**.
 	- Fighter: 2 + Int modifier -> **4 + Int modifier**.
 	- Psychic Warrior: 2 + Int modifier -> **4 + Int modifier**.
+	- Rogue: 8 + Int modifier -> **10 + Int modifier**.
 - Add new skills as class skills;
 	- Barbarian: Autohypnosis, Knowledge (nature).
 	- Fighter: Autohypnosis, Spot.
@@ -127,6 +128,22 @@
 	- 10 ranks in Survival to know the true north;
 	- 10 ranks in Tumble to improve dodge bonus for fighting defensively and total defense.
 - Change total number of power points per level for psionic classes: decreased psion/wilder points (0.8x), increased psychic warrior points (1.6x).
+- Add bonus feats to Barbarian beginning at 8th level and every three levels thereafter, from a select list.
+- Add bonus feats to Rogue beginning at 5th level and every three levels thereafter, from skill feats and ambush feats.
+- Change druid abilities progression:
+	- Wild shape daily uses: 5th, 6th, 7th, 10th, 14th, 18th -> **5th, 6th, 9th, 12th, 15th, 18th**;
+	- Wild shape sizes: 8th, 11th, 15th -> **9th, 13th, 17th**;
+	- Wild shape different types: 12th, 16th -> **12th, 18th**;
+	- Venom immunity: 9th -> **8th**;
+	- A thousand faces: 13th -> **14th**;
+	- Timeless body: 15th -> **16th**;
+	- Removed elemental wild shape: druids can shape into vermins, instead. It uses two normal daily uses, instead of a different pool.
+- Decreased druid's number of spell slots after 15th level.
+- Add table for favorable and unfavorable conditions.
+- Add new chapter for epic rules
+	- Instead of having no cap for epic levels, epic levels are from 21th to 30th levels.
+	- Completely revamped rules about BAB and saves.
+	- Added base classes progression based on Dragon Kings and Epic Level feats.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -152,18 +169,22 @@
 - Remove  `Improved Hidden Talent` and `Greater Hidden Talent` as Hidden Talent is not within SRD.
 - **Change Regional feat type** - You may only select regional feats at 1st level, and you can only select one regional feat.
 - Remove the type Fighter from `Jungle Fighter`.
-- Remove prestige class: Soulknife.
+- Remove prestige classes:
+	- Soulknife: the class move away from the look-and-feel of Athas.
+	- Black Cassock: the class does not improve the gameplay experience, as it only gives magical items.
+	- Draqoman: the class overlaps too much with Dune Trader.
+	- Arcanist: transformed into an alternate class feature.
+	- Desert Runner: transformed into an alternate class feature.
+	- Halfling Protector: transformed into an alternate class feature.
+	- Tribal Psionist: transformed into an alternate class feature.
+	- Eagle Knight: transformed into an alternate class feature.
+	- Elemental Champion: removed because of the proximity to ranger.
+	- Elementalist: removed because of the AD&D previous kits.
+	- Templar Knight: removed due to not having a different role than templars.
 - Add spells to Assassin's spell list: 1-_slave scent_; 2-_death mark_; 3-_boneclaw's cut, death whip_; 4-_claws of the tembo, mage seeker, rangeblade, scapegoat_.
 - **Change Arch Defiler** - Condensed the prestige class from 10-level down to a 5-level prestige class.
-- Remove Black Cassock - the class does not improve the gameplay experience, as it only gives magical items.
-- Remove Draqoman - the class overlaps too much with Dune Trader.
 - Change wording on Browncloak to match SRD's.
 - **Change Favored Terrain** - add bonus on Knowledge (geography), Listen, and Search checks. Bonus also applied on Knowledge (geography) & Knowledge (nature) checks made about the favored terrain, not only when within it.
-- Remove Arcanist - transformed into an alternate class feature.
-- Remove Desert Runner - transformed into an alternate class feature.
-- Remove Halfling Protector - transformed into an alternate class feature.
-- Remove Tribal Psionist - transformed into an alternate class feature.
-- Remove Eagle Knight - transformed into an alternate class feature.
 - **Add Alternate Class Features**
 	- _Arcanist_: elf wizard trades _bonus feat_ at 10th level for _exegete_, considered trained in all Knowledge skills and can take 10 in Knowledge checks that the character has at least 10 ranks.
 	- _Desert Runner_: elf ranger trades _animal companion_ for increased speed, bonus on AC, and Concentration checks while in elf run state. Bonus and speed increases every 3 levels after that.
@@ -187,7 +208,9 @@
 	- _Procurer_: elf bard trades streetsmart for +5 in Search checks to find secret doors.
 	- _Flexibility Adjustment_: gladiator gives up improvement on armor bonus to improve maximum Dexterity bonus.
 	- _Lighten Load_: gladiator trades first armor optimization to treat armor as one category lighter, if he's proficient with it.
-	- _Auditor_: psion gives up 
+	- _Auditor_: psion gives up bonus feats for contacts.
+	- _Savage Hunter_: elf fighter trades bonus feat for Track and adds Survival as class skill.
+	- _Arcane Assassin_: rogue trades special ability to not let spellcasters cast defensively while flanked by him.
 - Change Jaguar Knight: _Smoking Mirror_ to _Slippery Mind_, since it is the same ability.
 - Change Jaguar Knight: _Jaguar Strike_ to _Improved Power Attack_, since it is the same ability.
 - Change wording on _Jaguar Roar_ to match existing abilities.
@@ -442,3 +465,32 @@
 	- Grant immunity to deceases as well, at 10th level.
 	- Change skills per level to 6 + Int modifier.
 - Change Survival modifiers per fertility: instead of one table with modifiers, there are two tables. One for endure the elements, and another for get along in the wild. The number of points you need in excess to give bonus to another person increases with the difficulty of the terrain.
+- Change rogue's special abilities:
+	- Remove dune trader, looter's luck, notoriety.
+	- Change false vulnerability to have advantage in the Bluff check, and change wording since prone removes AC instead of giving attack bonus to opponents.
+	- Add Infiltrator: roll Bluff, Disguise and Forgery with advantage for the first time trying to impersonate.
+	- Add Psionic Harrier: flanked manifesters can't manifest defensively.
+	- Change Silver Tongue: you may reroll one skill with disadvantage (Bluff, Diplomacy, Disguise or Intimidate). You can select multiple times, one for each skill.
+	- Add Thief's Luck: reroll one failed attack, skill check, ability check, or saving throw 1/day. You can select multiple times, +1/day each time.
+	- Add Trap Sense: if you pass within 1.5 m of a trap, you are entitled to a Search check.
+- Add bard special abilities:
+	- Removed defensive roll and slippery mind.
+	- Added special abilities at 10th, 15th and 20th level.
+	- Limited list from rogue's abilities:
+		- Defensive roll
+		- Infiltrator
+		- Silver tongue
+		- Slippery mind
+- Add new cleric abilities:
+	- Sacrifice at 5th level: 2 damage per spell level to nullify defiling effects
+	- Combine casting at 7th level: two elemental clerics can cast spells from a paraelemental domain when the conditions are met.
+- Change the feat Greasing the Wheels to fit with the Dragon Kings' skill Bribe Official.
+- Add new multiclass feats:
+	- Arena Fighter: gladiator/fighter.
+	- Arena Performer: bard/gladiator.
+	- Arena Psionicist: gladiator/psychic warrior.
+	- Druidic Hunter: druid/ranger.
+	- Martial Performer: bard/fighter.
+	- Martial Psionicist: fighter/psychic warrior.
+	- Psychic Hunter: psychic warrior/ranger.
+	- Rogue Performer: bard/rogue.

@@ -48,7 +48,20 @@ Many skills can be used only by someone who is trained in them.
 \subsubsection{Favorable And Unfavorable Conditions}
 Some situations may make a skill easier or harder to use, resulting in a bonus or penalty to the skill modifier for a skill check or a change to the DC of the skill check.
 
+\Table{Favorable and Unfavorable Conditions}{Lc}{
+\tableheader Circumstance & \tableheader Effect in skill check \\
+1 condition that improves performance         & +2 circumstance bonus \\
+2 or more conditions that improve performance & Advantage \\
+1 condition that hampers performance          & $-2$ penalty \\
+2 or more conditions that hamper performance  & Disadvantage \\
+1 condition that make the task easier         & $-2$ DC\footnotemark[1] \\
+1 condition that make the task harder         & +2 DC\footnotemark[1] \\
+
+\TableNote{2}{1 These effects are cumulative for each different condition applicable.}\\
+}
+
 The chance of success can be altered in four ways to take into account exceptional circumstances.
+
 \begin{enumerate*}
 \item Give the skill user +2 circumstance bonus on the skill check to represent conditions that improve performance, such as having the perfect tool for the job, getting help from another character (see Combining Skill Attempts), or possessing unusually accurate information. If multiple conditions apply to the situation, give the skill user advantage on the skill check, no matter how many conditions apply.
 \item Give the skill user $-2$ circumstance bonus on the skill check to represent conditions that hamper performance, such as being forced to use improvised tools or having misleading information. If multiple conditions apply to the situation, give the skill user disadvantage on the skill check, no matter how many conditions apply.
@@ -67,11 +80,13 @@ A skill check represents an attempt to accomplish some goal, usually while under
 
 \textbf{Taking 10:} When your character is not being threatened or distracted, you may choose to take 10. Instead of rolling 1d20 for the skill check, calculate your result as if you had rolled a 10. For many routine tasks, taking 10 makes them automatically successful. Distractions or threats (such as combat) make it impossible for a character to take 10. In most cases, taking 10 is purely a safety measure---you know (or expect) that an average roll will succeed but fear that a poor roll might fail, so you elect to settle for the average roll (a 10). Taking 10 is especially useful in situations where a particularly high roll wouldn't help.
 
+\textit{Taking 10 with Advantage or Disadvantage:} Consider one of the dice as 10, roll the second die. Use the higher value if you have advantage, and use the lower value if you have disadvantage. For example, if you have disadvantage and roll a 17, you use the 10. If you instead have advantage, you use the 17.
+
 \textbf{Taking 20:} When you have plenty of time (generally 2 minutes for a skill that can normally be checked in 1 round, one full-round action, or one standard action), you are faced with no threats or distractions, and the skill being attempted carries no penalties for failure, you can take 20. In other words, eventually you will get a 20 on 1d20 if you roll enough times. Instead of rolling 1d20 for the skill check, just calculate your result as if you had rolled a 20.
 
 Taking 20 means you are trying until you get it right, and it assumes that you fail many times before succeeding. Taking 20 takes twenty times as long as making a single check would take.
 
-Since taking 20 assumes that the character will fail many times before succeeding, if you did attempt to take 20 on a skill that carries penalties for failure, your character would automatically incur those penalties before he or she could complete the task. Common ``take 20'' skills include Escape Artist, Open Lock, and Search.
+Since taking 20 assumes that the character will fail many times before succeeding, if you did attempt to take 20 on a skill that carries penalties for failure, your character would automatically incur those penalties before he or she could complete the task. Common ``take 20'' skills include \skill{Escape Artist}, \skill{Open Lock}, and \skill{Search}.
 
 \textbf{Ability Checks and Caster Level Checks:} The normal take 10 and take 20 rules apply for ability checks. Neither rule applies to caster level checks.
 
@@ -116,11 +131,12 @@ Knowledge (arcana) & Spellcraft checks\\
 ~ (local) & Gather Information checks\\
 ~ (nature) & Survival checks in aboveground natural environments\\
 ~ (nobility and royalty) & Diplomacy checks\\
-~ (psionics) & Psicraft\\
+~ (psionics) & Psicraft checks\\
 ~ (religion) & checks to turn or rebuke undead\\
 ~ (the planes) & Survival checks when on other planes\\
+~ (warcraft) & Diplomacy checks dealing with troops\\
 Open Lock & Disable Device checks\\
-Psicraft & Use Psionic Device checks involving power stones\\
+% Psicraft & Use Psionic Device checks involving power stones\\
 Ride & Handle Animal checks involving mounts\\
 Search & Survival checks when following tracks\\
 Sense Motive & Diplomacy checks\\
@@ -131,7 +147,7 @@ Tumble & Jump checks\\
 Use Magic Device & Appraise checks involving magic items\\
 Use Magic Device & Spellcraft checks to decipher scrolls\\
 Use Psionic Device & Appraise checks involving psionic items\\
-Use Psionic Device & Psicraft checks to address power stones\\
+% Use Psionic Device & Psicraft checks to address power stones\\
 Use Rope & Climb checks involving climbing ropes\\
 Use Rope & Escape Artist checks involving ropes
 }

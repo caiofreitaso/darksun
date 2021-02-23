@@ -28,8 +28,34 @@
 
 \Feat{Arena Clamor}
 {With your savage blows, you can make your companions give their best.}
-{Cha 13, \feat{Improved Critical}, Perform 5 ranks.}
+{Cha 13, \feat{Improved Critical}, \skill{Perform} (arena fighting) 5 ranks.}
 {Whenever you confirm a critical hit, all allies within a 18-meter radius who have line of sight on you receive a +2 morale bonus on attack rolls for 1 round. This is a mind-affecting effect. This effect is not cumulative. Characters cannot be affected more than once in this way in the same combat.}{}{}
+
+\GFeat{Arena Fighter}
+{Martial prowess, stance (arena guile).}
+{
+Your gladiator and fighter levels stack for the purpose of determining your bonus from any martial prowess technique. For example, a 5th-level gladiator/7th-level fighter with bravery and tortoise style would gain +6 on Will saves against mind-affecting abilities and would improve the shield bonus by 3, as if he was a 12th-level fighter.
+
+Your gladiator and fighter levels also stack for the purpose of determining which stances you have access to. For example, a 5th-level gladiator/7th-level fighter would have access to keen eye and scoundrel pose, as if he was a 12th-level gladiator.
+}
+
+\GFeat{Arena Performer}
+{Bardic music, gladiatorial performance.}
+{
+Your bard and gladiator levels stack for the purpose of determining your bonus from inspire courage. For example, a 3rd-level bard/5th-level gladiator would give +2 morale bonus with inspire courage, as if she were an 8th-level bard.
+
+Your bard and gladiator levels also stack for the purpose of determining the bonus and penalties from dirty trick. For example, a 3rd-level bard/5th-level gladiator could give +2 morale bonus or -2 morale penalty with dirty trick, as if she were an 8th-level gladiator.
+
+Additionally, you may expend a bardic music daily use to start a gladiatorial performance, and you may use \skill{Perform} (arena fighting) to start a bardic music.
+}
+
+\GFeat{Arena Psionicist}
+{Gladiatorial performance, psychic warrior level 1st.}
+{
+Your gladiator and psychic warrior levels stack for the purpose of determining which gladiatorial performances you have access. For example, a 8th-level gladiator/1st-level psychic warrior would have access to shake off, as if he was a 9th-level gladiator.
+
+Your gladiator and psychic warrior levels also stack for the purpose of determining your manifester level. For example, a 8th-level gladiator/1st-level psychic warrior with a Wisdom score of 16 would have 13 additional power points from his ability score and could spend 9 power points in a single psionic power, as if he was a 9th-level psychic warrior.
+}
 
 \Feat{Armor Proficiency (Heavy)}
 {}
@@ -64,12 +90,10 @@
 
 \Feat{Brutal Attack}
 {Your decisive attacks are especially frightening for those who watch.}
-{Cha 13, \feat{Improved Critical}, \skill{Perform} 5 ranks.}
-{Whenever you confirm a critical hit, all enemies within a 3-meter radius who have line of sight on you must make a Will save (DC 10 + \onehalf your character level + your Cha modifier) or become shaken for a
-number of rounds equal to your Cha modifier. This is a mind-affecting fear effect.
+{Cha 13, \feat{Improved Critical}, \skill{Perform} (arena fighting) 5 ranks.}
+{Whenever you confirm a critical hit, all enemies within a 3-meter radius who have line of sight on you must make a Will save (DC 10 + \onehalf your character level + your Cha modifier) or become shaken for a number of rounds equal to your Cha modifier. This is a mind-affecting fear effect.
 
-Whether or not the save is successful, that creature cannot be affected again by the same character's brutal
-attack for 24 hours.}{}{}
+Whether or not the save is successful, that creature cannot be affected again by the same character's brutal attack for 24 hours.}{}{}
 
 \Feat{Bug Trainer}
 {You can train vermin creatures, such as kanks and cilops.}
@@ -142,6 +166,13 @@ When using this feat, you can take either a single move or standard action each 
 {Str 13, Wis 13.}
 {You get a +1 bonus to Will saves and a +1 bonus to Fortitude saves. You gain an additional +1 bonus to saving throws against ability drain, ability damage, energy drain, and death effects.}
 {}{}
+
+\GFeat{Druidic Hunter}
+{Animal companion, wild shape.}
+{
+Your druid and ranger levels stack for the purpose of determining your effective ranger level for the purpose of determining the bonus Hit Dice, extra tricks, special abilities, and other bonuses that your animal companion receives. For example, a 5th-level druid/4th-level ranger's animal companion would gain +4 HD and have a total of 3 bonus tricks, as if he was a 9th-level ranger.
+}
+
 
 \Feat{Elemental Cleansing}
 {Undead you turn or rebuke suffer elemental damage.}
@@ -229,30 +260,35 @@ The benefit of this feat applies only to psionic powers and psi-like abilities. 
 {Cha 13, \skill{Diplomacy} 7 ranks, \skill{Knowledge} (local) 5 ranks.}
 {This feat grants a new use for the \skill{Diplomacy} skill. You must share a language with a creature in order to use this option. This option cannot be used during combat.
 
-\textit{Bribery Etiquette:} You can discern the timing of the offer, the amount that will most likely garner the wanted reaction, and the best way to disguise the bribe so that it doesn't draw attention from unwanted witnesses. An insulted character will have his attitude changed one step for the worse and might report you to the proper authorities (this can be negated by a successful \skill{Diplomacy} check, albeit with a $-10$ penalty).
+% \textit{Bribery Etiquette:} You can discern the timing of the offer, the amount that will most likely garner the wanted reaction, and the best way to disguise the bribe so that it doesn't draw attention from unwanted witnesses. An insulted character will have his attitude changed one step for the worse and might report you to the proper authorities (this can be negated by a successful \skill{Diplomacy} check, albeit with a $-10$ penalty).
 
-To bribe a character, you must give him a number of ceramic pieces (in coins, items or other valuables) as
-shown below.
+% To bribe a character, you must give him a number of ceramic pieces (in coins, items or other valuables) as shown below.
 
-\Table{}{X c}{
-\tableheader Bribery Target & \tableheader Cp Needed\\
-Bouncer & 4 cp\\
-Informant & 5 cp\\
-Templar or guard, low-level (1--4) & 12 cp\\
-Templar or guard, mid-level (5--8) & 20 cp\\
-Templar or guard, high-level (9+) & 30 cp
+\textit{Bribe Official:} You can discern the timing of the offer, the amount that will most likely garner the wanted reaction, and the best way to disguise the bribe so that it doesn't draw attention from unwanted witnesses.
+
+You can help a \skill{Diplomacy} check to improve an NPC attitude by bribing. To determine the amount of ceramic pieces, roll the base bribe described in the table below and multiply it by the target DC (see \tabref{Diplomacy DCs}).
+
+\Table{}{l R}{
+\tableheader NPC station & \tableheader Base Bribe\\
+Peasant or slave    &  2d4 cp\\
+Freeman or soldier  &  3d8 cp\\
+Merchant or officer & 5d10 cp\\
+Noble or general    & 5d10 $\times$ 10 cp\\
+% Templar or guard, low-level (1--4) & 12 cp\\
+% Templar or guard, mid-level (5--8) & 20 cp\\
+% Templar or guard, high-level (9+) & 30 cp
 }
 
 Several factors can affect the amount needed to bribe a character, but the DM may modify these values as he sees fit.
 
 \Table{}{X c}{
-\tableheader Background & \tableheader Cp Modifier\\
-Renown & $-2$\\
+\tableheader PC Background & \tableheader Bribe Modifier\\
+Renown             & $-2$\\
 Illegal profession & +5\\
-PC is wanted & $\times2$\\
-Slave & +2\\
-Noble & $-2$\\
-Templar & $-5$
+PC is wanted       & $\times2$\\
+Slave              & +2\\
+Noble              & $-2$\\
+Templar            & $\times$\onehalf\\
 }
 }{}{}
 
@@ -282,8 +318,10 @@ Templar & $-5$
 \Feat{Hard as Rock}
 {You are resolute while fighting and particularly tough to kill.}
 {Con 15, \feat{Diehard}, \feat{Endurance}.}
-{You are immune to death from massive damage. Furthermore, you have a 30\% chance per round of becoming stable on your own when you are dying and a 30\% chance per hour of regaining consciousness.}
-{The chance of becoming stable on your own is 10\% per round and regaining consciousness is 10\% per hour.}{}
+{You are immune to death from massive damage.
+
+You can use your Constitution modifier in place of your Dexterity modifier on Reflex saves.}
+{}{}
 
 \Feat{Hostile Mind}
 {Your mind recoils violently against those who use psionics against you.}
@@ -483,6 +521,24 @@ Caused the death of other followers & $-1$
 {Speak Language is a class skill to you. You can also speak 2 additional languages.}{}
 {This feat must be selected at 1st level.}
 
+\GFeat{Martial Performer}
+{Bardic music, martial prowess.}
+{
+Your bard and fighter levels stack for the purpose of determining your bonus from any martial prowess technique. For example, a 4th-level bard/8th-level fighter with bravery and tortoise style would gain +6 on Will saves against mind-affecting abilities and would improve the shield bonus by 3, as if he was a 12th-level fighter.
+
+Your bard and fighter levels also stack for the purpose of determining the bonuses given by inspire courage. For example, a 4th-level bard/8th-level fighter would give +2 morale bonus with inspire courage, as if he was a 12th-level bard.
+
+Additionally, you may forgo your attack with the lowest base attack bonus in a total attack to start or concentrate on a bardic music.
+}
+
+\GFeat{Martial Psionicist}
+{Martial prowess, psychic warrior level 1st.}
+{
+Your fighter and psychic warrior levels stack for the purpose of determining your bonus from any martial prowess technique. For example, a 5th-level fighter/1st-level psychic warrior with tortoise style would improve the shield bonus by 3, as if he was a 6th-level fighter.
+
+Your fighter and psychic warrior levels also stack for the purpose of determining your manifester level. For example, a 5th-level fighter/1st-level psychic warrior with a Wisdom score of 16 would have 9 additional power points from his ability score and could spend 6 power points in a single psionic power, as if he was a 6th-level psychic warrior.
+}
+
 \Feat{Martial Weapon Proficiency}
 {Choose a type of martial weapon. You understand how to use that type of martial weapon in combat.}
 {}
@@ -561,6 +617,14 @@ You can also use any material components or focuses you possess, even if such it
 {A character can have one favored class.}
 {This feat must be selected at 1st level.}
 
+\GFeat{Psychic Hunter}
+{Favored enemy, psychic warrior level 1st.}
+{
+Your ranger and psychic warrior levels stack for the purpose of determining your manifester level. For example, a 5th-level ranger/1st-level psychic warrior with a Wisdom score of 16 would have 9 additional power points from his ability score and could spend 6 power points in a single psionic power, as if he was a 6th-level psychic warrior.
+
+As a swift action, you can sacrifice any number of power points (up to a maximum equal to your manifester level) to add a bonus to your attack and damage rolls against a favored enemy. This bonus is equal to half that number.
+}
+
 \Feat{Quicken Spell-Like Ability}
 {}
 {Spell-like ability at caster level 10th or higher.}
@@ -592,6 +656,14 @@ In addition, a spell-like ability that duplicates a spell with a casting time gr
 \GFeat{Reign of Terror}
 {Raam, \skill{Intimidate} 5 ranks.}
 {You gain a +4 bonus on \feat{Secular Authority} checks.}
+
+\GFeat{Rogue Performer}
+{Bardic music, sneak attack +2d6.}
+{
+Your bard and rogue levels stack for the purpose of determining the number of times per day that you can use your bardic music. For example, a 3rd-level bard/5th-level rogue could use her bardic music 8 times per day, as if she were an 8th-level bard.
+
+Your bard and rogue levels stack for the purpose of determining your sneak attack bonus damage. For example, a 3rd-level bard/5th-level rogue would deal an extra 4d6 points of damage with her sneak attack, as if she were an 8th-level rogue.
+}
 
 \Feat{Run}
 {}{}

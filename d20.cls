@@ -39,6 +39,7 @@
 \RequirePackage{imfellEnglish}
 \RequirePackage[table]{xcolor}
 \RequirePackage[outline]{contour}
+\RequirePackage[titletoc]{appendix}
 
 % #####  Color Palette by Paletton.com
 % #####  Palette URL: http://paletton.com/#uid=6060u0kvlhX8XuSn+ozNxau+L1g
@@ -99,6 +100,7 @@
 \newcommand{\psionicitem}[1]{\emph{\hyperref[psionicitem:#1]{#1}}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
 \newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter: #1}}
+\newcommand{\apxref}[1]{\hyperref[apx:#1]{Appendix: #1}}
 
 
 % Table of Contents
@@ -198,7 +200,7 @@
 \renewcommand\section{
 	\@startsection{section}
 	{1}
-	{0pt}{1em}{0.01em}{\color{ChapterColor}\LARGE\scshape\raggedleft\imfellEnglish}
+	{0pt}{1em}{0.01em}{\raggedleft\color{ChapterColor}\LARGE\scshape\imfellEnglish}
 }
 \renewcommand\subsection{\@startsection{subsection}%
 	{2}%
@@ -212,9 +214,9 @@
 	{3}
 	{0pt}{.7em}{0.01em}{\color{SubsectionColor}\large\imfellEnglish}*
 }
-\newcommand{\Class}[3]{
-	\section{#1}\label{class:#1}
-	\Quote{#2}{#3}
+\newcommand{\Class}[4][\section]{
+	#1{#2}\label{class:#2}
+	\Quote{#3}{#4}
 }
 \newcommand{\Skill}[2]{\subsectionA[#1]{#1 \normalsize(#2)} \label{skill:#1}}
 \newcommand{\Feat}[7][General]{
@@ -235,32 +237,36 @@
 	\fi
 }
 \newcommand{\GFeat}[4][General]{\Feat[#1]{#2}{}{#3}{#4}{}{}}
-\newcommand{\PrestigeClass}[7]{
-	\Class{#1}{#2}{#3}
-
-	#4
-
-	\textbf{Hit Die:} #5.
-
-	\subsection{Becoming #6 #1}
-	#7
-	\PrestigeClassRules{#1}{#6}
+\newcommand{\PrestigeClass}[1][\section]{
+	\def\PCsection{#1}
+	\PrestigeClassHeader
 }
-\newcommand{\PrestigeClassRules}[8]{
-	#6{The #1}{#7}
+\newcommand{\PrestigeClassHeader}[8][\subsection]{
+	\Class[\PCsection]{#2}{#3}{#4}
 
-	\subsection{Entry Requirements}
-	\noindent To qualify to become #2 \lowercase{#1}, a character must fufill all the following criteria.
+	#5
 
-	#3
-	\subsection{Class Skills}
-	#4
+	\textbf{Hit Die:} #6.
 
-	\textbf{Skill Points per Level:} #5 + Int modifier.
-	
-	\subsection{Class Features}
+	#1{Becoming #7 #2}
 	#8
-	% \PrestigeClassLore{#1}
+	\PrestigeClassRules{#1}{#2}{#7}
+}
+\newcommand{\PrestigeClassRules}[9]{
+	#7{The #2}{#8}
+
+	#1{Entry Requirements}
+	\noindent To qualify to become #3 \lowercase{#2}, a character must fufill all the following criteria.
+
+	#4
+	#1{Class Skills}
+	#5
+
+	\textbf{Skill Points per Level:} #6 + Int modifier.
+	
+	#1{Class Features}
+	#9
+	% \PrestigeClassLore{#2}
 }
 \newcommand{\PrestigeClassLore}[6]{
 	\subsection{#1 Lore}
@@ -436,7 +442,7 @@
 		#2
 	\end{tabular}
 }
-\newcommand{\WarriorTable}[3][l l C C C l]{
+\newcommand{\WarriorTable}[3][ll *{3}{Z{15mm}} L]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
@@ -475,24 +481,36 @@
 	\MiniWarriorTable[l b{7mm} *{3}{Z{5mm}} L]{#1}{#2}
 }
 
-\newcommand{\SpellcasterTable}[3]{
-	\BigTablePair{#1}{l l *{3}{Z{5mm}} L *{10}{Z{#2}} }{
+\newcommand{\SpellcasterTable}[4][10]{
+	\BigTablePair{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
 		\rowcolor{white}
-		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{10}{c}{\tableheader Spells per day}\\
-		\cmidrule[0.5pt]{7-16}
-		&&&&&& \tableheader 0 & \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 & \tableheader 5 & \tableheader 6 & \tableheader 7 & \tableheader 8 & \tableheader 9 \\
-		#3
+		\multirow[b]{2}{0.6cm}{\tableheader Level}
+		& \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus}
+		& \multirow[b]{2}{0.6cm}{\tableheader Fort Save}
+		& \multirow[b]{2}{0.6cm}{\tableheader Ref Save}
+		& \multirow[b]{2}{0.6cm}{\tableheader Will Save}
+		& \multirow[b]{2}{*}{\tableheader Special}
+		& \multicolumn{#1}{c}{\tableheader Spells per day}\\
+		\cmidrule[0.5pt]{7-\Sum{6}{#1}}
+		#4
 	}
 }
-\newcommand{\HalfSpellcasterTable}[3][1cm]{
-	\BigTablePair{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
-		\rowcolor{white}
-		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
-		\cmidrule[0.5pt]{7-10}
-		&&&&&& \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 \\
-		#3
-	}
+\newcommand{\Sum}[2]{\number\numexpr #1+#2\relax}
+\newcommand{\SpellLevelHeaderRec}[2]{
+& \tableheader #1 \ifnum#1<#2 \expandafter\SpellLevelHeaderRec\expandafter{\Sum{#1}{1}}{#2}\fi%
 }
+\newcommand{\SpellHeader}[2][0]{
+&&&&& \SpellLevelHeaderRec{#1}{#2}
+}
+% \newcommand{\HalfSpellcasterTable}[3][1cm]{
+% 	\BigTablePair{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
+% 		\rowcolor{white}
+% 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
+% 		\cmidrule[0.5pt]{7-10}
+% 		&&&&&& \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 \\
+% 		#3
+% 	}
+% }
 \newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\

@@ -4,10 +4,10 @@ DMs use adventures to offer a number of challenges (or encounters) for the chara
 
 \Table{Paces of Campaign}{X R R}{
 \tableheader Pace of Campaign & \tableheader Encounters per Level & \tableheader Sessions per Level\\
-Rushed & 5 encounters & 1 session \\
-Fast & 10 encounters & 2 sessions \\
+Rushed  &  5 encounters & 1 session \\
+Fast    & 10 encounters & 2 sessions \\
 Default & 12 encounters & 3 sessions \\
-Slow & 15 encounters & 4 sessions \\
+Slow    & 15 encounters & 4 sessions \\
 Dragged & 20 encounters & 5+ sessions \\
 }
 
@@ -17,18 +17,18 @@ If your group would rather use a traditional leveling system via XP, you can use
 
 \Table{Traditional Experience and Wealth}{lRRR}{
 \tableheader ECL & \tableheader Total XP & \tableheader XP for next level & \tableheader Wealth\\
-1 & --- & 1,500 & 3d4 $\times$ 10 cp\\
-2 & 1,500 & 3,000 & 600 cp\\
-3 & 4,500 & 4,500 & 1,500 cp\\
-4 & 9,000 & 6,000 & 3,000 cp\\
-5 & 15,000 & 7,500 & 6,000 cp\\
-6 & 22,500 & 9,000 & 9,000 cp\\
-7 & 31,500 & 10,500 & 12,000 cp\\
-8 & 42,000 & 12,000 & 18,000 cp\\
-9 & 54,000 & 13,500 & 24,000 cp\\
-10 & 67,500 & 15,000 & 30,000 cp\\
-11 & 82,500 & 16,500 & 42,000 cp\\
-12 & 99,000 & 18,000 & 54,000 cp\\
+1  &         &  1,500 & 3d4 $\times$ 10 cp\\
+2  &   1,500 &  3,000 & 600 cp\\
+3  &   4,500 &  4,500 & 1,500 cp\\
+4  &   9,000 &  6,000 & 3,000 cp\\
+5  &  15,000 &  7,500 & 6,000 cp\\
+6  &  22,500 &  9,000 & 9,000 cp\\
+7  &  31,500 & 10,500 & 12,000 cp\\
+8  &  42,000 & 12,000 & 18,000 cp\\
+9  &  54,000 & 13,500 & 24,000 cp\\
+10 &  67,500 & 15,000 & 30,000 cp\\
+11 &  82,500 & 16,500 & 42,000 cp\\
+12 &  99,000 & 18,000 & 54,000 cp\\
 13 & 117,000 & 19,500 & 66,000 cp\\
 14 & 136,500 & 21,000 & 90,000 cp\\
 15 & 157,500 & 22,500 & 114,000 cp\\
@@ -36,7 +36,7 @@ If your group would rather use a traditional leveling system via XP, you can use
 17 & 204,000 & 25,500 & 186,000 cp\\
 18 & 229,500 & 27,000 & 234,000 cp\\
 19 & 256,500 & 28,500 & 282,000 cp\\
-20 & 285,000 & --- & 370,000 cp\\
+20 & 285,000 &        & 378,000 cp\\
 }
 
 \subsubsection{Level-Dependent Benefits}
@@ -46,28 +46,38 @@ Besides the bonuses given by their character classes, all characters gain additi
 
 \textbf{Ability Score Increase:} At 4th level and every 4 levels thereafter, the player chooses one of their character's ability scores to increase by 1 point. This improvement is permanent.
 
-\Table{Level-Dependent Benefits}{X C C}{
-\tableheader Character Level & \tableheader Feat & \tableheader Ability Score Increase\\
-1 & 1st & \\
-2 & & \\
-3 & 2nd & \\
-4 & & 1st \\
-5 & & \\
-6 & 3rd & \\
-7 & & \\
-8 & & 2nd \\
-9 & 4th & \\
-10 & & \\
-11 & & \\
-12 & 5th & 3rd \\
-13 & & \\
-14 & & \\
-15 & 6th & \\
-16 & & 4th \\
-17 & & \\
-18 & 7th & \\
-19 & & \\
-20 & & 5th \\
+\textbf{Class Skill Max Ranks:} The maximum number of ranks a character can have in a class skill is equal to their character level +3.
+
+\textbf{Cross-Class Skill Max Ranks:} For cross-class skills, the maximum number of ranks is one-half the maximum for a class skill.
+
+\Table{Level-Dependent Benefits}{lccCC}{
+\multirow[b]{2}{11mm}{\tableheader Character Level}
+& \multirow[b]{2}{5mm}{\centering \tableheader Feat}
+& \multirow[b]{2}{15mm}{\centering \tableheader Ability Score\\Increase}
+& \multicolumn{2}{c}{\tableheader Max Ranks}\\
+\cmidrule[0.5pt]{4-5}
+&&& \tableheader Class Skill & \tableheader Cross-Class Skill\\
+
+ 1 & 1st &     &  4 & 2          \\
+ 2 &     &     &  5 & 2\onehalf  \\
+ 3 & 2nd &     &  6 & 3          \\
+ 4 &     & 1st &  7 & 3\onehalf  \\
+ 5 &     &     &  8 & 4          \\
+ 6 & 3rd &     &  9 & 4\onehalf  \\
+ 7 &     &     & 10 & 5          \\
+ 8 &     & 2nd & 11 & 5\onehalf  \\
+ 9 & 4th &     & 12 & 6          \\
+10 &     &     & 13 & 6\onehalf  \\
+11 &     &     & 14 & 7          \\
+12 & 5th & 3rd & 15 & 7\onehalf  \\
+13 &     &     & 16 & 8          \\
+14 &     &     & 17 & 8\onehalf  \\
+15 & 6th &     & 18 & 9          \\
+16 &     & 4th & 19 & 9\onehalf  \\
+17 &     &     & 20 & 10         \\
+18 & 7th &     & 21 & 10\onehalf \\
+19 &     &     & 22 & 11         \\
+20 &     & 5th & 23 & 11\onehalf \\
 }
 
 \input{subsections/classes/character-progress/gaining-experience.tex}
