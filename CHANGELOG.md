@@ -1,4 +1,4 @@
-# CHANGELOG
+-33# CHANGELOG
 
 ## SRD
 - Remove all mentions to sorcerer.
@@ -88,6 +88,8 @@
 	- When more than one penalty of circumstance applies, use disadvantage instead.
 	- Aid another gives advantage on attack rolls or skill checks, or disadvantage on enemy's next attack roll.
 	- Flanking gives advantage on attack rolls.
+	- Attacking while prone gives disadvantage to melee attack rolls.
+	- Squeezing through a space gives disadvantage to any attack roll.
 	- Not being proficient gives disadvantage on that weapon's attack rolls.
 	- Bull rush rolls get advantage after a charge, or if the defender has more than two legs or is exceptionally stable.
 	- Two-handed weapons give advantage on disarm and sunder rolls.
@@ -144,6 +146,15 @@
 	- Instead of having no cap for epic levels, epic levels are from 21th to 30th levels.
 	- Completely revamped rules about BAB and saves.
 	- Added base classes progression based on Dragon Kings and Epic Level feats.
+- Removed Psychic Warrior and Wilder
+- Changed Psion: Key ability for DC and to learn/manifest powers depend on discipline:
+	- *Psychometabolism:* Constitution
+	- *Psychoportation:* Constitution
+	- *Psychokinesis:* Intelligence
+	- *Metacreativity:* Intelligence
+	- *Clairscience:* Wisdom
+	- *Telepathy:* Wisdom
+- Changed War Mind: Increased progression up to 12th level (for 6th-level psionic powers).
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
@@ -488,9 +499,9 @@
 - Add new multiclass feats:
 	- Arena Fighter: gladiator/fighter.
 	- Arena Performer: bard/gladiator.
-	- Arena Psionicist: gladiator/psychic warrior.
+	<!-- - Arena Psionicist: gladiator/psychic warrior. -->
 	- Druidic Hunter: druid/ranger.
 	- Martial Performer: bard/fighter.
-	- Martial Psionicist: fighter/psychic warrior.
-	- Psychic Hunter: psychic warrior/ranger.
+	<!-- - Martial Psionicist: fighter/psychic warrior. -->
+	<!-- - Psychic Hunter: psychic warrior/ranger. -->
 	- Rogue Performer: bard/rogue.
