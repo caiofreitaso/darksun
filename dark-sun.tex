@@ -25,12 +25,12 @@
 \newcommand{\WOTC}{\par\textit{\small{\textcopyright} Wizards of the Coast.}}
 \makeatletter
 \@newtikzpagenode{chapter area}{%
-    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm}}%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-12mm}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
 }
 \@newtikzpagenode{line area}{%
-    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-7mm-1.5pt}}%
-    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top-7mm}}%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-12mm-1.5pt}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top-12mm}}%
 }
 \def\@makechapterhead#1{%
   {
@@ -38,10 +38,11 @@
     \begin{tikzpicture}[remember picture,overlay]
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
       \fill[black] (line area.north west) rectangle (line area.south east);
-      \node[rotate=180,anchor=north] at (0,0.15) { \includegraphics[width=8cm]{images/chapter.png} };
-      \node[anchor=north] at (0,2.4) { \color{white}\imfellEnglish\Large\@chapapp\space\thechapter };
+      \node[rotate=180,anchor=north] at (0,-0.35) { \includegraphics[width=8cm]{images/chapter.png} };
+      \node[anchor=north] at (0,1.85) { \color{white}\imfellEnglish\Large\@chapapp\space\thechapter };
     \end{tikzpicture}
 
+    \vskip5mm
     \imfellEnglish\color{ChapterColor}%
     % \begin{tabular}{p{25mm}r{\textwidth-25mm}}
     \begin{tabular}{Z{\textwidth}}
@@ -69,16 +70,26 @@
 \newcommand\onehalf{\unichar{"00BD} }
 \newcommand\onequarter{\unichar{"00BC} }
 \newcommand\multiplied{\unichar{"00D7} }
+\newcommand\pagepdf[1]{
+{
+\clearpage
+\includepdf{#1}  
+}
+}
 \begin{document}
 \includepdf[pages=-]{credits-and-legal.pdf}
 
 \tableofcontents
 
+\pagepdf{images/color-wizard-1.pdf}
 \input{chapters/01-introduction.tex}
 \input{chapters/02-abilities.tex}
+\pagepdf{images/color-halfelf-1.pdf}
 \input{chapters/03-character-races.tex}
 \input{chapters/04-character-description.tex}
+\pagepdf{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
+\pagepdf{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
 \input{chapters/07-feats.tex}
 \input{chapters/08-prestige-classes.tex}
@@ -86,15 +97,21 @@
 \input{chapters/10-magic-items.tex}
 \input{chapters/12-spells.tex}
 \input{chapters/14-powers.tex}
+\pagepdf{images/color-cleric-1.pdf}
 \input{chapters/11-magic.tex}
+\pagepdf{images/color-psionics.pdf}
 \input{chapters/13-psionics.tex}
+\pagepdf{images/color-fighter-2.pdf}
 \input{chapters/15-combat.tex}
+\pagepdf{images/color-elf-1.pdf}
 \input{chapters/16-adventuring.tex}
 % campaign 17
+\pagepdf{images/color-tyr-1.pdf}
 \input{chapters/18-life-on-athas.tex}
 \input{chapters/19-organizations.tex}
 % planes
 % other ages
+\pagepdf{images/color-dragon-1.pdf}
 \input{chapters/22-epic-characters.tex}
 % epic chacracter
 % traps
@@ -105,8 +122,5 @@
 \input{appendices/01-changes-from-d20-system.tex}
 \end{appendices}
 
-{
-\clearpage
-\includepdf[pages=-]{ogl.pdf}
-}
+\pagepdf{ogl.pdf}
 \end{document}

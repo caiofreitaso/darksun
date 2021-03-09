@@ -14,20 +14,20 @@
 \ProcessOptions
 \if@twocolumn
 	\if@twoside
-	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,twoside]{book}
+	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,twoside]{extbook}
 	\else
-	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,oneside]{book}
+	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,oneside]{extbook}
 	\fi
 \else
 	\if@twoside
-	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,twoside]{book}
+	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,twoside]{extbook}
 	\else
-	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,oneside]{book}
+	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,oneside]{extbook}
 	\fi
 \fi
 
 \if@twoside
-\RequirePackage[outer=3cm,inner=2cm,top=2.5cm,bottom=3cm,asymmetric,twoside]{geometry}
+\RequirePackage[outer=2.5cm,inner=2cm,top=2cm,bottom=2.5cm,asymmetric,twoside]{geometry}
 \else
 \RequirePackage[left=2cm,right=2cm,top=2.5cm,bottom=3cm]{geometry}
 \fi
@@ -542,11 +542,17 @@
 	\rowcolors{0}{TableColor}{}
 	\scriptsize
 	\begin{tabularx}{\textwidth}{X r{9mm}r{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}r{9mm}r{9mm}r{9mm} p{2.1cm}}
+		\WeaponHeader{#2}\\
+		#3
+	\end{tabularx}
+	\end{table*}
+}
+\newcommand{\WeaponHeader}[1]{
 		\rowcolor{white}
 		& \multicolumn{2}{c}{\tableheader Cost} & \multicolumn{3}{c}{\tableheader Damage} && \multirow[b]{2}{1.1cm}{\centering \tableheader Range Increment}& \multicolumn{3}{c}{\tableheader Weight}&\\
 		\cmidrule[0.5pt]{2-6}
 		\cmidrule[0.5pt]{9-11}
-		\tableheader \footnotesize #2
+		\tableheader \footnotesize #1
 		& \tableheader S/M
 		& \tableheader L
 		& \tableheader S
@@ -557,10 +563,7 @@
 		& \tableheader S
 		& \tableheader M
 		& \tableheader L
-		& \tableheader Type\\
-		#3
-	\end{tabularx}
-	\end{table*}
+		& \tableheader Type
 }
 \newcommand{\NamedWeaponTable}[2]{\WeaponTable[#1]{#1}{#2}}
 \newcommand{\TableSubheader}[1]{\textit{--- #1 ---}}
