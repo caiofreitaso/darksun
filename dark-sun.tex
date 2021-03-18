@@ -63,50 +63,54 @@
     \end{tabular}
   }%
 }
-\makeatother
 \renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand\labelitemi{$\smallblackdiamond$}
 \newcommand\threequarters{\unichar{"00BE} }
 \newcommand\onehalf{\unichar{"00BD} }
 \newcommand\onequarter{\unichar{"00BC} }
+\newcommand\onethird{\unichar{"2153} }
 \newcommand\multiplied{\unichar{"00D7} }
-\newcommand\pagepdf[1]{
-{
-\clearpage
-\includepdf{#1}  
-}
-}
+\newcommand\blankpage{\clearpage\thispagestyle{empty}\mbox{}\clearpage}
+\newcommand\pagepdf{\@ifstar{\clearpage\includepdf}{\blankpage\includepdf}}
+\makeatother
 \begin{document}
 \includepdf[pages=-]{credits-and-legal.pdf}
 
 \tableofcontents
 
-\pagepdf{images/color-wizard-1.pdf}
+\pagepdf*{images/color-wizard-1.pdf}
 \input{chapters/01-introduction.tex}
 \input{chapters/02-abilities.tex}
 \pagepdf{images/color-halfelf-1.pdf}
 \input{chapters/03-character-races.tex}
+\pagepdf{images/color-psionics-2.pdf}
 \input{chapters/04-character-description.tex}
 \pagepdf{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
-\pagepdf{images/color-barbarian-1.pdf}
+\pagepdf*{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
+\pagepdf{images/color-mounted-1.pdf}
 \input{chapters/07-feats.tex}
+\pagepdf{images/color-halfelf-2-2.pdf}
 \input{chapters/08-prestige-classes.tex}
+\pagepdf*{images/color-market-1.pdf}
 \input{chapters/09-equipment.tex}
+\blankpage
 \input{chapters/10-magic-items.tex}
-\input{chapters/12-spells.tex}
-\input{chapters/14-powers.tex}
 \pagepdf{images/color-cleric-1.pdf}
 \input{chapters/11-magic.tex}
-\pagepdf{images/color-psionics.pdf}
+\blankpage
+\input{chapters/12-spells.tex}
+\pagepdf*{images/color-psionics.pdf}
 \input{chapters/13-psionics.tex}
-\pagepdf{images/color-fighter-2.pdf}
+\blankpage
+\input{chapters/14-powers.tex}
+\pagepdf*{images/color-fighter-2.pdf}
 \input{chapters/15-combat.tex}
-\pagepdf{images/color-elf-1.pdf}
+\pagepdf*{images/color-elf-1.pdf}
 \input{chapters/16-adventuring.tex}
 % campaign 17
-\pagepdf{images/color-tyr-1.pdf}
+\pagepdf*{images/color-tyr-1.pdf}
 \input{chapters/18-life-on-athas.tex}
 \input{chapters/19-organizations.tex}
 % planes
@@ -119,7 +123,8 @@
 
 \listoftables
 \begin{appendices}
-\input{appendices/01-changes-from-d20-system.tex}
+\input{appendices/01-monsters-of-athas.tex}
+\input{appendices/02-changes-from-d20-system.tex}
 \end{appendices}
 
 \pagepdf{ogl.pdf}

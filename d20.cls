@@ -34,6 +34,7 @@
 
 
 \RequirePackage{cuted,stfloats}
+\RequirePackage{setspace}
 \RequirePackage{lettrine}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
@@ -81,11 +82,22 @@
 
 % Font settings
 \renewcommand*\rmdefault{lmr}
+\newcommand\fixsize{
+\ifnum\f@size=5\fontsize{5.25pt}{5.125pt}
+\else\ifnum\f@size=7\fontsize{7.45pt}{7.175pt}
+\else\ifnum\f@size=8\fontsize{8.4pt}{8.2pt}
+\else\ifnum\f@size=9\fontsize{9.45pt}{9.225pt}
+\else\ifnum\f@size=10\fontsize{10.5pt}{10.25pt}
+\else\ifnum\f@size=12\fontsize{12.6pt}{12.3pt}
+\else\ifnum\f@size=14.4\fontsize{15.12pt}{14.76pt}
+\else\ifnum\f@size=17.28\fontsize{18.144pt}{17.712pt}
+\else\Huge
+\fi\fi\fi\fi\fi\fi\fi\fi}
 \newcommand\textold[1]{{\imfellEnglish\itshape #1}}
-\newcommand\tableheader{\imfellEnglish\scshape}
-\let\bold\bfseries
+\newcommand\tableheader{\imfellEnglish\scshape\fixsize}
+\newcommand\bold[1]{{\fontseries{bx}\selectfont #1}}
 \renewcommand\bfseries{\imfellEnglish\scshape}
-\renewcommand\textbf[1]{{\scshape\imfellEnglish #1}}
+\renewcommand\textbf[1]{{\fixsize\bfseries #1}}
 \renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
 
 % References
@@ -369,6 +381,74 @@
 		}
 	}
 }
+\newcommand{\MonsterStatsA}[9][]{
+	\ifx&#1&\else\textbf{#1}
+
+	\fi
+	\textbf{#2}
+
+	\textbf{Hit Dice:} #3
+
+	\textbf{Initiative:} #4
+
+	\textbf{Speed:} #5
+
+	\textbf{Armor Class:} #6
+
+	\textbf{Base Attack/Grapple:} #7
+
+	\textbf{Attack:} #8
+
+	\textbf{Full Attack:} #9
+
+	\MonsterStatsB
+}
+\newcommand{\MonsterStatsB}[7]{
+	\textbf{Space/Reach:} #1
+
+	\textbf{Special Attacks:} #2
+
+	\textbf{Special Qualities:} #3
+
+	\textbf{Saves:} #4
+
+	\textbf{Abilities:} #5
+
+	\textbf{Skills:} #6
+
+	\textbf{Feats:} #7
+
+	\MonsterStatsC
+}
+\newcommand{\MonsterStatsC}[7]{
+	\textbf{Environment:} #1
+
+	\textbf{Organization:} #2
+
+	\textbf{Challenge Rating:} #3
+
+	\textbf{Treasure:} #4
+
+	\textbf{Alignment:} #5
+
+	\textbf{Advancement:} #6
+
+	\textbf{Level Adjustment:} #7
+
+	\vskip.3em
+}
+\newenvironment{MonsterStats}
+{
+	\parskip0mm
+	\leftskip2.5mm
+	\parindent-2.5mm
+	\setstretch{1}
+	\small
+	\MonsterStatsA
+}
+{
+}
+
 % NPC functions
 
 % Table commands

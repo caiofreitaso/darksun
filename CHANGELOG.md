@@ -479,11 +479,11 @@
 - Change rogue's special abilities:
 	- Remove dune trader, looter's luck, notoriety.
 	- Change false vulnerability to have advantage in the Bluff check, and change wording since prone removes AC instead of giving attack bonus to opponents.
-	- Add Infiltrator: roll Bluff, Disguise and Forgery with advantage for the first time trying to impersonate.
-	- Add Psionic Harrier: flanked manifesters can't manifest defensively.
+	- Add **Infiltrator**: roll Bluff, Disguise and Forgery with advantage for the first time trying to impersonate.
+	- Add **Psionic Harrier**: flanked manifesters can't manifest defensively.
 	- Change Silver Tongue: you may reroll one skill with disadvantage (Bluff, Diplomacy, Disguise or Intimidate). You can select multiple times, one for each skill.
-	- Add Thief's Luck: reroll one failed attack, skill check, ability check, or saving throw 1/day. You can select multiple times, +1/day each time.
-	- Add Trap Sense: if you pass within 1.5 m of a trap, you are entitled to a Search check.
+	- Add **Thief's Luck**: reroll one failed attack, skill check, ability check, or saving throw 1/day. You can select multiple times, +1/day each time.
+	- Add **Trap Sense**: if you pass within 1.5 m of a trap, you are entitled to a Search check.
 - Add bard special abilities:
 	- Removed defensive roll and slippery mind.
 	- Added special abilities at 10th, 15th and 20th level.
@@ -497,11 +497,12 @@
 	- Combine casting at 7th level: two elemental clerics can cast spells from a paraelemental domain when the conditions are met.
 - Change the feat Greasing the Wheels to fit with the Dragon Kings' skill Bribe Official.
 - Add new multiclass feats:
-	- Arena Fighter: gladiator/fighter.
-	- Arena Performer: bard/gladiator.
-	<!-- - Arena Psionicist: gladiator/psychic warrior. -->
-	- Druidic Hunter: druid/ranger.
-	- Martial Performer: bard/fighter.
-	<!-- - Martial Psionicist: fighter/psychic warrior. -->
-	<!-- - Psychic Hunter: psychic warrior/ranger. -->
-	- Rogue Performer: bard/rogue.
+	- **Arena Fighter:** gladiator/fighter.
+	- **Arena Performer:** bard/gladiator.
+	<!-- - **Arena Psionicist:** gladiator/psychic warrior. -->
+	- **Druidic Hunter:** druid/ranger.
+	- **Martial Performer:** bard/fighter.
+	<!-- - **Martial Psionicist:** fighter/psychic warrior. -->
+	<!-- - **Psychic Hunter:** psychic warrior/ranger. -->
+	- **Rogue Performer**: bard/rogue.
+- Change (Para)elemental Incarnation name to **(Para)element-touched**.
