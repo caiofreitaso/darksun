@@ -506,3 +506,17 @@
 	<!-- - **Psychic Hunter:** psychic warrior/ranger. -->
 	- **Rogue Performer**: bard/rogue.
 - Change (Para)elemental Incarnation name to **(Para)element-touched**.
+- Add Monster Races to Handbook.
+	- Change Hej-Kin:
+		- -4 Dexterity, +2 Wisdom, -2 Charisma.
+	- Change Scrab:
+		- +4 Intelligence, +2 Wisdom;
+		- Gives powers as a 5th-level psion;
+		- +5 natural armor;
+		- 5 HD;
+		- +3 LA.
+	- Change Silt Runner:
+		- -4 Intelligence, -2 Charisma;
+		- Base land speed 42 meters (48 yards or 140 feet).
+		- Add psi-like abilities: _anchored navigation_, _precognition_, _synesthete_.
+		- 2 claws (1d3), bite (1d6).

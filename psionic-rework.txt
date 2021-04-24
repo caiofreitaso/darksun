@@ -1,0 +1,130 @@
+PSIONIC REWORK
+
+-> Must be successful in an ABILITY CHECK (DC 11 + power level).
+	-> 1 is always failure. Spend power points without effects.
+	-> 20 is always success. Spend half of the power points.
+-> 3 successful psionic attacks allow use of other mind-affecting powers.
+
+
+ATTACKS & DEFENSES
+-> Psionic Defenses
+	-> Intellect Fortress
+	-> Mental Barrier
+	-> Thought Shield
+	-> Tower of Iron Will
+-> Psionic Attacks
+	-> Ego Whip
+	-> Id Insinuation
+	-> Mind Thrust
+	-> Psionic Blast
+	-> Psychic Crush
+
+    |  IF  |  MB  |  TS  | ToIW |
+----+----------------------------
+EW  |  -4  |  -3  |  +0  |  -3  |
+----+----------------------------
+II  |  -1  |  +4  |  +2  |  -3  |
+----+----------------------------
+MT  |  -4  |  -4  |  -2  |  -5  |
+----+----------------------------
+PB  |  -1  |  +0  |  +3  |  -2  |
+----+----------------------------
+PC  |  -3  |  -1  |  -3  |  -4  |
+----+----------------------------
+
+
+EGO WHIP
+Telepathy [Mind-Affecting]
+Level:            Psion/wilder 1
+Display:          Auditory
+Manifesting Time: 1 standard action
+Range:            Close (25 ft. + 5 ft./2 levels)
+Target:           One creature
+Duration:         1 round; see text
+Saving Throw:     Will negates
+Power Resistance: Yes
+Power Points:     1
+
+Dazed.
+IF CONTACT: Sickened for 1d4 rounds.
+
+Augment:
+	+2 pp: Increase range to Medium (2nd level)
+	+4 pp: Increase range to Long (3rd level)
+
+ID INSINUATION
+Telepathy (Compulsion) [Mind-Affecting]
+Level:            Psion/wilder 1
+Display:          Auditory
+Manifesting Time: 1 standard action
+Range:            Close (25 ft. + 5 ft./2 levels)
+Target:           One creature
+Duration:         1 round; see text
+Saving Throw:     Will negates
+Power Resistance: Yes
+Power Points:     1
+
+Dazed.
+IF CONTACT: Confused for 1d4 rounds.
+
+Augment:
+	+2 pp: Increase range to Medium (2nd level)
+	+4 pp: Increase range to Long (3rd level)
+
+MIND THRUST
+Telepathy [Mind-Affecting]
+Level:            Psion/wilder 1
+Display:          Auditory
+Manifesting Time: 1 standard action
+Range:            Close (25 ft. + 5 ft./2 levels)
+Target:           One creature
+Duration:         Instantaneous; see text
+Saving Throw:     Will negates
+Power Resistance: Yes
+Power Points:     1
+
+1d6 nonlethal damage.
+IF CONTACT: If target has psionic powers, it loses 1 random power known for 2d6 days.
+
+Augment:
+	+1 pp: +1d6 damage.
+	+2 pp: Increase range to Medium (2nd level)
+	+4 pp: Increase range to Long (3rd level)
+
+PSYCHIC CRUSH
+Telepathy [Mind-Affecting]
+Level:            Psion/wilder 1
+Display:          Auditory
+Manifesting Time: 1 standard action
+Range:            Close (25 ft. + 5 ft./2 levels)
+Target:           One creature
+Duration:         1 round
+Saving Throw:     Will negates
+Power Resistance: Yes
+Power Points:     1
+
+Dazzled.
+IF CONTACT: 1d8 damage.
+
+Augment:
+	+1 pp: +1d8 damage.
+
+PSIONIC BLAST
+Telepathy [Mind-Affecting]
+Level:            Psion/wilder 1
+Display:          Auditory
+Manifesting Time: 1 standard action
+Range:            Close (25 ft. + 5 ft./2 levels)
+Target:           One creature
+Duration:         1 round
+Saving Throw:     Fortitude negates
+Power Resistance: Yes
+Power Points:     1
+
+1d6 nonlethal damage.
+IF CONTACT: Disabled.
+
+Augment:
+	+1 pp: +1 round.
+	+2 pp: Increase range to Medium (2nd level)
+	+4 pp: Increase range to Long (3rd level)

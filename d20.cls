@@ -104,7 +104,8 @@
 \newcommand{\class}[1]{\hyperref[class:#1]{#1}}
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
-\newcommand{\spell}[1]{\emph{\hyperref[spell:#1]{#1}}}
+\newcommand{\spell}[1]{\spellref{#1}{#1}}
+\newcommand{\spellref}[2]{\emph{\hyperref[spell:#1]{#2}}}
 \newcommand{\spellList}[1]{\noindent\textit{\hyperref[spell:#1]{#1}}}
 \newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
 \newcommand{\psionicList}[1]{\noindent\textit{\hyperref[psionic:#1]{#1}}}
