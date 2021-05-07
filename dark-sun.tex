@@ -1,8 +1,10 @@
 \documentclass[twocolumn]{d20}
+\usepackage[utf8x]{inputenc}
 \usepackage{Nouveaud}
 \usepackage{ucs}
 \usepackage{multirow}
 \usepackage{fdsymbol}
+\usepackage{units}
 \usepackage{pdfpages}
 \usepackage{tikz}
 \usepackage{tikzpagenodes}
@@ -65,11 +67,17 @@
 }
 \renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand\labelitemi{$\smallblackdiamond$}
-\newcommand\threequarters{\unichar{"00BE} }
-\newcommand\onehalf{\unichar{"00BD} }
-\newcommand\onequarter{\unichar{"00BC} }
-\newcommand\onethird{\unichar{"2153} }
-\newcommand\multiplied{\unichar{"00D7} }
+\newcommand\oneeighth{\nicefrac{1}{8}}
+\newcommand\threequarters{\nicefrac{3}{4}}
+\newcommand\onehalf{\nicefrac{1}{2}}
+\newcommand\onequarter{\nicefrac{1}{4}}
+\newcommand\onethird{\nicefrac{1}{3}}
+% \newcommand\oneeighth{⅛}
+% \newcommand\threequarters{\unichar{"00BE}}
+% \newcommand\onehalf{\unichar{"00BD}}
+% \newcommand\onequarter{\unichar{"00BC}}
+% \newcommand\onethird{\unichar{"2153}}
+\newcommand\multiplied{\unichar{"00D7}}
 \newcommand\blankpage{\clearpage\thispagestyle{empty}\mbox{}\clearpage}
 \newcommand\pagepdf{\@ifstar{\clearpage\includepdf}{\blankpage\includepdf}}
 \makeatother

@@ -19,6 +19,7 @@ ATTACKS & DEFENSES
 	-> Psionic Blast
 	-> Psychic Crush
 
+ORIGINAL
     |  IF  |  MB  |  TS  | ToIW |
 ----+----------------------------
 EW  |  -4  |  -3  |  +0  |  -3  |
@@ -31,6 +32,24 @@ PB  |  -1  |  +0  |  +3  |  -2  |
 ----+----------------------------
 PC  |  -3  |  -1  |  -3  |  -4  |
 ----+----------------------------
+
+FINAL
+       3rd    1st    1st    5th
+    |  IF  |  MB  |  TS  | ToIW |
+----+----------------------------
+EW  |  -2  |  -2  |  +0  |  -3  |
+----+----------------------------
+II  |  +0  |  +2  |  +2  |  -3  |
+----+----------------------------
+MT  |  -2  |  -2  |  -2  |  -3  |
+----+----------------------------
+PB  |  +0  |  +0  |  +2  |  -3  |
+----+----------------------------
+PC  |  -2  |  +2  |  -2  |  -3  |
+----+----------------------------
+
+
+
 
 
 EGO WHIP
@@ -45,8 +64,7 @@ Saving Throw:     Will negates
 Power Resistance: Yes
 Power Points:     1
 
-Dazed.
-IF CONTACT: Sickened for 1d4 rounds.
+IF CONTACT: Dazed for 1 round. Sickened for 1d4 rounds.
 
 Augment:
 	+2 pp: Increase range to Medium (2nd level)

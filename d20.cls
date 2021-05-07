@@ -366,19 +366,25 @@
 		#4
 	\end{enumerate*}
 }
-\newcommand{\Spell}[5]{
-	\subsection{#1}
-	\label{spell:#1}
-	\label{spell:#2}
+\newcommand{\Spell}{
+	\PowerDescription{spell}
+}
+\newcommand{\Psionic}{
+	\PowerDescription{psionic}
+}
+\newcommand{\PowerDescription}[6]{
+	\subsection{#2}
+	\label{#1:#2}
+	\label{#1:#3}
 	{
 		{
 			\setlength\parindent{0pt}
-			#3\\
-			#4
+			#4\\
+			#5
 		}
 		\\
 		{
-			\noindent #5
+			\noindent #6
 		}
 	}
 }

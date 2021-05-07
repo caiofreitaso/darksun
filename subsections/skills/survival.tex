@@ -5,35 +5,57 @@ Survival does not allow you to follow difficult tracks unless you are a ranger o
 
 \Table{Survival DCs}{c X}{
 \tableheader Survival DC & \tableheader Task\\
-15 & Keep from getting lost or avoid natural hazards, such as quicksand.\\
+15 & Avoid natural hazards, such as quicksand.\\
 15 & Predict the weather up to 24 hours in advance. For every 5 points by which your Survival check result exceeds 15, you can predict the weather for one additional day in advance.\\
+Varies & Avoid getting lost (see \tabref{Avoid Getting Lost}).\\
 Varies & Endure the elements (see \tabref{Endure the Elements}).\\
 Varies & Get along in the wild (see \tabref{Get Along in the Wild}).\\
 Varies & Follow tracks (see the \feat{Track} feat).\\
+}
+
+\textit{Avoid Getting Lost:} If conditions exist that make getting lost a possibility, the character leading the way must succeed on a \skill{Survival} check or become lost. The difficulty of this check varies based on the terrain, the visibility conditions, and whether or not the character has a map of the area being traveled through. Refer to the table below and use the highest DC that applies.
+
+\Table{Avoid Getting Lost}{L c}{
+\tableheader Terrain Type & \tableheader Survival DC \\
+Forests                                                 & 17 \\
+Mountains, scrub plains                                 & 15 \\
+Boulder fields, rocky badlands, stone barrens           & 12 \\
+Mudflats, salt flat, sea of silt, swamp, verdant plains & 10 \\
+}
+
+\Table{Modifiers to Avoid Getting Lost}{Lc} {
+\tableheader Condition & \tableheader Survival DC Modifier \\
+Map       & $-4$ \\
+Duststorm & +4 \\
+Sandstorm & +6 \\
+Glare     & +2 \\
+Mist      & +2 \\
+Mirage    & +4 \\
+Trackless & +2 \\
 }
 
 \textit{Endure the Elements:} Gain a +2 bonus on all Fortitude saves against severe weather while moving up to one-half your overland speed, or gain a +4 bonus if you remain stationary. Use the DCs in \tabref{Endure the Elements}. You may grant the same bonus to one other character for every number of points in Extra Person Modifier by which your Survival check result exceeds the DC.
 
 \Table{Endure the Elements}{l X *{2}{Z{9mm}}}{
 \tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
-Abundant & Forests, oceans, gardens & 15 & 1 \\
-Fertile & Verdant plains, swamp, mudflats & 20 & 2 \\
-Infertile & Rocky badlands, scrub plains & 25 & 3 \\
-Barren & Boulder fields, stony barrens & 30 & 5 \\
-Desolate & Salt flats, sea of silt & 35 & 7 \\
-Void & Obsidian Plains & 40 & 10 \\
+Abundant  & Forests, oceans, gardens        & 15 & 1 \\
+Fertile   & Verdant plains, swamp, mudflats & 20 & 2 \\
+Infertile & Rocky badlands, scrub plains    & 25 & 3 \\
+Barren    & Boulder fields, stony barrens   & 30 & 5 \\
+Desolate  & Salt flats, sea of silt         & 35 & 7 \\
+Void      & Obsidian Plains                 & 40 & 10 \\
 }
 
 \textit{Get Along in the Wild:} Move up to one-half your overland speed while hunting and foraging (no food or water supplies needed). Terrain types affect the amount of food and water available through hunting and foraging. Use the DCs in \tabref{Get Along in the Wild}. You can provide food and water for one other person for every number of points in Extra Person Modifier by which your check result exceeds the DC.
 
 \Table{Get Along in the Wild}{l X *{2}{Z{9mm}}}{
 \tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
-Abundant & Forests, oceans, gardens & 10 & 2 \\
-Fertile & Verdant plains, swamp, mudflats & 15 & 3 \\
-Infertile & Rocky badlands, scrub plains & 20 & 5 \\
-Barren & Boulder fields, stony barrens & 25 & 7 \\
-Desolate & Salt flats, sea of silt & 30 & 10 \\
-Void & Obsidian Plains & 40 & 15 \\
+Abundant  & Forests, oceans, gardens        & 10 & 2 \\
+Fertile   & Verdant plains, swamp, mudflats & 15 & 3 \\
+Infertile & Rocky badlands, scrub plains    & 20 & 5 \\
+Barren    & Boulder fields, stony barrens   & 25 & 7 \\
+Desolate  & Salt flats, sea of silt         & 30 & 10 \\
+Void      & Obsidian Plains                 & 40 & 15 \\
 }
 
 \textbf{Accelerated Movement:} By accepting a $-30$ penalty on your Survival checks, you can move your full overland speed instead of one-half your overland speed.
