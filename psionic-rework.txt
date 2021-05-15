@@ -1,8 +1,9 @@
 PSIONIC REWORK
 
--> Must be successful in an ABILITY CHECK (DC 11 + power level).
+-> Must be successful in a SPECIAL ABILITY CHECK (use modifier * 1.5, DC 9 + power level).
 	-> 1 is always failure. Spend power points without effects.
 	-> 20 is always success. Spend half of the power points.
+	-> May expend psionic focus to take 10 at the test
 -> 3 successful psionic attacks allow use of other mind-affecting powers.
 
 
