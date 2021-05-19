@@ -600,7 +600,7 @@
 % }
 \newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Maximum Power Level Known \\
+		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Disciplines \\
 		#3
 	}
 }
