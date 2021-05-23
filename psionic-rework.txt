@@ -49,6 +49,39 @@ PB  |  +0  |  +0  |  +2  |  -3  |
 PC  |  -2  |  +2  |  -2  |  -3  |
 ----+----------------------------
 
+OK Clairsentience + Telepathy = Detect Psionics
+	> WATCHER'S WARD + MINDLINK
+Clairsentience + Psychokinesis = Reddopsi
+	> DANGER SENSE + 
+Clairsentience + Psychometabolism = Heightened Senses
+	> SYNESTHETE + 
+OK Clairsentience + Psychoportation = Teleport Trigger
+	> ANCHORED NAVIGATION + TELEPORT
+
+Psychokinesis + Telepathy = Create Psionic Item
+Psychokinesis + Psychometabolism = Null Psionics
+Psychokinesis + Psychoportation = Astral Construct
+	> ANIMATE OBJECT + 
+
+Psychometabolism + Telepathy = Mindlink, Thieving
+	> LIFE-DRAINING + MINDLINK
+Psychometabolism + Psychoportation = 
+
+Psychoportation + Telepathy = Apopsi
+	> DECEREBRATE + MINDLINK
+
+
+None:
+Metaconcert
+	> LEVEL 11 + THIEVING MINDLINK
+Psychic Surgery
+	> LEVEL 13
+Schism
+	> LEVEL 13 + PSYCHIC CHIURGERY
+Bend Reality
+	> LEVEL 16
+Reality Revision
+	> LEVEL 18 + BEND REALITY
 
 
 
