@@ -571,11 +571,11 @@
 \newcommand{\SpellcasterTable}[4][10]{
 	\BigTablePair{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
 		\rowcolor{white}
-		\multirow[b]{2}{0.6cm}{\tableheader Level}
+		\multirow[b]{2}{6mm}{\tableheader Level}
 		& \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus}
-		& \multirow[b]{2}{0.6cm}{\tableheader Fort Save}
-		& \multirow[b]{2}{0.6cm}{\tableheader Ref Save}
-		& \multirow[b]{2}{0.6cm}{\tableheader Will Save}
+		& \multirow[b]{-2}{5mm}{\tableheader Fort\\ Save}
+		& \multirow[b]{2}{5mm}{\tableheader Ref\\ Save}
+		& \multirow[b]{-2}{5mm}{\tableheader Will\\ Save}
 		& \multirow[b]{2}{*}{\tableheader Special}
 		& \multicolumn{#1}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-\Sum{6}{#1}}
