@@ -100,7 +100,7 @@
 	- Overrun and trip rolls get advantage if the defender has more than two legs or is exceptionally stable.
 - You can ready a swift action.
 - Change skills per level for some classes:
-	- Bard: 6 + Int modifier -> **8 + Int modifier**.
+	<!-- - Bard: 6 + Int modifier -> **8 + Int modifier**. -->
 	- Druid: 4 + Int modifier -> **2 + Int modifier**.
 	- Fighter: 2 + Int modifier -> **4 + Int modifier**.
 	- Psychic Warrior: 2 + Int modifier -> **4 + Int modifier**.
@@ -140,21 +140,22 @@
 	- A thousand faces: 13th -> **14th**;
 	- Timeless body: 15th -> **16th**;
 	- Removed elemental wild shape: druids can shape into vermins, instead. It uses two normal daily uses, instead of a different pool.
-- Decreased druid's number of spell slots after 15th level.
+- Decrease druid's number of spell slots after 15th level.
 - Add table for favorable and unfavorable conditions.
 - Add new chapter for epic rules
 	- Instead of having no cap for epic levels, epic levels are from 21th to 30th levels.
 	- Completely revamped rules about BAB and saves.
 	- Added base classes progression based on Dragon Kings and Epic Level feats.
-- Removed Psychic Warrior and Wilder
-- Changed Psion: Key ability for DC and to learn/manifest powers depend on discipline:
+- Remove Psychic Warrior and Wilder
+- Change Psion: Key ability for DC and to learn/manifest powers depend on discipline:
 	- *Psychometabolism:* Constitution
 	- *Psychoportation:* Constitution
 	- *Psychokinesis:* Intelligence
 	- *Metacreativity:* Intelligence
 	- *Clairscience:* Wisdom
 	- *Telepathy:* Wisdom
-- Changed War Mind: Increased progression up to 12th level (for 6th-level psionic powers).
+- Change War Mind: Increased progression up to 12th level (for 6th-level psionic powers).
+- Change Survival: new DCs and modifiers to avoid getting lost.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.

@@ -5,17 +5,45 @@ A Spot check result higher than 20 generally lets you become aware of an invisib
 
 Spot is also used to detect someone in disguise, and to read lips when you can't hear or understand what someone is saying.
 
-Spot checks may be called for to determine the distance at which an encounter begins. A penalty applies on such checks, depending on the distance between the two individuals or groups, and an additional penalty may apply if the character making the Spot check is distracted (not concentrating on being observant).
-
-\Table{Spot Check Penalties}{X C}{
-\tableheader Condition & \tableheader Penalty\\
-Per 3 meters of distance & $-1$\\
-Spotter distracted & $-5$
+\Table{Spot Penalties for Distance}{Xcl}{
+  \tableheader Condition
+& \tableheader Base DC
+& \tableheader Spot DC Modifier \\
+Spot moving target           & $-5$                & +1 per 54 m \\
+Spot still target            &   0                 & +1 per 45 m \\
+Identify race or affiliation &   0                 & +1 per 22.5 m \\
+Identify individual          &   5                 & +1 per 6 m \\
+Detect spellcasting          &  10 $-$ spell level & +1 per 3 m \\
+Read lips                    &  15                 & +1 per 3 m \\
+Spot details                 &  20                 & +1 per 1.5 m \\
 }
+
+\Table{Spot Check Modifiers}{X c}{
+\tableheader Condition & \tableheader Spot Check Modifier \\
+Spotter distracted & $-5$ \\
+Spotter unprotected from heavy light (lantern, daylight) & $-4$ \\
+Spotter knows the spotted creature & +5 \\
+}
+
+\textit{Spot Creature:} Spot checks may be called for to determine the distance at which an encounter begins. A penalty applies on such checks, depending on the distance between the two individuals or groups, and an additional penalty may apply if the character making the Spot check is distracted (not concentrating on being observant).
+
+Creatures larger or smaller than Medium that are not actively hiding change the Spot DC depending on their size: Fine +16, Diminutive +12, Tiny +8, Small +4, Large $-4$, Huge $-8$, Gargantuan $-12$, Colossal $-16$.
+
+Spotting the existence of moving targets is easier than knowing just the presence of a stationary creature.
+
+\emph{Identify race or affiliation:} You can identify which race the creature is with less ease than just knowing the presence of that creature. Identifying common races does not require additional checks, but identifying strange races require an appropriate \skill{Knowledge} check.
+
+You can also see the general shape of armor, weapons, emblems or banners to identify the affiliation of the creatures, be it a city, tribe, or merchant house. Identifying affiliation always require a \skill{Knowledge} (local) check.
+
+\emph{Identify individual:} You can identify a specific creature, such as the leader of raiders or a friend.
+
+\emph{Spot details:} You can spot tiny details in a creature, such as curious patterns on a snake's scales or the symbol of a merchant house in a bard's ring.
 
 \textit{Read Lips:} To understand what someone is saying by reading lips, you must be within 9 meters of the speaker, be able to see him or her speak, and understand the speaker's language. (This use of the skill is language-dependent.) The base DC is 15, but it increases for complex speech or an inarticulate speaker. You must maintain a line of sight to the lips being read.
 
 If your Spot check succeeds, you can understand the general content of a minute's worth of speaking, but you usually still miss certain details. If the check fails by 4 or less, you can't read the speaker's lips. If the check fails by 5 or more, you draw some incorrect conclusion about the speech. The check is rolled secretly in this case, so that you don't know whether you succeeded or missed by 5.
+
+\textit{Detect Spellcasting:} Anyone near a spellcaster can spot visual effects that occur when a spell is cast. The base DC is 10, but it decreases by the level of the spell being cast. If the spellcasting is happening in darkness, the DC decreases by 4.
 
 \textbf{Action:} Varies. Every time you have a chance to spot something in a reactive manner you can make a Spot check without using an action. Trying to spot something you failed to see previously is a move action. To read lips, you must concentrate for a full minute before making a Spot check, and you can't perform any other action (other than moving at up to half speed) during this minute.
 
@@ -29,9 +57,9 @@ A ranger gains a bonus on Spot checks when using this skill against a favored en
 
 An aarakocra has a +6 racial bonus on Spot checks in daylight.
 
-An elf has a +2 racial bonus on Spot checks.
+% An elf has a +2 racial bonus on Spot checks.
 
-A half-elf has a +1 racial bonus on Spot checks.
+% A half-elf has a +1 racial bonus on Spot checks.
 
 The master of a hawk familiar gains a +3 bonus on Spot checks in daylight or other lighted areas.
 

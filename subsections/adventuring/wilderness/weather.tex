@@ -1,0 +1,165 @@
+\subsection{Weather}
+Sometimes weather can play an important role in an adventure.
+
+\tabref{Random Weather} is an appropriate weather table for general use, and can be used as a basis for a local weather tables. Terms on that table are defined as follows.
+
+\Table{Random Weather}{lL*{2}{Y{21mm}}}{
+  \tableheader d\%
+& \tableheader Weather
+& \tableheader Forest Ridge
+& \tableheader Tablelands \\
+01--70 & Normal weather    & Normal day,\hskip3cm calm winds & Normal day, moderate winds \\
+71--80 & Abnormal weather  & Hot day, moderate winds         & Normal day, strong winds \\
+81--90 & Inclement weather & Precipitation                   & Hot day,\hskip3cm strong winds \\
+91--99 & Storm             & Thunderstorm                    & Duststorm \\
+100    & Powerful storm    & Windstorm, tornado              & Sandstorm \\
+}
+
+\textbf{Precipitation:} Roll d\% to determine whether the precipitation is fog (01--30), rain/snow (31--90), or sleet/downpour (91--00). Snow and sleet occur only when the temperature is $-1$° Celsius or below. Most precipitation lasts for 2d4 hours.
+
+\textbf{Storm (Duststorm/Thunderstorm):} Wind speeds are severe (48 to 80 km/h) and visibility is cut by three-quarters. Storms last for 2d4$-1$ hours. See Storms, below, for more details.
+
+\textbf{Powerful Storm (Windstorm/Sandstorm):} Wind speeds are over 80 km/h (see \tabref{Wind Effects}). Windstorms last for 1d6 hours. Sandstorms last for 2d4$-1$ hours. Tornadoes are very short-lived (1d6 $\times$ 10 minutes), typically forming as part of a thunderstorm system.
+
+\subsubsection{Hourly Temperature}
+Over the day, the temperature fluctuates depending on the climate and the position of the sun. \tabref{Temperature Over a Day} provides information on typical days. Some variations occur depending on a number of factors.
+
+\textbf{Altitude:} Higher elevations are colder than normal, while depressions are hotter. Temperatures drop by one band in low peak or high pass elevations (1,500 meters to 4,500 meters) and two bands in high peak elevations (4,500 meters or more). Temperatures increase by one band in extremely low elevation (60 meters or more below sea level).
+
+In addition, moving deeper into the earth rises the ambient temperature. This increase is approximately 1 °C per 36 meters of depth; this can be much faster if there is geothermic activity in the region (magma, hot springs, and so on).
+
+\textbf{Wind:} Winds exacerbate the temperature conditions---cold becomes colder as the heat is lost, and hot becomes hotter as your surface blood vessels constrict. Winds that are strong or greater in strength (see \tabref{Wind Effects}) increase the effective temperature by one band if the current temperature is very hot or hotter, or decrease the effective temperature by one band if the current temperature is very cold or colder.
+
+\Table{Temperature Over a Day}{lXr{12mm}|Xr{12mm}}{
+% \BigTablePair{Temperature Over a Day}{lXr{12mm}|Xr{12mm}|Xr{12mm}}{
+& \multicolumn{2}{c}{\tableheader Hot Day}
+& \multicolumn{2}{c}{\tableheader Normal Day}\\
+% & \multicolumn{2}{c}{\tableheader Cold Day}\\
+\cmidrule[.5pt]{2-5}
+
+  \tableheader Hour
+& \tableheader Temperature Band
+& \tableheader Average
+& \tableheader Temperature Band
+& \tableheader Average \\
+% & \tableheader Temperature Band
+% & \tableheader Average \\
+00:00 & Very hot     & 38 °C & Cool        &  7 °C \\ % & Very cold   & $-16$ °C \\
+01:00 & Very hot     & 37 °C & Cool        &  5 °C \\ % & Severe cold & $-19$ °C \\
+02:00 & Very hot     & 37 °C & Very cold   &  4 °C \\ % & Severe cold & $-20$ °C \\
+03:00 & Very hot     & 39 °C & Cool        &  8 °C \\ % & Very cold   & $-13$ °C \\
+04:00 & Very hot     & 41 °C & Cool        & 13 °C \\ % & Very cold   &  $-7$ °C \\
+05:00 & Very hot     & 43 °C & Moderate    & 17 °C \\ % & Very cold   &  $-1$ °C \\
+06:00 & Severe heat  & 45 °C & Moderate    & 21 °C \\ % & Very cold   &     4 °C \\
+07:00 & Severe heat  & 48 °C & Moderate    & 25 °C \\ % & Cool        &    10 °C \\
+08:00 & Severe heat  & 50 °C & Moderate    & 30 °C \\ % & Cool        &    16 °C \\
+09:00 & Severe heat  & 52 °C & Very hot    & 34 °C \\ % & Moderate    &    22 °C \\
+10:00 & Severe heat  & 54 °C & Very hot    & 38 °C \\ % & Moderate    &    28 °C \\
+11:00 & Severe heat  & 57 °C & Severe heat & 43 °C \\ % & Very hot    &    35 °C \\
+12:00 & Severe heat  & 59 °C & Severe heat & 47 °C \\ % & Very hot    &    36 °C \\
+13:00 & Extreme heat & 61 °C & Severe heat & 51 °C \\ % & Very hot    &    37 °C \\
+14:00 & Extreme heat & 63 °C & Severe heat & 55 °C \\ % & Very hot    &    38 °C \\
+15:00 & Extreme heat & 65 °C & Severe heat & 59 °C \\ % & Very hot    &    40 °C \\
+16:00 & Extreme heat & 62 °C & Severe heat & 56 °C \\ % & Very hot    &    37 °C \\
+17:00 & Severe heat  & 60 °C & Severe heat & 53 °C \\ % & Very hot    &    34 °C \\
+18:00 & Severe heat  & 58 °C & Severe heat & 51 °C \\ % & Very hot    &    32 °C \\
+19:00 & Severe heat  & 53 °C & Very hot    & 40 °C \\ % & Moderate    &    19 °C \\
+20:00 & Severe heat  & 48 °C & Moderate    & 30 °C \\ % & Cool        &     9 °C \\
+21:00 & Severe heat  & 45 °C & Moderate    & 22 °C \\ % & Very cold   &     0 °C \\
+22:00 & Very hot     & 42 °C & Moderate    & 16 °C \\ % & Very cold   &  $-7$ °C \\
+23:00 & Very hot     & 40 °C & Cool        & 11 °C \\ % & Very cold   & $-12$ °C \\
+}
+
+\subsubsection{Precipitation}
+Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours obscure vision as effectively as a dense fog.
+% Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours and blizzards obscure vision as effectively as a dense fog.
+
+Most precipitation is rain, but in cold conditions it can manifest as snow, sleet, or hail. Precipitation of any kind followed by a cold snap in which the temperature dips from above freezing to $-1$ °C or below may produce ice.
+
+\BigTablePair{Wind Effects}{llccCClll}{
+&
+& \multicolumn{2}{c}{\tableheader Ranged Attacks}
+&
+&
+& \multicolumn{3}{c}{\tableheader Wind Effect on Creatures by Size\footnotemark[1]}\\
+\cmidrule[.5pt]{3-4}
+\cmidrule[.5pt]{7-9}
+\cmidrule[.5pt]{7-9}
+\tableheader Wind Force
+& \tableheader Wind Speed
+& \tableheader Normal
+& \tableheader Siege\footnotemark[2]
+& \multirow[b]{-2}{9mm}{\centering\tableheader \skill{Listen} Checks}
+& \multirow[b]{-2}{9mm}{\centering\tableheader Fort Save DC}
+& \tableheader Blown Away
+& \tableheader Knocked Down
+& \tableheader Checked\\
+
+Calm      &    0--15 km/h & & & & --- & & & \\
+Moderate  &   16--35 km/h & & & & --- & & & \\
+Strong    &   36--50 km/h &    $-2$ &         & $-2$    & 10 &                   & Tiny or smaller & Small\\
+Severe    &   51--80 km/h &    $-4$ &         & $-4$    & 15 & Tiny or smaller   & Small           & Medium \\
+Windstorm &  81--118 km/h & $\star$ & $-4$    & $-8$    & 18 & Small or smaller  & Medium          & Large \\
+Hurricane & 119--279 km/h & $\star$ & $-8$    & $\star$ & 20 & Medium or smaller & Large           & Huge \\
+Tornado   & 280--500 km/h & $\star$ & $\star$ & $\star$ & 30 & Large or smaller  & Huge            & Gargantuan or Colossal\\
+\BigTableNote{9}{1 Flying or airborne creatures are treated as one size category smaller than their actual size, so an airborne Gargantuan dragon is treated as Huge for purposes of wind effects.}\\
+\BigTableNote{9}{2 The siege weapon category includes ballista and catapult attacks as well as boulders tossed by giants.}\\
+\BigTableNote{9}{$\star$ Impossible}\\
+\BigTableNote{9}{\textit{Blown Away:} Creatures on the ground are knocked prone and rolled 1d4 $\times$ 3 meters, taking 1d4 points of nonlethal damage per 3 meters. Flying creatures are blown back 2d6 $\times$ 3 meters and take 2d6 points of nonlethal damage due to battering and buffeting.}\\
+\BigTableNote{9}{\textit{Knocked Down:} Creatures are knocked prone by the force of the wind. Flying creatures are instead blown back 1d6 $\times$ 3 meters.}\\
+\BigTableNote{9}{\textit{Checked:} Creatures are unable to move forward against the force of the wind. Flying creatures are blown back 1d6 $\times$ 1.5 meters.}\\
+}
+
+\textbf{Fog:} Whether in the form of a low-lying cloud or a mist rising from the ground, fog obscures all sight, including darkvision, beyond 1.5 meters. Creatures 1.5 meter away have concealment (attacks by or against them have a 20\% miss chance).
+
+\textbf{Rain:} Rain reduces visibility ranges by half, reducing the distance increment for \skill{Spot} DCs by half (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Rain imposes a $-4$ penalty on \skill{Listen} and \skill{Search} checks, normal ranged weapon attacks. Unprotected flames are automatically extinguished, and protected flames have 50\% chance of extinguishing.%resulting in a $-4$ penalty on \skill{Spot} and \skill{Search} checks. It has the same effect on flames, ranged weapon attacks, and \skill{Listen} checks as severe wind.
+
+\textit{Downpour:} This type of rain also conceals as fog (see above).
+
+\textbf{Snow:} Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 3d10 centimeters of snow on the ground.
+
+\textbf{Heavy Snow:} Heavy snow has the same effects as normal snowfall, but also restricts visibility as fog does (see Fog, above). A day of heavy snow leaves 3d4 $\times$ 10 centimeters of snow on the ground, and it costs 4 squares of movement to enter a square covered with heavy snow. Heavy snow accompanied by strong or severe winds may result in snowdrifts 1d4 $\times$ 1.5 meters deep, especially in and around objects big enough to deflect the wind---a cabin or a large tent, for instance. There is a 10\% chance that a heavy snowfall is accompanied by lightning (see Thunderstorm, below). Snow has the same effect on flames as moderate wind.
+
+\textbf{Sleet:} Essentially frozen rain, sleet has the same effect as rain while falling (except that its chance to extinguish protected flames is 75\%) and the same effect as snow once on the ground.
+
+% \textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
+
+\subsubsection{Storms}
+The combined effects that accompany all storms reduce visibility ranges to one quarter, reducing the distance increment for \skill{Spot} DCs by three quarters (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Storms impose a $-4$ penalty on \skill{Search} and \skill{Listen} checks, because of the wind and precipitation. All penalties stack with rain penalties (including visibility), if applicable. All storms have severe winds (see Winds, below). See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following two types.
+% The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a $-8$ penalty on \skill{Spot}, \skill{Search}, and \skill{Listen} checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a $-4$ penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50\% chance to extinguish these lights. See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following three types.
+
+\textbf{Duststorm:} These desert storms differ from other storms in that they have no precipitation. Instead, a duststorm blows fine grains of sand that obscure vision, smother unprotected flames, and can even choke protected flames (50\% chance). Most duststorms are accompanied by severe winds and leave behind a deposit of 3d10 centimeters of sand.
+
+\textbf{Thunderstorm:} In addition to wind and precipitation (usually rain, but sometimes also hail), thunderstorms are accompanied by lightning that can pose a hazard to characters without proper shelter (especially those in metal armor). As a rule of thumb, assume one bolt per minute for a 1-hour period at the center of the storm. Each bolt causes electricity damage equal to 1d10 eight-sided dice. One in ten thunderstorms is accompanied by a tornado (see below).
+
+\subsubsection{Powerful Storms}
+Very high winds and torrential precipitation reduce visibility to one quarter, reducing the distance increment for \skill{Spot} DCs by three quarters (if the DC already increases by 1.5 m, then the DC increases by 2 more for each distance increment). Powerful storms have winds speeds of at least 81 km/h. The effects of each type are described below.
+
+% making Spot, Search, and Listen checks and all ranged weapon attacks impossible. Unprotected flames are automatically extinguished, and protected flames have a 75\% chance of being doused. Creatures caught in the area must make a DC 20 Fortitude save or face the effects based on the size of the creature (see \tabref{Wind Effects}). Powerful storms are divided into the following four types.
+
+\textbf{Sandstorm (CR 3):} Sandstorms impose a $-4$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Winds blow as a windstorm. Moreover, sandstorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sandstorm leaves 2d8 $\times$ 10 centimeters of fine sand in its wake. One in ten sandstorms become flensing.
+
+\textit{Flensing Sandstorm (CR 5):} Flensing sandstorms occur when wind blows at the strength of a hurricane. A character in a flensing sandstorm take a $-6$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Moreover, flensing sandstorms deal 1d3 points of lethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A flensing sandstorm leaves 2d4$-1$ meters of fine sand in its wake.
+
+\textit{Suffocation:} Exposed characters might begin to choke if their noses and mouths are not covered. A sufficiently large cloth expertly worn (\skill{Survival} DC 15) negates the effects of suffocation from dust and sand. An inexpertly worn cloth across the nose and mouth protects a character from the potential of suffocation for a number of rounds equal to 10 $\times$ her Constitution score. An unprotected character faces potential suffocation after a number rounds equal to twice her Constitution score. Once the grace period ends, the character must make a successful Constitution check (DC 10, +1 per previous check) each round or begin suffocating on the encroaching sand. In the first round after suffocation begins, the character falls unconscious (0 hp). In the following round, she drops to $-1$ hit points and is dying. In the third round, she suffocates to death.
+
+\textbf{Tornado:} A tornado never occurs by itself, it is always accompanied by a thunderstorm. A tornado's funnel has 5d12 $\times$ 9 meters of radius.
+
+\textbf{Windstorm:} While accompanied by little or no precipitation, windstorms can cause considerable damage simply through the force of their wind.
+
+\subsubsection{Winds}
+The wind can create a stinging spray of sand or dust, fan a large fire, heel over a small boat, and blow gases or vapors away. If powerful enough, it can even knock characters down (see \tabref{Wind Effects}), interfere with ranged attacks, or impose penalties on some skill checks.
+
+\textbf{Light Wind:} A gentle breeze, having little or no game effect.
+
+\textbf{Moderate Wind:} A steady wind with a 50\% chance of extinguishing small, unprotected flames, such as candles.
+
+\textbf{Strong Wind:} Gusts that automatically extinguish unprotected flames (candles, torches, and the like). Such gusts impose a $-2$ penalty on ranged attack rolls and on \skill{Listen} checks.
+
+\textbf{Severe Wind:} In addition to automatically extinguishing any unprotected flames, winds of this magnitude cause protected flames (such as those of lanterns) to dance wildly and have a 50\% chance of extinguishing these lights. Ranged weapon attacks and \skill{Listen} checks are at a $-4$ penalty. This is the velocity of wind produced by a gust of wind spell.
+
+\textbf{Windstorm:} Powerful enough to bring down branches if not whole trees, windstorms automatically extinguish unprotected flames and have a 75\% chance of blowing out protected flames, such as those of lanterns. Ranged weapon attacks are impossible, and even siege weapons have a $-4$ penalty on attack rolls. \skill{Listen} checks are at a $-8$ penalty due to the howling of the wind.
+
+\textbf{Hurricane-Force Wind:} All flames are extinguished. Ranged attacks are impossible (except with siege weapons, which have a $-8$ penalty on attack rolls). \skill{Listen} checks are impossible: All characters can hear is the roaring of the wind. Hurricane-force winds often fell trees.
+
+\textbf{Tornado (CR 10):} All flames are extinguished. All ranged attacks are impossible (even with siege weapons), as are \skill{Listen} checks. Instead of being blown away (see \tabref{Wind Effects}), characters in close proximity to a tornado who fail their Fortitude saves are sucked toward the tornado. Those who come in contact with the actual funnel cloud are picked up and whirled around for 1d10 rounds, taking 6d6 points of damage per round, before being violently expelled (falling damage may apply). While a tornado's rotational speed can be as great as 500 km/h, the funnel itself moves forward at an average of 45 km/h (roughly 75 meters per round). A tornado uproots trees, destroys buildings, and causes other similar forms of major destruction.
