@@ -6,8 +6,8 @@ Sometimes weather can play an important role in an adventure.
 \Table{Random Weather}{lL*{2}{Y{21mm}}}{
   \tableheader d\%
 & \tableheader Weather
-& \tableheader Forest Ridge
-& \tableheader Tablelands \\
+& \tableheader Hinterlands and Forest Ridge
+& \tableheader Ringing Mountains and Tablelands \\
 01--70 & Normal weather    & Normal day,\hskip3cm calm winds & Normal day, moderate winds \\
 71--80 & Abnormal weather  & Hot day, moderate winds         & Normal day, strong winds \\
 81--90 & Inclement weather & Precipitation                   & Hot day,\hskip3cm strong winds \\
@@ -76,7 +76,7 @@ Bad weather frequently slows or halts travel and makes it virtually impossible t
 
 Most precipitation is rain, but in cold conditions it can manifest as snow, sleet, or hail. Precipitation of any kind followed by a cold snap in which the temperature dips from above freezing to $-1$ °C or below may produce ice.
 
-\BigTablePair{Wind Effects}{llccCClll}{
+\BigTablePair{Wind Effects}{lRcc*{2}{z{11mm}}lll}{
 &
 & \multicolumn{2}{c}{\tableheader Ranged Attacks}
 &
@@ -100,7 +100,7 @@ Moderate  &   16--35 km/h & & & & --- & & & \\
 Strong    &   36--50 km/h &    $-2$ &         & $-2$    & 10 &                   & Tiny or smaller & Small\\
 Severe    &   51--80 km/h &    $-4$ &         & $-4$    & 15 & Tiny or smaller   & Small           & Medium \\
 Windstorm &  81--118 km/h & $\star$ & $-4$    & $-8$    & 18 & Small or smaller  & Medium          & Large \\
-Hurricane & 119--279 km/h & $\star$ & $-8$    & $\star$ & 20 & Medium or smaller & Large           & Huge \\
+Hurricane & 119--279 km/h & $\star$ & $-8$    & $\star$ & 20 & Medium or smaller & Large           & Huge or Gargantuan \\
 Tornado   & 280--500 km/h & $\star$ & $\star$ & $\star$ & 30 & Large or smaller  & Huge            & Gargantuan or Colossal\\
 \BigTableNote{9}{1 Flying or airborne creatures are treated as one size category smaller than their actual size, so an airborne Gargantuan dragon is treated as Huge for purposes of wind effects.}\\
 \BigTableNote{9}{2 The siege weapon category includes ballista and catapult attacks as well as boulders tossed by giants.}\\
@@ -114,18 +114,18 @@ Tornado   & 280--500 km/h & $\star$ & $\star$ & $\star$ & 30 & Large or smaller 
 
 \textbf{Rain:} Rain reduces visibility ranges by half, reducing the distance increment for \skill{Spot} DCs by half (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Rain imposes a $-4$ penalty on \skill{Listen} and \skill{Search} checks, normal ranged weapon attacks. Unprotected flames are automatically extinguished, and protected flames have 50\% chance of extinguishing.%resulting in a $-4$ penalty on \skill{Spot} and \skill{Search} checks. It has the same effect on flames, ranged weapon attacks, and \skill{Listen} checks as severe wind.
 
-\textit{Downpour:} This type of rain also conceals as fog (see above).
+\textit{Downpour:} Downpour has the same effects as normal rain, but also conceals as fog (see above).
 
 \textbf{Snow:} Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 3d10 centimeters of snow on the ground.
 
-\textbf{Heavy Snow:} Heavy snow has the same effects as normal snowfall, but also restricts visibility as fog does (see Fog, above). A day of heavy snow leaves 3d4 $\times$ 10 centimeters of snow on the ground, and it costs 4 squares of movement to enter a square covered with heavy snow. Heavy snow accompanied by strong or severe winds may result in snowdrifts 1d4 $\times$ 1.5 meters deep, especially in and around objects big enough to deflect the wind---a cabin or a large tent, for instance. There is a 10\% chance that a heavy snowfall is accompanied by lightning (see Thunderstorm, below). Snow has the same effect on flames as moderate wind.
+\textit{Heavy Snow:} Heavy snow has the same effects as normal snowfall, but also restricts visibility as fog does (see Fog, above). A day of heavy snow leaves 3d4 $\times$ 10 centimeters of snow on the ground, and it costs 4 squares of movement to enter a square covered with heavy snow. Heavy snow accompanied by strong or severe winds may result in snowdrifts 1d4 $\times$ 1.5 meters deep, especially in and around objects big enough to deflect the wind---a cabin or a large tent, for instance. There is a 10\% chance that a heavy snowfall is accompanied by lightning (see Thunderstorm, below). Snow has the same effect on flames as moderate wind.
 
 \textbf{Sleet:} Essentially frozen rain, sleet has the same effect as rain while falling (except that its chance to extinguish protected flames is 75\%) and the same effect as snow once on the ground.
 
 % \textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
 
 \subsubsection{Storms}
-The combined effects that accompany all storms reduce visibility ranges to one quarter, reducing the distance increment for \skill{Spot} DCs by three quarters (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Storms impose a $-4$ penalty on \skill{Search} and \skill{Listen} checks, because of the wind and precipitation. All penalties stack with rain penalties (including visibility), if applicable. All storms have severe winds (see Winds, below). See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following two types.
+The combined effects that accompany all storms reduce visibility ranges to one quarter, reducing the distance increment for \skill{Spot} DCs by three quarters (if the DC already increases by 1.5 m, then the DC increases by 2 more for each distance increment). Storms impose a $-4$ penalty on \skill{Search} and \skill{Listen} checks, because of the wind and precipitation. All penalties stack with rain penalties (including visibility), if applicable. All storms have severe winds (see Winds, below). See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following two types.
 % The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a $-8$ penalty on \skill{Spot}, \skill{Search}, and \skill{Listen} checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a $-4$ penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50\% chance to extinguish these lights. See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following three types.
 
 \textbf{Duststorm:} These desert storms differ from other storms in that they have no precipitation. Instead, a duststorm blows fine grains of sand that obscure vision, smother unprotected flames, and can even choke protected flames (50\% chance). Most duststorms are accompanied by severe winds and leave behind a deposit of 3d10 centimeters of sand.
@@ -139,7 +139,7 @@ Very high winds and torrential precipitation reduce visibility to one quarter, r
 
 \textbf{Sandstorm (CR 3):} Sandstorms impose a $-4$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Winds blow as a windstorm. Moreover, sandstorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sandstorm leaves 2d8 $\times$ 10 centimeters of fine sand in its wake. One in ten sandstorms become flensing.
 
-\textit{Flensing Sandstorm (CR 5):} Flensing sandstorms occur when wind blows at the strength of a hurricane. A character in a flensing sandstorm take a $-6$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Moreover, flensing sandstorms deal 1d3 points of lethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A flensing sandstorm leaves 2d4$-1$ meters of fine sand in its wake.
+\textit{Flensing Sandstorm (CR 5):} Flensing sandstorms occur when wind blows at hurricane-force. A character in a flensing sandstorm take a $-6$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Moreover, flensing sandstorms deal 1d3 points of lethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A flensing sandstorm leaves 2d4$-1$ meters of fine sand in its wake.
 
 \textit{Suffocation:} Exposed characters might begin to choke if their noses and mouths are not covered. A sufficiently large cloth expertly worn (\skill{Survival} DC 15) negates the effects of suffocation from dust and sand. An inexpertly worn cloth across the nose and mouth protects a character from the potential of suffocation for a number of rounds equal to 10 $\times$ her Constitution score. An unprotected character faces potential suffocation after a number rounds equal to twice her Constitution score. Once the grace period ends, the character must make a successful Constitution check (DC 10, +1 per previous check) each round or begin suffocating on the encroaching sand. In the first round after suffocation begins, the character falls unconscious (0 hp). In the following round, she drops to $-1$ hit points and is dying. In the third round, she suffocates to death.
 

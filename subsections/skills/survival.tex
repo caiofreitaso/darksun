@@ -9,6 +9,7 @@ Survival does not allow you to follow difficult tracks unless you are a ranger o
 15 & Predict the weather up to 24 hours in advance. For every 5 points by which your Survival check result exceeds 15, you can predict the weather for one additional day in advance.\\
 Varies & Avoid getting lost (see \tabref{Avoid Getting Lost}).\\
 Varies & Endure the elements (see \tabref{Endure the Elements}).\\
+Varies & Find shelter (see \tabref{Find Shelter}).\\
 Varies & Get along in the wild (see \tabref{Get Along in the Wild}).\\
 Varies & Follow tracks (see the \feat{Track} feat).\\
 }
@@ -38,26 +39,42 @@ Trackless       & +2 \\
 
 \textit{Endure the Elements:} Gain a +2 bonus on all Fortitude saves against severe weather while moving up to one-half your overland speed, or gain a +4 bonus if you remain stationary. Use the DCs in \tabref{Endure the Elements}. You may grant the same bonus to one other character for every number of points in Extra Person Modifier by which your Survival check result exceeds the DC.
 
-\Table{Endure the Elements}{l X *{2}{Z{9mm}}}{
-\tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
-Abundant  & Forests, oceans, gardens        & 15 & 1 \\
-Fertile   & Verdant plains, swamp, mudflats & 20 & 2 \\
-Infertile & Rocky badlands, scrub plains    & 25 & 3 \\
-Barren    & Boulder fields, stony barrens   & 30 & 5 \\
-Desolate  & Salt flats, sea of silt         & 35 & 7 \\
-Void      & Obsidian Plains                 & 40 & 10 \\
+\Table{Endure the Elements}{X *{2}{Z{9mm}}}{
+  \tableheader Terrains
+& \tableheader Survival DC
+& \tableheader Extra Person Modifier\\
+Forests, lakes, oasis, oceans               & 15 & 1 \\
+Verdant plains, swamp, mudflats             & 20 & 2 \\
+Mountains, rocky badlands, scrub plains     & 25 & 3 \\
+Boulder fields, sandy wastes, stony barrens & 30 & 5 \\
+Dust sinks, salt flats, sea of silt         & 35 & 7 \\
+Obsidian Plains                             & 40 & 10 \\
+}
+
+\textit{Find Shelter:} You find or make a shelter to protect from the sun and get some sleep. This does not remove the possibility of a random encounter, just make sure you can get a good night of sleep or hide from the sun. Terrain types affect the amount of natural resources available to find or make a useful shelter. Use the DCs in \tabref{Find Shelter}. This process takes 1d4 hours.
+
+\Table{Find Shelter}{X Z{9mm}}{
+\tableheader Terrains & \tableheader Survival DC \\
+Forests, mountains, oasis, rocky badlands, scrub plains & 15 \\
+Boulder fields, stony barrens, swamp                    & 20 \\
+Verdant plains, mudflats                                & 25 \\
+Obsidian Plains, salt flats                             & 20 \\
+Dust sinks, sea of silt                                 & 30 \\
+Lakes, oceans                                           & 40 \\
 }
 
 \textit{Get Along in the Wild:} Move up to one-half your overland speed while hunting and foraging (no food or water supplies needed). Terrain types affect the amount of food and water available through hunting and foraging. Use the DCs in \tabref{Get Along in the Wild}. You can provide food and water for one other person for every number of points in Extra Person Modifier by which your check result exceeds the DC.
 
-\Table{Get Along in the Wild}{l X *{2}{Z{9mm}}}{
-\tableheader Terrain Type & \tableheader Examples & \tableheader Survival DC & \tableheader Extra Person Modifier\\
-Abundant  & Forests, oceans, gardens        & 10 & 2 \\
-Fertile   & Verdant plains, swamp, mudflats & 15 & 3 \\
-Infertile & Rocky badlands, scrub plains    & 20 & 5 \\
-Barren    & Boulder fields, stony barrens   & 25 & 7 \\
-Desolate  & Salt flats, sea of silt         & 30 & 10 \\
-Void      & Obsidian Plains                 & 40 & 15 \\
+\Table{Get Along in the Wild}{X *{2}{Z{9mm}}}{
+  \tableheader Terrains
+& \tableheader Survival DC
+& \tableheader Extra Person Modifier\\
+Forests, lakes, oasis, oceans               & 10 & 2 \\
+Verdant plains, swamp, mudflats             & 15 & 3 \\
+Mountains, rocky badlands, scrub plains     & 20 & 5 \\
+Boulder fields, sandy wastes, stony barrens & 25 & 7 \\
+Dust sinks, salt flats, sea of silt         & 30 & 10 \\
+Obsidian Plains                             & 40 & 15 \\
 }
 
 \textbf{Accelerated Movement:} By accepting a $-30$ penalty on your Survival checks, you can move your full overland speed instead of one-half your overland speed.
