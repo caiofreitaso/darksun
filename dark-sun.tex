@@ -82,6 +82,23 @@
 \newcommand\multiplied{\unichar{"00D7}}
 \newcommand\blankpage{\clearpage\thispagestyle{empty}\mbox{}\clearpage}
 \newcommand\pagepdf{\@ifstar{\clearpage\includepdf}{\blankpage\includepdf}}
+\def\Figure{\@ifstar\@BigFigure\@SmallFigure}
+\def\FigureBody#1#2{
+  \centering
+  \includegraphics[width=#1]{#2}
+  \WOTC
+}
+\newcommand{\@BigFigure}[3][\textwidth]{
+\begin{figure*}[#2!]
+\FigureBody{#1}{#3}
+\end{figure*}
+}
+\newcommand{\@SmallFigure}[3][\columnwidth]{
+\begin{figure}[#2!]
+\FigureBody{#1}{#3}
+\end{figure}
+}
+
 \makeatother
 \begin{document}
 \includepdf[pages=-]{credits-and-legal.pdf}

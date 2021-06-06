@@ -3,23 +3,21 @@ Sometimes weather can play an important role in an adventure.
 
 \tabref{Random Weather} is an appropriate weather table for general use, and can be used as a basis for a local weather tables. Terms on that table are defined as follows.
 
-\Table{Random Weather}{lL*{2}{Y{21mm}}}{
+\Table{Random Temperature}{lL}{
   \tableheader d\%
-& \tableheader Weather
-& \tableheader Hinterlands and Forest Ridge
-& \tableheader Ringing Mountains and Tablelands \\
-01--70 & Normal weather    & Normal day,\hskip3cm calm winds & Normal day, moderate winds \\
-71--80 & Abnormal weather  & Hot day, moderate winds         & Normal day, strong winds \\
-81--90 & Inclement weather & Precipitation                   & Hot day,\hskip3cm strong winds \\
-91--99 & Storm             & Thunderstorm                    & Duststorm \\
-100    & Powerful storm    & Windstorm, tornado              & Sandstorm \\
+& \tableheader Day/Night Temperature \\
+01--50  & Normal day, cold night \\
+51--70  & Normal day, normal night \\
+71--90  & Hot day, normal night \\
+91--100 & Hot day, cold night \\
 }
 
+% \textbf{Precipitation:} Snow and sleet occur only when the temperature is $-1$° Celsius or below. Most precipitation lasts for 2d4 hours.
 \textbf{Precipitation:} Roll d\% to determine whether the precipitation is fog (01--30), rain/snow (31--90), or sleet/downpour (91--00). Snow and sleet occur only when the temperature is $-1$° Celsius or below. Most precipitation lasts for 2d4 hours.
 
-\textbf{Storm (Duststorm/Thunderstorm):} Wind speeds are severe (48 to 80 km/h) and visibility is cut by three-quarters. Storms last for 2d4$-1$ hours. See Storms, below, for more details.
+\textbf{Storm:} Wind speeds are severe (48 to 80 km/h) and visibility is cut by three-quarters. Storms last for 2d4$-1$ hours. See Storms, below, for more details.
 
-\textbf{Powerful Storm (Windstorm/Sandstorm):} Wind speeds are over 80 km/h (see \tabref{Wind Effects}). Windstorms last for 1d6 hours. Sandstorms last for 2d4$-1$ hours. Tornadoes are very short-lived (1d6 $\times$ 10 minutes), typically forming as part of a thunderstorm system.
+\textbf{Powerful Storm:} Wind speeds are over 80 km/h (see \tabref{Wind Effects}). Windstorms last for 1d6 hours. Sandstorms last for 2d4$-1$ hours. Siroccos last for 1d4 days. Tornadoes are very short-lived (1d6 $\times$ 10 minutes), typically forming as part of a thunderstorm system.
 
 \subsubsection{Hourly Temperature}
 Over the day, the temperature fluctuates depending on the climate and the position of the sun. \tabref{Temperature Over a Day} provides information on typical days. Some variations occur depending on a number of factors.
@@ -28,53 +26,135 @@ Over the day, the temperature fluctuates depending on the climate and the positi
 
 In addition, moving deeper into the earth rises the ambient temperature. This increase is approximately 1 °C per 36 meters of depth; this can be much faster if there is geothermic activity in the region (magma, hot springs, and so on).
 
-\textbf{Wind:} Winds exacerbate the temperature conditions---cold becomes colder as the heat is lost, and hot becomes hotter as your surface blood vessels constrict. Winds that are strong or greater in strength (see \tabref{Wind Effects}) increase the effective temperature by one band if the current temperature is very hot or hotter, or decrease the effective temperature by one band if the current temperature is very cold or colder.
+\textbf{Wind:} Winds exacerbate the temperature conditions---cold becomes colder as the heat is lost, and hot becomes hotter as your surface blood vessels constrict. Winds that are strong or greater in strength (see \tabref{Wind Effects}) increase the effective temperature by one band if the current temperature is very hot or hotter, or decrease the effective temperature by one band if the current temperature is cool or colder.
 
-\Table{Temperature Over a Day}{lXr{12mm}|Xr{12mm}}{
-% \BigTablePair{Temperature Over a Day}{lXr{12mm}|Xr{12mm}|Xr{12mm}}{
-& \multicolumn{2}{c}{\tableheader Hot Day}
+Wind speeds increase by one category in low peak or high pass elevations (1,500 meters to 4,500 meters) and two categories in high peak elevations (4,500 meters or more).
+
+
+\Table{Temperature Over a Day}{b{6mm}C|C||C|C}{
+& \multicolumn{2}{c||}{\tableheader Hot Day}
 & \multicolumn{2}{c}{\tableheader Normal Day}\\
-% & \multicolumn{2}{c}{\tableheader Cold Day}\\
-\cmidrule[.5pt]{2-5}
-
+\cmidrule[0pt]{1-2}
   \tableheader Hour
-& \tableheader Temperature Band
-& \tableheader Average
-& \tableheader Temperature Band
-& \tableheader Average \\
+& \tableheader Normal Night
+& \tableheader Cold Night
+& \tableheader Normal Night
+& \tableheader Cold Night \\
+00:00 & Moderate    & Very cold   & Moderate & Very cold \\
+01:00 & Moderate    & Cool        & Moderate & Cool      \\
+02:00 & Very hot    & Cool        & Moderate & Cool      \\
+03:00 & Very hot    & Moderate    & Moderate & Moderate  \\
+04:00 & Very hot    & Moderate    & Very hot & Moderate  \\
+05:00 & Severe heat & Very hot    & Very hot & Moderate  \\
+06:00 & Severe heat & Very hot    & Very hot & Moderate  \\
+07:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Very hot}    \\
+08:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Very hot}    \\
+09:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Severe heat} \\
+10:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Severe heat} \\
+11:00 & \multicolumn{2}{c||}{Extreme heat} & \multicolumn{2}{c}{Severe heat} \\
+12:00 & \multicolumn{2}{c||}{Extreme heat} & \multicolumn{2}{c}{Severe heat} \\
+13:00 & \multicolumn{2}{c||}{Extreme heat} & \multicolumn{2}{c}{Severe heat} \\
+14:00 & \multicolumn{2}{c||}{Extreme heat} & \multicolumn{2}{c}{Severe heat} \\
+15:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Severe heat} \\
+16:00 & \multicolumn{2}{c||}{Severe heat}  & \multicolumn{2}{c}{Severe heat} \\
+
+& \tableheader Normal Night
+& \tableheader Cold Night
+& \tableheader Normal Night
+& \tableheader Cold Night\\
+17:00 & Severe heat & Severe heat & Severe heat & Very hot  \\
+18:00 & Severe heat & Very hot    & Very hot    & Moderate  \\
+19:00 & Very hot    & Moderate    & Very hot    & Moderate  \\
+20:00 & Very hot    & Moderate    & Moderate    & Cool      \\
+21:00 & Moderate    & Cool        & Moderate    & Cool      \\
+22:00 & Moderate    & Cool        & Moderate    & Cool      \\
+23:00 & Moderate    & Very cold   & Moderate    & Very cold \\
+}
+
+% 00:00 & Moderate    & 24 °C & Very cold   &  3 °C & Moderate & 24 °C & Very cold &  3 °C \\
+% 01:00 & Moderate    & 27 °C & Cool        &  9 °C & Moderate & 26 °C & Cool      &  7 °C \\
+% 02:00 & Very hot    & 31 °C & Cool        & 15 °C & Moderate & 28 °C & Cool      & 11 °C \\
+% 03:00 & Very hot    & 35 °C & Moderate    & 21 °C & Moderate & 30 °C & Moderate  & 16 °C \\
+% 04:00 & Very hot    & 38 °C & Moderate    & 27 °C & Very hot & 32 °C & Moderate  & 20 °C \\
+% 05:00 & Severe heat & 42 °C & Very hot    & 33 °C & Very hot & 34 °C & Moderate  & 25 °C \\
+% 06:00 & Severe heat & 46 °C & Very hot    & 39 °C & Very hot & 36 °C & Moderate  & 29 °C \\
+% 07:00 & Severe heat & 49 °C & Severe heat & 45 °C & Very hot & 38 °C & Very hot  & 34 °C \\
+% 08:00 & Severe heat & 53 °C & Severe heat & 51 °C & Very hot & 40 °C & Very hot  & 38 °C \\
+% 09:00 & \multicolumn{3}{c}{Severe heat}  & 57 °C & \multicolumn{3}{c}{Severe heat} & 43 °C \\
+% 10:00 & \multicolumn{3}{c}{Severe heat}  & 59 °C & \multicolumn{3}{c}{Severe heat} & 47 °C \\
+% 11:00 & \multicolumn{3}{c}{Extreme heat} & 61 °C & \multicolumn{3}{c}{Severe heat} & 51 °C \\
+% 12:00 & \multicolumn{3}{c}{Extreme heat} & 63 °C & \multicolumn{3}{c}{Severe heat} & 55 °C \\
+% 13:00 & \multicolumn{3}{c}{Extreme heat} & 65 °C & \multicolumn{3}{c}{Severe heat} & 59 °C \\
+% 14:00 & \multicolumn{3}{c}{Extreme heat} & 62 °C & \multicolumn{3}{c}{Severe heat} & 56 °C \\
+% 15:00 & \multicolumn{3}{c}{Severe heat}  & 60 °C & \multicolumn{3}{c}{Severe heat} & 53 °C \\
+% 16:00 & \multicolumn{3}{c}{Severe heat}  & 58 °C & \multicolumn{3}{c}{Severe heat} & 51 °C \\
+% 17:00 & Severe heat & 50 °C & Severe heat & 45 °C & Severe heat & 44 °C & Very hot  & 39 °C \\
+% 18:00 & Severe heat & 43 °C & Very hot    & 33 °C & Very hot    & 39 °C & Moderate  & 30 °C \\
+% 19:00 & Very hot    & 37 °C & Moderate    & 24 °C & Very hot    & 34 °C & Moderate  & 21 °C \\
+% 20:00 & Very hot    & 32 °C & Moderate    & 16 °C & Moderate    & 30 °C & Cool      & 15 °C \\
+% 21:00 & Moderate    & 28 °C & Cool        & 10 °C & Moderate    & 27 °C & Cool      &  9 °C \\
+% 22:00 & Moderate    & 26 °C & Cool        &  6 °C & Moderate    & 25 °C & Cool      &  6 °C \\
+% 23:00 & Moderate    & 24 °C & Very cold   &  3 °C & Moderate    & 24 °C & Very cold &  3 °C \\
+% \Table{Temperature by Day}{lXr{12mm}|Xr{12mm}}{
+% % \BigTablePair{Temperature by Day}{lXr{12mm}|Xr{12mm}|Xr{12mm}}{
+% & \multicolumn{2}{c}{\tableheader Hot Day}
+% & \multicolumn{2}{c}{\tableheader Normal Day}\\
+% % & \multicolumn{2}{c}{\tableheader Cold Day}\\
+% \cmidrule[.5pt]{2-5}
+%   \tableheader Hour
+% & \tableheader Temperature Band
+% & \tableheader Average
 % & \tableheader Temperature Band
 % & \tableheader Average \\
-00:00 & Very hot     & 38 °C & Cool        &  7 °C \\ % & Very cold   & $-16$ °C \\
-01:00 & Very hot     & 37 °C & Cool        &  5 °C \\ % & Severe cold & $-19$ °C \\
-02:00 & Very hot     & 37 °C & Very cold   &  4 °C \\ % & Severe cold & $-20$ °C \\
-03:00 & Very hot     & 39 °C & Cool        &  8 °C \\ % & Very cold   & $-13$ °C \\
-04:00 & Very hot     & 41 °C & Cool        & 13 °C \\ % & Very cold   &  $-7$ °C \\
-05:00 & Very hot     & 43 °C & Moderate    & 17 °C \\ % & Very cold   &  $-1$ °C \\
-06:00 & Severe heat  & 45 °C & Moderate    & 21 °C \\ % & Very cold   &     4 °C \\
-07:00 & Severe heat  & 48 °C & Moderate    & 25 °C \\ % & Cool        &    10 °C \\
-08:00 & Severe heat  & 50 °C & Moderate    & 30 °C \\ % & Cool        &    16 °C \\
-09:00 & Severe heat  & 52 °C & Very hot    & 34 °C \\ % & Moderate    &    22 °C \\
-10:00 & Severe heat  & 54 °C & Very hot    & 38 °C \\ % & Moderate    &    28 °C \\
-11:00 & Severe heat  & 57 °C & Severe heat & 43 °C \\ % & Very hot    &    35 °C \\
-12:00 & Severe heat  & 59 °C & Severe heat & 47 °C \\ % & Very hot    &    36 °C \\
-13:00 & Extreme heat & 61 °C & Severe heat & 51 °C \\ % & Very hot    &    37 °C \\
-14:00 & Extreme heat & 63 °C & Severe heat & 55 °C \\ % & Very hot    &    38 °C \\
-15:00 & Extreme heat & 65 °C & Severe heat & 59 °C \\ % & Very hot    &    40 °C \\
-16:00 & Extreme heat & 62 °C & Severe heat & 56 °C \\ % & Very hot    &    37 °C \\
-17:00 & Severe heat  & 60 °C & Severe heat & 53 °C \\ % & Very hot    &    34 °C \\
-18:00 & Severe heat  & 58 °C & Severe heat & 51 °C \\ % & Very hot    &    32 °C \\
-19:00 & Severe heat  & 53 °C & Very hot    & 40 °C \\ % & Moderate    &    19 °C \\
-20:00 & Severe heat  & 48 °C & Moderate    & 30 °C \\ % & Cool        &     9 °C \\
-21:00 & Severe heat  & 45 °C & Moderate    & 22 °C \\ % & Very cold   &     0 °C \\
-22:00 & Very hot     & 42 °C & Moderate    & 16 °C \\ % & Very cold   &  $-7$ °C \\
-23:00 & Very hot     & 40 °C & Cool        & 11 °C \\ % & Very cold   & $-12$ °C \\
-}
+% % & \tableheader Temperature Band
+% % & \tableheader Average \\
+% 00:00 & Very hot     & 37 °C & Very cold   &  4 °C \\ % & Severe cold & $-20$ °C \\
+% 01:00 & Very hot     & 39 °C & Cool        &  8 °C \\ % & Very cold   & $-13$ °C \\
+% 02:00 & Very hot     & 41 °C & Cool        & 13 °C \\ % & Very cold   &  $-7$ °C \\
+% 03:00 & Very hot     & 43 °C & Moderate    & 17 °C \\ % & Very cold   &  $-1$ °C \\
+% 04:00 & Severe heat  & 45 °C & Moderate    & 21 °C \\ % & Very cold   &     4 °C \\
+% 05:00 & Severe heat  & 48 °C & Moderate    & 25 °C \\ % & Cool        &    10 °C \\
+% 06:00 & Severe heat  & 50 °C & Moderate    & 30 °C \\ % & Cool        &    16 °C \\
+% 07:00 & Severe heat  & 52 °C & Very hot    & 34 °C \\ % & Moderate    &    22 °C \\
+% 08:00 & Severe heat  & 54 °C & Very hot    & 38 °C \\ % & Moderate    &    28 °C \\
+% 09:00 & Severe heat  & 57 °C & Severe heat & 43 °C \\ % & Very hot    &    35 °C \\
+% 10:00 & Severe heat  & 59 °C & Severe heat & 47 °C \\ % & Very hot    &    36 °C \\
+% 11:00 & Extreme heat & 61 °C & Severe heat & 51 °C \\ % & Very hot    &    37 °C \\
+% 12:00 & Extreme heat & 63 °C & Severe heat & 55 °C \\ % & Very hot    &    38 °C \\
+% 13:00 & Extreme heat & 65 °C & Severe heat & 59 °C \\ % & Very hot    &    40 °C \\
+% 14:00 & Extreme heat & 62 °C & Severe heat & 56 °C \\ % & Very hot    &    37 °C \\
+% 15:00 & Severe heat  & 60 °C & Severe heat & 53 °C \\ % & Very hot    &    34 °C \\
+% 16:00 & Severe heat  & 58 °C & Severe heat & 51 °C \\ % & Very hot    &    32 °C \\
+% 17:00 & Severe heat  & 53 °C & Very hot    & 40 °C \\ % & Moderate    &    19 °C \\
+% 18:00 & Severe heat  & 48 °C & Moderate    & 30 °C \\ % & Cool        &     9 °C \\
+% 19:00 & Severe heat  & 45 °C & Moderate    & 22 °C \\ % & Very cold   &     0 °C \\
+% 20:00 & Very hot     & 42 °C & Moderate    & 16 °C \\ % & Very cold   &  $-7$ °C \\
+% 21:00 & Very hot     & 40 °C & Cool        & 11 °C \\ % & Very cold   & $-12$ °C \\
+% 22:00 & Very hot     & 38 °C & Cool        &  7 °C \\ % & Very cold   & $-16$ °C \\
+% 23:00 & Very hot     & 37 °C & Cool        &  5 °C \\ % & Severe cold & $-19$ °C \\
+% }
 
 \subsubsection{Precipitation}
 Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours obscure vision as effectively as a dense fog.
 % Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours and blizzards obscure vision as effectively as a dense fog.
 
 Most precipitation is rain, but in cold conditions it can manifest as snow, sleet, or hail. Precipitation of any kind followed by a cold snap in which the temperature dips from above freezing to $-1$ °C or below may produce ice.
+
+\textbf{Fog:} Whether in the form of a low-lying cloud or a mist rising from the ground, fog obscures all sight, including darkvision, beyond 1.5 meters. Creatures 1.5 meter away have concealment (attacks by or against them have a 20\% miss chance).
+
+\textbf{Rain:} Rain reduces visibility ranges by half, reducing the distance increment for \skill{Spot} DCs by half (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Rain imposes a $-4$ penalty on \skill{Listen} and \skill{Search} checks, normal ranged weapon attacks. Unprotected flames are automatically extinguished, and protected flames have 50\% chance of extinguishing.%resulting in a $-4$ penalty on \skill{Spot} and \skill{Search} checks. It has the same effect on flames, ranged weapon attacks, and \skill{Listen} checks as severe wind.
+
+\textit{Downpour:} Downpour has the same effects as normal rain, but also conceals as fog (see above).
+
+\textbf{Snow:} Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 3d10 centimeters of snow on the ground.
+
+\textit{Heavy Snow:} Heavy snow has the same effects as normal snowfall, but also restricts visibility as fog does (see Fog, above). A day of heavy snow leaves 3d4 $\times$ 10 centimeters of snow on the ground, and it costs 4 squares of movement to enter a square covered with heavy snow. Heavy snow accompanied by strong or severe winds may result in snowdrifts 1d4 $\times$ 1.5 meters deep, especially in and around objects big enough to deflect the wind---a cabin or a large tent, for instance. There is a 10\% chance that a heavy snowfall is accompanied by lightning (see Thunderstorm, below). Snow has the same effect on flames as moderate wind.
+
+\textbf{Sleet:} Essentially frozen rain, sleet has the same effect as rain while falling (except that its chance to extinguish protected flames is 75\%) and the same effect as snow once on the ground.
+
+% \textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
+
+\Figure*{t}{images/adventurer-3.png}
 
 \BigTablePair{Wind Effects}{lRcc*{2}{z{11mm}}lll}{
 &
@@ -110,20 +190,6 @@ Tornado   & 280--500 km/h & $\star$ & $\star$ & $\star$ & 30 & Large or smaller 
 \BigTableNote{9}{\textit{Checked:} Creatures are unable to move forward against the force of the wind. Flying creatures are blown back 1d6 $\times$ 1.5 meters.}\\
 }
 
-\textbf{Fog:} Whether in the form of a low-lying cloud or a mist rising from the ground, fog obscures all sight, including darkvision, beyond 1.5 meters. Creatures 1.5 meter away have concealment (attacks by or against them have a 20\% miss chance).
-
-\textbf{Rain:} Rain reduces visibility ranges by half, reducing the distance increment for \skill{Spot} DCs by half (if the DC already increases by 1.5 m, then the DC increases by 1 more for each distance increment). Rain imposes a $-4$ penalty on \skill{Listen} and \skill{Search} checks, normal ranged weapon attacks. Unprotected flames are automatically extinguished, and protected flames have 50\% chance of extinguishing.%resulting in a $-4$ penalty on \skill{Spot} and \skill{Search} checks. It has the same effect on flames, ranged weapon attacks, and \skill{Listen} checks as severe wind.
-
-\textit{Downpour:} Downpour has the same effects as normal rain, but also conceals as fog (see above).
-
-\textbf{Snow:} Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 3d10 centimeters of snow on the ground.
-
-\textit{Heavy Snow:} Heavy snow has the same effects as normal snowfall, but also restricts visibility as fog does (see Fog, above). A day of heavy snow leaves 3d4 $\times$ 10 centimeters of snow on the ground, and it costs 4 squares of movement to enter a square covered with heavy snow. Heavy snow accompanied by strong or severe winds may result in snowdrifts 1d4 $\times$ 1.5 meters deep, especially in and around objects big enough to deflect the wind---a cabin or a large tent, for instance. There is a 10\% chance that a heavy snowfall is accompanied by lightning (see Thunderstorm, below). Snow has the same effect on flames as moderate wind.
-
-\textbf{Sleet:} Essentially frozen rain, sleet has the same effect as rain while falling (except that its chance to extinguish protected flames is 75\%) and the same effect as snow once on the ground.
-
-% \textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
-
 \subsubsection{Storms}
 The combined effects that accompany all storms reduce visibility ranges to one quarter, reducing the distance increment for \skill{Spot} DCs by three quarters (if the DC already increases by 1.5 m, then the DC increases by 2 more for each distance increment). Storms impose a $-4$ penalty on \skill{Search} and \skill{Listen} checks, because of the wind and precipitation. All penalties stack with rain penalties (including visibility), if applicable. All storms have severe winds (see Winds, below). See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following two types.
 % The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a $-8$ penalty on \skill{Spot}, \skill{Search}, and \skill{Listen} checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a $-4$ penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50\% chance to extinguish these lights. See \tabref{Wind Effects} for possible consequences to creatures caught outside without shelter during such a storm. Storms are divided into the following three types.
@@ -139,7 +205,7 @@ Very high winds and torrential precipitation reduce visibility to one quarter, r
 
 \textbf{Sandstorm (CR 3):} Sandstorms impose a $-4$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Winds blow as a windstorm. Moreover, sandstorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sandstorm leaves 2d8 $\times$ 10 centimeters of fine sand in its wake. One in ten sandstorms become flensing.
 
-\textit{Flensing Sandstorm (CR 5):} Flensing sandstorms occur when wind blows at hurricane-force. A character in a flensing sandstorm take a $-6$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Moreover, flensing sandstorms deal 1d3 points of lethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A flensing sandstorm leaves 2d4$-1$ meters of fine sand in its wake.
+\textit{Sirocco (CR 5):} Siroccos occur when wind blows at hurricane-force. A character in a sirocco take a $-6$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Moreover, siroccos deal 1d3 points of lethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sirocco leaves 2d4$-1$ meters of fine sand in its wake.
 
 \textit{Suffocation:} Exposed characters might begin to choke if their noses and mouths are not covered. A sufficiently large cloth expertly worn (\skill{Survival} DC 15) negates the effects of suffocation from dust and sand. An inexpertly worn cloth across the nose and mouth protects a character from the potential of suffocation for a number of rounds equal to 10 $\times$ her Constitution score. An unprotected character faces potential suffocation after a number rounds equal to twice her Constitution score. Once the grace period ends, the character must make a successful Constitution check (DC 10, +1 per previous check) each round or begin suffocating on the encroaching sand. In the first round after suffocation begins, the character falls unconscious (0 hp). In the following round, she drops to $-1$ hit points and is dying. In the third round, she suffocates to death.
 

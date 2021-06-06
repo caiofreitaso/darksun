@@ -82,8 +82,7 @@
 
 % Font settings
 \renewcommand*\rmdefault{lmr}
-\newcommand\fixsize{
-\ifnum\f@size=5\fontsize{5.25pt}{5.125pt}
+\newcommand\fixsize{\ifnum\f@size=5\fontsize{5.25pt}{5.125pt}
 \else\ifnum\f@size=7\fontsize{7.45pt}{7.175pt}
 \else\ifnum\f@size=8\fontsize{8.4pt}{8.2pt}
 \else\ifnum\f@size=9\fontsize{9.45pt}{9.225pt}
@@ -653,7 +652,7 @@
 		& \tableheader Type
 }
 \newcommand{\NamedWeaponTable}[2]{\WeaponTable[#1]{#1}{#2}}
-\newcommand{\TableSubheader}[1]{\textit{--- #1 ---}}
+\newcommand{\TableSubheader}[1]{\textit{------ #1 ------}}
 \newcommand{\WeaponType}[1]{\multicolumn{12}{l}{\TableSubheader{#1}}}
 \newcommand{\Projectile}[6]{~ #1&#2&#3&&&&&&#4&#5&#6&}
 \newcommand{\InferiorWeapon}[6]{~ #1&#2&#3&$\diamond$&$\diamond$&$\diamond$&&&#4&#5&#6&}
