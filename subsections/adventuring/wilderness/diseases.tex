@@ -10,21 +10,21 @@ Diseases have various symptoms and are spread through a number of vectors. The c
 
 \textit{Infection:} The disease's method of delivery---ingested, inhaled, via injury, or contact. Keep in mind that some injury diseases may be transmitted by as small an injury as a flea bite and that most inhaled diseases can also be ingested (and vice versa).
 
-\textit{DC:} The Difficulty Class for the Fortitude saving throws to prevent infection, or (if the character has been infected), to prevent each instance of repeated damage, and to recover from the disease.
+\textit{DC:} The Difficulty Class for the initial Fortitude saving throw to prevent infection. If the character has been infected, the DC to prevent each instance of repeated damage (and to recover from the disease) increases by +1 for each previous save.
 
 \textit{Incubation Period:} The time before damage begins.
 
 \textit{Damage:} The ability damage the character takes after incubation and each day afterward.
 
-\Table{Diseases}{llcll}{
+\Table{Diseases}{LlclY{15mm}}{
   \tableheader Disease
 & \tableheader Infection
 & \tableheader DC
 & \tableheader Incubation
 & \tableheader Damage \\
-Cerebral parasite & Contact  & 15 & 1d4 days & 1d2 Int, 1 power point tax\footnotemark[1] \\
-Chitin rot        & Injury   & 16 & 1d3 days & 1d3 natural armor \\
-Dehydrating fever & Ingested & 14 & 1d6 days & 1d3 Str, 1d3 Con\footnotemark[2] \\
+Cerebral parasite & Contact  & 15 & 1d4 days & 1d2 Int\footnotemark[1] \\
+Chitin rot        & Contact  & 16 & 1d3 days & 1d2 natural armor \\
+Dehydrating fever & Ingested & 14 & 1d6 days & 1d3 Str, 1d2 Con\footnotemark[2] \\
 Filth fever       & Injury   & 12 & 1d3 days & 1d3 Dex, 1d3 Con \\
 Gray death        & Inhaled  & 15 &   1 day  & 1d3 Str, 1d3 Dex\footnotemark[3] \\
 Red ache          & Injury   & 15 & 1d3 days & 1d6 Str \\
@@ -46,28 +46,11 @@ Wheezing death    & Injury   & 14 & 1d2 days & 1d6 Con \\
 
 \textit{Filth Fever:} Dire rats and otyughs spread it. Those injured while in filthy surroundings might also catch it.
 
-\textit{Gray Death:} Caused by long exposure to duststorms at Sea of Silt.
+\textit{Gray Death:} Caused by long exposure to strong winds at Sea of Silt.
 
 \textit{Red Ache:} Skin turns red, bloated, and warm to the touch.
 
-\textit{Sleeping sickness:} Joints swell and redden. Easily mistaken for red ache (\skill{Heal} DC 15). An afflicted character with insomnia cannot get sleep through natural means.
-
-% Ear Mites
-% Eye Mites
-% Desert Lice
-% Sand Fleas
-% Mind Worms
-
-% Blinding sickness	Ingested	16	1d3 days	1d4 Str1
-% Cackle fever	Inhaled	16	1 day	1d6 Wis
-% Demon fever	Injury	18	1 day	1d6 Con2
-% Devil chills3	Injury	14	1d4 days	1d4 Str
-% Filth fever	Injury	12	1d3 days	1d3 Dex, 1d3 Con
-% Mindfire	Inhaled	12	1 day	1d4 Int
-% Mummy rot4	Contact	20	1 day	1d6 Con
-% Red ache	Injury	15	1d3 days	1d6 Str
-% Shakes	Contact	13	1 day	1d8 Dex
-% Slimy doom	Contact	14	1 day	1d4 Con2
+\textit{Sleeping sickness:} Joints swell and redden. Easily mistaken for red ache (\skill{Heal} DC 20, $-1$ for each day after incubation). An afflicted character with insomnia cannot get sleep through natural means.
 
 \subsubsection{Healing A Disease}
 Use of the \skill{Heal} skill can help a diseased character. Every time a diseased character makes a saving throw against disease effects, the healer makes a check. The diseased character can use the healer's result in place of his saving throw if the \skill{Heal} check result is higher. The diseased character must be in the healer's care and must have spent the previous 8 hours resting.
