@@ -1,4 +1,4 @@
--33# CHANGELOG
+# CHANGELOG
 
 ## SRD
 - Remove all mentions to sorcerer.
@@ -103,7 +103,7 @@
 	<!-- - Bard: 6 + Int modifier -> **8 + Int modifier**. -->
 	- Druid: 4 + Int modifier -> **2 + Int modifier**.
 	- Fighter: 2 + Int modifier -> **4 + Int modifier**.
-	- Psychic Warrior: 2 + Int modifier -> **4 + Int modifier**.
+	<!-- - Psychic Warrior: 2 + Int modifier -> **4 + Int modifier**. -->
 	- Rogue: 8 + Int modifier -> **10 + Int modifier**.
 - Add new skills as class skills;
 	- Barbarian: Autohypnosis, Knowledge (nature).
@@ -156,6 +156,10 @@
 	- *Telepathy:* Wisdom
 - Change War Mind: Increased progression up to 12th level (for 6th-level psionic powers).
 - Change Survival: new DCs and modifiers to avoid getting lost.
+- Change Diseases: Fortitude save DC increase by +1 for each previous save.
+- Change Spellcasters: Only one additional slot per class level (plus domain slot, if applicable).
+- Add new class feature to Rogue:
+	- Trade secret: beginning at 4th level, rogue gains a new ability from a select list. Gains a new one every four levels thereafter.
 
 ## Dark Sun 3
 - Change the subject from Templar's abilities descriptions to third person.
