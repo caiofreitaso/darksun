@@ -52,16 +52,17 @@ PC  |  -2  |  +2  |  -2  |  -3  |
 OK Clairsentience + Telepathy = Detect Psionics
 	> WATCHER'S WARD + MINDLINK
 Clairsentience + Psychokinesis = Reddopsi
-	> DANGER SENSE + 
+	> DANGER SENSE + KINETIC CONTROL
 Clairsentience + Psychometabolism = Heightened Senses
-	> SYNESTHETE + 
+	> SYNESTHETE + ANIMAL AFFINITY
 OK Clairsentience + Psychoportation = Teleport Trigger
 	> ANCHORED NAVIGATION + TELEPORT
 
 Psychokinesis + Telepathy = Create Psionic Item
 Psychokinesis + Psychometabolism = Null Psionics
+	> 
 Psychokinesis + Psychoportation = Astral Construct
-	> ANIMATE OBJECT + 
+	> ANIMATE OBJECT + SUMMON PLANAR CREATURE
 
 Psychometabolism + Telepathy = Mindlink, Thieving
 	> LIFE-DRAINING + MINDLINK

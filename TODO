@@ -1,9 +1,3 @@
-Backgrounds
-OK	- Cyberpunk 2020 (context)
-OK		- Each year is summarized
-	- D&D 5 (motivation)
-		- 
-
 Skill Encounters
 
 Epic
@@ -12,175 +6,26 @@ Epic
 	- Elemental
 	- Spirit of the Land
 
-Character Kits (Prestige Class or Alternate Class Feature)
-OK	- Arena Mage --> ACF (Familiar)
-		- cast spell covertly (85% chance of success)
-		- psionic mimicry
-OK	- Cerulean --> PC (10-level) min-level 3rd
-OK		- must be chaotic
-		- must roll to see how many spells per day
-OK		- impossible to disguise
-		- 5%/level/day of calling Tyr-storm in 15km radius
-OK	- Chasseur --> PC (5-level) min-level 8th
-OK		- gather information, intimidation, survival
-OK		- Track
-OK		- reputation: +2 diplomacy
-OK		- cry witch: accuse of wizardry
-OK	- Earth Defender --> PC (5-level) min-level 5th
-OK		- must be preserver
-OK		- must be nonlawful
-OK		- Hide in plain sight (as ranger)
-OK		- +1/level in Knowledge (nature)
-OK		- +1 in all saves when in chosen ward
-OK		- must help another defender
-OK	- Exterminator --> PC (5-level) min-level 5th
-OK		- must be defiler
-OK		- can revert plant growth and {ward}
-OK		- can create poison of only one type
-OK		- get the most of the terrain
-		- refuse to leave area until plant life is exterminated
-OK		- defiler radius x 1.5
-OK	- Free Wizard --> No changes
-OK	- Illusionist --> No changes
-OK	- Mercenary --> No changes
-OK	- Necromancer --> ACF (5th level bonus feat)
-OK		- Rebuke undead
-OK	- Restorationist --> PC (10-level) min-level 5th
-OK		- must be preserver
-OK		- must be nonevil
-		- Path Dexter
-OK		- domain spell --> Plant/Animal
-OK		- speak with plants (4th-level) 1/day
-OK		- doubled casting time
-	- Shadow Wizard --> PC (10-level) min-level 5th
-OK		- must be neutral
-OK		- must roll to see how many spells per day
-		- becomes more shadow at each level
-OK		- 5th: chill touch 1/day
-OK		- 7th: speak with shadow
-		- 9th: immune to cold
-OK		- absence of shadow (total darkness): fort check or 1d4 damage
-OK	- Tribal Wizard --> No changes
+Magic Items
+	- No bonus for Saving Throws
+	- No bonus to ability scores
+	- Ability scores into fixed value: 19
+		- Strength: 19, 21, 23, or 25
 
-OK	- Auditor --> ACF (psion, bonus feat)
-OK		- contact
-OK	- Beastmaster Psionicist --> PC (5-level) min-level 5th (PsyWar)
-OK		- handle animal, survival
-OK		- wild empathy
-OK		- animal companion
-OK		- bonus on telepathy
-OK	- Mercenary Psionicist --> No changes
-OK	- Noble Psionicist --> No changes
-OK	- Psiologist --> Use DS3 prestige class
-	- Sensei --> PC (12-level) min-level 4rd (PsyWar)
-		- Many weapons
-		- Tumble
-		- Unarmed strike
-OK	- Tribal Psionicist --> No changes (wilder)
+OK Saving Throws
+OK	- 3/4 good save
+OK	- 1/2 bad save
 
-OK	- Shadow --> ACF (trap sense)
-		- must be elf
-		- must be evil
-		- death attack
+Bonus Attack Bonus
+	- Extra attack for each 10 points
+	- Extra attacks without penalties
 
-OK	- Wanderer --> PC (3-level) min-level 3rd (Clr)
-OK		- must be chaotic
-		- earth: crops/agriculture; agriculture prof
-		- air: fate and weather; direction sense prof
-		- fire: mercenary; fire-building prof
-		- water: water/heal; water finding prof
-OK	- Shaman --> No changes
-		- must be nonchaotic
-
-OK	- Savage Hunter --> ACF (fighter, bonus feat)
-OK		- Track
-OK		- Survival as class skill
-OK	- Thri-Kreen Slayer --> ACF (ranger, favored enemy)
-OK		- Thri-kreen as favored enemy
-OK		- +3 instead of +2
-OK		- Hide & Move Silently
-OK	- Free-Wanderer --> No changes
-OK	- Procurer --> ACF (streetsmart)
-OK	- Battle Dancer --> PC (10-level) min-level 5th bard/cleric
-OK	- Element Singer --> PC (9-level) min-level 4th (clr)
-OK	- Arcanist --> ACF (already done)
-OK	- Brown Elf --> No changes
-
-OK	- Convict --> PC (5-level) min-level 5th (Gld)
-OK		- Good Fort/Ref
-OK		- Require Weapon Focus (dagger/concealable weapon)
-OK		- Must be sentenced to fight in an arena
-OK		- Have some rogue abilities
-OK		- Continue gladiatorial performance
-OK	- Arena Champion + Professional Gladiator --> PC (10-lvl) min-level 7th (Gld)
-OK		- Weapon improvisation
-OK		- Weapon Specialization
-OK		- Require Endurance
-OK		- Armor Optimization
-		- May train free of charge IF
-			- Not being sought for crimes by local templar
-			- Must be a gladiator at the arena 2 levels higher than PC
-	- Jazst --> PC (10-level) min-level 6th (Gld)
-OK		- Perform, Tumble, Diplomacy, Survival, Craft, Disguise, Jump, Balance
-OK		- Trained in armor spikes
-OK		- Require Peform
-OK		- Principle of the Razor: Str damage, bleeding.
-OK		- The Dance of Whirling Blades: jumping pounce that doubles the number of attacks. -2 AC besides charge. Balance check to not get dazed. Fortitude check to not get exausted. Full turn resting to use again.
-X	- Montare --> PC (10-level) min-level 5th (Gld)
-X		- Require Handle Animal, Ride
-X		- Handle Animal, Knowledge (nature), Ride, Craft
-X		- Gain Weapon Focus (whip)
-X		- Impale: use polearm with a charge to do damage x2.
-X		- Catch and Drag: use lasso or trip weapon to trip with the size of the mount.
-X		- Move-By: use slashing or bludgeoning weapon to gain +1 AC.
-
-OK	- Rework Ranger
-XX		- Gain 1 elemental domain spells
-OK		- Animal companion = level -3
-OK	- Rework Druid
-OK		- Remove animal companion
------------
-
-OK
-- **Rework Cerulean**
-	- Bring closer to AD&D original feeling.
-	- Require any chaotic alignment.
-	- Add Literacy and Speak Language to class skills.
-	- cast elemental spells 4/day
-	- roll dice (1d4) to see caster level when preparing spells
-
------------
-
-OK REWORK GLADIATOR
-
-- Maintain gladiatorial performance
-- WHAT IS GOOD
-	- Exotic weapon every 4 levels
-	- Armor optimization
-	- Uncanny dodge
-	- Improved uncanny dodge
-
-- Add combat styles
-OK	- Mounted
-OK	- Unarmed
-XX	- Jazst (dancing/dervixe)
-
------------
-
-OK REWORK DUNE TRADER
-
-OK	- Poison use
-OK	- Fast Talk (original)
-XX	- 1 new language per 2 levels
-	- Condense Skill check
-XX	- Make Patron house a different ability
-OK	- Mastery in Diplomacy (in place of open arms)
-	- Bargaining
-OK		- Make it a use of Diplomacy
-OK		- Dune Trader gains bonus for it
-	- Break contact into two abilities
-XX		- 5%
------------
-
-DONE REWORK ARENA CHAMPION
-
+Fatigue
+	- Can withstand fatigue points equal to Constitution score
+	- Remove # of fatigue points per hour equal to Constitution modifier (minumum 1)
+	- Every fatigue point gained when at the limit deals 1 point of damage
+	- Swift and immediate actions increase fatigue by 1
+	- Attacks of opportunity increase fatigue by 1
+	- Threshold for conditions:
+		- 1/2 Constitution score = fatigued
+		- Constitution score = exausted

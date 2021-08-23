@@ -12,5 +12,34 @@ You can also move diagonally past other impassable obstacles, such as pits.
 \textbf{Closest Creature:} When it's important to determine the closest square or creature to a location, if two squares or creatures are equally close, randomly determine which one counts as closest by rolling a die.
 
 \input{subsections/combat/movement-position-and-distance/tactical-movement/moving-through-a-square.tex}
+
+\BigTablePair{Creature Size and Scale}{l*{3}{Z{12mm}}XX*{3}{Z{14mm}}}{
+\tableheader Size Category &
+\tableheader Size\footnotemark[1] Modifier &
+\tableheader Grapple\footnotemark[2] Modifier &
+\tableheader Hide\footnotemark[3] Modifier &
+\tableheader Height or Length\footnotemark[4] &
+\tableheader Weight\footnotemark[5] &
+\tableheader Space\footnotemark[6] &
+\tableheader Natural Reach\footnotemark[6] (Tall) &
+\tableheader Natural Reach\footnotemark[6] (Long)\\
+
+Fine       & +8   & $-16$ & +16   & 15 cm or less  & 60 g or less        & 15 cm & 0 m   & 0 m   \\
+Diminutive & +4   & $-12$ & +12   & 15 cm--30 cm   & 60 g--0.5 kg        & 30 cm & 0 m   & 0 m   \\
+Tiny       & +2   & $-8$  & +8    & 30 cm--60 cm   & 0.5 kg--4 kg        & 75 cm & 0 m   & 0 m   \\
+Small      & +1   & $-4$  & +4    & 60 cm--1.2 m   & 4 kg--30 kg         & 1.5 m & 1.5 m & 1.5 m \\
+Medium     & +0   & +0    & +0    & 1.2 m--2.4 m   & 30 kg--250 kg       & 1.5 m & 1.5 m & 1.5 m \\
+Large      & $-1$ & +4    & $-4$  & 2.4 m--4.8 m   & 250 kg--1 tonne     & 3 m   & 3 m   & 1.5 m \\
+Huge       & $-2$ & +8    & $-8$  & 4.8 m--9.6 m   & 1 tonne--8 tonnes   & 4.5 m & 4.5 m & 3 m   \\
+Gargantuan & $-4$ & +12   & $-12$ & 9.6 m--19.2 m  & 8 tonnes--62 tonnes & 6 m   & 6 m   & 4.5 m \\
+Colossal   & $-8$ & +16   & $-16$ & 19.2 m or more & 62 tonnes or more   & 9 m   & 9 m   & 6 m   \\
+
+\BigTableNote{9}{1 A creature's size modifier is applied to it's attack bonus and Armor Class.}\\
+\BigTableNote{9}{2 See the Grapple special attack.}\\
+\BigTableNote{9}{3 See the \skill{Hide} skill.}\\
+\BigTableNote{9}{4 Biped's height, quadruped's body length (nose to base of tail)}\\
+\BigTableNote{9}{5 Assumes that the creature is roughly as dense as a regular animal. A creature made of stone will weigh considerably more. A gaseous creature will weigh much less.}\\
+\BigTableNote{9}{6 These values are typical for creatures of the indicated size. Some exceptions exist.}\\
+}
 \input{subsections/combat/movement-position-and-distance/tactical-movement/terrain-and-obstacles.tex}
 \input{subsections/combat/movement-position-and-distance/tactical-movement/special-movement-rules.tex}

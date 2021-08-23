@@ -41,7 +41,7 @@
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
       \fill[black] (line area.north west) rectangle (line area.south east);
       \node[rotate=180,anchor=north] at (0,-0.35) { \includegraphics[width=8cm]{images/chapter.png} };
-      \node[anchor=north] at (0,1.85) { \color{white}\imfellEnglish\Large\@chapapp\space\thechapter };
+      \node[anchor=north] at (0,1.85) { \color{white}\imfellEnglish\huge\@chapapp\space\thechapter };
     \end{tikzpicture}
 
     \vskip5mm
@@ -57,7 +57,7 @@
     %   \fi%
     % \fi%
     % &
-    \Huge\bfseries{
+    \fontsize{24.88pt}{24.88pt}\bfseries{
       \contourlength{0.3pt}\contournumber{1}\contour{white}{
         \MakeUppercase{#1}
       }
@@ -108,13 +108,13 @@
 \pagepdf{images/color-wizard-1.pdf}
 \input{chapters/01-introduction.tex}
 \input{chapters/02-abilities.tex}
-\pagepdf{images/color-halfelf-1.pdf}
+\pagepdf*{images/color-halfelf-1.pdf}
 \input{chapters/03-character-races.tex}
 \pagepdf{images/color-psionics-2.pdf}
 \input{chapters/04-character-description.tex}
-\pagepdf{images/color-fighter-1.pdf}
+\pagepdf*{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
-\pagepdf*{images/color-barbarian-1.pdf}
+\pagepdf{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
 \pagepdf{images/color-mounted-1.pdf}
 \input{chapters/07-feats.tex}

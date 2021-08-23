@@ -14,15 +14,15 @@
 \ProcessOptions
 \if@twocolumn
 	\if@twoside
-	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,twoside]{extbook}
+	\LoadClass[8pt,utf8x,a4paper,final,twocolumn,openany,twoside]{extbook}
 	\else
-	\LoadClass[10pt,utf8x,a4paper,final,twocolumn,openany,oneside]{extbook}
+	\LoadClass[8pt,utf8x,a4paper,final,twocolumn,openany,oneside]{extbook}
 	\fi
 \else
 	\if@twoside
-	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,twoside]{extbook}
+	\LoadClass[8pt,utf8x,a4paper,final,onecolumn,openany,twoside]{extbook}
 	\else
-	\LoadClass[10pt,utf8x,a4paper,final,onecolumn,openany,oneside]{extbook}
+	\LoadClass[8pt,utf8x,a4paper,final,onecolumn,openany,oneside]{extbook}
 	\fi
 \fi
 
@@ -82,16 +82,9 @@
 
 % Font settings
 \renewcommand*\rmdefault{lmr}
-\newcommand\fixsize{\ifnum\f@size=5\fontsize{5.25pt}{5.125pt}
-\else\ifnum\f@size=7\fontsize{7.45pt}{7.175pt}
-\else\ifnum\f@size=8\fontsize{8.4pt}{8.2pt}
-\else\ifnum\f@size=9\fontsize{9.45pt}{9.225pt}
-\else\ifnum\f@size=10\fontsize{10.5pt}{10.25pt}
-\else\ifnum\f@size=12\fontsize{12.6pt}{12.3pt}
-\else\ifnum\f@size=14.4\fontsize{15.12pt}{14.76pt}
-\else\ifnum\f@size=17.28\fontsize{18.144pt}{17.712pt}
-\else\Huge
-\fi\fi\fi\fi\fi\fi\fi\fi}
+
+% \newcommand\fixsize{\fontsize{\f@size*1.05pt}{\f@size*1.01pt}}
+\newcommand\fixsize{}
 \newcommand\textold[1]{{\imfellEnglish\itshape #1}}
 \newcommand\tableheader{\imfellEnglish\scshape\fixsize}
 \newcommand\bold[1]{{\fontseries{bx}\selectfont #1}}
@@ -121,7 +114,7 @@
 		\imfellEnglish
 		\parskip=0em
 		\chapter*{\contentsname}
-		\small
+		
 		\@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
 		\@starttoc{toc}
 	}
@@ -147,11 +140,11 @@
 		\begin{tabular}{p{25mm}r{\textwidth-25mm}}
 		\ifnum \c@secnumdepth >\m@ne%
 			\if@mainmatter%
-				\Large\@chapapp\space\thechapter%
+				\fontsize{}{}\@chapapp\space\thechapter%
 			\fi%
 		\fi%
 		&
-		\Huge\bfseries\color{ChapterColor}\raggedleft{
+		\fontsize{25pt}{25pt}\bfseries\color{ChapterColor}\raggedleft{
 			\contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
 				\MakeUppercase{#1}
 			}
@@ -162,9 +155,9 @@
 % Caption
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\imfellEnglish#1: #2}%
+  \sbox\@tempboxa{\large\imfellEnglish#1: #2}%
   \ifdim \wd\@tempboxa >\hsize
-    \imfellEnglish #1: #2\par
+    \large\imfellEnglish #1: #2\par
   \else
     \global \@minipagefalse
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
@@ -175,7 +168,7 @@
 \newcommand{\Quote}[3][0em]{
 	\noindent\parbox[c]{\linewidth}
 	{
-		\imfellEnglish\small\slshape
+		\imfellEnglish\slshape
 		\linespread{.9}
 		{
 			\color{black!50}
@@ -183,7 +176,7 @@
 			``#2''
 
 		}
-		\ifx&#3&\else{\hfill\color{ChapterColor}--- #3}\fi
+		\ifx&#3&\else{\hfill\color{black!50}--- #3}\fi
 		\vskip.5em
 	}
 }
@@ -212,27 +205,21 @@
 \renewcommand\section{
 	\@startsection{section}
 	{1}
-	{0pt}{1em}{0.01em}{\raggedleft\color{ChapterColor}\LARGE\scshape\imfellEnglish}
-}
+	{0pt}{1em}{0.01em}{\raggedleft\color{ChapterColor}\fontsize{17.3pt}{17.3pt}\scshape\imfellEnglish}}
 \renewcommand\subsection{\@startsection{subsection}%
 	{2}%
-	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}*%
-}
+	{0pt}{.7em}{0.01em}{\color{ChapterColor}\fontsize{14.4pt}{14.4pt}\scshape\imfellEnglish}*}
 \newcommand\subsectionA{\@startsection{subsection}%
 	{2}%
-	{0pt}{.7em}{0.01em}{\color{ChapterColor}\Large\scshape\imfellEnglish}}
-\renewcommand\subsubsection {
-	\@startsection{subsubsection}
-	{3}
-	{0pt}{.7em}{0.01em}{\color{SubsectionColor}\large\imfellEnglish}*
-}
+	{0pt}{.7em}{0.01em}{\color{ChapterColor}\fontsize{14.4pt}{14.4pt}\scshape\imfellEnglish}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{0pt}{.7em}{0.01em}{\color{SubsectionColor}\fontsize{12pt}{12pt}\imfellEnglish}*}
 \newcommand{\Class}[4][\section]{
 	#1{#2}\label{class:#2}
 	\Quote{#3}{#4}
 }
-\newcommand{\Skill}[2]{\subsectionA[#1]{#1 \normalsize(#2)} \label{skill:#1}}
+\newcommand{\Skill}[2]{\subsectionA[#1]{#1 \LARGE(#2)} \label{skill:#1}}
 \newcommand{\Feat}[7][General]{
-	\subsubsection{#2 \normalsize[#1]} \label{feat:#2}
+	\subsubsection{#2 \large[#1]} \label{feat:#2}
 	#3
 
 	\ifx&#4&\else\textbf{Prerequisites:} #4
@@ -484,14 +471,14 @@
 	#4\end{tabularx}
 	\ifx&#2&\else\end{table}\fi
 }
-\newcommand{\TransparentTable}[4][\scriptsize]{
+\newcommand{\TransparentTable}[4][\small]{
 	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
 	#1
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
-\newcommand{\Table}[4][\scriptsize]{
+\newcommand{\Table}[4][\small]{
 	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
 	#1
 	\rowcolors{2}{}{TableColor}
@@ -499,7 +486,7 @@
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
-\newcommand{\TableOdd}[4][\scriptsize]{
+\newcommand{\TableOdd}[4][\small]{
 	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
 	#1
 	\rowcolors{2}{TableColor}{}
@@ -510,7 +497,7 @@
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
 	\rowcolors{0}{TableColor}{}
-	\scriptsize
+	\small
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
@@ -518,7 +505,7 @@
 \newcommand{\BigTablePair}[3]{
 	\begin{table*}[b!]
 	\rowcolors{0}{}{TableColor}
-	\scriptsize
+	\small
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
@@ -572,9 +559,9 @@
 		\rowcolor{white}
 		\multirow[b]{2}{6mm}{\tableheader Level}
 		& \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus}
-		& \multirow[b]{-2}{5mm}{\tableheader Fort\\ Save}
-		& \multirow[b]{2}{5mm}{\tableheader Ref\\ Save}
-		& \multirow[b]{-2}{5mm}{\tableheader Will\\ Save}
+		& \multirow[t]{3}{5mm}{\tableheader Fort\\ Save}
+		& \multirow[t]{2}{5mm}{\tableheader Ref\\ Save}
+		& \multirow[t]{3}{5mm}{\tableheader Will\\ Save}
 		& \multirow[b]{2}{*}{\tableheader Special}
 		& \multicolumn{#1}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-\Sum{6}{#1}}
@@ -614,7 +601,7 @@
 \newcommand{\FeatTable}[3][l]{
 	\begin{table*}[ht!]
 	\rowcolors{0}{}{TableColor}
-	\scriptsize
+	\small
 	\begin{tabularx}{\textwidth}{#1 p{4.8cm} X}
 		\tableheader #2 Feat & \textold{Prerequisites} & \textold{Benefit}\\
 		#3
@@ -626,7 +613,7 @@
 	\begin{table*}[t!]
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\rowcolors{0}{TableColor}{}
-	\scriptsize
+	\small
 	\begin{tabularx}{\textwidth}{X r{9mm}r{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}r{9mm}r{9mm}r{9mm} p{2.1cm}}
 		\WeaponHeader{#2}\\
 		#3
@@ -672,7 +659,7 @@
 }
 
 \renewcommand{\arraystretch}{1.1}
-\linespread{1.025}
+\linespread{1.1}
 \setcounter{secnumdepth}{0}
 \renewcommand{\chaptermark}[1]{ \markboth{\scshape\MakeUppercase{#1}}{} }
 \renewcommand{\sectionmark}[1]{ \markright{\scshape#1}{} }

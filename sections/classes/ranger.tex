@@ -52,7 +52,6 @@ One of the most cunning and powerful creatures of the wastes is the ranger, a sk
 20th & +20/+15/+10/+5 & +12 & +12 & +6 & 5th favored enemy     & 3 & 3 & 3 & 3 \\
 }
 
-\Figure*{h}{images/ranger-2.png}
 
 \subsection{Making a Ranger}
 Rangers are capable in combat, although less so in open melee than the fighter, gladiator, or barbarian. His skills allow him to survive in the wilderness, to find his prey and to avoid detection. The ranger has the ability to gain special knowledge of certain types of creatures or lands. Knowledge of his enemies makes him more capable of finding and defeating those foes. Knowledge of terrain types or of specific favored lands makes it easier for him to live off the land, and makes it easier for him to take advantage of less knowledgeable foes. Rangers eventually learn to use the lesser spirits that inhabit Athas in order to produce spell-like effects. These lesser spirits inhabit small features of the land -- rocks, trees, cacti and the like.
@@ -88,6 +87,7 @@ At 5th level and every five levels thereafter (10th, 15th, and 20th level), the 
 
 If the ranger chooses humanoids or outsiders as a favored enemy, he must also choose an associated subtype, as indicated on the table. If a specific creature falls into more than one category of favored enemy, the ranger's bonuses do not stack; he simply uses whichever bonus is higher.
 
+\Figure*{b}{images/ranger-2.png}
 \textbf{Favored Terrain (Ex):} At any time when a ranger could normally select a favored enemy, he may instead choose to select a favored terrain given on \tabref{Athasian Terrains}. A ranger receives a +2 bonus on \skill{Hide}, \skill{Listen}, \skill{Move Silently}, \skill{Search}, \skill{Spot} and \skill{Survival} checks made within your favored terrain. Likewise, he gets +2 bonus on \skill{Knowledge} (geography) and \skill{Knowledge} (nature) checks about your favored terrain.
 
 This ability uses the same graduated progression that the favored enemy ability receives.
@@ -201,16 +201,23 @@ As before, the benefits of the ranger's chosen style apply only when he wears li
 \subsubsection{The Ranger's Animal Companion}
 A ranger's animal companion is different from a normal animal of its kind in many ways. A ranger's animal companion is superior to a normal animal of its kind and has special powers, as described below.
 
-\Figure{b}{images/druid-1.png}
-
-\Table{}{l Z{.5cm} Z{.8cm} Z{.8cm} Z{.7cm} X}{\tableheader Class Level & \tableheader Bonus HD & \tableheader Natural Armor Adj. &\tableheader  Str/Dex Adj. &\tableheader  Bonus Tricks &\tableheader  Special\\
-4th--5th &&&& 1 & Link, share spells\\
-6th--8th & +2 & +2 & +1 & 2 & Evasion\\
-9th--11th & +4 & +4 & +2 & 3 & Devotion\\
-12th--14th & +6 & +6 & +3 & 4 & Multiattack\\
-15th--17th & +8 & +8 & +4 & 5 &\\
+\Table{Animal Companion Progression}{l Z{.5cm} Z{.8cm} Z{.8cm} Z{.7cm} X}{
+  \tableheader Class Level
+& \tableheader Bonus HD
+& \tableheader Natural Armor Adj.
+& \tableheader Str/Dex Adj.
+& \tableheader Bonus Tricks
+& \tableheader Special \\
+ 4th--5th  &     &     &    & 1 & Link, share spells\\
+ 6th--8th  &  +2 &  +2 & +1 & 2 & Evasion\\
+ 9th--11th &  +4 &  +4 & +2 & 3 & Devotion\\
+12th--14th &  +6 &  +6 & +3 & 4 & Multiattack\\
+15th--17th &  +8 &  +8 & +4 & 5 & \\
 18th--20th & +10 & +10 & +5 & 6 & Improved evasion\\
-21th--24th & +12 & +12 & +6 & 7 &}
+21th--24th & +12 & +12 & +6 & 7 &
+}
+
+\Figure{b}{images/druid-1.png}
 
 \textbf{Animal Companion Basics:} Use the base statistics for a creature of the companion's kind, but make the following changes.
 
@@ -243,7 +250,7 @@ A ranger of sufficiently high level can select his animal companion from one of 
 
 Some animals are only available in certain environments. The animals available only in an aquatic environment, such as the Last Sea, are marked with $\dagger$. The animals available only in a silt environment, such as the Sea of Silt, are marked with $\diamond$.
 
-\Table{}{X X}{
+\Table{Alternative Animal Companions}{X X}{
 \multicolumn{2}{c}{\tableheader\footnotesize 7th Level or Higher (Level $-6$)}\\
 Carru, bull           & Leopard \\
 Cheetah               & Lizard, giant \\
@@ -253,8 +260,7 @@ Dire bat              & Athasian shark$^\dagger$\\
 Erdland               & Snake, constrictor\\
 Advanced Jhakar (6HD) & Snake, viper (Large)\\
 Kluzd                 & \\
-}
-\Table{}{X X}{
+\cmidrule[0pt]{1-2}
 \multicolumn{2}{c}{\tableheader\footnotesize 10th Level or Higher (Level $-9$)}\\
 Crodlu, heavy warmount & Puddingfish$^\dagger$ \\
 Inix                   & Lion\\
@@ -262,19 +268,16 @@ Kalin                  & Lizard, subterranean\\
 Advanced Kluzd (7HD)   & Snake, viper (Huge)\\
 Lirr                   & Takis\\
 Pterrax                & Tiger\\
-}
-\Table{}{X X}{
+\cmidrule[0pt]{1-2}
 \multicolumn{2}{c}{\tableheader\footnotesize 13th Level or Higher (Level $-12$)}\\
 Cha'thrang & Lizard, minotaur\\
 Dire lion  & Athasian shark (Huge)$^\dagger$ \\
 Hatori     & Snake, giant constrictor\\
-}
-\Table{}{X X}{
+% \cmidrule[0pt]{1-2}
 \multicolumn{2}{c}{\tableheader\footnotesize 16th Level or Higher (Level $-15$)}\\
 Advanced Lirr (11HD) & Athasian sloth\\
 Ruktoi$^\diamond$    & \\
-}
-\Table{}{X X}{
+\cmidrule[0pt]{1-2}
 \multicolumn{2}{c}{\tableheader\footnotesize 19th Level or Higher (Level $-18$)}\\
 Dire Athasian shark$^\dagger$ & Silt Horror, white$^\diamond$\\
 Dire tiger                    & Slimahacc\\
@@ -282,28 +285,23 @@ Advanced Hatori (17HD)        & \\
 }
 
 \subsection{Playing a Ranger}
-
 As a ranger, you nurture a close, almost mystical connection to the deadly terrain of Athas. To you, the burnt landscape is not a friend, but a well-respected adversary. Danger is always present, yet you understand it and even find a certain succor in living alongside it.
 
 \subsubsection{Religion}
-
 Many rangers pay homage to the elements, but a greater number honor the moons and the stars that guide them in the night---even though these celestial bodies do not have priests. In several city-states, particularly Gulg,
 Kurn, and Eldaarich, many rangers owe fealty to the sorcerer-kings---virtually the entire noble caste of Gulg is comprised of rangers called judaga. Some rangers pay patronage to the Spirits of the Land, although these spirits do not bestow spells on rangers except those that multi-class as druid.
 
 \subsubsection{Other Classes}
-
 Rangers are slow to make friends with anyone, but have a particular affinity to druids, and to a lesser extent, barbarians and psions. Rangers tend not to lean on others for support and friendship, and often find it difficult to tolerate others who are quite different from themselves, such as talkative traders or controlling templars. Good rangers might simply try to avoid sharing a watch with a character that annoys them; neutral rangers tend to abandon annoying companions or just let them die; while evil rangers act friendly to the annoying companion and then slit their throat in their sleep.
 
 Good rangers tend to hate defilers, although many rangers are ignorant of the distinction between preserving and defiling and hate wizards of all stripes. Strangely, many rangers have little objection to taking a companion who is of a favored enemy race, so long as that they are convinced that the companion is trustworthy and loyal.
 
 \subsubsection{Combat}
-
 Although you are a formidable warrior, you usually prefer not to stand against the sheer might of Athas' fighter, barbarians and gladiators. Your greatest ally is the environment itself. While in you favored terrain, you have a clear advantage over your adversaries. Try choosing favored enemies that are more common in your favored terrain.
 
 As you advance, you are well served to invest in spells that have an effect other than dealing damage. If you can't drop a foe in one or two attacks, you can use entangle, snare, sting of the gold scorpion, or the like to make your opponents less dangerous in a prolonged fight.
 
 \subsubsection{Advancement}
-
 Perhaps the most dangerous place in Athas is inside a city-state: an environment rife with political intrigue, diseases, and assassination. To escape these noxious environs, you sought refuge in the wild where even the foulest elements of a society fear to tread. By gaining an intimate knowledge of this hazardous realm, you buy some breathing room and security from the urban madness.
 
 As your ranger abilities increase, you find the Athasian wilderness a more and more inviting place (if a place with such constant peril can be called inviting). You can use your skills to establish safe havens for yourself or to gain employment opportunities---perhaps guiding a group of recently caught slaves through the Tyr valley or some noble into distant dangerous, location. You can also find that continuing to advance as a ranger or barbarian augments your already impressive abilities in the Athasian lands.

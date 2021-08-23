@@ -9,10 +9,11 @@
 \item Added new XP table for racial roleplaying.
 \item Added multiclass prerequisites for base classes.
 \item Using a contact mechanic based on: influence contacts, skill contacts, and trade contacts.
+\item Spellcasters can cast one additional spell of their highest level per new class level.
 \end{itemize*}
 
 \section{Base Classes}
-In general, warriors and thieves have gotten a boost via either bonus feats or new class features. Some class features were rearranged so that their progression is scales well until the 30th level. The goal of these changes was to make the power gap between spellcasters and psionicists and these classes more manageable.
+In general, warriors and thieves have gotten a boost via either bonus feats or new class features. Some class features were rearranged so that their progression is well behaved until the 30th level. The goal of these changes was to make the power gap between spellcasters and psionicists and these classes more manageable.
 
 One change made on all base classes: Swim is not a class skill for any class (except water clerics).
 
@@ -31,7 +32,6 @@ These classes were removed: \textbf{Monk}, \textbf{Paladin}, \textbf{Psychic War
 \subsection{Bard}
 \begin{itemize*}
 \item Inspire courage improves every six levels after the 1st, improving the bonus one level earlier than originally.
-\item Skill points per level increased to 8.
 \item Added new class skills: Forgery, Heal, Intimidate, Ride, Use Psionic Device, and Use Rope.
 \item Removed class skills: Concentration, Spellcraft.
 \item Removed spellcasting.
@@ -54,15 +54,18 @@ These classes were removed: \textbf{Monk}, \textbf{Paladin}, \textbf{Psychic War
 
 \subsection{Druid}
 \begin{itemize*}
-\item Lost animal companion---this ability was reserved to the ranger.
+\item Removed animal companion.%---this ability was reserved to the ranger.
+\item Removed elemental wild shape.
 \item Skills points per level reduced to 2.
 \item Rearranged the wild shape progression:
 	\begin{itemize*}
-	\item One additional daily use every three levels after 6th.
-	\item Venom immunity one level earlier.
-	\item A thousand faces and timeless body one level later each.
-	\end{itemize*}
-\item Removed elemental wild shape---Druids can wild shape into vermin instead, and it uses two normal uses, instead of a different pool.
+	 	\item One additional daily use every three levels after 6th.
+	 	\item One different size category at 9th and every four levels there after (Large, Tiny, and Huge).
+	 	\item One different type at 12th and 18th (plant and vermin).
+ 	\end{itemize*}
+\item Venom immunity at 8th.
+\item A thousand faces at 14th.
+\item Timeless body at 16th.
 \item Reduced spell slots progression after 15th level.
 \end{itemize*}
 
@@ -75,8 +78,11 @@ These classes were removed: \textbf{Monk}, \textbf{Paladin}, \textbf{Psychic War
 
 \subsection{Psion}
 \begin{itemize*}
-\item Reduced power point progression.
-\item Requires Constitution, Intelligence, and Wisdom to cast psionic powers depending on the discipline.
+\item Reworked psionics.
+\item Increased power points at lower levels.
+\item Decreased power point progression.
+\item Acquire access to disciplines over the levels.
+\item Requires Constitution, Intelligence, and Wisdom to manifest psionic powers depending on the discipline.
 	\begin{itemize*}
 	\item \textit{Psychometabolism:} Constitution.
 	\item \textit{Psychoportation:} Constitution.
@@ -102,9 +108,9 @@ These classes were removed: \textbf{Monk}, \textbf{Paladin}, \textbf{Psychic War
 
 \subsection{Rogue}
 \begin{itemize*}
-\item Gained bonus feats beginning at 5th level, from skill feats or ambush feats\textsuperscript{CS}.
 \item Skill points per level increased to 10.
 \item Added new class skill: Use Psionic Device.
+\item New class feature: trade secret at 6th and every four levels thereafter.
 \item New special abilities:
 	\begin{itemize*}
 	\item \textit{False vulnerability:} no penalties on AC while prone, and feint with advantage.
@@ -126,9 +132,9 @@ Non-synergy bonuses require 10 ranks in a skill, instead of 5 (Balance, Survival
 
 \Table{}{Xl}{
 \tableheader Conditional Modifiers & \tableheader Effect \\
-1 favorable condition     & +2 circumstance bonus\\
+1 favorable condition            & +2 circumstance bonus\\
 2 or more favorable conditions   & Advantage\\
-1 unfavorable condition   & $-2$ penalty\\
+1 unfavorable condition          & $-2$ penalty\\
 2 or more unfavorable conditions & Disadvantage\\
 }
 % Conditional modifiers don't scale indefinitely. One favorable condition gives +2 bonus. If there are two or more favorable conditions, they give advantage (besides +2 bonus). At the same time, one unfavorable condition gives $-2$ penalty. If there are two or more unfavorable conditions, they give disadvantage (besides $-2$ penalty).
@@ -143,16 +149,16 @@ Non-synergy bonuses require 10 ranks in a skill, instead of 5 (Balance, Survival
 \subsection{New synergies}
 \Table{}{lX}{
 \tableheader 5 ranks in... & \tableheader Gives +2 bonus on...\\
-Appraise & Diplomacy checks to bargain \\
-Balance & Tumble checks \\
-Decipher Script & Forgery checks \\
-Diplomacy & Gather Information checks \\
-Disable Device & Open Locks checks \\
+Appraise             & Diplomacy checks to bargain \\
+Balance              & Tumble checks \\
+Decipher Script      & Forgery checks \\
+Diplomacy            & Gather Information checks \\
+Disable Device       & Open Locks checks \\
 Knowledge (warcraft) & Diplomacy checks dealing with troops\\
-Open Locks & Disable Device checks \\
-Ride & Handle Animal checks involving mounts \\
-Use Magic Device & Appraise checks involving magic items \\
-Use Psionic Device & Appraise checks involving psionic items \\
+Open Locks           & Disable Device checks \\
+Ride                 & Handle Animal checks involving mounts \\
+Use Magic Device     & Appraise checks involving magic items \\
+Use Psionic Device   & Appraise checks involving psionic items \\
 }
 
 \subsection{New uses}
@@ -161,13 +167,14 @@ Use Psionic Device & Appraise checks involving psionic items \\
 \item \textit{Craft:} create poison.
 \item \textit{Diplomacy:} bargain a discount.
 \item \textit{Disguise:} conceal spellcasting.
+\item \textit{Survival:} find shelter.
 \end{itemize*}
 
 \subsection{Changed uses}
 \begin{itemize*}
 \item \textit{Craft:} crating metal items has a $-5$ penalty.
 \item \textit{Heal:} long-term care can heal up to double the healer's ranks per character level.
-\item \textit{Survival:} endure the elements and get along in the wild each has a table since the difficulty depends on the terrain.
+\item \textit{Survival:} avoid getting lost, endure the elements, and getting along in the wild each has a table since the difficulty depends on the terrain.
 \end{itemize*}
 
 \subsection{Removed uses}
