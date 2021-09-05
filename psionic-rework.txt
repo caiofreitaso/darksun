@@ -49,31 +49,56 @@ PB  |  -1  |  +0  |  +2  |  -3  |
 PC  |  -2  |  +2  |  -2  |  -3  |
 ----+----------------------------
 
-OK Clairsentience + Telepathy = Detect Psionics
-	> WATCHER'S WARD + MINDLINK
-Clairsentience + Psychokinesis = Reddopsi
-	> DANGER SENSE + KINETIC CONTROL
-Clairsentience + Psychometabolism = Heightened Senses
-	> SYNESTHETE + ANIMAL AFFINITY
-OK Clairsentience + Psychoportation = Teleport Trigger
-	> ANCHORED NAVIGATION + TELEPORT
+Clairsentience + Telepathy
+	OK= Detect Psionics
+		> WATCHER'S WARD + MINDLINK
+Clairsentience + Psychokinesis
+	OK= Antimagic Field, Psionic
+		> LEVEL 11 + DETECT MAGIC + MOLECULAR AGITATION
+	= Reddopsi
+		> DANGER SENSE + KINETIC CONTROL
+Clairsentience + Psychometabolism
+	= Cannibalize
+		> COMBAT MIND + CELL ADJUSTMENT
+	= Heightened Senses
+		> SYNESTHETE + ANIMAL AFFINITY
+Clairsentience + Psychoportation
+	OK= Teleport Trigger
+		> ANCHORED NAVIGATION + TELEPORT
+	= Trace Teleport
+		> PRECOGNITION + TELEPORT
 
-Psychokinesis + Telepathy = Create Psionic Item
-Psychokinesis + Psychometabolism = Null Psionics
-	> 
-Psychokinesis + Psychoportation = Astral Construct
-	> ANIMATE OBJECT + SUMMON PLANAR CREATURE
+Psychokinesis + Telepathy
+	= Psychic Noise
+		> MOLECULAR AGITATION + EGO WHIP
+Psychokinesis + Psychometabolism
+	OK= Freedom of Movement, Psionic
+		> BODY EQUILIBRIUM + INERTIAL BARRIER
+Psychokinesis + Psychoportation
+	= Astral Construct
+		> ANIMATE OBJECT + SUMMON PLANAR CREATURE
+	= Dimensional Screen
+		> DIMENSION DOOR
+	= Teleport Object, Psionic
+		> TELEKINESIS + TELEPORT
 
-Psychometabolism + Telepathy = Mindlink, Thieving
-	> LIFE-DRAINING + MINDLINK
-Psychometabolism + Psychoportation = 
-
-Psychoportation + Telepathy = Apopsi
-	> DECEREBRATE + MINDLINK
+Psychometabolism + Telepathy
+	= Mindlink, Thieving
+		> LIFE-DRAINING + MINDLINK
+	= Metaconcert
+		> LEVEL 9 + ADRENALIN CONTROL + MINDLINK
+Psychometabolism + Psychoportation 
+	= Revivify
+		> LEVEL 9 + SUSPEND LIFE + SUMMON PLANAR ENERGIES
+Psychoportation + Telepathy
+	= Apopsi
+		> DECEREBRATE + MINDLINK
 
 
 None:
-Metaconcert
+Null Psionics Field
+	> LEVEL 11 + PSYCHIC NOISE
+Power Leech
 	> LEVEL 11 + THIEVING MINDLINK
 Psychic Surgery
 	> LEVEL 13
@@ -99,7 +124,8 @@ Saving Throw:     Will negates
 Power Resistance: Yes
 Power Points:     1
 
-IF CONTACT: Dazed for 1 round. Sickened for 1d4 rounds.
+Dazed.
+IF CONTACT: Sickened for 1d4 rounds.
 
 Augment:
 	+2 pp: Increase range to Medium (2nd level)

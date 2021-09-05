@@ -658,6 +658,32 @@
 	}
 }
 
+\newenvironment{Formula}[1]
+	{
+		\centering
+		\vskip1em
+		{\Large #1}
+	}
+	{
+		\vskip1em
+	}
+\newenvironment{Formula*}[1]
+	{
+		\centering
+		\vskip1em
+		{\Large #1}
+		\begin{list}{}{
+			\setlength{\itemsep}{.3em}
+			\setlength{\rightmargin}{1cm}
+			\setlength{\leftmargin}{1cm}
+		}
+	}
+	{
+		\end{list}
+		\vskip1em
+	}
+
+
 \renewcommand{\arraystretch}{1.1}
 \linespread{1.1}
 \setcounter{secnumdepth}{0}

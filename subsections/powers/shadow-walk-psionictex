@@ -1,0 +1,29 @@
+\Psionic{Shadow Walk, Psionic}{psionic shadow walk}
+{Psychometabolism (Shadow)}
+{
+	\textbf{Level:}
+	Nomad 3\\
+	\textbf{Manifesting Time:}
+	1 mental action\\
+	\textbf{Range:}
+	240 meters\\
+	\textbf{Target:}
+	You\\
+	\textbf{Saving Throw:}
+	None\\
+	\textbf{Cost:}
+	15 power points\\
+	\textbf{Maintenance Cost:}
+	None (Instantaneous)\\
+	% \textbf{Critical Success:}
+	% You may travel to any shadow within 3 km.\\
+	% \textbf{Critical Failure:}
+	% You succeed on a Will save, or summon 1d4 shadows from your own shadow to attack you.\\
+}
+{
+	As the \spell{shadow walk} spell, except as noted here.
+
+	This power only works if you can see the shadow you are teleporting to.
+
+	\textit{Augment:} If you spend 15 additional power points, you can travel blindly to a shadow you cannot see.
+}
