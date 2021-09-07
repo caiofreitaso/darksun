@@ -55,7 +55,7 @@ Clairsentience + Telepathy
 Clairsentience + Psychokinesis
 	OK= Antimagic Field, Psionic
 		> LEVEL 11 + DETECT MAGIC + MOLECULAR AGITATION
-	= Reddopsi
+	OK= Reddopsi
 		> DANGER SENSE + KINETIC CONTROL
 Clairsentience + Psychometabolism
 	= Cannibalize
@@ -77,8 +77,8 @@ Psychokinesis + Psychometabolism
 Psychokinesis + Psychoportation
 	= Astral Construct
 		> ANIMATE OBJECT + SUMMON PLANAR CREATURE
-	= Dimensional Screen
-		> DIMENSION DOOR
+	OK= Dimensional Screen
+		> DIMENSION DOOR + INERTIAL BARRIER
 	= Teleport Object, Psionic
 		> TELEKINESIS + TELEPORT
 
