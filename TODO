@@ -7,7 +7,7 @@ Epic
 	- Spirit of the Land
 
 Magic Items
-	- No bonus for Saving Throws
+OK	- No bonus for Saving Throws
 	- No bonus to ability scores
 	- Ability scores into fixed value: 19
 		- Strength: 19, 21, 23, or 25
@@ -29,3 +29,32 @@ Fatigue
 	- Threshold for conditions:
 		- 1/2 Constitution score = fatigued
 		- Constitution score = exausted
+
+
+Variant: No Shapechanging
+
+# Removed
+#########
+
+	1. Wild shape
+
+	2. Alter self
+	3. Animal shapes
+	4. Polymorph
+	5. Polymorph any object
+	6. Shapechange
+
+	7. Alter self, psionic
+	8. Metamorphosis
+	9. Metamorphosis, greater
+
+	10. Metamorphic Transfer
+
+# Changes
+#########
+
+	- Druid 5 => Animal Companion
+	- Animal Domain =>
+		7. Summon Nature's Ally VII
+		9. Wild Lands
+	- Egoist 9 => Assimilate

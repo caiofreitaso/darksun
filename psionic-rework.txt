@@ -11,6 +11,7 @@ ATTACKS & DEFENSES
 -> Psionic Defenses
 	-> Intellect Fortress
 	-> Mental Barrier
+	-> Mind Blank
 	-> Thought Shield
 	-> Tower of Iron Will
 -> Psionic Attacks
@@ -21,33 +22,35 @@ ATTACKS & DEFENSES
 	-> Psychic Crush
 
 ORIGINAL
-    |  IF  |  MB  |  TS  | ToIW |
-----+----------------------------
-EW  |  -4  |  -3  |  +0  |  -3  |
-----+----------------------------
-II  |  -1  |  +4  |  +2  |  -3  |
-----+----------------------------
-MT  |  -4  |  -4  |  -2  |  -5  |
-----+----------------------------
-PB  |  -1  |  +0  |  +3  |  -2  |
-----+----------------------------
-PC  |  -3  |  -1  |  -3  |  -4  |
-----+----------------------------
+    |  IF  |  MB  |  M-  |  TS  | ToIW |
+----+-----------------------------------
+EW  |  -4  |  -3  |  +5  |  +0  |  -3  |
+----+-----------------------------------
+II  |  -1  |  +4  |  -3  |  +2  |  -3  |
+----+-----------------------------------
+MT  |  -4  |  -4  |  +5  |  -2  |  -5  |
+----+-----------------------------------
+PB  |  -1  |  +0  |  +2  |  +3  |  -2  |
+----+-----------------------------------
+PC  |  -3  |  -1  |  +1  |  -3  |  -4  |
+----+-----------------------------------
+       -13    -4     +10    +0     -17
 
 FINAL
-       3rd    1st    1st    5th
-    |  IF  |  MB  |  TS  | ToIW |
-----+----------------------------
-EW  |  -2  |  -2  |  +0  |  -3  |
-----+----------------------------
-II  |  -1  |  +2  |  +2  |  -3  |
-----+----------------------------
-MT  |  -2  |  -2  |  -2  |  -3  |
-----+----------------------------
-PB  |  -1  |  +0  |  +2  |  -3  |
-----+----------------------------
-PC  |  -2  |  +2  |  -2  |  -3  |
-----+----------------------------
+       3rd    2nd    1st    1st    2nd
+    |  IF  |  MB  |  M-  |  TS  | ToIW |
+----+-----------------------------------
+EW  |  -4  |  -4  |  +2  |  +0  |  -3  |
+----+-----------------------------------
+II  |  -2  |  +2  |  -4  |  +2  |  -3  |
+----+-----------------------------------
+MT  |  -4  |  -4  |  +2  |  -2  |  -3  |
+----+-----------------------------------
+PB  |  -2  |  +0  |  +0  |  +2  |  -3  |
+----+-----------------------------------
+PC  |  -2  |  -2  |  +0  |  -2  |  -3  |
+----+-----------------------------------
+       -14    -8     +0     +0     -15
 
 Clairsentience + Telepathy
 	OK= Detect Psionics
@@ -70,7 +73,7 @@ Clairsentience + Psychoportation
 
 Psychokinesis + Telepathy
 	= Psychic Noise
-		> MOLECULAR AGITATION + EGO WHIP
+		> MOLECULAR AGITATION + MIND THRUST
 Psychokinesis + Psychometabolism
 	OK= Freedom of Movement, Psionic
 		> BODY EQUILIBRIUM + INERTIAL BARRIER
@@ -88,10 +91,10 @@ Psychometabolism + Telepathy
 	= Metaconcert
 		> LEVEL 9 + ADRENALIN CONTROL + MINDLINK
 Psychometabolism + Psychoportation 
-	= Revivify
+	OK= Revivify
 		> LEVEL 9 + SUSPEND LIFE + SUMMON PLANAR ENERGIES
 Psychoportation + Telepathy
-	= Apopsi
+	OK= Apopsi
 		> DECEREBRATE + MINDLINK
 
 
@@ -102,11 +105,11 @@ Power Leech
 	> LEVEL 11 + THIEVING MINDLINK
 Psychic Surgery
 	> LEVEL 13
-Schism
+OK Schism
 	> LEVEL 13 + PSYCHIC CHIURGERY
-Bend Reality
+OK Bend Reality
 	> LEVEL 16
-Reality Revision
+OK Reality Revision
 	> LEVEL 18 + BEND REALITY
 
 

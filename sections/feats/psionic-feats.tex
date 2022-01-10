@@ -13,16 +13,16 @@ You must decide whether or not to use this feat prior to making an attack. If yo
 \Feat[Psionic]{Body Fuel}
 {You can expand your power point total at the expense of your health.}
 {}
-{You can recover 2 power points by taking 1 point of ability burn damage to each of your three ability scores: Strength, Dexterity, and Constitution.
+{You can recover 10 power points by taking 1 point of ability burn damage to each of your three ability scores: Strength, Dexterity, and Constitution.
 
 You can recover additional power points for a proportional cost to Strength, Dexterity, and Constitution. These recovered points are added to your power point reserve as if you had gained them by resting overnight.}
 {}
 {Only living creatures can use this feat. You can take advantage of this feat only while in your own body.}
 
 \Feat[Psionic]{Boost Construct}
-{Your astral constructs have more abilities.}
+{Your \emph{astral constructs} have more abilities.}
 {}
-{When you create an astral construct, you can give it one additional special ability from any menu that the construct currently has an ability from.}
+{When you create an \psionic{astral construct}, you can give it one additional special ability from any menu that the construct currently has an ability from.}
 {}{}
 
 \Feat[Psionic]{Combat Manifestation}
@@ -61,7 +61,7 @@ You must decide whether or not to use this feat prior to making an attack. If yo
 \Feat[Psionic]{Focused Mind}
 {Your meditations strengthen your reasoning.}
 {Int 13.}
-{As long as you are psionically focused, you receive a +2 bonus on \skill{Appraise}, \skill{Decipher Script} and \skill{Search} checks.}
+{As long as you are psionically focused, you receive a +2 bonus on any Intelligence-based skill checks.}
 {}{}
 
 \Feat[Psionic]{Focused Sunder}
@@ -79,11 +79,11 @@ When you strike at an opponent's weapon, you ignore half of the weapon's total h
 {You must be psionically focused to use this feat. When you make a melee attack or a ranged attack against an incorporeal creature, you can make two rolls to check for the miss chance. If either is successful, the attack is treated as if it were made with a ghost touch weapon for the purpose of affecting the creature. Your weapon or natural weapon actually appears to become briefly incorporeal as the attack is made.}
 {}{}
 
-\Feat[Psionic]{Greater Power Penetration}
-{Your powers are especially potent at breaking through power resistance.}
-{\feat{Power Penetration}.}
-{To use this feat, you must expend your psionic focus. You get a +8 bonus on manifester level checks to overcome a creature's power resistance. This bonus overlaps with the bonus from \feat{Power Penetration}.}
-{}{}
+% \Feat[Psionic]{Greater Power Penetration}
+% {Your powers are especially potent at breaking through power resistance.}
+% {\feat{Power Penetration}.}
+% {To use this feat, you must expend your psionic focus. You get a +8 bonus on manifester level checks to overcome a creature's power resistance. This bonus overlaps with the bonus from \feat{Power Penetration}.}
+% {}{}
 
 \Feat[Psionic]{Greater Power Specialization}
 {You deal more damage with your powers.}
@@ -175,17 +175,18 @@ You gain only three uses of the metamorphic ability per day, even if the creatur
 \Feat[Psionic]{Overchannel}
 {You burn your life force to strengthen your powers.}
 {}
-{While manifesting a power, you can increase your effective manifester level by one, but in so doing you take 1d8 points of damage. At 8th level, you can choose to increase your effective manifester level by two, but you take 3d8 points of damage. At 15th level, you can increase your effective manifester level by three, but you take 5d8 points of damage.
+{While manifesting a power, you can increase your total power check bonus by one, but in so doing you take 1d8 points of damage. At 8th level, you can choose to increase your total power check bonus by two, but you take 3d8 points of damage. At 15th level, you can increase your total power check bonus by three, but you take 5d8 points of damage.
 
-The effective increase in manifester level increases the number of power points you can expend on a single power manifestation, as well as increasing all manifester level-dependent effects, such as range, duration, and overcoming power resistance.}
-{Your manifester level is equal to your total levels in classes that manifest powers.}
+% The effective increase in manifester level increases the number of power points you can expend on a single power manifestation, as well as increasing all manifester level-dependent effects, such as range, duration, and overcoming power resistance.
+}
+{Your total power check bonus is equal to the key ability score minus the power level.}
 {}
 
-\Feat[Psionic]{Power Penetration}
-{Your powers are especially potent, breaking through power resistance more readily than normal.}
-{}
-{To use this feat, you must expend your psionic focus. You get a +4 bonus on manifester level checks made to overcome a creature's power resistance.}
-{}{}
+% \Feat[Psionic]{Power Penetration}
+% {Your powers are especially potent, breaking through power resistance more readily than normal.}
+% {}
+% {To use this feat, you must expend your psionic focus. You get a +4 bonus on manifester level checks made to overcome a creature's power resistance.}
+% {}{}
 
 \Feat[Psionic]{Power Specialization}
 {You deal more damage with your powers.}
@@ -253,9 +254,9 @@ You must decide whether or not to use this feat prior to making an attack. If yo
 \Feat[Psionic]{Psionic Talent}
 {You gain additional power points to supplement those you already had.}
 {Having a power point reserve.}
-{When you take this feat for the first time, you gain 2 power points.}
+{When you take this feat for the first time, you gain 10 power points.}
 {}
-{You can take this feat multiple times. Each time you take the feat after the first time, the number of power points you gain increases by 1.}
+{You can take this feat multiple times. Each time you take the feat after the first time, the number of power points you gain increases by 5.}
 
 \Feat[Psionic]{Psionic Weapon}
 {You can charge your melee weapon with additional damage potential.}
@@ -278,12 +279,12 @@ Your attack with a melee weapon deals an extra 2d6 points of damage. You must de
 {}
 {If you also have the \feat{Deflect Arrows} feat, the deflected attack is made with the original attack bonus plus your Dexterity bonus.}
 
-\Feat[Psionic]{Shipfloater}
-{You are a trained shipfloater, even knowing how to keep control of an obsidian engine even while taking other actions.}
-{}
-{You gain a +3 bonus on \skill{Profession} (sailor) check. You can also control an obsidian engine as a standard action. You must stay psionically focused and remain in touch with the engine as normal.}
-{You can control an obsidian engine as a full-round action. }
-{}
+% \Feat[Psionic]{Shipfloater}
+% {You are a trained shipfloater, even knowing how to keep control of an obsidian engine even while taking other actions.}
+% {}
+% {You gain a +3 bonus on \skill{Profession} (sailor) check. You can also control an obsidian engine as a standard action. You must stay psionically focused and remain in touch with the engine as normal.}
+% {You can control an obsidian engine as a full-round action. }
+% {}
 
 \Feat[Psionic]{Speed of Thought}
 {The energy of your mind energizes the alacrity of your body.}
@@ -315,7 +316,7 @@ You must decide whether or not to use this feat prior to making an attack. If yo
 \Feat[Psionic]{Wild Telepath}
 {}
 {Cha 13.}
-{You use your Charisma as the key ability for metacreativity and telepathy disciplines. This applies to power DCs and the minimum ability value to learn and manifest a power.}
+{You use your Charisma as the key ability for metacreativity and telepathy disciplines. This applies to power DCs, power checks, and the minimum ability value to learn and manifest a power.}
 {You use Intelligence as key ability for metacreativity powers, and Wisdom as key ability for telepathy powers.}
 {}
 
