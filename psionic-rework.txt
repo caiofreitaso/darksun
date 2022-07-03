@@ -103,7 +103,7 @@ Null Psionics Field
 	> LEVEL 11 + PSYCHIC NOISE
 Power Leech
 	> LEVEL 11 + THIEVING MINDLINK
-Psychic Surgery
+OK Psychic Surgery
 	> LEVEL 13
 OK Schism
 	> LEVEL 13 + PSYCHIC CHIURGERY
@@ -112,101 +112,3 @@ OK Bend Reality
 OK Reality Revision
 	> LEVEL 18 + BEND REALITY
 
-
-
-
-EGO WHIP
-Telepathy [Mind-Affecting]
-Level:            Psion/wilder 1
-Display:          Auditory
-Manifesting Time: 1 standard action
-Range:            Close (25 ft. + 5 ft./2 levels)
-Target:           One creature
-Duration:         1 round; see text
-Saving Throw:     Will negates
-Power Resistance: Yes
-Power Points:     1
-
-Dazed.
-IF CONTACT: Sickened for 1d4 rounds.
-
-Augment:
-	+2 pp: Increase range to Medium (2nd level)
-	+4 pp: Increase range to Long (3rd level)
-
-ID INSINUATION
-Telepathy (Compulsion) [Mind-Affecting]
-Level:            Psion/wilder 1
-Display:          Auditory
-Manifesting Time: 1 standard action
-Range:            Close (25 ft. + 5 ft./2 levels)
-Target:           One creature
-Duration:         1 round; see text
-Saving Throw:     Will negates
-Power Resistance: Yes
-Power Points:     1
-
-Dazed.
-IF CONTACT: Confused for 1d4 rounds.
-
-Augment:
-	+2 pp: Increase range to Medium (2nd level)
-	+4 pp: Increase range to Long (3rd level)
-
-MIND THRUST
-Telepathy [Mind-Affecting]
-Level:            Psion/wilder 1
-Display:          Auditory
-Manifesting Time: 1 standard action
-Range:            Close (25 ft. + 5 ft./2 levels)
-Target:           One creature
-Duration:         Instantaneous; see text
-Saving Throw:     Will negates
-Power Resistance: Yes
-Power Points:     1
-
-1d6 nonlethal damage.
-IF CONTACT: If target has psionic powers, it loses 1 random power known for 2d6 days.
-
-Augment:
-	+1 pp: +1d6 damage.
-	+2 pp: Increase range to Medium (2nd level)
-	+4 pp: Increase range to Long (3rd level)
-
-PSYCHIC CRUSH
-Telepathy [Mind-Affecting]
-Level:            Psion/wilder 1
-Display:          Auditory
-Manifesting Time: 1 standard action
-Range:            Close (25 ft. + 5 ft./2 levels)
-Target:           One creature
-Duration:         1 round
-Saving Throw:     Will negates
-Power Resistance: Yes
-Power Points:     1
-
-Dazzled.
-IF CONTACT: 1d8 damage.
-
-Augment:
-	+1 pp: +1d8 damage.
-
-PSIONIC BLAST
-Telepathy [Mind-Affecting]
-Level:            Psion/wilder 1
-Display:          Auditory
-Manifesting Time: 1 standard action
-Range:            Close (25 ft. + 5 ft./2 levels)
-Target:           One creature
-Duration:         1 round
-Saving Throw:     Fortitude negates
-Power Resistance: Yes
-Power Points:     1
-
-1d6 nonlethal damage.
-IF CONTACT: Disabled.
-
-Augment:
-	+1 pp: +1 round.
-	+2 pp: Increase range to Medium (2nd level)
-	+4 pp: Increase range to Long (3rd level)
