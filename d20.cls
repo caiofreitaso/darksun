@@ -432,11 +432,11 @@
 }
 \newenvironment{MonsterStats}
 {
-	\parskip0mm
+	\parskip.2mm
 	\leftskip2.5mm
 	\parindent-2.5mm
 	\setstretch{1}
-	\small
+	% \small
 	\MonsterStatsA
 }
 {
@@ -515,7 +515,7 @@
 		#2
 	\end{tabular}
 }
-\newcommand{\WarriorTable}[3][ll *{3}{Z{15mm}} L]{
+\newcommand{\WarriorTable}[3][ll *{3}{Z{14mm}} L]{
 	\BigTablePair{#2}{#1}{
 		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
 		#3
@@ -653,7 +653,7 @@
 
 \newcommand{\XPTable}[2]{
 	\Table{Experience Awards for #1}{X p{3cm}}{
-		\tableheader Action & \tableheader XP Award (per ECL) \\
+		\tableheader Action & \tableheader XP Award \\
 		#2
 	}
 }

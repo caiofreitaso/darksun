@@ -173,13 +173,6 @@ When using this feat, you can take either a single move or standard action each 
 Your druid and ranger levels stack for the purpose of determining your effective ranger level for the purpose of determining the bonus Hit Dice, extra tricks, special abilities, and other bonuses that your animal companion receives. For example, a 5th-level druid/4th-level ranger's animal companion would gain +4 HD and have a total of 3 bonus tricks, as if he was a 9th-level ranger.
 }
 
-
-\Feat{Elemental Cleansing}
-{Undead you turn or rebuke suffer elemental damage.}
-{Ability to turn or rebuke undead.}
-{Any undead that you successfully turn or rebuke takes 2d6 points of energy damage in addition to the normal turning or rebuking effect. The type of damage dealt is the one associated with your patron element.}
-{}{}
-
 \Feat{Empower Spell-Like Ability}
 {}
 {Spell-like ability at caster level 6th or higher.}
@@ -227,17 +220,23 @@ If you have the ability to turn or rebuke more than one kind of creature each of
 {You overcome your fears while being led.}{}
 {You receive a +5 morale bonus on saving throws against fear effects whenever you are within 6 meters of an ally with the \feat{Leadership} feat.}{}{}
 
-\Feat{Favorite}
-{You have gained the graces of your sorcerer-monarch, receiving extra benefits.}
-{\feat{Secular Authority}, \skill{Diplomacy} 10 ranks.}
-{You can use your secular authority ability four more times per day than normal. Furthermore, whenever you contest or are contested in the use of secular authority, you receive a +2 bonus on your opposed \skill{Diplomacy} check.}
-{Without this feat, a templar can typically use secular authority only once per day per templar level.}
-{You can gain Favorite multiple times. Its effects stack. Each time you take the feat, you can use secular authority four additional times per day.}
+% \Feat{Favorite}
+% {You have gained the graces of your sorcerer-monarch, receiving extra benefits.}
+% {\feat{Secular Authority}, \skill{Diplomacy} 10 ranks.}
+% {You can use your secular authority ability four more times per day than normal. Furthermore, whenever you contest or are contested in the use of secular authority, you receive a +2 bonus on your opposed \skill{Diplomacy} check.}
+% {Without this feat, a templar can typically use secular authority only once per day per templar level.}
+% {You can gain Favorite multiple times. Its effects stack. Each time you take the feat, you can use secular authority four additional times per day.}
 
 \Feat{Fearsome}
 {Your might frightens your foes.}
 {Str 15.}
 {You can use your Strength modifier instead of your Charisma modifier on \skill{Intimidate} checks. Additionally, you receive a +2 bonus on \skill{Intimidate} checks.}{}{}
+
+\Feat{Fleet Of Foot}
+{}
+{Dex 15, \feat{Run}.}
+{When running or charging, you can make a single direction change of 90 degrees or less. You can't use this feat while wearing medium or heavy armor, or when carrying a medium or heavy load. If you are charging, you must move in a straight line for 10 feet after the turn to maintain the charge.}
+{Without this feat, you can run or charge only in a straight line.}{}
 
 \Feat{Flyby Attack}
 {}
@@ -296,7 +295,7 @@ Templar            & $\times$\onehalf\\
 {You get a +2 bonus on all Fortitude saving throws.}
 
 \Feat{Greater Spell Focus}
-{Choose a school of magic to which you already have applied the \feat{Spell Focus} feat.}{}
+{}{\feat{Spell Focus} in school.}
 {Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from \feat{Spell Focus}.}{}
 {You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic to which you already have applied the \feat{Spell Focus} feat.}{}
 
@@ -311,9 +310,9 @@ Templar            & $\times$\onehalf\\
 {\feat{Spell Penetration}.}
 {You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance. This bonus stacks with the one from Spell Penetration.}
 
-\GFeat{Grovel}
-{Eldaarich, \skill{Perform} 1 rank.}
-{By dramatically throwing yourself prone and helpless on the ground, you get a +3 bonus to all \skill{Diplomacy} checks and \skill{Bluff} checks.}
+% \GFeat{Grovel}
+% {Eldaarich, \skill{Perform} 1 rank.}
+% {By dramatically throwing yourself prone and helpless on the ground, you get a +3 bonus to all \skill{Diplomacy} checks and \skill{Bluff} checks.}
 
 \Feat{Hard as Rock}
 {You are resolute while fighting and particularly tough to kill.}
@@ -322,6 +321,13 @@ Templar            & $\times$\onehalf\\
 
 You can use your Constitution modifier in place of your Dexterity modifier on Reflex saves.}
 {}{}
+
+\Feat{Hold The Line}
+{}
+{\feat{Combat Reflexes}, base attack bonus +2.}
+{You may make an attack of opportunity against a charging opponent who enters an area you threaten. Your attack of opportunity happens immediately before the charge attack is resolved.}
+{You only get an attack of opportunity against a character that exits a square you threaten.}
+{}
 
 \Feat{Hostile Mind}
 {Your mind recoils violently against those who use psionics against you.}
@@ -379,6 +385,20 @@ Psionocus & Ability to manifest psionic powers (The master must first create the
 
 
 Improved familiars otherwise use the rules for regular familiars, with two exceptions: If the creature's type is something other than animal, its type does not change; and improved familiars do not gain the ability to speak with other creatures of their kind (although many of them already have the ability to communicate).}{}{}
+
+\Feat{Improved Flyby Attack}
+{}
+{Fly speed, \feat{Dodge}, \feat{Flyby Attack}, \feat{Mobility}.}
+{If the standard action you take during a round in which you use \feat{Flyby Attack} is a melee attack, you provoke no attacks of opportunity from moving out of squares threatened by your target.}
+{Without this feat, a creature making an attack as part of a \feat{Flyby Attack} maneuver provokes attacks of opportunity as normal from moving out of squares threatened by its target.}
+{}
+
+\Feat{Improved Multiattack}
+{}
+{Three or more natural weapons, \feat{Multiattack}}
+{The creature's secondary attacks with natural weapons have no penalty. They still add only one-half the creature's Strength bonus, if any, to damage dealt.}
+{Without this feat, the creature's secondary natural attacks have a $-5$ penalty (or a $-2$ penalty if it has the \feat{Multiattack} feat).}
+{}
 
 \Feat{Improved Natural Armor}
 {}
@@ -578,13 +598,6 @@ The benefit of this feat applies only to psionic powers and psi-like abilities. 
 {Without this feat, the creature's secondary attacks with natural weapons take a $-5$ penalty.}
 {}
 
-\Feat{Multiweapon Fighting}
-{}
-{Dex 13, three or more hands.}
-{Penalties for fighting with multiple weapons are reduced by 2 with the primary hand and reduced by 6 with off hands.}
-{A creature without this feat takes a $-6$ penalty on attacks made with its primary hand and a $-10$ penalty on attacks made with its off hands. (It has one primary hand, and all the others are off hands.) See \feat{Two-Weapon Fighting}.}
-{This feat replaces the \feat{Two-Weapon Fighting} feat for creatures with more than two arms.}
-
 \GFeat{Natural Spell}
 {Wis 13, wild shape ability.}
 {You can complete the verbal and somatic components of spells while in a wild shape. You substitute various noises and gestures for the normal verbal and somatic components of a spell.
@@ -611,11 +624,11 @@ You can also use any material components or focuses you possess, even if such it
 {\skill{Bluff} 8 ranks, \skill{Knowledge} (psionics) 4 ranks, \skill{Psicraft} 4 ranks.}
 {You can disguise your spells as psionic powers by making a successful \skill{Bluff} check (DC 10 + spell level). An onlooker suspecting the nature of your spellcasting can attempt to identify a spell being cast using the \skill{Spellcraft} skill, but your check DC increases by 2.}{}{}
 
-\Feat{Psionic Schooling}
-{In your homeland, all who show some skill in the Way may receive training as a psion.}{}
-{Psion, psychic warrior, or wilder is now a favored class for you (pick one), in addition to any other favored class you already possess. It does not count when determining multiclass XP penalties.}
-{A character can have one favored class.}
-{This feat must be selected at 1st level.}
+% \Feat{Psionic Schooling}
+% {In your homeland, all who show some skill in the Way may receive training as a psion.}{}
+% {Psion, psychic warrior, or wilder is now a favored class for you (pick one), in addition to any other favored class you already possess. It does not count when determining multiclass XP penalties.}
+% {A character can have one favored class.}
+% {This feat must be selected at 1st level.}
 
 % \GFeat{Psychic Hunter}
 % {Favored enemy, psychic warrior level 1st.}
@@ -653,9 +666,9 @@ In addition, a spell-like ability that duplicates a spell with a casting time gr
 {Base attack bonus +1.}
 {When you use the attack action or full attack action in melee, you can take a penalty of $-4$ to your Armor Class and add a +2 bonus on your melee attack roll. The bonus on attack rolls and penalty to Armor Class last until the beginning of your next turn.}{}{}
 
-\GFeat{Reign of Terror}
-{Raam, \skill{Intimidate} 5 ranks.}
-{You gain a +4 bonus on \feat{Secular Authority} checks.}
+% \GFeat{Reign of Terror}
+% {Raam, \skill{Intimidate} 5 ranks.}
+% {You gain a +4 bonus on \feat{Secular Authority} checks.}
 
 \GFeat{Rogue Performer}
 {Bardic music, sneak attack +2d6.}
@@ -670,48 +683,48 @@ Your bard and rogue levels stack for the purpose of determining your sneak attac
 {When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load). If you make a jump after a running start (see the \skill{Jump} skill description), you gain a +4 bonus on your \skill{Jump} check. While running, you retain your Dexterity bonus to AC.}
 {You move four times your speed while running (if wearing medium, light, or no armor and carrying no more than a medium load) or three times your speed (if wearing heavy armor or carrying a heavy load), and you lose your Dexterity bonus to AC.}{}
 
-\Feat{Secular Authority}
-{You can use your authority within your city-state to order slaves to do your bidding, requisition troops, enter the homes of freemen and nobles, and have them arrested.}
-{Cha 13, \skill{Diplomacy} 6 ranks, \feat{Negotiator}, accepted into city-state's templarate.}
-{This feat grants four new uses for the \skill{Diplomacy} skill. None of them functions during combat.
+% \Feat{Secular Authority}
+% {You can use your authority within your city-state to order slaves to do your bidding, requisition troops, enter the homes of freemen and nobles, and have them arrested.}
+% {Cha 13, \skill{Diplomacy} 6 ranks, \feat{Negotiator}, accepted into city-state's templarate.}
+% {This feat grants four new uses for the \skill{Diplomacy} skill. None of them functions during combat.
 
-\textit{Requisition:} You can draw upon the resources of your city, gaining the use of any slave, overriding the wishes of its owner.
+% \textit{Requisition:} You can draw upon the resources of your city, gaining the use of any slave, overriding the wishes of its owner.
 
-\textit{Intrude:} You can, at any time, search the home, person or possessions of a slave. You may search and impound any evidence of wrongdoing, if found. Your authority does not extend to confiscating items for personal use.
+% \textit{Intrude:} You can, at any time, search the home, person or possessions of a slave. You may search and impound any evidence of wrongdoing, if found. Your authority does not extend to confiscating items for personal use.
 
-\textit{Accuse:} You may have a slave imprisoned indefinitely, awaiting the gathering of evidence against him. You may only imprison one suspect in such a manner.
+% \textit{Accuse:} You may have a slave imprisoned indefinitely, awaiting the gathering of evidence against him. You may only imprison one suspect in such a manner.
 
-\textit{Judge:} You may pass judgment on a slave. This includes setting fines, prison sentences, death sentences or anything else you wish, within the laws of your city-state.
+% \textit{Judge:} You may pass judgment on a slave. This includes setting fines, prison sentences, death sentences or anything else you wish, within the laws of your city-state.
 
-As you gain more ranks in the \skill{Diplomacy} ranks, you gain the authority to take these actions against progressively higher social rankings, as described on the table below.
+% As you gain more ranks in the \skill{Diplomacy} ranks, you gain the authority to take these actions against progressively higher social rankings, as described on the table below.
 
-\Table{Secular Authority abilities}{c X}{
-\tableheader Ranks & \tableheader Ability\\
-2 & Requisition slave\\
-3 & Intrude on slave\\
-4 & Accuse slave\\
-5 & Requisition troops\\
-6 & Intrude on freeman\\
-7 & Judge slave\\
-8 & Accuse freeman\\
-9 & Requisition gear\\
-10 & Intrude on noble\\
-11 & Judge freeman\\
-12 & Accuse noble\\
-13 & Requisition spellcaster/manifester\\
-14 & Intrude on templar\\
-15 & Judge noble\\
-16 & Accuse templar\\
-17 & Requisition property\\
-18+ & Judge templar
-}
+% \Table{Secular Authority abilities}{c X}{
+% \tableheader Ranks & \tableheader Ability\\
+%  2  & Requisition slave\\
+%  3  & Intrude on slave\\
+%  4  & Accuse slave\\
+%  5  & Requisition troops\\
+%  6  & Intrude on freeman\\
+%  7  & Judge slave\\
+%  8  & Accuse freeman\\
+%  9  & Requisition gear\\
+% 10  & Intrude on noble\\
+% 11  & Judge freeman\\
+% 12  & Accuse noble\\
+% 13  & Requisition spellcaster/manifester\\
+% 14  & Intrude on templar\\
+% 15  & Judge noble\\
+% 16  & Accuse templar\\
+% 17  & Requisition property\\
+% 18+ & Judge templar\\
+% }
 
-Failure to comply with these demands is usually sanctioned with fines, imprisonment, outlaw status, and possibly execution. Any of this ability can be contested by another person with the Secular Authority feat, and move to have the action reversed with an opposed \skill{Diplomacy} check. If the challenger wins the opposed roll, the defending templar's action is reversed (for example an imprisoned freeman is set free). If the defender wins the opposed roll nothing happens. Secular Authority can be contested in a particular case only once. A defending character who loses the opposed roll may not contest the result. Nor can he use Secular Authority to repeat the action that was contested against the same target.
+% Failure to comply with these demands is usually sanctioned with fines, imprisonment, outlaw status, and possibly execution. Any of this ability can be contested by another person with the Secular Authority feat, and move to have the action reversed with an opposed \skill{Diplomacy} check. If the challenger wins the opposed roll, the defending templar's action is reversed (for example an imprisoned freeman is set free). If the defender wins the opposed roll nothing happens. Secular Authority can be contested in a particular case only once. A defending character who loses the opposed roll may not contest the result. Nor can he use Secular Authority to repeat the action that was contested against the same target.
 
-You may use Secular Authority once per day for every four levels you have attained (but see Special), but only
-within your city-state.}
-{}
-{A templar automatically gains Secular Authority as a bonus feat. He need not select it. A templar may use Secular Authority a number of times per day equal to his templar level, plus one more time per day for every four levels he has in classes other than templar.}
+% You may use Secular Authority once per day for every four levels you have attained (but see Special), but only
+% within your city-state.}
+% {}
+% {A templar automatically gains Secular Authority as a bonus feat. He need not select it. A templar may use Secular Authority a number of times per day equal to his templar level, plus one more time per day for every four levels he has in classes other than templar.}
 
 \Feat{Shield Proficiency}
 {}{}

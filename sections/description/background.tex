@@ -30,12 +30,12 @@ Athas is a harsh world, and its society reflects it in the worst ways possible--
 7--8  & Raider    & 9    & Hermit    & 5     & Hermit    \\
 9--10 & Slave     & 10   & Slave     & 6--10 & Slave     \\
 
-\rowcolor{white}\\
-\textit{d10} & \multicolumn{3}{l}{\tableheader Aarakocra, Pterran} &&\\
-1--5 & Crafter   &&&& \\
-6    & Mercenary &&&& \\
-7--9 & Hunter    &&&& \\
-10   & Hermit    &&&& \\
+% \rowcolor{white}\\
+% \textit{d10} & \multicolumn{3}{l}{\tableheader Aarakocra, Pterran} &&\\
+% 1--5 & Crafter   &&&& \\
+% 6    & Mercenary &&&& \\
+% 7--9 & Hunter    &&&& \\
+% 10   & Hermit    &&&& \\
 }
 
 \begin{itemize*}
@@ -43,7 +43,7 @@ Athas is a harsh world, and its society reflects it in the worst ways possible--
 	\item \textbf{Templar:} Templars are clergymen devoted to the sorcerer-king of their city. These greedy templars dominate the king's bureaucracy.
 	\item \textbf{Merchant:} Merchants are not citizens, for the nature of their work dictates that they maintain contact with a wide variety of societies (which makes our sorcerer-kings distrustful).
 	\item \textbf{Crafter:}  The bulk of freemen are craftsmen and artisans who keep their shops within the city walls.
-	\item \textbf{Mercenary:} Fighting forces for hire, they make most of the bodies in the battles. %From the little villages seeking protection against raiders, to the merchant houses that need to protect their precious caravans, to the city-states needing more men to fight against each other.
+	\item \textbf{Mercenary:} Fighting forces for hire, they make most of the bodies in the battles. From the little villages seeking protection against raiders, to the merchant houses that need to protect their precious caravans, to the city-states needing more men to fight against each other.
 	\item \textbf{Nomad:} Nomad herdsmen live in groups called \textit{douars}. A dozen families or so that move from pasture to pasture, pausing wherever there is water and enough forage to feed their animals. %When the forage is gone, they pack up their belongings and move on.
 	\item \textbf{Hunter:} Hunting and gathering clans are small groups that make their living through hunting meat animals and foraging for edible plants.
 	\item \textbf{Raider:} Raiders feed and clothe themselves by stealing from caravans, lonely villages, hermits, and even the cultivated fields surrounding the cities. %Their tribes vary in size from a dozen individuals to several hundred, depending on the territory they work and from whom they usually steal.
@@ -89,7 +89,7 @@ There is a 40\% chance that your family status is in danger. If so, roll a d10 a
 }
 
 \subsubsection{Childhood}
-Aarakocras and pterrans raise their children free, so there is no chance the child has an extraordinary raising. For all other races, roll 1d10 and see \tabref{Childhood Environment}.
+Roll 1d10 and check \tabref{Childhood Environment}.
 
 \Table{Childhood Environment}{lX|lX}{
 \textit{d10} & \multicolumn{3}{l}{\tableheader Human, Half-Elf} \\
@@ -124,7 +124,7 @@ Aarakocras and pterrans raise their children free, so there is no chance the chi
 
 \rowcolor{white}\\
 \textit{d10} & \multicolumn{3}{l}{\tableheader Halfling, Thri-kreen} \\
-1--2 & \multicolumn{3}{l}{In decaying village}                       \\
+1--3 & \multicolumn{3}{l}{In decaying village}                       \\
 4--6 & \multicolumn{3}{l}{In a hunter-gatherer clan}                 \\
 7--9 & \multicolumn{3}{l}{In a raiders tribe}                        \\
 10   & \multicolumn{3}{l}{In slavery}                                \\
@@ -135,24 +135,29 @@ Aarakocras and pterrans raise their children free, so there is no chance the chi
 Determine the number of siblings you have by rolling your race's dice (see below). You are an only child if you roll a result within your race's margin.
 
 \Table{}{Xcc}{
-\tableheader Race & \tableheader Die & \tableheader Only Child Margin\\
-Aarakocra, half-giant, pterran & 1d6 & 5--6\\
-Elf, human, half-elf, halfling, mul & 1d10 & 8--10\\
-Dwarf & 1d12 & 10--12 \\
-Thri-kreen & 1d20 & 18--20\\
+  \tableheader Race
+& \tableheader Die
+& \tableheader Only Child Margin\\
+Half-giant                          & 1d6  & 5--6   \\
+Elf, human, half-elf, halfling, mul & 1d10 & 8--10  \\
+Dwarf                               & 1d12 & 10--12 \\
+Thri-kreen                          & 1d20 & 18--20 \\
 }
 
 For each sibling roll a die. If the result is even, the sibling is male, else the sibling is female. Then roll for each step in \tabref{Sibling}.
 
 \Table{Sibling}{lX}{
-\textit{d10} & \tableheader Relative age\\
+  \textit{d10}
+& \tableheader Relative Age\\
 1--5 & Sibling is older.\\
 6--9 & Sibling is younger.\\
-10 & Sibling is your twin.\\
+10   & Sibling is your twin.\\
 
 \cmidrule[0pt]{1-2}
 \rowcolor{white}\\
-\textit{d10} & \tableheader Feelings towards you\\
+
+  \textit{d10}
+& \tableheader Feelings Towards You\\
 1--2  & Sibling dislikes you.\\
 3--4  & Sibling likes you.\\
 5--6  & Sibling is neutral towards you.\\
@@ -165,7 +170,8 @@ For each sibling roll a die. If the result is even, the sibling is male, else th
 For each year of your character's life past your race's adulthood age (see \tabref{Random Starting Ages}), roll 1d6 to see the next step:
 
 \Table{Life Events}{lX}{
-\textit{d6} & \tableheader Next Step \\
+  \textit{d6}
+& \tableheader Next Step \\
 1 & Lucky event \\
 2 & Disaster event \\
 3 & Friends \\
@@ -279,16 +285,16 @@ Roll 1d\% and check \tabref{Disaster Event}.
 97--100 & \textbf{Major psychosis:} You have a $-1$ penalty in Reflex saves.\\
 }
 
-\Figure{b}{images/ranger-1.png}
+\Figure{b}{images/adventurer-5.png}
 
 \clearpage
 \subsubsection{Friends}
-Roll a 
-Life under the crimison sun has no half measures. Your friends are tight, and your enemies are ruthless.
+% Life under the crimison sun has no half measures. Your friends are tight, and your enemies are ruthless.
+% Roll a 
 
 % \begin{enumerate*}
 % \item Roll a die. On an even roll, they're male, otherwise they're female.
-% Roll a die. On an even roll, it's a friend---roll 1d10 and check the nature of the relationship on \tabref{Friend}. On an odd roll, it's an enemy---roll for each step in \tabref{Enemy}.
+Roll a die. On an even roll, it's a friend---roll 1d10 and check the nature of the relationship on \tabref{Friend}. On an odd roll, it's an enemy---roll for each step in \tabref{Enemy}.
 % \end{enumerate*}
 
 \Table{Friend}{lX}{
@@ -364,7 +370,7 @@ Life under the crimison sun has no half measures. Your friends are tight, and yo
 }
 
 
-\vskip3cm
+\vskip5cm
 \subsubsection{Romance}
 There's more to life than just combat and bad kanks. Romance is also part of living on Athas. Roll 1d10 and check \tabref{How It Worked Out}.
 

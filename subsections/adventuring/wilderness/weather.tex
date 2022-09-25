@@ -1,5 +1,5 @@
 \subsection{Weather}
-Sometimes weather can play an important role in an adventure.
+Sometimes weather can play an important role in an adventure, bringing the sense of a living world with winds and rains, but also the dangers of a sandstorm or even a tornado.
 
 \tabref{Random Weather} is an appropriate weather table for general use, and can be used as a basis for a local weather tables. Terms on that table are defined as follows.
 
@@ -21,15 +21,6 @@ Sometimes weather can play an important role in an adventure.
 
 \subsubsection{Hourly Temperature}
 Over the day, the temperature fluctuates depending on the climate and the position of the sun. \tabref{Temperature Over a Day} provides information on typical days. Some variations occur depending on a number of factors.
-
-\textbf{Altitude:} Higher elevations are colder than normal, while depressions are hotter. Temperatures drop by one band in low peak or high pass elevations (1,500 meters to 4,500 meters) and two bands in high peak elevations (4,500 meters or more). Temperatures increase by one band in extremely low elevation (60 meters or more below sea level).
-
-In addition, moving deeper into the earth rises the ambient temperature. This increase is approximately 1 °C per 36 meters of depth; this can be much faster if there is geothermic activity in the region (magma, hot springs, and so on).
-
-\textbf{Wind:} Winds exacerbate the temperature conditions---cold becomes colder as the heat is lost, and hot becomes hotter as your surface blood vessels constrict. Winds that are strong or greater in strength (see \tabref{Wind Effects}) increase the effective temperature by one band if the current temperature is very hot or hotter, or decrease the effective temperature by one band if the current temperature is cool or colder.
-
-Wind speeds increase by one category in low peak or high pass elevations (1,500 meters to 4,500 meters) and two categories in high peak elevations (4,500 meters or more).
-
 
 \Table{Temperature Over a Day}{b{6mm}C|C||C|C}{
 & \multicolumn{2}{c||}{\tableheader Hot Day}
@@ -70,6 +61,15 @@ Wind speeds increase by one category in low peak or high pass elevations (1,500 
 22:00 & Moderate    & Cool        & Moderate    & Cool      \\
 23:00 & Moderate    & Very cold   & Moderate    & Very cold \\
 }
+
+\textbf{Altitude:} Higher elevations are colder than normal, while depressions are hotter. Temperatures drop by one band in low peak or high pass elevations (1,500 meters to 4,500 meters) and two bands in high peak elevations (4,500 meters or more). Temperatures increase by one band in extremely low elevation (60 meters or more below sea level).
+
+In addition, moving deeper into the earth rises the ambient temperature. This increase is approximately 1 °C per 36 meters of depth; this can be much faster if there is geothermic activity in the region (magma, hot springs, and so on).
+
+\textbf{Wind:} Winds exacerbate the temperature conditions---cold becomes colder as the heat is lost, and hot becomes hotter as your surface blood vessels constrict. Winds that are strong or greater in strength (see \tabref{Wind Effects}) increase the effective temperature by one band if the current temperature is very hot or hotter, or decrease the effective temperature by one band if the current temperature is cool or colder.
+
+Wind speeds increase by one category in low peak or high pass elevations (1,500 meters to 4,500 meters) and two categories in high peak elevations (4,500 meters or more).
+
 
 % 00:00 & Moderate    & 24 °C & Very cold   &  3 °C & Moderate & 24 °C & Very cold &  3 °C \\
 % 01:00 & Moderate    & 27 °C & Cool        &  9 °C & Moderate & 26 °C & Cool      &  7 °C \\
@@ -134,6 +134,7 @@ Wind speeds increase by one category in low peak or high pass elevations (1,500 
 % 23:00 & Very hot     & 37 °C & Cool        &  5 °C \\ % & Severe cold & $-19$ °C \\
 % }
 
+\Figure*{t}{images/adventurer-3.png}
 \subsubsection{Precipitation}
 Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours obscure vision as effectively as a dense fog.
 % Bad weather frequently slows or halts travel and makes it virtually impossible to navigate from one spot to another. Torrential downpours and blizzards obscure vision as effectively as a dense fog.
@@ -146,7 +147,9 @@ Most precipitation is rain, but in cold conditions it can manifest as snow, slee
 
 \textit{Downpour:} Downpour has the same effects as normal rain, but also conceals as fog (see above).
 
-\textit{Flash Floods:}
+\textit{Flash Floods (CR 4):} A flash flood can suddenly raise the water level of an area, filling a dry gulch to the top of its walls. A flood raises the water level by 1d10+3 meters within a matter of minutes. Water washes through affected squares, traveling at a speed of 18 meters or more, unless impeded by slopes or solid barriers. Treat a flash flood as stormy water (\skill{Swim} DC 20 to avoid being swept away). An additional DC 20 \skill{Swim} check is required each round to keep the head above water. Characters who stay below the surface might drown.
+
+Along with the hazards of fast-flowing water, the flow uproots trees and rolls enormous boulders with deadly impact. Characters struck by a wall of water during a flash flood must make a successful DC 15 Reflex save or take 3d6 points of bludgeoning damage. A flash flood passes through an area in 3d4 hours.
 
 \textbf{Snow:} Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 3d10 centimeters of snow on the ground.
 
@@ -154,9 +157,7 @@ Most precipitation is rain, but in cold conditions it can manifest as snow, slee
 
 \textbf{Sleet:} Essentially frozen rain, sleet has the same effect as rain while falling (except that its chance to extinguish protected flames is 75\%) and the same effect as snow once on the ground.
 
-% \textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
-
-\Figure*{t}{images/adventurer-3.png}
+\textbf{Hail:} Hail does not reduce visibility, but the sound of falling hail makes \skill{Listen} checks more difficult ($-4$ penalty). Sometimes (5\% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, hail has the same effect on movement as snow.
 
 \BigTablePair{Wind Effects}{lRcc*{2}{z{11mm}}lll}{
 &
@@ -207,7 +208,7 @@ Very high winds and torrential precipitation reduce visibility to one quarter, r
 
 % making Spot, Search, and Listen checks and all ranged weapon attacks impossible. Unprotected flames are automatically extinguished, and protected flames have a 75\% chance of being doused. Creatures caught in the area must make a DC 20 Fortitude save or face the effects based on the size of the creature (see \tabref{Wind Effects}). Powerful storms are divided into the following four types.
 
-\textbf{Sandstorm (CR 3):} Sandstorms impose a $-4$ penalty on Dexterity-based skill checks, and \skill{Search} checks. Winds blow as a windstorm. Moreover, sandstorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sandstorm leaves 2d8 $\times$ 10 centimeters of fine sand in its wake. One in ten sandstorms become flensing.
+\textbf{Sandstorm (CR 3):} Sandstorms impose a $-4$ penalty on Dexterity-based skill checks, as well as \skill{Search} checks, \skill{Spot} checks, and any other checks that rely on vision. Winds blow as a windstorm. Moreover, sandstorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and pose a suffocation hazard. A sandstorm leaves 2d8 $\times$ 10 centimeters of fine sand in its wake. One in ten sandstorms become flensing.
 
 \textit{Gray Death:} Every round under a sandstorm (or sirocco) in the Sea of Silt, a character must save against the gray death disease (see above).
 

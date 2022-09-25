@@ -3,23 +3,26 @@
 
 \Table{Heal DCs}{X r{2.5cm}}{
 \tableheader Task & \tableheader Heal DC\\
-First aid & 15\\
+First aid      & 15\\
 Long-term care & Varies\\
 Treat wound from caltrop, \spell{spike growth}, or \spell{spike stones} & 15\\
-Treat poison & Poison's save DC\\
-Treat disease & Disease's save DC\\
+Treat poison     & Poison's save DC \\
+Treat disease    & Disease's save DC \\
+Treat hypotermia & 15 \\
 }
 
-\textit{First Aid:} You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 per day), you can make him or her stable. A stable character regains no hit points but stops losing them. You may heal 1 hit point for each 2 points by which your check result exceeds 15, until the dying character is at 0 hit points.
+\textit{First Aid:} You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 per day), you can make him or her stable. A stable character regains no hit points but stops losing them. You may heal 1 hit point for each 2 points by which your check result exceeds 15, until the dying character is at $-1$ hit points.
 
 \textit{Long-Term Care:} Providing long-term care means treating a wounded person for a day or more. If your Heal check is successful, the patient recovers hit points or ability score points (lost to ability damage) at the rate stated in \tabref{Long-Term Care DCs} after a full day of complete rest. Full 8 hours of rest recovers at half the indicated rate.
 
 \Table{Long-Term Care DCs}{CCc}{
-\tableheader Hit Points per Patient Level & \tableheader Ability Score Points & \tableheader Heal DC \\
-4 & 4 & 15 \\
-6 & 6 & 20 \\
-Healer's ranks in Heal & Healer's ranks in Heal & 30 \\
-Double the healer's ranks in Heal & Double the healer's ranks in Heal & 50 \\
+  \tableheader Hit Points per Patient Level
+& \tableheader Ability Score Points
+& \tableheader Heal DC \\
+4                                 & 4                                 & 15 \\
+6                                 & 6                                 & 20 \\
+Healer's ranks in Heal            & Healer's ranks in Heal            & 30 \\
+2 $\times$ healer's ranks in Heal & 2 $\times$ healer's ranks in Heal & 50 \\
 }
 
 You can tend as many as six patients at a time. You need a few items and supplies (bandages, salves, and so on) that are easy to come by in settled lands. Giving long-term care counts as light activity for the healer. You cannot give long-term care to yourself.
@@ -32,6 +35,17 @@ A creature wounded by a spike growth or spike stones spell must succeed on a Ref
 \textit{Treat Poison:} To treat poison means to tend a single character who has been poisoned and who is going to take more damage from the poison (or suffer some other effect). Every time the poisoned character makes a saving throw against the poison, you make a Heal check. The poisoned character uses your check result or his or her saving throw, whichever is higher.
 
 \textit{Treat Disease:} To treat a disease means to tend a single diseased character. Every time he or she makes a saving throw against disease effects, you make a Heal check. The diseased character uses your check result or his or her saving throw, whichever is higher.
+
+\textit{Treat Hypothermia:} To treat hypothermia means to tend a single character with hypothermia. A successful check can lower the level of hypothermia of the victim by one level (severe to moderate, moderate to mild, mild to none). The DC is modified by the snow cave, den, or similar shelter, can gain a bonus to their conditions listed in the table below.
+
+\Table{}{XC}{
+  \tableheader Condition
+& \tableheader \skill{Heal} DC Modifier\\
+Heat from fire   & $-5$ \\
+Body contact     & $-1$ \\
+Wet clothing     & +2 \\
+Cold environment & +3 \\
+}
 
 \textbf{Action:} Providing first aid, treating a wound, or treating poison is a standard action. Treating a disease or tending a creature wounded by a spike growth or spike stones spell takes 10 minutes of work. Providing long-term care requires 8 hours of light activity.
 

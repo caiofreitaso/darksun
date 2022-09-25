@@ -43,6 +43,30 @@ Run & --- & --- & --- & --- & --- & --- \\
 \TableNote{7}{1 Tactical movement is often measured in squares on the battle grid (1 square = 1.5 meter) rather than meters.}
 }
 
+\BigTablePair{Maneuverability}{l*{5}{C}}{
+& \multicolumn{5}{c}{\tableheader Maneuverability}\\
+\cmidrule[0.5pt]{2-6}
+& \tableheader Perfect
+& \tableheader Good
+& \tableheader Average
+& \tableheader Poor
+& \tableheader Clumsy \\
+Move backward & Yes & Yes & No & No & No \\
+Reverse       & Free & $-1.5$ m & No & No & No \\
+Turn & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 3 m \\
+Turn in place & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & No & No \\
+Maximum turn & Any & Any & 90{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+Minimum forward speed\footnotemark[1] & None & None & Half & Half & Half \\
+Hover\footnotemark[1] & Yes & Yes & No & No & No \\
+Up angle\footnotemark[1] & Any & Any & 60{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
+Up speed\footnotemark[1] & Full & Half & Half & Half & Half \\
+Down angle\footnotemark[1] & Any & Any & Any & 45{\textdegree} & 45{\textdegree} \\
+Down speed\footnotemark[1] & Double & Double & Double & Double & Double \\
+Between down and up\footnotemark[1] & 0 & 0 & 1.5 m & 3 m & 6 m \\
+
+\BigTableNote{6}{1 Only valid for aerial movement.}
+}
+
 \textbf{Modes of Movement:} While moving at the different movement scales, creatures generally walk, hustle, or run.
 
 \textit{Walk:} A walk represents unhurried but purposeful movement at 4.5 kilometers per hour for an unencumbered human.
@@ -57,13 +81,14 @@ Run & --- & --- & --- & --- & --- & --- \\
 Use tactical movement for combat. Characters generally don't walk during combat---they hustle or run. A character who moves his or her speed and takes some action is hustling for about half the round and doing something else the other half.
 
 \Table{Hampered Movement}{XC}{
-\tableheader Condition & \tableheader Additional Movement Cost\\
-Difficult terrain & $\times$2\\
+  \tableheader Condition
+& \tableheader Additional Movement Cost\\
+Difficult terrain        & $\times$2\\
 Obstacle\footnotemark[1] & $\times$2\\
-Poor visibility & $\times$2\\
-Impassable & --- \\
+Poor visibility          & $\times$2\\
+Impassable               & --- \\
 \rowcolor{white}
-\TableNote{2}{1 May require a skill check}
+\TableNote{2}{1 May require a skill check.}
 }
 
 \textbf{Hampered Movement:} Difficult terrain, obstacles, or poor visibility can hamper movement. When movement is hampered, each square moved into usually counts as two squares, effectively reducing the distance that a character can cover in a move.
@@ -75,26 +100,6 @@ In some situations, your movement may be so hampered that you don't have suffici
 You can't run or charge through any square that would hamper your movement.
 
 \textbf{Aerial Movement:} Once movement becomes three-dimensional and involves turning in midair and maintaining a minimum velocity to stay aloft, it gets more complicated. Most flying creatures have to slow down at least a little to make a turn, and many are limited to fairly wide turns and must maintain a minimum forward speed. Each flying creature has a maneuverability, as shown on \tabref{Maneuverability}. The entries on the table are defined below.
-
-\BigTablePair{Maneuverability}{l*{5}{C}}{
-& \multicolumn{5}{c}{\tableheader Maneuverability}\\
-\cmidrule[0.5pt]{2-6}
-& \tableheader Perfect & \tableheader Good & \tableheader Average & \tableheader Poor & \tableheader Clumsy \\
-Move backward & Yes & Yes & No & No & No \\
-Reverse & Free & $-1.5$ m & No & No & No \\
-Turn & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & 45{\textdegree} per 3 m \\
-Turn in place & Any & 90{\textdegree} per 1.5 m & 45{\textdegree} per 1.5 m & No & No \\
-Maximum turn & Any & Any & 90{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
-Minimum forward speed\footnotemark[1] & None & None & Half & Half & Half \\
-Hover\footnotemark[1] & Yes & Yes & No & No & No \\
-Up angle\footnotemark[1] & Any & Any & 60{\textdegree} & 45{\textdegree} & 45{\textdegree} \\
-Up speed\footnotemark[1] & Full & Half & Half & Half & Half \\
-Down angle\footnotemark[1] & Any & Any & Any & 45{\textdegree} & 45{\textdegree} \\
-Down speed\footnotemark[1] & Double & Double & Double & Double & Double \\
-Between down and up\footnotemark[1] & 0 & 0 & 1.5 m & 3 m & 6 m \\
-
-\BigTableNote{6}{1 Only valid for aerial movement.}
-}
 
 \textit{Move Backward:} The ability to move backward without turning around.
 
@@ -120,14 +125,16 @@ Between down and up\footnotemark[1] & 0 & 0 & 1.5 m & 3 m & 6 m \\
 
 \textit{Between Down and Up:} An average, poor, or clumsy flier must fly level for a minimum distance after descending and before climbing. Any flier can begin descending after a climb without an intervening distance of level flight.
 
-\textbf{Vehicle Movement:} Small vehicles have a maneuverability similar to airborne creatures, as shown on \tabref{Maneuverability}, granted these vehicles with their mounts fit within the size of a Colossal creature (9-meter space). They have turn rates, maximum turn, and so on. The vehicles' maneuverabilities are shown on \tabref{Vehicle Maneuverability}. A rider can improve the maneuverability of chariots with a DC 20 \skill{Ride} check.
+\textbf{Vehicle Movement:} Small vehicles have a maneuverability similar to airborne creatures, as shown on \tabref{Maneuverability}, granted these vehicles with their mounts fit within the size of a Colossal creature (9-meter space). They have turn rates, maximum turn, and so on. The vehicles' maneuverabilities are shown on \tabref{Vehicle Maneuverability}. A rider can improve the maneuverability of chariots with a DC 20 \skill{Ride} check, but doing so hurts the mount.
 
 \Table{Vehicle Maneuverability}{lRX}{
-\tableheader Vehicle & \tableheader Speed & \tableheader Maneuverability\\
-Transport chariot (crodlu) & 12 m $\star$ & Average\\
-Light war chariot (crodlu) & 12 m $\star$ & Poor\\
-Heavy war chariot (crodlu) & 12 m $\star$ & Clumsy\\
-\TableNote{3}{$\star$ Speed can change depending on the creatures pulling the vehicle}\\
+  \tableheader Vehicle
+& \tableheader Speed\footnotemark[1]
+& \tableheader Maneuverability\\
+Transport chariot & 12 m & Poor\\
+Light war chariot & 12 m & Poor\\
+Heavy war chariot & 12 m & Clumsy\\
+\TableNote{3}{1 These examples are for chariots pushed by crodlu. Speed can change depending on the creatures pulling the vehicle.}\\
 }
 
 

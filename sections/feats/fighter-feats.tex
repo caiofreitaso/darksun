@@ -88,6 +88,12 @@ You can also score a critical hit on any foe normally not subject to critical hi
 {Dex 17, \feat{Manyshot}, \feat{Point Blank Shot}, \feat{Rapid Shot}, base attack bonus +6.}
 {When you use the \feat{Manyshot} feat, you can fire each arrow at a different target instead of firing all of them at the same target. You make a separate attack roll for each arrow, regardless of whether you fire them at separate targets or the same target. Your precision-based damage applies to each arrow fired, and, if you score a critical hit with more than one of the arrows, each critical hit deals critical damage.}{}{}
 
+\Feat[Fighter]{Greater Multiweapon Fighting}
+{}
+{Dex 19, three or more arms, \feat{Improved Multiweapon Fighting}, \feat{Multiweapon Fighting}, base attack bonus +15.}
+{The creature may make up to three extra attacks with each extra offhand weapon it wields, albeit at a $-10$ penalty on the third attack with each weapon.}
+{}{This feat replaces the \feat{Greater Two-Weapon Fighting} feat for creatures with more than two arms.}
+
 \Feat[Fighter]{Greater Two-Weapon Fighting}
 {}
 {Dex 19, \feat{Improved Two-Weapon Fighting}, \feat{Two-Weapon Fighting}, base attack bonus +11.}
@@ -149,6 +155,13 @@ This effect doesn't stack with any other effect that expands the threat range of
 \GFeat[Fighter]{Improved Initiative}
 {}
 {You get a +4 bonus on initiative checks.}
+
+\Feat[Fighter]{Improved Multiweapon Fighting}
+{}
+{Dex 15, three or more arms, \feat{Multiweapon Fighting}, base attack bonus +9.}
+{In addition to the single extra attack a creature gets with each extra weapon from \feat{Multiweapon Fighting}, it gets a second attack with each extra weapon, albeit at a $-5$ penalty.}
+{With only \feat{Multiweapon Fighting}, a creater can only get a single attack with each extra weapon.}
+{This feat replaces the \feat{Improved Two-Weapon Fighting} feat for creatures with more than two arms.}
 
 \Feat[Fighter]{Improved Overrun}
 {}
@@ -238,6 +251,13 @@ Dodge bonuses stack with each other, unlike most types of bonuses.}
 {\skill{Ride} 1 rank.}
 {Once per round when your mount is hit in combat, you may attempt a \skill{Ride} check (as a reaction) to negate the hit. The hit is negated if your \skill{Ride} check result is greater than the opponent's attack roll. (Essentially, the \skill{Ride} check result becomes the mount's Armor Class if it's higher than the mount's regular AC.)}
 
+\Feat[Fighter]{Multiweapon Fighting}
+{}
+{Dex 13, three or more hands.}
+{Penalties for fighting with multiple weapons are reduced by 2 with the primary hand and reduced by 6 with off hands.}
+{A creature without this feat takes a $-6$ penalty on attacks made with its primary hand and a $-10$ penalty on attacks made with its off hands. (It has one primary hand, and all the others are off hands.) See \feat{Two-Weapon Fighting}.}
+{This feat replaces the \feat{Two-Weapon Fighting} feat for creatures with more than two arms.}
+
 \GFeat[Fighter]{Point Blank Shot}
 {}
 {You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 9 meters.}
@@ -247,6 +267,12 @@ Dodge bonuses stack with each other, unlike most types of bonuses.}
 {Str 13.}
 {On your action, before making attack rolls for a round, you may choose to subtract a number from all melee attack rolls and add the same number to all melee damage rolls. This number may not exceed your base attack bonus. The penalty on attacks and bonus on damage apply until your next turn.}
 {If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, instead add twice the number subtracted from your attack rolls. You can't add the bonus from Power Attack to the damage dealt with a light weapon (except with unarmed strikes or natural weapon attacks), even though the penalty on attack rolls still applies. (Normally, you treat a double weapon as a one-handed weapon and a light weapon. If you choose to use a double weapon like a two-handed weapon, attacking with only one end of it in a round, you treat it as a two-handed weapon.)}{}
+
+\Feat[Fighter]{Power Critical}
+{}
+{\feat{Weapon Focus} with weapon, base attack bonus +4.}
+{When using the weapon you selected, you gain a +4 bonus on the roll to confirm a threat.}
+{}{You can gain Power Critical multiple times. Each time you take the feat, it may be with a different weapon or the same weapon. If you take it with the same weapon, the effects of the feats stack.}
 
 \GFeat[Fighter]{Precise Shot}
 {\feat{Point Blank Shot}.}
@@ -283,6 +309,12 @@ If you have selected this feat for hand crossbow or light crossbow, you may fire
 {In the heat of battle, weary and wounded soldiers retreat to be replaced by fresh, unwounded ones.}
 {Base attack bonus +3.}
 {You can swap positions with an ally within 1.5 m. This is a move action that does not generate an attack of opportunity for you or your ally. You may not take a 1.5 m step in addition when rotating lines.}{}{}
+
+\Feat[Fighter]{Sharp-Shooting}
+{}
+{\feat{Point Blank Shot}, \feat{Precise Shot}, base attack bonus +3.}
+{Your targets only receive a +2 bonus to Armor class due to cover. This feat has no effect against foes with no cover or total cover.}
+{Cover normally gives a +4 bonus to AC.}{}
 
 \Feat[Fighter]{Shield Evasion}
 {Use your shield to protect against area attacks.}

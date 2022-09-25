@@ -1,0 +1,992 @@
+\section{Ability Summary}
+Abilities are separated between natural abilities and special abilities. Below are descriptions of those abilities, how to use them and what they look like.
+
+\subsection{Natural Abilities}
+This category includes abilities a creature has because of its physical nature. Natural abilities are those not otherwise designated as extraordinary, supernatural, or spell-like.
+
+\subsection{Special Abilities}
+A special ability is either extraordinary, psi-like, spell-like, or supernatural in nature.
+
+\BigTablePair{Special Ability Types}{l*4C}{
+& \tableheader Extraordinary
+& \tableheader Psi-Like
+& \tableheader Spell-Like
+& \tableheader Supernatural\\
+
+Dispel magic          & No & No  & Yes & No \\
+Dispel psionics       & No & Yes & No  & No \\
+Spell resistance      & No & No  & Yes & No \\
+Antimagic field       & No & No  & Yes & Yes \\
+Null psionics field   & No & Yes & No  & Yes \\
+Attack of opportunity & No & Yes & Yes & No \\
+
+\BigTableNote{5}{\textit{Dispel magic:} Can \spell{dispel magic} and similar spells dispel the effects of abilities of that type?}\\
+\BigTableNote{5}{\textit{Dispel psionics:} Can \psionic{dispel psionics} and similar powers dispel the effects of abilities of that type?}\\
+\BigTableNote{5}{\textit{Spell Resistance:} Does spell resistance protect a creature from these abilities?}\\
+\BigTableNote{5}{\textit{Antimagic Field:} Does an \spell{antimagic field} or similar magic suppress the ability?}\\
+\BigTableNote{5}{\textit{Null Psionics Field:} Does a \psionic{null psionics field} or similar power suppress the ability?}\\
+\BigTableNote{5}{\textit{Attack of Opportunity:} Does using the ability provoke attacks of opportunity the way that casting a spell does?}\\
+}
+
+\textbf{Extraordinary Abilities (Ex):} Extraordinary abilities are nonmagical and nonpsionic, though they may break the laws of physics. They are not something that just anyone can do or even learn to do without extensive training.
+
+These abilities cannot be disrupted in combat, as spells can, and they generally do not provoke attacks of opportunity. Effects or areas that negate or disrupt magic have no effect on extraordinary abilities. They are not subject to dispelling, and they function normally in an \spell{antimagic field} or a \psionic{null psionics field}.
+
+Using an extraordinary ability is usually not an action because most extraordinary abilities automatically happen in a reactive fashion. Those extraordinary abilities that are actions are standard actions unless otherwise noted.
+
+\textbf{Psi-Like Abilities (Ps):} The manifestation of powers by a psionic character is considered a psi-like ability, as is the manifestation of powers by creatures without a psionic class (creatures with the psionic subtype, also simply called psionic creatures). Usually, a psionic creature's psi-like ability works just like the power of that name. A few psi-like abilities are unique; these are explained in the text where they are described.
+
+Psi-like abilities have no verbal, somatic, or material components, nor do they require a focus or have an XP cost (even if the equivalent power has an XP cost). The user activates them mentally. Armor never affects a psi-like ability's use. A psi-like ability has a manifesting time of 1 standard action unless noted otherwise in the ability description. In all other ways, a psi-like ability functions just like a power---including paying power point cost and maintenance cost. %However, a psionic creature does not have to pay a psi-like ability's power point cost.
+
+Psi-like abilities are subject to being dispelled by \psionic{dispel psionics}. They do not function in areas where psionics is suppressed or negated.
+
+The saving throw (if any) against a psi-like ability is:
+
+\begin{Formula*}{10 + \textit{power level} + \textit{Charisma modifier}}
+	\item \textit{Power level} = level of the psionic power the ability resembles or duplicates.
+\end{Formula*}
+
+\textbf{Spell-Like Abilities (Sp):} Usually, a spell-like ability works just like the spell of that name. A few spell-like abilities are unique; these are explained in the text where they are described.
+
+A spell-like ability has no verbal, somatic, or material component, nor does it require a focus or have an XP cost. The user activates it mentally. Armor never affects a spell-like ability's use, even if the ability resembles an arcane spell with a somatic component.
+
+A spell-like ability takes the same amount of time to complete as the spell that it mimics (usually 1 standard action) unless otherwise stated. Spell-like abilities cannot be used to counterspell, nor can they be counterspelled. In all other ways, a spell-like ability functions just like a spell:
+
+Using a spell-like ability while threatened provokes attacks of opportunity. It is possible to make a \skill{Concentration} check to use a spell-like ability defensively and avoid provoking an attack of opportunity. A spell-like ability can be disrupted just as a spell can be. Spell-like abilities are subject to spell resistance and to being dispelled by \spell{dispel magic}. They do not function in areas where magic is suppressed or negated.
+
+A spell-like ability usually has a limit on how often it can be used. A spell-like ability that can be used at will has no use limit.
+
+For creatures with spell-like abilities, a designated caster level defines how difficult it is to dispel their spell-like effects and to define any level-dependent variables (such as range and duration) the abilities might have. The creature's caster level never affects which spell-like abilities the creature has; sometimes the given caster level is lower than the level a spellcasting character would need to cast the spell of the same name. If no caster level is specified, the caster level is equal to the creature's Hit Dice. The saving throw (if any) against a spell-like ability is:
+
+\begin{Formula*}{10 + \textit{spell level} + \textit{Charisma modifier}}
+	\item \textit{Spell level} = level of the spell the ability resembles or duplicates.
+\end{Formula*}
+
+% 10 + the level of the spell the ability resembles or duplicates + the creature's Cha modifier.
+
+Some spell-like abilities duplicate spells that work differently when cast by characters of different classes. A monster's spell-like abilities are presumed to be the wizard versions. If the spell in question is not a wizard spell, then default to cleric, druid, and ranger, in that order.
+
+Some creatures are actually wizards of a sort. They cast arcane spells as wizards do, using components when required. In fact, an individual creature could have some spell-like abilities and also cast other spells as a wizard.
+
+\textbf{Supernatural Abilities (Su):} Supernatural abilities are magical or psionic and go away in an \spell{antimagic field} or a \psionic{null psionic field} but are not subject to spell resistance, counterspells, or to being dispelled by \spell{dispel magic} or \psionic{dispel psionics}. Using a supernatural ability is a standard action unless noted otherwise. Supernatural abilities may have a use limit or be usable at will, just like spell-like abilities. However, supernatural abilities do not provoke attacks of opportunity and never require \skill{Concentration} checks. Unless otherwise noted, a supernatural ability has an effective caster level equal to the creature's Hit Dice. The saving throw (if any) against a supernatural ability is:
+
+\begin{Formula*}{10 + \onehalf HD + \textit{ability modifier}}
+	\item \textit{HD} = the creature's racial Hit Dice (not class levels).
+	\item \textit{Ability modifier} = the creature's ability modifier (usually Charisma).
+\end{Formula*}
+
+
+Psionic feats are also supernatural abilities.
+
+% 10 + \onehalf the creature's HD + the creature's ability modifier (usually Charisma).
+
+
+\subsection{Ability Descriptions}
+
+\subsubsection{Ability Score Loss}
+Some attacks reduce the opponent's score in one or more abilities. This loss can be temporary (ability damage) or permanent (ability drain).
+
+While any loss is debilitating, losing all points in an ability score can be devastating.
+
+\begin{itemize*}
+\item Strength 0 means that the character cannot move at all. He lies helpless on the ground.
+\item Dexterity 0 means that the character cannot move at all. He stands motionless, rigid, and helpless.
+\item Constitution 0 means that the character is dead.
+\item Intelligence 0 means that the character cannot think and is unconscious in a coma-like stupor, helpless.
+\item Wisdom 0 means that the character is withdrawn into a deep sleep filled with nightmares, helpless.
+\item Charisma 0 means that the character is withdrawn into a catatonic, coma-like stupor, helpless.
+\end{itemize*}
+
+Keeping track of negative ability score points is never necessary. A character's ability score can't drop below 0.
+
+Having a score of 0 in an ability is different from having no ability score whatsoever.
+
+Some spells or abilities impose an effective ability score reduction, which is different from ability score loss. Any such reduction disappears at the end of the spell's or ability's duration, and the ability score immediately returns to its former value.
+
+If a character's Constitution score drops, then he loses 1 hit point per Hit Die for every point by which his Constitution modifier drops. A hit point score can't be reduced by Constitution damage or drain to less than 1 hit point per Hit Die.
+
+The ability that some creatures have to drain ability scores is a supernatural one, requiring some sort of attack. Such creatures do not drain abilities from enemies when the enemies strike them, even with unarmed attacks or natural weapons.
+
+\textbf{Ability Damage:} This attack damages an opponent's ability score. The creature's descriptive text gives the ability and the amount of damage. If an attack that causes ability damage scores a critical hit, it deals twice the indicated amount of damage (if the damage is expressed as a die range, roll two dice).
+
+Points lost to ability damage return at the rate of 1 point per day (or double that if the character gets complete bed rest) to each damaged ability, and the spells \spell{lesser restoration} and \spell{restoration} offset ability damage as well.
+
+\textit{Ability Burn:} This is a special form of ability damage that cannot be magically or psionically healed. It is caused by the use of certain psionic feats and powers. It returns only through natural healing.
+
+\textbf{Ability Drain:} This effect permanently reduces a living opponent's ability score when the creature hits with a melee attack. The creature's descriptive text gives the ability and the amount drained. If an attack that causes ability drain scores a critical hit, it drains twice the indicated amount (if the damage is expressed as a die range, roll two dice). Unless otherwise specified in the creature's description, a draining creature gains 5 temporary hit points (10 on a critical hit) whenever it drains an ability score no matter how many points it drains. Temporary hit points gained in this fashion last for a maximum of 1 hour.
+
+Some ability drain attacks allow a Fortitude save (DC 10 + \onehalf draining creature's racial HD + draining creature's Cha modifier; the exact DC is given in the creature's descriptive text). If no saving throw is mentioned, none is allowed.
+
+Points lost to ability drain, is permanent, though \spell{restoration} can restore even those lost ability score points.
+
+\subsubsection{Alternate Form}
+A creature with this special quality has the ability to assume one or more specific alternate forms. A true seeing spell or ability reveals the creature's natural form. A creature using alternate form reverts to its natural form when killed, but separated body parts retain their shape. A creature cannot use alternate form to take the form of a creature with a template. Assuming an alternate form results in the following changes to the creature:
+
+\begin{itemize*}
+\item The creature retains the type and subtype of its original form. It gains the size of its new form. If the new form has the aquatic subtype, the creature gains that subtype as well.
+\item The creature loses the natural weapons, natural armor, and movement modes of its original form, as well as any extraordinary special attacks of its original form not derived from class levels (such as the barbarian's rage class feature).
+\item The creature gains the natural weapons, natural armor, movement modes, and extraordinary special attacks of its new form.
+\item The creature retains the special qualities of its original form. It does not gain any special qualities of its new form.
+\item The creature retains the spell-like abilities and supernatural attacks of its old form (except for breath weapons and gaze attacks). It does not gain the spell-like abilities or attacks of its new form.
+\item The creature gains the physical ability scores (Str, Dex, Con) of its new form. It retains the mental ability scores (Int, Wis, Cha) of its original form. Apply any changed physical ability score modifiers in all appropriate areas with one exception: the creature retains the hit points of its original form despite any change to its Constitution.
+\item The creature retains its hit points and save bonuses, although its save modifiers may change due to a change in ability scores.
+\item Except as described elsewhere, the creature retains all other game statistics of its original form, including (but not necessarily limited to) HD, hit points, skill ranks, feats, base attack bonus, and base save bonuses.
+\item The creature retains any spellcasting ability it had in its original form, although it must be able to speak intelligibly to cast spells with verbal components and it must have humanlike hands to cast spells with somatic components.
+\item The creature is effectively camouflaged as a creature of its new form, and it gains a +10 bonus on \skill{Disguise} checks if it uses this ability to create a disguise.
+\item Any gear worn or carried by the creature that can't be worn or carried in its new form instead falls to the ground in its space. If the creature changes size, any gear it wears or carries that can be worn or carried in its new form changes size to match the new size. (Nonhumanoid-shaped creatures can't wear armor designed for humanoid-shaped creatures, and vice versa.) Gear returns to normal size if dropped.
+\end{itemize*}
+
+\subsubsection{Antimagic}
+An \spell{antimagic field} spell or effect cancels magic altogether. An antimagic effect has the following powers and characteristics.
+
+\begin{itemize*}
+\item No supernatural ability, spell-like ability, or spell works in an area of antimagic (but extraordinary abilities still work).
+\item Antimagic does not dispel magic; it suppresses it. Once a magical effect is no longer affected by the antimagic (the antimagic fades, the center of the effect moves away, and so on), the magic returns. Spells that still have part of their duration left begin functioning again, magic items are once again useful, and so forth.
+\item Spell areas that include both an antimagic area and a normal area, but are not centered in the antimagic area, still function in the normal area. If the spell's center is in the antimagic area, then the spell is suppressed.
+\item Golems and other constructs, elementals, outsiders, and undead, still function in an antimagic area (though the antimagic area suppresses their spellcasting and their supernatural and spell-like abilities normally). If such creatures are summoned or conjured, however, see below.
+\item Summoned or conjured creatures of any type, as well as incorporeal creatures, wink out if they enter the area of an antimagic effect. They reappear in the same spot once the field goes away.
+\item Magic items with continuous effects do not function in the area of an antimagic effect, but their effects are not canceled (so the contents of a bag of holding are unavailable, but neither spill out nor disappear forever).
+\item Two antimagic areas in the same place do not cancel each other out, nor do they stack.
+\item \spellref{wall of force}{Wall of force}, \spell{prismatic wall}, and \spell{prismatic sphere} are not affected by antimagic. \spellref{break enchantment}{Break enchantment}, \spell{dispel magic}, and \spell{greater dispel magic} spells do not dispel antimagic. Mage's disjunction has a 1\% chance per caster level of destroying an antimagic field. If the antimagic field survives the disjunction, no items within it are disjoined.
+\end{itemize*}
+
+\subsubsection{Blindsight And Blindsense}
+Some creatures have blindsight, the extraordinary ability to use a nonvisual sense (or a combination of such senses) to operate effectively without vision. Such sense may include sensitivity to vibrations, acute scent, keen hearing, or echolocation. This ability makes invisibility and concealment (even magical darkness) irrelevant to the creature (though it still can't see ethereal creatures and must have line of effect to a creature or object to discern that creature or object). This ability operates out to a range specified in the creature description.
+
+The creature usually does not need to make \skill{Spot} or \skill{Listen} checks to notice creatures within range of its blindsight ability. Unless noted otherwise, blindsight is continuous, and the creature need do nothing to use it. Some forms of blindsight, however, must be triggered as a free action. If so, this is noted in the creature's description. If a creature must trigger its blindsight ability, the creature gains the benefits of blindsight only during its turn.
+
+\begin{itemize*}
+\item Blindsight never allows a creature to distinguish color or visual contrast. A creature cannot read with blindsight.
+\item Blindsight does not subject a creature to gaze attacks (even though darkvision does).
+\item Blinding attacks do not penalize creatures using blindsight.
+\item Deafening attacks thwart blindsight if it relies on hearing.
+\item Blindsight works underwater but not in a vacuum.
+\item Blindsight negates displacement and blur effects.
+\end{itemize*}
+
+\textbf{Blindsense:} Other creatures have blindsense, a lesser ability that lets the creature notice things it cannot see, but without the precision of blindsight. The creature with blindsense usually does not need to make \skill{Spot} or \skill{Listen} checks to notice and locate creatures within range of its blindsense ability, provided that it has line of effect to that creature. Any opponent the creature cannot see has total concealment (50\% miss chance) against the creature with blindsense, and the blindsensing creature still has the normal miss chance when attacking foes that have concealment. Visibility still affects the movement of a creature with blindsense. A creature with blindsense is still denied its Dexterity bonus to Armor Class against attacks from creatures it cannot see.
+
+\subsubsection{Breath Weapon}
+A creature attacking with a breath weapon is actually expelling something from its mouth (rather than conjuring it by means of a spell or some other magical effect). Most creatures with breath weapons are limited to a number of uses per day or by a minimum length of time that must pass between uses. Such creatures are usually smart enough to save their breath weapon until they really need it.
+
+\begin{itemize*}
+\item Using a breath weapon is typically a standard action.
+\item No attack roll is necessary. The breath simply fills its stated area.
+\item A breath weapon attack usually deals damage and is often based on some type of energy.
+\item Breath weapons usually allow a Reflex save for half damage (DC 10 + \onehalf breathing creature's racial HD + breathing creature's Con modifier; the exact DC is given in the creature's descriptive text). Some breath weapons allow a Fortitude save or a Will save instead of a Reflex save.
+\item Breath weapons are supernatural abilities except where noted.
+\item A creature is immune to its own breath weapon unless otherwise noted.
+\item Creatures unable to breathe can still use breath weapons. (The term is something of a misnomer.)
+\end{itemize*}
+
+\subsubsection{Change Shape}
+A creature with this special quality has the ability to assume the appearance of a specific creature or type of creature (usually a humanoid), but retains most of its own physical qualities. A true seeing spell or ability reveals the creature's natural form. A creature using change shape reverts to its natural form when killed, but separated body parts retain their shape. A creature cannot use change shape to take the form of a creature with a template. Changing shape results in the following changes to the creature:
+
+\begin{itemize*}
+\item The creature retains the type and subtype of its original form. It gains the size of its new form.
+\item The creature loses the natural weapons and movement modes of its original form, as well as any extraordinary special attacks of its original form not derived from class levels (such as the barbarian's rage class feature).
+\item The creature gains the natural weapons, movement modes, and extraordinary special attacks of its new form.
+\item The creature retains all other special attacks and qualities of its original form, except for breath weapons and gaze attacks.
+\item The creature retains the ability scores of its original form.
+\item Except as described elsewhere, the creature retains all other game statistics of its original form, including (but not necessarily limited to) HD, hit points, skill ranks, feats, base attack bonus, and base save bonuses.
+\item The creature retains any spellcasting ability it had in its original form, although it must be able to speak intelligibly to cast spells with verbal components and it must have humanlike hands to cast spells with somatic components.
+\item The creature is effectively camouflaged as a creature of its new form, and gains a +10 bonus on \skill{Disguise} checks if it uses this ability to create a disguise.
+\item Any gear worn or carried by the creature that can't be worn or carried in its new form instead falls to the ground in its space. If the creature changes size, any gear it wears or carries that can be worn or carried in its new form changes size to match the new size. (Nonhumanoid-shaped creatures can't wear armor designed for humanoid-shaped creatures, and viceversa.) Gear returns to normal size if dropped.
+\end{itemize*}
+
+\subsubsection{Charm And Compulsion}
+Many abilities and spells can cloud the minds of characters and monsters, leaving them unable to tell friend from foe---or worse yet, deceiving them into thinking that their former friends are now their worst enemies. Two general types of enchantments affect characters and creatures: charms and compulsions.
+
+Charming another creature gives the charming character the ability to befriend and suggest courses of actions to his minion, but the servitude is not absolute or mindless. Charms of this type include the various charm spells. Essentially, a charmed character retains free will but makes choices according to a skewed view of the world.
+
+\begin{itemize*}
+\item A charmed creature doesn't gain any magical ability to understand his new friend's language.
+\item A charmed character retains his original alignment and allegiances, generally with the exception that he now regards the charming creature as a dear friend and will give great weight to his suggestions and directions.
+\item A charmed character fights his former allies only if they threaten his new friend, and even then he uses the least lethal means at his disposal as long as these tactics show any possibility of success (just as he would in a fight between two actual friends).
+\item A charmed character is entitled to an opposed Charisma check against his master in order to resist instructions or commands that would make him do something he wouldn't normally do even for a close friend. If he succeeds, he decides not to go along with that order but remains charmed.
+\item A charmed character never obeys a command that is obviously suicidal or grievously harmful to her.
+\item If the charming creature commands his minion to do something that the influenced character would be violently opposed to, the subject may attempt a new saving throw to break free of the influence altogether.
+\item A charmed character who is openly attacked by the creature who charmed him or by that creature's apparent allies is automatically freed of the spell or effect.
+\item Compulsion is a different matter altogether. A compulsion overrides the subject's free will in some way or simply changes the way the subject's mind works. A charm makes the subject a friend of the caster; a compulsion makes the subject obey the caster.
+\end{itemize*}
+
+Regardless of whether a character is charmed or compelled, he won't volunteer information or tactics that his master doesn't ask for.
+
+\subsubsection{Cold Immunity}
+A creature with cold immunity never takes cold damage. It has vulnerability to fire, which means it takes half again as much (+50\%) damage as normal from fire, regardless of whether a saving throw is allowed, or if the save is a success or failure.
+
+\subsubsection{Constrict}
+A creature with this special attack can crush an opponent, dealing bludgeoning damage, after making a successful grapple check. The amount of damage is given in the creature's entry. If the creature also has the improved grab ability it deals constriction damage in addition to damage dealt by the weapon used to grab.
+
+\subsubsection{Damage Reduction}
+A creature with this special quality ignores damage from most weapons and natural attacks. Wounds heal immediately, or the weapon bounces off harmlessly (in either case, the opponent knows the attack was ineffective). The creature takes normal damage from energy attacks (even nonmagical ones), spells, spell-like abilities, and supernatural abilities. A certain kind of weapon can sometimes damage the creature normally, as noted below.
+
+The entry indicates the amount of damage ignored (usually 5 to 15 points) and the type of weapon that negates the ability.
+
+Some monsters are vulnerable to piercing, bludgeoning, or slashing damage.
+
+Some monsters are vulnerable to certain materials, such as alchemical silver, adamantine, or cold iron. Attacks from weapons that are not made of the correct material have their damage reduced, even if the weapon has an enhancement bonus.
+
+Some monsters are vulnerable to magic weapons. Any weapon with at least a +1 magical enhancement bonus on attack and damage rolls overcomes the damage reduction of these monsters. Such creatures' natural weapons (but not their attacks with weapons) are treated as magic weapons for the purpose of overcoming damage reduction.
+
+A few very powerful monsters are vulnerable only to epic weapons; that is, magic weapons with at least a +6 enhancement bonus. Such creatures' natural weapons are also treated as epic weapons for the purpose of overcoming damage reduction.
+
+Some monsters are vulnerable to chaotic-, evil-, good-, or lawful-aligned weapons. When a cleric casts align weapon, affected weapons might gain one or more of these properties, and certain magic weapons have these properties as well. A creature with an alignment subtype (chaotic, evil, good, or lawful) can overcome this type of damage reduction with its natural weapons and weapons it wields as if the weapons or natural weapons had an alignment (or alignments) that match the subtype(s) of the creature.
+
+When a damage reduction entry has a dash (---) after the slash, no weapon negates the damage reduction.
+
+A few creatures are harmed by more than one kind of weapon. A weapon of either type overcomes this damage reduction.
+
+A few other creatures require combinations of different types of attacks to overcome their damage reduction. A weapon must be both types to overcome this damage reduction. A weapon that is only one type is still subject to damage reduction.
+
+Ammunition fired from a projectile weapon with an enhancement bonus of +1 or higher is treated as a magic weapon for the purpose of overcoming damage reduction. Similarly, ammunition fired from a projectile weapon with an alignment gains the alignment of that projectile weapon (in addition to any alignment it may already have).
+
+Whenever damage reduction completely negates the damage from an attack, it also negates most special effects that accompany the attack, such as injury type poison, a monk's stunning, and injury type disease. Damage reduction does not negate touch attacks, energy damage dealt along with an attack, or energy drains. Nor does it affect poisons or diseases delivered by inhalation, ingestion, or contact.
+
+Attacks that deal no damage because of the target's damage reduction do not disrupt spells.
+
+If a creature has damage reduction from more than one source, the two forms of damage reduction do not stack. Instead, the creature gets the benefit of the best damage reduction in a given situation.
+
+\subsubsection{Darkvision}
+Darkvision is the extraordinary ability to see with no light source at all, out to a range specified for the creature. Darkvision is black and white only (colors cannot be discerned). It does not allow characters to see anything that they could not see otherwise---invisible objects are still invisible, and illusions are still visible as what they seem to be. Likewise, darkvision subjects a creature to gaze attacks normally. The presence of light does not spoil darkvision.
+
+\subsubsection{Death Attacks}
+In most cases, a death attack allows the victim a Fortitude save to avoid the affect, but if the save fails, the character dies instantly.
+
+\begin{itemize*}
+\item \spellref{raise dead}{Raise dead} doesn't work on someone killed by a death attack.
+\item Death attacks slay instantly. A victim cannot be made stable and thereby kept alive.
+\item In case it matters, a dead character, no matter how she died, has $-10$ hit points.
+\item The spell death ward protects a character against these attacks.
+\end{itemize*}
+
+\subsubsection{Disease}
+When a character is injured by a contaminated attack, touches an item smeared with diseased matter, or consumes disease-tainted food or drink, he must make an immediate Fortitude saving throw. If he succeeds, the disease has no effect---his immune system fought off the infection. If he fails, he takes damage after an incubation period. Once per day afterward, he must make a successful Fortitude saving throw to avoid repeated damage. Two successful saving throws in a row indicate that he has fought off the disease and recovers, taking no more damage.
+
+These Fortitude saving throws can be rolled secretly so that the player doesn't know whether the disease has taken hold.
+
+\textbf{Disease Descriptions:} Diseases have various symptoms and are spread through a number of vectors. The characteristics of several typical diseases are summarized on Table: Diseases and defined below.
+
+\textit{Disease:} Diseases whose names are printed in italic in the table are supernatural in nature. The others are extraordinary.
+
+\textit{Infection:} The disease's method of delivery---ingested, inhaled, via injury, or contact. Keep in mind that some injury diseases may be transmitted by as small an injury as a flea bite and that most inhaled diseases can also be ingested (and vice versa).
+
+\textit{DC:} The Difficulty Class for the initial Fortitude saving throw to prevent infection. If the character has been infected, the DC to prevent each instance of repeated damage (and to recover from the disease) increases by +1 for each previous save.
+
+\textit{Incubation Period:} The time before damage begins.
+
+\textit{Damage:} The ability damage the character takes after incubation and each day afterward.
+
+\Table{Diseases}{LlclY{15mm}}{
+  \tableheader Disease
+& \tableheader Infection
+& \tableheader DC
+& \tableheader Incubation
+& \tableheader Damage \\
+Cerebral parasite & Contact  & 15 & 1d4 days & 1d2 Int\footnotemark[1] \\
+Chitin rot        & Contact  & 16 & 1d3 days & 1d2 natural armor \\
+Dehydrating fever & Ingested & 14 & 1d6 days & 1d3 Str, 1d2 Con\footnotemark[2] \\
+Filth fever       & Injury   & 12 & 1d3 days & 1d3 Dex, 1d3 Con \\
+Gray death        & Inhaled  & 15 &   1 day  & 1d3 Str, 1d3 Dex\footnotemark[3] \\
+Red ache          & Injury   & 15 & 1d3 days & 1d6 Str \\
+Sleeping sickness & Injury   & 14 & 2d6 days & 1d3 Dex, 1d3 Wis\footnotemark[4] \\
+Wheezing death    & Injury   & 14 & 1d2 days & 1d6 Con \\
+\TableNote{5}{1 Psionic creatures with cerebral parasites expend 1 more power point to manifest any power for each time they failed a damage save.}\\
+\TableNote{5}{2 When damaged, character becomes dehydrated. Every full day without water after the damage, the creature takes 1 point of Constitution damage.}\\
+\TableNote{5}{3 When damaged, character must succeed on another saving throw or become permanently fatigued.}\\
+\TableNote{5}{4 Each time the victim 2 or more Wisdom damage from the disease, they must make another Fortitude save or acquire insomnia.}\\
+}
+
+\textbf{Types of Diseases:} Typical diseases include the following:
+
+\textit{Cerebral Parasites:} Cerebral parasites are tiny organisms, undetectable to normal sight. An afflicted character may not even know he carries the parasites---until he discovers he has fewer power points for the day than expected. 
+
+\textit{Chitin Rot:} Sap from the Forest Ridge's trees spread it. Only affects thri-kreen and other creatures with exoskeleton.
+
+\textit{Dehydrating Fever:} Spread in tainted water.
+
+\textit{Filth Fever:} Dire rats and otyughs spread it. Those injured while in filthy surroundings might also catch it.
+
+\textit{Gray Death:} Caused by long exposure to strong winds at Sea of Silt.
+
+\textit{Red Ache:} Skin turns red, bloated, and warm to the touch.
+
+\textit{Sleeping sickness:} Joints swell and redden. Easily mistaken for red ache (\skill{Heal} DC 20, $-1$ for each day after incubation). An afflicted character with insomnia cannot get sleep through natural means.
+
+\textbf{Healing A Disease:} Use of the \skill{Heal} skill can help a diseased character. Every time a diseased character makes a saving throw against disease effects, the healer makes a check. The diseased character can use the healer's result in place of his saving throw if the \skill{Heal} check result is higher. The diseased character must be in the healer's care and must have spent the previous 8 hours resting.
+
+Characters recover points lost to ability score damage at a rate of 1 per day per ability damaged, and this rule applies even while a disease is in progress. That means that a character with a minor disease might be able to withstand it without accumulating any damage.
+
+\subsubsection{Energy Drain And Negative Levels}
+Some horrible creatures, especially undead monsters, possess a fearsome supernatural ability to drain levels from those they strike in combat. The creature making an energy drain attack draws a portion of its victim's life force from her. Most energy drain attacks require a successful melee attack roll---mere physical contact is not enough. Each successful energy drain bestows one or more negative levels (the creature's description specifies how many). If an attack that includes an energy drain scores a critical hit, it drains twice the given amount. A creature gains 5 temporary hit points (10 on a critical hit) for each negative level it bestows (though not if the negative level is caused by a spell or similar effect). These temporary hit points last for a maximum of 1 hour.
+
+A creature takes the following penalties for each negative level it has gained:
+
+\begin{itemize*}
+\item $-1$ on all skill checks and ability checks.
+\item $-1$ on attack rolls and saving throws.
+\item $-5$ hit points.
+\item $-1$ effective level (whenever the creature's level is used in a die roll or calculation, reduce it by one for each negative level).
+\item If the victim casts spells, she loses access to one spell as if she had cast her highest-level, currently available spell. If she has more than one spell at her highest level, she chooses which she loses. In addition, when she next prepares spells or regains spell slots, she gets one less spell slot at her highest spell level.
+\item If the victim manifests psionic powers, she loses access to one power from the highest level of power he can manifest; she also loses a number of power points equal to the cost of that power. If two or more powers fit these criteria, the manifester decides which one becomes inaccessible. The lost power becomes available again as soon the negative level is removed, providing the manifester is capable of using it at that time. Lost power points also return.
+\end{itemize*}
+
+Negative levels remain until 24 hours have passed or until they are removed with a spell, such as restoration. If a negative level is not removed before 24 hours have passed, the affected creature must attempt a Fortitude save (DC 10 + \onehalf draining creature's racial HD + draining creature's Cha modifier; the exact DC is given in the creature's descriptive text). On a success, the negative level goes away with no harm to the creature. On a failure, the negative level goes away, but the creature's level is also reduced by one. A separate saving throw is required for each negative level.
+
+A character with negative levels at least equal to her current level, or drained below 1st level, is instantly slain. Depending on the creature that killed her, she may rise the next night as a monster of that kind. If not, she rises as a wight.
+
+\subsubsection{Etherealness}
+Phase spiders and certain other creatures can exist on the Ethereal Plane. While on the Ethereal Plane, a creature is called ethereal. Unlike incorporeal creatures, ethereal creatures are not present on the Material Plane.
+
+Ethereal creatures are invisible, inaudible, insubstantial, and scentless to creatures on the Material Plane. Even most magical attacks have no effect on them. See invisibility and true seeing reveal ethereal creatures.
+
+An ethereal creature can see and hear into the Material Plane in a 60-foot radius, though material objects still block sight and sound. (An ethereal creature can't see through a material wall, for instance.) An ethereal creature inside an object on the Material Plane cannot see. Things on the Material Plane, however, look gray, indistinct, and ghostly. An ethereal creature can't affect the Material Plane, not even magically. An ethereal creature, however, interacts with other ethereal creatures and objects the way material creatures interact with material creatures and objects.
+
+Even if a creature on the Material Plane can see an ethereal creature the ethereal creature is on another plane. Only force effects can affect the ethereal creatures. If, on the other hand, both creatures are ethereal, they can affect each other normally.
+
+A force effect originating on the Material Plane extends onto the Ethereal Plane, so that a wall of force blocks an ethereal creature, and a magic missile can strike one (provided the spellcaster can see the ethereal target). Gaze effects and abjurations also extend from the Material Plane to the Ethereal Plane. None of these effects extend from the Ethereal Plane to the Material Plane.
+
+Ethereal creatures move in any direction (including up or down) at will. They do not need to walk on the ground, and material objects don't block them (though they can't see while their eyes are within solid material).
+
+Ghosts have a power called manifestation that allows them to appear on the Material Plane as incorporeal creatures. Still, they are on the Ethereal Plane, and another ethereal creature can interact normally with a manifesting ghost. Ethereal creatures pass through and operate in water as easily as air. Ethereal creatures do not fall or take falling damage.
+
+\subsubsection{Evasion And Improved Evasion}
+These extraordinary abilities allow the target of an area attack to leap or twist out of the way. Rogues and monks have evasion and improved evasion as class features, but certain other creatures have these abilities, too.
+
+If subjected to an attack that allows a Reflex save for half damage, a character with evasion takes no damage on a successful save.
+
+As with a Reflex save for any creature, a character must have room to move in order to evade. A bound character or one squeezing through an area cannot use evasion.
+
+As with a Reflex save for any creature, evasion is a reflexive ability. The character need not know that the attack is coming to use evasion.
+
+Rogues and monks cannot use evasion in medium or heavy armor. Some creatures with the evasion ability as an innate quality do not have this limitation.
+
+Improved evasion is like evasion, except that even on a failed saving throw the character takes only half damage.
+
+\subsubsection{Fast Healing}
+A creature with fast healing has the extraordinary ability to regain hit points at an exceptional rate. Except for what is noted here, fast healing is like natural healing.
+
+At the beginning of each of the creature's turns, it heals a certain number of hit points (defined in its description).
+
+Unlike regeneration, fast healing does not allow a creature to regrow or reattach lost body parts. Unless otherwise stated, it does not allow lost body parts to be reattached.
+
+A creature that has taken both nonlethal and lethal damage heals the nonlethal damage first.
+
+Fast healing does not restore hit points lost from starvation, thirst, or suffocation.
+
+Fast healing does not increase the number of hit points regained when a creature polymorphs.
+
+\subsubsection{Fear}
+Spells, magic items, and certain monsters can affect characters with fear. If a fear effect allows a saving throw, it is a Will save (DC 10 + \onehalf fearsome creature's racial HD + creature's Cha modifier; the exact DC is given in the creature's descriptive text). All fear attacks are mind-affecting fear effects. A failed roll usually means that the character is shaken, frightened, or panicked.
+
+Fear effects are cumulative. A shaken character who is made shaken again becomes frightened, and a shaken character who is made frightened becomes panicked instead. A frightened character who is made shaken or frightened becomes panicked instead.
+
+\textbf{Fear Aura (Su):} The use of this ability is a free action. The aura can freeze an opponent (such as a mummy's despair) or function like the \spell{fear} spell. Other effects are possible. A fear aura is an area effect. The descriptive text gives the size and kind of area.
+
+\textbf{Fear Cones (Sp) and Rays (Su):} These effects usually work like the \spell{fear} spell.
+
+\textbf{Frightful Presence (Ex):} This special quality makes a creature's very presence unsettling to foes. It takes effect automatically when the creature performs some sort of dramatic action (such as charging, attacking, or snarling). Opponents within range who witness the action may become frightened or shaken. Actions required to trigger the ability are given in the creature's descriptive text. The range is usually 9 meters, and the duration is usually 5d6 rounds. This ability affects only opponents with fewer Hit Dice or levels than the creature has. An affected opponent can resist the effects with a successful Will save (DC 10 + \onehalf frightful creature's racial HD + frightful  creature's Cha modifier; the exact DC is given in the creature's descriptive text). An opponent that succeeds on the saving throw is immune to that same creature's frightful presence for 24 hours.
+
+\subsubsection{Fire Immunity}
+A creature with fire immunity never takes fire damage. It has vulnerability to cold, which means it takes half again as much (+50\%) damage as normal from cold, regardless of whether a saving throw is allowed, or if the save is a success or failure.
+
+\subsubsection{Gaseous Form}
+Some creatures have the supernatural or spell-like ability to take the form of a cloud of vapor or gas.
+
+Creatures in gaseous form can't run but can fly. A gaseous creature can move about and do the things that a cloud of gas can conceivably do, such as flow through the crack under a door. It can't, however, pass through solid matter. Gaseous creatures can't attack physically or cast spells with verbal, somatic, material, or focus components. They lose their supernatural abilities (except for the supernatural ability to assume gaseous form, of course).
+
+Creatures in gaseous form have damage reduction 10/magic. Spells, spell-like abilities, and supernatural abilities affect them normally. Creatures in gaseous form lose all benefit of material armor (including natural armor), though size, Dexterity, deflection bonuses, and armor bonuses from force armor still apply.
+
+Gaseous creatures do not need to breathe and are immune to attacks involving breathing (troglodyte stench, poison gas, and the like).
+
+Gaseous creatures can't enter water or other liquid. They are not ethereal or incorporeal. They are affected by winds or other forms of moving air to the extent that the wind pushes them in the direction the wind is moving. However, even the strongest wind can't disperse or damage a creature in gaseous form.
+
+Discerning a creature in gaseous form from natural mist requires a DC 15 \skill{Spot} check. Creatures in gaseous form attempting to hide in an area with mist, smoke, or other gas gain a +20 bonus.
+
+\subsubsection{Gaze Attacks}
+While the medusa's gaze is well known, gaze attacks can also charm, curse, or even kill. Gaze attacks not produced by a spell are supernatural.
+
+Each character within range of a gaze attack must attempt a saving throw (which can be a Fortitude or Will save) each round at the beginning of his turn.
+
+An opponent can avert his eyes from the creature's face, looking at the creature's body, watching its shadow, or tracking the creature in a reflective surface. Each round, the opponent has a 50\% chance of not having to make a saving throw. The creature with the gaze attack gains concealment relative to the opponent. An opponent can shut his eyes, turn his back on the creature, or wear a blindfold. In these cases, the opponent does not need to make a saving throw. The creature with the gaze attack gains total concealment relative to the opponent.
+
+A creature with a gaze attack can actively attempt to use its gaze as an attack action. The creature simply chooses a target within range, and that opponent must attempt a saving throw. If the target has chosen to defend against the gaze as discussed above, the opponent gets a chance to avoid the saving throw (either 50\% chance for averting eyes or 100\% chance for shutting eyes). It is possible for an opponent to save against a creature's gaze twice during the same round, once before its own action and once during the creature's action.
+
+Looking at the creature's image (such as in a mirror or as part of an illusion) does not subject the viewer to a gaze attack.
+
+A creature is immune to its own gaze attack.
+
+If visibility is limited (by dim lighting, a fog, or the like) so that it results in concealment, there is a percentage chance equal to the normal miss chance for that degree of concealment that a character won't need to make a saving throw in a given round. This chance is not cumulative with the chance for averting your eyes, but is rolled separately.
+
+Invisible creatures cannot use gaze attacks. Gaze attacks can affect ethereal opponents.
+
+Characters using darkvision in complete darkness are affected by a gaze attack normally.
+
+Unless specified otherwise, a creature with a gaze attack can control its gaze attack and ``turn it off'' when so desired. Allies of a creature with a gaze attack might be affected. All the creature's allies are considered to be averting their eyes from the creature with the gaze attack, and have a 50\% chance to not need to make a saving throw against the gaze attack each round.
+
+\subsubsection{Improved Grab}
+If a creature with this special attack hits with a melee weapon (usually a claw or bite attack), it deals normal damage and attempts to start a grapple as a free action without provoking an attack of opportunity. No initial touch attack is required.
+
+Unless otherwise noted, improved grab works only against opponents at least one size category smaller than the creature. The creature has the option to conduct the grapple normally, or simply use the part of its body it used in the improved grab to hold the opponent. If it chooses to do the latter, it takes a $-20$ penalty on grapple checks, but is not considered grappled itself; the creature does not lose its Dexterity bonus to AC, still threatens an area, and can use its remaining attacks against other opponents.
+
+A successful hold does not deal any extra damage unless the creature also has the constrict special attack. If the creature does not constrict, each successful grapple check it makes during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, it deals constriction damage as well (the amount is given in the creature's descriptive text).
+
+When a creature gets a hold after an improved grab attack, it pulls the opponent into its space. This act does not provoke attacks of opportunity. It can even move (possibly carrying away the opponent), provided it can drag the opponent's weight.
+
+\subsubsection{Incorporeality}
+Spectres, wraiths, and a few other creatures lack physical bodies. Such creatures are insubstantial and can't be touched by nonmagical matter or energy. Likewise, they cannot manipulate objects or exert physical force on objects. However, incorporeal beings have a tangible presence that sometimes seems like a physical attack against a corporeal creature.
+
+Incorporeal creatures are present on the same plane as the characters, and characters have some chance to affect them.
+
+Incorporeal creatures can be harmed only by other incorporeal creatures, by magic weapons, or by spells, spell-like effects, or supernatural effects. They are immune to all nonmagical attack forms. They are not burned by normal fires, affected by natural cold, or harmed by mundane acids.
+
+Even when struck by magic or magic weapons, an incorporeal creature has a 50\% chance to ignore any damage from a corporeal source---except for a force effect or damage dealt by a ghost touch weapon.
+
+Incorporeal creatures are immune to critical hits, extra damage from being favored enemies, and from sneak attacks. They move in any direction (including up or down) at will. They do not need to walk on the ground. They can pass through solid objects at will, although they cannot see when their eyes are within solid matter.
+
+Incorporeal creatures hiding inside solid objects get a +2 circumstance bonus on Listen checks, because solid objects carry sound well. Pinpointing an opponent from inside a solid object uses the same rules as pinpointing invisible opponents (see Invisibility, below).
+
+Incorporeal creatures are inaudible unless they decide to make noise.
+
+The physical attacks of incorporeal creatures ignore material armor, even magic armor, unless it is made of force (such as mage armor or bracers of armor) or has the ghost touch ability.
+
+Incorporeal creatures pass through and operate in water as easily as they do in air.
+
+Incorporeal creatures cannot fall or take falling damage.
+
+Corporeal creatures cannot trip or grapple incorporeal creatures.
+
+Incorporeal creatures have no weight and do not set off traps that are triggered by weight.
+
+Incorporeal creatures do not leave footprints, have no scent, and make no noise unless they manifest, and even then they only make noise intentionally.
+
+\subsubsection{Invisibility}
+Visually undetectable. An invisible creature gains a +2 bonus on attack rolls against sighted opponents, and ignores its opponents' Dexterity bonuses to AC (if any). (Invisibility has no effect against blinded or otherwise nonsighted creatures.) An invisible creature's location cannot be pinpointed by visual means, including darkvision. It has total concealment; even if an attacker correctly guesses the invisible creature's location, the attacker has a 50\% miss chance in combat.
+
+Invisibility does not, by itself, make a creature immune to critical hits, but it does make the creature immune to extra damage from being a ranger's favored enemy and from sneak attacks.
+
+A creature can generally notice the presence of an active invisible creature within 9 meters with a DC 20 \skill{Spot} check. The observer gains a hunch that ``something's there'' but can't see it or target it accurately with an attack. A creature who is holding still is very hard to notice (DC 30). An inanimate object, an unliving creature holding still, or a completely immobile creature is even harder to spot (DC 40). It's practically impossible (+20 DC) to pinpoint an invisible creature's location with a \skill{Spot} check, and even if a character succeeds on such a check, the invisible creature still benefits from total concealment (50\% miss chance).
+
+\Table{Listen Check DCs to Detect Invisible Creatures}{XX}{
+  \tableheader Invisible Creature Is...
+& \tableheader DC \\
+
+In combat or speaking           & 0 \\
+Moving at half speed            & Move Silently check result \\
+Moving at full speed            & Move Silently check result $-5$ \\
+Running or charging             & Move Silently check result $-20$ \\
+Some distance away              & +1 per 3 meters \\
+Behind an obstacle (door)       & +5 \\
+Behind an obstacle (stone wall) & +15 \\
+}
+
+A creature can use hearing to find an invisible creature. A character can make a \skill{Listen} check for this purpose as a free action each round. A \skill{Listen} check result at least equal to the invisible creature's Move Silently check result reveals its presence. (A creature with no ranks in Move Silently makes a Move Silently check as a Dexterity check to which an armor check penalty applies.) A successful check lets a character hear an invisible creature ``over there somewhere.'' It's practically impossible to pinpoint the location of an invisible creature. A \skill{Listen} check that beats the DC by 20 pinpoints the invisible creature's location.
+
+A creature can grope about to find an invisible creature. A character can make a touch attack with his hands or a weapon into two adjacent 1.5-meter squares using a standard action. If an invisible target is in the designated area, there is a 50\% miss chance on the touch attack. If successful, the groping character deals no damage but has successfully pinpointed the invisible creature's current location. (If the invisible creature moves, its location, obviously, is once again unknown.)
+
+If an invisible creature strikes a character, the character struck still knows the location of the creature that struck him (until, of course, the invisible creature moves). The only exception is if the invisible creature has a reach greater than 1.5 meter. In this case, the struck character knows the general location of the creature but has not pinpointed the exact location.
+
+If a character tries to attack an invisible creature whose location he has pinpointed, he attacks normally, but the invisible creature still benefits from full concealment (and thus a 50\% miss chance). A particularly large and slow creature might get a smaller miss chance.
+
+If a character tries to attack an invisible creature whose location he has not pinpointed, have the player choose the space where the character will direct the attack. If the invisible creature is there, conduct the attack normally. If the enemy's not there, roll the miss chance as if it were there, don't let the player see the result, and tell him that the character has missed. That way the player doesn't know whether the attack missed because the enemy's not there or because you successfully rolled the miss chance.
+
+If an invisible character picks up a visible object, the object remains visible. One could coat an invisible object with flour to at least keep track of its position (until the flour fell off or blew away). An invisible creature can pick up a small visible item and hide it on his person (tucked in a pocket or behind a cloak) and render it effectively invisible.
+
+Invisible creatures leave tracks. They can be tracked normally. Footprints in sand, mud, or other soft surfaces can give enemies clues to an invisible creature's location.
+
+An invisible creature in the water displaces water, revealing its location. The invisible creature, however, is still hard to see and benefits from concealment.
+
+A creature with the scent ability can detect an invisible creature as it would a visible one.
+
+A creature with the \feat{Blind-Fight} feat has a better chance to hit an invisible creature. Roll the miss chance twice, and he misses only if both rolls indicate a miss. (Alternatively, make one 25\% miss chance roll rather than two 50\% miss chance rolls.)
+
+A creature with blindsight can attack (and otherwise interact with) creatures regardless of invisibility.
+
+An invisible burning torch still gives off light, as does an invisible object with a light spell (or similar spell) cast upon it.
+
+Ethereal creatures are invisible. Since ethereal creatures are not materially present, \skill{Spot} checks, \skill{Listen} checks, Scent, \feat{Blind-Fight}, and blindsight don't help locate them. Incorporeal creatures are often invisible. Scent, \feat{Blind-Fight}, and blindsight don't help creatures find or attack invisible, incorporeal creatures, but \skill{Spot} checks and possibly \skill{Listen} checks can help.
+
+Invisible creatures cannot use gaze attacks.
+
+Invisibility does not thwart \emph{detect} spells.
+
+Since some creatures can detect or even see invisible creatures, it is helpful to be able to hide even when invisible.
+
+\subsubsection{Level Loss}
+A character who loses a level instantly loses one Hit Die. The character's base attack bonus, base saving throw bonuses, and special class abilities are now reduced to the new, lower level. Likewise, the character loses any ability score gain, skill ranks, and any feat associated with the level (if applicable). If the exact ability score or skill ranks increased from a level now lost is unknown (or the player has forgotten), lose 1 point from the highest ability score or ranks from the highest-ranked skills. If a familiar or companion creature has abilities tied to a character who has lost a level, the creature's abilities are adjusted to fit the character's new level.
+
+The victim's experience point total is immediately set to the midpoint of the previous level.
+
+\subsubsection{Low-Light Vision}
+Characters with low-light vision have eyes that are so sensitive to light that they can see twice as far as normal in dim light. Low-light vision is color vision. A spellcaster with low-light vision can read a scroll as long as even the tiniest candle flame is next to her as a source of light.
+
+Characters with low-light vision can see outdoors on a moonlit night as well as they can during the day.
+
+\subsubsection{Manufactured Weapons}
+Some monsters employ manufactured weapons when they attack. Creatures that use swords, bows, spears, and the like follow the same rules as characters, including those for additional attacks from a high base attack bonus and two-weapon fighting penalties. This category also includes ``found items,'' such as rocks and logs, that a creature wields in combat---in essence, any weapon that is not intrinsic to the creature.
+
+Some creatures combine attacks with natural and manufactured weapons when they make a full attack. When they do so, the manufactured weapon attack is considered the primary attack unless the creature's description indicates otherwise and any natural weapons the creature also uses are considered secondary natural attacks. These secondary attacks do not interfere with the primary attack as attacking with an off-hand weapon does, but they take the usual $-5$ penalty (or $-2$ with the \feat{Multiattack} feat) for such attacks, even if the natural weapon used is normally the creature's primary natural weapon.
+
+\subsubsection{Movement Modes}
+Creatures may have modes of movement other than walking and running. These are natural, not magical, unless specifically noted in a monster description.
+
+\textbf{Burrow:} A creature with a burrow speed can tunnel through dirt, but not through rock unless the descriptive text says otherwise. Creatures cannot charge or run while burrowing. Most burrowing creatures do not leave behind tunnels other creatures can use (either because the material they tunnel through fills in behind them or because they do not actually dislocate any material when burrowing); see the individual creature descriptions for details.
+
+\textbf{Climb:} A creature with a climb speed has a +8 racial bonus on all \skill{Climb} checks. The creature must make a \skill{Climb} check to climb any wall or slope with a DC of more than 0, but it always can choose to take 10 even if rushed or threatened while climbing. The creature climbs at the given speed while climbing. If it chooses an accelerated climb it moves at double the given climb speed (or its base land speed, whichever is lower) and makes a single \skill{Climb} check at a $-5$ penalty. Creatures cannot run while climbing. A creature retains its Dexterity bonus to Armor Class (if any) while climbing, and opponents get no special bonus on their attacks against a climbing creature.
+
+\textbf{Fly:} A creature with a fly speed can move through the air at the indicated speed if carrying no more than a light load. (Note that medium armor does not necessarily constitute a medium load.) All fly speeds include a parenthetical note indicating maneuverability, as follows:
+
+\begin{itemize*}
+\item \textit{Perfect:} The creature can perform almost any aerial maneuver it wishes. It moves through the air as well as a human moves over smooth ground.
+\item \textit{Good:} The creature is very agile in the air (like a housefly or a hummingbird), but cannot change direction as readily as those with perfect maneuverability.
+\item \textit{Average:} The creature can fly as adroitly as a small bird.
+\item \textit{Poor:} The creature flies as well as a very large bird.
+\item \textit{Clumsy:} The creature can barely maneuver at all.
+A creature that flies can make dive attacks. A dive attack works just like a charge, but the diving creature must move a minimum of 9 meters and descend at least 3 meters. It can make only claw or talon attacks, but these deal double damage. A creature can use the run action while flying, provided it flies in a straight line.
+\end{itemize*}
+
+\textbf{Flight (Ex or Su):} A creature with this ability can cease or resume flight as a free action. If the ability is supernatural, it becomes ineffective in an antimagic field, and the creature loses its ability to fly for as long as the antimagic effect persists.
+
+\textbf{Swim:} A creature with a swim speed can move through water at its swim speed without making \skill{Swim} checks. It has a +8 racial bonus on any \skill{Swim} check to perform some special action or avoid a hazard. The creature can always can choose to take 10 on a \skill{Swim} check, even if distracted or endangered. The creature can use the run action while swimming, provided it swims in a straight line.
+
+\subsubsection{Natural Weapons}
+Natural weapons are weapons that are physically a part of a creature. A creature making a melee attack with a natural weapon is considered armed and does not provoke attacks of opportunity. Likewise, it threatens any space it can reach. Creatures do not receive additional attacks from a high base attack bonus when using natural weapons. The number of attacks a creature can make with its natural weapons depends on the type of the attack---generally, a creature can make one bite attack, one attack per claw or tentacle, one gore attack, one sting attack, or one slam attack (although Large creatures with arms or arm-like limbs can make a slam attack with each arm). Refer to the individual monster descriptions.
+
+Unless otherwise noted, a natural weapon threatens a critical hit on a natural attack roll of 20.
+
+When a creature has more than one natural weapon, one of them (or sometimes a pair or set of them) is the primary weapon. All the creature's remaining natural weapons are secondary.
+
+The primary weapon is given in the creature's Attack entry, and the primary weapon or weapons is given first in the creature's Full Attack entry. A creature's primary natural weapon is its most effective natural attack, usually by virtue of the creature's physiology, training, or innate talent with the weapon. An attack with a primary natural weapon uses the creature's full attack bonus. Attacks with secondary natural weapons are less effective and are made with a $-5$ penalty on the attack roll, no matter how many there are. (Creatures with the Multiattack feat take only a $-2$ penalty on secondary attacks.) This penalty applies even when the creature makes a single attack with the secondary weapon as part of the attack action or as an attack of opportunity.
+
+Natural weapons have types just as other weapons do. The most common are summarized below.
+
+\textbf{Bite:} The creature attacks with its mouth, dealing piercing, slashing, and bludgeoning damage.
+
+\textbf{Claw or Talon:} The creature rips with a sharp appendage, dealing piercing and slashing damage.
+
+\textbf{Gore:} The creature spears the opponent with an antler, horn, or similar appendage, dealing piercing damage.
+
+\textbf{Slap or Slam:} The creature batters opponents with an appendage, dealing bludgeoning damage.
+
+\textbf{Sting:} The creature stabs with a stinger, dealing piercing damage. Sting attacks usually deal damage from poison in addition to hit point damage.
+
+\textbf{Tentacle:} The creature flails at opponents with a powerful tentacle, dealing bludgeoning (and sometimes slashing) damage.
+
+\subsubsection{Nonabilities}
+Some creatures lack certain ability scores. These creatures do not have an ability score of 0---they lack the ability altogether. The modifier for a nonability is +0. Other effects of nonabilities are detailed below.
+
+\textbf{Strength:} Any creature that can physically manipulate other objects has at least 1 point of Strength. A creature with no Strength score can't exert force, usually because it has no physical body or because it doesn't move. The creature automatically fails Strength checks. If the creature can attack, it applies its Dexterity modifier to its base attack bonus instead of a Strength modifier.
+
+\textbf{Dexterity:} Any creature that can move has at least 1 point of Dexterity. A creature with no Dexterity score can't move. If it can perform actions (such as casting spells), it applies its Intelligence modifier to initiative checks instead of a Dexterity modifier. The creature automatically fails Reflex saves and Dexterity checks.
+
+\textbf{Constitution:} Any living creature has at least 1 point of Constitution. A creature with no Constitution has no body or no metabolism. It is immune to any effect that requires a Fortitude save unless the effect works on objects or is harmless. The creature is also immune to ability damage, ability drain, and energy drain, and automatically fails Constitution checks. A creature with no Constitution cannot tire and thus can run indefinitely without tiring (unless the creature's description says it cannot run).
+
+\textbf{Intelligence:} Any creature that can think, learn, or remember has at least 1 point of Intelligence. A creature with no Intelligence score is mindless, an automaton operating on simple instincts or programmed instructions. It has immunity to mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects) and automatically fails Intelligence checks.
+
+Mindless creatures do not gain feats or skills, although they may have bonus feats or racial skill bonuses.
+
+\textbf{Wisdom:} Any creature that can perceive its environment in any fashion has at least 1 point of Wisdom. Anything with no Wisdom score is an object, not a creature. Anything without a Wisdom score also has no Charisma score.
+
+\textbf{Charisma:} Any creature capable of telling the difference between itself and things that are not itself has at least 1 point of Charisma. Anything with no Charisma score is an object, not a creature. Anything without a Charisma score also has no Wisdom score.
+
+\subsubsection{Paralysis}
+Some monsters and spells have the supernatural or spell-like ability to paralyze their victims, immobilizing them through magical means. (Paralysis from toxins is discussed in the Poison section below.)
+
+A paralyzed character cannot move, speak, or take any physical action. He is rooted to the spot, frozen and helpless. Not even friends can move his limbs. He may take purely mental actions, such as casting a spell with no components. Paralysis works on the body, and a character can usually resist it with a Fortitude saving throw (the DC is given in the creature's description). Unlike hold person and similar effects, a paralysis effect does not allow a new save each round.
+
+A winged creature flying in the air at the time that it becomes paralyzed cannot flap its wings and falls. A swimmer can't swim and may drown.
+
+
+
+\BigTablePair{Non-Injury Poisons}{l l X X r{11mm}}{
+  \tableheader Name
+& \tableheader Save DC
+& \tableheader Initial Damage
+& \tableheader Secondary Damage
+& \tableheader Price\\
+
+\multicolumn{5}{l}{\TableSubheader{Contact Poisons}}\\
+Mulworm (contact)              & DC 10 & 2d6 Dex & 1d6 Con & 120 cp\\
+Beetle, dragon\footnotemark[1] & DC 12 & 2d6 Con & 2d6 Con & 150 cp\\
+Sassone leaf residue           & DC 16 & 2d12 hp & 1d6 Con & 300 cp\\
+T'liz essence                  & DC 16 & $\star$ & --- & 400 cp\\
+T'chowb ichor                  & DC 13 & 1 Int$^\dagger$ & 2d4 Int + 1 Int$^\dagger$ & 500 cp\\
+Malyss root paste              & DC 16 & 1 Dex & 2d4 Dex & 500 cp\\
+Nitharit                       & DC 13 & --- & 3d6 Con & 650 cp\\
+Id fiend essence               & DC 16 & shaken 1 minute & panicked 2d6 minutes & 750 cp\\
+Terinav root                   & DC 16 & 1d6 Dex & 2d6 Dex & 750 cp\\
+Dragon bile                    & DC 26 & 3d6 Str & --- & 1,500 cp\\
+Antloid, soldier (contact)     & DC 16 & 2d6 Con & --- & 1,800 cp\\
+Black lotus extract            & DC 20 & 3d6 Con & 3d6 Con & 4,500 cp\\
+
+\multicolumn{5}{l}{\TableSubheader{Ingested Poisons}}\\
+Kivit                                & DC 10 & 1d3 Con & 1d3 Con & 90 cp\\
+Oil of taggit                        & DC 15 & --- & Unconsciousness & 90 cp\\
+Arsenic                              & DC 13 & 1 Con & 1d8 Con & 120 cp\\
+Id moss                              & DC 14 & 1d4 Int & 2d6 Int & 125 cp\\
+Kank taint\footnotemark[2]           & DC 13 & 1d4 Con + $\star$ & --- & 125 cp\\
+Mulworm (ingested)                   & DC 12 & 1d6 Con & 1d6 Con & 125 cp\\
+Crescent forest wine                 & DC 16 & 1d3 Int & 1d4 Int +1d3 Str & 175 cp\\
+Striped toadstool                    & DC 11 & 1 Wis & 2d6 Wis + 1d4 Int & 180 cp\\
+Lich dust                            & DC 17 & 2d6 Str & 1d6 Str & 250 cp\\
+Dark reaver powder                   & DC 18 & 2d6 Con & 1d6 Con + 1d6 Str & 300 cp\\
+Elf scent                            & DC 16 & skill penalty & --- & 300 cp\\
+Purple grass extract                 & DC 15 & 4d10 hit points & $\star$ & 500 cp\\
+Bleached inix slumber                & DC 16 & $\star$ & $\star$ & 650 cp\\
+Fael appetite                        & DC 14 & 1d6 Wis + $\star$ & 1d6 Wis + $\star$ & 700 cp\\
+Methelinoc                           & DC 16 & 1d6 Con & 1d6 Con & 800 cp\\
+Zombie plant extract                 & DC 15 & 1d6 Int & 2d6 Int + $\star$ & 1,300 cp\\
+Fruit, tree of death\footnotemark[3] & DC 22 & 4d6 Con & 4d6 Con & 4,500 cp\\
+Templar's ultimatum                  & DC 23 & suggestibility 1 minute & 5d6 Con & 5,000 cp\\
+
+\multicolumn{5}{l}{\TableSubheader{Inhaled Poisons}}\\
+Ungol dust        & DC 15 & 1 Cha & 1d6 Cha + 1 Cha$^\dagger$ & 1,000 cp\\
+Brain seed powder & DC 14 & 1d4 Wis & 2d4 Wis & 1,100 cp\\
+Gaj poison gas    & DC 16 & 1d4 Con and nauseated for 1 round & --- & 1,200 cp\\
+Insanity mist     & DC 15 & 1d4 Wis & 2d6 Wis & 1,500 cp\\
+Burnt othur fumes & DC 18 & 1 Con$^\dagger$ & 3d6 Con & 2,100 cp\\
+Jalath'gak        & DC 16 & paralysis 2d6 rounds & --- & 3,000 cp\\
+Fordorran         & DC 16 & 2d6 Dex & 3d6 Dex & 3,500 cp\\
+Jalath'gak, giant & DC 21 & paralysis 3d6 rounds & --- & 4,500 cp\\
+Poisonweed spores & DC 21 & unconsciousness 2d6 minutes & unconsciousness 2d6 minutes & 6,500 cp\\
+
+% \TableNote[p{\columnwidth}]{5}{vish}\\
+\BigTableNote{5}{$\star$ See entry.}\\
+\BigTableNote{5}{$\dagger$ Permanent drain, not temporary damage.}\\
+\BigTableNote{5}{1 Only affects dray and creatures with the Dragon type.}\\
+\BigTableNote{5}{2 Affects creatures with the Elemental type, and creatures with the air, earth, fire, and/or water subtype---including those that are otherwise immune to poison.}\\
+\BigTableNote{5}{3 Cannot be crafted.}\\
+}
+
+\BigTablePair{Injury Poisons}{l l X X r{11mm}}{
+\tableheader Name & \tableheader Save DC & \tableheader Initial Damage & \tableheader Secondary Damage & \tableheader Price\\
+
+% \multicolumn{6}{l}{\textit{Injury}}\\
+Cactus, spider                 & DC 12 & paralysis for 2d4 rounds & --- & 75 cp\\
+Elven poison                   & DC 13 & Unconsciousness & Unconsciousness for 2d4 hours & 75 cp\\
+Hej-kin                        & DC 11 & 1 Con & 1 Con & 80 cp\\
+Assassin bug                   & DC 10 & 1d3 Dex & 1d3 Dex & 90 cp\\
+Blight                         & DC 10 & paralysis & paralysis & 90 cp\\
+Small centipede poison         & DC 11 & 1d2 Dex & 1d2 Dex & 90 cp\\
+Bloodroot                      & DC 12 & --- & 1d4 Con + 1d3 Wis & 100 cp\\
+Dust glider                    & DC 13 & 1d4 Str & 1d4 Str & 100 cp\\
+Greenblood oil                 & DC 13 & 1 Con & 1d2 Con & 100 cp\\
+Wall walker                    & DC 14 & paralysis 1d6 rounds & --- & 100 cp\\
+Dune freak                     & DC 14 & 1 point Str & 1d6 Str & 110 cp\\
+Silt serpent                   & DC 10 & 1d6 Str & 1d6 Con & 110 cp\\
+Spider, dark defiler           & DC 13 & 1d6 Con & --- & 110 cp\\
+Black adder venom              & DC 11 & 1d6 Con & 1d6 Con & 120 cp\\
+Blue whinnis                   & DC 14 & 1 Con & Unconsciousness & 120 cp\\
+Kank, soldier                  & DC 13 & 1d6 Str & 1d6 Str & 120 cp\\
+Scorpion, gold                 & DC 12 & 1d6 Str & 1d4 Str & 120 cp\\
+Thri-kreen                     & DC 11 & paralysis & paralysis & 120 cp\\
+Pulp bee                       & DC 14 & 1d4 Dex & 1d4 Dex & 130 cp\\
+Spider, dark psion             & DC 14 & 1d6 Con & --- & 130 cp\\
+Boneclaw, lesser               & DC 10 & 1d6 Con & 1d6 Con & 150 cp\\
+Floater                        & DC 13 & paralysis & --- & 150 cp\\
+Jankx                          & DC 11 & 1d6 Str & 2d6 Dex & 150 cp\\
+Medium spider venom            & DC 14 & 1d4 Str & 1d4 Str & 150 cp\\
+Trin                           & DC 13 & paralysis & paralysis & 150 cp\\
+Spider, dark warrior           & DC 15 & 1d6 Con & --- & 175 cp\\
+Silt horror, black             & DC 14 & paralysis for 1 minute & paralysis 1d6 rounds & 180 cp\\
+Spider, silt                   & DC 13 & paralysis & paralysis & 180 cp\\
+Wezer, soldier                 & DC 13 & unconsciousness 1 minute & unconsciousness 2d4 days & 180 cp\\
+Braxat hide                    & DC 18 & --- & $\star$ & 200 cp\\
+Cactus, hunting                & DC 14 & paralysis 1 minute & paralysis for 1d4+2 rounds & 200 cp\\
+Large spider venom             & DC 18 & 1d6 Str & 1d6 Str & 200 cp\\
+Psionocus                      & DC 13 & sleep 1 min plus drain PP & sleep 5d6 min plus drain PP & 200 cp\\
+Giant wasp poison              & DC 18 & 1d6 Dex & 1d6 Dex & 210 cp\\
+Mulworm (injury)               & DC 12 & 1d6 Con & 1d6 Con & 250 cp\\
+Shadow essence                 & DC 17 & 1 Str$^\dagger$ & 2d6 Str & 250 cp\\
+Cha'thrang                     & DC 18 & 1 Str & 2d6 Str & 300 cp\\
+Random displays                & DC 16 & 1d4 Int & $\star$ & 300 cp\\
+Bloodgrass (plains)            & DC 13 & 1d6 Dex & paralysis 2d6 rounds & 350 cp\\
+Silt serpent, giant            & DC 13 & 2d4 Str & 2d4 Con & 375 cp\\
+Single-mindedness              & DC 15 & 1d4 Wis + $\star$ & --- & 450 cp\\
+Halfling tar                   & DC 17 & unconsciousness & --- & 500 cp\\
+Silt serpent, giant (immature) & DC 15 & 2d4 Str & 2d4 Con & 500 cp\\
+Purple worm poison             & DC 24 & 1d6 Str & 2d6 Str & 700 cp\\
+Scorpion, barbed               & DC 17 & 1d4 Con & 1d4 Con & 800 cp\\
+Blossomkiller                  & DC 17 & 1d6 Dex & unconsciousness 2d10 minutes & 1,000 cp\\
+Silt horror, red               & DC 17 & paralysis 2d6 rounds & paralysis 2d6 rounds & 1,000 cp\\
+Spider, crystal                & DC 17 & 1d6 Con & 1d6 Con & 1,000 cp\\
+Mastyrial, desert              & DC 18 & 1d6 Con & 1d6 Con & 1,200 cp\\
+Mastyrial, black               & DC 16 & 2d6 Dex & 1d6 Str & 1,300 cp\\
+Spider, mountain               & DC 15 & paralysis 2d12 minutes & paralysis 2d12 minutes & 1,350 cp\\
+Zik-trin'ak                    & DC 17 & paralysis & paralysis & 1,350 cp\\
+Zik-trin'ta                    & DC 15 & paralysis & 2d6 Con & 1,500 cp\\
+Antloid, soldier (injury)      & DC 16 & 2d6 Con & --- & 1,500 cp\\
+Scarlet warden                 & DC 21 & 1d6 Con & 1d6 Con & 1,500 cp\\
+Cistern fiend                  & DC 25 & 1d6 Dex & 2d6 Dex & 1,500 cp\\
+Deathblade                     & DC 20 & 1d6 Con & 2d6 Con & 1,800 cp\\
+Bloodgrass (jungle)            & DC 19 & 1d6 Dex & paralysis 2d6 rounds & 2,100 cp\\
+Spider, dark queen             & DC 19 & 1d6 Con & 2d6 Con & 2,100 cp\\
+Puddingfish                    & DC 21 & paralysis 1 minute & paralysis 2d4 rounds & 2,500 cp\\
+Silk wyrm                      & DC 18 & 1d4 Str & paralysis 1d4 days & 2,500 cp\\
+S'thag zagath                  & DC 21 & 1d4 Dex & paralysis 1 minute & 2,500 cp\\
+Drik, high                     & DC 18 & 2d6 Con & 1d6 Con & 2,500 cp\\
+Wyvern poison                  & DC 17 & 2d6 Con & 2d6 Con & 3,000 cp\\
+% Drakesblood 3 & DC 25 & 1 point of DR 4 & 1d3 points of DR 4 & 1,500 cp\\
+
+\BigTableNote{5}{$\star$ See entry.}\\
+\BigTableNote{5}{$\dagger$ Permanent drain, not temporary damage.}\\
+}
+
+\subsubsection{Poison}
+When a character takes damage from an attack with a poisoned weapon, touches an item smeared with contact poison, consumes poisoned food or drink, or is otherwise poisoned, he must make a Fortitude saving throw. If he fails, he takes the poison's initial damage (usually ability damage). Even if he succeeds, he typically faces more damage 1 minute later, which he can also avoid with a successful Fortitude saving throw. The Fortitude save DC against a creature's natural poison attack is equal to 10 + \onehalf poisoning creature's racial HD + poisoning creature's Con modifier (the exact DC is given in the creature's descriptive text).
+
+One dose of poison smeared on a weapon or some other object affects just a single target. A poisoned weapon or object retains its venom until the weapon scores a hit or the object is touched (unless the poison is wiped off before a target comes in contact with it). Any poison smeared on an object or exposed to the elements in any way remains potent until it is touched or used.
+
+Although supernatural and spell-like poisons are possible, poisonous effects are almost always extraordinary.
+
+\textbf{Perils Of Using Poison:} A character has a 5\% chance of exposing himself to a poison whenever he applies it to a weapon or otherwise readies it for use. Additionally, a character who rolls a natural 1 on an attack roll with a poisoned weapon must make a DC 15 Reflex save or accidentally poison himself with the weapon. A creature with a poison attack is immune to its own poison and the poison of others of its kind.
+
+\textbf{Poison Immunities:} Creatures with natural poison attacks are immune to their own poison. Nonliving creatures (constructs and undead) and creatures without metabolisms (such as elementals) are always immune to poison. Oozes, plants, and certain kinds of outsiders are also immune to poison, although conceivably special poisons could be concocted specifically to harm them.
+
+Poisons can be divided into four basic types according to the method by which their effect is delivered, as follows.
+
+\textbf{Contact:} Merely touching this type of poison necessitates a saving throw. It can be actively delivered via a weapon or a touch attack. Even if a creature has sufficient damage reduction to avoid taking any damage from the attack, the poison can still affect it. A chest or other object can be smeared with contact poison as part of a trap.
+
+\textbf{Ingested:} Ingested poisons are virtually impossible to utilize in a combat situation. A poisoner could administer a potion to an unconscious creature or attempt to dupe someone into drinking or eating something poisoned. Assassins and other characters tend to use ingested poisons outside of combat.
+
+\textbf{Inhaled:} Inhaled poisons are usually contained in fragile vials or eggshells. They can be thrown as a ranged attack with a range increment of 10 feet. When it strikes a hard surface (or is struck hard), the container releases its poison. One dose spreads to fill the volume of a 10-foot cube. Each creature within the area must make a saving throw. (Holding one's breath is ineffective against inhaled poisons; they affect the nasal membranes, tear ducts, and other parts of the body.)
+
+\textbf{Injury:} This poison must be delivered through a wound. If a creature has sufficient damage reduction to avoid taking any damage from the attack, the poison does not affect it. Traps that cause damage from weapons, needles, and the like sometimes contain injury poisons.
+
+The characteristics of poisons are summarized on \tabref{Non-Injury Poisons} and \tabref{Injury Poisons}.
+
+
+
+% Type
+% The poison's method of delivery (contact, ingested, inhaled, or via an injury) and the Fortitude save DC to avoid the poison's damage.
+
+\textbf{Save DC:} The Fortitude save DC to avoid the poison's damage.
+
+\textbf{Initial Damage:} The damage the character takes immediately upon failing his saving throw against this poison. Ability damage is temporary unless marked with an asterisk (*), in which case the loss is a permanent drain. Paralysis lasts for 2d6 minutes.
+
+\textbf{Secondary Damage:} The amount of damage the character takes 1 minute after exposure as a result of the poisoning, if he fails a second saving throw. Unconsciousness lasts for 1d3 hours. Ability damage marked with an asterisk is permanent drain instead of temporary damage.
+
+\textbf{Price:} The cost of one dose (one vial) of the poison. It is not possible to use or apply poison in any quantity smaller than one dose. The purchase and possession of poison is always illegal, and even in big cities it can be obtained only from specialized, less than reputable sources.
+
+
+% The characteristics of poisons are summarized on Table: Poisons. Terms on the table are defined below.
+
+% Type
+% The poison's method of delivery (contact, ingested, inhaled, or via an injury) and the Fortitude save DC to avoid the poison's damage.
+
+% Initial Damage
+% The damage the character takes immediately upon failing his saving throw against this poison. Ability damage is temporary unless marked with an asterisk (*), in which case the loss is a permanent drain. Paralysis lasts for 2d6 minutes.
+
+% Secondary Damage
+% The amount of damage the character takes 1 minute after exposure as a result of the poisoning, if he fails a second saving throw. Unconsciousness lasts for 1d3 hours. Ability damage marked with an asterisk is permanent drain instead of temporary damage.
+
+% Price
+% The cost of one dose (one vial) of the poison. It is not possible to use or apply poison in any quantity smaller than one dose. The purchase and possession of poison is always illegal, and even in big cities it can be obtained only from specialized, less than reputable sources.
+
+% Table: Poisons
+% Poison	Type	Initial Damage	Secondary Damage	Price
+% Permanent drain, not temporary damage.
+% Nitharit	Contact DC 13	0	3d6 Con	650 gp
+% Sassone leaf residue	Contact DC 16	2d12 hp	1d6 Con	300 gp
+% Malyss root paste	Contact DC 16	1 Dex	2d4 Dex	500 gp
+% Terinav root	Contact DC 16	1d6 Dex	2d6 Dex	750 gp
+% Black lotus extract	Contact DC 20	3d6 Con	3d6 Con	4,500 gp
+% Dragon bile	Contact DC 26	3d6 Str	0	1,500 gp
+% Striped toadstool	Ingested DC 11	1 Wis	2d6 Wis + 1d4 Int	180 gp
+% Arsenic	Ingested DC 13	1 Con	1d8 Con	120 gp
+% Id moss	Ingested DC 14	1d4 Int	2d6 Int	125 gp
+% Oil of taggit	Ingested DC 15	0	Unconsciousness	90 gp
+% Lich dust	Ingested DC 17	2d6 Str	1d6 Str	250 gp
+% Dark reaver powder	Ingested DC 18	2d6 Con	1d6 Con + 1d6 Str	300 gp
+% Ungol dust	Inhaled DC 15	1 Cha	1d6 Cha + 1 Cha1	1,000 gp
+% Insanity mist	Inhaled DC 15	1d4 Wis	2d6 Wis	1,500 gp
+% Burnt othur fumes	Inhaled DC 18	1 Con1	3d6 Con	2,100 gp
+% Black adder venom	Injury DC 11	1d6 Con	1d6 Con	120 gp
+% Small centipede poison	Injury DC 11	1d2 Dex	1d2 Dex	90 gp
+% Bloodroot	Injury DC 12	0	1d4 Con + 1d3 Wis	100 gp
+% Drow poison	Injury DC 13	Unconsciousness	Unconsciousness for 2d4 hours	75gp
+% Greenblood oil	Injury DC 13	1 Con	1d2 Con	100 gp
+% Blue whinnis	Injury DC 14	1 Con	Unconsciousness	120 gp
+% Medium spider venom	Injury DC 14	1d4 Str	1d4 Str	150 gp
+% Shadow essence	Injury DC 17	1 Str1	2d6 Str	250 gp
+% Wyvern poison	Injury DC 17	2d6 Con	2d6 Con	3,000 gp
+% Large scorpion venom	Injury DC 18	1d6 Str	1d6 Str	200 gp
+% Giant wasp poison	Injury DC 18	1d6 Dex	1d6 Dex	210 gp
+% Deathblade	Injury DC 20	1d6 Con	2d6 Con	1,800 gp
+% Purple worm poison	Injury DC 24	1d6 Str	2d6 Str	700 gp
+
+
+\subsubsection{Polymorph}
+Magic can cause creatures and characters to change their shapes---sometimes against their will, but usually to gain an advantage. Polymorphed creatures retain their own minds but have new physical forms.
+
+The \spell{polymorph} spell defines the general polymorph effect.
+
+Unless stated otherwise, creatures can polymorph into forms of the same type or into an aberration, animal, dragon, fey, giant, humanoid, magical beast, monstrous humanoid, ooze, plant, or vermin form. Most spells and abilities that grant the ability to polymorph place a cap on the Hit Dice of the form taken.
+
+Polymorphed creatures gain the Strength, Dexterity, and Constitution of their new forms, as well as size, extraordinary special attacks, movement capabilities (to a maximum of 36 meters for flying and 18 meters for nonflying movement), natural armor bonus, natural weapons, racial skill bonuses, and other gross physical qualities such as appearance and number of limbs. They retain their original class and level, Intelligence, Wisdom, Charisma, hit points, base attack bonus, base save bonuses, and alignment.
+
+Creatures who polymorph keep their worn or held equipment if the new form is capable of wearing or holding it. Otherwise, it melds with the new form and ceases to function for the duration of the polymorph.
+
+\subsubsection{Pounce}
+When a creature with this special attack makes a charge, it can follow with a full attack---including rake attacks if the creature also has the rake ability.
+
+\subsubsection{Powerful Charge}
+When a creature with this special attack makes a charge, its attack deals extra damage in addition to the normal benefits and hazards of a charge. The amount of damage from the attack is given in the creature's description.
+
+% \subsubsection{Psionics}
+% Telepathy, mental combat and psychic powers---psionics is a catchall word that describes special mental abilities possessed by various creatures. These are spell-like abilities that a creature generates from the power of its mind alone---no other outside magical force or ritual is needed. Each psionic creature's description contains details on its psionic abilities.
+
+% Psionic attacks almost always allow Will saving throws to resist them. However, not all psionic attacks are mental attacks. Some psionic abilities allow the psionic creature to reshape its own body, heal its wounds, or teleport great distances. Some psionic creatures can see into the future, the past, and the present (in far-off locales) as well as read the minds of others. Psionic abilities are usually usable at will.
+
+\subsubsection{Rake}
+A creature with this special attack gains extra natural attacks when it grapples its foe. Normally, a monster can attack with only one of its natural weapons while grappling, but a monster with the rake ability usually gains two additional claw attacks that it can use only against a grappled foe. Rake attacks are not subject to the usual $-4$ penalty for attacking with a natural weapon in a grapple.
+
+A monster with the rake ability must begin its turn grappling to use its rake---it can't begin a grapple and rake in the same turn.
+
+\subsubsection{Rays}
+All ray attacks require the attacker to make a successful ranged touch attack against the target. Rays have varying ranges, which are simple maximums. A ray's attack roll never takes a range penalty. Even if a ray hits, it usually allows the target to make a saving throw (Fortitude or Will). Rays never allow a Reflex saving throw, but if a character's Dexterity bonus to AC is high, it might be hard to hit her with the ray in the first place.
+
+\subsubsection{Regeneration}
+Creatures with this extraordinary ability recover from wounds quickly and can even regrow or reattach severed body parts. Damage dealt to the creature is treated as nonlethal damage, and the creature automatically cures itself of nonlethal damage at a fixed rate per round, as given in the creature's entry.
+
+Certain attack forms, typically fire and acid, deal damage to the creature normally; that sort of damage doesn't convert to nonlethal damage and so doesn't go away. The creature's description includes the details. A regenerating creature that has been rendered unconscious through nonlethal damage can be killed with a coup de grace. The attack cannot be of a type that automatically converts to nonlethal damage.
+
+Creatures with regeneration can regrow lost portions of their bodies and can reattach severed limbs or body parts. Severed parts die if they are not reattached.
+
+Regeneration does not restore hit points lost from starvation, thirst, or suffocation.
+
+Attack forms that don't deal hit point damage ignore regeneration.
+
+An attack that can cause instant death only threatens the creature with death if it is delivered by weapons that deal it lethal damage.
+
+A creature must have a Constitution score to have the regeneration ability.
+
+\subsubsection{Resistance To Energy}
+A creature with resistance to energy has the ability (usually extraordinary) to ignore some damage of a certain type each round, but it does not have total immunity.
+
+Each resistance ability is defined by what energy type it resists and how many points of damage are resisted. It doesn't matter whether the damage has a mundane or magical source.
+
+When resistance completely negates the damage from an energy attack, the attack does not disrupt a spell. This resistance does not stack with the resistance that a spell might provide.
+
+\subsubsection{Scent}
+This extraordinary ability lets a creature detect approaching enemies, sniff out hidden foes, and track by sense of smell.
+
+A creature with the scent ability can detect opponents by sense of smell, generally within 9 meters. If the opponent is upwind, the range is 18 meters. If it is downwind, the range is 4.5 meters. Strong scents, such as smoke or rotting garbage, can be detected at twice the ranges noted above. Overpowering scents, such as skunk musk or troglodyte stench, can be detected at three times these ranges.
+
+The creature detects another creature's presence but not its specific location. Noting the direction of the scent is a move action. If it moves within 1.5 meter of the scent's source, the creature can pinpoint that source.
+
+A creature with the \feat{Track} feat and the scent ability can follow tracks by smell, making a Wisdom check to find or follow a track. The typical DC for a fresh trail is 10. The DC increases or decreases depending on how strong the quarry's odor is, the number of creatures, and the age of the trail. For each hour that the trail is cold, the DC increases by 2. The ability otherwise follows the rules for the \feat{Track} feat. Creatures tracking by scent ignore the effects of surface conditions and poor visibility.
+
+Creatures with the scent ability can identify familiar odors just as humans do familiar sights.
+
+Water, particularly running water, ruins a trail for air-breathing creatures. Water-breathing creatures that have the scent ability, however, can use it in the water easily.
+
+False, powerful odors can easily mask other scents. The presence of such an odor completely spoils the ability to properly detect or identify creatures, and the base \skill{Survival} DC to track becomes 20 rather than 10.
+
+\subsubsection{Sonic Attacks}
+Unless otherwise noted, a sonic attack follows the rules for spreads. The range of the spread is measured from the creature using the sonic attack. Once a sonic attack has taken effect, deafening the subject or stopping its ears does not end the effect. Stopping one's ears ahead of time allows opponents to avoid having to make saving throws against mind-affecting sonic attacks, but not other kinds of sonic attacks (such as those that deal damage). Stopping one's ears is a full-round action and requires wax or other soundproof material to stuff into the ears.
+
+\subsubsection{Spell Immunity}
+A creature with spell immunity avoids the effects of spells and spell-like abilities that directly affect it. This works exactly like spell resistance, except that it cannot be overcome. Sometimes spell immunity is conditional or applies to only spells of a certain kind or level. Spells that do not allow spell resistance are not affected by spell immunity.
+
+\subsubsection{Spell Resistance}
+Spell resistance is the extraordinary ability to avoid being affected by spells. (Some spells also grant spell resistance.)
+
+To affect a creature that has spell resistance, a spellcaster must make a caster level check (1d20 + caster level) at least equal to the creature's spell resistance. (The defender's spell resistance is like an Armor Class against magical attacks.) If the caster fails the check, the spell doesn't affect the creature. The possessor does not have to do anything special to use spell resistance. The creature need not even be aware of the threat for its spell resistance to operate.
+
+Only spells and spell-like abilities are subject to spell resistance. Extraordinary and supernatural abilities (including enhancement bonuses on magic weapons) are not. A creature can have some abilities that are subject to spell resistance and some that are not. Even some spells ignore spell resistance; see When Spell Resistance Applies, below.
+
+A creature can voluntarily lower its spell resistance. Doing so is a standard action that does not provoke an attack of opportunity. Once a creature lowers its resistance, it remains down until the creature's next turn. At the beginning of the creature's next turn, the creature's spell resistance automatically returns unless the creature intentionally keeps it down (also a standard action that does not provoke an attack of opportunity).
+
+A creature's spell resistance never interferes with its own spells, items, or abilities.
+
+A creature with spell resistance cannot impart this power to others by touching them or standing in their midst. Only the rarest of creatures and a few magic items have the ability to bestow spell resistance upon another.
+
+Spell resistance does not stack. It overlaps.
+
+\textbf{When Spell Resistance Applies:} Each spell includes an entry that indicates whether spell resistance applies to the spell. In general, whether spell resistance applies depends on what the spell does:
+
+\textit{Targeted Spells:} Spell resistance applies if the spell is targeted at the creature. Some individually targeted spells can be directed at several creatures simultaneously. In such cases, a creature's spell resistance applies only to the portion of the spell actually targeted at that creature. If several different resistant creatures are subjected to such a spell, each checks its spell resistance separately.
+
+\textit{Area Spells:} Spell resistance applies if the resistant creature is within the spell's area. It protects the resistant creature without affecting the spell itself.
+
+\textit{Effect Spells:} Most effect spells summon or create something and are not subject to spell resistance. Sometimes, however, spell resistance applies to effect spells, usually to those that act upon a creature more or less directly, such as web.
+
+Spell resistance can protect a creature from a spell that's already been cast. Check spell resistance when the creature is first affected by the spell.
+
+Check spell resistance only once for any particular casting of a spell or use of a spell-like ability. If spell resistance fails the first time, it fails each time the creature encounters that same casting of the spell. Likewise, if the spell resistance succeeds the first time, it always succeeds. If the creature has voluntarily lowered its spell resistance and is then subjected to a spell, the creature still has a single chance to resist that spell later, when its spell resistance is up.
+
+Spell resistance has no effect unless the energy created or released by the spell actually goes to work on the resistant creature's mind or body. If the spell acts on anything else and the creature is affected as a consequence, no roll is required. Creatures can be harmed by a spell without being directly affected.
+
+Spell resistance does not apply if an effect fools the creature's senses or reveals something about the creature.
+
+Magic actually has to be working for spell resistance to apply. Spells that have instantaneous durations but lasting results aren't subject to spell resistance unless the resistant creature is exposed to the spell the instant it is cast.
+
+When in doubt about whether a spell's effect is direct or indirect, consider the spell's school:
+
+\textit{Abjuration:} The target creature must be harmed, changed, or restricted in some manner for spell resistance to apply. Perception changes aren't subject to spell resistance.
+
+Abjurations that block or negate attacks are not subject to an attacker's spell resistance---it is the protected creature that is affected by the spell (becoming immune or resistant to the attack).
+
+\textit{Conjuration:} These spells are usually not subject to spell resistance unless the spell conjures some form of energy. Spells that summon creatures or produce effects that function like creatures are not subject to spell resistance.
+
+\textit{Divination:} These spells do not affect creatures directly and are not subject to spell resistance, even though what they reveal about a creature might be very damaging.
+
+\textit{Enchantment:} Since enchantment spells affect creatures' minds, they are typically subject to spell resistance.
+
+\textit{Evocation:} If an evocation spell deals damage to the creature, it has a direct effect. If the spell damages something else, it has an indirect effect.
+
+\textit{Illusion:} These spells are almost never subject to spell resistance. Illusions that entail a direct attack are exceptions.
+
+\textit{Necromancy:} Most of these spells alter the target creature's life force and are subject to spell resistance. Unusual necromancy spells that don't affect other creatures directly are not subject to spell resistance.
+
+\textit{Transmutation:} These spells are subject to spell resistance if they transform the target creature. Transmutation spells are not subject to spell resistance if they are targeted on a point in space instead of on a creature. Some transmutations make objects harmful (or more harmful), such as magic stone. Even these spells are not generally subject to spell resistance because they affect the objects, not the creatures against which the objects are used. Spell resistance works against magic stone only if the creature with spell resistance is holding the stones when the cleric casts magic stone on them.
+
+\textbf{Successful Spell Resistance:} Spell resistance prevents a spell or a spell-like ability from affecting or harming the resistant creature, but it never removes a magical effect from another creature or negates a spell's effect on another creature. Spell resistance prevents a spell from disrupting another spell.
+
+Against an ongoing spell that has already been cast, a failed check against spell resistance allows the resistant creature to ignore any effect the spell might have. The magic continues to affect others normally.
+
+\subsubsection{Spells}
+Sometimes a creature can cast arcane or divine spells just as a member of a spellcasting class can (and can activate magic items accordingly). Such creatures are subject to the same spellcasting rules that characters are, except as follows.
+
+A spellcasting creature that lacks hands or arms can provide any somatic component a spell might require by moving its body. Such a creature also does need material components for its spells. The creature can cast the spell by either touching the required component (but not if the component is in another creature's possession) or having the required component on its person. Sometimes spellcasting creatures utilize the Eschew Materials feat to avoid fussing with noncostly components.
+
+A spellcasting creature is not actually a member of a class unless its entry says so, and it does not gain any class abilities. A creature with access to cleric spells must prepare them in the normal manner and receives domain spells if noted, but it does not receive domain granted powers unless it has at least one level in the cleric class.
+
+\subsubsection{Summon}
+A creature with the summon ability can summon specific other creatures of its kind much as though casting a \emph{summon monster} spell, but it usually has only a limited chance of success (as specified in the creature's entry). Roll d\%: On a failure, no creature answers the summons. Summoned creatures automatically return whence they came after 1 hour. A creature that has just been summoned cannot use its own summon ability for 1 hour. Most creatures with the ability to summon do not use it lightly, since it leaves them beholden to the summoned creature. In general, they use it only when necessary to save their own lives. An appropriate spell level is given for each summoning ability for purposes of Concentration checks and attempts to dispel the summoned creature. No experience points are awarded for summoned monsters.
+
+\subsubsection{Swallow Whole}
+If a creature with this special attack begins its turn with an opponent held in its mouth (see Improved Grab), it can attempt a new grapple check (as though attempting to pin the opponent). If it succeeds, it swallows its prey, and the opponent takes bite damage. Unless otherwise noted, the opponent can be up to one size category smaller than the swallowing creature. Being swallowed has various consequences, depending on the creature doing the swallowing. A swallowed creature is considered to be grappled, while the creature that did the swallowing is not. A swallowed creature can try to cut its way free with any light slashing or piercing weapon (the amount of cutting damage required to get free is noted in the creature description), or it can just try to escape the grapple. The Armor Class of the interior of a creature that swallows whole is normally 10 + \onehalf its natural armor bonus, with no modifiers for size or Dexterity. If the swallowed creature escapes the grapple, success puts it back in the attacker's mouth, where it may be bitten or swallowed again.
+
+\subsubsection{Telepathy}
+A creature with this ability can communicate telepathically with any other creature within a certain range (specified in the creature's entry, usually 30 meters) that has a language. It is possible to address multiple creatures at once telepathically, although maintaining a telepathic conversation with more than one creature at a time is just as difficult as simultaneously speaking and listening to multiple people at the same time.
+
+Some creatures have a limited form of telepathy, while others have a more powerful form of the ability.
+
+\subsubsection{Trample}
+As a full-round action, a creature with this special attack can move up to twice its speed and literally run over any opponents at least one size category smaller than itself. The creature merely has to move over the opponents in its path; any creature whose space is completely covered by the trampling creature's space is subject to the trample attack. If a target's space is larger than 1.5 meter, it is only considered trampled if the trampling creature moves over all the squares it occupies. If the trampling creature moves over only some of a target's space, the target can make an attack of opportunity against the trampling creature at a $-4$ penalty. A trampling creature that accidentally ends its movement in an illegal space returns to the last legal position it occupied, or the closest legal position, if there's a legal position that's closer.
+
+A trample attack deals bludgeoning damage (the creature's slam damage + 1onehalf times its Str modifier). The creature's descriptive text gives the exact amount.
+
+Trampled opponents can attempt attacks of opportunity, but these take a $-4$ penalty. If they do not make attacks of opportunity, trampled opponents can attempt Reflex saves to take half damage.
+
+The save DC against a creature's trample attack is 10 + \onehalf creature's HD + creature's Str modifier (the exact DC is given in the creature's descriptive text). A trampling creature can only deal trampling damage to each target once per round, no matter how many times its movement takes it over a target creature.
+
+\subsubsection{Tremorsense}
+A creature with tremorsense automatically senses the location of anything that is in contact with the ground and within range. Aquatic creatures with tremorsense can also sense the location of creatures moving through water.
+
+If no straight path exists through the ground from the creature to those that it's sensing, then the range defines the maximum distance of the shortest indirect path. It must itself be in contact with the ground, and the creatures must be moving.
+
+As long as the other creatures are taking physical actions, including casting spells with somatic components, they're considered moving; they don't have to move from place to place for a creature with tremorsense to detect them.
+
+\subsubsection{Turn Resistance}
+Some creatures (usually undead) are less easily affected by the turning ability of clerics or paladins.
+
+Turn resistance is an extraordinary ability.
+
+When resolving a turn, rebuke, command, or bolster attempt, added the appropriate bonus to the creature's Hit Dice total.
+
+\subsubsection{Vulnerability to Energy}
+Some creatures have vulnerability to a certain kind of energy effect (typically either cold or fire). Such a creature takes half again as much (+50\%) damage as normal from the effect, regardless of whether a saving throw is allowed, or if the save is a success or failure.
+

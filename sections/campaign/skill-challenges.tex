@@ -22,8 +22,8 @@ Challenge Rating and complexity determine how hard the challenge is for the char
 Set the DC for the primary skills using \tabref{Base Challenge Rating for Skill Challenge}. As a starting point, use the Challenge Rating closest to the group's level. If you reduce the DCs by 2, reduce the base CR by 1. If you increase the DCs by 2, increase the base CR by 1.
 
 \Table{Base Challenge Rating for Skill Challenge}{CCC}{
-  \tableheader Difficulty Class for Primary Skills\textsuperscript{1}
-& \tableheader Difficulty Class for Secondary Skills\textsuperscript{1}
+  \tableheader Difficulty Class for Primary Skills\footnotemark[1]
+& \tableheader Difficulty Class for Secondary Skills\footnotemark[1]
 & \tableheader Base Challenge Rating \\
 DC 10 & DC 15 &  1 \\
 DC 15 & DC 20 &  3 \\
@@ -39,7 +39,7 @@ Set the complexity based on how significant you want the challenge to be (see \t
 \Table{Skill Challenge Complexity}{lCCl}{
   \tableheader Complexity Level
 & \tableheader Successes
-& \tableheader Failures\textsuperscript{1}
+& \tableheader Failures\footnotemark[1]
 & \tableheader Final Challenge Rating \\
 1 &  4 & 2 & CR$-4$ \\
 2 &  6 & 3 & CR$-3$ \\
@@ -98,7 +98,7 @@ Without inside help, the characters need to find the Veiled Alliance in a foreig
 
 \textit{Gather Information (DC 30):} The character asks the common people from the city where they could find material components, in a non-incriminating way. Three successes with this skill inform the character the location with the precision of two blocks.
 
-\textit{Knowledge (arcana) (DC 30):} The character understands the veiled code of members of the Alliance. This is available only after one character has gained a success using \skill{Listen}, and it can be used only once in this way during the challenge.
+\textit{Knowledge (arcana) (DC 30):} The character understands the veiled code of members of the Alliance. This is available only after one character has gained a success using \skill{Listen} or \skill{Spot}, and it can be used only once in this way during the challenge for each skill (once for \skill{Listen}, and once for \skill{Spot}).
 
 \textit{Listen (DC 35):} The character tries to eavesdrop conversations around the city. First success with this skill opens up the use of \skill{Knowledge} (arcana).
 
@@ -141,7 +141,7 @@ The Templarate is chasing the PCs as they try to escape. A typical chase plays o
 
 
 \subsubsection{Interrogation}
-The PCs want to extract information from a prisoner. An interrogation can take minutes, hours, or even days. This is a model of interrogation based on a 5th-level templar. You can use this as a base for interrogations, if you adjust the DCs accordingly to the prisoner in question.
+The PCs want to extract information from a prisoner. An interrogation can take minutes, hours, or even days. This is a model of interrogation based on a 5th-level templar. You can use this as a base for interrogations, if you adjust the DCs according to the prisoner in question.
 
 \textbf{Objective:} Convince an NPC to give you the information.
 
@@ -160,3 +160,29 @@ The PCs want to extract information from a prisoner. An interrogation can take m
 \textbf{Success:} The PCs learn the desired information, and the NPC might agree to spy for them or otherwise give more information in the future.
 
 \textbf{Failure:} The NPC refuses to give any useful information, or gives incorrect or dangerously inaccurate information. The PCs might walk into an ambush, or give the wrong code phrase, or otherwise run into trouble due to the false information they received.
+
+
+\subsubsection{Research Secret Lore}
+The PCs try to learn more about a clue they discovered during their adventures. It involves attempts to gather information from sages and other knowledgeable people. This is a model of research based on \skill{Knowledge} (arcana) DC 25, and 14th-level NPCs used as sages. You can use this as a base for researches, if you adjust the \skill{Knowledge} specialization and the DCs according to the lore in question.
+
+\textbf{Objective:} Find the information needed.
+
+\textbf{Challenge Rating:} 8.
+
+\textbf{Complexity:} Requires 8 successes before 4 failures.
+
+\textbf{Primary Skills:} \skill{Diplomacy}, \skill{Gather Information}, \skill{Knowledge} (arcana), \skill{Intimidate}, \skill{Sense Motive}.
+
+\textit{Diplomacy (DC 30):} The character visits a sage in hopes to learn a useful bit of information. This approach requires a character to spend ceramic pieces equal to the \skill{Knowledge} DC $\times$ 10. They pay the cost, whether the check results in a success or failure. A success provides advantage in the next \skill{Knowledge} check, as well as counting as a success for completing the challenge. A failure likewise provides disadvantage, as well as counting toward the completion of the challenge. This is available only if the PCs already have a skill contact for the \skill{Knowledge} skill in question, or after one character has gained a success using \skill{Gather Information}. The characters can't use the same sage multiple times.
+
+\textit{Gather Information (DC 25):} The character asks around the city about a sage who knows about the topic in question.
+
+\textit{Knowledge (arcana) (DC 25):} The character remembers a useful clue. Success brings the research one step closer to fruition. Failure indicates that this particular line of research ran into a dead end.
+
+\textit{Intimidate (DC 25):} The character intimidates the sage into answering the PCs questions. A success provides advantage in the next \skill{Knowledge} check, but it counts as a failure. The sage will help but will alert the guards.
+
+\textit{Sense Motive (DC 20):} The character empathizes with the sage. First success with this skill reveals that any use of \skill{Intimidate} earns a failure.
+
+\textbf{Success:} The PCs learn the desired information, and the sage agrees to be a skill contact for the characters (if no \skill{Intimidate} check was used).
+
+\textbf{Failure:} The PCs uncover flawed or incomplete information. As they proceed forward, they operate at a disadvantage. Perhaps they find the wrong answer to the riddle, causing a trap to detonate or cutting off the aid they could have gotten from a magic item or ritual. Or they might translate the lore incorrectly, leading to all kinds of mistakes and misadventures as they otherwise work to complete their quest.

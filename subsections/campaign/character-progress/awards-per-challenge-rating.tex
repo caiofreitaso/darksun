@@ -1,0 +1,72 @@
+\subsection{Awards per Challenge Rating}
+When the players defeat the enemy in battle or succeed on a skill challenge, they earn experience points. Here challenges are any difficulty that has an inherent Challenge Rating associated with it: creatures, skill challenges, traps, and hazards.
+
+\Table{Experience Point Awards}{L *5C}{
+  \multirow[l]{2}{1cm}{\tableheader Challenge Rating}
+& \multicolumn{5}{c}{\tableheader Experience Points Award}\\
+
+\cmidrule[0.5pt]{2-6}
+
+& \tableheader Rushed
+& \tableheader Fast
+& \tableheader Normal
+& \tableheader Slow
+& \tableheader Dragged \\
+
+ECL $-6$ &   120 &    60 &    50 &   40 &   30 \\%    50 XP &   5 XP \\
+ECL $-5$ &   240 &   120 &   100 &   80 &   60 \\%   100 XP &  10 XP \\
+ECL $-4$ &   360 &   180 &   150 &  120 &   90 \\%   150 XP &  15 XP \\
+ECL $-3$ &   480 &   240 &   200 &  160 &  120 \\%   200 XP &  20 XP \\
+ECL $-2$ &   600 &   300 &   250 &  200 &  150 \\%   250 XP &  25 XP \\
+ECL $-1$ &   720 &   360 &   300 &  240 &  180 \\%   300 XP &  30 XP \\
+ECL      &   960 &   480 &   400 &  320 &  240 \\%   400 XP &  40 XP \\
+ECL  +1  & 1,440 &   720 &   600 &  480 &  360 \\%   600 XP &  60 XP \\
+ECL  +2  & 1,920 &   960 &   800 &  640 &  480 \\%   800 XP &  80 XP \\
+ECL  +3  & 2,400 & 1,200 & 1,000 &  800 &  600 \\% 1,200 XP & 120 XP \\
+}
+
+Use \tabref{Experience Point Awards} to cross-reference the campaign's pace with the defeated challenge's CR. The table does not have reference for individual challenges with CR lower than the character's ECL$-6$, since this difference in level brings no challenge for the character. At the same time, challenges with CR greater than ECL+3 represent a danger so great for the character that special awards should be given if they successfully defeat it.
+
+\subsubsection{Skill Checks}
+Skill checks represent minor nonviolent challenges in the game. To determine the XP award for a successful skill check, follow these steps:
+
+\begin{enumerate*}
+	\item Calculate the adjusted Difficulty Class (DC) of the check. It is equal to the skill check's DC minus any racial bonus the character has in that check.
+	\item Use \tabref{Challenge Rating for Skill Checks} to check the Challenge Rating for the adjusted DC.
+	\item Use \tabref{Experience Point Awards} to cross-reference the campaign's pace with the Challenge Rating and give 10\% of the XP award.
+\end{enumerate*}
+
+Only successful checks award XP. Checks with adjusted DC lower than 10 do not give XP. The award is not based on the check's result.
+
+Opposed checks do not have Difficulty Class. For the purposes of experience awards, they are considered to have a DC equal to a roll of 12. For example, a barbarian with a \skill{Hide} bonus of +4 would be awarded for a CR 1 if they pass a \skill{Hide} check DC 16---regardless of the result of the barbarian's \skill{Hide} check or any opposed \skill{Spot} check.
+
+
+\Table{Challenge Rating for Skill Checks}{CC}{
+  \tableheader Adjusted DC
+& \tableheader Challenge Rating \\
+
+10--11 & \onethird \\
+12--14 & \onehalf \\
+15--19 &  1 \\
+20--24 &  3 \\
+25--29 &  5 \\
+30--39 & 10 \\
+40--49 & 15 \\
+50+    & 20 \\
+}
+
+\Figure{b}{images/combat-1.png}
+\subsubsection{Encounters}
+Only characters who take part in the encounter should gain experience point awards. Characters who died before the combat, or did not participate for any other reason, should not be awarded.
+
+To determine the XP award for an encounter, follow these steps.
+\begin{enumerate*}
+	\item Determine each character's effective character level (ECL).
+	\item For each challenge defeated, determine its Challenge Rating (CR).
+	\item Use \tabref{Experience Point Awards} to cross-reference the campaign's pace with the CR of each challenge to find the base XP award.
+	\item Divide the base XP award by the number of characters in the party.
+	\item Add up all the XP awards for all the challenges the character helped defeat.
+	\item Repeat the process for each character.
+\end{enumerate*}
+
+Creatures summoned or that otherwise are related to an enemy's ability (such as animal companion) do not award XP. These abilities are already taken into account in the enemy's CR.
