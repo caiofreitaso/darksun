@@ -517,35 +517,62 @@
 }
 \newcommand{\WarriorTable}[3][ll *{3}{Z{14mm}} L]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
+		  \tableheader Level
+		& \tableheader Base Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Special\\
 		#3
 	}
 }
 
 \newcommand{\PrestigeSpellTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Spellcasting\\
+		  \tableheader Level
+		& \tableheader Base \hskip3em Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Special
+		& \tableheader Spellcasting\\
 		#3
 	}
 }
 
 \newcommand{\PrestigeOnlySpellTable}[3][l b{16mm} *{3}{Z{5mm}} X]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Spellcasting\\
+		  \tableheader Level
+		& \tableheader Base \hskip3em Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Spellcasting\\
 		#3
 	}
 }
 
 \newcommand{\PrestigePowerTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Manifesting\\
+		  \tableheader Level
+		& \tableheader Base \hskip3em Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Special
+		& \tableheader Manifesting\\
 		#3
 	}
 }
 
 \newcommand{\MiniWarriorTable}[3][l l *{3}{Z{5mm}} L]{
 	\Table{#2}{#1}{
-		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special\\
+		  \tableheader Level
+		& \tableheader Base Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Special\\
 		#3
 	}
 }

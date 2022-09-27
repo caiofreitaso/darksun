@@ -61,49 +61,7 @@ Because the \chapref{Character Classes} contains information on advancement only
 \input{subsections/epic-levels/epic-class-progressions/epic-bard.tex}
 \input{subsections/epic-levels/epic-class-progressions/epic-cleric.tex}
 \input{subsections/epic-levels/epic-class-progressions/epic-druid.tex}
-
-
-\subsectionA{Epic Fighter}
-The epic fighter is a master of combat maneuvers and a natural leader, his martial reach a lethality that inspire his allies.
-
-\Table{The Epic Fighter}{ll*3{Z{4mm}}L}{
-  \tableheader Level
-& \tableheader Base Attack Bonus
-& \tableheader Fort Save
-& \tableheader Ref Save
-& \tableheader Will Save
-& \tableheader Special\\
-21 & +21/+16/+11/+6/+1   & +12 & +7  & +7  & Martial prowess \\
-22 & +22/+17/+12/+7/+2   & +13 & +7  & +7  & Bonus feat      \\
-23 & +23/+18/+13/+8/+3   & +13 & +7  & +7  & Martial prowess \\
-24 & +24/+19/+14/+9/+4   & +14 & +8  & +8  & Bonus feat      \\
-25 & +25/+20/+15/+10/+5  & +14 & +8  & +8  & Martial prowess \\
-26 & +26/+21/+16/+11/+6  & +15 & +8  & +8  & Bonus feat      \\
-27 & +27/+22/+17/+12/+7  & +15 & +9  & +9  & Martial prowess \\
-28 & +28/+23/+18/+13/+8  & +16 & +9  & +9  & Bonus feat      \\
-29 & +29/+24/+19/+14/+9  & +16 & +9  & +9  & Martial prowess \\
-30 & +30/+25/+20/+15/+10 & +17 & +10 & +10 & Bonus feat      \\
-}
-
-
-\textbf{Hit Die:} d10.
-
-\textbf{Skill Points per Level:} 4 + Int modifier.
-
-\textbf{Martial Prowess:} At 21st level and every two epic fighter levels thereafter (23th, 25th, 27th, and 29th level), an epic fighter learns a new technique. This technique can be chosen from the normal fighter list or the following list:
-
-\textit{Aura of Courage (Su):} An epic fighter is immune to fear (magical or otherwise). Each ally within 3 meters of him gains a +4 morale bonus on saving throws against fear effects. This ability functions while the epic fighter is conscious, but not if he is unconscious or dead.
-
-\textit{Devastating Blow (Ex):} As a standard action, an epic fighter may make a single melee attack with a two-handed weapon at a $-5$ penalty. If the attack hits, it is treated as a critical threat.
-
-\textit{Epic Leadership:} An epic fighter may gain \feat{Epic Leadership} as a bonus feat.
-
-\textit{Indomitable Charge (Ex):} An epic fighter with 24 or more ranks in \skill{Knowledge} (warcraft) can lead his allies into an epic charge. As he charges an opponent, all allies within 9 meters at the beginning of his turn can also charge at this target as an immediate action. The epic fighter and his allies do not block each other when determining if they can charge. The epic fighter's charge deals an extra damage equal to 3 $\times$ his fighter levels, and his allies' charges deal an extra damage equal to 1\onehalf $\times$ his fighter levels. The epic fighter and his allies do not provoke attacks of opportunity for moving as part of this charge.
-
-\textbf{Bonus Feat:} At 22nd and every even-numbered level thereafter, an epic fighter gains a bonus feat. These bonus feat must be selected from the normal fighter bonus feat list or epic fighter feats.
-
-
-
+\input{subsections/epic-levels/epic-class-progressions/epic-fighter.tex}
 \input{subsections/epic-levels/epic-class-progressions/epic-gladiator.tex}
 
 
@@ -111,18 +69,17 @@ The epic fighter is a master of combat maneuvers and a natural leader, his marti
 
 \subsectionA{Epic Psion}
 
-\PsychicTable{The Epic Psion}{
-21 & +15/+10/+5        & +7  & +7  & +12 &            &  84 & 26 & 6 \\
-22 & +16/+11/+6/+1     & +7  & +7  & +13 &            &  86 & 27 & 6 \\
-23 & +17/+12/+7/+2     & +7  & +7  & +13 &            &  88 & 28 & 6 \\
-24 & +18/+13/+8/+3     & +8  & +8  & +14 &            &  90 & 29 & 6 \\
-25 & +18/+13/+8/+3     & +8  & +8  & +14 & Bonus feat &  92 & 30 & 6 \\
-26 & +19/+14/+9/+4     & +8  & +8  & +15 &            &  94 & 31 & 6 \\
-27 & +20/+15/+10/+5    & +9  & +9  & +15 &            &  96 & 32 & 6 \\
-28 & +21/+16/+11/+6/+1 & +9  & +9  & +16 &            &  98 & 33 & 6 \\
-29 & +21/+16/+11/+6/+1 & +9  & +9  & +16 &            & 100 & 34 & 6 \\
-30 & +22/+17/+12/+7/+2 & +10 & +10 & +17 & Bonus feat & 102 & 35 & 6 \\
-}
+\textbf{Hit Die:} d6.
+
+\textbf{Skill Points per Level:} 2 + Int modifier.
+
+\textbf{Power Points per Day:} An epic psion's base daily allotment of power points continues to increase as given on \tabref{The Epic Psion}.
+
+\textbf{Powers Known:} An epic psion continues to unlock the knowledge of a new power every level.
+
+\textbf{Bonus Feat:} At 25th and 30th level, an epic psion gains a bonus feat. This feat must be a psionic feat, a metapsionic feat, a psionic item creation feat, an epic psionic feat, or an epic metapsionic feat.
+
+
 
 % \subsectionA{Epic Psychic Warrior}
 
@@ -703,6 +660,9 @@ Since these attacks are made as part of a standard action, you can't make a 1.5-
 \FeatTable[p{35mm}]{Metamagic}{
 \feat{Intensify Spell} & \feat{Empower Spell}, \feat{Maximize Spell}, \skill{Spellcraft} 30 ranks, ability to cast 9th-level arcane or divine spells & Maximize and double all variables of a spell\\
 }
+\FeatTable[p{35mm}]{Metapsionic}{
+\feat{Intensify Power} & \feat{Empower Power}, \feat{Maximize Power}, \skill{Psicraft} 30 ranks, access to six disciplines & Maximize and double all variables of a power\\
+}
 
 
 \subsection{Psionic Feats}
@@ -749,6 +709,17 @@ This feat has no effect on metapsionic powers that inflate the cost by only 10 p
 \GFeat[Epic, Metamagic]{Intensify Spell}
 {\feat{Empower Spell}, \feat{Maximize Spell}, \skill{Spellcraft} 30 ranks, ability to cast 9th-level arcane or divine spells.}
 {All variable, numeric effects of an intensified spell are maximized, then doubled. An intensified spell deals twice maximum damage, cures twice the maximum number of hit points, affects twice the maximum number of targets, and so forth, as appropriate. Saving throws and opposed rolls are not affected. An intensified spell uses up a spell slot seven levels higher than the spell's actual level. You can't combine the effects of this feat with any other feat that affects the variable, numeric effects of a spell.}
+
+
+
+\subsection{Metapsionic Feats}
+\GFeat[Epic, Metapsionic]{Intensify Power}
+{\feat{Empower Power}, \feat{Maximize Power}, \skill{Psicraft} 30 ranks, access to six disciplines.}
+{To use this feat, you must expend your psionic focus.
+
+All variable, numeric effects of an intensified spell are maximized, then doubled. An intensified spell deals twice maximum damage, cures twice the maximum number of hit points, affects twice the maximum number of targets, and so forth, as appropriate. Saving throws and opposed rolls are not affected. You can't combine the effects of this feat with any other feat that affects the variable, numeric effects of a spell.
+
+Using this feat increases the power point cost of the power by 35.}
 
 
 \clearpage
