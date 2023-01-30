@@ -55,13 +55,15 @@ PC  |  -2  |  -2  |  +0  |  -2  |  -3  |
 Clairsentience + Telepathy
 	OK= Detect Psionics
 		> WATCHER'S WARD + MINDLINK
+	= Feat Leach
+		> SYNESTHETE + MINDLINK
 Clairsentience + Psychokinesis
 	OK= Antimagic Field, Psionic
 		> LEVEL 11 + DETECT MAGIC + MOLECULAR AGITATION
 	OK= Reddopsi
 		> DANGER SENSE + KINETIC CONTROL
 Clairsentience + Psychometabolism
-	= Cannibalize
+	OK= Cannibalize
 		> COMBAT MIND + CELL ADJUSTMENT
 	= Heightened Senses
 		> SYNESTHETE + ANIMAL AFFINITY
@@ -72,13 +74,13 @@ Clairsentience + Psychoportation
 		> PRECOGNITION + TELEPORT
 
 Psychokinesis + Telepathy
-	= Psychic Noise
+	OK= Psychic Noise
 		> MOLECULAR AGITATION + MIND THRUST
 Psychokinesis + Psychometabolism
 	OK= Freedom of Movement, Psionic
 		> BODY EQUILIBRIUM + INERTIAL BARRIER
 Psychokinesis + Psychoportation
-	= Astral Construct
+	OK= Astral Construct
 		> ANIMATE OBJECT + SUMMON PLANAR CREATURE
 	OK= Dimensional Screen
 		> DIMENSION DOOR + INERTIAL BARRIER
@@ -88,7 +90,7 @@ Psychokinesis + Psychoportation
 Psychometabolism + Telepathy
 	= Mindlink, Thieving
 		> LIFE-DRAINING + MINDLINK
-	= Metaconcert
+	OK= Metaconcert
 		> LEVEL 9 + ADRENALIN CONTROL + MINDLINK
 Psychometabolism + Psychoportation 
 	OK= Revivify
@@ -99,10 +101,14 @@ Psychoportation + Telepathy
 
 
 None:
-Null Psionics Field
+OK Bestow Power
+	> LEVEL 4
+Dispel Psionics
+	> LEVEL 6
+OK Null Psionics Field
 	> LEVEL 11 + PSYCHIC NOISE
 Power Leech
-	> LEVEL 11 + THIEVING MINDLINK
+	> LEVEL 9 + THIEVING MINDLINK
 OK Psychic Surgery
 	> LEVEL 13
 OK Schism

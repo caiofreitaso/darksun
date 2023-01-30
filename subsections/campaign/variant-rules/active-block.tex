@@ -1,0 +1,28 @@
+\subsection{Active Block}
+Whenever you would be hit by an attack, you can attempt an active block to prevent the hit. Blocking uses an attack of opportunity to deflect incoming attack with a shield or buckler. You can't block without a shield or buckler.
+
+The active block maneuver is available only when fighting defensively, using the \feat{Combat Expertise} feat, or using total defense (this is a special case for attacks of opportunities).
+
+New feats are also needed for this new maneuver.
+
+\subsubsection{Block Checks}
+An active block replaces your AC with the result of a special attack roll:
+
+\begin{Formula*}{1d20 + \textit{attack bonus} + \textit{defense bonus}}
+  \item \textit{Attack bonus} = base attack bonus + Str. modifier + size modifier.
+  \item \textit{Defense bonus} = shield bonus + dodge bonus.
+\end{Formula*}
+
+Any penalties on attack rolls apply to this special attack roll.
+
+\textbf{Automatic Hits:} A natural 20 is always a successful block.
+
+\textbf{Weapon Finesse:} You may use your Dexterity modifier on block rolls, if you carry a buckler.
+
+\GFeat[Fighter]{Improved Block}
+{Int 13, \feat{Combat Expertise}.}
+{You gain +4 bonus on all block checks.}
+
+\GFeat[Fighter]{Intensify Blocking}
+{Int 13, \feat{Combat Expertise}, \feat{Improved Block}.}
+{You may forfit the attack with smallest bonus from your full attack, and gain one additional block attempt until the start of your next turn.}

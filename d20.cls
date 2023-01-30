@@ -396,7 +396,7 @@
 
 	\MonsterStatsB
 }
-\newcommand{\MonsterStatsB}[7]{
+\newcommand{\MonsterStatsB}[5]{
 	\textbf{Space/Reach:} #1
 
 	\textbf{Special Attacks:} #2
@@ -407,28 +407,26 @@
 
 	\textbf{Abilities:} #5
 
-	\textbf{Skills:} #6
-
-	\textbf{Feats:} #7
-
 	\MonsterStatsC
 }
-\newcommand{\MonsterStatsC}[7]{
-	\textbf{Environment:} #1
+\newcommand{\MonsterStatsC}[9]{
+	\textbf{Skills:} #1
 
-	\textbf{Organization:} #2
+	\textbf{Feats:} #2
 
-	\textbf{Challenge Rating:} #3
+	\textbf{Environment:} #3
 
-	\textbf{Treasure:} #4
+	\textbf{Organization:} #4
 
-	\textbf{Alignment:} #5
+	\textbf{Challenge Rating:} #5
 
-	\textbf{Advancement:} #6
+	\textbf{Treasure:} #6
 
-	\textbf{Level Adjustment:} #7
+	\textbf{Alignment:} #7
 
-	\vskip.3em
+	\textbf{Advancement:} #8
+
+	\textbf{Level Adjustment:} #9
 }
 \newenvironment{MonsterStats}
 {
@@ -440,6 +438,21 @@
 	\MonsterStatsA
 }
 {
+
+	\vskip.3em
+}
+
+\newenvironment{MonsterMiniStats}
+{
+	\parskip.2mm
+	\leftskip2.5mm
+	\parindent-2.5mm
+	\setstretch{1}
+	% \small
+}
+{
+
+	\vskip.3em
 }
 
 % NPC functions
