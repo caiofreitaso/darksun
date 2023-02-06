@@ -193,11 +193,15 @@
 % Items
 \newenvironment{itemize*}%
   {\begin{itemize}%
+    \setlength{\topsep}{-.2em}%
+    \setlength{\partopsep}{0em}%
     \setlength{\itemsep}{0.15em}%
     \setlength{\parskip}{0em}}%
   {\end{itemize}}
 \newenvironment{enumerate*}%
   {\begin{enumerate}%
+    \setlength{\topsep}{-.2em}%
+    \setlength{\partopsep}{0em}%
     \setlength{\itemsep}{0.15em}%
     \setlength{\parskip}{0em}}%
   {\end{enumerate}}
