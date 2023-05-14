@@ -18,8 +18,7 @@
   pdfstartview=FitBH,
   pdfpagemode=UseOutlines,
   pdfpagelayout=TwoPageRight,
-  pdftitle={Dark Sun d20 (Active Block Maneuver)},
-  % pdftitle={Dark Sun d20 (Old Psionism)},
+  pdftitle={Dark Sun d20 (Old Psionism)},
   pdfauthor={Caio Freitas de Oliveira},
   pdfkeywords={d20 System}
 }
@@ -102,36 +101,20 @@
 
 \makeatother
 \begin{document}
-\subsection{Active Block}
-Whenever you would be hit by an attack, you can attempt an active block to prevent the hit. Blocking uses an attack of opportunity to deflect incoming attack with a shield or buckler. You can't block without a shield or buckler.
 
-The active block maneuver is available only when fighting defensively, using the \feat{Combat Expertise} feat, or using total defense (this is a special case for attacks of opportunities).
+\Chapter{Character Classes}
+{From the lowliest slave to the highest templar, our fates are decided for us. The slave at the hands of the master, and the templar at the will of the king. Pray to Ral and Guthay that your children are born when the stars align to favor them. Few are those privileged to choose their own path of life, and cursed are those for they are bound by choice and have but themselves to blame for their misfortune. The bard addicted to his alchemical mixtures, the templar imprisoned for his crimes, and the gladiator sacrificed for the thrill of the fight. It is the choices that define who you are and how you die, regardless of who makes them.}{The Oracle, Blue Shrine Scrolls}
 
-\subsubsection{Block Checks}
-An active block replaces your AC with the result of a special attack roll:
+\input{sections/classes/new-psion.tex}
+\input{chapters/13-psionics.tex}
+\input{chapters/14-powers.tex}
 
-\begin{Formula*}{1d20 + \textit{attack bonus} + \textit{defense bonus}}
-  \item \textit{Attack bonus} = base attack bonus + Str. modifier + size modifier.
-  \item \textit{Defense bonus} = shield bonus + dodge bonus.
-\end{Formula*}
+\Chapter{Items of Power}
+{A village can prosper or die with the utterance of a single syllable. Toxic water can be purified or deadly plague can be unleashed by the power of nature contained in a clay tablet or bone fetish. A ring could save a dying man or protect the land from being reduced to ash by defilers, or help destroy them both. A crystal could dominate the will of its possessor, or serve as a storage of psychic energy. Even mundane looking objects can contain highly sought after power, which makes every item a potential treasure or curse.}{The Oracle, Blue Shrine Scrolls}
+\input{sections/magic-items/psionic-item-descriptions.tex}
+\input{subsections/magic-items/intelligent-items/intelligent-item-table.tex}
+\input{sections/magic-items/cognizance-crystals.tex}
+\input{sections/magic-items/intelligent-items.tex}
+\input{sections/magic-items/psionic-tattoos.tex}
 
-Any penalties on attack rolls apply to this special attack roll.
-
-\textbf{Automatic Hits:} A natural 20 is always a successful block.
-
-\textbf{Weapon Finesse:} You may use your Dexterity modifier on block rolls, if you carry a buckler.
-
-
-\subsection{New Feats}
-
-\GFeat[Fighter]{Improved Block}
-{Int 13, \feat{Combat Expertise}.}
-{You gain +4 bonus on all block checks.}
-
-\GFeat[Fighter]{Intensify Blocking}
-{Int 13, \feat{Combat Expertise}, \feat{Improved Block}.}
-{You may forfit the attack with smallest bonus from your full attack, and gain one additional block attempt until the start of your next turn.}
-% \input{sections/classes/new-psion.tex}
-% \input{chapters/13-psionics.tex}
-% \input{chapters/14-powers.tex}
 \end{document}

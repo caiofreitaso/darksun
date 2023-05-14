@@ -630,14 +630,30 @@
 % }
 \newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader Special & \tableheader Power Points per Day &  \tableheader Powers Known &  \tableheader Disciplines \\
+		\tableheader Level
+		& \tableheader Base Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader Special
+		& \tableheader Power Points per Day
+		& \tableheader Powers Known
+		& \tableheader Disciplines \\
 		#3
 	}
 }
 
 \newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{5mm}} Z{9mm} L l]{
 	\BigTablePair{#2}{#1}{
-		\tableheader Level & \tableheader Base \hskip3em Attack Bonus & \tableheader Fort Save & \tableheader Ref Save & \tableheader Will Save & \tableheader AC Bonus & \tableheader Unarmed Damage & \tableheader Special & \tableheader Manifesting\\
+		\tableheader Level
+		& \tableheader Base \hskip3em Attack Bonus
+		& \tableheader Fort Save
+		& \tableheader Ref Save
+		& \tableheader Will Save
+		& \tableheader AC Bonus
+		& \tableheader Unarmed Damage
+		& \tableheader Special
+		& \tableheader Manifesting\\
 		#3
 	}
 }
