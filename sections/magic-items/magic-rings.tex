@@ -10,6 +10,8 @@ A character can only effectively wear two magic rings. A third magic ring doesn'
 \Table{Rings}{Xr{15mm}}{
 \tableheader Ring & \tableheader Market Price \\
 Protection +1              & 2,000 cp \\
+Telepathic attack +1       & 2,000 cp \\
+Telepathic defense +1      & 2,000 cp \\
 Feather falling            & 2,200 cp \\
 Sustenance                 & 2,500 cp \\
 Climbing                   & 2,500 cp \\
@@ -18,6 +20,8 @@ Swimming                   & 2,500 cp \\
 Counterspells              & 4,000 cp \\
 Mind shielding             & 8,000 cp \\
 Protection +2              & 8,000 cp \\
+Telepathic attack +2       & 8,000 cp \\
+Telepathic defense +2      & 8,000 cp \\
 Force shield               & 8,500 cp \\
 Ram                        & 8,600 cp \\
 Climbing, improved         & 10,000 cp \\
@@ -29,6 +33,8 @@ Chameleon power            & 12,700 cp \\
 Silt walking               & 15,000 cp \\
 % Water walking              & 15,000 cp \\
 Protection +3              & 18,000 cp \\
+Telepathic attack +3       & 18,000 cp \\
+Telepathic defense +3      & 18,000 cp \\
 Spell storing, minor       & 18,000 cp \\
 Invisibility               & 20,000 cp \\
 Wizardry (I)               & 20,000 cp \\
@@ -38,6 +44,8 @@ Blinking                   & 27,000 cp \\
 Meld into Stone            & 27,000 cp \\
 Energy resistance, major   & 28,000 cp \\
 Protection +4              & 32,000 cp \\
+Telepathic attack +4       & 32,000 cp \\
+Telepathic defense +4      & 32,000 cp \\
 Inanimate friend           & 36,400 cp \\
 Wizardry (II)              & 40,000 cp \\
 Freedom of movement        & 40,000 cp \\
@@ -46,6 +54,8 @@ Friend shield (pair)       & 50,000 cp \\
 Protection +5              & 50,000 cp \\
 Shooting stars             & 50,000 cp \\
 Spell storing              & 50,000 cp \\
+Telepathic attack +5       & 50,000 cp \\
+Telepathic defense +5      & 50,000 cp \\
 Wizardry (III)             & 70,000 cp \\
 Telekinesis                & 75,000 cp \\
 Regeneration               & 90,000 cp \\
@@ -64,33 +74,41 @@ Spell storing, major       & 200,000 cp \\
 \subsubsection{Ring Descriptions}
 Standard rings are described below.
 
+
 \textbf{Animal Friendship:} On command, this ring affects an animal as if the wearer had cast \spell{charm animal}.
 
 Faint enchantment; CL 3rd; \feat{Forge Ring}, \spell{charm animal}; Price 10,800 cp.
+
 
 \textbf{Blinking:} On command, this ring makes the wearer blink, as with the \spell{blink} spell.
 
 Moderate transmutation; CL 7th; \feat{Forge Ring}, \spell{blink}; Price 27,000 cp.
 
+
 \textbf{Chameleon Power:} As a free action, the wearer of this ring can gain the ability to magically blend in with the surroundings. This provides a +10 competence bonus on her \skill{Hide} checks. As a standard action, she can also command the ring to utilize the spell \spell{disguise self} as often as she wants.
 
 Faint illusion; CL 3rd; \feat{Forge Ring}, \spell{disguise self}, \spell{invisibility}; Price 12,700 cp.
+
 
 \textbf{Climbing:} This ring is actually a magic leather cord that ties around a finger. It continually grants the wearer a +5 competence bonus on \skill{Climb} checks.
 
 Faint transmutatation; CL 5th; \feat{Forge Ring}, creator must have 5 ranks in the \skill{Climb} skill; Price 2,500 cp.
 
+
 \textbf{Climbing, Improved:} As \emph{climbing}, except it grants a +10 competence bonus on its wearer's \skill{Climb} checks.
 
 Faint transmutation; CL 5th; \feat{Forge Ring}, creator must have 10 ranks in the \skill{Climb} skill; Price 10,000 cp.
+
 
 \textbf{Counterspells:} This ring might seem to be a \emph{ring of spell storing} upon first examination. However, while it allows a single spell of 1st through 6th level to be cast into it, that spell cannot be cast out of the ring again. Instead, should that spell ever be cast upon the wearer, the spell is immediately countered, as a counterspell action, requiring no action (or even knowledge) on the wearer's part. Once so used, the spell cast within the ring is gone. A new spell (or the same one as before) may be placed in it again.
 
 Moderate evocation; CL 11th; \feat{Forge Ring}, \spell{imbue with spell ability}; Price 4,000 cp.
 
+
 \textbf{Djinni Calling:} One of the many rings of fable, this ``genie'' ring is most useful indeed. It serves as a special \spell{gate} by means of which a specific djinni can be called from the Elemental Plane of Air. When the ring is rubbed (a standard action), the call goes out, and the djinni appears on the next round. The djinni faithfully obeys and serves the wearer of the ring, but never for more than 1 hour per day. If the djinni of the ring is ever killed, the ring becomes nonmagical and worthless.
 
 Strong conjuration; CL 17th; \feat{Forge Ring}, \spell{gate}; Price 125,000 cp.
+
 
 % \textbf{Elemental Command:} All four kinds of elemental command rings are very powerful. Each appears to be nothing more than a lesser magic ring until fully activated (by meeting a special condition, such as single-handedly slaying an elemental of the appropriate type or exposure to a sacred material of the appropriate element), but each has certain other powers as well as the following common properties.
 
@@ -162,47 +180,58 @@ Strong conjuration; CL 17th; \feat{Forge Ring}, \spell{gate}; Price 125,000 cp.
 
 % Strong conjuration; CL 15th; \feat{Forge Ring}, \spell{summon monster VI}, all appropriate spells; Price 200,000 cp.
 
+
 \textbf{Energy Resistance:} This reddish iron ring continually protects the wearer from damage from one type of energy---acid, cold, electricity, fire, or sonic (chosen by the creator of the item; determine randomly if found as part of a treasure hoard). Each time the wearer would normally take such damage, subtract the ring's resistance value from the damage dealt.
 
 A \emph{minor ring of energy resistance} grants 10 points of resistance. A \emph{major ring of energy resistance} grants 20 points of resistance. A \emph{greater ring of energy resistance} grants 30 points of resistance.
 
 Faint (minor or major) or moderate (greater) abjuration; CL 3rd (minor), 7th (major), or 11th (greater); \feat{Forge Ring}, \spell{resist energy}; Price 12,000 cp (minor), 28,000 cp (major), 44,000 cp (greater).
 
+
 \textbf{Evasion:} This ring continually grants the wearer the ability to avoid damage as if she had evasion. Whenever she makes a Reflex saving throw to determine whether she takes half damage, a successful save results in no damage.
 
 Moderate transmutation; CL 7th; \feat{Forge Ring}, \spell{jump}; Price 25,000 cp.
+
 
 \textbf{Feather Falling:} This ring is crafted with a feather pattern all around its edge. It acts exactly like a \spell{feather fall} spell, activated immediately if the wearer falls more than 1.5 meter.
 
 Faint transmutation; CL 1st; \feat{Forge Ring}, \spell{feather fall}; Price 2,200 cp.
 
+
 \textbf{Force Shield:} An iron band, this simple ring generates a shield-sized (and shield-shaped) \spell{wall of force} that stays with the ring and can be wielded by the wearer as if it were a heavy shield (+2 AC). This special creation has no armor check penalty or arcane spell failure chance since it is weightless and encumbrance-free. It can be activated and deactivated at will as a free action.
 
 Moderate evocation; CL 9th; \feat{Forge Ring}, \spell{wall of force}; Price 8,500 cp.
+
 
 \textbf{Freedom of Movement:} This gold ring allows the wearer to act as if continually under the effect of a \spell{freedom of movement} spell.
 
 Moderate abjuration; CL 7th; \feat{Forge Ring}, \spell{freedom of movement}; Price 40,000 cp.
 
+
 \textbf{Friend Shield:} These curious rings always come in pairs. A \emph{friend shield ring} without its mate is useless. Either wearer of one of a pair of the rings can, at any time, command his or her ring to cast a \spell{shield other} spell with the wearer of the mated ring as the recipient. This effect has no range limitation.
 
 Moderate abjuration; CL 10th; \feat{Forge Ring}, \spell{shield other}; Price 50,000 cp (for a pair).
+
 
 \textbf{Inanimate Friend:} The wearer of this ring can instantaneously transform his familiar into a sandstone statuette by touching it and uttering a command word. The effect is similar to the \spell{statue} spell and can be used up to three times per day, lasting for 1 hour per use. The ring's effect can be dismissed before the duration expires by touching the statuette to the ring (a move-equivalent action). During the time spent as a \spell{statue} the familiar confers no benefits to its master and loses its familiar special abilities.
 
 Strong transmutation; CL 13th; \feat{Forge Ring}, \spell{statue}; Price 36,400 cp.
 
+
 \textbf{Invisibility:} By activating this simple silver ring, the wearer can benefit from \spell{invisibility}, as the spell.
 
 Faint illusion; CL 3rd; \feat{Forge Ring}, \spell{invisibility}; Price 20,000 cp.
+
 
 \textbf{Jumping:} This ring continually allows the wearer to leap about, providing a +5 competence bonus on all his \skill{Jump} checks.
 
 Faint transmutation; CL 2nd; \feat{Forge Ring}, creator must have 5 ranks in the \skill{Jump} skill; Price 2,500 cp.
 
+
 \textbf{Jumping, Improved:} As jumping, except it grants a +10 competence bonus on its wearer's \skill{Jump} check.
 
 Moderate transmutation; CL 7th; \feat{Forge Ring}, creator must have 10 ranks in the \skill{Jump} skill; Price 10,000 cp.
+
 
 \textbf{Life:} This ring, made of aviarag ivory, protects the wearer from the effects of being caught in the defiling radius of a spellcasting defiler. The wearer is immune to all penalties associated with the defiling radius, even when augmented with Raze feats, magical items, or class abilities. Each morning, regardless of the wearer's activities during the past 24 hours, he regains 1 hit point per Hit Die as if he had slept for a full 8 hours, up to his maximum normal hit point total.
 
@@ -210,17 +239,21 @@ This benefit of the ring does not negate any other penalties associated with the
 
 Moderate abjuration; CL 11th; \feat{Forge Ring}, \spell{allegiance of the land}; Price 132,000 cp.
 
+
 \textbf{Meld into Stone:} This ring allows the wearer to use the spell \spell{meld into stone} on command.
 
 Faint enchantment; CL 5th; \feat{Forge Ring}, \spell{meld into stone}; Price 27,000 cp.
+
 
 \textbf{Mind Shielding:} This ring is usually of fine workmanship and wrought from heavy gold. The wearer is continually immune to \spell{detect thoughts}, \spell{discern lies}, and any attempt to magically discern her alignment.
 
 Faint abjuration; CL 3rd; \feat{Forge Ring}, \spell{nondetection}; Price 8,000 cp.
 
+
 \textbf{Protection:} This ring offers continual magical protection in the form of a deflection bonus of +1 to +5 to AC.
 
-Faint abjuration; CL 5th; \feat{Forge Ring}, shield of faith, caster must be of a level at least three times greater than the bonus of the ring; Price 2,000 cp (ring +1); 8,000 cp (ring +2); 18,000 cp (ring +3); 32,000 cp (ring +4); 50,000 cp (ring +5).
+Faint abjuration; CL 5th; \feat{Forge Ring}, \spell{shield of faith}, caster must be of a level at least three times greater than the bonus of the ring; Price 2,000 cp (ring +1); 8,000 cp (ring +2); 18,000 cp (ring +3); 32,000 cp (ring +4); 50,000 cp (ring +5).
+
 
 \textbf{Ram:} The ring of the ram is an ornate ring forged of hard metal, usually iron or an iron alloy. It has the head of a ram as its device.
 
@@ -234,9 +267,11 @@ A newly created ring has 50 charges. When all the charges are expended, the ring
 
 Moderate transmutation; CL 9th; \feat{Forge Ring}, \spell{bull's strength}, \spell{telekinesis}; Price 8,600 cp.
 
+
 \textbf{Regeneration:} This white gold ring continually allows a living wearer to heal 1 point of damage per level every hour rather than every day. (This ability cannot be aided by the \skill{Heal} skill.) Nonlethal damage heals at a rate of 1 point of damage per level every 5 minutes. If the wearer loses a limb, an organ, or any other body part while wearing this ring, the ring \emph{regenerates} it as the spell. In either case, only damage taken while wearing the ring is regenerated.
 
 Strong conjuration; CL 15th; \feat{Forge Ring}, \spell{regenerate}; Price 90,000 cp.
+
 
 \textbf{Shooting Stars:} This ring has two modes of operation, one for being in shadowy darkness or outdoors at night and a second one when the wearer is underground or indoors at night.
 
@@ -276,9 +311,11 @@ The \emph{spark shower} is a flying cloud of sizzling purple sparks that fan out
 
 Strong evocation; CL 12th; \feat{Forge Ring}, \spell{light}, \spell{faerie fire}, \spell{fireball}, \spell{lightning bolt}; Price 50,000 cp.
 
+
 \textbf{Silt Walking:} This ring, carved from a silt drake tooth, allows the wearer to continually utilize the effects of the \spell{surface walk} spell.
 
 Moderate transmutation; CL 9th; \feat{Forge Ring}, \spell{surface walk}; Price 15,000 cp.
+
 
 \textbf{Spell Storing, Minor:} A minor ring of spell storing contains up to three levels of spells that the wearer can cast. Each spell has a caster level equal to the minimum level needed to cast that spell. The user need not provide any material components or focus, or pay an XP cost to cast the spell, and there is no arcane spell failure chance for wearing armor (because the ring wearer need not gesture). The activation time for the ring is same as the casting time for the relevant spell, with a minimum of 1 standard action.
 
@@ -290,49 +327,71 @@ The ring magically imparts to the wearer the names of all spells currently store
 
 Faint evocation; CL 5th; \feat{Forge Ring}, \spell{imbue with spell ability}; Price 18,000 cp.
 
+
 \textbf{Spell Storing:} As the minor ring of spell storing, except it holds up to five levels of spells.
 
 Moderate evocation; CL 9th; \feat{Forge Ring}, \spell{imbue with spell ability}; Price 50,000 cp.
+
 
 \textbf{Spell Storing, Major:} As the minor ring of spell storing, except it holds up to ten levels of spells.
 
 Strong evocation; CL 17th; \feat{Forge Ring}, \spell{imbue with spell ability}; Price 200,000 cp.
 
+
 \textbf{Spell Turning:} Up to three times per day on command, this simple platinum band automatically reflects the next nine levels of spells cast at the wearer, exactly as if spell turning had been cast upon the wearer.
 
 Strong abjuration; CL 13th; \feat{Forge Ring}, \spell{spell turning}; Price 98,280 cp.
+
 
 \textbf{Sustenance:} This ring provides its wearer with life-sustaining nourishment, so he needs only half of his daily needs of food and water. The ring also refreshes the body and mind, so that its wearer needs only sleep 2 hours per day to gain the benefit of 8 hours of sleep. The ring must be worn for a full week before it begins to work. If it is removed, the owner must wear it for another week to reattune it to himself.
 
 Faint conjuration; CL 5th; \feat{Forge Ring}, \spell{lesser restoration}; Price 2,500 cp.
 
+
 % \textbf{Sustenance:} This ring continually provides its wearer with life-sustaining nourishment. The ring also refreshes the body and mind, so that its wearer needs only sleep 2 hours per day to gain the benefit of 8 hours of sleep. The ring must be worn for a full week before it begins to work. If it is removed, the owner must wear it for another week to reattune it to himself.
 
 % Faint conjuration; CL 5th; \feat{Forge Ring}, \spell{create food and water}; Price 2,500 cp.
+
 
 \textbf{Swimming:} This silver ring has a wave pattern etched into the band. It continually grants the wearer a +5 competence bonus on \skill{Swim} checks.
 
 Faint transmutation; CL 2nd; \feat{Forge Ring}, creator must have 5 ranks in the \skill{Swim} skill; Price 2,500 cp.
 
+
 \textbf{Swimming, Improved:} As swimming, except it grants a +10 competence bonus on its wearer's \skill{Swim} checks.
 
 Moderate transmutation; CL 7th; \feat{Forge Ring}, creator must have 10 ranks in the \skill{Swim} skill; Price 10,000 cp.
+
 
 \textbf{Telekinesis:} This ring allows the wearer to use the spell \spell{telekinesis} on command.
 
 Moderate transmutation; CL 9th; \feat{Forge Ring}, \spell{telekinesis}; Price 75,000 cp.
 
+
+\textbf{Telepathic Attack:} This ring offers continual enhancement bonus of +1 to +5 to power checks made for any telepathic attack.
+
+Faint abjuration; CL 5th; \feat{Forge Ring}, \spell{dweomer of transference}, caster must be a manifester, caster must be of a level at least three times greater than the bonus of the ring; Price 2,000 cp (ring +1); 8,000 cp (ring +2); 18,000 cp (ring +3); 32,000 cp (ring +4); 50,000 cp (ring +5).
+
+
+\textbf{Telepathic Defense:} This ring offers continual resistance bonus of +1 to +5 to Will saves made against telepathic attacks.
+
+Faint abjuration; CL 5th; \feat{Forge Ring}, \spell{dweomer of transference}, caster must be a manifester, caster must be of a level at least three times greater than the bonus of the ring; Price 2,000 cp (ring +1); 8,000 cp (ring +2); 18,000 cp (ring +3); 32,000 cp (ring +4); 50,000 cp (ring +5).
+
+
 \textbf{Three Wishes:} This ring is set with three rubies. Each ruby stores a \spell{wish} spell, activated by the ring. When a \spell{wish} is used, that ruby disappears. For a randomly generated ring, roll 1d3 to determine the remaining number of rubies. When all the wishes are used, the ring becomes a nonmagical item.
 
 Strong evocation (if \spell{miracle} is used); CL 20th; \feat{Forge Ring}, \spell{wish} or \spell{miracle}; Price 97,950 cp; Cost 11,475 cp + 15,918 XP.
+
 
 % \textbf{Water Walking:} This ring, set with an opal, allows the wearer to continually utilize the effects of the spell \spell{water walk}.
 
 % Moderate transmutation; CL 9th; \feat{Forge Ring}, \spell{water walk}; Price 15,000 cp.
 
+
 \textbf{Wizardry:} This special ring comes in four kinds (ring of wizardry I, ring of wizardry II, ring of wizardry III, and ring of wizardry IV), all of them useful only to arcane spellcasters. The wearer's arcane spells per day are doubled for one specific spell level. A ring of wizardry I doubles 1st-level spells, a ring of wizardry II doubles 2nd-level spells, a ring of wizardry III doubles 3rd-level spells, and a ring of wizardry IV doubles 4th-level spells. Bonus spells from high ability scores or school specialization are not doubled.
 
 Moderate (wizardry I) or strong (wizardry II-IV) (no school); CL 11th (I), 14th (II), 17th (III), 20th (IV); \feat{Forge Ring}, limited wish; Price 20,000 cp (I), 40,000 cp (II), 70,000 cp (III), 100,000 cp (IV).
+
 
 \textbf{X-Ray Vision:} On command, this ring gives its possessor the ability to see into and through solid matter. Vision range is 6 meters, with the viewer seeing as if he were looking at something in normal light even if there is no illumination. X-ray vision can penetrate 30 centimeters of stone, 2.5 centimeters of common metal, or up to 1 meter of wood or dirt. Thicker substances or a thin sheet of lead blocks the vision.
 

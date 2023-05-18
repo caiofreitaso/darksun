@@ -8,17 +8,17 @@ OK	- Dragon
 
 Magic Items
 OK	- No bonus for Saving Throws
-	- No bonus to ability scores
-	- Ability scores into fixed value: 19
-		- Strength: 19, 21, 23, or 25
+OK	- No bonus to ability scores
+OK	- Ability scores into fixed value: 19
+OK		- Strength: 19, 21, 23, or 25
 
 OK Saving Throws
 OK	- 3/4 good save
 OK	- 1/2 bad save
 
 Bonus Attack Bonus
-	- Extra attack for each 10 points
-	- Extra attacks without penalties
+OK	- Extra attack for each 10 points
+OK	- Extra attacks without penalties
 
 Fatigue
 	- Can withstand fatigue points equal to Constitution score
@@ -31,30 +31,91 @@ Fatigue
 		- Constitution score = exausted
 
 
-Variant: No Shapechanging
+OK Variant: No Shapechanging
 
 # Removed
 #########
 
-	1. Wild shape
+OK	1. Wild shape
 
-	2. Alter self
-	3. Animal shapes
-	4. Polymorph
-	5. Polymorph any object
-	6. Shapechange
+OK	2. Alter self
+OK	3. Animal shapes
+OK	4. Polymorph
+OK	5. Polymorph any object
+OK	6. Shapechange
 
-	7. Alter self, psionic
-	8. Metamorphosis
-	9. Metamorphosis, greater
+OK	7. Alter self, psionic
+OK	8. Metamorphosis
+OK	9. Metamorphosis, greater
 
-	10. Metamorphic Transfer
+OK	10. Metamorphic Transfer
 
 # Changes
 #########
 
-	- Druid 5 => Animal Companion
-	- Animal Domain =>
-		7. Summon Nature's Ally VII
-		9. Wild Lands
-	- Egoist 9 => Assimilate
+OK	- Druid 5 => Animal Companion
+OK	- Animal Domain =>
+OK		7. Summon Nature's Ally VII
+OK		9. Wild Lands
+OK	- Egoist 9 => Assimilate
+
+
+MINIMUM MONSTERS
+================
+
+Animals
+	Bat
+	Bear
+	Hawk
+	Eagle
+	Raven
+	Cheetah
+	Leopard
+	Lion
+	Tiger
+	Dog
+	Lizard
+	Lizard, Monitor
+	Rat
+	Snake, viper
+	Snake, constrictor
+
+
+Vermin
+	Giant beetle (any)
+	Monstrous centipede
+	Monstrous scorpion
+	Monstrous spider
+
+Swarm
+
+Ankheg
+(devils) Baatezu
+(demons) Tanari
+Basilisk
+Behir
+**Brain mole
+Bulette
+Carrion crawler
+**Cave fisher
+Pseudodragon
+Dragonne
+Elemental (any)
+Ettercap
+**Caleb dur
+Genie (any)
+**Cyclops
+Ettin
+**Githyanki
+Golem (except iron)
+**Hatori
+**Kenku
+**Kirre
+Remorhaz
+Skeleton
+Phase spider
+Wyvern
+**Yuan-ti
+**Yugoloth
+Zombie
+
