@@ -60,8 +60,37 @@ OK		9. Wild Lands
 OK	- Egoist 9 => Assimilate
 
 
-MINIMUM MONSTERS
+ORGANIZATIONS
+=============
+
+OK - Dynastic Merchant Houses
+OK - Psionic Schools
+OK - Veiled Alliance
+- The Templarate
+- Elvish Tribes
+
+
+EXAMPLE VILLAINS
 ================
+OK - Raider
+OK - Raider (captain)
+- Herder
+- Herder (leader)
+- Hunter
+- Hunter (chief)
+- Hermit (wizard)
+- Hermit (psion)
+- Templar (low-level)
+- Templar (mid-level)
+- Templar (high-level)
+- Defiler (low-level)
+- Defiler (mid-level)
+- Defiler (high-level)
+- Hireling
+
+
+MINIMUM (BASIC) MONSTERS
+========================
 
 Animals
 	Bat
@@ -81,11 +110,7 @@ Animals
 	Snake, constrictor
 
 
-Vermin
-	Giant beetle (any)
-	Monstrous centipede
-	Monstrous scorpion
-	Monstrous spider
+Vermin (any)
 
 Swarm
 
@@ -112,6 +137,7 @@ Golem (except iron)
 **Kenku
 **Kirre
 Remorhaz
+Roc
 Skeleton
 Phase spider
 Wyvern

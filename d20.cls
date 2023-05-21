@@ -513,13 +513,13 @@
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
-	\rowcolors{0}{TableColor}{}
+	\rowcolors{0}{}{TableColor}
 	\small
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
 	\end{table*}
 }
-\newcommand{\BigTablePair}[3]{
+\newcommand{\BigTableBottom}[3]{
 	\begin{table*}[b!]
 	\rowcolors{0}{}{TableColor}
 	\small
@@ -533,7 +533,7 @@
 	\end{tabular}
 }
 \newcommand{\WarriorTable}[3][ll *{3}{Z{14mm}} L]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		  \tableheader Level
 		& \tableheader Base Attack Bonus
 		& \tableheader Fort Save
@@ -545,7 +545,7 @@
 }
 
 \newcommand{\PrestigeSpellTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		  \tableheader Level
 		& \tableheader Base \hskip3em Attack Bonus
 		& \tableheader Fort Save
@@ -558,7 +558,7 @@
 }
 
 \newcommand{\PrestigeOnlySpellTable}[3][l b{16mm} *{3}{Z{5mm}} X]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		  \tableheader Level
 		& \tableheader Base \hskip3em Attack Bonus
 		& \tableheader Fort Save
@@ -570,7 +570,7 @@
 }
 
 \newcommand{\PrestigePowerTable}[3][l b{16mm} *{3}{Z{5mm}} L l]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		  \tableheader Level
 		& \tableheader Base \hskip3em Attack Bonus
 		& \tableheader Fort Save
@@ -599,7 +599,7 @@
 }
 
 \newcommand{\SpellcasterTable}[4][10]{
-	\BigTablePair{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
+	\BigTableBottom{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
 		\rowcolor{white}
 		\multirow[b]{2}{6mm}{\tableheader Level}
 		& \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus}
@@ -620,7 +620,7 @@
 &&&&& \SpellLevelHeaderRec{#1}{#2}
 }
 % \newcommand{\HalfSpellcasterTable}[3][1cm]{
-% 	\BigTablePair{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
+% 	\BigTableBottom{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
 % 		\rowcolor{white}
 % 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
 % 		\cmidrule[0.5pt]{7-10}
@@ -629,7 +629,7 @@
 % 	}
 % }
 \newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		\tableheader Level
 		& \tableheader Base Attack Bonus
 		& \tableheader Fort Save
@@ -644,7 +644,7 @@
 }
 
 \newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{5mm}} Z{9mm} L l]{
-	\BigTablePair{#2}{#1}{
+	\BigTableBottom{#2}{#1}{
 		\tableheader Level
 		& \tableheader Base \hskip3em Attack Bonus
 		& \tableheader Fort Save
