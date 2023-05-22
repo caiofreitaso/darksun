@@ -1,0 +1,29 @@
+\section{The Core Mechanic}
+Whenever you attempt an action that has some chance of failure, you roll a twenty-sided die (d20). To determine if your character succeeds at a task you do this:
+
+\begin{itemize*}
+\item Roll a d20.
+\item Add any relevant modifiers.
+\item Compare the result to a target number.
+\item If the result equals or exceeds the target number, your character succeeds. If the result is lower than the target number, you fail.
+\end{itemize*}
+
+\subsection{Dice}
+Dice rolls are described with expressions such as ``3d4+3,'' which means ``roll three four-sided dice and add 3'' (resulting in a number between 6 and 15). The first number tells you how many dice to roll (adding the results together). The number immediately after the ``d'' tells you the type of die to use. Any number after that indicates a quantity that is added or subtracted from the result.
+
+\textbf{d\%:} Percentile dice work a little differently. You generate a number between 1 and 100 by rolling two different ten-sided dice. One (designated before you roll) is the tens digit. The other is the ones digit. Two 0s represent 100.
+
+\input{subsections/introduction/the-core-mechanic/modifiers.tex}
+% \Figure*{b}{images/wizard-3.png}
+
+\subsection{Multiplying}
+Sometimes a rule makes you multiply a number or a die roll. As long as you're applying a single multiplier, multiply the number normally. When two or more multipliers apply to any abstract value (such as a modifier or a die roll), however, combine them into a single multiple, with each extra multiple adding 1 less than its value to the first multiple. Thus, a double ($\times$2) and a double ($\times$2) applied to the same number results in a triple ($\times$3, because 2 + 1 = 3).
+
+When applying multipliers to real-world values (such as weight or distance), normal rules of math apply instead. A creature whose size doubles (thus multiplying its weight by 8) and then is turned to stone (which would multiply its weight by a factor of roughly 3) now weighs about 24 times normal, not 10 times normal. Similarly, a blinded creature attempting to negotiate difficult terrain would count each square as 4 squares (doubling the cost twice, for a total multiplier of $\times$4), rather than as 3 squares (adding 100\% twice).
+
+\subsection{Advantage and Disadvantage}
+Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.
+
+If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don't roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20.
+
+If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.
