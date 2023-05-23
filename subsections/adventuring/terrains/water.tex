@@ -1,47 +1,92 @@
 \subsection{Water}
+Even though Athas is known for its dry landscape, water bodies still are still a part of its geography: from the beaches of the Last Sea to the marshes near the Vanishing Lake.
 
-\subsubsection{Marshes}
-Two categories of marsh exist: relatively dry moors and watery swamps. Both are often bordered by lakes, which effectively are a third category of terrain found in marshes.
 
-The table below describes terrain features found in marshes.
+\subsubsection{Beaches}
+When a body of water encounter land in a smooth inclination, a beach is formed. It can happen at the borders of the sea, lakes, or large rivers. Not all encounters of bodies of water and land result in beaches, though. Tidal marshes or mangrove swamps can happen, or the water can simply meet a cliff.
 
-\Table{Marsh Features}{lCC}{
-& \multicolumn{2}{c}{\tableheader Marsh Category}\\
+\Table{Beach Features}{lCC}{
+& \multicolumn{2}{c}{\tableheader Beach Category}\\
 \cmidrule[0.5pt]{2-3}
 
   \tableheader Terrain Feature
-& \tableheader Moor
-& \tableheader Swamp \\
+& \tableheader Sandy
+& \tableheader Rocky \\
 
-Shallow bog & 20\% & 40\% \\
-Deep bog    &  5\% & 20\% \\
+Pool or stream & 10\% & 10\% \\
+Surf, heavy    & 10\% & 25\% \\
+Surf, light    & 15\% &      \\
 }
 
-\textbf{Stealth and Detection in a Marsh:} In a moor, the maximum distance at which a \skill{Spot} check for detecting the nearby presence of others can succeed is 6d6$\times$3 meters. In a swamp, this distance is 2d8$\times$3 meters.
+\textbf{Stealth and Detection on a Beach:} Open, sandy beaches offer little cover; the maximum distance at which a Spot check to detect the nearby presence of others can succeed is 6d6$\times$6 meters. Rocky beaches often have more cover at hand, reducing this distance to 4d6$\times$6 meters.
+
+
+
+\subsubsection{Marshes}
+Three categories of marsh exist: relatively dry moors, watery swamps, and tidal marshes. All often bordered by bodies of water, which effectively are a third category of terrain found in marshes.
+
+The table below describes terrain features found in marshes.
+
+\Table{Marsh Features}{lCCC}{
+& \multicolumn{3}{c}{\tableheader Marsh Category}\\
+\cmidrule[0.5pt]{2-4}
+
+  \tableheader Terrain Feature
+& \tableheader Moor
+& \tableheader Swamp
+& \tableheader Tidal Marsh \\
+
+Bog, deep    &  5\% & 20\% & 20\% \\
+Bog, shallow & 20\% & 40\% & 20\% \\
+Mud flat     &      &      & 10\% \\
+Open water   &      & 10\% & 20\% \\
+}
+
+\textbf{Stealth and Detection in a Marsh:} In a moor, the maximum distance at which a \skill{Spot} check for detecting the nearby presence of others can succeed is 6d6$\times$3 meters. In a swamp, this distance is 2d8$\times$3 meters. In a tidal marsh, this distance is 6d6$\times$6 meters.
 
 Vegetation and deep bogs provide plentiful concealment, so it's easy to hide in a marsh.
 
 A marsh imposes no penalties on \skill{Listen} checks, and using the \skill{Move Silently} skill is more difficult in both undergrowth and bogs.
 
+
 \subsubsection{Underwater}
-Underwater is the least hospitable to most PCs, because they can't breathe there. Underwater doesn't offer the variety that land terrain does. The ocean floor holds many marvels, including undersea analogues of any of the terrain elements described earlier in this section. But if characters find themselves in the water because they were bull rushed off the deck of a pirate ship, the tall kelp beds hundreds of feet below them don't matter. Accordingly, these rules simply divide underwater environments into two categories: flowing water (such as streams and rivers) and still water (such as lakes and oceans).
+Underwater is the least hospitable to most PCs, because they can't breathe there. Underwater doesn't offer the variety that land terrain does. The ocean floor holds many marvels, including undersea analogues of any of the terrain elements described earlier in this section. But if characters find themselves in the water because they were bull rushed off the deck of a pirate ship, the tall kelp beds hundreds of meters below them don't matter. %Accordingly, these rules simply divide underwater environments into two categories: flowing water (such as streams and rivers) and still water (such as lakes and oceans).
 
-\textbf{Flowing Water:} Large, placid rivers move at only a few kilometers per hour, so they function as still water for most purposes. But some rivers and streams are swifter; anything floating in them moves downstream at a speed of 3 to 12 meters per round. The fastest rapids send swimmers bobbing downstream at 18 to 27 meters per round. Fast rivers are always at least rough water (\skill{Swim} DC 15), and whitewater rapids are stormy water (\skill{Swim} DC 20). If a character is in moving water, move her downstream the indicated distance at the end of her turn. A character trying to maintain her position relative to the riverbank can spend some or all of her turn swimming upstream.
+% \textbf{Flowing Water:} Large, placid rivers move at only a few kilometers per hour, so they function as still water for most purposes. But some currents are swifter and require more difficult \skill{Swim} checks depending on their speed. If a character is in moving water, move her downstream the indicated distance at the end of her turn. A character trying to maintain her position relative to the riverbank can spend some or all of her turn swimming upstream.
 
-\textit{Swept Away:} Characters swept away by a river moving 18 meters per round or faster must make DC 20 \skill{Swim} checks every round to avoid going under. If a character gets a check result of 5 or more over the minimum necessary, he arrests his motion by catching a rock, tree limb, or bottom snag---he is no longer being carried along by the flow of the water. Escaping the rapids by reaching the bank requires three DC 20 \skill{Swim} checks in a row. Characters arrested by a rock, limb, or snag can't escape under their own power unless they strike out into the water and attempt to swim their way clear. Other characters can rescue them as if they were trapped in quicksand.
+% \Table{}{lCc}{
+%   \tableheader Current Strength
+% & \tableheader Current Speed
+% & \tableheader \skill{Swim} DC \\
 
-\textbf{Still Water:} Lakes and oceans simply require a swim speed or successful \skill{Swim} checks to move through (DC 10 in calm water, DC 15 in rough water, DC 20 in stormy water). Characters need a way to breathe if they're underwater; failing that, they risk drowning. When underwater, characters can move in any direction as if they were flying with perfect maneuverability.
+% Calm water    &    1.5 m/round & 10 \\
+% Rough water   &   3--9 m/round & 15 \\
+% Stormy water  & 12--18 m/round & 20\textsuperscript{1} \\
+% Violent water & 21--27 m/round & 25\textsuperscript{1, 2} \\
+% \TableNote{3}{1 Characters can't take 10 on a Swim check, even if they aren't otherwise being threatened or distracted.}\\
+% \TableNote{3}{2 Characters must make a DC 20 Swim check every round to avoid going under.}\\
+% }
 
-\textbf{Stealth and Detection Underwater:} How far you can see underwater depends on the water's clarity. As a guideline, creatures can see 4d8$\times$3 meters if the water is clear, and 1d8$\times$3 meters if it's murky. Moving water is always murky, unless it's in a particularly large, slow-moving river.
+% %But some rivers and streams are swifter; anything floating in them moves downstream at a speed of 3 to 12 meters per round. The fastest rapids send swimmers bobbing downstream at 18 to 27 meters per round. Fast rivers are always at least rough water (\skill{Swim} DC 15), and whitewater rapids are stormy water (\skill{Swim} DC 20). If a character is in moving water, move her downstream the indicated distance at the end of her turn. A character trying to maintain her position relative to the riverbank can spend some or all of her turn swimming upstream.
+% \textit{Damage:} Fast-moving flowing waters deal 1d3 points of nonlethal damage per round, or 1d6 points of lethal damage if flowing over rocks and cascades.
+
+% \textit{Swept Away:} Characters swept away by violent flowing waters must make DC 20 \skill{Swim} checks every round to avoid going under. If a character gets a check result of 5 or more over the minimum necessary, he arrests his motion by catching a rock, tree limb, or bottom snag---he is no longer being carried along by the flow of the water. Escaping the rapids by reaching the bank requires three DC 20 \skill{Swim} checks in a row. Characters arrested by a rock, limb, or snag can't escape under their own power unless they strike out into the water and attempt to swim their way clear. Other characters can rescue them as if they were trapped in quicksand.
+
+% \textbf{Still Water:} Lakes and oceans simply require a swim speed or successful \skill{Swim} checks to move through (DC 10 in calm water, DC 15 in rough water, DC 20 in stormy water). Characters need a way to breathe if they're underwater; failing that, they risk drowning. When underwater, characters can move in any direction as if they were flying with perfect maneuverability.
+
+\textbf{Stealth and Detection Underwater:} As a guideline, creatures can see 5d4$\times$3 meters if the water is clear, and 1d10$\times$3 meters if it's murky. Moving water is always murky, unless it's in a particularly large, slow-moving river.
 
 It's hard to find cover or concealment to hide underwater (except along the seafloor). \skill{Listen} and \skill{Move Silently} checks function normally underwater.
 
 \textit{Invisibility:} An invisible creature displaces water and leaves a visible, body-shaped ``bubble'' where the water was displaced. The creature still has concealment (20\% miss chance), but not total concealment (50\% miss chance).
 
-\subsubsection{Water Features}
-\textbf{Bogs:} If a square is part of a shallow bog, it has deep mud or standing water of about 1 foot in depth. It costs 2 squares of movement to move into a square with a shallow bog, and the DC of Tumble checks in such a square increases by 2.
 
-A square that is part of a deep bog has roughly 4 feet of standing water. It costs Medium or larger creatures 4 squares of movement to move into a square with a deep bog, or characters can swim if they wish. Small or smaller creatures must swim to move through a deep bog. Tumbling is impossible in a deep bog.
+
+\subsubsection{Water Features}
+
+\textbf{Bogs:} If a square is part of a shallow bog, it has deep mud or standing water of about 30 centimeters in depth. It costs 2 squares of movement to move into a square with a shallow bog, and the DC of \skill{Tumble} checks in such a square increases by 2.
+
+A square that is part of a deep bog has roughly 1 meter of standing water. It costs Medium or larger creatures 4 squares of movement to move into a square with a deep bog, or characters can swim if they wish. Small or smaller creatures must swim to move through a deep bog. \hyperref{skill:Tumble}{Tumbling} is impossible in a deep bog.
 
 The water in a deep bog provides cover for Medium or larger creatures. Smaller creatures gain improved cover (+8 bonus to AC, +4 bonus on Reflex saves). Medium or larger creatures can crouch as a move action to gain this improved cover. Creatures with this improved cover take a $-10$ penalty on attacks against creatures that aren't underwater.
 
@@ -49,14 +94,50 @@ Deep bog squares are usually clustered together and surrounded by an irregular r
 
 Both shallow and deep bogs increase the DC of \skill{Move Silently} checks by 2.
 
-\textbf{Quicksand:} Patches of quicksand present a deceptively solid appearance (appearing as undergrowth or open land) that may trap careless characters. A character approaching a patch of quicksand at a normal pace is entitled to a DC 8 Survival check to spot the danger before stepping in, but charging or running characters don't have a chance to detect a hidden bog before blundering in. A typical patch of quicksand is 20 feet in diameter; the momentum of a charging or running character carries him or her 1d2$\times$1.5 meter into the quicksand.
 
-\textit{Effects of Quicksand:} Characters in quicksand must make a DC 10 Swim check every round to simply tread water in place, or a DC 15 Swim check to move 1.5 meter in whatever direction is desired. If a trapped character fails this check by 5 or more, he sinks below the surface and begins to drown whenever he can no longer hold his breath (see the Swim skill description).
+\textbf{Mud Flat:} A mud flat consists of bare, more or less solid ground. It costs 2 squares of movement to enter a square of mud flat.
 
-Characters below the surface of a bog may swim back to the surface with a successful Swim check (DC 15, +1 per consecutive round of being under the surface).
 
-\textit{Rescue:} Pulling out a character trapped in quicksand can be difficult. A rescuer needs a branch, spear haft, rope, or similar tool that enables him to reach the victim with one end of it. Then he must make a DC 15 Strength check to successfully pull the victim, and the victim must make a DC 10 Strength check to hold onto the branch, pole, or rope. If the victim fails to hold on, he must make a DC 15 Swim check immediately to stay above the surface. If both checks succeed, the victim is pulled 1.5 meter closer to safety.
+\textbf{Open Water:} Large pitches of open water interspersed with wet, grassy land make up much of a tidal marsh. Open water is simply water ranging from 1.5 to 6 meters in depth; it tends to be shallower near land.
+
+
+\textbf{Pool or Stream:} Tidal pools, stream mouths, or standing seawater trapped behind a sandbar at low tide can be found on many beaches. A pool or stream has shallow water about 30 centimeters in depth. It costs 2 squares of movement to enter a pool or stream, and the DC of \skill{Tumble} checks increases by 2.
+
+Tidal pools are normally 1d4$\times$5 feet wide. Streams or bar-trapped ponds are the same width, but can be hundreds of meters long.
+
+
+\textbf{Surf, Heavy:} Heavy surf consists of violently surging water about 1 meter in depth. It costs 4 squares of movement to enter a square of heavy surf, or characters can swim if they wish as rough water (\skill{Swim} DC 15). Small or smaller creatures must swim to move through heavy surf. \hyperref{skill:Tumble}{Tumbling} is impossible in heavy surf. Any creature that begins its turn in a square of heavy surf must succeed on a DC 12 Strength check or \skill{Balance} check, or fall prone.
+
+The water in a square of heavy surf provides cover for Medium or Large creatures, and improved cover for Small or smaller creatures. Medium or Large creatures can crouch as a move action to gain improved cover, but creatures with this improved cover take a $-10$ penalty on attacks against creatures that aren't underwater.
+
+Surf squares are normally found grouped together in a long line. If an area has both heavy surf and light surf, the light surf goes between the heavy surf and the beach.
+
+A wave of heavy surf often has a riptide behind that can draw creatures out to sea (see Water Dangers).
+
+
+\textbf{Surf, Light:} Light surf has surging water about 30 centimeters in depth. It costs 2 squares of movement to enter a square of light surf, and the DC of \skill{Tumble} checks in such a square increases by 2. Any creature that begins its turn in a square of light surf must succeed on a DC 6 Strength check or \skill{Balance} check, or fall prone.
+
+
+\textbf{Quicksand:} Patches of quicksand present a deceptively solid appearance (appearing as undergrowth or open land) that may trap careless characters. A character approaching a patch of quicksand at a normal pace is entitled to a DC 8 \skill{Survival} check to spot the danger before stepping in, but charging or running characters don't have a chance to detect a hidden bog before blundering in. A typical patch of quicksand is 6 meters in diameter; the momentum of a charging or running character carries him or her 1d2$\times$1.5 meter into the quicksand.
+
+\textit{Effects of Quicksand:} Characters in quicksand must make a DC 10 \skill{Swim} check every round to simply tread water in place, or a DC 15 \skill{Swim} check to move 1.5 meter in whatever direction is desired. If a trapped character fails this check by 5 or more, he sinks below the surface and begins to drown whenever he can no longer hold his breath (see the \skill{Swim} skill description).
+
+Characters below the surface of a bog may swim back to the surface with a successful \skill{Swim} check (DC 15, +1 per consecutive round of being under the surface).
+
+\textit{Rescue:} Pulling out a character trapped in quicksand can be difficult. A rescuer needs a branch, spear haft, rope, or similar tool that enables him to reach the victim with one end of it. Then he must make a DC 15 Strength check to successfully pull the victim, and the victim must make a DC 10 Strength check to hold onto the branch, pole, or rope. If the victim fails to hold on, he must make a DC 15 \skill{Swim} check immediately to stay above the surface. If both checks succeed, the victim is pulled 1.5 meter closer to safety.
+
 
 \textbf{Hedgerows:} Common in moors, hedgerows are tangles of stones, soil, and thorny bushes. Narrow hedgerows function as low walls, and it takes 15 feet of movement to cross them. Wide hedgerows are more than 1.5 meter tall and take up entire squares. They provide total cover, just as a wall does. It takes 4 squares of movement to move through a square with a wide hedgerow; creatures that succeed on a DC 10 Climb check need only 2 squares of movement to move through the square.
 
+
 \textbf{Other Elements:} Some marshes, particularly swamps, have trees just as forests do, usually clustered in small stands. Paths lead across many marshes, winding to avoid bog areas. As in forests, paths allow normal movement and don't provide the concealment that undergrowth does.
+
+
+
+\subsubsection{Floods}
+In many wilderness areas, river floods are a common occurrence.
+
+In spring, an enormous snowmelt can engorge the streams and rivers it feeds. Other catastrophic events such as massive rainstorms or the destruction of a dam can create floods as well.
+
+During a flood, rivers become wider, deeper, and swifter. Assume that a river rises by 1d3+3 meters during the spring flood, and its width increases by a factor of 1d4$\times$50\%. Fords may disappear for days, bridges may be swept away, and even ferries might not be able to manage the crossing of a flooded river. A river in flood makes Swim checks one category harder (calm water becomes rough, and rough water becomes stormy). Rivers also become 50\% swifter.
+

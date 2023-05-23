@@ -1,0 +1,74 @@
+\subsection{Water Dangers}
+Any character can wade in relatively calm water that isn't over his head, no check required. Similarly, swimming in calm water only requires skill checks with a DC of 10. Trained swimmers can just take 10. (Remember, however, that armor or heavy gear makes any attempt at swimming much more difficult.)
+
+
+\subsubsection{Still Water}
+Lakes and oceans simply require a swim speed or successful \skill{Swim} checks to move through (DC 10 in calm water, DC 15 in rough water, DC 20 in stormy water). Characters need a way to breathe if they're underwater; failing that, they risk drowning. When underwater, characters can move in any direction as if they were flying with perfect maneuverability.
+
+
+\subsubsection{Flowing Water}
+Large, placid rivers move at only a few kilometers per hour, so they function as still water for most purposes. But some currents are swifter and require more difficult \skill{Swim} checks depending on their speed. If a character is in moving water, move her downstream the indicated distance at the end of her turn. A character trying to maintain her position relative to the riverbank can spend some or all of her turn swimming upstream.
+
+\Table{}{lCc}{
+  \tableheader Water Strength
+& \tableheader Current Speed
+& \tableheader \skill{Swim} DC \\
+
+Calm water    &    1.5 m/round & 10 \\
+Rough water   &   3--9 m/round & 15\textsuperscript{1} \\
+Stormy water  & 12--18 m/round & 20\textsuperscript{1, 2} \\
+Violent water & 21--27 m/round & 25\textsuperscript{1, 2} \\
+\TableNote{3}{1 Characters take damage every round, and must make a Swim check every round to avoid going under.}\\
+\TableNote{3}{2 Characters can't take 10 on a Swim check, even if they aren't otherwise being threatened or distracted.}\\
+}
+
+%But some rivers and streams are swifter; anything floating in them moves downstream at a speed of 3 to 12 meters per round. The fastest rapids send swimmers bobbing downstream at 18 to 27 meters per round. Fast rivers are always at least rough water (\skill{Swim} DC 15), and whitewater rapids are stormy water (\skill{Swim} DC 20). If a character is in moving water, move her downstream the indicated distance at the end of her turn. A character trying to maintain her position relative to the riverbank can spend some or all of her turn swimming upstream.
+
+\textbf{Damage:} Fast-moving flowing waters deal 1d3 points of nonlethal damage per round, or 1d6 points of lethal damage if flowing over rocks and cascades. Violent waters deal double that damage (2d3 nonlethal damage, or 2d6 lethal damage).
+
+\textbf{Swept Away:} Characters swept away by violent flowing waters must make DC 20 \skill{Swim} checks every round to avoid going under. If a character gets a check result of 5 or more over the minimum necessary, he arrests his motion by catching a rock, tree limb, or bottom snag---he is no longer being carried along by the flow of the water. Escaping the rapids by reaching the bank requires three DC 20 \skill{Swim} checks in a row. Characters arrested by a rock, limb, or snag can't escape under their own power unless they strike out into the water and attempt to swim their way clear. Other characters can rescue them as if they were trapped in quicksand.
+
+\Figure{t}{images/swimming-1.png}
+\subsubsection{Illumination}
+As depth increases, sunlight attenuates quickly underwater. Use \tabref{Sunlight as a Light Source} for illumination underwater.
+
+\Table{Sunlight as a Light Source}{LCC}{
+  \tableheader Depth
+& \tableheader Bright
+& \tableheader Shadowy \\
+
+9 m or less  &  30 m & 60 m \\
+10--18 m     &  18 m & 36 m \\
+19--36 m     &   9 m & 18 m \\
+37--54 m     &   6 m & 12 m \\
+55--72 m     &   3 m &  6 m \\
+73--90 m     & 1.5 m &  3 m \\
+91 m or more &  ---  &  --- \\
+}
+
+\textbf{Low-Light Vision:} Creatures with low-light vision can see twice as far normally underwater.
+
+\textbf{Darkvision:} Darkvision only functions up to 9 m of depth.
+
+\textbf{Murky Water:} With particles suspended in water, light reaches less distance. All light sources have their radius reduced by 50\%.
+
+\textbf{Very Murky Water:} All sight is obscured, including darkvision. Creatures have total concealment (50\% miss chance).
+
+
+\subsubsection{Pressure}
+Very deep water is not only generally pitch black, posing a navigational hazard, but worse, it deals water pressure damage of 1d6 points per minute for every 30 meters the character is below the surface. A successful Fortitude save (DC 15, +1 for each previous check) means the diver takes no damage in that minute.
+
+Aquatic creatures ignore pressure up to 150 meters of depth, and only take 1d6 points of damage for every 60 meters below that point. Some aquatic creatures are completely immune to pressure damage (such as giant squids or whales).
+
+
+\subsubsection{Hypothermia}
+Due to the capacity of water to remove heat efficiently, hypothermia can occur even on temperatures as warm as 30 °C. If the temperature is at most at the moderate band (16--32 °C), treat the temperature of the water as two bands lower than the air temperature, for Fortitude saves. Because of its thermal conductivity, water deals 1d6 points of nonlethal damage, instead of 1d4.
+
+
+\subsubsection{Drowning}
+Any character can hold her breath for a number of rounds equal to twice her Constitution score. After this period of time, the character must make a DC 10 Constitution check every round in order to continue holding her breath. Each round, the DC increases by 1. (See \skill{Swim} skill description.)
+
+When the character finally fails her Constitution check, she begins to drown. In the first round, she falls unconscious (0 hp). In the following round, she drops to $-1$ hit points and is dying. In the third round, she drowns.
+
+It is possible to drown in substances other than water, such as sand, quicksand, fine dust, and silos full of grain.
+
