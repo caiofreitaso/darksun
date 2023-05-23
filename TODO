@@ -32,6 +32,30 @@ Fatigue
 
 
 OK Variant: No Shapechanging
+Variant: Low-Magic
+	REMOVED
+		- rod of absorption
+		- staff of swarming insects
+		- staff of the woodlands
+		- cloak of arachnida
+		- cloak of the bat
+		- cloak of elvenkind
+		- robe of the archmagi
+		- robe of useful items
+		- boots of elvenkind
+		- gloves of arrow snaring
+		- handy haversack
+		- marvelous pigments
+		- sovereign glue
+		- universal solvent
+		- broom of flying
+		- carpet of flying
+		- sustaining spoon
+		- horn of fog
+		- horn of goodness/evil
+		- lyre of building
+		- restorative ointment
+
 
 # Removed
 #########
@@ -62,24 +86,33 @@ OK	- Egoist 9 => Assimilate
 
 MAGIC ITEMS
 ===========
-
 - Ring of Life: immune to defiling penalties
 - Amulet of Psionic Interference (cursed): wearer can't make any power checks
 - Rod of Water Divining: Y-shaped rod that points towards the nearest water source within 1 km.
 - BOTANICAL ENCHANTMENT: create potion fruit trees
 
 	REMOVED
-	- bottle of endless water
-	- horseshoes (all)
-	- stone horse
-	- elven chain
-	- any aquatic-related item
-	- any lycanthrope-related item
+	OK - bottle of endless water
+	OK - horseshoes (all)
+	OK - stone horse
+	OK - elven chain
+	OK - any aquatic-related item
+	OK - any lycanthrope-related item
 
 	CHANGED
 	- candle of invocation: only spirits of the lands and elementals
-	- figurines of wondrous power: only ebony fly and golden lion
+	OK - figurines of wondrous power: only ebony fly and golden lion
 	- prayer beads: summons powerful elemental, instead
+
+
+OK ADVENTURING
+OK ===========
+OK - Urban Adventures
+
+
+CAMPAIGNS
+=========
+- Treasure
 
 
 TERRAIN
@@ -92,10 +125,8 @@ OK - Mudflats
 OK - Ocean
 
 
-
 ORGANIZATIONS
 =============
-
 OK - Dynastic Merchant Houses
 OK - Psionic Schools
 OK - Veiled Alliance
