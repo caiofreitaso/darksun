@@ -256,10 +256,10 @@
 	\PrestigeClassRules{#1}{#2}{#7}
 }
 \newcommand{\PrestigeClassRules}[9]{
-	#7{The #2}{#8}
+	\ifx&#7&\else#7{The #2}{#8}\fi
 
 	#1{Entry Requirements}
-	\noindent To qualify to become #3 \lowercase{#2}, a character must fufill all the following criteria.
+	\noindent To qualify to become #3 \lowercase{#2}, a character must fulfill all the following criteria.
 
 	#4
 	#1{Class Skills}
