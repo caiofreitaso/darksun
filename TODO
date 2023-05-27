@@ -1,10 +1,14 @@
 OK Skill Encounters
 
 Epic
-	- Avangion
-OK	- Dragon
-	- Elemental
-	- Spirit of the Land
+	- Prestige Classes
+		- Avangion
+	OK	- Dragon
+		- Elemental
+		- Spirit of the Land
+	- Spells
+	- Powers
+	- Organizations (The Order)
 
 Magic Items
 OK	- No bonus for Saving Throws
@@ -84,12 +88,114 @@ OK		9. Wild Lands
 OK	- Egoist 9 => Assimilate
 
 
+SPELLS
+======
+# SRD
+- Summon Nature's Ally
+- Summon Swarm
+
+# DS3
+- Blazing Wreath
+- Blindscorch
+- Cooling Canopy
+- Conflagration
+- Conservation
+- Control Tides
+- Conversion
+- Create Element
+- Create Oasis
+- Crusade
+- Curse Element
+- Curse of the Black Sands
+- Curse of the Choking Sands
+- Death Mark
+- Death Whip
+- Dedication
+- Defiler Scent
+- Drown on Dry Land
+- Echo of the Lirr
+- Elemental Armor
+- Elemental Chariot
+- Elemental Chariot, Greater
+- Elemental Weapon
+- Eye of the Storm
+- Fire Track
+- Fissure
+- Flame Harvest
+- Flash Flood
+- Fool's Feast
+- Footsteps of the Quarry
+- Ghostfire
+- Glass Storm
+- Gloomcloud
+- Gray Beckoning
+- Gray Rift
+- Groundflame
+- Hand of the Sorcerer-King
+- Heat Lash
+- Heartseeker
+- Hide from Undead
+- Illusory Talent
+- Infestation
+- Klar's Heart
+- Lighten Load
+- Lungs of Water
+- Mage Seeker
+- Magic Trick
+- Magma Tunnel
+- Molten
+- Nurturing Seeds
+- Oil Spray
+- Pact of Darkness
+- Plant Renewal
+- Poisoned Gale
+- Proof Against Undeath
+- Protection from Time
+- Pyrotechnics
+- Quietstorm
+- Ragestorm
+- Rangeblade
+- Rejuvenate
+- Return to the Earth
+- Sand Pit
+- Sand Spray
+- Sandflow
+- Sands of Time
+- Sandstone
+- Scapegoat
+- Shining Sands
+- Shroud of Darkness
+- Sirocco
+- Skyfire
+- Sparkrain
+- Sting of the Gold Scorpion
+- Storm Legion
+- Sunstroke
+- Surface Tension
+- Surface Walk
+- Swarm of Anguish
+- Sweet Water
+- Tempest
+- Touch the Black
+- Unliving Memory
+- Vampiric Youthfulness
+- Watch Fire
+- Water Light
+- Water Shock
+- Water Trap
+- Waters of Life
+- Whirlpool of Doom
+- Wild Lands
+- Worm's Breath
+- Wrath of the Sorcerer-King
+- Zombie Berry
+
 MAGIC ITEMS
 ===========
 - Ring of Life: immune to defiling penalties
 - Amulet of Psionic Interference (cursed): wearer can't make any power checks
 - Rod of Water Divining: Y-shaped rod that points towards the nearest water source within 1 km.
-- BOTANICAL ENCHANTMENT: create potion fruit trees
+OK - BOTANICAL ENCHANTMENT: create potion fruit trees
 
 	REMOVED
 	OK - bottle of endless water
@@ -100,7 +206,7 @@ MAGIC ITEMS
 	OK - any lycanthrope-related item
 
 	CHANGED
-	- candle of invocation: only spirits of the lands and elementals
+	XX - candle of invocation: only spirits of the lands and elementals REMOVED
 	OK - figurines of wondrous power: only ebony fly and golden lion
 	- prayer beads: summons powerful elemental, instead
 
@@ -108,13 +214,13 @@ MAGIC ITEMS
 OK ADVENTURING
 OK ===========
 OK - Urban Adventures
-	- Urban Encounters
 
 
 CAMPAIGNS
 =========
 - Treasure
-
+- Demographics
+- Urban Encounters
 
 TERRAIN
 =======
