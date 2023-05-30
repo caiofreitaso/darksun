@@ -1,30 +1,122 @@
-OK Skill Encounters
 
-Epic
+OK	ADVENTURING
+	===========
+OK	- Urban Adventures
+
+
+CAMPAIGNS
+=========
+OK	- Skill Encounters
+	- Treasure
+	- Demographics
+	- Urban Encounters
+
+
+OK	TERRAIN
+	=======
+OK	- Barren Waste
+OK	- Evaporated Sea
+OK	- Obsidian Plain
+OK	- Swamps
+OK	- Mudflats
+OK	- Ocean
+
+
+ORGANIZATIONS
+=============
+OK - Dynastic Merchant Houses
+OK - Psionic Schools
+OK - Veiled Alliance
+- The Templarate
+- Elvish Tribes
+
+EPIC
+====
+OK	- Classes
+OK	- Feats
 	- Prestige Classes
-		- Avangion
-	OK	- Dragon
-		- Elemental
-		- Spirit of the Land
+OK		- Avangion
+OK		- Dragon
+OK		- Elemental
+OK		- Spirit of the Land
+		- Order Adept
 	- Spells
 	- Powers
 	- Organizations (The Order)
 
-Magic Items
+
+MAGIC ITEMS
+===========
 OK	- No bonus for Saving Throws
 OK	- No bonus to ability scores
 OK	- Ability scores into fixed value: 19
 OK		- Strength: 19, 21, 23, or 25
+OK	- Ring of Life: immune to defiling penalties
+OK	- Amulet of Psionic Interference (cursed): wearer can't make any power checks
+OK	- Rod of Water Divining: Y-shaped rod that points towards the nearest water source within 1 km.
+OK	- BOTANICAL ENCHANTMENT: create potion fruit trees
 
-OK Saving Throws
+OK REMOVED
+OK	- bottle of endless water
+OK	- horseshoes (all)
+OK	- stone horse
+OK	- elven chain
+OK	- any aquatic-related item
+OK	- any lycanthrope-related item
+
+OK CHANGED
+XX	- candle of invocation: only spirits of the lands and elementals REMOVED
+OK	- figurines of wondrous power: only ebony fly and golden lion
+OK	- prayer beads: summons powerful elemental, instead
+OK	- Cursed Items
+OK	- Artifacts
+
+
+MAGIC
+=====
+OK	- Ritual spells
+OK	- Raise dead, resurrection, true resurrection are necromancy
+- Heighten spells built-in
+	- damage-based spells (+1 save DC and +2 die per spell level)
+	- mass spells (+2 targets per spell level)
+
+	- cure wounds (+1d8+2 per spell level, up to 4d8+8 at 4th-level)
+	- inflict wounds (+1d8+2 per spell level, up to 4d8+8 at 4th-level)
+	- magic fang/weapon (+1 per 2 spell levels)
+	- shadow conjuration (+1 mimicked spell level and +15% damage/work per spell level)
+	- shadow evocation (+1 mimicked spell level and +15% damage/work per spell level)
+	- planar ally (+6 HD and one additional creature per two spell levels)
+	- planar binding (+6 HD and one additional creature per two spell levels)
+	- globe of invulnerability (+1 spell level per spell level)
+	- glyph of warding (+1 save DC, +1d8 damage, or +1 stored spell level per spell level)
+	- command (+1 creature and +2 rounds per spell level)
+	- spell immunity (+1 protected spell per 2 spell levels, +1 protected spell level per spell level)
+
+	PROBLEMS:
+		- mass cure,
+		- mass inflict,
+		- greater arcane sight (fix: remove it),
+		- greater dispel, (fix: ignore remove curse effect, maximum caster level = 5 + 5 per spell level)
+		- greater heroism, (fix: use it as base, +1 bonus and +2 temp hp per spell level)
+	XX	- greater invisibility,
+		- greater prying eyes, (fix: remove it, and add option to add darkvision and true seeing IF the caster knows each spell)
+		- greater scrying, (fix: use it as base)
+		- greater shout,
+		- greater teleport, (fix: remove it)
+	XX	- restoration (all),
+
+
+VARIANTS
+========
+OK VARIANT: Saving Throws
 OK	- 3/4 good save
 OK	- 1/2 bad save
 
-Bonus Attack Bonus
+OK VARIANT: Bonus Attack Bonus
 OK	- Extra attack for each 10 points
 OK	- Extra attacks without penalties
 
-Fatigue
+VARIANT: Fatigue
 	- Can withstand fatigue points equal to Constitution score
 	- Remove # of fatigue points per hour equal to Constitution modifier (minumum 1)
 	- Every fatigue point gained when at the limit deals 1 point of damage
@@ -35,57 +127,48 @@ Fatigue
 		- Constitution score = exausted
 
 
-OK Variant: No Shapechanging
-Variant: Low-Magic
-	REMOVED
-		- rod of absorption
-		- staff of swarming insects
-		- staff of the woodlands
-		- cloak of arachnida
-		- cloak of the bat
-		- cloak of elvenkind
-		- robe of the archmagi
-		- robe of useful items
-		- boots of elvenkind
-		- gloves of arrow snaring
-		- handy haversack
-		- marvelous pigments
-		- sovereign glue
-		- universal solvent
-		- broom of flying
-		- carpet of flying
-		- sustaining spoon
-		- horn of fog
-		- horn of goodness/evil
-		- lyre of building
-		- restorative ointment
-
-
-# Removed
-#########
-
+OK VARIANT: No Shapechanging
+OK	Removed
 OK	1. Wild shape
-
 OK	2. Alter self
 OK	3. Animal shapes
 OK	4. Polymorph
 OK	5. Polymorph any object
 OK	6. Shapechange
-
 OK	7. Alter self, psionic
 OK	8. Metamorphosis
 OK	9. Metamorphosis, greater
-
 OK	10. Metamorphic Transfer
-
-# Changes
-#########
-
+OK Changes
 OK	- Druid 5 => Animal Companion
 OK	- Animal Domain =>
 OK		7. Summon Nature's Ally VII
 OK		9. Wild Lands
 OK	- Egoist 9 => Assimilate
+
+VARIANT: Low-Magic
+	Removed
+	- rod of absorption
+	- staff of swarming insects
+	- staff of the woodlands
+	- cloak of arachnida
+	- cloak of the bat
+	- cloak of elvenkind
+	- robe of the archmagi
+	- robe of useful items
+	- boots of elvenkind
+	- gloves of arrow snaring
+	- handy haversack
+	- marvelous pigments
+	- sovereign glue
+	- universal solvent
+	- broom of flying
+	- carpet of flying
+	- sustaining spoon
+	- horn of fog
+	- horn of goodness/evil
+	- lyre of building
+	- restorative ointment
 
 
 SPELLS
@@ -134,7 +217,6 @@ SPELLS
 - Hand of the Sorcerer-King
 - Heat Lash
 - Heartseeker
-- Hide from Undead
 - Illusory Talent
 - Infestation
 - Klar's Heart
@@ -190,55 +272,33 @@ SPELLS
 - Wrath of the Sorcerer-King
 - Zombie Berry
 
-MAGIC ITEMS
-===========
-- Ring of Life: immune to defiling penalties
-- Amulet of Psionic Interference (cursed): wearer can't make any power checks
-- Rod of Water Divining: Y-shaped rod that points towards the nearest water source within 1 km.
-OK - BOTANICAL ENCHANTMENT: create potion fruit trees
 
-	REMOVED
-	OK - bottle of endless water
-	OK - horseshoes (all)
-	OK - stone horse
-	OK - elven chain
-	OK - any aquatic-related item
-	OK - any lycanthrope-related item
+POWERS
+======
+- Astral Projection
+- Astral Projection, Personal
+- Banishment, Psionic
+- Conceal Thoughts
+- Control Wind
+- Heighten Senses
+- Inflict Pain
+- Invisibility, Psionic
+- Opposite Reaction
+- Phase Object
+- Planar Transportation
+- Pocket Dimension
+- Power Leech
+- Psychic Messenger
+- Sense Link
+- Spatial Distortion
+- Summon Object
+- Summon Planar Energy
+- Superior Invisibility
+- Teleport Object, Psionic
+- Time Dilation
+- Time Duplicate
+- Trace Teleport
 
-	CHANGED
-	XX - candle of invocation: only spirits of the lands and elementals REMOVED
-	OK - figurines of wondrous power: only ebony fly and golden lion
-	- prayer beads: summons powerful elemental, instead
-
-
-OK ADVENTURING
-OK ===========
-OK - Urban Adventures
-
-
-CAMPAIGNS
-=========
-- Treasure
-- Demographics
-- Urban Encounters
-
-TERRAIN
-=======
-OK - Barren Waste
-OK - Evaporated Sea
-OK - Obsidian Plain
-OK - Swamps
-OK - Mudflats
-OK - Ocean
-
-
-ORGANIZATIONS
-=============
-OK - Dynastic Merchant Houses
-OK - Psionic Schools
-OK - Veiled Alliance
-- The Templarate
-- Elvish Tribes
 
 
 EXAMPLE VILLAINS

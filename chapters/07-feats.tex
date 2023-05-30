@@ -127,18 +127,15 @@ Using a psionic item creation feat also requires access to a laboratory or psion
 
 % The price of psionic items (and thus the XP cost and the cost of the raw materials) depends on the level of the power and a character's manifester level. The character's manifester level must be high enough that the item creator can manifest the power at the chosen level. To find the final price in each case, multiply the character's manifester level by the power level, then multiply the result by a constant, as shown below.
 
-\textit{Cognizance Crystal:} Base price = power level $\times$ manifester level $\times$ 25 cp.
+\textbf{Item Cost:} \feat{Scribe Tattoo} create items that directly reproduce the effects of powers, and the strength of these items depends on the effective level of the power: power level + the power check DC modifier. Often, that is the minimum power check modifier necessary to manifest the power. (Randomly discovered items usually follow this rule.) However, when making such an item, the item's strength can be set higher than the minimum. Any time a character creates an item using a power augmented by spending additional power points, the power check DC modifier may increase depending on the psionic power. (Augmentation is a feature of many powers that allows the power to be amplified in various ways if additional power points are spent.) All other level-dependent parameters of the power forged into the item are set according to the effective manifester level.
 
-\textit{Psionic Tattoos:} Base price = power level $\times$ manifester level $\times$ 2,000 cp.
-% \textit{Psionic Tattoos:} Base price = power level $\times$ manifester level $\times$ 50 gp.
+The price of psionic items (and thus the XP cost and the cost of the raw materials) depends on the effective level of the power and a character's manifester level. The character's manifester level must be high enough that the item creator can manifest the power. To find the final price in each case, multiply the character's manifester level by the effective power level, then multiply the result by a constant, as shown below.
 
-% \textit{Dorjes:} Base price = power level $\times$ manifester level $\times$ 750 gp.
+\textit{Psionic Tattoos:} Base price = (power level + power check DC modifier) $\times$ manifester level $\times$ 4,000 cp.
 
-% \textbf{Extra Costs:} Any dorje, power stone, or psionic tattoo that stores a power with an XP cost also carries a commensurate cost.
+\textbf{Extra Costs:} Any psionic tattoo that stores a power with an XP cost also carries a commensurate cost, the creator must pay the XP cost when creating the item.
 
-% For psionic tattoos and power stones, the creator must pay the XP cost when creating the item. For a dorje, the creator must pay fifty times the XP cost.
-
-% Some psionic items similarly incur extra costs in XP, as noted in their descriptions.
+Some psionic items similarly incur extra costs in XP, as noted in their descriptions.
 
 
 \section{Feat Descriptions}
@@ -156,6 +153,7 @@ In general, having a feat twice is the same as having it once.
 \textbf{Special:} Additional facts about the feat that may be helpful when you decide whether to acquire the feat.
 
 \input{sections/feats/table-general-feats.tex}
+\vskip3cm
 \input{sections/feats/general-feats.tex}
 \input{sections/feats/table-skill-feats.tex}
 \input{sections/feats/skill-feats.tex}

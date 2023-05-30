@@ -1,0 +1,13 @@
+OK - Advantage/Disadvantage
+OK - Ritual spells
+- Automatically improve spells with higher slots (similar to built-in 3.5e psionics augment)
+	- This removes a lot of lesser/greater spells, all different versions of cure/inflict
+	- Removes the need for Heighten Spell
+OK - Resurrection, true resurrection are necromancy
+- Multiple uses for channel divinity (similar to built-in divine feats in 3.5e)
+- No bonus spell slots
+- Inspiration
+OK - Base class attribute score prerequisites
+- Extra attacks only for warriors
+- Call dim light, instead of shadowy light
+
