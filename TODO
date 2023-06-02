@@ -40,7 +40,7 @@ OK		- Dragon
 OK		- Elemental
 OK		- Spirit of the Land
 		- Order Adept
-	- Spells
+	- Psionic Enchantments
 	- Powers
 	- Organizations (The Order)
 
@@ -68,9 +68,10 @@ OK CHANGED
 XX	- candle of invocation: only spirits of the lands and elementals REMOVED
 OK	- figurines of wondrous power: only ebony fly and golden lion
 OK	- prayer beads: summons powerful elemental, instead
+
 OK	- Cursed Items
 OK	- Artifacts
-
+OK	- Creating Magic Items
 
 MAGIC
 =====
@@ -178,20 +179,20 @@ SPELLS
 - Summon Swarm
 
 # DS3
-- Blazing Wreath
-- Blindscorch
-- Cooling Canopy
-- Conflagration
-- Conservation
-- Control Tides
-- Conversion
-- Create Element
-- Create Oasis
-- Crusade
-- Curse Element
-- Curse of the Black Sands
-- Curse of the Choking Sands
-- Death Mark
+OK - Blazing Wreath
+OK - Blindscorch
+OK - Conflagration
+OK - Conservation
+OK - Control Tides
+OK - Conversion
+OK - Cooling Canopy
+OK - Create Element
+OK - Create Oasis
+OK - Crusade
+OK - Curse Element
+OK - Curse of the Black Sands
+OK - Curse of the Choking Sands
+OK - Death Mark
 - Death Whip
 - Dedication
 - Defiler Scent
@@ -275,12 +276,12 @@ SPELLS
 
 POWERS
 ======
-- Astral Projection
-- Astral Projection, Personal
+OK - Astral Projection, Personal
+OK - Astral Projection, Psionic
 - Banishment, Psionic
 - Conceal Thoughts
 - Control Wind
-- Heighten Senses
+OK - Heighten Senses
 - Inflict Pain
 - Invisibility, Psionic
 - Opposite Reaction
@@ -292,12 +293,12 @@ POWERS
 - Sense Link
 - Spatial Distortion
 - Summon Object
-- Summon Planar Energy
+OK - Summon Planar Energy
 - Superior Invisibility
-- Teleport Object, Psionic
+OK - Teleport Object, Psionic
 - Time Dilation
 - Time Duplicate
-- Trace Teleport
+OK - Trace Teleport
 
 
 

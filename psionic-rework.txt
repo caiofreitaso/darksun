@@ -55,7 +55,7 @@ PC  |  -2  |  -2  |  +0  |  -2  |  -3  |
 Clairsentience + Telepathy
 	OK= Detect Psionics
 		> WATCHER'S WARD + MINDLINK
-	= Feat Leach
+	OK= Feat Leach
 		> SYNESTHETE + MINDLINK
 Clairsentience + Psychokinesis
 	OK= Antimagic Field, Psionic
@@ -65,12 +65,12 @@ Clairsentience + Psychokinesis
 Clairsentience + Psychometabolism
 	OK= Cannibalize
 		> COMBAT MIND + CELL ADJUSTMENT
-	= Heightened Senses
+	OK= Heightened Senses
 		> SYNESTHETE + ANIMAL AFFINITY
 Clairsentience + Psychoportation
 	OK= Teleport Trigger
 		> ANCHORED NAVIGATION + TELEPORT
-	= Trace Teleport
+	OK= Trace Teleport
 		> PRECOGNITION + TELEPORT
 
 Psychokinesis + Telepathy
@@ -84,8 +84,6 @@ Psychokinesis + Psychoportation
 		> ANIMATE OBJECT + SUMMON PLANAR CREATURE
 	OK= Dimensional Screen
 		> DIMENSION DOOR + INERTIAL BARRIER
-	= Teleport Object, Psionic
-		> TELEKINESIS + TELEPORT
 
 Psychometabolism + Telepathy
 	= Mindlink, Thieving

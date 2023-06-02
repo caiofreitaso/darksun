@@ -1,0 +1,33 @@
+
+Priest 8th
+	Hasten Crops: increase the growth time from seed to harvest by 10x
+
+Priest 9th
+	Air of Permanence: make item unaffected by aging, inside an air-tight container
+	Disruption: create interference between templars and a target sorcerer-king
+	Wall of Mountains: it's just that
+	Prolific Vegetation: create shrubs and grass
+
+Priest 10th
+	Conversion: change the target's alignment
+	Insect Host: creates a cloud of insects
+	Prolific Forestation: create a grove of trees
+	Rift: sphere from Plane of Negative Energy that boosts undead
+	Silt Bridge: solidifies huge portions of silt
+
+
+Wizards 10th
+	Mountain Fortress: creates a mountain with a fortress on its top
+	Prolific Forestation: create a grove of trees
+	Prolific Vegetation: create shrubs and grass
+	Raise City: raise all dead people from the ruins of a city
+	Recruitment: all living creatures within range become an army at your command
+	Rift: bring the Plane of Negative Energy closer to the Material Plane and buffs undead
+	Undead's Lineage: know all personal history of the touched undead
+	Wizard Plague: create a magical plague that forbids wizards from casting spells from the chosen school
+
+	Masquerade: make an entire community think of you as their leader
+	Impostor: make an entire community think their leader is a fraud
+
+	Fanaticism: like greater heroism, but affects an entire army
+	Cowardice: inverse fanaticism
