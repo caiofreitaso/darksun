@@ -77,6 +77,19 @@ MAGIC
 =====
 OK	- Ritual spells
 OK	- Raise dead, resurrection, true resurrection are necromancy
+- Simplify summon spells
+	- Based on CR (from CR 1/4 at 1st level, to CR 12 at 9th level)
+		- 1st-level: One CR 1/4
+		- 2nd-level: One CR 1, two CR 1/2, four CR 1/4
+		- 3rd-level: One CR 3, two CR 2, four CR 1
+		- 4th-level: One CR 5, two CR 4, four CR 3
+		- 5th-level: One CR 7, two CR 6, four CR 5
+		- 6th-level: One CR 9, two CR 8, four CR 7
+		- 7th-level: One CR 10, or double 6th-level
+		- 8th-level: One CR 11, or double 7th-level
+		- 9th-level: One CR 12, or double 8th-level
+	- Summon monsters: dragons, elementals, magical beasts, outsiders, undead, vermin
+	- Summon nature ally: animals, elementals, fey, magical beasts, plants, vermin
 - Heighten spells built-in
 	- damage-based spells (+1 save DC and +2 die per spell level)
 	- mass spells (+2 targets per spell level)
@@ -196,10 +209,10 @@ OK - Death Mark
 OK - Death Whip
 OK - Dedication
 OK - Defiler Scent
-- Drown on Dry Land
-- Echo of the Lirr
-- Elemental Armor
-- Elemental Chariot
+OK - Drown on Dry Land
+OK - Echo of the Lirr
+OK - Elemental Armor
+OK - Elemental Chariot
 - Elemental Chariot, Greater
 - Elemental Weapon
 - Eye of the Storm

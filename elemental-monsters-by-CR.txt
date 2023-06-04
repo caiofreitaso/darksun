@@ -1,0 +1,122 @@
+ND 1/4
+	Monstrous Centipede, Small
+	Monstrous Scorpion, Tiny
+	Monstrous Spider, Tiny
+
+ND 1/2
+	Monstrous Centipede, Medium
+	Monstrous Scorpion, Small
+	Monstrous Spider, Small
+
+ND 1
+	Elemental, Small                       (any)
+	Giant Ant, Worker
+	Giant Bee
+	Monstrous Centipede, Large
+	Monstrous Scorpion, Medium
+	Pseudodragon
+
+ND 2
+	Azer                                   (fire)
+	Floater¹                               (silt)
+	Giant Ant, Soldier
+	Giant Bombardier Beetle
+	Monstrous Centipede, Huge
+	Monstrous Spider, Large
+	Thoqqua                                (magma)
+	Zombie, Gray²
+
+ND 3
+	Ankheg
+	Arrowhawk, Juvenile                    (air)
+	Eagle, Giant
+	Elemental, Medium                      (any)
+	Ethereal Filcher                       (--ethereal)
+	Ethereal Marauder                      (--ethereal)
+	Giant Praying Mantis
+	Giant Wasp
+	Magmin                                 (fire)
+	Mephit                                 (any)
+	Monstrous Scorpion, Large
+	Salamander, Flamebrother               (fire)
+	Tojanida, Juvenile                     (water)
+	Xorn, Minor                            (earth)
+
+ND 4
+	Aranea
+	Giant Stag Beetle
+	Janni
+	Obsidian Beast²                        (magma)
+	Shadow Giant                           (--the black)
+
+ND 5
+	Arrowhawk, Adult                       (air)
+	Basilisk
+	Djinni                                 (air)
+	Elemental, Large                       (any)
+	Monstrous Spider, Huge
+	Phase Spider
+	Rast                                   (fire)
+	Ravid                                  (--positive)
+	Tojanida, Adult                        (water)
+
+ND 6
+	Belker                                 (air)
+	Elemental Beast¹                       (any)
+	Monstrous Centipede, Gargantuan
+	Salamander, Average                    (fire)
+	Wraith, Athasian²
+	Wyvern
+	Xill                                   (--ethereal)
+	Xorn, Average                          (earth)
+
+ND 7
+	Bulette
+	Dragonne
+	Elemental, Huge                        (any)
+	Invisible Stalker                      (air)
+	Monstrous Scorpion, Huge
+	Remorhaz
+
+ND 8
+	Arrowhawk, Elder                       (air)
+	Behir
+	Efreeti                                (fire)
+	Monstrous Spider, Gargantuan
+	Tormented²                             (--the gray)
+	Xorn, Elder                            (earth)
+
+ND 9
+	Elemental, Greater                     (any)
+	Monstrous Centipede, Colossal
+	Tojanida, Elder                        (water)
+
+ND 10
+	Couatl
+	Monstrous Scorpion, Gargantuan
+	Salamander, Noble                      (fire)
+
+ND 11
+	Devourer                               (--ethereal; astral)
+	Elemental, Elder                       (any)
+	Monstrous Spider, Colossal
+
+ND 12
+	Monstrous Scorpion, Colossal
+
+ND 14
+	Nightshade, Nightwing                  (--the black)
+
+ND 16
+	Nightshade, Nightwalker                (--the black)
+
+ND 17
+	Drake¹*                                (any)
+
+ND 18
+	Nightshade, Nightcrawler               (--the black)
+
+
+¹ Terrors of Athas
+² Terrors of the Dead Lands
+* must change creature statistics
