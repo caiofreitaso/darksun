@@ -1,9 +1,14 @@
 \PrestigeSpellTable{The Chasseur}{
-1st & +1 & +0 & +2 & +2 & Mage-hunter, anti-mage spellcasting & +1 level of existing arcane spellcasting class \\
-2nd & +2 & +0 & +3 & +3 & \feat{Improved Counterspell}        & \\
-3rd & +3 & +1 & +3 & +3 & Dispelling strike 1/day             & +1 level of existing arcane spellcasting class \\
-4th & +4 & +1 & +4 & +4 & Armored mage                        & \\
-5th & +5 & +1 & +4 & +4 & \feat{Greater Counterspell}         & +1 level of existing arcane spellcasting class \\
+1st  &  +1 & +0 & +2 & +2 & Armored mage, mage-hunter                            & +1 level of existing arcane spellcasting class \\
+2nd  &  +2 & +0 & +3 & +3 & Anti-mage spellcasting, dispelling strike 1/day      & \\
+3rd  &  +3 & +1 & +3 & +3 & \feat{Improved Counterspell}                         & +1 level of existing arcane spellcasting class \\
+4th  &  +4 & +1 & +4 & +4 & Dispelling strike 2/day                              & \\
+5th  &  +5 & +1 & +4 & +4 & Arcane defense, hunter vision (\spell{detect magic}) & +1 level of existing arcane spellcasting class \\
+6th  &  +6 & +1 & +4 & +4 & Dispelling strike 3/day, reflecting strike           & \\
+7th  &  +7 & +1 & +4 & +4 & \feat{Greater Counterspell}                          & +1 level of existing arcane spellcasting class \\
+8th  &  +8 & +1 & +4 & +4 & Dispelling strike 4/day                              & \\
+9th  &  +9 & +1 & +4 & +4 & Hunter vision (\spell{arcane sight})                 & +1 level of existing arcane spellcasting class \\
+10th & +10 & +1 & +4 & +4 & Dispelling strike 5/day, disjuncting strike          & \\
 }
 
 \PrestigeClass{Chasseur}
@@ -31,11 +36,13 @@ Chasseurs are usually elf, half-elf or human, though the rare aarakocra chasseur
 
 \textbf{Spellcasting:} At each odd-numbered level, a chasseur gains new spells per day as if he had also gained a level in whatever arcane spellcasting class in which he could cast 3rd-level spells before he added the prestige class. He does not, however, gain any other benefit a character of that class would have gained. This essentially means that he adds the level of chasseur to the level of whatever other arcane spellcasting class he has, and then determines spells per day and caster level accordingly. If he had more than one arcane spellcasting class before he became a chasseur, he must decide to which class he adds each level of chasseur for the purpose of determining spells per day.
 
+\textbf{Armored Mage (Ex):} A chasseur of ignores arcane spell failure chances when wearing light armor.
+
 \textbf{Mage-Hunter (Ex):} At 1st level, a chasseur can add his class level to \skill{Bluff}, \skill{Gather Information}, \skill{Listen}, \skill{Sense Motive}, \skill{Spellcraft}, \skill{Spot}, and \skill{Survival} checks when using these skills against arcane spellcasters. Likewise, he gets a +2 bonus on weapon damage rolls against such creatures.
 
 A chasseur can also add his class level as bonus to \skill{Diplomacy} checks made with non-wizards. When dealing with arcane spellcasters or when his spellcasting is revealed this bonus transforms into penalty, and he subtracts his class level from those checks, instead.
 
-\textbf{Anti-mage Spellcasting (Su):} At 1st level, a chasseur adds his class level to the DC of any arcane spell he casts that target another arcane spellcaster. This does not apply to spells that do not have target, or spells that target creatures other than arcane spellcasters.
+\textbf{Anti-Mage Spellcasting (Su):} At 2nd level, a chasseur adds \onehalf his class level to the DC of any arcane spell he casts that target another arcane spellcaster. This does not apply to spells that do not have target, or spells that target creatures other than arcane spellcasters.
 
 % \textbf{Cry Witch (Ex):} At 2nd level, a chasseur can incite the common people against a target once a week. He must show his insignia and loudly accuse the target of wizardry. All common folk and local guard will try to seize and restrain the target by all means necessary. This is a mind-affecting, language-dependent effect.
 
@@ -43,11 +50,22 @@ A chasseur can also add his class level as bonus to \skill{Diplomacy} checks mad
 
 % He gains another weekly use at 4th level.
 
-\textbf{Improved Counterspell:} At 2nd level, a chasseur gains \feat{Improved Counterspell} as a bonus feat.
 
-\textbf{Dispelling Strike (Su):} Once per day, a chasseur of 3rd level or higher can attempt a dispelling strike with one normal melee attack. If he hits, he deals normal damage, and the victim is subject to a targeted \spell{greater dispel magic}. The chasseur's dispel check is 1d20 + arcane caster level + class level. If a chasseur makes a dispelling strike against a creature with no spells or effects to dispel, the dispelling strike has no effect, but the ability is used up for that day.
+\textbf{Dispelling Strike (Su):} Once per day, a chasseur of 2nd level or higher can attempt a dispelling strike with one normal melee attack. If he hits, he deals normal damage, and the victim is subject to a targeted \spell{greater dispel magic}. The chasseur's dispel check is 1d20 + arcane caster level + class level. If a chasseur makes a dispelling strike against a creature with no spells or effects to dispel, the dispelling strike has no effect, but the ability is used up for that day.
 
-\textbf{Armored Mage (Ex):} A chasseur of 4th level or higher ignores arcane spell failure chances when wearing light armor.
+At 4th level and every two levels thereafter, he can use dispelling strike one additional time per day (to a maximum of five times per day at 10th level).
 
-\textbf{Immediate Counterspell (Ex):} At 5th level, a chasseur gains \feat{Greater Counterspell} as a bonus feat.
+\textbf{Improved Counterspell:} At 3rd level, a chasseur gains \feat{Improved Counterspell} as a bonus feat.
+
+\textbf{Arcane Defense (Ex):} At 5th level a chasseur can put his Intelligence modifier as a competence bonus on his saving throws against spells cast by arcane spellcasters.
+
+\textbf{Hunter Vision (Su):} At 5th level, a chasseur gains the ability to detect magical auras at a range of up to 18 meters, and identify them given enough time. This ability functions as the \spell{detect magic} spell. Activating hunter vision is a standard action.
+
+At 9th level, his vision improves and he can concentrate on a creature within to determine if they are an arcane spellcaster or not. This ability now functions as the \spell{arcane sight} spell, except it cannot determine divine spellcasters or spell-like abilities---only arcane spellcasters.
+
+\textbf{Reflecting Strike (Su):} At 6th level, a chasseur can use one of his daily dispelling strike attempts to reflect a spell or spell-like ability to its caster as a free action. This ability otherwise functions as the \spell{spell turning} spell (caster level equal to the character's chasseur level + 5).
+
+\textbf{Greater Counterspell:} At 7th level, a chasseur gains \feat{Greater Counterspell} as a bonus feat.
+
+\textbf{Disjuncting Strike (Su):} At 10th level, a chasseur can use three of his daily dispelling strike attempts to destroy any magic on a creature. He can attempt a disjuncting strike with one normal melee attack. If he hits, he deals normal damage, and the victim is subject to the effects of \spell{mage's disjunction} (DC 18 + the chasseur's Intelligence modifier). This ability cannot affect artifacts or \spellref{antimagic field}{antimagic fields}.
 }
