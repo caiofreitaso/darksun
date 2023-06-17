@@ -438,6 +438,7 @@
 	\leftskip2.5mm
 	\parindent-2.5mm
 	\setstretch{1}
+	\vskip.3em
 	% \small
 	\MonsterStatsA
 }
@@ -457,6 +458,15 @@
 {
 
 	\vskip.3em
+}
+
+\newcommand{\MonsterStatsDescription}[2]{
+	\noindent\rule{\columnwidth}{.5pt}
+
+	#1
+
+	\noindent\rule{\columnwidth}{.5pt}
+	\vskip\parskip
 }
 
 % NPC functions
