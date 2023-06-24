@@ -34,6 +34,10 @@ Mercenary Heavy Infantry & Any & 1 \\
 Mercenary Irregular      & Any & 1 \\
 Mercenary Engineer       & Any & 4 \\
 
+Raider         & Any & 2 \\
+Raider Captain & Any & 5 \\
+
+
 }
 
 \subsubsection{Kank Soldier (Mount)}
@@ -42,7 +46,7 @@ Mercenary Engineer       & Any & 4 \\
 {2d8+4 (13 hp)}
 {$-1$}
 {12 m (8 squares)}
-{14 ($-1$ size, $-1$ Dex, +6 natural), touch 8, flat-flooted 14}
+{14 ($-1$ size, $-1$ Dex, +6 natural), touch 8, flat-footed 14}
 {+1/+9}
 {Bite +4 melee (1d8+6 plus poison)}
 {Bite +4 melee (1d8+6 plus poison)}
@@ -82,7 +86,7 @@ Soldier kanks are the most used mount on the Tablelands, as they can travel for 
 {2d10+2 (13 hp)}
 {+2}
 {9 m (6 squares)}
-{16 (+2 Dex, +4 armor), touch 12, flat-flooted 14}
+{16 (+2 Dex, +4 armor), touch 12, flat-footed 14}
 {+2/+4}
 {Dagger +4 melee (1d4+2/19--20), or composite longbow (Str +2) +4 ranged (1d8+2/$\times$3), or fixed crossbow (Str +4) +4 (2d8+4/19--20)}
 {Composite longbow (Str +2) +2/+2 ranged (1d8+2/$\times$3)}
@@ -126,7 +130,7 @@ Caravan archers speak Common and their merchant house's language.
 {2d10+5 (16 hp)}
 {+2}
 {9 m (6 squares)}
-{19 (+2 Dex, +4 armor, +3 shield), touch 12, flat-flooted 17}
+{19 (+2 Dex, +4 armor, +3 shield), touch 12, flat-footed 17}
 {+2/+4}
 {Short spear +4 melee (1d6+3)}
 {Short spear +4 melee (1d6+3)}
@@ -172,7 +176,7 @@ When in grave danger, they fight defensively while using the \feat{Combat Expert
 {2d8+2 (11 hp)}
 {+2}
 {12 m (8 squares)}
-{16 (+2 Dex, +4 armor), touch 12, flat-flooted 16}
+{16 (+2 Dex, +4 armor), touch 12, flat-footed 16}
 {+1/+3}
 {Dagger +3 melee (1d4+2/19--20) or shortbow +4 ranged (1d6+2/$\times$3)}
 {Shortbow +2/+2 ranged (1d6+2/$\times$3)}
@@ -222,7 +226,7 @@ Caravan scouts speak Common and their merchant house's language.
 {4d10+8 (30 hp)}
 {+1}
 {12 m (8 squares); base speed 9 m}
-{15 (+1 Dex, +4 armor), touch 11, flat-flooted 14}
+{15 (+1 Dex, +4 armor), touch 11, flat-footed 14}
 {+4/+7}
 {Lance +8 melee (1d8+5/$\times$3) or charging lance +10 melee (3d8+15/$\times$3)}
 {Lance +8 melee (1d8+5/$\times$3)}
@@ -273,7 +277,7 @@ They try to always make use of both \feat{Ride-by Attack} and \feat{Spirited Cha
 {1d6+2 plus 5d10+10 (43 hp)}
 {+1}
 {12 m (8 squares); base speed 9 m}
-{18 (+1 Dex, +4 armor, +3 shield), touch 11, flat-flooted 17}
+{18 (+1 Dex, +4 armor, +3 shield), touch 11, flat-footed 17}
 {+5/+8}
 {Masterwork longsword +10 (1d8+6/19--20) or spiked gauntlet +9 (1d4+2)}
 {Masterwork longsword +10 (1d8+6/19--20)}
@@ -329,55 +333,115 @@ They only go to the front line if there is no other option, as their job is to c
 
 \textit{Coordinate Allies (Ex):} As a full-round action, the caravan sergeant can make a Knowledge (warcraft) check with a DC equal to 15 + the number of allies affected. If the check succeeds, all affected allies gain a +1 competence bonus on attack rolls or a +1 dodge bonus to AC. They choose which of the two benefits to impart and must impart the same benefit to all affected allies. The benefits last for 1 round. The caravan sergeant cannot use this ability on themselves.
 
-\subsubsection{Regular Agent}
-\begin{MonsterStats}
-{Medium Humanoid (human)}
-{7d6 (24 hp)}
-{+1}
-{12 m (8 squares); base speed 9 m}
-{18 (+1 Dex, +4 armor, +3 shield), touch 11, flat-flooted 17}
-{+5/+8}
-{Masterwork longsword +10 (1d8+6/19--20) or spiked gauntlet +9 (1d4+2)}
-{Masterwork longsword +10 (1d8+6/19--20)}
-{1.5 m/1.5 m}
-{Bardic music}
-{Contact, open arms, master linguist, poison use, smooth talk, smuggler, streetsmart}
-{Fort +5, Ref +5, Will +7}
-{Str 12, Dex 16, Con 10, Int 13, Wis 8, Cha 14}
-{
-	\skill{Appraise} +11,
-	\skill{Bluff} +19,
-	\skill{Decipher Script} +7,
-	\skill{Diplomacy} +17 (+19 to bargain),
-	\skill{Forgery} +5,
-	\skill{Gather Information} +14,
-	\skill{Hide} +9,
-	\skill{Intimidate} +6,
-	\skill{Listen} +9,
-	\skill{Profession} (merchant) +9,
-	\skill{Sense Motive} +9,
-	\skill{Sleight of Hand} +13
+\subsubsection{Agent}
+\BigTable{}{lXX}{
+& \tableheader Regular Agent
+& \tableheader Senior Agent \\
+\cmidrule[0pt]{1-3}
+& \tableheader Humanoid (human)
+& \tableheader Humanoid (human) \\
+
+\tableheader Hit Dice:
+		& 7d6+14 (41 hp)
+		& 11d6+44 (85 hp) \\
+\tableheader Initiative:
+		& +3
+		& +7 \\
+\tableheader Speed:
+		& 9 m (6 squares)
+		& 9 m (6 squares) \\
+\tableheader Armor Class:
+		& 20 (+3 Dex, +6 \emph{+2 chitin}, +1 deflection), touch 14, flat-footed 17
+		& 21 (+3 Dex, +6 \emph{+2 chitin}, +2 deflection), touch 15, flat-footed 18 \\
+\tableheader Base Attack/Grapple:
+		& +5/+6
+		& +8/+9 \\
+\tableheader Attack:
+		& Spear +5 melee (1d8+8/$\times$3)*; or spear +4 ranged (1d8+3/$\times$3)
+		& Spear +9 melee (1d8+11/$\times$3)*; or spear +7 ranged (1d8+4/$\times$3) \\
+\tableheader Full Attack:
+		& Spear +5 melee (1d8+8/$\times$3)*
+		& Spear +9/+4 melee (1d8+11/$\times$3)* \\
+\tableheader Space/Reach:
+		& 1.5 m/1.5 m
+		& 1.5 m/1.5 m \\
+\tableheader Special Attacks:
+		& Bardic music, poison use
+		& Bardic music, dazzle, poison use \\
+\tableheader Special Qualities:
+		& Agent, contact, open arms, master linguist, smooth talk, smuggler, streetsmart
+		& Agent, contact, fast talk, open arms, master linguist, skill mastery, slippery mind, smooth talk, smuggler, streetsmart \\
+\tableheader Saves:
+		& Fort +5, Ref +5, Will +7
+		& Fort +5, Ref +5, Will +7 \\
+\tableheader Abilities:
+		& Str 10, Dex 16, Con 14, Int 13, Wis 8, Cha 12
+		& Str 12, Dex 16, Con 19, Int 14, Wis 8, Cha 14 \\
+\tableheader Skills:
+		&
+			\skill{Appraise} +11,
+			\skill{Bluff} +18,
+			\skill{Decipher Script} +7,
+			\skill{Diplomacy} +16 (+18 to bargain),
+			\skill{Forgery} +5,
+			\skill{Gather Information} +13,
+			\skill{Hide} +9,
+			\skill{Intimidate} +5,
+			\skill{Listen} +9,
+			\skill{Profession} (merchant) +9,
+			\skill{Sense Motive} +9,
+			\skill{Sleight of Hand} +13
+		&
+			\skill{Appraise} +11,
+			\skill{Bluff} +19,
+			\skill{Decipher Script} +7,
+			\skill{Diplomacy} +17 (+19 to bargain),
+			\skill{Forgery} +5,
+			\skill{Gather Information} +14,
+			\skill{Hide} +9,
+			\skill{Intimidate} +6,
+			\skill{Listen} +9,
+			\skill{Profession} (merchant) +9,
+			\skill{Sense Motive} +9,
+			\skill{Sleight of Hand} +13\\
+\tableheader Feats:
+		&
+			\feat{Combat Expertise},
+			\feat{Improved Feint},
+			\feat{Quick Draw},
+			\feat{Skill Focus} (Bluff),
+			\feat{Trader}
+		&
+			\feat{Combat Expertise},
+			\feat{Improved Feint},
+			\feat{Improved Initiative},
+			\feat{Leadership}\textsuperscript{B},
+			\feat{Quick Draw},
+			\feat{Skill Focus} (Bluff),
+			\feat{Trader}
+		\\
+\tableheader Environment:
+		& Any
+		& Any \\
+\tableheader Organization:
+		& Solitary
+		& Solitary \\
+\tableheader Challenge Rating:
+		& 6
+		& 10 \\
+\tableheader Treasure:
+		& Standard
+		& Standard \\
+\tableheader Alignment:
+		& Often neutral
+		& Often neutral \\
+\tableheader Advancement:
+		& By character class
+		& By character class \\
+\tableheader Level Adjustment:
+		& ---
+		& --- \\
 }
-{
-	\feat{Combat Expertise},
-	\feat{Improved Feint},
-	\feat{Quick Draw},
-	\feat{Skill Focus} (Bluff),
-	\feat{Trader}
-}
-{Any}
-{Solitary}
-{6}
-{
-	Masterwork metal longsword,
-	Masterwork caravan armor,
-	Masterwork heavy wooden shield,
-	Masterwork bone spiked gauntlet
-}
-{Usually neutral}
-{By character class}
-{---}
-\end{MonsterStats}
 
 
 % Junior Agent
