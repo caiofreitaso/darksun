@@ -190,8 +190,8 @@ Roll 1d\% and check \tabref{Lucky Event}.
 % \Table{Lucky Event}{lX}{
 % \textit{d10} & \tableheader Event \\
 % 1  & \textbf{Make a Powerful Connection:} Roll 1d3. 1: it's in the templarate. 2: it's in a large merchant house. 3: it's in the Veiled Alliance.\\
-% 2  & \textbf{Financial Windfall:} Gain 1d4 $\times$ 10 cp.\\
-% 3  & \textbf{Financial Windfall:} Gain 1d4 $\times$ 10 cp.\\
+% 2  & \textbf{Financial Windfall:} Gain 1d4 $\times$ 50 cp.\\
+% 3  & \textbf{Financial Windfall:} Gain 1d4 $\times$ 50 cp.\\
 % 4  & \textbf{Find a Sensei:} Gain 1 power point.\\
 % 5  & \textbf{Find a Specialist:} Gain 1 skill point.\\
 % 6  & \textbf{Powerful Merchant} owes you one favor.\\
@@ -208,7 +208,7 @@ Roll 1d\% and check \tabref{Lucky Event}.
 07--09  & Made a powerful connection in the Veiled Alliance. \\
   10    & Made a powerful connection in the Order. \\
 
-11--30  & You had a financially successful year. Gain 1d4 $\times$ 10 cp. \\
+11--30  & You had a financially successful year. Gain 1d4 $\times$ 50 cp. \\
 
 31--39  & You found a psychic teacher. Gain 2 power points. \\
 40--48  & You found a skill teacher. Gain a skill feat. \\
@@ -235,7 +235,7 @@ Roll 1d\% and check \tabref{Lucky Event}.
 
 % \Table{Disaster Event}{lX}{
 % \textit{d10} & \tableheader Event \\
-% 1 & \textbf{Debt:} You lose 1d4 $\times$ 10 cp. If you can't pay this now, you have a debt to pay, in cash---or blood.\\
+% 1 & \textbf{Debt:} You lose 1d4 $\times$ 50 cp. If you can't pay this now, you have a debt to pay, in cash---or blood.\\
 % 2 & \textbf{Imprisonment:} You were in prison or held hostage for 1d12 months.\\
 % 3 & \textbf{Illness or addiction:} You have contracted either an illness or drug habit in this time.\\
 % 4 & \textbf{Betrayal:} Roll 1d3. 1: you are being blackmailed. 2: a secret was exposed. 3: you were betrayed by a close friend.\\
@@ -251,41 +251,48 @@ Roll 1d\% and check \tabref{Disaster Event}.
 
 \Table{Disaster Event}{lX}{
 \textit{d\%} & \tableheader Event \\
-01--10 & \textbf{Debt:} You lose 1d4 $\times$ 10 cp. If you can't pay this now, you have a debt to pay, in cash---or blood.\\
-11--20 & \textbf{Imprisonment:} You were in prison or held hostage for 1d12 months.\\
-21--30 & \textbf{Illness or addiction:} You have contracted either an illness or drug habit in this time.\\
+01--10 & You lose 1d4 $\times$ 50 cp. If you can't pay this now, you have a debt to pay, in cash---or blood.\\%\textbf{Debt:}
+11--20 & You were in prison or held hostage for 1d12 months.\\ %\textbf{Imprisonment:}
+21--30 & You have contracted either an illness or drug habit in this time.\\ %\textbf{Illness or addiction:}
 
-31--33 & \textbf{Betrayal:} You are being blackmailed.\\
-34--36 & \textbf{Betrayal:} A secret was exposed.\\
-37--40 & \textbf{Betrayal:} You were betrayed by a close friend.\\
+\multicolumn{2}{l}{\TableSubheader{Betrayal}}\\
+31--33 & You are being blackmailed.\\ %\textbf{Betrayal:}
+34--36 & A secret was exposed.\\ %\textbf{Betrayal:}
+37--40 & You were betrayed by a close friend.\\ %\textbf{Betrayal:}
 
-41--46 & \textbf{Accident:} You were disfigured and have $-5$ penalty in \skill{Diplomacy}.\\
-47--48 & \textbf{Accident:} You have lost 1d12 months of memory of that year.\\
-49--50 & \textbf{Accident:} You constantly relive nightmares of the accident and wake up screaming.\\
+\multicolumn{2}{l}{\TableSubheader{Accident}}\\
+41--46 & You were disfigured and have $-5$ penalty in \skill{Diplomacy}.\\ %\textbf{Accident:}
+47--48 & You have lost 1d12 months of memory of that year.\\ %\textbf{Accident:}
+49--50 & You constantly relive nightmares of the accident and wake up screaming.\\ %\textbf{Accident:}
 
-51--55 & \textbf{Lover, friend or relative killed:} They died accidentally.\\
-56--58 & \textbf{Lover, friend or relative killed:} They were murdered by unknown parties.\\
-59--60 & \textbf{Lover, friend or relative killed:} They were murdered and you know who did it.\\
+\multicolumn{2}{l}{\TableSubheader{Lover, Friend or Relative Killed}}\\
+51--55 & They died accidentally.\\ %\textbf{Lover, friend or relative killed:}
+56--58 & They were murdered by unknown parties.\\ %\textbf{Lover, friend or relative killed:}
+59--60 & They were murdered and you know who did it.\\ %\textbf{Lover, friend or relative killed:}
 
-61--63 & \textbf{False Accusation:} It's theft.\\
-64--65 & \textbf{False Accusation:} It's wizardry.\\
-66--68 & \textbf{False Accusation:} It's murder.\\
-  69   & \textbf{False Accusation:} It's rape.\\
-  70   & \textbf{False Accusation:} It's lying or betrayal.\\
+\multicolumn{2}{l}{\TableSubheader{False Accusation}}\\
+61--63 & It's theft.\\ %\textbf{False Accusation:}
+64--65 & It's wizardry.\\ %\textbf{False Accusation:}
+66--68 & It's murder.\\ %\textbf{False Accusation:}
+  69   & It's rape.\\ %\textbf{False Accusation:}
+  70   & It's lying or betrayal.\\ %\textbf{False Accusation:}
 
-71--73 & \textbf{Hunted by the Law:} Only local guards want you.\\
-74--76 & \textbf{Hunted by the Law:} The entire city's guard want you.\\
-77--78 & \textbf{Hunted by the Law:} The Templarate wants you.\\
-79--80 & \textbf{Hunted by the Law:} All Templarates are after you.\\
+\multicolumn{2}{l}{\TableSubheader{Hunted by the Law}}\\
+71--73 & Only local guards want you.\\ %\textbf{Hunted by the Law:}
+74--76 & The entire city's guard want you.\\ %\textbf{Hunted by the Law:}
+77--78 & The Templarate wants you.\\ %\textbf{Hunted by the Law:}
+79--80 & All Templarates are after you.\\ %\textbf{Hunted by the Law:}
 
-81--83 & \textbf{Hunted by a Merchant House:} It's only a local shop.\\
-84--86 & \textbf{Hunted by a Merchant House:} It's a small merchant house.\\
-87--88 & \textbf{Hunted by a Merchant House:} It's a large merchant house.\\
-89--90 & \textbf{Hunted by a Merchant House:} All major houses are after you.\\
+\multicolumn{2}{l}{\TableSubheader{Hunted by a Merchant House}}\\
+81--83 & It's only a local shop.\\ %\textbf{Hunted by a Merchant House:}
+84--86 & It's a small merchant house.\\ %\textbf{Hunted by a Merchant House:}
+87--88 & It's a large merchant house.\\ %\textbf{Hunted by a Merchant House:}
+89--90 & All major houses are after you.\\ %\textbf{Hunted by a Merchant House:}
 
-91--93 & \textbf{Nervous disorder:} You have a $-1$ penalty in Fortitude saves.\\
-94--96 & \textbf{Mental problem:} You have a $-1$ penalty in Will saves.\\
-97--100 & \textbf{Major psychosis:} You have a $-1$ penalty in Reflex saves.\\
+\multicolumn{2}{l}{\TableSubheader{Mental Disorder}}\\
+91--93 & You have a $-1$ penalty in Fortitude saves.\\ %\textbf{Nervous disorder:}
+94--96 & You have a $-1$ penalty in Will saves.\\ %\textbf{Mental problem:}
+97--100 & You have a $-1$ penalty in Reflex saves.\\ %\textbf{Major psychosis:}
 }
 
 \Figure{b}{images/adventurer-5.png}

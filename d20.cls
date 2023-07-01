@@ -38,6 +38,7 @@
 \RequirePackage{lettrine}
 \RequirePackage{tabularx,booktabs}
 \RequirePackage{imfellEnglish}
+\RequirePackage{palatino}
 \RequirePackage[table]{xcolor}
 \RequirePackage[outline]{contour}
 \RequirePackage[titletoc]{appendix}
@@ -76,21 +77,23 @@
 
 \definecolor{LinkColor}{HTML}{003E13} %complement
 \definecolor{TableColor}{HTML}{F6BBB1} %primary #1
+%\definecolor{TableColor}{HTML}{FADDD8} %primary #1
 % \definecolor{SubsectionColor}{HTML}{F6D4B1} %secondary #2
 \definecolor{SubsectionColor}{HTML}{C44531} %primary #2
 \definecolor{ChapterColor}{HTML}{8F1603} %primary #0
+\definecolor{QuoteColor}{cmyk}{0,0,0,.6}
+\definecolor{fakeblack}{cmyk}{0,0,0,.9}
+\definecolor{richblack}{cmyk}{0.6,0.7,0.7,1}
+\color{fakeblack}
 
 % Font settings
-\renewcommand*\rmdefault{lmr}
-
-% \newcommand\fixsize{\fontsize{\f@size*1.05pt}{\f@size*1.01pt}}
-\newcommand\fixsize{}
+\renewcommand*\rmdefault{lmr} % Default font: Latin Modern Roman
 \newcommand\textold[1]{{\imfellEnglish\itshape #1}}
-\newcommand\tableheader{\imfellEnglish\scshape\fixsize}
 \newcommand\bold[1]{{\fontseries{bx}\selectfont #1}}
 \renewcommand\bfseries{\imfellEnglish\scshape}
-\renewcommand\textbf[1]{{\fixsize\bfseries #1}}
-\renewcommand\textit[1]{{\slshape\imfellEnglish #1}}
+\newcommand\tableheader{\bfseries}
+\renewcommand\textbf[1]{{\bfseries\textcolor{richblack}{#1}}}
+\renewcommand\textit[1]{{\slshape\imfellEnglish\textcolor{richblack}{#1}}}
 
 % References
 \newcommand{\class}[1]{\hyperref[class:#1]{#1}}
@@ -130,9 +133,6 @@
 	}
 }
 
-\newcommand{\cbold}[2][black]{
-	\contourlength{0.001pt}\contournumber{1}\contour{#1}{#2}
-}
 % Chapter Name
 \def\@makechapterhead#1{%
 	{
@@ -144,20 +144,16 @@
 			\fi%
 		\fi%
 		&
-		\fontsize{25pt}{25pt}\bfseries\color{ChapterColor}\raggedleft{
-			\contourlength{0.2pt}\contournumber{10}\contour{ChapterColor}{
-				\MakeUppercase{#1}
-			}
-		}
+		\fontsize{25pt}{25pt}\bfseries\color{ChapterColor}\raggedleft{{\contournumber{10}\contour{ChapterColor}{\MakeUppercase{#1}}}}
 		\end{tabular}
 	}
 }
 % Caption
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\large\imfellEnglish#1: #2}%
+  \sbox\@tempboxa{\large\imfellEnglish\color{richblack}#1: #2}%
   \ifdim \wd\@tempboxa >\hsize
-    \large\imfellEnglish #1: #2\par
+    \large\imfellEnglish\color{richblack} #1: #2\par
   \else
     \global \@minipagefalse
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
@@ -171,12 +167,12 @@
 		\imfellEnglish\slshape
 		\linespread{.9}
 		{
-			\color{black!50}
+			\color{QuoteColor}
 			\setlength\parindent{5pt}
 			``#2''
 
 		}
-		\ifx&#3&\else{\hfill\color{black!50}--- #3}\fi
+		\ifx&#3&\else{\hfill\color{QuoteColor}--- #3}\fi
 		\vskip.5em
 	}
 }
@@ -494,7 +490,7 @@
 \newcommand{\TinyTable}[4][\columnwidth]{
 	\ifx&#2&\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
-	\begin{tabularx}{#1}{@{}#3@{}}\rowcolors{2}{}{TableColor}\tiny
+	\begin{tabularx}{#1}{@{}#3@{}}\rowcolors{2}{white}{TableColor}\tiny
 	#4\end{tabularx}
 	\ifx&#2&\else\end{table}\fi
 }
@@ -508,7 +504,7 @@
 \newcommand{\Table}[4][\small]{
 	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
 	#1
-	\rowcolors{2}{}{TableColor}
+	\rowcolors{2}{white}{TableColor}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
@@ -516,14 +512,14 @@
 \newcommand{\TableOdd}[4][\small]{
 	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
 	#1
-	\rowcolors{2}{TableColor}{}
+	\rowcolors{2}{TableColor}{white}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
-	\rowcolors{0}{}{TableColor}
+	\rowcolors{0}{white}{TableColor}
 	\small
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
@@ -531,7 +527,7 @@
 }
 \newcommand{\BigTableBottom}[3]{
 	\begin{table*}[b!]
-	\rowcolors{0}{}{TableColor}
+	\rowcolors{0}{white}{TableColor}
 	\small
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}

@@ -2,6 +2,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{Nouveaud}
 \usepackage{ucs}
+\usepackage{background}
 \usepackage{multirow}
 \usepackage{fdsymbol}
 \usepackage{units}
@@ -20,12 +21,35 @@
   pdfpagelayout=TwoPageRight,
   pdftitle={Dark Sun d20},
   pdfauthor={Caio Freitas de Oliveira},
-  pdfkeywords={d20 System}
+  pdfkeywords={d20 System, Dark Sun, Dungeons \& Dragons}
 }
-
 \title{Dark Sun d20}
+\newif\ifblankpage
+\backgroundsetup{
+scale=1,
+angle=0,
+opacity=1,
+contents={%
+  \ifblankpage
+  \else
+    \ifodd\value{page}
+      \includegraphics[width=\paperwidth]{images/background-odd.pdf}
+    \else
+      \includegraphics[width=\paperwidth]{images/background-even.pdf}
+    \fi
+  \fi
+}
+}
 \newcommand{\WOTC}{\par\textit{\small{\textcopyright} Wizards of the Coast.}}
 \makeatletter
+\@newtikzpagenode{nonchapter area}{%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
+}
+\@newtikzpagenode{nonchapter line area}{%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-1.5pt}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top}}%
+}
 \@newtikzpagenode{chapter area}{%
     \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-12mm}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
@@ -57,13 +81,33 @@
     %   \fi%
     % \fi%
     % &
-    \fontsize{24.88pt}{24.88pt}\bfseries{
-      \contourlength{0.3pt}\contournumber{1}\contour{white}{
+    \fontsize{24.88pt}{24.88pt}\bfseries{{
+      \contourlength{0.5pt}\contour{white}{
         \MakeUppercase{#1}
       }
-    }
+    }}
     \end{tabular}
   }%
+}
+\def\@makeschapterhead#1{%
+  {
+    \centering
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[TableColor] (nonchapter area.north west) rectangle (nonchapter area.south east);
+      \fill[black] (nonchapter line area.north west) rectangle (nonchapter line area.south east);
+    \end{tikzpicture}
+
+    \vskip-8.75mm
+    \imfellEnglish\color{ChapterColor}%
+    \begin{tabular}{Z{\textwidth}}
+    \fontsize{24.88pt}{24.88pt}\bfseries{{
+      \contourlength{0.5pt}\contour{white}{
+        \MakeUppercase{#1}
+      }
+    }}
+    \end{tabular}
+  }%
+  \vskip2mm
 }
 \renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand\labelitemi{$\smallblackdiamond$}
@@ -82,7 +126,7 @@
 % \newcommand\onequarter{\unichar{"00BC}}
 % \newcommand\onethird{\unichar{"2153}}
 \newcommand\multiplied{\unichar{"00D7}}
-\newcommand\blankpage{\clearpage\thispagestyle{empty}\mbox{}\clearpage}
+\newcommand\blankpage{\clearpage\global\blankpagetrue\thispagestyle{empty}\mbox{}\clearpage\global\blankpagefalse}
 \newcommand\pagepdf{\@ifstar{\clearpage\includepdf}{\blankpage\includepdf}}
 \def\Figure{\@ifstar\@BigFigure\@SmallFigure}
 \def\FigureBody#1#2{
@@ -103,16 +147,23 @@
 
 \makeatother
 \begin{document}
+
+\global\blankpagetrue
+\includepdf[pages=-]{cover.pdf}
+\global\blankpagefalse
+\clearpage
+\global\blankpagetrue
 \includepdf[pages=-]{credits-and-legal.pdf}
+\global\blankpagefalse
 
 \tableofcontents
 
-\pagepdf{images/color-wizard-1.pdf}
+\pagepdf*{images/color-wizard-1.pdf}
 \input{chapters/01-introduction.tex}
 \input{chapters/02-abilities.tex}
 \pagepdf*{images/color-halfelf-1.pdf}
 \input{chapters/03-character-races.tex}
-% \pagepdf{images/color-psionics-2.pdf}
+\pagepdf{images/color-psionics-2.pdf}
 \input{chapters/04-character-description.tex}
 \pagepdf*{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
@@ -122,28 +173,32 @@
 \input{chapters/07-feats.tex}
 \pagepdf*{images/color-halfelf-2-2.pdf}
 \input{chapters/08-prestige-classes.tex}
-\pagepdf{images/color-market-1.pdf}
+\pagepdf*{images/color-market-1.pdf}
 \input{chapters/09-equipment.tex}
+\pagepdf*{images/color-gladiator-2.pdf}
 \input{chapters/10-magic-items.tex}
 \pagepdf*{images/color-cleric-1.pdf}
 \input{chapters/11-magic.tex}
 \input{chapters/12-spells.tex}
-\pagepdf*{images/color-psionics.pdf}
+\pagepdf{images/color-psionics.pdf}
 \input{chapters/13-psionics.tex}
 \input{chapters/14-powers.tex}
 \pagepdf{images/color-fighter-2.pdf}
 \input{chapters/15-combat.tex}
 \pagepdf{images/color-elf-1.pdf}
 \input{chapters/16-adventuring.tex}
-\pagepdf*{images/color-dragon-2.pdf}
+\pagepdf{images/color-dragon-2.pdf}
 \input{chapters/17-campaign.tex}
 \pagepdf{images/color-tyr-1.pdf}
 \input{chapters/18-life-on-athas.tex}
+\pagepdf{images/color-darksun-2.pdf}
 \input{chapters/19-organizations.tex}
 \input{chapters/20-planes-of-existence.tex}
+\pagepdf{images/color-darksun-1.pdf}
 \input{chapters/21-other-ages-to-play.tex}
 \pagepdf*{images/color-dragon-1.pdf}
 \input{chapters/22-epic-characters.tex}
+\pagepdf*{images/color-gladiator.pdf}
 \input{chapters/23-glossary.tex}
 % epic chacracter
 
@@ -154,5 +209,8 @@
 \input{appendices/02-changes-from-d20-system.tex}
 \end{appendices}
 
-\pagepdf{ogl.pdf}
+\clearpage
+\global\blankpagetrue
+\includepdf[pages=-]{ogl.pdf}
+\global\blankpagefalse
 \end{document}
