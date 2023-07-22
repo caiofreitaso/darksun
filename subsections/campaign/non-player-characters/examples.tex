@@ -16,9 +16,10 @@ Senior Agent     & Merchant House & 10 \\
 
 Royal Defiler      & Templarate &  6 \\
 Arch Defiler       & Templarate &  9 \\
-Templar Guard      & Templarate &  1 \\
+Templar Guard      & Templarate & \onehalf \\
+Templar Sergeant   & Templarate &  1 \\
 Templar Bureaucrat & Templarate &  5 \\
-High Templar       & Templarate & 11 \\
+High Templar       & Templarate & 12 \\
 
 Veiled Initiate & Veiled Alliance &  4 \\
 Veiled One      & Veiled Alliance &  9 \\
@@ -141,7 +142,7 @@ Herder Captain & Raider Tribes & 5 \\
 }
 \subsubsection{Caravan Archer}
 \MonsterStatsDescription{
-    Caravan archers are the reinforcements needed for the infantry while fighting to defend the caravan. They usually travel inside the caravan wagon, if there is one, otherwise they travel on kanks and dismount to fight. The statistics block is for a human 2nd-level fighter.
+    Caravan archers are the reinforcements needed for the infantry while fighting to defend the caravan. They usually travel inside the caravan wagon, if there is one, otherwise they travel on kanks and dismount to fight. The statistics block is for a human 2nd-level fighter with the military officer archetype.
 
     Caravan archers speak Common and their merchant house's language.
 }
@@ -152,7 +153,7 @@ A caravan archer focus on foes already being targeted by the caravan's infantry,
 
 \subsubsection{Caravan Infantry}
 \MonsterStatsDescription{
-    The main line of both offense and defense, the infantry footmen are the bulk of any medium to large caravan. They usually travel close to the caravan mounted on kanks, and dismount at the first sign of danger. The statistics block is for a human 2nd-level fighter.
+    The main line of both offense and defense, the infantry footmen are the bulk of any medium to large caravan. They usually travel close to the caravan mounted on kanks, and dismount at the first sign of danger. The statistics block is for a human 2nd-level fighter with the military officer archetype.
 
     Infantry speak Common and their merchant house's language.
 }
@@ -175,9 +176,9 @@ When in grave danger, they fight defensively while using the \feat{Combat Expert
 {Shortbow +2/+2 ranged (1d6+2/$\times$3)}
 {1.5 m/1.5 m}
 {Skirmish +1d6}
-{Fast movement, trapfinding, uncanny dodge}
+{Fast movement, military training, trapfinding, uncanny dodge}
 {Fort +1, Ref +5, Will +1}
-{Str 14, Dex 15, Con 12, Int 10, Wis 13, Cha 8}
+{Str 14, Dex 15, Con 13, Int 10, Wis 13, Cha 8}
 {
     \skill{Balance} +7,
     \skill{Diplomacy} +1,
@@ -207,7 +208,7 @@ When in grave danger, they fight defensively while using the \feat{Combat Expert
 \end{MonsterStats}
 
 \MonsterStatsDescription{
-    Caravan scouts watch out for raider ambushes, road blocks, and any other signs of trouble. They travel farther from the wagon than the infantry, usually more than 90 meters away, with whistles ready to alert the caravan about dangers ahead---humanoid or otherwise. The statistics block is for a human 2nd-level scout.
+    Caravan scouts watch out for raider ambushes, road blocks, and any other signs of trouble. They travel farther from the wagon than the infantry, usually more than 90 meters away, with whistles ready to alert the caravan about dangers ahead---humanoid or otherwise. The statistics block is for a human 2nd-level scout with the military officer archetype.
 
     Caravan scouts speak Common and their merchant house's language.
 }
@@ -494,7 +495,7 @@ Soldier kanks usually don't do much besides run around as mounts, but when they 
 \end{MonsterStats}
 
 \MonsterStatsDescription{
-    Caravan sergeants serve as leaders for squads of footmen or cavalry. The statistics block is for a human 1st-level bard/5th-level fighter.
+    Caravan sergeants serve as leaders for squads of footmen or cavalry. The statistics block is for a human 1st-level bard/5th-level fighter with the military officer archetype.
 
     Caravan sergeants speak Common and their merchant house's language.
 }
@@ -514,7 +515,7 @@ They only go to the front line if there is no other option, as their job is to c
 
 \subsubsection{Agent}
 \MonsterStatsDescription{
-    Merchant house agents serve as hands and eyes for their houses, operating throughout Athas to improve their house profits. The statistics block is for a human 4th-level bard/3rd-level dune trader.
+    Merchant house agents serve as hands and eyes for their houses, operating throughout Athas to improve their house profits. The statistics block is for a human 4th-level bard/3rd-level dune trader with the merchant archetype.
 
     Agents speak Common and their merchant house's language.
 }
@@ -559,7 +560,7 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
 
 \subsubsection{Senior Agent}
 \MonsterStatsDescription{
-    Merchant house senior agents are representatives of their merchant houses. The statistics block is for a human 4th-level bard/7rd-level dune trader.
+    Merchant house senior agents are representatives of their merchant houses. The statistics block is for a human 4th-level bard/7rd-level dune trader with the merchant archetype.
 
     Senior agents speak Common and their merchant house's language.
 }
@@ -611,11 +612,127 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
 
 * An agent has +2 insight bonus to \skill{Bluff} and \skill{Sleight of Hand} checks, +2 competence bonus to \skill{Gather Information} and \skill{Intimidate} checks, +3 competence bonus on \skill{Diplomacy} checks. An agent may take 10 on \skill{Bluff}, \skill{Diplomacy}, \skill{Gather Information}, \skill{Sense Motive}, and \skill{Sleight of Hand} checks even if stress and distractions would normally prevent him from doing so.
 
-% Junior Agent
-% - Bard 4/Dune Trader 3
+\BigTable{}{lXX}{
+& \tableheader Raider (raging)
+& \tableheader Raider Captain (raging) \\
+\cmidrule[0pt]{1-3}
+& \tableheader Humanoid (human)
+& \tableheader Humanoid (human) \\
 
-% Senior Agent
-% - Bard 4/Dune Trader 7
+\tableheader Hit Dice:
+		& 3d12+18 (31 hp)
+		& 6d12+24 (63 hp) \\
+\tableheader Initiative:
+		& +1
+		& +1 \\
+\tableheader Speed:
+		& 12 m (8 squares)
+		& 12 m (8 squares) \\
+\tableheader Armor Class:
+		& 11 (+1 Dex, +2 Con, $-2$ raging)
+		& 13 (+1 Dex, +4 chitin, $-2$ raging) \\
+\tableheader Base Attack/Grapple:
+		& +3/+7
+		& +6/+11 \\
+\tableheader Attack:
+		& Spear +5 melee (1d8+8/$\times$3)*; or spear +4 ranged (1d8+3/$\times$3)
+		& Spear +9 melee (1d8+11/$\times$3)*; or spear +7 ranged (1d8+4/$\times$3) \\
+\tableheader Full Attack:
+		& Spear +5 melee (1d8+8/$\times$3)*
+		& Spear +9/+4 melee (1d8+11/$\times$3)* \\
+\tableheader Space/Reach:
+		& 1.5 m/1.5 m
+		& 1.5 m/1.5 m \\
+\tableheader Special Attacks:
+		& Rage 1/day
+		& Pouncing rage, rage 2/day \\
+\tableheader Special Qualities:
+		& Bad reputation, uncanny dodge, wasteland sense
+		& Bad reputation, improved uncanny dodge, wasteland sense\\
+\tableheader Saves:
+		& Fort +5, Ref +2, Will +2
+		& Fort +8, Ref +4, Will +4 \\
+\tableheader Abilities:
+		& Str 15, Dex 13, Con 14, Int 10, Wis 12, Cha 8
+		& Str 16, Dex 13, Con 14, Int 10, Wis 12, Cha 8 \\
+\tableheader Skills:
+		& \skill{Autohypnosis} +6, \skill{Handle Animal} +4 (+6 involving mounts), \skill{Intimidate} +4, \skill{Listen} +8, \skill{Ride} +6, \skill{Spot} +3, \skill{Survival} +6
+		& \skill{Autohypnosis} +10, \skill{Handle Animal} +4 (+6 involving mounts), \skill{Intimidate} +4, \skill{Listen} +8, \skill{Ride} +10, \skill{Spot} +3, \skill{Survival} +13 \\
+\tableheader Feats:
+		& \feat{Alertness}\textsuperscript{B}, \feat{Cleave}, \feat{Endurance}\textsuperscript{B}, \feat{Power Attack}
+		& \feat{Alertness}\textsuperscript{B}, \feat{Endurance}\textsuperscript{B}, \feat{Power Attack}\textsuperscript{B}, \feat{Skill Focus} (\skill{Survival}), \feat{Track} \\
+\tableheader Environment:
+		& Any
+		& Any \\
+\tableheader Organization:
+		& Single, pair, squad (3--6 plus a raider captain), tribe (10--60 plus 150\% noncombatants plus 1--6 raider captains)
+		& Squad (single plus 3--6 raiders) \\
+\tableheader Challenge Rating:
+		& 2
+		& 5 \\
+\tableheader Treasure:
+		& Standard
+		& Standard \\
+\tableheader Alignment:
+		& Often chaotic neutral
+		& Often chaotic neutral \\
+\tableheader Advancement:
+		& By character class
+		& By character class \\
+\tableheader Level Adjustment:
+		& +0
+		& +0 \\
+\BigTableNote{3}{* Includes adjustments for \feat{Power Attack} feat.}\\
+}
+
+\subsubsection{Raider}
+\MonsterStatsDescription{
+	Raiders exist to prey on the weak, taking whatever they can from their victims. They attack caravans and pillage what they can. The statistics block is for a human 3rd-level barbarian with the raider archetype.
+
+	Raiders speak only Common.
+}
+
+Raiders rely on being stronger and in larger numbers than their prey and don't waste time by thinking too much about their tactics.
+
+A raider normally attacks using his \feat{Power Attack} feat, taking $-2$ penalty on his attack rolls, and gaining a +4 bonus on damage rolls.
+
+\textbf{Bad Reputation:} Raiders are easily recognizable wherever they go, be it for their posture, their facial tattoos, or their behavior. When a raider is in a settlement, they can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report their activity to the authorities.
+
+\textbf{Rage (Ex):} Once per day, a raider can enter a state of fierce rage that last for 7 rounds. At the end of his rage, the raider is fatigued for the duration of the encounter.
+
+\textbf{Uncanny Dodge (Ex):} A raider retains his Dexterity bonus to AC (if any) even if he is caught flat-footed or struck by an invisible attacker. However, he still loses his Dexterity bonus to AC if immobilized.
+
+\textbf{Wasteland Sense (Ex):} A raider can add his Constitution bonus (if any) as natural armor bonus on his Armor Class, and on Reflex saves made to avoid traps and natural hazards. He loses this bonus when he is wearing heavy armor or tower shields, when immobilized or helpless, or when carrying a medium or heavy load.
+
+
+\subsubsection{Raider Captain}
+\MonsterStatsDescription{
+	The information on the statistics block is for a human 6th-level barbarian with the raider archetype.
+}
+
+Captains usually lead a raiding squad into the wastelands, looking for new victims.
+
+A raider captain normally attacks using his \feat{Power Attack} feat, taking $-2$ penalty on his attack rolls, and gaining a +4 bonus on damage rolls.
+
+\textbf{Bad Reputation:} Raiders are easily recognizable wherever they go, be it for their posture, their facial tattoos, or their behavior. When a raider is in a settlement, they can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report their activity to the authorities.
+
+\textbf{Improved Uncanny Dodge (Ex):} A raider captain cannot be flanked; he retains his Dexterity bonus to AC regardless of being caught flat-footed or attacked by an invisible opponent. This defense is denied to the creature if it is attacked by a thief of 10th level or higher.
+
+\textbf{Pouncing Rage (Ex):} While in rage, a raider captain gains the pounce ability, allowing him to make a full attack at the end of a charge.
+
+\textbf{Rage (Ex):} Twice per day, a raider captain can enter a state of fierce rage that last for 7 rounds. At the end of his rage, the raider captain is fatigued for the duration of the encounter.
+
+\textbf{Uncanny Dodge (Ex):} A raider captain retains his Dexterity bonus to AC (if any) even if he is caught flat-footed or struck by an invisible attacker. However, he still loses his Dexterity bonus to AC if immobilized.
+
+\textbf{Wasteland Sense (Ex):} A raider captain can add his Constitution bonus (if any) as natural armor bonus on his Armor Class, and on Reflex saves made to avoid traps and natural hazards. He loses this bonus when he is wearing heavy armor or tower shields, when immobilized or helpless, or when carrying a medium or heavy load.
+
+
+
+%OK Junior Agent
+%OK - Bard 4/Dune Trader 3
+
+%OK Senior Agent
+%OK - Bard 4/Dune Trader 7
 
 % Royal Defiler
 % - Defiler 7
@@ -644,11 +761,11 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
 % City Thug
 % - Thief 2
 
-% Raider
-% - Barbarian 2
+%OK Raider
+%OK - Barbarian 2
 
-% Raider Leader
-% - Barbarian 6
+%OK Raider Leader
+%OK - Barbarian 6
 
 % Nomad
 % - Scout 2

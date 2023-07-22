@@ -101,7 +101,7 @@ Psychoportation + Telepathy
 None:
 OK Bestow Power
 	> LEVEL 4
-Dispel Psionics
+NO Dispel Psionics
 	> LEVEL 6
 OK Null Psionics Field
 	> LEVEL 11 + PSYCHIC NOISE

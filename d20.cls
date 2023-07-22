@@ -538,7 +538,7 @@
 		#2
 	\end{tabular}
 }
-\newcommand{\WarriorTable}[3][ll *{3}{Z{14mm}} L]{
+\newcommand{\WarriorTable}[3][ll *{3}{Z{11mm}} L]{
 	\BigTableBottom{#2}{#1}{
 		  \tableheader Level
 		& \tableheader Base Attack Bonus
@@ -607,14 +607,14 @@
 \newcommand{\SpellcasterTable}[4][10]{
 	\BigTableBottom{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
 		\rowcolor{white}
-		\multirow[b]{2}{6mm}{\tableheader Level}
-		& \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus}
-		& \multirow[t]{3}{5mm}{\tableheader Fort\\ Save}
-		& \multirow[t]{2}{5mm}{\tableheader Ref\\ Save}
-		& \multirow[t]{3}{5mm}{\tableheader Will\\ Save}
-		& \multirow[b]{2}{*}{\tableheader Special}
-		& \multicolumn{#1}{c}{\tableheader Spells per day}\\
+		& & & & & & \multicolumn{#1}{c}{\tableheader Spells per day}\\
 		\cmidrule[0.5pt]{7-\Sum{6}{#1}}
+		\multirow[b]{-2}{6mm}{\tableheader Level}
+		& \multirow[b]{-2}{2cm}{\tableheader Base\\ Attack Bonus}
+		& \multirow[t]{-2}{5mm}{\tableheader Fort\\ Save}
+		& \multirow[t]{-2}{5mm}{\tableheader Ref\\ Save}
+		& \multirow[t]{-2}{5mm}{\tableheader Will\\ Save}
+		& \multirow[b]{-2}{*}{\tableheader Special}
 		#4
 	}
 }
@@ -623,7 +623,7 @@
 & \tableheader #1 \ifnum#1<#2 \expandafter\SpellLevelHeaderRec\expandafter{\Sum{#1}{1}}{#2}\fi%
 }
 \newcommand{\SpellHeader}[2][0]{
-&&&&& \SpellLevelHeaderRec{#1}{#2}
+\SpellLevelHeaderRec{#1}{#2}
 }
 % \newcommand{\HalfSpellcasterTable}[3][1cm]{
 % 	\BigTableBottom{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
