@@ -86,7 +86,7 @@ Psychokinesis + Psychoportation
 		> DIMENSION DOOR + INERTIAL BARRIER
 
 Psychometabolism + Telepathy
-	= Mindlink, Thieving
+	OK= Mindlink, Thieving
 		> LIFE-DRAINING + MINDLINK
 	OK= Metaconcert
 		> LEVEL 9 + ADRENALIN CONTROL + MINDLINK
@@ -105,7 +105,7 @@ NO Dispel Psionics
 	> LEVEL 6
 OK Null Psionics Field
 	> LEVEL 11 + PSYCHIC NOISE
-Power Leech
+OK Power Leech
 	> LEVEL 9 + THIEVING MINDLINK
 OK Psychic Surgery
 	> LEVEL 13
