@@ -494,24 +494,24 @@
 	#4\end{tabularx}
 	\ifx&#2&\else\end{table}\fi
 }
-\newcommand{\TransparentTable}[4][\small]{
-	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
-	#1
+\newcommand{\TransparentTable}[4][h!]{
+	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	\small
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
-\newcommand{\Table}[4][\small]{
-	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
-	#1
+\newcommand{\Table}[4][h!]{
+	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	\small
 	\rowcolors{2}{white}{TableColor}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
 	\ifx&#2&}\else\end{table}\fi
 }
-\newcommand{\TableOdd}[4][\small]{
-	\ifx&#2&{\noindent\else\begin{table}[h!]\caption{\label{tab:#2}#2}\fi
-	#1
+\newcommand{\TableOdd}[4][h!]{
+	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	\small
 	\rowcolors{2}{TableColor}{white}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
