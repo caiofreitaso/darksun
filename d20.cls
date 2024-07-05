@@ -649,7 +649,7 @@
 	}
 }
 
-\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{4}{Z{5mm}} Z{9mm} L l]{
+\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{3}{Z{5mm}} Z{6mm} Z{9mm} L l]{
 	\BigTableBottom{#2}{#1}{
 		\tableheader Level
 		& \tableheader Base \hskip3em Attack Bonus

@@ -25,7 +25,6 @@ The Encounter Level informs the budget you have for the encounter. Use \tabref{E
 
 Encounters should not be based on individual challenges (creatures, skill challenges, traps, or hazards) with Challenge Rating less than the APL$-6$, since this difference in level brings no challenge for the party. You can use such low-level challenges to enhance the environment, e.g. servants for a king, traps to delay the PCs. However, they should not be the focus of the encounter.
 
-
 \Table{Encounter Budget}{CC}{
   \tableheader Challenge Rating
 & \tableheader Points \\
@@ -42,7 +41,9 @@ APL  +2  & 16 \\
 APL  +3  & 24 \\
 }
 
-For example, let's say you want your group of three 12th-level PCs to face a hard encounter. The PCs have an APL of 11, and \tabref{Encounter Design} tells you that the appropriate encounter level for your APL 11 group would be EL 13. Given the options, you decide to use a pack of dune reapers: three dune reaper drones (CR 6), two dune reaper warriors (CR 7), and a dune reaper matron (CR 8). %To improve the environment, you also add to the encounter five dune reaper drones (CR 6). They are not supposed to be the actual problems for the PCs, but they complete the feel of a dune reaper pack.
+For example, let's say you want your group of three 12th-level PCs to face a hard encounter. Their APL is 11, and \tabref{Encounter Design} tells you that a hard encounter would have EL 13. \tabref{Encounter Budget} gives you 16 points to distribute between monsters between CR 5 to CR 13. You decide to use a pack of dune reapers. Three drones (CR 6) cost 6 points, two warriors (CR 7) cost 6 points, and a matron (CR 8) costs 4 points, for a total of 16 points.
+
+ %To improve the environment, you also add to the encounter five dune reaper drones (CR 6). They are not supposed to be the actual problems for the PCs, but they complete the feel of a dune reaper pack.
 
 % \subsection{Awarding Experience}
 % Characters advance in level by defeating monsters, overcoming challenges, and completing adventures---in so doing, they earn experience points (XP for short). Although you can award experience points as soon as a challenge is overcome, this can quickly disrupt the flow of gameplay. It's easier to simply award experience points at the end of a game session---that way if a character earns enough XP to gain a level, the player won't disrupt the game while they level up their character. They can instead take the time between game sessions to do that.
@@ -56,3 +57,181 @@ For example, let's say you want your group of three 12th-level PCs to face a har
 % Abstract XP: Simply add up the individual XP awards listed for a group of the appropriate size. In this case, the division is done for you---you need only total up all the awards to determine how many XP to award to each PC.
 
 % Story Awards: Feel free to award Story Awards when players conclude a major storyline or make an important accomplishment. These awards should be worth double the amount of experience points for a CR equal to the APL. Particularly long or difficult story arcs might award even more, at your discretion as GM.
+
+\subsection{Random Wilderness Encounters}
+When exploring the wastelands, the adventurers may have a chance encounter with anything in their way. Refer to \tabref{Chance of Wilderness Encounter}, determining the type of terrain in question and then rolling d\% at the end of every hour the PCs spend in the area to see if an encounter occurs.
+
+\Table{Chance of Wilderness Encounter}{lR}{
+  \tableheader Terrain Type\footnotemark[1]
+& \tableheader d\% Chance \\
+Deep silt\footnotemark[2]      &  2\% per hour \\
+Silt\footnotemark[2]           &  3\% per hour \\
+Salt flat\footnotemark[2]      &  3\% per hour \\
+Sandy waste\footnotemark[2]    &  5\% per hour \\
+Stony barren\footnotemark[2]   &  5\% per hour \\
+Scrub plain\footnotemark[2]    &  5\% per hour \\
+Verdant belt\footnotemark[2]   &  5\% per hour \\
+Rocky badlands\footnotemark[2] &  6\% per hour \\
+Boulder field\footnotemark[2]  &  6\% per hour \\
+Mountain\footnotemark[2]       &  7\% per hour \\
+Forest                         &  8\% per hour \\
+Forest Ridge                   & 10\% per hour \\
+Mud flat                       & 12\% per hour \\
+\TableNote{2}{1 Roads have additional 3 percent points per hour, and trails have additional 2 percent points per hour.} \\
+\TableNote{2}{2 Do not roll for random encounters between 11:00 and 14:00.} \\
+}
+
+\subsubsection{Encounter Tables}
+One alternative for running these encounters is creating a table with appropriate leveled encounters for your party, from easy (APL $-1$) to epic (APL +3). These encounters can be creatures native to the current environment or more general encounters, such as a band of raiders. Single creatures are easy entries for those tables, as their Challenge Rating matches their Encounter Level. Encounters with multiple creatures require you to be mindful of the difficulty of each encounter. Encounter tables should have total average Encounter Level compatible with the Average Party Level.
+
+\Table{Sample Verdant Belt Encounter Table (APL 12)}{cXc}{
+  \tableheader d\%
+& \tableheader Encounter
+& \tableheader Encounter Level \\
+ 01--04 &  5 ettins + 1 wyvern       & 11 \\
+ 05--09 &  6 dire lion (11 HD)       & 11 \\
+ 10--13 &  6 wyverns                 & 11 \\
+ 14--17 &  3 chimeras                & 11 \\
+ 18--21 &  2 behir                   & 11 \\
+ 22--25 &  2 slimahacc               & 11 \\
+ 26--30 &  5 ettins + 2 wyvern       & 12 \\
+ 31--37 &  8 dire lion (11 HD)       & 12 \\
+ 38--43 &  2 dire lion (17 HD, Huge) & 12 \\
+ 44--48 &  4 chimeras                & 12 \\
+ 49--53 &  1 giant, plains           & 12 \\
+ 54--58 &  1 korinth                 & 12 \\
+ 59--63 &  3 slimahacc               & 12 \\
+ 64--69 &  6 dire lion (14 HD)       & 13 \\
+ 70--75 &  6 chimeras                & 13 \\
+ 76--81 &  1 styr                    & 13 \\
+ 82--87 &  4 slimahacc               & 13 \\
+ 88--89 &  8 dire lion (14 HD)       & 14 \\
+ 90--91 &  8 chimeras                & 14 \\
+ 92--93 &  5 slimahacc               & 14 \\
+ 94--95 &  2 giant, plains           & 14 \\
+ 96--97 &  6 dire lion (17 HD, Huge) & 15 \\
+   98   & 12 chimeras                & 15 \\
+   99   &  3 giant, plains           & 15 \\
+  100   &  1 drake, fire             & 15 \\
+}
+
+The \tabref{Sample Verdant Belt Encounter Table (APL 12)} was built by removing extra steps for randomization, such as having to roll additional dice to know the number of enemies. This can give you more control on the Encounter Level, but it can also hide the actual probabilities for each type of encounter. A different approach can be done to simplify the number of entries, but this will remove a bias towards the Encounter Level and can lead to greater risks for the party. The \tabref{Simplified Verdant Belt Encounter Table (APL 12)} has less entries, but now it doesn't has explicit encounters of 14th level.
+
+
+\Table{Simplified Verdant Belt Encounter Table (APL 12)}{cXc}{
+  \tableheader d\%
+& \tableheader Encounter
+& \tableheader Average EL \\
+ 01--04 &  2 behir                   & 11 \\
+ 05--16 &  1d3+5 dire lion (11 HD)   & 11 \\
+ 17--25 &  5 ettins + 1d2 wyvern     & 11 \\
+ 26--29 &  6 wyverns                 & 11 \\
+
+ 30--35 &  2 dire lion (17 HD, Huge) & 12 \\
+ 36--40 &  1 korinth                 & 12 \\
+ 41--57 &  1d4+1 slimahacc           & 12 \\
+
+ 58--75 &  3d4 chimeras              & 13 \\
+ 76--83 &  1d3+5 dire lion (14 HD)   & 13 \\
+ 84--91 &  1d3 giant, plains         & 13 \\
+ 92--97 &  1 styr                    & 13 \\
+
+ 98--99 &  6 dire lion (17 HD, Huge) & 15 \\
+  100   &  1 drake, fire             & 15 \\
+}
+
+\subsection{Random Urban Encounters}
+
+\Table{Random Urban Encounters}{X*3c}{
+& \multicolumn{3}{c}{\tableheader d\%} \\
+\cmidrule[0pt]{2-4}
+  \tableheader Encounter Type
+& \tableheader Daytime
+& \tableheader Evening
+& \tableheader Midnight \\
+
+Accident & 01--25  & 01--10  & 01--10  \\
+Guards   & 26--36  & 11--20  & 11--30  \\
+Trouble  & 37--59  & 21--73  & 31--88  \\
+Misc.    & 60--100 & 74--100 & 89--100 \\
+
+}
+
+% Daytime
+%   - 1 templar (can call 3 more for backup)
+%   - 4 barbarians (just passing, mild harass)
+
+%   - 1 thief (pickpocket)
+%   - 6 thieves (harass and rob)
+%   - 5 thieves (gang members)
+
+%   - 4 gladiators (patrolling merchant house)
+%   - 3 fighters (patrolling merchant house, may attack)
+%   - ?? fighters
+
+%   - 2 wizards (interested in magical items)
+%   - 6 settlers (anti-magic item cultists)
+
+%   - 1 ranger (tracking the group by mistake)
+
+%   - 2 settlers (aristocrats followed by thugs)
+%   - 2 settlers (aristocrats lost, looking for a restaurant)
+%   - 2 settlers (aristocrats want to stop party)
+
+%   - 2d4 settlers (friendly, hostile, or abusive; no weapons or armor)
+%   - 1 settler (crazy; just rants)
+%   - 1 settler (crazy; you are from one of the moons)
+%   - 1 settler (crazy; screams and passes out)
+
+%   - 2 clerics (lunching)
+
+%   - 3 bards (gathering stories from people on the street)
+%   - 3 bards (invite to their gig)
+%   - 1 high-level bard ()
+
+% Evening
+
+
+
+
+% TROUBLE
+% GUARD
+% ACCIDENT
+% Miscellaneous
+
+
+% - Crime
+%   - Corpse
+%   - Bullies
+%   - Muggers
+%   - Pickpockets
+%   - Brawl/street fight/gang war in progress
+%   - Robbery in progress
+%   - Escaped prisoner
+% - Corruption
+%   - Guard harassment
+% - Art
+%   - Spectacle
+%   - Contest in progress
+% - Accident
+%   - Lost item
+%   - Lost child
+%   - Overturned/runaway cart
+%   - Mistaken identity
+%   - Fire (building, ship, etc.)
+%   - Construction accident
+%   - Spell gone awry
+% - Specific Encounter
+%   - Guards need help
+%   - Employment offer
+%   - Admirer
+%   - Animal
+%   - Monster
+%   - Prominent personage
+
+
+% templars
+% thieves
+
+
+\blankpage
