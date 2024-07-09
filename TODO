@@ -9,7 +9,7 @@ CAMPAIGNS
 OK	- Skill Encounters
 	- Treasure
 	- Demographics
-	- Urban Encounters
+OK	- Urban Encounters
 
 
 OK	TERRAIN
@@ -88,7 +88,7 @@ OK	- Raise dead, resurrection, true resurrection are necromancy
 		- 7th-level: One CR 10, two CR 9, or four times 6th-level
 		- 8th-level: One CR 11, or double 7th-level
 		- 9th-level: One CR 12, or double 8th-level
-	- Summon monsters: dragons, elementals, magical beasts, outsiders, undead, vermin
+	- Summon monsters: dragons, elementals, magical beasts, undead, vermin
 	- Summon nature ally: animals, elementals, fey, magical beasts, plants, vermin
 - Heighten spells built-in
 	- damage-based spells (+1 save DC and +2 die per spell level)

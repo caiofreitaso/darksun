@@ -140,98 +140,127 @@ The \tabref{Sample Verdant Belt Encounter Table (APL 12)} was built by removing 
   100   &  1 drake, fire             & 15 \\
 }
 
+\Figure*{t}{images/wizard-4.2.png}
 \subsection{Random Urban Encounters}
+The urban environment has chance encounters according to the settlement size. Refer to \tabref{Chance of Urban Encounter}, determining the town size and then rolling d\% at the end of every day the PCs spend in the settlement to see if an encounter occurs. These encounters represent anything worth the character's attention---routine behavior is not an encounter, e.g. a merchant selling their wares.
 
-\Table{Random Urban Encounters}{X*3c}{
-& \multicolumn{3}{c}{\tableheader d\%} \\
-\cmidrule[0pt]{2-4}
-  \tableheader Encounter Type
-& \tableheader Daytime
-& \tableheader Evening
-& \tableheader Midnight \\
+\textit{Note:} Wilderness encounters have a chance per \emph{hour}, while urban encounters have a chance per \emph{day}.
 
-Accident & 01--25  & 01--10  & 01--10  \\
-Guards   & 26--36  & 11--20  & 11--30  \\
-Trouble  & 37--59  & 21--73  & 31--88  \\
-Misc.    & 60--100 & 74--100 & 89--100 \\
+\textbf{Encounter Level:} The base level for NPCs in an urban encounter is 6th-level. Refer to \tabref{Chance of Urban Encounter} and \tabref{Time of Day Modifiers}, to determine to total modifier. For example, a templar guard encounter in a small city (+1) past midnight (+2) would be a 9th-level templar.
 
+\Table{Chance of Urban Encounter}{XcR}{
+  \tableheader Town Size
+& \tableheader Level Modifier
+& \tableheader d\% Chance \\
+Small tribe & $-4$ &  1\% per day \\
+Large tribe & $-3$ &  2\% per day \\
+Village     & $-2$ &  3\% per day \\
+Small town  & $-1$ &  4\% per day \\
+Large town  &  +0  &  6\% per day \\
+Small city  &  +1  &  8\% per day \\
+Large city  &  +2  & 12\% per day \\
+Metropolis  &  +3  & 16\% per day \\
+Megalopolis &  +4  & 20\% per day \\
 }
 
-% Daytime
-%   - 1 templar (can call 3 more for backup)
-%   - 4 barbarians (just passing, mild harass)
+\Table{Time of Day Modifiers}{XCR}{
+  \tableheader Time of Day
+& \tableheader Level Modifier
+& \tableheader NPC Attitude \\
+Daytime  & +0 & Indifferent \\
+Evening  & +1 & Unfriendly  \\
+Midnight & +2 & Hostile     \\
+}
 
-%   - 1 thief (pickpocket)
-%   - 6 thieves (harass and rob)
-%   - 5 thieves (gang members)
-
-%   - 4 gladiators (patrolling merchant house)
-%   - 3 fighters (patrolling merchant house, may attack)
-%   - ?? fighters
-
-%   - 2 wizards (interested in magical items)
-%   - 6 settlers (anti-magic item cultists)
-
-%   - 1 ranger (tracking the group by mistake)
-
-%   - 2 settlers (aristocrats followed by thugs)
-%   - 2 settlers (aristocrats lost, looking for a restaurant)
-%   - 2 settlers (aristocrats want to stop party)
-
-%   - 2d4 settlers (friendly, hostile, or abusive; no weapons or armor)
-%   - 1 settler (crazy; just rants)
-%   - 1 settler (crazy; you are from one of the moons)
-%   - 1 settler (crazy; screams and passes out)
-
-%   - 2 clerics (lunching)
-
-%   - 3 bards (gathering stories from people on the street)
-%   - 3 bards (invite to their gig)
-%   - 1 high-level bard ()
-
-% Evening
+\textbf{NPC Attitude:} As time passes by, the base attitude of an encounter degrades (see \skill{Diplomacy} skill). Evening encounters tend to be more hostile than daytime encounters, but they are usually not aggressive (at first). Midnight encounters are always hostile towards the party---nobody with good intentions is out at this time.
 
 
+\Table{Urban Encounter Table}{*3cX}{
+\multicolumn{3}{c}{\tableheader d\%} & \\
+\cmidrule[0.5pt]{1-3}
+  \tableheader Daytime
+& \tableheader Evening
+& \tableheader Midnight
+& \tableheader Encounter Type \\
+  01   & 01--05 & 01--09 & Templar guard         \\
+02--06 & 06--10 & 10--20 & Noble guard           \\
+07--10 & 11--16 & 21--27 & Nomads                \\
+11--15 & 17--23 & 28--36 & Thieves               \\
+16--17 & 24--28 & 37--45 & Addicts               \\
+18--27 & 29--39 & 46--55 & Mercenaries           \\
+28--30 & 40--44 & 56--69 & Thugs                 \\
+31--33 & 45--46 &  ---   & Mages                 \\
+34--35 & 47--51 & 70--73 & Inquisitors           \\
+36--37 & 52--55 & 74--75 & Tracker               \\
+38--42 & 56--57 &  ---   & Nobles                \\
+43--47 & 58--62 &   76   & Storytellers          \\
+48--54 & 63--68 & 77--78 & Locals                \\
+55--58 & 69--73 & 79--83 & Crazy or street fight \\
+59--61 & 74--77 & 84--86 & Wanderers             \\
+62--66 & 78--81 &  ---   & Artists               \\
+67--72 & 82--86 & 87--89 & Gang                  \\
+73--75 & 87--88 &  ---   & Celebrity             \\
+ ---   & 89--90 &   90   & Major criminal        \\
+76--80 & 91--92 & 91--92 & Found item            \\
+81--83 &  ---   &  ---   & Lost child            \\
+84--87 & 93--94 &  ---   & Overturned cart       \\
+88--90 &   95   & 93--94 & Fire                  \\
+91--95 & 96--97 & 95--96 & Construction accident \\
+96--99 & 98--99 & 97--99 & Monster               \\
+ 100   &  100   &  100   & Spell gone awry       \\
+}
 
+\subsubsection{Encounter Types}
+The base level for NPCs in an urban encounter is 6th-level.
 
-% TROUBLE
-% GUARD
-% ACCIDENT
-% Miscellaneous
+\textbf{Templar Guard:} A templar demands documents.
 
+\textbf{Noble Guard:} Four gladiators patrolling the area.
 
-% - Crime
-%   - Corpse
-%   - Bullies
-%   - Muggers
-%   - Pickpockets
-%   - Brawl/street fight/gang war in progress
-%   - Robbery in progress
-%   - Escaped prisoner
-% - Corruption
-%   - Guard harassment
-% - Art
-%   - Spectacle
-%   - Contest in progress
-% - Accident
-%   - Lost item
-%   - Lost child
-%   - Overturned/runaway cart
-%   - Mistaken identity
-%   - Fire (building, ship, etc.)
-%   - Construction accident
-%   - Spell gone awry
-% - Specific Encounter
-%   - Guards need help
-%   - Employment offer
-%   - Admirer
-%   - Animal
-%   - Monster
-%   - Prominent personage
+\textbf{Nomads:} Four scouts from a douar stationed nearby.
 
+\textbf{Thieves:} Five thieves looking for trouble.
 
-% templars
-% thieves
+\textbf{Addicts:} Six thieves want money for their drugs. In the daytime, they try to pickpocket (\skill{Spot} DC 15 + \onehalf their level).
 
+\textbf{Mercenaries:} Three fighters clearly doing some operation for a merchant house.
 
-\blankpage
+\textbf{Thugs:} Six barbarians looking for trouble and money.
+
+\textbf{Mages:} Two wizards want to trade magical items.
+
+\textbf{Inquisitors:} Six templars searching for magical items.
+
+\textbf{Tracker:} A scout or bloodhound\textsuperscript{CAd} is tracking someone. Roll 1d6. On 1--2: they are hassling an informant concerning the whereabouts of someone; 3--4: they are shadowing someone ahead of you; 5--6: they will stop the party to ask whether about the person they are following.
+
+\textbf{Nobles:} 1d3+1 nobles headed either to a restaurant or home. Roll 1d10. On 1--4: they are being followed by thugs (see above); 5--8: they are lost; 9--10: they fear the party and will call for noble guard (see above).
+
+\textbf{Storytellers:} 1d3+1 bards are doing interviews. The subject vary depending on recent events. They have 50\% chance of following the party for more stories.
+
+\textbf{Locals:} 1d6+1 commoners stop the party out of curiosity.
+
+\textbf{Crazy or Street Fight:} In the daytime, the party encounters a madman acting as if under the \spell{confusion} spell. At night, the party encounters a interhouse dispute.
+
+\textbf{Wanderers:} Five elemental clerics (wanderers, see \chapref{Prestige Classes}) attending clerical duties. At night, they have 50\% chance of thinking the party is a problem.
+
+\textbf{Artists:} 1d3+2 bards with two gladiators as bodyguards on the way to a gig. They have 40\% chance of inviting the party to join them.
+
+\textbf{Gang:} Four bards wearing very distinct vestments. They will take offense with any comment about their appearance. They have 20\% chance of inviting the party to join them.
+
+\textbf{Celebrity:} A famous bard or gladiator walking on the street. 10\% chance of allowing the party to tag along.
+
+\textbf{Major Criminal:} Four heavily armed fighters are unloading drugs for a merchant house. 20\% chance they see the party as witness.
+
+\textbf{Found Item:} A valuable item, such as a map or jewelry.
+
+\textbf{Lost Child:} An adult calls for help about a missing child.
+
+\textbf{Overturned Cart:} Crodlus pulling a cart are racing chaotically through the city streets. The crodlus will overrun the party. A \skill{Handle Animal} or wild empathy check can help stop them.
+
+\textbf{Fire:} A fire in the city, spreading as a wildfire (see Hazards).
+
+\textbf{Construction Accident:} Falling objects from a construction site, a fall through unsafe scaffolding, or any similar mishap. Adapt a mechanical trap for the encounter (see Traps).
+
+\textbf{Monster:} A wilderness encounter from the surrounding environment rampages through the city. Use a wilderness encounter of appropriate level for the party.
+
+\textbf{Spell Gone Awry:} The aftermath of illegal use of spells in the street, such as a summoned creature or a \spell{lightning bolt}.
