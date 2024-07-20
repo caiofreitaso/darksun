@@ -30,22 +30,243 @@ In order to cast this spell, the clerics must meet the conditions for casting:
 \item The clerics must be in contact with the paraelements, or with each of their own elements.
 \item The clerics must be in physical contact with each other, by joining hands for example.
 \item Both clerics must perform whatever somatic, verbal, or material components necessary for the spell.
-\item The spell's casting time is doubled (see \tabref{Combine Casting}).
+% \item The spell's casting time is doubled (see \tabref{Combine Casting}).
 \item Both clerics use the domain slot of that spell level.
 \end{itemize*}
 
-\Table{Combine Casting}{XX}{
-\tableheader Original Casting Time & \tableheader New Casting Time\\
-1 swift action & 1 move action \\
-1 standard action & 1 full round \\
+The clerics make a combined casting by one of them choosing the delay action. In doing so, the one with higher initiative elects to act at the other cleric's initiative. Until the spell is cast, the one who delayed action takes no other action during that round. Casting a spell this way takes double the time a normal spell would take (see \tabref{Combined Casting}).
+
+\Table{Combined Casting}{XX}{
+  \tableheader Original Casting Time
+& \tableheader New Casting Time \\
+1 swift action         & 1 move action   \\
+1 standard action      & 1 full round    \\
 1 full round or longer & Double the time \\
 }
 
-If the clerics are of the same level but have different Wisdom modifiers, the spell DC is based on the lower modifier. If the clerics have different levels, the effects of the spell are based on the lower level cleric, such as the spell's range, damage, number of targets and the spell's DC.
+If the clerics are of the same level but have different Wisdom modifiers, the spell DC is based on the lower modifier. If the clerics have different levels, the effects of the spell are based on the lower level cleric, such as the spell's range, damage, number of targets and the spell's DC. For all purposes, both clerics are treated as the caster, e.g. personal range spells, or \spell{spell turning} effects.
 
 For example, Herak is a 9th-level fire cleric and Tella is a 7th-level earth priest. They want to combine powers and cast a spell of the Paraelemental Plane of Magma. Since they are standing in a rich field, Tella is in contact with her element, but there is no fire. Herak casts \spell{continual flame} to create magical fire to surround them. The first condition is met.
 
 They decide to use the \spell{oil spray} spell. The clerics link hands, point their fingers at a small patch of earth and watch as a fountain of flammable oil spouts up. Since \spell{oil spray} is a 4th-level spell, both of them use their domain spell slot of 4th-level. They can still cast more combined spells depending on the domain spell slots available for both of them.
+
+
+\BigTableBottom{Divine Patrons and Supplemental Domains}{lllcXl}{
+  \tableheader Name
+& \tableheader Type
+& \tableheader Class
+& \tableheader Alignment
+& \tableheader Domains
+& \tableheader Favored Weapon \\
+
+Air
+& Element
+& Cleric
+& ---
+&
+    Air,
+    Forecasting,
+    Freedom,
+    Liberation\textsuperscript{CD},
+    Pact\textsuperscript{CD}
+& Short bow \\
+
+Earth
+& Element
+& Cleric
+& ---
+&
+    Agriculture,
+    Community\textsuperscript{CD},
+    Cycle,
+    Earth,
+    Pact\textsuperscript{CD}
+& Quarterstaff \\
+
+Fire
+& Element
+& Cleric
+& ---
+&
+    Cleansing,
+    Competition\textsuperscript{CD},
+    Fire,
+    Pact\textsuperscript{CD},
+    Wrath
+& Longsword \\
+
+Water
+& Element
+& Cleric
+& ---
+&
+    Creation\textsuperscript{CD},
+    Pact\textsuperscript{CD},
+    Purity,
+    Replenishment,
+    Water
+& Spear \\
+
+Magma
+& Paraelement
+& Cleric
+& ---
+&
+    Drought,
+    Fate\textsuperscript{CW},
+    Magma,
+    Pact\textsuperscript{CD}
+& Battleaxe \\
+
+Rain
+& Paraelement
+& Cleric
+& ---
+&
+    Growth,
+    Pact\textsuperscript{CD},
+    Rain,
+    Weather\textsuperscript{CD}
+& Spear \\
+
+Silt
+& Paraelement
+& Cleric
+& ---
+&
+    Pact\textsuperscript{CD},
+    Pestilence\textsuperscript{CD},
+    Silt,
+    Thirst
+& Scythe \\
+
+Sun
+& Paraelement
+& Cleric
+& ---
+&
+    Mirage,
+    Pact\textsuperscript{CD},
+    Purification\textsuperscript{CD},
+    Sun
+& Heavy mace \\
+
+Abalach-Re
+& Sorcerer-Monarch
+& Templar
+& CE
+&
+    Chaos,
+    Charm,
+    Domination\textsuperscript{CD}
+    % Tyranny\textsuperscript{CW}
+& Dagger \\
+
+Andropinis
+& Sorcerer-Monarch
+& Templar
+& LE
+&
+    Law,
+    Nobility,
+    Planning\textsuperscript{CW}
+& Dagger \\
+
+Borys
+& Sorcerer-Monarch
+& Templar
+& LE
+&
+    Destruction,
+    Inquisition\textsuperscript{CD},
+    Protection
+& Short sword \\
+
+Daskinor
+& Sorcerer-Monarch
+& Templar
+& CE
+&
+    Chaos,
+    Domination\textsuperscript{CD},
+    Madness
+    % Tyranny\textsuperscript{CW}
+& Dagger \\
+
+Dregoth
+& Sorcerer-Monarch
+& Templar
+& CE
+&
+    Death,
+    Destruction,
+    Tyranny\textsuperscript{CW}
+& Longsword \\
+
+Hamanu
+& Sorcerer-Monarch
+& Templar
+& LE
+&
+    Courage\textsuperscript{CW},
+    Strength,
+    War
+& Longsword \\
+
+
+Kalak
+& Sorcerer-Monarch
+& Templar
+& NE
+&
+    Magic,
+    Mysticism\textsuperscript{CD},
+    Trickery
+& Dagger \\
+
+Lalali-Puy
+& Sorcerer-Monarch
+& Templar
+& LE
+&
+    Animal,
+    Plant,
+    Summoner\textsuperscript{CD}
+& Spear \\
+
+Nibenay
+& Sorcerer-Monarch
+& Templar
+& LE
+&
+    Magic,
+    Mind,
+    Mysticism\textsuperscript{CD}
+& Longsword \\
+
+Oronis
+& Sorcerer-Monarch
+& Templar
+& NG
+&
+    Knowledge,
+    Planning\textsuperscript{CW},
+    Protection
+& Quarterstaff \\
+
+Tectuktitlay
+& Sorcerer-Monarch
+& Templar
+& NE
+&
+    Courage\textsuperscript{CW},
+    Glory,
+    Strength
+& Dagger \\
+
+\BigTableNote{6}{\textit{Special:} Air and rain wanderers may choose the Celerity\textsuperscript{CD} domain instead of the Travel domain.}\\
+}
+
 
 \subsection{Templars}
 Templars cast divine spells, but they do not prepare their spells. A templar's class level limits the number of spells he can cast. %His high Charisma score might allow him to cast a few extra spells. A templar must have a Charisma score of at least 10 + a spell's level to cast the spell.
@@ -65,3 +286,54 @@ Divine spellcasters most frequently gain new spells in one of the following two 
 \textbf{Spells Gained at a New Level:} Characters who can cast divine spells undertake a certain amount of study between adventures. Each time such a character receives a new level of divine spells, he or she learns new spells from that level automatically.
 
 \textbf{Independent Research:} A divine spellcaster also can research a spell independently, much as an arcane spellcaster can. Only the creator of such a spell can prepare and cast it, unless he decides to share it with others.
+
+\subsection{Domains From Other Sources}
+The \emph{Complete Divine} and \emph{Complete Warrior} supplements introduce new domains. While not all domains from those supplements fit the {\tableheader Dark Sun} theme, \tabref{Divine Patrons and Supplemental Domains} shows all domains each divine patron provides.
+
+\textbf{Domain Equivalencies:} In order to select domain feats\textsuperscript{CC}, a character must choose a domain within their patron's sphere of influence. The following table provides equivalencies for all domains granted by divine patrons of {\tableheader Dark Sun}. This list differs from the \emph{Complete Champion} supplement in some cases, so we advocate using this list as reference instead.
+
+\Table{Supplemental Domain Equivalencies}{lXX}{
+  \tableheader Class
+& \tableheader Domain
+& \tableheader Equivalent Domain Feat \\
+Cleric & Agriculture   & Plant Devotion\textsuperscript{CC} \\
+Cleric & Cleansing     & Strength Devotion\textsuperscript{CC} \\
+Cleric & Cycle         & Death Devotion\textsuperscript{CC} \\
+Cleric & Decay         & Destruction Devotion\textsuperscript{CC} \\
+Cleric & Drought       & Death Devotion\textsuperscript{CC} \\
+Cleric & Forecasting   & Air Devotion\textsuperscript{CC} \\
+Cleric & Freedom       & Luck Devotion\textsuperscript{CC} \\
+Cleric & Growth        & Animal Devotion\textsuperscript{CC} \\
+Cleric & Magma         & Fire Devotion\textsuperscript{CC} \\
+Cleric & Mirage        & Trickery Devotion\textsuperscript{CC} \\
+Cleric & Purity        & Protection Devotion\textsuperscript{CC} \\
+Cleric & Rain          & Water Devotion\textsuperscript{CC} \\
+Cleric & Replenishment & Healing Devotion\textsuperscript{CC} \\
+Cleric & Silt          & Earth Devotion\textsuperscript{CC} \\
+Cleric & Wrath         & War Devotion\textsuperscript{CC} \\
+Cleric & Community\textsuperscript{CD}    & Protection Devotion\textsuperscript{CC} \\
+Cleric & Competition\textsuperscript{CD}  & War Devotion\textsuperscript{CC} \\
+Cleric & Creation\textsuperscript{CD}     & Healing Devotion\textsuperscript{CC} \\
+Cleric & Fate\textsuperscript{CW}         & Luck Devotion\textsuperscript{CC} \\
+Cleric & Liberation\textsuperscript{CD}   & Good Devotion\textsuperscript{CC} \\
+Cleric & Pact\textsuperscript{CD}         & Protection Devotion\textsuperscript{CC} \\
+Cleric & Pestilence\textsuperscript{CD}   & Destruction Devotion\textsuperscript{CC} \\
+Cleric & Purification\textsuperscript{CD} & Healing Devotion\textsuperscript{CC} \\
+Cleric & Weather\textsuperscript{CD}      & Air Devotion\textsuperscript{CC} \\
+
+Templar & Charm         & Trickery Devotion\textsuperscript{CC} \\
+Templar & Glory         & Sun Devotion\textsuperscript{CC} \\
+Templar & Madness       & Chaos Devotion\textsuperscript{CC} \\
+Templar & Mind          & Knowledge Devotion\textsuperscript{CC} \\
+Templar & Nobility      & Protection Devotion\textsuperscript{CC} \\
+Templar & Courage\textsuperscript{CW}      & Strength Devotion\textsuperscript{CC} \\
+Templar & Domination\textsuperscript{CD}   & Magic Devotion\textsuperscript{CC} \\
+Templar & Inquisition\textsuperscript{CD}  & Law Devotion\textsuperscript{CC} \\
+Templar & Mysticism\textsuperscript{CD}    & Magic Devotion\textsuperscript{CC} \\
+Templar & Planning\textsuperscript{CW}     & Knowledge Devotion\textsuperscript{CC} \\
+Templar & Summoner\textsuperscript{CD}     & Animal Devotion\textsuperscript{CC} \\
+Templar & Tyranny\textsuperscript{CW}      & Evil Devotion\textsuperscript{CC} \\
+
+Wanderer & Celerity\textsuperscript{CD}     & Travel Devotion\textsuperscript{CC} \\
+
+}

@@ -30,33 +30,62 @@ Friendly & Wishes you well & Chat, advise, offer limited help, advocate\\
 Helpful & Will take risks to help you & Protect, back up, heal, aid
 }
 
-\textit{Bargaining:} Roll opposed Diplomacy checks between the merchant and the client. Subtract the merchant's result from the client's result, and use the table below to determine the discount (or overcharge) for a given transaction. The highest offer cannot be more than 10 times the item's base price, and the lowest offer cannot be less than 10\% of its base price.
+\textit{Bargaining:} Roll opposed Diplomacy checks between the merchant and the client. Subtract the merchant's result from the client's result, and use the table below to determine the discount (or overcharge) for a given transaction. %The highest offer cannot be more than 10 times the item's base price, and the lowest offer cannot be less than 10\% of its base price.
 
-\Table{Bargaining}{cC}{
-\tableheader Check Difference & \tableheader Price Modifier\\
-50 or higher     & Your offer \\
-40 to 49         & $-90\%$ of the difference\footnotemark[1]\\
-30 to 39         & $-75\%$ of the difference\footnotemark[1]\\
-20 to 29         & $-50\%$ of the difference\footnotemark[1]\\
-15 to 19         & $-40\%$ of the difference\footnotemark[1]\\
-10 to 14         & $-25\%$ of the difference\footnotemark[1]\\
-5 to 9           & $-10\%$ of the difference\footnotemark[1]\\
-$-4$ to 4        & Base price \\
-% $-9$ to 9        & $+0\%$  \\
-$-9$ to $-5$     & $+10\%$ of the difference\footnotemark[2]\\
-$-14$ to $-10$   & $+25\%$ of the difference\footnotemark[2]\\
-$-19$ to $-15$   & $+40\%$ of the difference\footnotemark[2]\\
-$-29$ to $-20$   & $+50\%$ of the difference\footnotemark[2]\\
-$-39$ to $-30$   & $+75\%$ of the difference\footnotemark[2]\\
-$-49$ to $-40$   & $+90\%$ of the difference\footnotemark[2]\\
-$-50$ or lower   & Opposed offer \\
-\TableNote{2}{1 Difference between base price and your offer}\\
-\TableNote{2}{1 Difference between base price and opposed offer}\\
+% \Table{Bargaining}{cC}{
+%   \tableheader Check Difference
+% & \tableheader Price Modifier\\
+% 50 or higher     & Client's offer \\
+% 40 to 49         & $-90\%$ of the difference\footnotemark[1]\\
+% 30 to 39         & $-75\%$ of the difference\footnotemark[1]\\
+% 20 to 29         & $-50\%$ of the difference\footnotemark[1]\\
+% 15 to 19         & $-40\%$ of the difference\footnotemark[1]\\
+% 10 to 14         & $-25\%$ of the difference\footnotemark[1]\\
+% 5 to 9           & $-10\%$ of the difference\footnotemark[1]\\
+% $-4$ to 4        & Base price \\
+% % $-9$ to 9        & $+0\%$  \\
+% $-9$ to $-5$     & $+10\%$ of the difference\footnotemark[2]\\
+% $-14$ to $-10$   & $+25\%$ of the difference\footnotemark[2]\\
+% $-19$ to $-15$   & $+40\%$ of the difference\footnotemark[2]\\
+% $-29$ to $-20$   & $+50\%$ of the difference\footnotemark[2]\\
+% $-39$ to $-30$   & $+75\%$ of the difference\footnotemark[2]\\
+% $-49$ to $-40$   & $+90\%$ of the difference\footnotemark[2]\\
+% $-50$ or lower   & Merchant offer \\
+% \TableNote{2}{1 Difference between base price and the client's offer}\\
+% \TableNote{2}{1 Difference between base price and the merchant's offer}\\
+% }
+
+\Table{Bargaining}{cCC}{
+& \multicolumn{2}{c}{\tableheader Final Value}\\
+\cmidrule[0.5pt]{2-3}
+  \tableheader Check Difference
+& \tableheader Normal Market
+& \tableheader Black Market\\
+50 or higher     & 50\% & 10\% \\
+40 to 49         & 55\% & 20\% \\
+30 to 39         & 65\% & 30\% \\
+20 to 29         & 75\% & 50\% \\
+15 to 19         & 80\% & 65\% \\
+10 to 14         & 90\% & 80\% \\
+5 to 9           & 95\% & 90\% \\
+$-4$ to 4        & \multicolumn{2}{c}{Base price} \\
+$-9$ to $-5$     & 1.25 $\times$  & 2   $\times$ \\
+$-14$ to $-10$   & 1.5  $\times$  & 3   $\times$ \\
+$-19$ to $-15$   & 2    $\times$  & 4.5 $\times$ \\
+$-29$ to $-20$   & 2.5  $\times$  & 6   $\times$ \\
+$-39$ to $-30$   & 3    $\times$  & 7.5 $\times$ \\
+$-49$ to $-40$   & 4    $\times$  & 9   $\times$ \\
+$-50$ or lower   & 5    $\times$  & 10  $\times$ \\
 }
 
-The difference calculated in the table should be rounded to the lowest common currency between the parts---a merchant without lead beads (bd) can't give exchange she doesn't have. Always round down the prices.
+The final value calculated in the table should be rounded to the lowest common currency between the parts---a merchant without lead beads (bd) can't give exchange she doesn't have. Always round down the prices.
 
-For example, a merchant tries to sell a bone sword (base price of 75 bits) for 5 silver pieces (500 bits). The client wants to pay at most 3 ceramics (30 bits). They roll the opposed check, and the check difference is 13 in favor of the client. The agreed price depends on the difference between the base price and the client's offer, $75-30=45$. Thus, the agreed price is equal to the base price (75 bits) minus 25\% of this difference ($45 \times 25\% = 11$ bits), in this example, $75-11=64$ bits.
+For example, a merchant tries to sell a bone sword (base price of 75 bits). They roll the opposed check, and the check difference is 13 in favor of the client. Since this is a normal market, the agreed price is $90\% \times 75 = 67.5$ bits. As the merchant doesn't have lead beads, the agreed value is 67 bits. If this same exchange happened in a black market, the agreed value would be 60 bits.
+
+
+% The difference calculated in the table should be rounded to the lowest common currency between the parts---a merchant without lead beads (bd) can't give exchange she doesn't have. Always round down the prices.
+
+% For example, a merchant tries to sell a bone sword (base price of 75 bits) for 5 silver pieces (500 bits). The client wants to pay at most 3 ceramics (30 bits). They roll the opposed check, and the check difference is 13 in favor of the client. The agreed price depends on the difference between the base price and the client's offer, $75-30=45$. Thus, the agreed price is equal to the base price (75 bits) minus 25\% of this difference ($45 \times 25\% = 11$ bits), in this example, $75-11=64$ bits.
 
 \textbf{Action:} Changing others' attitudes with Diplomacy generally takes at least 1 full minute (10 consecutive full-round actions). In some situations, this time requirement may greatly increase. A rushed Diplomacy check can be made as a full-round action, but you take a $-10$ penalty on the check.
 

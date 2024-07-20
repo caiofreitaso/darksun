@@ -35,7 +35,7 @@ Master scout           & Experienced leaders of caravans \\
 % Metamind               & Manifester with free manifesting \\
 Mystic theurge         & Multiclass divine caster/wizard \\
 Poisonmaster           & Crafter of improved poisons \\
-% Psiologist             & Teacher of the Way \\
+Psiologist             & Formal student of the Way \\
 Psion uncarnate        & Incorporeal manifester \\
 Restorationist         & Preserver who prepares greater potions \\
 Sensei                 & Manifester who forgoes protective items \\
@@ -56,21 +56,20 @@ Besides athasian prestige classes, the DM may also use the following prestige cl
 \multicolumn{2}{c}{\TableSubheader{Arcanists}}\\
 Argent Savant\textsuperscript{CAr}    & Nightmare Spinner\textsuperscript{CM} \\
 Blood Magus\textsuperscript{CAr}      & Rainbow Servant\textsuperscript{CD} \\
-Master Specialist\textsuperscript{CM} & Virtuoso\textsuperscript{CAd} \\
-Mindbender\textsuperscript{CAr}       & Unseen Seer\textsuperscript{CM} \\
-\cmidrule[0pt]{1-2}
-\\
+Elemental Savant\textsuperscript{CAr} & Virtuoso\textsuperscript{CAd} \\
+Geomancer\textsuperscript{CD}         & Void Disciple\textsuperscript{CD} \\
+Master Specialist\textsuperscript{CM} & Unseen Seer\textsuperscript{CM} \\
+Mindbender\textsuperscript{CAr}       & \\
+\rowcolor{white}&\\
+\multicolumn{2}{c}{\TableSubheader{Priests}} \\
+Blighter\textsuperscript{CD}      & Holt Warden\textsuperscript{CC} \\
+Contemplative\textsuperscript{CD} & Ordained Champion\textsuperscript{CC}$\dagger$ \\
+Divine Oracle\textsuperscript{CD} & Sacred Fist\textsuperscript{CD} \\
+Entropomancer\textsuperscript{CD} & Stormlord\textsuperscript{CD}$\ddagger$ \\
+Geomancer\textsuperscript{CD}     & Void Disciple\textsuperscript{CD} \\
+\TableNote{2}{$\dagger$ Only for Urik templars.}\\
+\TableNote{2}{$\ddagger$ Only for rain clerics.}\\
 
-\cmidrule[0pt]{1-2}
-\TableSubheader{Divine Casters}   & \TableSubheader{Psionicists} \\
-Blighter\textsuperscript{CD}      & Ectopic Adept\textsuperscript{CP} \\
-Contemplative\textsuperscript{CD} & Psibond Agent\textsuperscript{CS} \\
-Divine Oracle\textsuperscript{CD} & \\
-Entropomancer\textsuperscript{CD} & \\
-Holt Warden\textsuperscript{CC}   & \\
-Sacred Fist\textsuperscript{CD}   & \\
-
-\cmidrule[0pt]{1-2}
 \\
 
 \cmidrule[0pt]{1-2}
@@ -78,17 +77,17 @@ Sacred Fist\textsuperscript{CD}   & \\
 Beastmaster\textsuperscript{CAd}          & Avenging Executioner\textsuperscript{CS} \\
 Dervish\textsuperscript{CW}               & Bloodhound\textsuperscript{CAd} \\
 Exotic Weapon Master\textsuperscript{CW}  & Cloaked Dancer\textsuperscript{CS} \\
-Fist of the Forest\textsuperscript{CC}    & Combat Trapsmiths\textsuperscript{CS} \\
+Fist of the Forest\textsuperscript{CC}    & Combat Trapsmith\textsuperscript{CS} \\
 Frenzied Berserker\textsuperscript{CW}    & Exemplar\textsuperscript{CAd} \\
 Highland Stalker\textsuperscript{CAd}     & Forest Reeve\textsuperscript{CC} \\
-Hulking Hurler\textsuperscript{CW}        & Invisible Blade\textsuperscript{CW} \\
-Master of Many Forms\textsuperscript{CAd} & Justiciar\textsuperscript{CW} \\
-Master Thrower\textsuperscript{CW}        & Seeker of the Song\textsuperscript{CAr} \\
-Nature's Warrior\textsuperscript{CW}      & Spymaster\textsuperscript{CAd} \\
-Occult Slayer\textsuperscript{CW}         & Streetfighter\textsuperscript{CAd} \\
-Reaping Mauler\textsuperscript{CW}        & Thief-Acrobat\textsuperscript{CAd} \\
-Tempest\textsuperscript{CAd}              & \\
-War Chanter\textsuperscript{CW}           & \\
+Hulking Hurler\textsuperscript{CW}        & Fortune's Friend\textsuperscript{CS} \\
+Master of Many Forms\textsuperscript{CAd} & Invisible Blade\textsuperscript{CW} \\
+Master Thrower\textsuperscript{CW}        & Justiciar\textsuperscript{CW} \\
+Nature's Warrior\textsuperscript{CW}      & Master of Masks\textsuperscript{CS} \\
+Occult Slayer\textsuperscript{CW}         & Seeker of the Song\textsuperscript{CAr} \\
+Reaping Mauler\textsuperscript{CW}        & Spymaster\textsuperscript{CAd} \\
+Tempest\textsuperscript{CAd}              & Streetfighter\textsuperscript{CAd} \\
+War Chanter\textsuperscript{CW}           & Thief-Acrobat\textsuperscript{CAd} \\
 Warshaper\textsuperscript{CW}             & \\
 Wild Plains Outrider\textsuperscript{CAd} & \\
 }
@@ -144,6 +143,7 @@ Here are definitions of some terms used in this section.
 \input{sections/prestige-classes/mystic-theurge.tex} %srd
 \input{sections/prestige-classes/poisonmaster.tex}
 % \input{sections/prestige-classes/psiologist.tex}
+\input{sections/prestige-classes/new-psiologist.tex}
 \input{sections/prestige-classes/psion-uncarnate.tex} %xph
 \input{sections/prestige-classes/restorationist.tex}
 \Figure*{t}{images/monk-1.png}
@@ -151,8 +151,7 @@ Here are definitions of some terms used in this section.
 \input{sections/prestige-classes/shadowdancer.tex} %srd
 \input{sections/prestige-classes/shadow-wizard.tex}
 % \input{sections/prestige-classes/templar-knight.tex}
-\Figure{t}{images/cleric-5.png}
 \input{sections/prestige-classes/thaumaturgist.tex} %srd
 \Figure*{t}{images/cleric-8.png}
 \input{sections/prestige-classes/wanderer.tex} %
-% \input{sections/prestige-classes/war-mind.tex} %xph
+\input{sections/prestige-classes/new-war-mind.tex} %xph

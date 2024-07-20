@@ -102,7 +102,8 @@
 \newcommand{\spell}[1]{\spellref{#1}{#1}}
 \newcommand{\spellref}[2]{\emph{\hyperref[spell:#1]{#2}}}
 \newcommand{\spellList}[1]{\noindent\textit{\hyperref[spell:#1]{#1}}}
-\newcommand{\psionic}[1]{\emph{\hyperref[psionic:#1]{#1}}}
+\newcommand{\psionic}[1]{\psionicref{#1}{#1}}
+\newcommand{\psionicref}[2]{\emph{\hyperref[psionic:#1]{#2}}}
 \newcommand{\psionicList}[1]{\noindent\textit{\hyperref[psionic:#1]{#1}}}
 \newcommand{\magicitem}[1]{\emph{\hyperref[magicitem:#1]{#1}}}
 \newcommand{\psionicitem}[1]{\emph{\hyperref[psionicitem:#1]{#1}}}
@@ -137,15 +138,16 @@
 \def\@makechapterhead#1{%
 	{
 		\imfellEnglish%
-		\begin{tabular}{p{25mm}r{\textwidth-25mm}}
+		\begin{tabular}{z{\textwidth}}
 		\ifnum \c@secnumdepth >\m@ne%
 			\if@mainmatter%
-				\fontsize{}{}\@chapapp\space\thechapter%
+				{\Large\@chapapp\space\thechapter}%
 			\fi%
 		\fi%
 		&
-		\fontsize{25pt}{25pt}\bfseries\color{ChapterColor}\raggedleft{{\contournumber{10}\contour{ChapterColor}{\MakeUppercase{#1}}}}
+		{\fontsize{25pt}{25pt}\bfseries\color{ChapterColor}\MakeUppercase{#1}}
 		\end{tabular}
+		\vskip1cm
 	}
 }
 % Caption

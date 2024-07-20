@@ -45,6 +45,7 @@ A general description of the ability.
 \textbf{Benefit:} The mechanical effects of the new ability.
 
 
+\Figure*[\textwidth]{t}{images/party-1.png}
 \subsection{Bard}
 Athasian bards are city guides, traders, translators, or even assassins. They fill their role in society with their social skills and scoundrel minds.
 
@@ -77,6 +78,19 @@ Athasian bards are city guides, traders, translators, or even assassins. They fi
 	Allegro is a mind-affecting ability.
 }
 
+\subsection{Druid}
+Guardians of the wastes, allies of the spirits of the land. Druids help shape the landscape and its communities, either by being a menace to defilers and their allies or protecting settlements who agree to respect their lands and their faith.
+
+\AlternateClassFeature{Sacrifice}
+{Druids devoted to their guarded lands give up their sustenance to protect it from defilers.}
+{}
+{7th.}
+{You do not gain sustenance.}
+{
+	You can take defiling damage instead of the land, when you are close to a wizard when they are defiling. You must be within a distance to the wizard equal to twice the defiling radius of the spell being cast. If the defiling takes place in your guarded lands, you just need to be within its borders. You take 2 points of damage per spell level and you nullify the defiling radius and its effects. For more information on defiling, see \chapref{Magic}.
+
+	If you would take more damage than your total hit points, you stay at 0 hit points and the defiling radius is reduced by 1.5 meter per 2 points of damage taken.
+}
 
 \subsection{Fighter}
 The nomad elves need fighters who can keep up with the tribe, maybe even lead it one day, while The Kreen Empire breeds a stronger strain to defend it against the humanoid threat. No matter the reason, Each culture and race has reached a way to specialize their fighters to survive the dangers of Athas.
@@ -150,7 +164,7 @@ The Way is taught differently throughout the Tablelands. Urban folk teach, willi
 {10th.}
 {You do not gain a bonus feat.}
 {
-	Once per day, you can perform such a ritual to temporarily increase your Will. Each psionic ritual is unique, being of your own design, but all take one hour to complete and require a DC 20 \skill{Concentration} check. If the ritual is successful, you gain 1d4+1 temporary power points over and above your normal maximum. These power points remain available for one day or until they are used.
+	Once per day, you can perform such a ritual to temporarily increase your Will. Each psionic ritual is unique, being of your own design, but all take one hour to complete and require a DC 20 \skill{Autohypnosis} check. If the ritual is successful, you gain 2d6 + your level temporary power points over and above your normal maximum. These power points remain available for one day or until they are used.
 }
 
 \AlternateClassFeature{Tekchakak}
@@ -204,6 +218,8 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 % }
 
 \subsection{Scout}
+First to see danger and last to be seen, they can be elves who run ahead of the tribe, thri-kreen who train to report back to the Empire, or halflings who hunt anyone who crosses their land.
+
 \AlternateClassFeature{Desert Runner}
 {Desert runners are elves that have devoted themselves to the run, pushing themselves to the limit of Elven running ability. They are the scouts and messengers of a tribe. They run ahead of the rest, or alone through the desert to deliver important messages or items between clans with the greatest of speed. They are also some of the more competent hunters of the tribe able to track quarry silently while moving quickly through the desert.}
 {Elf or half-elf.}
@@ -242,6 +258,8 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 }
 
 \subsection{Templar}
+Servants of sorcerer-monarchs, templars impose respect and fear to the residents of the city-states. They act as administrators, judges, and executioners.
+
 \AlternateClassFeature{Badna's Chosen}
 {Templars of Raam have been told that their divine powers stem from an entity called Badna. Most templars know or at least suspect that Badna is a fictional being created by Abalach-Re to suppress the people of Raam.}
 {\skill{Knowledge} (religion) 5 ranks, must be from the templarate of Raam.}
@@ -249,6 +267,24 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 {To select this class feature, you must permanently sacrifice one of your 4th-level spell slots.}
 {
 	You always act in the surprise round, but you permanently lose 2 points of Wisdom.
+}
+\AlternateClassFeature{Bureau Specialization}
+{Black cassocks are the bureaucrats who administer the city-state of Tyr. They have invested in ways to make their bureaucracy into their power, specially when every other templar wants to take you out.}
+{Must be from the templarate of Tyr.}
+{12th.}
+{To select this class feature, you must permanently sacrifice one of your 6th-level spell slots.}
+{
+	Choose a templar class skill. You gain +6 bonus on checks of the chosen skill, and you can take 10 even if stress and distraction would normally prevent you from doing so.
+}
+\AlternateClassFeature{Dregoth's Blessing}
+{These dray senior templars of the undead Dragon King receive a powerful blessing in order to travel in war patrols. They are militant and consider themselves above all races.}
+{Dray 2nd-generation, must be from the templarate of New Giustenal.}
+{8th.}
+{To select this class feature, you must permanently sacrifice one of your 4th-level spell slots.}
+{
+	Once per day, you gain +3 profane bonus on your AC, saves, and attack rolls for 1 minute.
+
+	\emph{Dregoth's blessing} is a spell-like ability.
 }
 \AlternateClassFeature{Hamanu's Intervention}
 {Urikite templars wear yellow robes, and as they rise in status strands of metal are woven into their sleeves and they receive Hamanu's personal attention. Under the tutelage of Hamanu, his templars excel in the art of combat and they can call upon their liege to power their magic or blows.}
@@ -261,6 +297,14 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 	You may select this ability multiple times. Each time you must sacrifice another 3rd-level spell slot.
 
 	\emph{Hamanu's intervention} is a spell-like ability.
+}
+\AlternateClassFeature{Lore}
+{Templars of Old Kurn have no need to enforce authority. There are no slaves in the city, and the city's offices are kept by free citizens. Instead, templars act as keepers of knowledge, serving as teachers and advisers.}
+{Must be from the templarate of Kurn.}
+{1st.}
+{To select this class feature, you lose secular authority.}
+{
+	You gain the ability to know legends or information regarding various topics, just as a bard can with bardic knowledge. You add your level and your Intelligence modifier to the lore check, which functions otherwise exactly like a bardic knowledge check.
 }
 \AlternateClassFeature{Nibenay's Diligence}
 {The Nibenese templarate consists of women, all wedded to the Shadow King. Disciplined, educated and trained in the arts of war, the templar-wives fit perfectly into Nibenay's highly autocratic structured system of government.}
@@ -290,21 +334,20 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 
 	\emph{Ral's convergence} is a spell-like ability.
 }
+\AlternateClassFeature{Smite}
+{The elected templars of Balic are highly devoted to carrying out their dictator's edicts. ``Accidents'' usually happen to Andropinis' political opponents, whenever a new templar election is taking place.}
+{\skill{Knowledge} (religion) 4 ranks, must be from the templarate of Balic.}
+{6th or any even-numbered higher level.}
+{To select this class feature, you must permanently sacrifice one of your 3rd-level spell slots.}
+{
+	Once per day, you can add your Charisma bonus (if any) to your attack roll and deal 1 extra point of damage per templar level. If the attack misses, the ability is still used up for that day.
 
-% Tyr
-% Balic
-% Kurn
+	You may select this ability multiple times. You gain an additional use per day. Each time you must sacrifice another 3rd-level spell slot.
+
+	\emph{Smite} is a supernatural ability.
+}
+
 % Eldaarich
-
-
-% \AlternateClassFeature{Bureau Specialization}
-% {}
-% {Must be from the templarate of Tyr.}
-% {8th and 12th.}
-% {To select this class feature, you must permanently sacrifice one of your 4th-level spell slots, then another 6th-level spell slot at 12th level.}
-% {Choose a templar class skill. You gain +3 bonus on checks of the chosen skill at 8th level.
-
-% At 12th level, this bonus increases to +6 and you can take 10 even if stress and distraction would normally prevent you from doing so.}
 
 
 % \subsection{Wilder}
@@ -319,6 +362,7 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 
 
 \subsection{Thief}
+Athasian thieves profit from targeting wizards, no matter their allegiance.
 \AlternateClassFeature{Arcane Assassin}
 {Wizards are target of many assassinations, either by the demands of the Veiled Alliance targeting defilers or by the templarate targeting the veiled ones. Arcane assassins know how to put their foes under stress and don't waste any opportunity to strike.}
 {\skill{Knowledge} (arcane) 6 ranks, \skill{Spellcraft} 6 ranks, \skill{Spot} 10 ranks.}
@@ -329,6 +373,7 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 }
 
 \subsection{Wizard}
+Wizards of different races have developed different schools of thought to protect them and their tribes.
 \AlternateClassFeature{Exegete}
 {As a result of their endless research and studies, arcanists end up knowing a little about a lot of different things. They are consulted often, becoming experts and advisers for their tribes.}
 {Elf, \skill{Knowledge} (history) 10 ranks.}
@@ -370,5 +415,5 @@ Protectors of the wastelands, rangers are lone survivalists who help those in ne
 {5th.}
 {You do not gain a bonus feat.}
 {
-	You gain the supernatural ability to rebuke undead. You may use this ability a number of times per day equal to 3 + your Charisma modifier. You rebuke undead as a cleric four levels lower would.
+	You gain the supernatural ability to rebuke undead. You may use this ability a number of times per day equal to 3 + your Charisma modifier. You rebuke undead as a cleric your level would.
 }
