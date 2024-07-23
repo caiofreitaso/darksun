@@ -9,6 +9,7 @@
 \usepackage{pdfpages}
 \usepackage{tikz}
 \usepackage{tikzpagenodes}
+\usetikzlibrary{patterns}
 \usepackage[unicode,colorlinks]{hyperref}
 \hypersetup{
   bookmarksnumbered=false,
@@ -33,9 +34,9 @@ contents={%
   \ifblankpage
   \else
     \ifodd\value{page}
-      \includegraphics[width=\paperwidth]{images/background-odd.pdf}
+      \includegraphics[width=\paperwidth]{images/background-filled-odd.pdf}
     \else
-      \includegraphics[width=\paperwidth]{images/background-even.pdf}
+      \includegraphics[width=\paperwidth]{images/background-filled-even.pdf}
     \fi
   \fi
 }
@@ -131,7 +132,8 @@ contents={%
 \def\Figure{\@ifstar\@BigFigure\@SmallFigure}
 \def\FigureBody#1#2{
   \centering
-  \includegraphics[width=#1]{#2}
+  % \includegraphics[width=#1]{#2}
+  {\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{\includegraphics[width=#1]{#2}};\end{tikzpicture}}
   \WOTC
 }
 \newcommand{\@BigFigure}[3][\textwidth]{

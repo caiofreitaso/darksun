@@ -467,8 +467,6 @@
 	\vskip\parskip
 }
 
-% NPC functions
-
 % Table commands
 %% Column types
 \newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -492,8 +490,10 @@
 \newcommand{\TinyTable}[4][\columnwidth]{
 	\ifx&#2&\else\begin{table}[h!]\fi
 	\ifx&#2&\else\caption{\label{tab:#2}#2}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\begin{tabularx}{#1}{@{}#3@{}}\rowcolors{2}{white}{TableColor}\tiny
 	#4\end{tabularx}
+	};\end{tikzpicture}}
 	\ifx&#2&\else\end{table}\fi
 }
 \newcommand{\TransparentTable}[4][h!]{
@@ -505,34 +505,42 @@
 }
 \newcommand{\Table}[4][h!]{
 	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\small
 	\rowcolors{2}{white}{TableColor}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
+	};\end{tikzpicture}}
 	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\TableOdd}[4][h!]{
 	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\small
 	\rowcolors{2}{TableColor}{white}
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
+	};\end{tikzpicture}}
 	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\BigTable}[3]{
 	\begin{table*}[h!]
+	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\rowcolors{0}{white}{TableColor}
 	\small
-	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
+	};\end{tikzpicture}}
 	\end{table*}
 }
 \newcommand{\BigTableBottom}[3]{
 	\begin{table*}[b!]
+	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\rowcolors{0}{white}{TableColor}
 	\small
-	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
 	\begin{tabularx}{\textwidth}{#2}#3\end{tabularx}
+	};\end{tikzpicture}}
 	\end{table*}
 }
 \newcommand{\Cell}[2][c]{
@@ -627,15 +635,6 @@
 \newcommand{\SpellHeader}[2][0]{
 \SpellLevelHeaderRec{#1}{#2}
 }
-% \newcommand{\HalfSpellcasterTable}[3][1cm]{
-% 	\BigTableBottom{#2}{l l *{3}{Z{5mm}} L *{4}{Z{#1}}}{
-% 		\rowcolor{white}
-% 		\multirow[b]{2}{0.6cm}{\tableheader Level} & \multirow[b]{2}{2cm}{\tableheader Base\\ Attack Bonus} & \multirow[b]{2}{0.6cm}{\tableheader Fort Save} & \multirow[b]{2}{0.6cm}{\tableheader Ref Save} & \multirow[b]{2}{0.6cm}{\tableheader Will Save} & \multirow[b]{2}{*}{\tableheader Special} & \multicolumn{4}{c}{\tableheader Spells per day}\\
-% 		\cmidrule[0.5pt]{7-10}
-% 		&&&&&& \tableheader 1 & \tableheader 2 & \tableheader 3 & \tableheader 4 \\
-% 		#3
-% 	}
-% }
 \newcommand{\PsychicTable}[3][l l *{3}{Z{5mm}} L *{3}{>{\raggedleft\arraybackslash}b{18mm}}]{
 	\BigTableBottom{#2}{#1}{
 		\tableheader Level
@@ -680,12 +679,14 @@
 \newcommand{\WeaponTable}[3][]{
 	\begin{table*}[t!]
 	\ifx&#1&\else\caption{\label{tab:#1}#1}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\rowcolors{0}{TableColor}{}
 	\small
 	\begin{tabularx}{\textwidth}{X r{9mm}r{9mm}z{5mm}z{5mm}z{5mm}cz{1.2cm}r{9mm}r{9mm}r{9mm} p{2.1cm}}
 		\WeaponHeader{#2}\\
 		#3
 	\end{tabularx}
+	};\end{tikzpicture}}
 	\end{table*}
 }
 \newcommand{\WeaponHeader}[1]{
