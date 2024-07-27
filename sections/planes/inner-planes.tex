@@ -3,48 +3,92 @@ The Inner Planes are places of raw power and pure elements, of ultimate states a
 
 Each of the Inner Planes is a region of roughly similar environment. The Elemental Plane of Earth, for example, is mostly solid matter, while flames overwhelm the Elemental Plane of Fire. On each of the planes are bits of other elements and substances, existing like islands in the otherwise overwhelming element or energy. Outsiders and visitors gravitate toward the comfort these islands provide. The City of Brass, on the Elemental Plane of Fire, is the best-known locale of this type.
 
-The Inner Planes have the following structure.
-
-The Plane of Elemental Air is coterminous with the Paraelemental Planes of Rain and Sun.
-
-The Plane of Elemental Earth is coterminous with the Paraelemental Planes of Magma and Silt.
-
-The Plane of Elemental Fire is coterminous with the Paraelemental Planes of Magma and Sun.
-
-The Plane of Elemental Water is coterminous with the Paraelemental Planes of Rain and Silt.
-
-The Plane of Positive Energy and The Plane of Negative energy are separate from all other Inner Planes.
-
-\begin{figure}[t!]
+\begin{figure}[b!]
 \centering
 \begin{tikzpicture}[blend mode=multiply, baseline=0]
 \contourlength{.5mm}
+\begin{scope}[scale=.97, every node/.style={scale=.97}]
 \begin{scope}[blend group=normal]
-\draw[line width=0.2mm, color=black, pattern=crosshatch dots, pattern color=black!20] (3, 0) arc (0:360:3);
-\draw[line width=0.2mm, color=black, draw, fill=black!10] ( 1.02, 2.82) arc (70:110:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=black!10] (-1.02,-2.82) arc (250:290:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=black!10] (-2.82, 1.02) arc (160:200:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=black!10] ( 2.82, 1.02) arc (20:-20:3) -- (0,0) --cycle;
-\node[line width=0.2mm, color=black, circle, draw, fill=white, minimum size=40mm, inner sep=0pt, outer sep=0pt] at (0,0) {};
-\node[line width=0.2mm, color=black, circle, draw, fill=black, minimum size=14mm, inner sep=0pt, outer sep=0pt] at (0,1) {\color{white}\tableheader Negative};
-\node[line width=0.2mm, color=black, circle, draw, fill=white, minimum size=14mm, inner sep=0pt, outer sep=0pt] at (0,-1) {\tableheader Positive};
-\node[color=black] at (-1.75, 1.75) {\tableheader \contour{white}{Air}};
-\node[color=black] at ( 1.75,-1.75) {\tableheader \contour{white}{Earth}};
-\node[color=black] at ( 1.75, 1.75) {\tableheader \contour{white}{Fire}};
-\node[color=black] at (-1.75,-1.75) {\tableheader \contour{white}{Water}};
-\node[color=black] at (2.5, 0) {\tableheader Magma};
-\node[color=black] at (-2.5, 0) {\tableheader Rain};
-\node[color=black] at (0, -2.5) {\tableheader Silt};
-\node[color=black] at (0, 2.5) {\tableheader Sun};
+\draw[line width=0.2mm, color=black, pattern=crosshatch dots, pattern color=black!20] (2, 0) arc (0:360:2);
+\draw[line width=0.2mm, color=black, draw, fill=black!10] ( 0.68, 1.88) arc (70:110:2) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black!10] (-0.68,-1.88) arc (250:290:2) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black!10] (-1.88, 0.68) arc (160:200:2) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black!10] ( 1.88, 0.68) arc (20:-20:2) -- (0,0) --cycle;
+\node[line width=0.2mm, color=black, circle, draw, fill=white, minimum size=2cm, inner sep=2pt, outer sep=0pt] at (0,0) {\tableheader Ethereal};
+\node[color=richblack] at (-1.06, 1.06) {\tableheader \contour{white}{Air}};
+\node[color=richblack] at ( 1.06,-1.06) {\tableheader \contour{white}{Earth}};
+\node[color=richblack] at ( 1.06, 1.06) {\tableheader \contour{white}{Fire}};
+\node[color=richblack] at (-1.06,-1.06) {\tableheader \contour{white}{Water}};
+\node[color=richblack] at (1.5, 0) {\tableheader Magma};
+\node[color=richblack] at (-1.5, 0) {\tableheader Rain};
+\node[color=richblack] at (0, -1.5) {\tableheader Silt};
+\node[color=richblack] at (0, 1.5) {\tableheader Sun};
+\end{scope}
+\begin{scope}[blend group=normal, shift={(4.1,0)}]
+\path[pattern=crosshatch dots, pattern color=black!20] (2, 0) arc (0:360:2);
+\draw[line width=0.2mm, color=black, draw, fill=white] ( 1.414, 1.414) arc  (45:135:2) -- ( 1.414, 1.414) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black] (-1.414,-1.414) arc (225:315:2) -- (-1.414,-1.414) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black!10]
+   ( 1.414, 1.414) arc (45:-45:2)
+-- ( 1    ,-1.414)
+-- ( 1    , 1.414)
+--cycle;
+
+\draw[line width=0.2mm, color=black, draw, fill=black!10] (1, -0.684) rectangle (-1, 0.684);
+\draw[line width=0.2mm, color=black, draw, fill=black!10]
+   (-1.414,-1.414) arc (225:135:2)
+-- (-1    , 1.414)
+-- (-1    ,-1.414)
+--cycle;
+
+
+\path[pattern=crosshatch dots, pattern color=black]
+   (-1.414,-1.414) arc (225:200:2)
+-- (-1    ,-0.684)
+-- (-1    ,-1.414)
+--cycle;
+\path[pattern=crosshatch dots, pattern color=black]
+   (1.414,-1.414) arc (-45:-20:2)
+-- (1    ,-0.684)
+-- (1    ,-1.414)
+--cycle;
+
+\path[pattern=crosshatch dots, pattern color=white]
+   (-1.414, 1.414) arc (135:160:2)
+-- (-1    , 0.684)
+-- (-1    , 1.414)
+--cycle;
+\path[pattern=crosshatch dots, pattern color=white]
+   (1.414, 1.414) arc (45:20:2)
+-- (1    , 0.684)
+-- (1    , 1.414)
+--cycle;
+\draw[line width=0.2mm, color=black, draw] (2, 0) arc (0:360:2);
+\node[color=richblack] at (0, 1.04) {\tableheader \contour{white}{Ethereal}};
+\node[color=richblack] at (0,-1.04) {\tableheader \contour{white}{Ethereal}};
+\node[color=white] at (0,-1.70) {\tableheader Negative};
+\node[color=richblack] at (0, 1.70) {\tableheader Positive};
+\node[color=richblack,rotate=90] at (-1.5,0) {\tableheader Elemental};
+\node[color=richblack] at (0,0) {\tableheader Paraelemental};
+\node[color=richblack,rotate=270] at ( 1.5,0) {\tableheader Elemental};
+\end{scope}
 \end{scope}
 \end{tikzpicture}
 \end{figure}
+
+The Inner Planes have the following structure.
+\begin{itemize*}
+\item All Elemental Planes are coterminous with the Positive Energy Plane and the Negative Energy Plane. They also have three layers: the main elemental layer, a layer close to the Positive Energy Plane, and another close to the Negative Energy Plane.
+\item The Elemental Plane of Air is coterminous with the Paraelemental Planes of Rain and Sun.
+\item The Elemental Plane of Earth is coterminous with the Paraelemental Planes of Magma and Silt.
+\item The Elemental Plane of Fire is coterminous with the Paraelemental Planes of Magma and Sun.
+\item The Elemental Plane of Water is coterminous with the Paraelemental Planes of Rain and Silt.
+\end{itemize*}
 
 \input{subsections/planes/inner-planes/elemental-plane-of-air.tex}
 \input{subsections/planes/inner-planes/elemental-plane-of-earth.tex}
 \input{subsections/planes/inner-planes/elemental-plane-of-fire.tex}
 \input{subsections/planes/inner-planes/elemental-plane-of-water.tex}
-\Figure*{b}{images/planes-1.png}
 \input{subsections/planes/inner-planes/paraelemental-plane-of-magma.tex}
 \input{subsections/planes/inner-planes/paraelemental-plane-of-rain.tex}
 \input{subsections/planes/inner-planes/paraelemental-plane-of-silt.tex}

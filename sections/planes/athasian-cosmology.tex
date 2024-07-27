@@ -3,46 +3,41 @@
 \centering
 \begin{tikzpicture}[blend mode=multiply, baseline=0]
 \contourlength{.5mm}
-\begin{scope}[blend group=normal]
-\draw[line width=0.2mm, color=black, draw, fill=black!20] ( 3.46, 1.7) arc (30:150:4) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=black!20] (-3.46,-1.7) arc (210:330:4) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw,fill=white] ( 2.95,  .5) arc(10:170:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, draw,fill=white] (-2.95, -.5) arc(190:350:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, pattern=crosshatch dots, pattern color=black!20]  ( 2.95,  .5) arc(10:170:3) -- (0,0) --cycle;
-\draw[line width=0.2mm, color=black, pattern=north west lines, pattern color=black!20] (-2.95, -.5) arc(190:350:3) -- (0,0) --cycle;
+\begin{scope}[blend group=normal, scale=1.25, every node/.style={scale=1.25}, local bounding box=scope1]
+\draw[line width=0.2mm, color=black, draw, fill=black!20] ( 2.65, 2.65) arc (45:135:3.75) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black!20] (-2.65,-2.65) arc (225:315:3.75) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw,fill=white] ( 2.12,  2.12) arc(45:135:3) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, draw,fill=white] (-2.12, -2.12) arc(225:315:3) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, pattern=crosshatch dots, pattern color=black!20]  ( 2.12,  2.12) arc(45:135:3) -- (0,0) --cycle;
+\draw[line width=0.2mm, color=black, pattern=north west lines, pattern color=black!20] (-2.12, -2.12) arc(225:315:3) -- (0,0) --cycle;
 \node[line width=0.2mm, color=black, circle, draw, fill=black!40, minimum size=45mm, inner sep=0pt, outer sep=0pt] at (0,0) {};
-\node[color=black] at (0,-1.5) {\tableheader The Gray};
+\node[color=richblack] at (0,-1.5) {\tableheader The Gray};
 \node[line width=0.2mm, color=black, circle, draw, fill=white, minimum size=30mm, inner sep=0pt, outer sep=0pt] at (0,.6) {};
-\node[color=black] at (0,1.2) {\tableheader Material Plane};
-\node[line width=0.2mm, color=black, circle, draw, fill=black, minimum size=14mm, inner sep=0pt, outer sep=0pt] at (0,0) {\color{white}\tableheader The Black};
-\node[color=black] at (0, 2.5) {\tableheader \contour{white}{Ethereal Plane}};
-\node[color=black] at (0,-2.55) {\tableheader \contour{white}{Astral Plane}};
-\node[color=black] at (0, 3.3) {\tableheader Inner Planes};
-\node[color=black] at (0,-3.3) {\tableheader Outer Planes};
+% \draw[color=black, postaction={decorate,decoration={text along path,text align=center,text={|\tableheader|Material Plane}}}] ( -1.03, 0) arc (210:330:1.2);
+\node[color=richblack] at (0, -0.3) {\tableheader Material Plane};
+\node[line width=0.2mm, color=black, circle, draw, fill=black, minimum size=14mm, inner sep=0pt, outer sep=0pt] at (0,.6) {\color{white}\tableheader The Black};
+\node[color=richblack] at (0, 2.5) {\tableheader \contour{white}{Ethereal Plane}};
+\node[color=richblack] at (0,-2.55) {\tableheader \contour{white}{Astral Plane}};
+\node[color=richblack] at (0, 3.3) {\tableheader Inner Planes};
+\node[color=richblack] at (0,-3.3) {\tableheader Outer Planes};
 \end{scope}
 \end{tikzpicture}
 \end{figure}
 
 The Athasian cosmology is structured as follows.
-
-The Material Plane at its center.
-
-The Gray is coexistent with the Material Plane. It serves a buffer that inhibits planar travel to and from the Athasian Material Plane. This buffer is larger in the direction of the Astral Plane (and the Outer Planes) than in the direction of the Ethereal Plane (and the Inner Planes).
-
-The Black is coterminous and coexistent with the Material Plane.
-
-% The Hollow is coterminous with the Black, and as far away from the Material Plane as possible.
-
-The Ethereal Plane is coterminous with the Inner Planes and the Gray. The Ethereal Plane is linked to those planes by the \emph{ethereal border}, where a traveler can see into both planes.
-
-The eight Inner Planes are separate from all other planes, but each Elemental Plane is coterminous with two Paraelemental Planes. Each of the Inner Planes has the appropriate elemental trait. Elemental conduits link the Inner Planes and the Material Plane allowing the clerics to gather their divine energy.
-
-The Astral Plane is coexistent with the Outer Planes and the Gray. Color pools connect the Astral Plane to each of the Outer Planes and the Gray.
-
-% The Outer Planes are arranged in a great wheel. Each Outer Plane is coterminous to the planes on either side of it but separate from the other Outer Planes. The exception is the \emph{Concordant Domain of the Outlands}, which is coterminous to every other Outer Plane and thus serves as a central hub for dealings between outsiders.
+\begin{itemize*}
+\item The Material Plane at its center.
+\item The Gray is coexistent with the Material Plane, the Ethereal Plane, and the Astral Plane. It serves a buffer that inhibits planar travel to and from the Athasian Material Plane. This buffer is larger in the direction of the Astral Plane (and the Outer Planes) than in the direction of the Ethereal Plane (and the Inner Planes).
+\item The Black is coexistent with the Material Plane.
+% \item The Hollow is coterminous with the Black, and as far away from the Material Plane as possible.
+\item The Ethereal Plane is coexistent with the Inner Planes and the Gray.
+\item The ten Inner Planes are surrounded by the Ethereal Plane. They are coexistent with the Ethereal Plane, and coterminous with each other. Each of the Inner Planes has the appropriate elemental trait. Elemental conduits link the Inner Planes and the Material Plane allowing the clerics to gather their divine energy.
+\item The Astral Plane is coexistent with the Outer Planes and the Gray. Color pools connect the Astral Plane to each of the Outer Planes and the Gray.
+% \item The Outer Planes are arranged in a great wheel. Each Outer Plane is coterminous to the planes on either side of it but separate from the other Outer Planes. The exception is the \emph{Concordant Domain of the Outlands}, which is coterminous to every other Outer Plane and thus serves as a central hub for dealings between outsiders.
 
 % The Outer Planes are coexistent with the Astral Plane. They are separate from the Ethereal Plane, so certain spells (\spell{ethereal jaunt}, for example) aren't available to a caster on the Outer Planes. Each Outer Planes is made up of related layers, and the most common access to an Outer Plane is through the top layer of each plane. The good-aligned planes, also called the celestial planes or the upper planes, are linked by the path of the \emph{River Oceanus}. The evil-aligned planes, also called the infernal planes or the lower planes, are linked by the path of the \emph{River Styx}.
 
-The Outer Planes are thoroughly explained in the \emph{Manual of the Planes}.
+\item The Outer Planes are coexistent with the Astral Plane. They are separate from the Ethereal Plane, so certain spells (\spell{ethereal jaunt}, for example) aren't available to a caster on the Outer Planes. They are thoroughly explained in the \emph{Manual of the Planes}.
+\end{itemize*}
 
 A large number of finite demiplanes connect all over the place. Individual conduits, freestanding portals, and vortices are also common.

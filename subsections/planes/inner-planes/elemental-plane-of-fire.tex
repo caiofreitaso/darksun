@@ -5,9 +5,53 @@ Fire burns here without fuel or air, and flammables brought onto the plane are i
 
 Armies of Fire are masked by the rolling smoke that heralds their approach, and they radiate heat that will burn those that come too close. Travelers on the plane should flee if they encounter a war party, as Fire delights in setting those unburned alight.
 
-The Elemental Plane of Fire has the following traits.
+The plane boasts two layers: Quasielemental Radiance and Quasielemental Ash.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[blend mode=multiply, baseline=0]
+\contourlength{.5mm}
+\begin{scope}[blend group=normal]
+\path[fill=black!20] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm,-10.5mm);
+\path[pattern=dots, pattern color=black!20] (-\columnwidth/2-2mm, 10.5mm) rectangle (\columnwidth/2-2mm, 3.5mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\columnwidth/2-2mm, 3.5mm) rectangle (\columnwidth/2-2mm, -3.5mm);
+\path[pattern=crosshatch dots, pattern color=white] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm, -10 .5mm);
+\node[color=richblack] at (0,  7mm) {\tableheader \contour{white}{Quasielemental Radiance}};
+\node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Fire}};
+\node[color=richblack] at (0, -7mm) {\tableheader \contour{white}{Quasielemental Ash}};
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+\subsubsection{Elemental Plane of Fire Traits}
 \begin{itemize*}
 \item \textbf{Fire-Dominant:} Unprotected wood, paper, cloth, and other flammable materials catch fire almost immediately, and those wearing unprotected flammable clothing catch on fire. In addition, individuals take 3d10 points of fire damage every round. Those that are made of water take double damage each round.
+\item \textbf{Enhanced Magic:} Spells and spell-like abilities with the fire descriptor are both maximized and enlarged (as if the \feat{Maximize Spell} and \feat{Enlarge Spell} had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already maximized or enlarged are unaffected by this benefit.
+\item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create water (including spells of the Water domain and spells that summon water elementals or outsiders with the water subtype) are impeded.
+\end{itemize*}
+
+
+\subsubsection{Quasielemental Radiance}
+The layer of Quasielemental Radiance is where the Elemental Plane of Fire is closest to the Positive Energy Plane, infusing the fire with energy. Fire burns harder, brighter, in all colors. This is a place where light comes to being.
+
+\textbf{Blinding Light:} Creatures in Quasielemental Radiance must make a Fortitude saving throw (DC 12) to avoid being blinded for 5 rounds by the brilliance of their surroundings.
+
+The Quasielemental Radiance has the following additional traits.
+\begin{itemize*}
+\item \textbf{Minor Positive-Dominant:} A creature in Quasielemental Radiance gains fast healing 2 as an extraordinary ability.
+\item \textbf{Enhanced Magic:} Spells and spell-like abilities with the light descriptor are both maximized and enlarged (as if the \feat{Maximize Spell} and \feat{Enlarge Spell} had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already maximized or enlarged are unaffected by this benefit.
+\item \textbf{Impeded Magic:} Spells and spell-like abilities with the darkness or shadow descriptor are impeded.
+\end{itemize*}
+
+\subsubsection{Quasielemental Ash}
+The layer of Quasielemental Ash is where the Elemental Plane of Fire is closest to the Negative Energy Plane, removing the energy from the fire, leaving only ashes. Where Quasielemental Ash meets the Elemental Fire, it is an accumulation of burnt matter pressed into a solid mass. This burnt matter starts to break down when closer to the center of the layer. This layer is filled with floating particles, as clouds from a volcano.
+
+\textbf{No Air:} A creature who breathes air starts to suffocate in the Quasielemental Ash.
+
+The Quasielemental Ash has the following traits.
+\begin{itemize*}
+\item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
+\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Ash take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.
 \item \textbf{Enhanced Magic:} Spells and spell-like abilities  with the fire descriptor are both maximized and enlarged (as if the \feat{Maximize Spell} and \feat{Enlarge Spell} had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already maximized or enlarged are unaffected by this benefit.
 \item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create water (including spells of the Water domain and spells that summon water elementals or outsiders with the water subtype) are impeded.
 \end{itemize*}

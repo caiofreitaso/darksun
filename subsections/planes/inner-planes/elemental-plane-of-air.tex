@@ -7,10 +7,53 @@ Cities in the Elemental Plane of Air are vast floating fortresses composed of cl
 
 Armies of Air are strange indeed. While many air elementals are naturally invisible, elemental beasts and incarnations soar within the ranks. They may seem like smaller numbers than are actually there by sight, but the Armies of Air make a fearsome and terrible noise as they approach. If traveling on the plane, one should flee from the sound of great rushing wind, and thunderclaps that have no clouds or lightning.
 
-The Elemental Plane of Air has the following traits.
+The plane boasts two layers: Quasielemental Lightning and Quasielemental Vacuum.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[blend mode=multiply, baseline=0]
+\contourlength{.5mm}
+\begin{scope}[blend group=normal]
+\path[fill=black!20] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm,-10.5mm);
+\path[pattern=dots, pattern color=black!20] (-\columnwidth/2-2mm, 10.5mm) rectangle (\columnwidth/2-2mm, 3.5mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\columnwidth/2-2mm, 3.5mm) rectangle (\columnwidth/2-2mm, -3.5mm);
+\path[pattern=crosshatch dots, pattern color=white] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm, -10 .5mm);
+\node[color=richblack] at (0,  7mm) {\tableheader \contour{white}{Quasielemental Lightning}};
+\node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Air}};
+\node[color=richblack] at (0, -7mm) {\tableheader \contour{white}{Quasielemental Vacuum}};
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+\subsubsection{Elemental Plane of Air Traits}
 \begin{itemize*}
 \item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
 \item \textbf{Air-Dominant.}
+\item \textbf{Enhanced Magic:} Spells and spell-like abilities that use, manipulate, or create air (including spells of the Air domain) are both empowered and enlarged (as if the \feat{Empower Spell} and \feat{Enlarge Spell} metamagic feats had been used on them, but the spells don't require higher-level slots).
+\item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create earth (including spells of the Earth domain and spells that summon earth elementals or outsiders with the earth subtype) are impeded.
+\end{itemize*}
+
+\subsubsection{Quasielemental Lightning}
+The layer of Quasielemental Lightning, also known as the Vengeful Land, is where the Elemental Plane of Air is closest to the Positive Energy Plane, infusing the air with energy. It is a place of vibrant colors, turbulent clouds, endless thunder, and vast arcs of lightning.
+
+\textbf{Thunderstorms:} These storms are louder, more violent, and more dangerous than the ones in the Material Plane. Each turn the storm releases a lightning bolt. Theses bolts causes damage equal to 1d10 eight-sided dice. Half the damage is electricity, but the other half is pure energy and is therefore not subject to being reduced by resistance to electricity-based attacks.
+
+The Quasielemental Lightning has the following additional traits.
+\begin{itemize*}
+\item \textbf{Minor Positive-Dominant:} A creature in Quasielemental Lightning gains fast healing 2 as an extraordinary ability.
+\end{itemize*}
+
+\subsubsection{Quasielemental Vacuum}
+The layer of Quasielemental Vacuum is where the Elemental Plane of Air is closest to the Negative Energy Plane, removing the energy of the air. It has no light and very little matter.
+
+\textbf{No Air:} A creature who breathes air starts to suffocate in the Quasielemental Vacuum.
+
+\textbf{Vacuum Welding:} Every hour, creatures wearing metal armor must succeed in a Reflex save (DC 15) to prevent their suits of armor becoming immobile.
+
+The Quasielemental Vacuum has the following traits.
+\begin{itemize*}
+\item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
+\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Vacuum take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.
 \item \textbf{Enhanced Magic:} Spells and spell-like abilities that use, manipulate, or create air (including spells of the Air domain) are both empowered and enlarged (as if the \feat{Empower Spell} and \feat{Enlarge Spell} metamagic feats had been used on them, but the spells don't require higher-level slots).
 \item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create earth (including spells of the Earth domain and spells that summon earth elementals or outsiders with the earth subtype) are impeded.
 \end{itemize*}

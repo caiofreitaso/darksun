@@ -42,6 +42,7 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage[outline]{contour}
 \RequirePackage[titletoc]{appendix}
+\RequirePackage[unicode,colorlinks]{hyperref}
 
 % #####  Color Palette by Paletton.com
 % #####  Palette URL: http://paletton.com/#uid=6060u0kvlhX8XuSn+ozNxau+L1g

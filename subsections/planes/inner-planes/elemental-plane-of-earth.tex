@@ -5,10 +5,50 @@ Despite its unyielding nature, the Elemental Plane of Earth is varied in its con
 
 When off to war, the inhabitants of the Plane of Earth come like an earthquake. Their forms are the earth itself, so all manner of stone, metal, gems, soil and sand rush forward to meet their foes. Earth is the most patient of the Elemental Planes, however, and a sign of surrender or intentions of peace will typically be accepted, even if only for a short while.
 
-The Elemental Plane of Earth has the following traits.
+The plane boasts two layers: Quasielemental Mineral and Quasielemental Dust.
+
+\begin{figure}[b!]
+\centering
+\begin{tikzpicture}[blend mode=multiply, baseline=0]
+\contourlength{.5mm}
+\begin{scope}[blend group=normal]
+\path[fill=black!20] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm,-10.5mm);
+\path[pattern=dots, pattern color=black!20] (-\columnwidth/2-2mm, 10.5mm) rectangle (\columnwidth/2-2mm, 3.5mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\columnwidth/2-2mm, 3.5mm) rectangle (\columnwidth/2-2mm, -3.5mm);
+\path[pattern=crosshatch dots, pattern color=white] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm, -10 .5mm);
+\node[color=richblack] at (0,  7mm) {\tableheader \contour{white}{Quasielemental Mineral}};
+\node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Earth}};
+\node[color=richblack] at (0, -7mm) {\tableheader \contour{white}{Quasielemental Dust}};
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+\subsubsection{Elemental Plane of Earth Traits}
 \begin{itemize*}
 \item \textbf{Heavy Gravity:} Strength-based and Dexterity-based skill checks incur a $-2$ circumstance penalty, as do all attack rolls. All item weights are effectively doubled, which might affect a character's speed. Weapon ranges are halved. Characters who fall on a heavy gravity plane take 1d10 points of damage for each 3 meters fallen, to a maximum of 20d10 points of damage.
 \item \textbf{Earth-Dominant.}
+\item \textbf{Enhanced Magic:} Spells and spell-like abilities that use, manipulate, or create earth or stone (including those of the Earth domain) are both empowered and extended (as if the \feat{Empower Spell} and \feat{Extend Spell} metamagic feats had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already empowered or extended are unaffected by this benefit.
+\item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create air (including spells of the Air domain and spells that summon air elementals or outsiders with the air subtype) are impeded.
+\end{itemize*}
+
+
+\subsubsection{Quasielemental Mineral}
+The layer of Quasielemental Mineral is where the Elemental Plane of Earth is closest to the Positive Energy Plane, infusing the earth with energy. It is saturated with jewels, gems, and all manner of valuable crystals. As one moves into the Mineral layer, gemstones become more prevalent, and they glow like stars.
+
+The Quasielemental Mineral has the following additional traits.
+\begin{itemize*}
+\item \textbf{Minor Positive-Dominant:} A creature in Quasielemental Mineral gains fast healing 2 as an extraordinary ability.
+\end{itemize*}
+
+\subsubsection{Quasielemental Dust}
+The layer of Quasielemental Dust is where the Elemental Plane of Earth is closest to the Negative Energy Plane, removing the energy and substance of the earth. As one comes closer to Quasielemental Dust, the earth starts to break down. Rocks become soil, and soil becomes dust. This layer is an expanse of tenuous atmosphere filled with swirling particles of granular matter.
+
+\textbf{No Air:} A creature who breathes air starts to suffocate in the Quasielemental Dust.
+
+The Quasielemental Dust has the following traits.
+\begin{itemize*}
+\item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
+\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Dust take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.
 \item \textbf{Enhanced Magic:} Spells and spell-like abilities that use, manipulate, or create earth or stone (including those of the Earth domain) are both empowered and extended (as if the \feat{Empower Spell} and \feat{Extend Spell} metamagic feats had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already empowered or extended are unaffected by this benefit.
 \item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create air (including spells of the Air domain and spells that summon air elementals or outsiders with the air subtype) are impeded.
 \end{itemize*}
