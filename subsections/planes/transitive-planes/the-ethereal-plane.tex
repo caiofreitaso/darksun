@@ -3,6 +3,8 @@ The Ethereal Plane is a misty, fog-bound dimension that is coexistent with the G
 
 While on the Ethereal Plane, creatures can see the Material Plane. The Material Plane appears without colors because of the Gray, and its forms blurring into each other, barely recognizable. However, it's easy to discern faces and landmarks. Seeing and hearing is otherwise normal, so gaze attacks and sonic attacks and abilities launched from the Material Plane affect ethereal creatures.
 
+While it is possible to see into the Material Plane from the Ethereal Plane, the Ethereal Plane is invisible to those on the Material Plane. Normally, creatures on the Ethereal Plane cannot attack creatures on the Material Plane, and vice versa. A traveler on the Ethereal Plane is invisible, incorporeal, and utterly silent to someone on the Material Plane.
+
 The Ethereal Plane is mostly empty of structures and impediments. However, the plane has its own inhabitants, such as the ethereal marauder or the xill. Some of these are other ethereal travelers.
 
 The plane has two layers, the Border and the Deep.
@@ -12,21 +14,28 @@ The plane has two layers, the Border and the Deep.
 \begin{tikzpicture}[blend mode=multiply, baseline=0]
 \contourlength{.5mm}
 \begin{scope}[blend group=normal]
-\path[fill=black!20] (-\columnwidth/2-2mm, 25mm) rectangle (\columnwidth/2-2mm, 15mm);
-\path[fill=white] (-\columnwidth/2-2mm, 15mm) rectangle (\columnwidth/2-2mm, 0mm);
-\path[pattern=crosshatch dots, pattern color=black!20] (-\columnwidth/2-2mm, 15mm) rectangle (\columnwidth/2-2mm, 9mm);
-\path[pattern=dots, pattern color=black!20] (-\columnwidth/2-2mm, 9mm) rectangle (\columnwidth/2-2mm, 5mm);
-\path[line width=0.2mm, draw, fill=white] (-\columnwidth/2-1.9mm, 0.1mm) rectangle (\columnwidth/2-2.1mm, -10mm);
-\path[fill=black!40] (-\columnwidth/2-2mm, 5mm) rectangle ( \columnwidth/2-2mm, 0mm);
-\path[fill=black!20] (-\columnwidth/4-1mm-2mm, 15mm) rectangle (-\columnwidth/4-1mm+2mm, 0mm);
-\path[fill=black!20] ( \columnwidth/4-1mm-2mm, 15mm) rectangle ( \columnwidth/4-1mm+2mm, 0mm);
+\path[fill=black!20] (-\halflength, 25mm) rectangle (\halflength, 15mm);
+\path[fill=white] (-\halflength, 15mm) rectangle (\halflength, 0mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\halflength, 15mm) rectangle (\halflength, 9mm);
+\path[pattern=dots, pattern color=black!20] (-\halflength, 9mm) rectangle (\halflength, 5mm);
+\path[line width=0.2mm, draw, fill=white] (-\halflength+.6mm, 5mm) rectangle (-\halflength/3-2.5mm-.5mm, -5mm);
+\path[line width=0.2mm, draw, fill=white] ( \halflength/3+2.5mm+.5mm, 5mm) rectangle (\halflength-.5mm, -5mm);
+\path[line width=0.2mm, draw, fill=white] (-\halflength/3-2.5mm+.1mm, 5mm) rectangle (\halflength/3+2.5mm-.1mm, -5mm);
+\path[fill=black!40] (-\halflength/3-2.5mm,  9mm) rectangle ( \halflength/3+2.5mm, 5mm);
+\path[fill=black!20] (-\halflength/3-1.5mm, 15mm) rectangle (-\halflength/3+1.5mm, 5mm);
+\path[fill=black!20] ( \halflength/3-1.5mm, 15mm) rectangle ( \halflength/3+1.5mm, 5mm);
 \node[color=richblack] at (0, 20mm) {\tableheader Inner Planes};
 \node[color=richblack] at (0, 12mm) {\tableheader \contour{white}{Deep Ethereal}};
-\node[color=richblack] at (0, 7mm) {\tableheader \contour{white}{Ethereal Border}};
-\node[color=richblack] at (0, 2.5mm) {\tableheader The Gray};
-\node[color=richblack] at (0, -5mm) {\tableheader Material Plane};
-\node[color=richblack, rotate=90] at (-\columnwidth/4-1mm, 7.5mm) {\textit{Conduit}};
-\node[color=richblack, rotate=90] at ( \columnwidth/4-1mm, 7.5mm) {\textit{Conduit}};
+\node[color=richblack] at (-\halflength*2/3-1mm, 7mm) {\tableheader \contour{white}{Ethereal Border}};
+\node[color=richblack] at ( \halflength*2/3+1mm, 7mm) {\tableheader \contour{white}{Ethereal Border}};
+\node[color=richblack] at (0, 7mm) {\tableheader The Gray};
+\node[color=richblack] at (0, 0) {\tableheader Prime Material Plane};
+\node[color=richblack] at (-\halflength*2/3-1mm,  \baselineskip/2) {\tableheader Material Plane};
+\node[color=richblack] at (-\halflength*2/3-1mm, -\baselineskip/2) {\tableheader \#1};
+\node[color=richblack] at ( \halflength*2/3+1mm,  \baselineskip/2) {\tableheader Material Plane};
+\node[color=richblack] at ( \halflength*2/3+1mm, -\baselineskip/2) {\tableheader \#2};
+\node[color=richblack, rotate=90] at (-\halflength/3, 10mm) {\textit{Conduit}};
+\node[color=richblack, rotate=90] at ( \halflength/3, 10mm) {\textit{Conduit}};
 \end{scope}
 \end{tikzpicture}
 \end{figure}
@@ -53,25 +62,6 @@ Paraelemental Silt  & Beige \\
 Paraelemental Sun   & Crimson \\
 }
 
-\textbf{Elemental Conduits:} Elemental conduits are thin vortices barely visible through the ethereal mist that connect one of the elemental or paraelemental planes directly to Athas. They flex and weave as they move through the Ethereal Plane, and successfully catching one of them is akin to hitching a ride on a tornado. Grabbing a conduit requires a successful Will save (DC 20). Failure means the individual is flung violently away from the conduit and takes 1d10 points of damage from the elemental turbulence. Success indicates that the traveler has latched onto the conduit and moves instantly onto one of the two planes the conduit connects. Conduits tend to flow either in one direction or the other, but they do not change their direction of flow frequently, so individuals who hitch a ride on a conduit in quick succession wind up on the same plane.
-
-The advantage of using a conduit is that the traveler likely has a way back out of the destination plane. The disadvantage is that it's impossible to tell by looking where a conduit is coming from or where it's going. Conduits are often used by ethereal travelers who have no other means of transportation and need to get off the Ethereal Plane quickly.
-
-\textbf{Elemental Tornados:} Elemental conduits may become unstable and generate dangerous weather on the Ethereal Plane. Any character in close proximity with an elemental tornado must succeed on a Will save (DC 30) or be sucked toward the tornado. Anyone in contact with the funnel cloud is picked and whirled around for 1d10 rounds, taking energy damage per round, before being expelled. The nature of the damage depends on the elemental plane from which the tornado came.
-
-\Table{Elemental Tornado Damage}{Xl}{
-  \tableheader Plane
-& \tableheader Damage\\
-Elemental Air       & 5d8 sonic \\
-Elemental Earth     & 8d4 acid \\
-Elemental Fire      & 6d6 fire \\
-Elemental Water     & 8d4 acid \\
-
-Paraelemental Magma & 6d6 fire \\
-Paraelemental Rain  & 4d10 electricity \\
-Paraelemental Silt  & 8d4 acid \\
-Paraelemental Sun   & 6d6 fire \\
-}
 
 \subsubsection{Ethereal Plane Traits}
 \begin{itemize*}
@@ -84,7 +74,24 @@ Paraelemental Sun   & 6d6 fire \\
 \subsubsection{Ethereal Border}
 The visibility on the Ethereal Border is reduced, creatures can only see in a 18-meter radius.
 
-While it is possible to see into the Material Plane from the Ethereal Border, the Ethereal Border is invisible to those on the Material Plane. Normally, creatures on the Ethereal Border cannot attack creatures on the Material Plane, and vice versa. A traveler on the Ethereal Border is invisible, incorporeal, and utterly silent to someone on the Material Plane.
+This layer is only accessible via other Material Planes. The Prime Material Plane (Athas) replaces the Border completely by the Gray.
+
+% \subsubsection{The Gray}
+% When a character enters the Gray, its vast emptiness stretches out before him. It can be extremely hard to keep one's bearing in the Gray, especially without a reference point. Distances are hard to determine, and even figuring out which direction one is moving can be a challenge!
+
+% The visibility on the Gray is also reduced, creatures can only see in a 18-meter radius.
+
+% \textbf{Living Glow:} Living, corporeal creatures cast a faint glow that, though perceptible, fails to illuminate any of the ashen drear of the Gray. However, the warm body of a living creature appears as a beacon, visible up to a mile and often drawing spirits near.
+
+% \textbf{Restricted Movement:} Creatures move at half speed in the Gray, though they may move in any direction.
+
+% The Gray has the following additional traits.
+
+% \begin{itemize*}
+% \item \textbf{Enhanced Magic:} In the Gray, a wizard can draw energy for a spell from an incorporeal undead (whether or not it has been forced into corporeal form), as the undead acts as a battery of energy. As part of casting a spell, a wizard can make a touch attack against the undead, dealing 1d6 points of damage per level of the spell to be powered by its energy. This touch attack is a free action that provokes attacks of opportunity.
+% \item \textbf{Impeded Magic and Psionics:} Spells and powers that draw upon the power of the Black are completely useless, for there is no light or shadow in the Gray. Spells and powers of the shadow subschool or with the light or darkness descriptors fail, absorbed into the surroundings.
+% \end{itemize*}
+
 
 \subsubsection{Deep Ethereal}
 Interplanar travelers use the analogy of an ocean and a shore to describe the Ethereal Border and the Deep Ethereal. As one travels further away from the Material Plane, it becomes foggier. The visibility on the Ethereal Plane is greatly reduced, creatures can only see in a 3-meter radius.
@@ -97,4 +104,24 @@ In the Deep Ethereal, movement becomes abstract as the plane has no landmarks, s
 Returning to the Gray & 1d10 minutes \\
 Finding a specific color curtain & 1d10$\times$10 hours \\
 Finding a specific object on the Ethereal Plane & 1d10$\times$100 hours \\
+}
+
+\textbf{Elemental Conduits:} Elemental conduits are thin vortices barely visible through the ethereal mist that connect one of the elemental or paraelemental planes directly to Athas. They flex and weave as they move through the Ethereal Plane, and successfully catching one of them is akin to hitching a ride on a tornado. Grabbing a conduit requires a successful Will save (DC 20). Failure means the individual is flung violently away from the conduit and takes 1d10 points of damage from the elemental turbulence. Success indicates that the traveler has latched onto the conduit and moves instantly onto one of the two planes the conduit connects. Conduits tend to flow either in one direction or the other, but they do not change their direction of flow frequently, so individuals who hitch a ride on a conduit in quick succession wind up on the same plane.
+
+The advantage of using a conduit is that the traveler likely has a way back out of the destination plane. The disadvantage is that it's impossible to tell by looking where a conduit is coming from or where it's going. Conduits are often used by ethereal travelers who have no other means of transportation and need to get off the Ethereal Plane quickly.
+
+\textbf{Elemental Tornados:} Elemental conduits may become unstable and generate dangerous weather on the Ethereal Plane. Any character in close proximity with an elemental tornado must succeed on a Will save (DC 30) or be sucked toward the tornado. Anyone in contact with the funnel cloud is picked and whirled around for 1d10 rounds, taking energy damage per round, before being expelled. The nature of the damage depends on the elemental plane from which the tornado came.
+
+\Table{Elemental Tornado Damage}{Xl}{
+  \tableheader Plane
+& \tableheader Damage\\
+Elemental Air       & 5d8 sonic \\
+Elemental Earth     & 8d4 acid \\
+Elemental Fire      & 6d6 fire \\
+Elemental Water     & 5d8 cold \\
+
+Paraelemental Magma & 6d6 fire \\
+Paraelemental Rain  & 4d10 electricity \\
+Paraelemental Silt  & 8d4 acid \\
+Paraelemental Sun   & 6d6 fire \\
 }

@@ -14,13 +14,12 @@ The plane boasts two layers: Quasielemental Lightning and Quasielemental Vacuum.
 \begin{tikzpicture}[blend mode=multiply, baseline=0]
 \contourlength{.5mm}
 \begin{scope}[blend group=normal]
-\path[fill=black!20] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm,-10.5mm);
-\path[pattern=dots, pattern color=black!20] (-\columnwidth/2-2mm, 10.5mm) rectangle (\columnwidth/2-2mm, 3.5mm);
-\path[pattern=crosshatch dots, pattern color=black!20] (-\columnwidth/2-2mm, 3.5mm) rectangle (\columnwidth/2-2mm, -3.5mm);
-\path[pattern=crosshatch dots, pattern color=white] (-\columnwidth/2-2mm, -3.5mm) rectangle (\columnwidth/2-2mm, -10 .5mm);
-\node[color=richblack] at (0,  7mm) {\tableheader \contour{white}{Quasielemental Lightning}};
+\path[pattern=dots, pattern color=black!20] (-\halflength, 7mm) rectangle (\halflength, 3.5mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\halflength, 3.5mm) rectangle (\halflength, -3.5mm);
+\path[pattern=dots, pattern color=black!40] (-\halflength, -3.5mm) rectangle (\halflength, -7mm);
+\node[color=richblack] at (0,  5.25mm) {\tableheader \contour{white}{Quasielemental Lightning}};
 \node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Air}};
-\node[color=richblack] at (0, -7mm) {\tableheader \contour{white}{Quasielemental Vacuum}};
+\node[color=richblack] at (0, -5.25mm) {\tableheader \contour{white}{Quasielemental Vacuum}};
 \end{scope}
 \end{tikzpicture}
 \end{figure}
@@ -50,10 +49,9 @@ The layer of Quasielemental Vacuum is where the Elemental Plane of Air is closes
 
 \textbf{Vacuum Welding:} Every hour, creatures wearing metal armor must succeed in a Reflex save (DC 15) to prevent their suits of armor becoming immobile.
 
-The Quasielemental Vacuum has the following traits.
+The Quasielemental Vacuum has the following additional traits.
 \begin{itemize*}
-\item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
-\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Vacuum take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.
-\item \textbf{Enhanced Magic:} Spells and spell-like abilities that use, manipulate, or create air (including spells of the Air domain) are both empowered and enlarged (as if the \feat{Empower Spell} and \feat{Enlarge Spell} metamagic feats had been used on them, but the spells don't require higher-level slots).
-\item \textbf{Impeded Magic:} Spells and spell-like abilities that use or create earth (including spells of the Earth domain and spells that summon earth elementals or outsiders with the earth subtype) are impeded.
+\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Vacuum take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.\\
+
+This trait replaces the Air-Dominant trait.
 \end{itemize*}
