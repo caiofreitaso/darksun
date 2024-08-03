@@ -5,7 +5,7 @@ The eternal oceans of this plane vary between ice cold and boiling hot, between 
 
 Armies of the Elemental Plane of Water are strange and surprisingly plentiful. Within the waves that are water elementals ride fearsome aquatic creatures, from sharks to kraken. The armies of the plane are aware when an intruder lurks, and if one is injured in battle, the scent of blood will travel for miles, attracting more and more creatures to devour the interloper.
 
-The plane boasts two layers: Quasielemental Steam and Quasielemental Salt.
+The plane boasts two layers: Quasielemental Mist and Quasielemental Ice.
 
 \begin{figure}[h!]
 \centering
@@ -15,9 +15,9 @@ The plane boasts two layers: Quasielemental Steam and Quasielemental Salt.
 \path[pattern=dots, pattern color=black!20] (-\halflength, 7mm) rectangle (\halflength, 3.5mm);
 \path[pattern=crosshatch dots, pattern color=black!20] (-\halflength, 3.5mm) rectangle (\halflength, -3.5mm);
 \path[pattern=dots, pattern color=black!40] (-\halflength, -3.5mm) rectangle (\halflength, -7mm);
-\node[color=richblack] at (0,  5.25mm) {\tableheader \contour{white}{Quasielemental Steam}};
+\node[color=richblack] at (0,  5.25mm) {\tableheader \contour{white}{Quasielemental Mist}};
 \node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Water}};
-\node[color=richblack] at (0, -5.25mm) {\tableheader \contour{white}{Quasielemental Salt}};
+\node[color=richblack] at (0, -5.25mm) {\tableheader \contour{white}{Quasielemental Ice}};
 \end{scope}
 \end{tikzpicture}
 \end{figure}
@@ -26,26 +26,30 @@ The plane boasts two layers: Quasielemental Steam and Quasielemental Salt.
 \subsubsection{Elemental Plane of Water Traits}
 \begin{itemize*}
 \item \textbf{Subjective Directional Gravity:} Inhabitants of the plane determine their own ``down'' direction. Objects not under the motive force of others do not move.
-\item \textbf{Water-Dominant.}
+\item \textbf{Water-Dominant:} Creatures made of fire take 1d10 points of damage each round.
 \item \textbf{Enhanced Magic:} Spells and spell-like abilities that use or create water are both extended and enlarged (as if the \feat{Extend Spell} and \feat{Enlarge Spell} metamagic feats had been used on them, but the spells don't require higher-level slots). Spells and spell-like abilities that are already extended or enlarged are unaffected by this benefit.
 \item \textbf{Impeded Magic:} Spells and spell-like abilities with the fire descriptor (including spells of the Fire domain) are impeded.
 \end{itemize*}
 
 
-\subsubsection{Quasielemental Steam}
-The layer of Quasielemental Steam is where the Elemental Plane of Water is closest to the Positive Energy Plane, infusing the water with energy, until it becomes steam. This steam is not hot, or a dangerous hazard. Near the Elemental Water, the steam becomes so thick it seems more like bubbly water. It is a damp place, filled with comforting mists.
+\subsubsection{Quasielemental Mist}
+The layer of Quasielemental Mist is where the Elemental Plane of Water is closest to the Positive Energy Plane, infusing the water with energy, until it turns to mist. This mist is not hot or cold, or even a dangerous hazard. Near the Elemental Water, the mist becomes so thick it seems more like bubbly water.
 
-\textbf{Breathing Steam:} The Quasielemental Steam is barely breathable, as creatures are \spellref{slow}{slowed} by breathing it. A \spell{worm's breath} spell removes this limitation.
+\textbf{Breathing Mist:} The Quasielemental Mist is barely breathable, creatures are \spellref{slow}{slowed} by breathing it. A \spell{worm's breath} spell removes this limitation.
 
-The Quasielemental Steam has the following additional traits.
+The Quasielemental Mist has the following additional traits.
 \begin{itemize*}
-\item \textbf{Minor Positive-Dominant:} A creature in Quasielemental Steam gains fast healing 2 as an extraordinary ability.
+\item \textbf{Minor Positive-Dominant:} A creature in Quasielemental Mist gains fast healing 2 as an extraordinary ability.
 \end{itemize*}
 
-\subsubsection{Quasielemental Salt}
-The layer of Quasielemental Salt is where the Elemental Plane of Water is closest to the Negative Energy Plane, removing all substance from the water, only salt remaining. When the Elemental Water gets closer to the Quasielemental Salt, the ocean becomes more saline until it becomes brine.
+\subsubsection{Quasielemental Ice}
+The layer of Quasielemental Ice is where the Elemental Plane of Water is closest to the Negative Energy Plane, removing all warmth from the water, only ice remaining.
 
-The Quasielemental Salt has the following additional traits.
+\textbf{Unearthly Cold:} Every round, an unprotected creature in Quasielemental Ice takes 1d6 lethal damage and 1d4 nonlethal damage from the cold (no save allowed). Partially protected characters take damage once per 10 minutes, instead.
+
+The Quasielemental Ice has the following additional traits.
 \begin{itemize*}
-\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Salt take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.
+\item \textbf{Minor Negative-Dominant:} A living creature in Quasielemental Ice take 1d6 points of damage per round. At 0 hit points or lower, they crumble into ash.\\
+
+This trait replaces the Water-Dominant trait.
 \end{itemize*}

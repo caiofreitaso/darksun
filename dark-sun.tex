@@ -147,7 +147,12 @@ contents={%
 }
 
 \makeatother
+
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
 \begin{document}
+\newlength\halflength
+\setlength{\halflength}{\columnwidth/2}
 
 \global\blankpagetrue
 \includepdf[pages=-]{cover.pdf}
@@ -170,7 +175,7 @@ contents={%
 \input{chapters/05-character-classes.tex}
 \pagepdf*{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
-\pagepdf*{images/color-mounted-1.pdf}
+\pagepdf{images/color-mounted-1.pdf}
 \input{chapters/07-feats.tex}
 \pagepdf*{images/color-halfelf-2-2.pdf}
 \input{chapters/08-prestige-classes.tex}

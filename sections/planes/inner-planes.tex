@@ -26,65 +26,65 @@ The Inner Planes have the following structure.
 \draw[line width=0.2mm, color=black, draw, fill=white] (0,0) circle (\halflength*0.5/2);
 \node[color=richblack] at (0, \baselineskip/2) {\tableheader Ethereal};
 \node[color=richblack] at (0,-\baselineskip/2) {\tableheader Plane};
-\node[color=richblack] at (-0.707*0.75\halflength*0.5, 0.707*0.75\halflength*0.5) {\tableheader \contour{white}{Air}};
-\node[color=richblack] at ( 0.707*0.75\halflength*0.5,-0.707*0.75\halflength*0.5) {\tableheader \contour{white}{Earth}};
-\node[color=richblack] at ( 0.707*0.75\halflength*0.5, 0.707*0.75\halflength*0.5) {\tableheader \contour{white}{Fire}};
-\node[color=richblack] at (-0.707*0.75\halflength*0.5,-0.707*0.75\halflength*0.5) {\tableheader \contour{white}{Water}};
+\node[color=richblack] at (-0.7071*0.75\halflength*0.5, 0.7071*0.75\halflength*0.5) {\tableheader \contour{white}{Air}};
+\node[color=richblack] at ( 0.7071*0.75\halflength*0.5,-0.7071*0.75\halflength*0.5) {\tableheader \contour{white}{Earth}};
+\node[color=richblack] at ( 0.7071*0.75\halflength*0.5, 0.7071*0.75\halflength*0.5) {\tableheader \contour{white}{Fire}};
+\node[color=richblack] at (-0.7071*0.75\halflength*0.5,-0.7071*0.75\halflength*0.5) {\tableheader \contour{white}{Water}};
 \node[color=richblack] at (0.75\halflength*0.5, 0) {\tableheader Magma};
 \node[color=richblack] at (-0.75\halflength*0.5, 0) {\tableheader Rain};
 \node[color=richblack] at (0, -0.75\halflength*0.5) {\tableheader Silt};
 \node[color=richblack] at (0, 0.75\halflength*0.5) {\tableheader Sun};
 \end{scope}
 \begin{scope}[blend group=normal, shift={(2\halflength*0.5+1mm,0)}]
-\draw[line width=0.2mm, color=black, draw, fill=white]
-   ( 0.707\halflength*0.5, 0.707\halflength*0.5) arc (45:-45:\halflength*0.5)
--- ( 0    ,-0.707\halflength*0.5)
--- ( 0    , 0.707\halflength*0.5)
--- ( 0.45\halflength*0.5, 0.707\halflength*0.5)
---cycle;
-
-\draw[line width=0.2mm, color=black, draw, fill=white]
-   (-0.707\halflength*0.5,-0.707\halflength*0.5) arc (225:135:\halflength*0.5)
--- ( 0    , 0.707\halflength*0.5)
--- ( 0    ,-0.707\halflength*0.5)
--- (-0.45\halflength*0.5,-0.707\halflength*0.5)
---cycle;
-
-
 \path[pattern=dots, pattern color=black!40]
-   (-0.707\halflength*0.5,-0.707\halflength*0.5) arc (225:210:\halflength*0.5)
--- (-.1mm  ,-0.45\halflength*0.5)
--- (-.1mm  ,-0.707\halflength*0.5)
+   (-0.7071\halflength*0.5,-0.7071\halflength*0.5) arc (225:210:\halflength*0.5)
+-- (-.1mm  ,-0.5\halflength*0.5)
+-- (-.1mm  ,-0.7071\halflength*0.5)
 --cycle;
 \path[pattern=dots, pattern color=black!40]
-   (0.707\halflength*0.5,-0.707\halflength*0.5) arc (-45:-30:\halflength*0.5)
--- (.1mm  ,-0.45\halflength*0.5)
--- (.1mm  ,-0.707\halflength*0.5)
+   (0.7071\halflength*0.5,-0.7071\halflength*0.5) arc (-45:-30:\halflength*0.5)
+-- (.1mm  ,-0.5\halflength*0.5)
+-- (.1mm  ,-0.7071\halflength*0.5)
 --cycle;
 
 \path[pattern=dots, pattern color=black!20]
-   (-0.707\halflength*0.5, 0.707\halflength*0.5) arc (135:150:\halflength*0.5)
--- (-0.1mm   , 0.45\halflength*0.5)
--- (-0.1mm   , 0.707\halflength*0.5)
+   (-0.7071\halflength*0.5, 0.7071\halflength*0.5) arc (135:150:\halflength*0.5)
+-- (-0.1mm   , 0.5\halflength*0.5)
+-- (-0.1mm   , 0.7071\halflength*0.5)
 --cycle;
 \path[pattern=dots, pattern color=black!20]
-   (0.707\halflength*0.5, 0.707\halflength*0.5) arc (45:30:\halflength*0.5)
--- (0.1mm   , 0.45\halflength*0.5)
--- (0.1mm   , 0.707\halflength*0.5)
+   (0.7071\halflength*0.5, 0.7071\halflength*0.5) arc (45:30:\halflength*0.5)
+-- (0.1mm   , 0.5\halflength*0.5)
+-- (0.1mm   , 0.7071\halflength*0.5)
 --cycle;
 
+\draw[line width=0.2mm, color=black, draw]
+   ( 0.7071\halflength*0.5, 0.7071\halflength*0.5) arc (45:-45:\halflength*0.5)
+-- ( 0    ,-0.7071\halflength*0.5)
+-- ( 0    , 0.7071\halflength*0.5)
+-- ( 0.5\halflength*0.5, 0.7071\halflength*0.5)
+--cycle;
+
+\draw[line width=0.2mm, color=black, draw]
+   (-0.7071\halflength*0.5,-0.7071\halflength*0.5) arc (225:135:\halflength*0.5)
+-- ( 0    , 0.7071\halflength*0.5)
+-- ( 0    ,-0.7071\halflength*0.5)
+-- (-0.5\halflength*0.5,-0.7071\halflength*0.5)
+--cycle;
+
+
 \path[pattern=crosshatch dots, pattern color=black!20]
-   (-0.866\halflength*0.5, 0.45\halflength*0.5) arc (150:210:\halflength*0.5)
--- (-0.1mm   ,-0.45\halflength*0.5)
--- (-0.1mm   , 0.45\halflength*0.5)
+   (-0.866\halflength*0.5, 0.5\halflength*0.5) arc (150:210:\halflength*0.5)
+-- (-0.1mm   ,-0.5\halflength*0.5)
+-- (-0.1mm   , 0.5\halflength*0.5)
 --cycle;
 \path[pattern=crosshatch dots, pattern color=black!20]
-   (0.866\halflength*0.5, 0.45\halflength*0.5) arc (30:-30:\halflength*0.5)
--- (0.1mm,-0.45\halflength*0.5)
--- (0.1mm, 0.45\halflength*0.5)
+   (0.866\halflength*0.5, 0.5\halflength*0.5) arc (30:-30:\halflength*0.5)
+-- (0.1mm,-0.5\halflength*0.5)
+-- (0.1mm, 0.5\halflength*0.5)
 --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=white] ( 0.707\halflength*0.5, 0.707\halflength*0.5) arc  (45:135:\halflength*0.5) -- ( 0.707\halflength*0.5, 0.707\halflength*0.5) --cycle;
-\draw[line width=0.2mm, color=black, draw, fill=black] (-0.707\halflength*0.5,-0.707\halflength*0.5) arc (225:315:\halflength*0.5) -- (-0.707\halflength*0.5,-0.707\halflength*0.5) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=white] ( 0.7071\halflength*0.5, 0.7071\halflength*0.5) arc  (45:135:\halflength*0.5) -- ( 0.7071\halflength*0.5, 0.7071\halflength*0.5) --cycle;
+\draw[line width=0.2mm, color=black, draw, fill=black] (-0.7071\halflength*0.5,-0.7071\halflength*0.5) arc (225:315:\halflength*0.5) -- (-0.7071\halflength*0.5,-0.7071\halflength*0.5) --cycle;
 
 \draw[line width=0.2mm, color=black, draw, fill=black!10] (0, 0) circle (\halflength*0.5/2);
 \draw[line width=0.2mm, color=black, draw] (\halflength*0.5, 0) arc (0:360:\halflength*0.5);
