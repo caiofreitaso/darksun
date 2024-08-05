@@ -499,9 +499,11 @@
 }
 \newcommand{\TransparentTable}[4][h!]{
 	\ifx&#2&{\noindent\else\begin{table}[#1]\caption{\label{tab:#2}#2}\fi
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\small
 	\begin{tabularx}{\columnwidth}{@{}#3@{}}
 	#4\end{tabularx}
+	};\end{tikzpicture}}
 	\ifx&#2&}\else\end{table}\fi
 }
 \newcommand{\Table}[4][h!]{

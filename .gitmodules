@@ -1,0 +1,3 @@
+[submodule "pdfsizeopt"]
+	path = pdfsizeopt
+	url = git@github.com:pts/pdfsizeopt

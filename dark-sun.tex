@@ -25,36 +25,71 @@
 }
 \title{Dark Sun d20}
 \newif\ifblankpage
+\newif\ifwhitepage
+\newif\ifpartpage
 \backgroundsetup{
 scale=1,
 angle=0,
 opacity=1,
 contents={%
-  \ifblankpage
-  \else
-    \ifodd\value{page}
-      \includegraphics[width=\paperwidth]{images/background-filled-odd.pdf}
-    \else
-      \includegraphics[width=\paperwidth]{images/background-filled-even.pdf}
-    \fi
-  \fi
-}
-}
+  \ifwhitepage%
+  \else%
+    \ifblankpage%
+      \ifpartpage%
+      \begin{tikzpicture}[remember picture,overlay,baseline=0,blend mode=multiply,every node/.style={inner ysep=0,inner xsep=0}]
+          \node at (0.5mm,0) {\includegraphics[height=\paperheight]{images/color-paper.jpg}};
+          \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/sun-detail.pdf}};
+        \end{tikzpicture}
+      \else%
+        \includegraphics[height=\paperheight]{images/color-paper.jpg}
+      \fi%
+    \else%
+      \ifodd\value{page}%
+        \begin{tikzpicture}[remember picture,overlay,baseline=0,every node/.style={inner ysep=0,inner xsep=0}]
+          \node at (0.5mm,0) {\includegraphics[height=\paperheight]{images/color-paper.jpg}};
+          \begin{scope}[blend mode=multiply]
+          \node[xscale=-1] at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-filled-even.pdf}};
+          \end{scope}
+          \begin{scope}[blend mode=normal]
+          \node[xscale=-1] at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-highlights.pdf}};
+          \end{scope}
+        \end{tikzpicture}
+      \else%
+        \begin{tikzpicture}[remember picture,overlay,baseline=0,every node/.style={inner ysep=0,inner xsep=0}]
+          \node at (0.5mm,0) {\includegraphics[height=\paperheight]{images/color-paper.jpg}};
+          \begin{scope}[blend mode=multiply]
+          \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-filled-even.pdf}};
+          \end{scope}
+          \begin{scope}[blend mode=normal]
+          \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-highlights.pdf}};
+          \end{scope}
+        \end{tikzpicture}
+      \fi%
+      \begin{tikzpicture}[remember picture,overlay]
+        \fill[TableColor] (nonchapter area.north west) rectangle (nonchapter area.south east);
+        \fill[black] (nonchapter line area.north west) rectangle (nonchapter line area.south east);
+      \end{tikzpicture}
+    \fi%
+  \fi%
+}%
+}%
+
 \newcommand{\WOTC}{\par\textit{\small{\textcopyright} Wizards of the Coast.}}
+
 \makeatletter
 \@newtikzpagenode{nonchapter area}{%
-    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top}}%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top+4.375mm}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
 }
 \@newtikzpagenode{nonchapter line area}{%
-    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-1.5pt}}%
-    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top}}%
+    \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top+4.375mm-1.5pt}}%
+    \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top+4.375mm}}%
 }
 \@newtikzpagenode{chapter area}{%
     \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-12mm}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight}}%
 }
-\@newtikzpagenode{line area}{%
+\@newtikzpagenode{chapter line area}{%
     \def\southwest{\pgfpoint{0}{\paperheight-\current@textarea@top-12mm-1.5pt}}%
     \def\northeast{\pgfpoint{\paperwidth}{\paperheight-\current@textarea@top-12mm}}%
 }
@@ -63,24 +98,14 @@ contents={%
     \centering
     \begin{tikzpicture}[remember picture,overlay]
       \fill[TableColor] (chapter area.north west) rectangle (chapter area.south east);
-      \fill[black] (line area.north west) rectangle (line area.south east);
-      \node[rotate=180,anchor=north] at (0,-0.35) { \includegraphics[width=8cm]{images/chapter.png} };
-      \node[anchor=north] at (0,1.85) { \color{white}\imfellEnglish\huge\@chapapp\space\thechapter };
+      \fill[black] (chapter line area.north west) rectangle (chapter line area.south east);
+      \node[rotate=180,anchor=north] at (0,-3.4mm) { \includegraphics[width=8cm]{images/chapter.png} };
+      \node[anchor=north] at (0,1.85) { \color{white}\imfellEnglish\huge\@chapapp\space\thechapter~ };
     \end{tikzpicture}
 
     \vskip5mm
     \imfellEnglish\color{ChapterColor}%
-    % \begin{tabular}{p{25mm}r{\textwidth-25mm}}
     \begin{tabular}{Z{\textwidth}}
-
-    % \ifnum \c@secnumdepth >\m@ne%
-    %   \if@mainmatter%
-    %     \Large\contourlength{.5pt}\contournumber{1}\contour{white}{
-    %       \@chapapp\space\thechapter%
-    %     }
-    %   \fi%
-    % \fi%
-    % &
     \fontsize{24.88pt}{24.88pt}\bfseries{{
       \contourlength{0.5pt}\contour{white}{
         \MakeUppercase{#1}
@@ -97,7 +122,7 @@ contents={%
       \fill[black] (nonchapter line area.north west) rectangle (nonchapter line area.south east);
     \end{tikzpicture}
 
-    \vskip-8.75mm
+    \vskip-11.5mm
     \imfellEnglish\color{ChapterColor}%
     \begin{tabular}{Z{\textwidth}}
     \fontsize{24.88pt}{24.88pt}\bfseries{{
@@ -109,6 +134,22 @@ contents={%
   }%
   \vskip2mm
 }
+\def\@part[#1]#2{%
+  \global\blankpagetrue
+  \global\partpagetrue
+  \ifnum \c@secnumdepth >-2\relax
+    \refstepcounter{part}%
+    \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+  \else
+    \addcontentsline{toc}{part}{#1}%
+  \fi
+  \markboth{}{}%
+  {
+    \centering
+    \fontsize{40pt}{40pt}\bfseries{\color{ChapterColor}\contourlength{0.5pt}\contour{white}{#2}}\par
+  }
+  \vfil\newpage\twocolumn\global\partpagefalse\global\blankpagefalse
+ }
 \renewcommand{\LettrineFontHook}{\color{ChapterColor}\Huge\Nouveaudfamily}
 \renewcommand\labelitemi{$\smallblackdiamond$}
 \renewcommand\labelitemii{$\smalldiamond$}
@@ -120,14 +161,23 @@ contents={%
 \newcommand\onequarter{\nicefrac{1}{4} }
 \newcommand\onefifth{\nicefrac{1}{5} }
 \newcommand\onethird{\nicefrac{1}{3} }
-% \newcommand\oneeighth{⅛}
-% \newcommand\threequarters{\unichar{"00BE}}
-% \newcommand\onehalf{\unichar{"00BD}}
-% \newcommand\onequarter{\unichar{"00BC}}
-% \newcommand\onethird{\unichar{"2153}}
 \newcommand\multiplied{\unichar{"00D7}}
 \newcommand\blankpage{\clearpage\global\blankpagetrue\thispagestyle{empty}\mbox{}\clearpage\global\blankpagefalse}
-\newcommand\pagepdf{\@ifstar{\clearpage\includepdf}{\blankpage\includepdf}}
+
+\def\pagepdf{\@ifstar{\@SkipPDF}{\@ImmediatePDF}}
+\newcommand{\@ImmediatePDF}[1]{
+  \clearpage%
+  \global\whitepagetrue%
+  \includepdf{#1}%
+  \global\whitepagefalse
+}
+\newcommand{\@SkipPDF}[1]{
+  \blankpage%
+  \global\whitepagetrue%
+  \includepdf{#1}%
+  \global\whitepagefalse
+}
+
 \def\Figure{\@ifstar\@BigFigure\@SmallFigure}
 \def\FigureBody#1#2{
   \centering
@@ -148,68 +198,78 @@ contents={%
 
 \makeatother
 
-\pdfcompresslevel=9
-\pdfobjcompresslevel=3
+\pdfcompresslevel9
+\pdfobjcompresslevel3
 \begin{document}
-\newlength\halflength
-\setlength{\halflength}{\columnwidth/2}
-
 \newlength{\halflength}
 \setlength{\halflength}{\columnwidth/2}
 
-\global\blankpagetrue
+\global\whitepagetrue
 \includepdf[pages=-]{cover.pdf}
-\global\blankpagefalse
+\global\whitepagefalse
 \clearpage
-\global\blankpagetrue
+\global\whitepagetrue
 \includepdf[pages=-]{credits-and-legal.pdf}
-\global\blankpagefalse
+\global\whitepagefalse
 
 \tableofcontents
 
-\pagepdf*{images/color-wizard-1.pdf}
+\blankpage
+\part{Player's Handbook}
+\pagepdf{images/color-wizard-1.pdf}
 \input{chapters/01-introduction.tex}
 % \input{chapters/02-abilities.tex}
-\pagepdf*{images/color-halfelf-1.pdf}
+\pagepdf{images/color-halfelf-1.pdf}
 \input{chapters/03-character-races.tex}
-\pagepdf{images/color-psionics-2.pdf}
+\pagepdf*{images/color-psionics-2.pdf}
 \input{chapters/04-character-description.tex}
-\pagepdf*{images/color-fighter-1.pdf}
+\pagepdf{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
-\pagepdf*{images/color-barbarian-1.pdf}
+\pagepdf{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
-\pagepdf{images/color-mounted-1.pdf}
+\pagepdf*{images/color-mounted-1.pdf}
 \input{chapters/07-feats.tex}
-\pagepdf*{images/color-halfelf-2-2.pdf}
+\pagepdf{images/color-halfelf-2-2.pdf}
 \input{chapters/08-prestige-classes.tex}
-\pagepdf{images/color-market-1.pdf}
+
+\blankpage
+\part{Athasian Emporium}
+\pagepdf*{images/color-market-1.pdf}
 \input{chapters/09-equipment.tex}
-\pagepdf*{images/color-gladiator-2.pdf}
+\pagepdf{images/color-gladiator-2.pdf}
 \input{chapters/10-magic-items.tex}
-\pagepdf*{images/color-cleric-1.pdf}
+
+\blankpage
+\part{Magi Grimoire}
+\pagepdf{images/color-cleric-1.pdf}
 \input{chapters/11-magic.tex}
 \input{chapters/12-spells.tex}
-\pagepdf{images/color-psionics-1.pdf}
+
+\blankpage
+\part{The Will and The Way}
+\pagepdf*{images/color-psionics-1.pdf}
 \input{chapters/13-psionics.tex}
 \input{chapters/14-powers.tex}
-\pagepdf*{images/color-fighter-2.pdf}
+
+\blankpage
+\part{Dungeon Master's Guide}
+\pagepdf{images/color-fighter-2.pdf}
 \input{chapters/15-combat.tex}
-\pagepdf{images/color-elf-1.pdf}
+\pagepdf*{images/color-elf-1.pdf}
 \input{chapters/16-adventuring.tex}
-\pagepdf*{images/color-dragon-2.pdf}
+\pagepdf{images/color-dragon-2.pdf}
 \input{chapters/17-campaign.tex}
-\pagepdf{images/color-tyr-1.pdf}
+\pagepdf*{images/color-tyr-1.pdf}
 \input{chapters/18-life-on-athas.tex}
-\pagepdf*{images/color-darksun-2.pdf}
+\pagepdf{images/color-darksun-2.pdf}
 \input{chapters/19-organizations.tex}
 \input{chapters/20-planes-of-existence.tex}
-\pagepdf{images/color-darksun-1.pdf}
+\pagepdf*{images/color-darksun-1.pdf}
 \input{chapters/21-other-ages-to-play.tex}
-\pagepdf*{images/color-dragon-1.pdf}
+\pagepdf{images/color-dragon-1.pdf}
 \input{chapters/22-epic-characters.tex}
-\pagepdf*{images/color-gladiator-1.pdf}
+\pagepdf{images/color-gladiator-1.pdf}
 \input{chapters/23-glossary.tex}
-% epic chacracter
 
 
 \listoftables
@@ -219,7 +279,7 @@ contents={%
 \end{appendices}
 
 \clearpage
-\global\blankpagetrue
+\global\whitepagetrue
 \includepdf[pages=-]{ogl.pdf}
-\global\blankpagefalse
+\global\whitepagefalse
 \end{document}
