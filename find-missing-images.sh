@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for image in $(find images/ -name '*.png' | sort)
+for image in $(find images/ -name '*.png' | sort | grep -v '\(chapter\|logo\).png')
 do
 	QUANTITY=$(find . -name "*.tex" -exec grep {} -e "^[^%]\+${image}" \; | wc -l)
 

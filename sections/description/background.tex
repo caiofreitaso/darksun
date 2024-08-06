@@ -88,6 +88,43 @@ There is a 40\% chance that your family status is in danger. If so, roll a d10 a
 10 & You are the inheritor of a family debt; you must honor this debt.\\
 }
 
+
+\subsubsection{Siblings}
+Determine the number of siblings you have by rolling your race's dice (see below). You are an only child if you roll a result within your race's margin.
+
+\Table{}{Xcc}{
+  \tableheader Race
+& \tableheader Die
+& \tableheader Only Child Margin\\
+Half-giant                          & 1d6  & 5--6   \\
+Elf, human, half-elf, halfling, mul & 1d10 & 8--10  \\
+Dwarf                               & 1d12 & 10--12 \\
+Thri-kreen                          & 1d20 & 18--20 \\
+}
+
+For each sibling roll a die. If the result is even, the sibling is male, else the sibling is female. Then roll for each step in \tabref{Sibling}.
+
+\Table{Sibling}{lX}{
+  \textit{d10}
+& \tableheader Relative Age\\
+1--5 & Sibling is older.\\
+6--9 & Sibling is younger.\\
+10   & Sibling is your twin.\\
+
+\cmidrule[0pt]{1-2}
+\rowcolor{white}\\
+
+  \textit{d10}
+& \tableheader Feelings Towards You\\
+1--2  & Sibling dislikes you.\\
+3--4  & Sibling likes you.\\
+5--6  & Sibling is neutral towards you.\\
+7--8  & Sibling hero worship you.\\
+9--10 & Sibling hates you.\\
+}
+
+\Figure{t}{images/slave-2.png}
+\vskip4cm
 \subsubsection{Childhood}
 Roll 1d10 and check \tabref{Childhood Environment}.
 
@@ -130,42 +167,10 @@ Roll 1d10 and check \tabref{Childhood Environment}.
 10   & \multicolumn{3}{l}{In slavery}                                \\
 }
 
-\Figure{b}{images/ruins-1.png}
-\subsubsection{Siblings}
-Determine the number of siblings you have by rolling your race's dice (see below). You are an only child if you roll a result within your race's margin.
-
-\Table{}{Xcc}{
-  \tableheader Race
-& \tableheader Die
-& \tableheader Only Child Margin\\
-Half-giant                          & 1d6  & 5--6   \\
-Elf, human, half-elf, halfling, mul & 1d10 & 8--10  \\
-Dwarf                               & 1d12 & 10--12 \\
-Thri-kreen                          & 1d20 & 18--20 \\
-}
-
-For each sibling roll a die. If the result is even, the sibling is male, else the sibling is female. Then roll for each step in \tabref{Sibling}.
-
-\Table{Sibling}{lX}{
-  \textit{d10}
-& \tableheader Relative Age\\
-1--5 & Sibling is older.\\
-6--9 & Sibling is younger.\\
-10   & Sibling is your twin.\\
-
-\cmidrule[0pt]{1-2}
-\rowcolor{white}\\
-
-  \textit{d10}
-& \tableheader Feelings Towards You\\
-1--2  & Sibling dislikes you.\\
-3--4  & Sibling likes you.\\
-5--6  & Sibling is neutral towards you.\\
-7--8  & Sibling hero worship you.\\
-9--10 & Sibling hates you.\\ 
-}
 
 % \vskip3cm
+\clearpage
+\Figure*{t}{images/resting-4.png}
 \subsection{Life Events}
 For each year of your character's life past your race's adulthood age (see \tabref{Random Starting Ages}), roll 1d6 to see the next step:
 
@@ -180,7 +185,6 @@ For each year of your character's life past your race's adulthood age (see \tabr
 6 & Nothing happened\\
 }
 
-\clearpage
 % \subsubsection{Big Event}
 % Roll a die. On an even roll, you got lucky---roll 1d10 and check \tabref{Lucky Event}. On an odd roll, something bad happened---roll 1d10 and check \tabref{Disaster Event}.
 \subsubsection{Lucky Event}
@@ -294,7 +298,6 @@ Roll 1d\% and check \tabref{Disaster Event}.
 97--100 & You have a $-1$ penalty in Reflex saves.\\ %\textbf{Major psychosis:}
 }
 
-\Figure{b}{images/adventurer-5.png}
 
 \clearpage
 \subsubsection{Friends}
