@@ -100,16 +100,18 @@
 \newcommand{\class}[1]{\hyperref[class:#1]{#1}}
 \newcommand{\skill}[1]{\hyperref[skill:#1]{#1}}
 \newcommand{\feat}[1]{\hyperref[feat:#1]{#1}}
+\newcommand{\powerref}[3]{\emph{\hyperref[#1:#2]{#3}}}
+\newcommand{\spellref}[2]{\powerref{spell}{#1}{#2}}
+\newcommand{\psionicref}[2]{\powerref{psionic}{#1}{#2}}
+\newcommand{\magicitem}[1]{\powerref{magicitem}{#1}{#1}}
+\newcommand{\psionicitem}[1]{\powerref{psionicitem}{#1}{#1}}
 \newcommand{\spell}[1]{\spellref{#1}{#1}}
-\newcommand{\spellref}[2]{\emph{\hyperref[spell:#1]{#2}}}
-\newcommand{\spellList}[1]{\noindent\textit{\hyperref[spell:#1]{#1}}}
 \newcommand{\psionic}[1]{\psionicref{#1}{#1}}
-\newcommand{\psionicref}[2]{\emph{\hyperref[psionic:#1]{#2}}}
-\newcommand{\psionicList}[1]{\noindent\textit{\hyperref[psionic:#1]{#1}}}
-\newcommand{\magicitem}[1]{\emph{\hyperref[magicitem:#1]{#1}}}
-\newcommand{\psionicitem}[1]{\emph{\hyperref[psionicitem:#1]{#1}}}
+\newcommand{\refList}[2]{\noindent\textit{\hyperref[#1:#2]{#2}}}
+\newcommand{\spellList}[1]{\refList{spell}{#1}}
+\newcommand{\psionicList}[1]{\refList{psionic}{#1}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
-\newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter: #1}}
+\newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter~\ref{#1}: #1}}
 \newcommand{\apxref}[1]{\hyperref[apx:#1]{Appendix: #1}}
 
 
@@ -284,64 +286,8 @@
 
 	\textbf{DC 30:} #6
 }
-\newcommand{\City}[5]{
-	\section{#1}
-	\textbf{Population:} #2
 
-	\textbf{Exports:} #3
 
-	\textbf{Languages:} #4
-
-	#5
-
-	\CityDescription
-}
-\newcommand{\SubCity}[5]{
-	\subsectionA{#1}
-	\textbf{Population:} #2
-
-	\textbf{Exports:} #3
-
-	\textbf{Languages:} #4
-
-	#5
-
-	\CityDescription[\subsubsection]
-}
-\newcommand{\CityDescription}[7][\subsection]{
-	#1{Life and Society}
-	#2
-	#1{Government and Politics}
-	#3
-	#1{Power Groups}
-	#4
-	\ifx&#5&\else
-	#1{Major Settlements}
-	#5
-	\fi
-
-	\ifx&#6&\else
-	#1{Important Sites}
-	#6
-	\fi
-	#1{Adventure Ideas}
-	\begin{itemize*}
-	#7
-	\end{itemize*}
-}
-\newcommand{\AlternateClassFeature}[6]{
-	\subsubsection{#1}
-	#2
-
-	\ifx&#3&\else\textbf{Special Requirements:} #3
-
-	\fi
-	\textbf{Level:} #4
-
-	\textbf{Replaces:} #5
-
-	\textbf{Benefit:} #6
-}
 \newcommand{\Domain}[4]{
 	\subsection{#1 Domain}
 	\ifx&#2&\else\textbf{Patron:} #2.
@@ -361,19 +307,19 @@
 \newcommand{\Psionic}{
 	\PowerDescription{psionic}
 }
-\newcommand{\PowerDescription}[6]{
-	\subsection{#2}
-	\label{#1:#2}
-	\label{#1:#3}
+\newcommand{\PowerDescription}[7][\subsection]{
+	#1{#3}
+	\label{#2:#3}
+	\label{#2:#4}
 	{
 		{
 			\setlength\parindent{0pt}
-			#4\\
-			#5
+			#5\\
+			#6
 		}
 		\\
 		{
-			\noindent #6
+			\noindent #7
 		}
 	}
 }
@@ -620,7 +566,7 @@
 \newcommand{\SpellcasterTable}[4][10]{
 	\BigTableBottom{#3}{l l *{3}{Z{5mm}} L *{#1}{Z{#2}} }{
 		\rowcolor{white}
-		& & & & & & \multicolumn{#1}{c}{\tableheader Spells per day}\\
+		& & & & & & \multicolumn{#1}{c}{\tableheader Spells per Day}\\
 		\cmidrule[0.5pt]{7-\Sum{6}{#1}}
 		\multirow[b]{-2}{6mm}{\tableheader Level}
 		& \multirow[b]{-2}{2cm}{\tableheader Base\\ Attack Bonus}
@@ -649,21 +595,6 @@
 		& \tableheader Power Points per Day
 		& \tableheader Powers Known
 		& \tableheader Disciplines \\
-		#3
-	}
-}
-
-\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{3}{Z{5mm}} Z{6mm} Z{9mm} L l]{
-	\BigTableBottom{#2}{#1}{
-		\tableheader Level
-		& \tableheader Base \hskip3em Attack Bonus
-		& \tableheader Fort Save
-		& \tableheader Ref Save
-		& \tableheader Will Save
-		& \tableheader AC Bonus
-		& \tableheader Unarmed Damage
-		& \tableheader Special
-		& \tableheader Manifesting\\
 		#3
 	}
 }

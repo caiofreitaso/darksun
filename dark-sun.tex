@@ -32,31 +32,31 @@ scale=1,
 angle=0,
 opacity=1,
 contents={%
-  \ifwhitepage%
-  \else%
-    \ifblankpage%
-      \ifpartpage%
+  \ifwhitepage
+  \else
+    \ifblankpage
+      \ifpartpage
       \begin{tikzpicture}[remember picture,overlay,baseline=0,blend mode=multiply,every node/.style={inner ysep=0,inner xsep=0}]
-          \node at (0.5mm,0) {\includegraphics[width=\paperheight]{images/color-paper.jpg}};
+          \node at (0,0) {\includegraphics[height=\paperheight]{images/color-paper.jpg}};
           \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/sun-detail.pdf}};
         \end{tikzpicture}
-      \else%
+      \else
         \includegraphics[height=\paperheight]{images/color-paper.jpg}
-      \fi%
-    \else%
-      \ifodd\value{page}%
+      \fi
+    \else
+      \ifodd\value{page}
         \begin{tikzpicture}[remember picture,overlay,baseline=0,every node/.style={inner ysep=0,inner xsep=0}]
-          \node at (0.5mm,0) {\includegraphics[width=\paperheight]{images/color-paper-2.jpg}};
+          \node at (0,0) {\includegraphics[height=\paperheight]{images/color-paper-2.jpg}};
           \begin{scope}[blend mode=multiply]
-          \node[xscale=-1] at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-filled-even.pdf}};
+          \node[xscale=-1] at (0.2mm,0) {\includegraphics[width=\paperwidth]{images/background-filled-even.pdf}};
           \end{scope}
           \begin{scope}[blend mode=normal]
-          \node[xscale=-1] at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-highlights.pdf}};
+          \node[xscale=-1] at (0,0) {\includegraphics[width=\paperwidth]{images/background-highlights.pdf}};
           \end{scope}
         \end{tikzpicture}
-      \else%
+      \else
         \begin{tikzpicture}[remember picture,overlay,baseline=0,every node/.style={inner ysep=0,inner xsep=0}]
-          \node at (0.5mm,0) {\includegraphics[width=\paperheight]{images/color-paper-2.jpg}};
+          \node at (0.5mm,0) {\includegraphics[height=\paperheight]{images/color-paper-2.jpg}};
           \begin{scope}[blend mode=multiply]
           \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-filled-even.pdf}};
           \end{scope}
@@ -64,13 +64,13 @@ contents={%
           \node at (0.5mm,0) {\includegraphics[width=\paperwidth]{images/background-highlights.pdf}};
           \end{scope}
         \end{tikzpicture}
-      \fi%
+      \fi
       \begin{tikzpicture}[remember picture,overlay]
         \fill[TableColor] (nonchapter area.north west) rectangle (nonchapter area.south east);
         \fill[black] (nonchapter line area.north west) rectangle (nonchapter line area.south east);
       \end{tikzpicture}
-    \fi%
-  \fi%
+    \fi
+  \fi
 }%
 }%
 
@@ -163,6 +163,7 @@ contents={%
 \newcommand\onethird{\nicefrac{1}{3} }
 \newcommand\multiplied{\unichar{"00D7}}
 \newcommand\blankpage{\clearpage\global\blankpagetrue\thispagestyle{empty}\mbox{}\clearpage\global\blankpagefalse}
+\newcommand\whitepage{\clearpage\global\whitepagetrue\thispagestyle{empty}\mbox{}\clearpage\global\whitepagefalse}
 
 \def\pagepdf{\@ifstar{\@SkipPDF}{\@ImmediatePDF}}
 \newcommand{\@ImmediatePDF}[1]{
@@ -206,9 +207,7 @@ contents={%
 
 \global\whitepagetrue
 \includepdf[pages=-]{cover.pdf}
-\global\whitepagefalse
 \clearpage
-\global\whitepagetrue
 \includepdf[pages=-]{credits-and-legal.pdf}
 \global\whitepagefalse
 
@@ -225,14 +224,14 @@ contents={%
 \input{chapters/04-character-description.tex}
 \pagepdf*{images/color-fighter-1.pdf}
 \input{chapters/05-character-classes.tex}
-\pagepdf{images/color-barbarian-1.pdf}
+\pagepdf*{images/color-barbarian-1.pdf}
 \input{chapters/06-skills.tex}
 \pagepdf*{images/color-mounted-1.pdf}
 \input{chapters/07-feats.tex}
 \pagepdf{images/color-halfelf-2-2.pdf}
 \input{chapters/08-prestige-classes.tex}
 
-\blankpage
+\whitepage
 \blankpage
 \part{Athasian Emporium}
 \pagepdf{images/color-market-1.pdf}
@@ -241,17 +240,28 @@ contents={%
 \input{chapters/10-magic-items.tex}
 
 \blankpage
-\part{Magi Grimoire}
-\pagepdf{images/color-cleric-1.pdf}
+\part{Universae Grimoire}
+\pagepdf{images/color-cleric-2.pdf}
 \input{chapters/11-magic.tex}
 \input{chapters/12-spells.tex}
 
-\blankpage
+\whitepage
 \blankpage
 \part{The Will and The Way}
 \pagepdf{images/color-psionics-1.pdf}
 \input{chapters/13-psionics.tex}
 \input{chapters/14-powers.tex}
+
+\blankpage
+\part{Wanderer's Journal}
+\pagepdf{images/color-tyr-1.pdf}
+\input{chapters/18-life-on-athas.tex}
+\pagepdf*{images/color-darksun-2.pdf}
+\input{chapters/19-organizations.tex}
+\pagepdf*{images/color-planes.pdf}
+\input{chapters/20-planes-of-existence.tex}
+\pagepdf*{images/color-darksun-1.pdf}
+\input{chapters/21-other-ages-to-play.tex}
 
 \blankpage
 \part{Dungeon Master's Guide}
@@ -261,16 +271,9 @@ contents={%
 \input{chapters/16-adventuring.tex}
 \pagepdf*{images/color-dragon-2.pdf}
 \input{chapters/17-campaign.tex}
-\pagepdf*{images/color-tyr-1.pdf}
-\input{chapters/18-life-on-athas.tex}
-\pagepdf{images/color-darksun-2.pdf}
-\input{chapters/19-organizations.tex}
-\input{chapters/20-planes-of-existence.tex}
-\pagepdf*{images/color-darksun-1.pdf}
-\input{chapters/21-other-ages-to-play.tex}
 \pagepdf{images/color-dragon-1.pdf}
 \input{chapters/22-epic-characters.tex}
-\pagepdf{images/color-gladiator-1.pdf}
+\pagepdf*{images/color-gladiator-1.pdf}
 \input{chapters/23-glossary.tex}
 
 

@@ -9,7 +9,21 @@ Athasian dragon & Multiclass defiler/manifester that slowly becomes a dragon \\
 Avangion        & Multiclass preserver/manifester that slowly becomes a higher being \\
 Element lord    & Multiclass cleric/manifester that can turn into an elemental \\
 Order adept     & Epic manifester of a secret organization \\
-Spirit initiate & Multiclass druid/manifester that melds into a spirit of the land \\
+Spirit initiate & Multiclass druid/manifester that slowly melds into a spirit of the land \\
+}
+
+
+\newcommand{\EpicTable}[3][ll *{3}{Z{5mm}} L Z{16mm}]{
+    \BigTableBottom{#2}{#1}{
+          \tableheader Level
+        & \tableheader Base Attack Bonus
+        & \tableheader Fort Save
+        & \tableheader Ref Save
+        & \tableheader Will Save
+        & \tableheader Special
+        & \tableheader Psionic Enchantments\\
+        #3
+    }
 }
 
 \input{subsections/epic-levels/epic-prestige-classes/athasian-dragon.tex}

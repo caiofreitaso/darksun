@@ -10,7 +10,7 @@ The following characters are examples of typical allies and opponents that the D
 
 A caravan archer focus on foes already being targeted by the caravan's infantry, since they all have the \feat{Precise Shot} feat. They use the fixed crossbow mounted on top of the wagon at first to deal the greatest damage. If the enemies are still alive, they quickly switch to their longbows.
 
-\textbf{Military Training:} A caravan archer gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A caravan archer increases their Constitution score by 1.
 
 \subsubsection{Caravan Infantry}
 \MonsterStatsDescription{
@@ -23,7 +23,7 @@ A caravan infantry tries to fight as a single entity, using the \feat{Shield Wal
 
 When in grave danger, they fight defensively while using the \feat{Combat Expertise} feat to gain +2 dodge bonus to their AC.
 
-\textbf{Military Training:} A caravan infantry gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A caravan infantry increases their Constitution score by 1.
 
 
 \BigTable{}{lXX}{
@@ -166,10 +166,9 @@ When in grave danger, they fight defensively while using the \feat{Combat Expert
 
 A caravan scout tries to use skirmish as much as possible, while warning the wagon. They never engage head-on.
 
-\textbf{Military Training:} A caravan infantry gains +1 permanent bonus on Constitution.
+\textbf{Skirmish (Ex):} A caravan infantry deals +1d6 points of damage whenever he moves at least 3 meters away from where he was at the start of the turn. This damage only applies to living creatures with discernible anatomy. He can apply this extra damage to ranged attacks, but only if the target is within 9 meters.
 
-\textbf{Skirmish (Ex):} The scout deals an extra 1d6 points of damage on all attacks they make during any round in which they move at least 3 meters.
-
+\textbf{Stout:} A caravan infantry increases their Constitution score by 1.
 
 \subsubsection{Caravan Cavalry}
 \MonsterStatsDescription{
@@ -182,7 +181,7 @@ Caravan cavalry always attack as a single unit. They are more maneuverable than 
 
 They try to always make use of both \feat{Ride-By Attack} and \feat{Spirited Charge} feats.
 
-\textbf{Military Training:} A caravan cavalry gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A caravan cavalry increases their Constitution score by 1.
 
 \subsubsection{Kank Soldier (Mount)}
 \MonsterStatsDescription{
@@ -307,6 +306,7 @@ Soldier kanks usually don't do much besides run around as mounts, but when they 
     & --- \\
 }
 
+\Figure*{b}{images/caravan-2.png}
 \subsubsection{Caravan Sergeant}
 \begin{MonsterStats}
 {Medium Humanoid (human)}
@@ -373,7 +373,7 @@ They only go to the front line if there is no other option, as their job is to c
 
 \textbf{Coordinate Allies (Ex):} As a full-round action, the caravan sergeant can make a \skill{Knowledge} (warcraft) check with a DC equal to 15 + the number of allies affected. If the check succeeds, all affected allies gain a +1 competence bonus on attack rolls or a +1 dodge bonus to AC. They choose which of the two benefits to impart and must impart the same benefit to all affected allies. The benefits last for 1 round. The caravan sergeant cannot use this ability on themselves.
 
-\textbf{Military Training:} A caravan sergeant gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A caravan sergeant increases their Constitution score by 1.
 
 
 \subsubsection{Agent}
@@ -421,6 +421,7 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
 
 * An agent has +2 insight bonus to \skill{Bluff} and \skill{Sleight of Hand} checks, +2 competence bonus to \skill{Gather Information} and \skill{Intimidate} checks, +1 competence bonus on \skill{Diplomacy} checks.
 
+\Figure*{b}{images/merchant-1.png}
 \subsubsection{Senior Agent}
 \MonsterStatsDescription{
     Merchant house senior agents are representatives of their merchant houses. The statistics block is for a human 4th-level bard/7rd-level dune trader with the merchant archetype.
@@ -468,12 +469,6 @@ This is a mind-affecting, language-dependent ability.
 The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if the language is ancient or unique. Success means he can glean enough meaning from a conversation or document to ascertain the basic message, but this ability in no way simulates actually being able to converse or fluently read and write in a given language. A single check covers roughly one minute of a spoken language or one page of a written language.
 
 \textbf{Poison Use:} A senior agent is trained in the use of poison and never risk accidentally poisoning himself when applying poison to a blade.
-
-\textbf{Smooth Talk (Ex):} A senior agent can retry \skill{Bluff} and \skill{Diplomacy} checks at a $-5$ penalty, but only once per check.
-
-\textbf{Slippery Mind (Ex):} If a senior agent is affected by an enchantment spell or effect and fails his saving throw, he can attempt it again 1 round later at the same DC. He gets only this one extra chance to succeed on her saving throw.
-
-* An agent has +2 insight bonus to \skill{Bluff} and \skill{Sleight of Hand} checks, +2 competence bonus to \skill{Gather Information} and \skill{Intimidate} checks, +3 competence bonus on \skill{Diplomacy} checks. An agent may take 10 on \skill{Bluff}, \skill{Diplomacy}, \skill{Gather Information}, \skill{Sense Motive}, and \skill{Sleight of Hand} checks even if stress and distractions would normally prevent him from doing so.
 
 
 
@@ -539,13 +534,13 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
     \skill{Spot} +4\\
 \tableheader Feats:
     &
-	\feat{Field Officer}\textsuperscript{B},
+    \feat{Field Officer}\textsuperscript{B},
     \feat{Point-Blank Shot},
     \feat{Precise Shot}\textsuperscript{B},
     \feat{Quick Draw}\textsuperscript{B},
     \feat{Rapid Shot}\textsuperscript{B}
     &
-	\feat{Field Officer}\textsuperscript{B},
+    \feat{Field Officer}\textsuperscript{B},
     \feat{Point-Blank Shot},
     \feat{Precise Shot}\textsuperscript{B},
     \feat{Rapid Reload}\textsuperscript{B} (heavy crossbow),
@@ -572,6 +567,15 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
     & ---
     & --- \\
 }
+
+
+\textbf{Smooth Talk (Ex):} A senior agent can retry \skill{Bluff} and \skill{Diplomacy} checks at a $-5$ penalty, but only once per check.
+
+\textbf{Slippery Mind (Ex):} If a senior agent is affected by an enchantment spell or effect and fails his saving throw, he can attempt it again 1 round later at the same DC. He gets only this one extra chance to succeed on her saving throw.
+
+* An agent has +2 insight bonus to \skill{Bluff} and \skill{Sleight of Hand} checks, +2 competence bonus to \skill{Gather Information} and \skill{Intimidate} checks, +3 competence bonus on \skill{Diplomacy} checks. An agent may take 10 on \skill{Bluff}, \skill{Diplomacy}, \skill{Gather Information}, \skill{Sense Motive}, and \skill{Sleight of Hand} checks even if stress and distractions would normally prevent him from doing so.
+
+
 \subsubsection{Mercenary Archer}
 \MonsterStatsDescription{
     Archers are the main projectile force of any battle in Athas, as they are too expensive for sieges. The statistics block is for a human 2nd-level fighter with the military officer archetype.
@@ -581,7 +585,7 @@ The DC for the check is DC 15 if the language is commonly spoken, or DC 25 if th
 
 A mercenary archer works in group-focused warfare, instead of the smaller scale defense of caravan troops. They are the best trained ranged mercenary unit, so all troops shoot in unison---either at a single dangerous target at a time, or at a large area with enemy troops.
 
-\textbf{Military Training:} A mercenary archer gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A mercenary archer increases their Constitution score by 1.
 
 \subsubsection{Mercenary Crossbowman}
 \MonsterStatsDescription{
@@ -592,7 +596,7 @@ A mercenary archer works in group-focused warfare, instead of the smaller scale 
 
 A mercenary crossbowman is less mobile, and thus more vulnerable to fast troops. They are preferred during sieges, as their low rate of fire is not as crucial.
 
-\textbf{Military Training:} A mercenary crossbowman gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A mercenary crossbowman increases their Constitution score by 1.
 
 \subsubsection{Mercenary Light Infantry}
 \begin{MonsterStats}
@@ -648,12 +652,13 @@ A mercenary light infantry is trained in harassing tactics: they use their skirm
 
 \textbf{Fast Movement (Ex):} A mercenary light infantry is faster by +3 meters. He loses this benefit when wearing medium or heavy armor, or carrying medium or heavy load.
 
-\textbf{Military Training:} A mercenary light infantry gains +1 permanent bonus on Constitution.
-
 \textbf{Skirmish:} A mercenary light infantry deals +1d6 points of damage whenever he moves at least 3 meters away from where he was at the start of the turn. This damage only applies to living creatures with discernible anatomy. He can apply this extra damage to ranged attacks, but only if the target is within 9 meters.
+
+\textbf{Stout:} A mercenary light infantry increases their Constitution score by 1.
 
 \textbf{Trapfinding:} A mercenary light infantry can use \skill{Search} to find traps with DC higher than 20.
 
+\Figure{b}{images/army-1.png}
 \subsubsection{Mercenary Heavy Infantry}
 \begin{MonsterStats}
 {Medium Humanoid (human)}
@@ -706,7 +711,7 @@ A mercenary light infantry is trained in harassing tactics: they use their skirm
 
 A mercenary heavy infantry is trained in defensive tactics: they use a combination of aid another action as a move action in conjunction with \feat{Combat Expertise} to increase their defenses. They also focus in their formation, using \feat{Shield Wall} whenever possible.
 
-\textbf{Military Training:} A mercenary heavy infantry gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A mercenary heavy infantry increases their Constitution score by 1.
 
 
 
@@ -965,7 +970,7 @@ A mercenary irregular is trained in disruptive combat, using with dirty tricks t
 
 \textbf{Flurry of Blows (Ex):} A mercenary irregular can make an extra attack in a full-attack action, taking a $-2$ penalty during that round. When attacking during a flurry of blows, he may only attack with natural weapons and gladiator special weapons.
 
-\textbf{Military Training:} A mercenary irregular gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A mercenary irregular increases their Constitution score by 1.
 
 \subsubsection{Mercenary Engineer}
 \begin{MonsterStats}
@@ -1023,7 +1028,7 @@ A mercenary engineer is trained to coordinate the construction of siege engines,
 
 \textbf{Coordinate Allies (Ex):} As a full-round action, the mercenary engineer can make a \skill{Knowledge} (warcraft) check with a DC equal to 15 + the number of allies affected. If the check succeeds, all affected allies gain a +1 competence bonus on attack rolls or a +1 dodge bonus to AC. They choose which of the two benefits to impart and must impart the same benefit to all affected allies. The benefits last for 1 round. The mercenary engineer cannot use this ability on themselves.
 
-\textbf{Military Training:} A mercenary engineer gains +1 permanent bonus on Constitution.
+\textbf{Stout:} A mercenary engineer increases their Constitution score by 1.
 
 \BigTable{}{lXX}{
 & \tableheader Raider (raging)

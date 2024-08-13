@@ -11,6 +11,53 @@ The known world is currently divided into the Silt Sea, the Tablelands (also kno
 Outside of those regions, the Jagged Cliffs, the Deadlands, and the Valley of the Cerulean Storm wait to be discovered, charted, and plundered. The surface of Athas stretches from horizon to horizon, a patchwork of fields and forests, oceans (of water and sand) and mountains, deserts, swamps, jungles, and more. Beneath the crimson sun, Athas' varied environments give way one to another across the Tablelands. Mountains rise, valleys fall, and desert surrounds the land.
 
 \input{sections/athas/the-world-of-athas.tex}
+
+\newcommand{\City}[5]{
+    \section{#1}
+    \textbf{Population:} #2
+
+    \textbf{Exports:} #3
+
+    \textbf{Languages:} #4
+
+    #5
+
+    \CityDescription
+}
+\newcommand{\SubCity}[5]{
+    \subsectionA{#1}
+    \textbf{Population:} #2
+
+    \textbf{Exports:} #3
+
+    \textbf{Languages:} #4
+
+    #5
+
+    \CityDescription[\subsubsection]
+}
+\newcommand{\CityDescription}[7][\subsection]{
+    #1{Life and Society}
+    #2
+    #1{Government and Politics}
+    #3
+    #1{Power Groups}
+    #4
+    \ifx&#5&\else
+    #1{Major Settlements}
+    #5
+    \fi
+
+    \ifx&#6&\else
+    #1{Important Sites}
+    #6
+    \fi
+    #1{Adventure Ideas}
+    \begin{itemize*}
+    #7
+    \end{itemize*}
+}
+
 \input{sections/athas/city-states.tex}
 \input{sections/athas/beyond-the-tablelands.tex}
 \input{sections/athas/other-races.tex}

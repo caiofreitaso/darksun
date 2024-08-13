@@ -1,3 +1,18 @@
+\newcommand{\PrestigeMonkTable}[3][l b{16mm} *{3}{Z{5mm}} Z{6mm} Z{9mm} L l]{
+    \BigTableBottom{#2}{#1}{
+        \tableheader Level
+        & \tableheader Base \hskip3em Attack Bonus
+        & \tableheader Fort Save
+        & \tableheader Ref Save
+        & \tableheader Will Save
+        & \tableheader AC Bonus
+        & \tableheader Unarmed Damage
+        & \tableheader Special
+        & \tableheader Manifesting\\
+        #3
+    }
+}
+
 \PrestigeClass{Sensei}
 {Physical perfection is useless without mental perfection.}{Talanoa, Nibenese sensei}
 {The most powerful characters on Athas combine the study of psionics with the study of another discipline. Dragons study sorcery in conjunction with the Way, while elemental clerics harness the power of their minds to the power of their worship. The sensei combines an intensive physical training program with the Way, seeking to become the perfect weapon.
