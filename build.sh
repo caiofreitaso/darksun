@@ -7,57 +7,94 @@ function log() {
 function create_pdf(){
   rubber -d $1
   rubber --clean $1
+
+  log [$1] PDF compiled
 }
 
 function usage() {
-  echo "Usage: ${0} [-cilosu]"
-  echo -e '\t-c\tCreate dark-sun.pdf'
-  echo -e '\t-i\tOptimize images in ./images/'
-  echo -e '\t-l\tCreate low resolution PDF (name: dark-sun.<current_date>.pdf)'
-  echo -e '\t-o\tOptimize dark-sun.pdf'
-  echo -e '\t-s\tSplit dark-sun into different parts'
-  echo -e '\t-u\tUpdate external dependencies for pdfsizeopt'
+  echo "Usage: ${0} [OPTIONS]"
+  echo -e '\t-c, --create         \tCreate dark-sun.pdf'
+  echo -e '\t-h, --help           \tDisplay this information'
+  echo -e '\t-i, --optimize-images\tOptimize images in ./images/'
+  echo -e '\t-l, --low-res        \tCreate low resolution PDF (name: dark-sun_low-res.pdf)'
+  echo -e '\t-o, --optimize-pdf   \tOptimize dark-sun.pdf (name: dark-sun.<current_date>.pdf)'
+  echo -e '\t-s, --split          \tSplit dark-sun into different parts'
+  echo -e '\t-u, --update         \tUpdate external dependencies for pdfsizeopt'
+}
 
-  exit 1
+function needs_arg() {
+  if [ -z "$OPTARG" ]
+  then
+    echo "No arg for --$OPT option" >&2
+    exit 1
+  fi
 }
 
 ############
 ### MAIN ###
 ############
 
-CURRENT_FILENAME="dark-sun.$(date +"%Y-%m-%dT%H-%M").pdf"
+CURRENT_FILENAME="dark-sun.$(date +"%Y-%m-%dT%H-%M")"
+BOOKMARKS=false
+CREATE_PDF=false
+LOW_RES=false
+OPTIMIZE_IMAGE=false
+OPTIMIZE_PDF=false
+SPLIT_PDF=false
+UPDATE_PDFSIZEOPT=false
 
-while getopts 'cilosu' OPTION
+while getopts 'chilosu-:' OPTION
 do
+  # support long options: https://stackoverflow.com/a/28466267/519360
+  if [ "${OPTION}" = "-" ]; then   # long option: reformulate OPTION and OPTARG
+    OPTION="${OPTARG%%=*}"         # extract long option name
+    OPTARG="${OPTARG#"${OPTION}"}"   # extract long option argument (may be empty)
+    OPTARG="${OPTARG#=}"           # if long option argument, remove assigning `=`
+  fi
+
   case "${OPTION}" in
-    c)
-      CREATE_PDF=1;;
-    i)
-      OPTIMIZE_IMAGE=1;;
-    l)
-      LOW_RES=1;;
-    o)
-      OPTIMIZE_PDF=1;;
-    s)
-      SPLIT_PDF=1;;
-    u)
-      UPDATE_PDFSIZEOPT=1;;
+    c | create-pdf)
+      CREATE_PDF=true
+      BOOKMARKS=true
+      echo "- create pdf";;
+    h | help)
+      usage
+      exit 0;;
+    i | optimize-images)
+      OPTIMIZE_IMAGE=true
+      echo "- optimize images";;
+    l | low-res)
+      LOW_RES=true
+      BOOKMARKS=true
+      echo "- create low resolution";;
+    o | optimize-pdf)
+      OPTIMIZE_PDF=true
+      BOOKMARKS=true
+      echo "- optimize pdf";;
+    s | split)
+      SPLIT_PDF=true
+      BOOKMARKS=true
+      echo "- split into parts";;
+    u | update)
+      UPDATE_PDFSIZEOPT=true
+      echo "- update pdfsizeopt";;
     *)
-      usage;;
+      usage >&2
+      exit 1;;
   esac
 done
 
-if [[ ${OPTIMIZE_IMAGE} ]]
+if ${UPDATE_PDFSIZEOPT}
+then
+  ./scripts/update-pdfsizeopt.sh
+fi
+
+if ${OPTIMIZE_IMAGE}
 then
   ./scripts/optimize-bw-images.sh &
 fi
 
-if [[ ${UPDATE_PDFSIZEOPT} ]]
-then
-  ./scripts/update-pdfsizeopt.sh &
-fi
-
-if [[ ${CREATE_PDF} ]]
+if ${CREATE_PDF}
 then
   create_pdf credits-and-legal &
   create_pdf ogl &
@@ -66,21 +103,24 @@ then
   create_pdf dark-sun
 fi
 
-pdftk dark-sun.pdf dump_data \
-  | grep -e Bookmark \
-  | sed 's/(&apos;|&#8217;)/’/g' > dark-sun.bookmarks
-
-if [[ ${OPTIMIZE_PDF} ]]
+if ${BOOKMARKS}
 then
-  ./scripts/optimize-pdf.sh dark-sun "${CURRENT_FILENAME}" &
+  pdftk dark-sun.pdf dump_data | grep -e Bookmark | sed 's/\(&apos;\|&#8217;\)/’/g' > dark-sun.bookmarks
+  log [dark-sun] Extracted bookmarks
 fi
 
-if [[ ${LOW_RES} ]]
+if ${OPTIMIZE_PDF}
 then
-  ./scripts/create-low-res.sh dark-sun &
+  ./scripts/optimize-pdf.sh dark-sun --bookmark="${CURRENT_FILENAME}"
 fi
 
-if [[ ${SPLIT_PDF} ]]
+if ${LOW_RES}
+then
+  ./scripts/create-low-res.sh dark-sun
+  ./scripts/optimize-pdf.sh dark-sun_low-res --bookmark=dark-sun --optimize-images
+fi &
+
+if ${SPLIT_PDF}
 then
   PHB_PAGE=$(./scripts/find-part-page.sh "Player\(’\|\&#8217;\)s Handbook" I)
   ITEMS_PAGE=$(./scripts/find-part-page.sh "Athasian Emporium" II)
@@ -99,4 +139,7 @@ fi
 
 wait
 
-rm *.bookmarks
+if ${BOOKMARKS}
+then
+  rm *.bookmarks
+fi

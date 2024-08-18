@@ -97,6 +97,23 @@ The Inner Planes have the following structure.
 \end{tikzpicture}
 \end{figure}
 
+\newcommand{\ElementalLayers}[3]{
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[blend mode=multiply, baseline=0]
+\contourlength{.5mm}
+\begin{scope}[blend group=normal]
+\path[pattern=dots, pattern color=black!20] (-\halflength, 7.5mm) rectangle (\halflength, 3.5mm);
+\path[pattern=crosshatch dots, pattern color=black!20] (-\halflength, 3.5mm) rectangle (\halflength, -3.5mm);
+\path[pattern=dots, pattern color=black!40] (-\halflength, -3.5mm) rectangle (\halflength, -7.5mm);
+\node[color=richblack] at (0,  5.5mm) {\tableheader \contour{white}{Quasielemental #1}};
+\node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental #2}};
+\node[color=richblack] at (0, -5.5mm) {\tableheader \contour{white}{Quasielemental #3}};
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+}
 
 \input{subsections/planes/inner-planes/elemental-plane-of-air.tex}
 \input{subsections/planes/inner-planes/elemental-plane-of-earth.tex}

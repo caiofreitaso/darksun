@@ -5,7 +5,13 @@ function process_bw_png() {
 
     mogrify -colorspace Gray "${file}"
     echo $(date +'[%F %T]') [${file}] ✓
-    optipng -q -o7 "${file}"
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b0 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b128 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b192 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b256 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b384 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b512 -q
+    ./pdfsizeopt/pdfsizeopt_libexec/pngout "${file}" -c0 -b1024 -q
     echo $(date +'[%F %T]') [${file}] ✓✓
 }
 

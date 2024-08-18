@@ -7,20 +7,7 @@ Armies of Fire are masked by the rolling smoke that heralds their approach, and 
 
 The plane boasts two layers: Quasielemental Radiance and Quasielemental Ash.
 
-\begin{figure}[h!]
-\centering
-\begin{tikzpicture}[blend mode=multiply, baseline=0]
-\contourlength{.5mm}
-\begin{scope}[blend group=normal]
-\path[pattern=dots, pattern color=black!20] (-\halflength, 7mm) rectangle (\halflength, 3.5mm);
-\path[pattern=crosshatch dots, pattern color=black!20] (-\halflength, 3.5mm) rectangle (\halflength, -3.5mm);
-\path[pattern=dots, pattern color=black!40] (-\halflength, -3.5mm) rectangle (\halflength, -7mm);
-\node[color=richblack] at (0,  5.25mm) {\tableheader \contour{white}{Quasielemental Radiance}};
-\node[color=richblack] at (0, 0)    {\tableheader \contour{white}{Elemental Fire}};
-\node[color=richblack] at (0, -5.25mm) {\tableheader \contour{white}{Quasielemental Ash}};
-\end{scope}
-\end{tikzpicture}
-\end{figure}
+\ElementalLayers{Radiance}{Fire}{Ash}
 
 \subsubsection{Elemental Plane of Fire Traits}
 \begin{itemize*}

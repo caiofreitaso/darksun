@@ -111,8 +111,8 @@
 \newcommand{\spellList}[1]{\refList{spell}{#1}}
 \newcommand{\psionicList}[1]{\refList{psionic}{#1}}
 \newcommand{\tabref}[1]{\hyperref[tab:#1]{Table: #1}}
-\newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter~\ref{#1}: #1}}
-\newcommand{\apxref}[1]{\hyperref[apx:#1]{Appendix: #1}}
+\newcommand{\chapref}[1]{\hyperref[chapter:#1]{Chapter~\ref{chapter:#1}: #1}}
+\newcommand{\apxref}[1]{\hyperref[apx:#1]{Appendix~\ref{apx:#1}: #1}}
 
 
 % Table of Contents
@@ -182,8 +182,7 @@
 	}
 }
 \newcommand{\Chapter}[3]{
-	\chapter{#1}
-	\label{chapter:#1}
+	\chapter{#1}\label{chapter:#1}
 	\begin{strip}
 	\Quote{#2}{#3}
 	\end{strip}
@@ -301,12 +300,8 @@
 		#4
 	\end{enumerate*}
 }
-\newcommand{\Spell}{
-	\PowerDescription{spell}
-}
-\newcommand{\Psionic}{
-	\PowerDescription{psionic}
-}
+\newcommand{\Spell}{\PowerDescription{spell}}
+\newcommand{\Psionic}{\PowerDescription{psionic}}
 \newcommand{\PowerDescription}[7][\subsection]{
 	#1{#3}
 	\label{#2:#3}
@@ -601,12 +596,14 @@
 
 \newcommand{\FeatTable}[3][l]{
 	\begin{table*}[ht!]
+	{\begin{tikzpicture}[blend mode=multiply,baseline=0]\node[inner ysep=0,inner xsep=0]{
 	\rowcolors{0}{}{TableColor}
 	\small
 	\begin{tabularx}{\textwidth}{#1 p{4.8cm} X}
 		\tableheader #2 Feat & \textold{Prerequisites} & \textold{Benefit}\\
 		#3
 	\end{tabularx}
+	};\end{tikzpicture}}
 	\end{table*}
 }
 

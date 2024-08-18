@@ -74,6 +74,7 @@ split_pdf "${TARGET}" "${START}" "${END}" "${OUTPUT}" &
 wait
 
 ./scripts/create-low-res.sh ${OUTPUT}
-./scripts/optimize-pdf.sh ${OUTPUT}_low-res ${OUTPUT} ${OUTPUT}
+mv ${OUTPUT}_low-res.pdf ${OUTPUT}.pdf
+./scripts/optimize-pdf.sh ${OUTPUT} --optimize-images
 
 log [${OUTPUT}] Finish
