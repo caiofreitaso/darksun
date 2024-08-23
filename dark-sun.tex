@@ -7,6 +7,7 @@
 \usepackage{fdsymbol}
 \usepackage{units}
 \usepackage{pdfpages}
+\usepackage[absolute,overlay]{textpos}
 \usepackage{tikz}
 \usepackage{tikzpagenodes}
 \usetikzlibrary{calc,patterns}
@@ -148,11 +149,15 @@ contents={%
     \centering
     \fontsize{40pt}{40pt}\bfseries\contourlength{0.5pt}
     {
+      \begin{textblock*}{\textwidth}(2cm,77mm)
+      \centering
+      {\color{ChapterColor}\contour{richblack}{\thepart}}
+      \end{textblock*}
+      \begin{textblock*}{\textwidth}(2cm,143mm)
+      \centering
       {\color{ChapterColor}\contour{white}{#2}}\par
-      \vskip75mm
-      {\color{richblack}\contour{white}{\thepart}}\par
+      \end{textblock*}
     }
-
   }
   \vfil\newpage\twocolumn\global\partpagefalse\global\blankpagefalse
  }
