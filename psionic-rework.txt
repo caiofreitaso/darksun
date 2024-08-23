@@ -53,10 +53,10 @@ PC  |  -2  |  -2  |  +0  |  -2  |  -3  |
        -14    -8     +0     +0     -15
 
 Clairsentience + Telepathy
-	OK= Detect Psionics
-		> WATCHER'S WARD + MINDLINK
 	OK= Feat Leach
 		> SYNESTHETE + MINDLINK
+	= Fission
+		> LEVEL 13 + CLAIRAUDIENCE + CLAIRVOYANCE + PSYCHIC MESSENGER
 Clairsentience + Psychokinesis
 	OK= Antimagic Field, Psionic
 		> LEVEL 11 + DETECT MAGIC + MOLECULAR AGITATION
@@ -88,9 +88,9 @@ Psychokinesis + Psychoportation
 Psychometabolism + Telepathy
 	OK= Mindlink, Thieving
 		> LIFE-DRAINING + MINDLINK
-	OK= Metaconcert
-		> LEVEL 9 + ADRENALIN CONTROL + MINDLINK
-Psychometabolism + Psychoportation 
+	= Shield Other, Psionic
+		> EMPATHIC TRANSFER + MINDLINK
+Psychometabolism + Psychoportation
 	OK= Revivify
 		> LEVEL 9 + SUSPEND LIFE + SUMMON PLANAR ENERGIES
 Psychoportation + Telepathy
@@ -99,10 +99,14 @@ Psychoportation + Telepathy
 
 
 None:
+OK= Detect Psionics
+	> LEVEL 3
 OK Bestow Power
 	> LEVEL 4
 NO Dispel Psionics
 	> LEVEL 6
+OK= Metaconcert
+	> LEVEL 9
 OK Null Psionics Field
 	> LEVEL 11 + PSYCHIC NOISE
 OK Power Leech

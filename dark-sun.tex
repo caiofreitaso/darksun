@@ -146,7 +146,13 @@ contents={%
   \markboth{}{}%
   {
     \centering
-    \fontsize{40pt}{40pt}\bfseries{\color{ChapterColor}\contourlength{0.5pt}\contour{white}{#2}}\par
+    \fontsize{40pt}{40pt}\bfseries\contourlength{0.5pt}
+    {
+      {\color{ChapterColor}\contour{white}{#2}}\par
+      \vskip75mm
+      {\color{richblack}\contour{white}{\thepart}}\par
+    }
+
   }
   \vfil\newpage\twocolumn\global\partpagefalse\global\blankpagefalse
  }
