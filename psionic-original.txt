@@ -1,0 +1,276 @@
+# CLAIRSENTIENCE
+
+
+OK Aura Sight
+OK Clairaudience
+OK Clairvoyance
+OK Cosmic Awareness
+XX Detection                          ~~> Detect material
+OK Object Reading
+OK Precognition
+OK Sensitivity to Psychic Impressions
+OK Spirit Lore
+OK True Sight                         => True seeing, psionic
+
+OK All-Round Vision                   => Ubiquitous vision
+OK Bone Reading
+OK Combat Mind
+OK Danger Sense
+OK Environment
+OK Feel Light                         => Synesthete
+OK Feel Moisture                      => Detect moisture
+OK Feel Sound                         => Synesthete
+OK Hear Light                         => Synesthete
+Know Course
+OK Know Direction                     => Know direction and location
+OK Know Location                      => Know direction and location
+OK Poison Sense                       => Detect poison, psionic
+OK Predestination
+OK Radial Navigation                  => Anchored navigation
+OK Safe Path
+XX See Ethereal                       ~~> See etherealness
+OK See Magic                          => Detect magic, psionic
+OK See Sound                          => Synesthete
+Sensitivity to Observation
+OK Spirit Sense                       => Detect spirits
+OK Trail Of Destruction
+OK Watcher's Ward
+OK Weather Prediction
+
+
+
+
+# PSYCHOKINESIS
+
+
+OK Create Object
+OK Detonate
+OK Disintegrate                       => Disintegrate, psionic
+OK Kinetic Control
+OK Megakinesis
+OK Molecular Rearrangement
+OK Project Force
+OK Telekinesis                        => Telekinesis, psionic
+OK Telekinetic Barrier                => Wall of force, psionic
+OK Telekinetic Flight                 => Fly, psionic
+
+OK Animate Object                     => Animate objects, psionic
+XX Animate Shadow [cantrip]
+OK Ballistic Attack
+OK Compact
+OK Concentrate Water
+OK Control Body
+OK Control Flames                     ~~> Fuse with control light, sound, wind
+OK Control Light                      ~~> Fuse with control flames, light, wind
+OK Control Sound                      ~~> Fuse with control flames, sound, wind
+XX Control Wind                       ~~> Control wind
+OK Create Sound
+XX Cryokinesis                        ~~> Molecular agitation
+OK Deflect
+XX Ghost Writing
+OK Inertial Barrier
+OK Levitation                         => Levitate, psionic
+OK Magnetize
+OK Mass Manipulation
+OK Molecular Agitation
+OK Molecular Bonding
+OK Molecular Manipulation
+OK Momentum Theft
+XX Opposite Reaction                  ~~> Opposite reaction
+XX Return Flight                      ~~> Returning weapon
+OK Soften
+OK Static Discharge
+
+
+
+
+# PSYCHOMETABOLISM
+
+
+OK Animal Affinity
+OK Complete Healing                   => Heal, personal
+OK Death Field
+OK Elemental Composition
+OK Energy Containment                 => Energy adaptation
+OK Life Draining
+OK Metamorphosis
+OK Nerve Manipulation                 => Double pain
+XX Poison Simulation                  ~~> Secrete poison
+OK Regenerate                         => Regenerate, psionic
+
+OK Absorb Disease                     => [Empathic transfer]
+OK Accelerate                         => Haste, personal
+OK Adrenaline Control
+OK Alter Features                     => Disguise self, psionic
+OK Aging
+OK Biofeedback
+OK Body Control                       => Adapt body
+OK Body Equilibrium
+OK Body Weaponry                      => Claws of the beast
+OK Carapace
+OK Catfall
+XX Cause Decay                        ~~> Decay
+OK Cause Sleep                        => Sleep, psionic
+OK Cell Adjustment
+OK Chameleon Power                    => Chameleon
+OK Chemical Simulation                ~~> Secrete acid
+OK Displacement                       => Displacement, psionic
+OK Double Pain
+OK Ectoplasmic Form
+XX Enhanced Strength                  ~~> Bull's strength, psionic [add Cat's grace, psionic as well]
+OK Expansion
+OK Flesh Armor
+XX Forced Symmetry                    ~~> IMPOSSIBLE, too much on DM
+OK Graft Weapon
+OK Heightened Senses
+OK Immovability
+OK Lend Health                        => [Empathic transfer]
+OK Mind Over Body                     => Sustenance
+XX Pheromone Discharge                ~~> Charm vermin
+OK Photosynthesis
+OK Reduction
+XX Rigidity                           ~~> Rigidity
+XX Share Strength                     ~~> [???]
+OK Spider Touch                       => Spider climb, psionic
+XX Strength of the Land               ~~> IMPOSSIBLE, druidic abilities
+OK Suspend Animation
+
+
+
+
+# PSYCHOPORTATION
+
+
+XX Banishment                         ~~> Banishment, psionic
+XX Planar Transposition
+XX Probability Travel                 ~~> Plane shift, psionic
+OK Summon Planar Creature
+OK Summon Planar Energies             => Planar energy
+OK Teleport                           => Teleport, psionic
+OK Teleport Other
+OK Time Travel
+OK Wormhole
+
+OK Astral Projection                  => Astral projection, personal
+OK Blink                              => Blink, psionic
+OK Dimensional Door                   => Dimineion door, psionic
+OK Dimension Blade
+OK Dimensional Screen
+XX Dimension Walk
+XX Dream Travel
+OK Duo-Dimension
+OK Ethereal Traveler                  => Ethereal jaunt, psionic
+XX Phase                              ~?~> Phase (Nomad 6; none; gain incorporeal subtype)
+XX Phase Object
+XX Pocket Dimension
+OK Shadow Walk                        => Shadow walk, psionic
+XX Spatial Distortion
+XX Summon Object
+OK Teleport Lock                      => Dimensional anchor, psionic
+OK Teleport Object                    => Teleport object, psionic
+OK Teleport Trigger
+OK Time Dilation
+OK Time Duplicate
+OK Time Shift                         => Time hop, personal
+OK Time/Space Anchor                  => Spacetime anchor
+
+
+
+
+# TELEPATHY
+
+
+OK Domination                         ~~> Dominate
+OK Ejection
+XX Fate Link                          ~~> Shield other, psionic (Shaper 5; mindlink, empathic transfer)
+XX Hallucination                      ~~> Major image, psionic (Telepath 3; false sensory input)
+OK Mass Domination                    ~~> Dominate, mass (Telepath 7; dominate)
+OK Mindflame
+OK Mindlink
+OK Mindwipe
+OK Probe
+XX Superior Invisibility
+OK Switch Personality                 => Mind switch
+
+Acceptance
+Alignment Stabilization
+OK Amnesia                            => Modify memory, psionic
+OK Attraction
+OK Aversion
+OK Awe
+XX Beast Mastery [EPIC]
+OK Conceal Thoughts
+OK Contact [cantrip]
+XX Daydream                           ~~> Daze, psionic (Telepath 1; contact)
+XX Empathy
+OK ESP                                => Read thoughts
+XX False Sensory Input                ~~> False sensory input (Telepath 3; mindlink)
+XX Focus Forgiveness
+XX Identity Penetration               ~~> TOO SPECIFIC
+OK Impossible Task                    => Suggestion, psionic [TOO SPECIFIC]
+XX Incarnation Awareness              ~~> Incarnation awareness (Telepath 3; contact)
+OK Inflict Pain
+XX Insect Mind                        ~~> CONFLICT: charm vermin
+XX Invincible Foes
+XX Invisibility
+OK Life Detection                     => Detect life
+OK Mind Bar
+XX Mysterious Traveler                ~~> EPIC GOSSIP
+XX Phobia Amplification               ~~> Fear, psionic
+XX Plant Mind
+OK Post-Hypnotic Suggestion           => Suggestion, psionic
+XX Psychic Impersonation              ~~> CONFLICT: aura alteration
+OK Psychic Messenger
+XX Reptile Mind
+XX Repugnance                         ~~> CONFLICT: aversion
+OK Send Thoughts
+XX Sensory Suppression                ~~> Blindness/deafness, psionic
+OK Sight Link                         => Sense link
+OK Sound Link                         => Sense link
+XX Suppress Fear
+OK Synaptic Static                    ~~> Null psionics field
+OK Taste Link                         => Sense link
+XX Telempathic Projection             ~~> NO MEANINFUL EFFECT
+XX True Worship                       ~~> True worship
+XX Truthear
+
+
+
+
+# METAPSIONICS
+
+
+XX Appraise                           ~~> Divination, psionic (Shaper 4; 7th level)
+XX Aura Alteration                    ~~> Aura alteration
+OK Empower                            => [[Create Psionic Item]]
+XX Psychic Clone                      ~~> Fission (Shaper 8; clairaudience, clairvoyance, psychic messenger, 15th level)
+OK Psychic Surgery                    => Psychic Chirurgery
+OK Split Personality                  => Schism
+XX Subjective Reality                 ~~> Subjective reality (Shaper 7; 13th level)
+OK Suppress Magic                     => Antimagic field, psionic
+XX Ultrablast                         ~~> Ultrablast (Shaper 9; 10th level)
+
+OK Cannibalize
+OK Cognitive Trance                   => [[Psionic Meditation]]
+OK Convergence                        => Metaconcert
+XX Enhancement                        ~~> CONFICT: psionic focus
+XX Fighting Trance                    ~~> Trance (Shaper 1; 3rd level)
+XX Gird                               ~~> [[Gird Power: maintain power even unconscious]]
+XX Hivemind                           ~~> Hivemind (Shaper 3; thri-kreen)
+XX Intensify                          ~~> NO MEANINGFUL EFFECT
+XX Iron Will                          ~~> [[Die Hard]]
+XX Magnify                            ~~> [[Empower/Maximize Power]]
+XX Martial Trance                     ~~> Trance (Shaper 1; 3rd level)
+XX Probability Manipulation           ~~> Probability manipulation (Shaper 2; 3rd level)
+OK Prolong                            => [[Enlarge Power]]
+OK Psionic Inflation                  => Psychic noise
+XX Psionic Residue                    ~~> Psychic residue (Shaper 3; 5th level)
+OK Psionic Sense                      => Detect psionics
+Psionic Vampirism
+XX Psychic Blade                      ~~> PRESTIGE CLASS?? Psychic Blade (Shaper 2; 6th level)
+XX Psychic Drain                      ~~> Power leech (Shaper 3; 5th level)
+OK Receptacle                         => [[Craft Cognizance Crystal]]
+XX Retrospection                      => Seance (Shaper 9; metaconcert)
+OK Splice                             => [[Quicken Power/Link Power]]
+Stasis Field
+Wrench
