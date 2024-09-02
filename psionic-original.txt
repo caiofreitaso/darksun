@@ -182,14 +182,14 @@ OK Time/Space Anchor                  => Spacetime anchor
 
 OK Domination                         ~~> Dominate
 OK Ejection
-XX Fate Link                          ~~> Shield other, psionic (Shaper 5; mindlink, empathic transfer)
-XX Hallucination                      ~~> Major image, psionic (Telepath 3; false sensory input)
+OK Fate Link                          ~~> Shield other, psionic (Shaper 5; mindlink, empathic transfer)
+OK Hallucination                      ~~> Major image, psionic (Telepath 3; false sensory input)
 OK Mass Domination                    ~~> Dominate, mass (Telepath 7; dominate)
 OK Mindflame
 OK Mindlink
 OK Mindwipe
 OK Probe
-XX Superior Invisibility
+OK Superior Invisibility
 OK Switch Personality                 => Mind switch
 
 Acceptance
@@ -201,7 +201,7 @@ OK Awe
 XX Beast Mastery [EPIC]
 OK Conceal Thoughts
 OK Contact [cantrip]
-XX Daydream                           ~~> Daze, psionic (Telepath 1; contact)
+OK Daydream                           ~~> Daze, psionic (Telepath 1; contact)
 XX Empathy
 OK ESP                                => Read thoughts
 XX False Sensory Input                ~~> False sensory input (Telepath 3; mindlink)
@@ -212,11 +212,11 @@ XX Incarnation Awareness              ~~> Incarnation awareness (Telepath 3; con
 OK Inflict Pain
 XX Insect Mind                        ~~> CONFLICT: charm vermin
 XX Invincible Foes
-XX Invisibility
+OK Invisibility
 OK Life Detection                     => Detect life
 OK Mind Bar
 XX Mysterious Traveler                ~~> EPIC GOSSIP
-XX Phobia Amplification               ~~> Fear, psionic
+OK Phobia Amplification               ~~> Fear, psionic
 XX Plant Mind
 OK Post-Hypnotic Suggestion           => Suggestion, psionic
 XX Psychic Impersonation              ~~> CONFLICT: aura alteration
@@ -224,10 +224,10 @@ OK Psychic Messenger
 XX Reptile Mind
 XX Repugnance                         ~~> CONFLICT: aversion
 OK Send Thoughts
-XX Sensory Suppression                ~~> Blindness/deafness, psionic
+OK Sensory Suppression                ~~> Blindness/deafness, psionic
 OK Sight Link                         => Sense link
 OK Sound Link                         => Sense link
-XX Suppress Fear
+OK Suppress Fear
 OK Synaptic Static                    ~~> Null psionics field
 OK Taste Link                         => Sense link
 XX Telempathic Projection             ~~> NO MEANINFUL EFFECT
