@@ -48,7 +48,7 @@ do
   # support long options: https://stackoverflow.com/a/28466267/519360
   if [ "${OPTION}" = "-" ]; then   # long option: reformulate OPTION and OPTARG
     OPTION="${OPTARG%%=*}"         # extract long option name
-    OPTARG="${OPTARG#"${OPTION}"}"   # extract long option argument (may be empty)
+    OPTARG="${OPTARG#"${OPTION}"}" # extract long option argument (may be empty)
     OPTARG="${OPTARG#=}"           # if long option argument, remove assigning `=`
   fi
 
@@ -111,7 +111,7 @@ fi
 
 if ${OPTIMIZE_PDF}
 then
-  ./scripts/optimize-pdf.sh dark-sun --bookmark="${CURRENT_FILENAME}"
+  ./scripts/optimize-pdf.sh dark-sun --output=${CURRENT_FILENAME}
 fi
 
 if ${LOW_RES}
